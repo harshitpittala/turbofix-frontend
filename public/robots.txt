@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /book-repair/confirmation
+Disallow: /_next/
+
+Sitemap: https://turbofix.in/sitemap.xml

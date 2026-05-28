@@ -1,0 +1,303 @@
+export interface BrandData {
+  slug: string;
+  name: string;
+  tagline: string;
+  description: string;
+  color: string;
+  logo: string;
+  models: string[];
+  commonIssues: { title: string; desc: string; time: string }[];
+  faqs: { q: string; a: string }[];
+  keywords: string[];
+}
+
+export const brandData: BrandData[] = [
+  {
+    slug: "apple",
+    name: "Apple iPhone",
+    tagline: "Expert iPhone Repair in Hyderabad",
+    description: "Apple iPhones are precision-engineered devices that require equally precise repairs. TurboFix technicians are trained specifically on Apple hardware — from Face ID calibration to OLED screen replacement — with access to OEM-quality and genuine Apple parts.",
+    color: "#A0A0A0",
+    logo: "https://cdn.simpleicons.org/apple/ffffff",
+    models: [
+      "iPhone 15 Pro Max", "iPhone 15 Pro", "iPhone 15 Plus", "iPhone 15",
+      "iPhone 14 Pro Max", "iPhone 14 Pro", "iPhone 14 Plus", "iPhone 14",
+      "iPhone 13 Pro Max", "iPhone 13 Pro", "iPhone 13 Mini", "iPhone 13",
+      "iPhone 12 series", "iPhone 11 series", "iPhone XS / XR / X",
+      "iPhone SE (1st, 2nd, 3rd gen)",
+    ],
+    commonIssues: [
+      { title: "Cracked Screen / Display Issues", desc: "OLED screen replacement with OEM-grade panels. Face ID functionality preserved. True Tone calibrated.", time: "30–45 min" },
+      { title: "Battery Degradation", desc: "Grade-A battery replacement. Restores 100% capacity. Health verified before and after.", time: "20–30 min" },
+      { title: "Charging Port / Lightning Issues", desc: "Lightning and USB-C port cleaning, repair, and replacement. Fast charge functionality tested.", time: "25–35 min" },
+      { title: "Back Glass Replacement", desc: "Adhesive-bonded rear glass replacement. All color variants available. Water resistance re-sealed.", time: "45–60 min" },
+      { title: "Camera Module Repair", desc: "Front and rear camera repair. Ultra-wide, telephoto, and macro systems handled. OIS module repair.", time: "40–50 min" },
+      { title: "Speaker / Microphone Issues", desc: "Earpiece, loudspeaker, and microphone module replacement. Audio tested post-repair.", time: "25–35 min" },
+    ],
+    faqs: [
+      { q: "Does TurboFix use genuine Apple parts?", a: "We use OEM-quality parts as standard. Genuine Apple parts are available on request for screen and battery replacements at an additional cost." },
+      { q: "Will Face ID still work after iPhone screen replacement?", a: "Yes — our technicians are trained to handle Face ID components with care during screen replacements. We test Face ID after every screen repair." },
+      { q: "How long does an iPhone screen replacement take?", a: "iPhone screen replacements take 30–45 minutes including our full post-repair quality check." },
+      { q: "Does TurboFix repair all iPhone models in Hyderabad?", a: "Yes — we repair all iPhone models from iPhone SE to the latest iPhone 15 Pro Max." },
+    ],
+    keywords: ["iPhone repair Hyderabad", "iPhone screen replacement", "iPhone battery replacement", "Apple repair Hyderabad", "iPhone repair near me"],
+  },
+  {
+    slug: "samsung",
+    name: "Samsung Galaxy",
+    tagline: "Samsung Galaxy Repair Experts in Hyderabad",
+    description: "Samsung Galaxy phones — from budget A-series to flagship S-series and folding Z-series — all receive the same expert attention at TurboFix. We stock AMOLED screens, genuine batteries, and all components for Samsung's complete lineup.",
+    color: "#1428A0",
+    logo: "https://cdn.simpleicons.org/samsung/ffffff",
+    models: [
+      "Galaxy S24 Ultra / S24+ / S24",
+      "Galaxy S23 Ultra / S23+ / S23",
+      "Galaxy S22 / S21 / S20 series",
+      "Galaxy A55 / A54 / A53 / A52 / A51",
+      "Galaxy A35 / A34 / A33 / A32",
+      "Galaxy M55 / M54 / M53 / M52",
+      "Galaxy F55 / F54 / F15",
+      "Galaxy Z Fold 5 / Fold 4 / Fold 3",
+      "Galaxy Z Flip 5 / Flip 4 / Flip 3",
+      "Galaxy Note 20 / Note 10 series",
+    ],
+    commonIssues: [
+      { title: "AMOLED Screen Replacement", desc: "Dynamic AMOLED and Super AMOLED panel replacement. In-display fingerprint sensor preserved. All resolutions supported.", time: "30–60 min" },
+      { title: "Battery Replacement", desc: "Grade-A Samsung-compatible batteries. Fast charge functionality tested. Old battery safely disposed.", time: "25–35 min" },
+      { title: "Charging Port (USB-C) Repair", desc: "USB-C port cleaning, soldering, and module replacement. Fast charge, data transfer tested.", time: "25–40 min" },
+      { title: "Samsung Foldable Screen Repair", desc: "Z Fold and Z Flip ultra-thin glass replacement. Specialized training required. Complex repair — please contact us.", time: "2–4 hrs" },
+      { title: "Back Glass / Back Cover Repair", desc: "Rear glass or cover replacement for all Samsung models. Camera ring and NFC re-sealed.", time: "40–60 min" },
+      { title: "Water Damage Recovery", desc: "PCB ultrasonic cleaning, component-level inspection. 85% success rate on phones within 24 hours.", time: "2–4 hrs" },
+    ],
+    faqs: [
+      { q: "Does the in-display fingerprint sensor work after Samsung screen repair?", a: "Yes — we test and calibrate the in-display fingerprint sensor after every Samsung screen replacement." },
+      { q: "Can TurboFix repair Samsung Galaxy Z Fold and Z Flip?", a: "Yes — foldable repairs require advance booking as they're more complex. Please WhatsApp or call us to arrange." },
+      { q: "How much does Samsung screen replacement cost?", a: "Costs vary significantly by model — Galaxy A-series is more affordable; Galaxy S Ultra series is more expensive. Contact us for a model-specific quote." },
+    ],
+    keywords: ["Samsung repair Hyderabad", "Samsung Galaxy screen repair", "Samsung battery replacement", "Samsung Galaxy Hyderabad", "Samsung repair near me"],
+  },
+  {
+    slug: "oneplus",
+    name: "OnePlus",
+    tagline: "OnePlus Repair — Never Settle for Substandard Repairs",
+    description: "OnePlus delivers flagship performance at competitive prices — and TurboFix delivers the same standard of repair. From fluid AMOLED screens to Warp Charge port repairs, we cover the full OnePlus lineup.",
+    color: "#EB0029",
+    logo: "https://cdn.simpleicons.org/oneplus/ffffff",
+    models: [
+      "OnePlus 12 / 12R", "OnePlus 11 / 11R",
+      "OnePlus 10 Pro / 10T / 10R",
+      "OnePlus 9 Pro / 9 / 9R",
+      "OnePlus 8 Pro / 8T / 8",
+      "OnePlus Nord CE 4 / CE 3 / CE 2 series",
+      "OnePlus Nord 4 / 3 / 2 series",
+      "OnePlus Nord N30 / N20 series",
+    ],
+    commonIssues: [
+      { title: "Screen Replacement (AMOLED)", desc: "Fluid AMOLED and ProXDR display replacement. 120Hz touch response preserved. Screen green tint issue resolved.", time: "30–50 min" },
+      { title: "Battery Replacement", desc: "Grade-A battery cells. SUPERVOOC fast charging tested post-replacement.", time: "25–35 min" },
+      { title: "Warp / SuperVOOC Charging Port", desc: "Warp Charge port repair and replacement. Full fast-charge speed restored.", time: "30–40 min" },
+      { title: "Camera System Repair", desc: "Hasselblad-tuned rear camera module replacement. Ultra-wide and telephoto included.", time: "40–55 min" },
+      { title: "Back Glass Replacement", desc: "OnePlus textured and glass back replacement. All color variants.", time: "35–50 min" },
+    ],
+    faqs: [
+      { q: "Does TurboFix repair OnePlus Nord series?", a: "Yes — we repair all OnePlus Nord models including CE 2, CE 3, CE 4, Nord 2, Nord 3, and Nord 4." },
+      { q: "How long does OnePlus screen replacement take?", a: "OnePlus screen replacements take 30–50 minutes at TurboFix." },
+      { q: "Is the green tint issue on OnePlus 8 Pro fixable?", a: "A software update often reduces the green tint issue. If hardware-related, screen replacement with a properly calibrated panel resolves it." },
+    ],
+    keywords: ["OnePlus repair Hyderabad", "OnePlus screen repair", "OnePlus battery replacement", "OnePlus Nord repair", "OnePlus Hyderabad"],
+  },
+  {
+    slug: "xiaomi",
+    name: "Xiaomi / Redmi / POCO",
+    tagline: "Xiaomi, Redmi & POCO Repair in Hyderabad",
+    description: "Xiaomi's ecosystem — covering Xiaomi, Redmi, and POCO — is one of India's most popular. TurboFix handles the complete range, from budget Redmi A-series to flagship Xiaomi 14 Ultra repairs.",
+    color: "#FF6900",
+    logo: "https://cdn.simpleicons.org/xiaomi/ffffff",
+    models: [
+      "Xiaomi 14 Ultra / 14 Pro / 14",
+      "Xiaomi 13 Pro / 13 series",
+      "Redmi Note 13 Pro+ / 13 Pro / 13",
+      "Redmi Note 12 Pro+ / 12 Pro / 12",
+      "Redmi 13C / 12C / 12 / A3",
+      "POCO X6 Pro / X6 / X5 Pro / X5",
+      "POCO F6 Pro / F6 / F5 Pro / F5",
+      "POCO M6 Pro / M5s / C65",
+    ],
+    commonIssues: [
+      { title: "Screen Replacement (AMOLED / IPS)", desc: "AMOLED and IPS LCD screen replacement depending on model tier. Gorilla Glass front replaced.", time: "25–45 min" },
+      { title: "Battery Replacement", desc: "High-capacity battery replacement. HyperCharge fast charging tested post-repair.", time: "20–30 min" },
+      { title: "Charging Port Repair", desc: "USB-C port repair for Xiaomi/Redmi/POCO. Fast charge functionality verified.", time: "25–35 min" },
+      { title: "Camera Module Repair", desc: "Leica-tuned camera repair on flagship models. Periscope telephoto and ultra-wide handling.", time: "40–55 min" },
+    ],
+    faqs: [
+      { q: "Does TurboFix repair Redmi Note series phones?", a: "Yes — Redmi Note series is one of our most repaired lineups. We stock parts for all popular Note models." },
+      { q: "Can you repair POCO phones in Hyderabad?", a: "Yes — all POCO models including F series, X series, and M series." },
+    ],
+    keywords: ["Xiaomi repair Hyderabad", "Redmi repair Hyderabad", "POCO repair", "Xiaomi screen repair", "Redmi Note repair Hyderabad"],
+  },
+  {
+    slug: "vivo",
+    name: "Vivo",
+    tagline: "Vivo Phone Repair — Camera & Display Specialists",
+    description: "Vivo phones are known for exceptional cameras and displays. TurboFix has specific training on Vivo's camera systems and AMOLED displays to ensure repairs restore your device to full original performance.",
+    color: "#415FFF",
+    logo: "https://cdn.simpleicons.org/vivo/ffffff",
+    models: [
+      "Vivo V30 Pro / V30 / V29 Pro / V29",
+      "Vivo V27 Pro / V27 / V25 Pro",
+      "Vivo X90 Pro / X80 Pro",
+      "Vivo Y100 / Y78 / Y56 / Y35 / Y22",
+      "Vivo T3 Pro / T3 / T2 Pro / T2",
+      "iQOO 12 / 11 Pro / Neo 9 / Neo 8 Pro",
+    ],
+    commonIssues: [
+      { title: "AMOLED Screen Replacement", desc: "Curved and flat AMOLED screen replacement. In-display fingerprint sensor preserved.", time: "30–50 min" },
+      { title: "Battery Replacement", desc: "FlashCharge battery replacement. Charging speed tested post-repair.", time: "25–35 min" },
+      { title: "Camera Module Repair", desc: "ZEISS-tuned and standard camera module replacement. Gimbal stabilization tested.", time: "40–55 min" },
+      { title: "Charging Port Repair", desc: "USB-C port for all Vivo models including iQOO series.", time: "25–40 min" },
+    ],
+    faqs: [
+      { q: "Does TurboFix repair iQOO phones?", a: "Yes — iQOO is Vivo's sub-brand and we repair all iQOO models." },
+      { q: "How much does Vivo screen replacement cost in Hyderabad?", a: "Vivo screen costs vary by model. Contact us for a quote on your specific Vivo device." },
+    ],
+    keywords: ["Vivo repair Hyderabad", "Vivo screen repair", "Vivo battery replacement", "iQOO repair Hyderabad", "Vivo repair near me"],
+  },
+  {
+    slug: "oppo",
+    name: "Oppo",
+    tagline: "Oppo Phone Repair — Charging & Display Experts",
+    description: "Oppo pioneered fast charging technology and VOOC/SuperVOOC systems. TurboFix has specific expertise in Oppo's charging systems and AMOLED displays, ensuring repairs preserve these signature features.",
+    color: "#1D8348",
+    logo: "https://cdn.simpleicons.org/oppo/ffffff",
+    models: [
+      "Oppo Reno 12 Pro / Reno 12 / Reno 11 Pro / Reno 11",
+      "Oppo Reno 10 Pro+ / Reno 10 Pro / Reno 10",
+      "Oppo Find X7 Ultra / Find X6 Pro",
+      "Oppo A3 Pro / A79 / A78 / A77",
+      "Oppo F25 Pro / F23 / F21 Pro",
+    ],
+    commonIssues: [
+      { title: "AMOLED Screen Replacement", desc: "ColorOS AMOLED screen replacement. Gorilla Glass coating and in-display fingerprint preserved.", time: "30–50 min" },
+      { title: "VOOC / SuperVOOC Charging Port", desc: "VOOC and SuperVOOC charging port repair. Full fast-charge speed verified.", time: "25–40 min" },
+      { title: "Battery Replacement", desc: "High-capacity battery replacement. SuperVOOC fast charge tested.", time: "20–35 min" },
+      { title: "Hasselblad / Standard Camera Repair", desc: "Find X series Hasselblad cameras and standard modules repaired.", time: "40–55 min" },
+    ],
+    faqs: [
+      { q: "Does TurboFix repair Oppo Reno series?", a: "Yes — all Oppo Reno models are serviced at TurboFix Hyderabad." },
+      { q: "Can you fix VOOC charging that has stopped working?", a: "Yes — VOOC/SuperVOOC charging issues are usually port or cable related. We diagnose and repair charging systems for all Oppo models." },
+    ],
+    keywords: ["Oppo repair Hyderabad", "Oppo Reno repair", "Oppo screen repair", "VOOC charging repair", "Oppo repair near me"],
+  },
+  {
+    slug: "realme",
+    name: "Realme",
+    tagline: "Realme Repair — Dare to Repair",
+    description: "Realme has quickly become one of India's most popular phone brands. TurboFix handles the highest volume of Realme repairs in Hyderabad, giving us unmatched depth of experience with Realme's hardware across all price points.",
+    color: "#FFD700",
+    logo: "",
+    models: [
+      "Realme 13 Pro+ / 13 Pro / 13",
+      "Realme 12 Pro+ / 12 Pro / 12",
+      "Realme GT 6 / GT 6T / GT Neo 6",
+      "Realme Narzo 70 Pro / Narzo 70 / Narzo 60 Pro",
+      "Realme C65 / C55 / C35 / C33",
+      "Realme 11 Pro+ / 11 Pro / 11",
+      "Realme 10 Pro+ / 10 Pro",
+    ],
+    commonIssues: [
+      { title: "Screen Replacement (AMOLED / IPS)", desc: "AMOLED for Pro models, IPS for standard. Touch ID and proximity sensor preserved.", time: "25–40 min" },
+      { title: "Battery Replacement", desc: "SUPERVOOC battery replacement. Fast charging speed tested after repair.", time: "20–30 min" },
+      { title: "Charging Port Repair", desc: "USB-C port repair and replacement. SUPERVOOC compatibility tested.", time: "20–35 min" },
+      { title: "Speaker Repair", desc: "Stereo speaker replacement. Dolby Atmos tuning preserved.", time: "20–30 min" },
+      { title: "Back Glass / Cover Replacement", desc: "Textured and glass back replacement. All color variants.", time: "25–40 min" },
+    ],
+    faqs: [
+      { q: "Is Realme affordable to repair?", a: "Yes — Realme parts are widely available in India, keeping repair costs accessible. Screen replacements for most Realme models cost less than flagship brands." },
+      { q: "Does TurboFix repair Realme Narzo series?", a: "Yes — all Realme Narzo models are covered at TurboFix." },
+    ],
+    keywords: ["Realme repair Hyderabad", "Realme screen repair", "Realme battery replacement", "Realme Narzo repair", "Realme repair near me"],
+  },
+  {
+    slug: "motorola",
+    name: "Motorola",
+    tagline: "Motorola Repair — Trusted Heritage, Modern Repairs",
+    description: "Motorola phones are beloved for their near-stock Android experience and excellent durability. TurboFix handles Motorola's complete lineup — from budget Moto G series to the premium Edge series with curved displays.",
+    color: "#E1140A",
+    logo: "https://cdn.simpleicons.org/motorola/ffffff",
+    models: [
+      "Motorola Edge 50 Pro / Edge 50 / Edge 40 Pro / Edge 40",
+      "Motorola Edge 30 Ultra / Edge 30 Pro",
+      "Moto G85 / G84 / G64 / G54 Pro",
+      "Moto G34 / G24 Power / G14",
+      "Razr 50 Ultra / Razr 50 / Razr 40 Ultra",
+    ],
+    commonIssues: [
+      { title: "Screen Replacement (pOLED / IPS)", desc: "Edge series curved pOLED and Moto G IPS LCD replacement. Moto Display functionality preserved.", time: "30–50 min" },
+      { title: "Battery Replacement", desc: "Motorola TurboPower battery replacement. Battery share tested if supported.", time: "25–35 min" },
+      { title: "Charging Port Repair", desc: "USB-C port repair. TurboPower fast charge verified.", time: "25–40 min" },
+      { title: "Motorola Razr Foldable Repair", desc: "Razr series foldable screen and hinge repair. Contact us for specific availability.", time: "2–4 hrs" },
+    ],
+    faqs: [
+      { q: "Does TurboFix repair Moto G series phones?", a: "Yes — Moto G series is one of our most repaired Android lineups. We stock parts for all current Moto G models." },
+      { q: "Can you repair Motorola Razr foldable phones?", a: "Yes — Razr repairs require advance booking. Please contact us before bringing in a foldable Razr." },
+    ],
+    keywords: ["Motorola repair Hyderabad", "Moto G repair", "Motorola screen repair", "Motorola Edge repair", "Motorola Razr repair Hyderabad"],
+  },
+  {
+    slug: "google-pixel",
+    name: "Google Pixel",
+    tagline: "Google Pixel Repair — Pure Android, Expert Care",
+    description: "Google Pixel phones run the purest Android experience and feature some of the best computational photography available. TurboFix Pixel technicians understand the unique calibration requirements of Pixel's hardware and Tensor chip ecosystem.",
+    color: "#4285F4",
+    logo: "https://cdn.simpleicons.org/googlepixel/ffffff",
+    models: [
+      "Google Pixel 9 Pro XL / 9 Pro / 9",
+      "Google Pixel 8 Pro / 8 / 8a",
+      "Google Pixel 7 Pro / 7 / 7a",
+      "Google Pixel 6 Pro / 6 / 6a",
+      "Google Pixel 5 / 5a / 4a (5G)",
+      "Google Pixel 4 XL / 4 / 4a",
+    ],
+    commonIssues: [
+      { title: "OLED Screen Replacement", desc: "Pixel OLED display replacement. Under-display fingerprint sensor calibrated. Extreme Battery Saver verified.", time: "35–50 min" },
+      { title: "Battery Replacement", desc: "Pixel-compatible battery replacement. Adaptive Battery functionality preserved.", time: "25–35 min" },
+      { title: "Back Glass Replacement", desc: "Matte and gloss Pixel back glass replacement. Wireless charging re-tested.", time: "40–55 min" },
+      { title: "Camera Module Repair", desc: "Pixel's computational photography cameras require careful module replacement and focus calibration.", time: "40–60 min" },
+      { title: "Charging Port (USB-C)", desc: "USB-C port replacement. Fast charging and Pixel Stand wireless charging tested.", time: "25–40 min" },
+    ],
+    faqs: [
+      { q: "Are Google Pixel parts available in Hyderabad?", a: "Yes — TurboFix stocks screens, batteries, and key components for Pixel 6, 7, and 8 series. Contact us for less common models." },
+      { q: "Does Pixel's under-display fingerprint work after screen repair?", a: "Yes — we calibrate the in-display fingerprint sensor as part of every Pixel screen replacement." },
+    ],
+    keywords: ["Google Pixel repair Hyderabad", "Pixel screen repair", "Pixel battery replacement", "Pixel 8 repair", "Google Pixel Hyderabad"],
+  },
+  {
+    slug: "nothing",
+    name: "Nothing Phone",
+    tagline: "Nothing Phone Repair — The Glyph Stays On",
+    description: "Nothing Phone's unique Glyph Interface and transparent design make it one of the most distinctive smartphones available. TurboFix handles Nothing Phone repairs with care for both the unique design and the Glyph lighting system.",
+    color: "#E5E5E5",
+    logo: "",
+    models: [
+      "Nothing Phone (2a) Plus / (2a)",
+      "Nothing Phone (2)",
+      "Nothing Phone (1)",
+    ],
+    commonIssues: [
+      { title: "Screen Replacement (AMOLED)", desc: "Nothing Phone OLED screen replacement. Always-On display functionality preserved. Glyph connection re-tested.", time: "35–50 min" },
+      { title: "Battery Replacement", desc: "Grade-A battery replacement. Nothing OS battery optimization preserved.", time: "25–35 min" },
+      { title: "Glyph Interface Repair", desc: "Glyph LED strip repair and reconnection. Unique expertise required for the distinctive LED system.", time: "40–60 min" },
+      { title: "Transparent Back Repair", desc: "Nothing's signature transparent back panel replacement with care for the aesthetic design.", time: "35–50 min" },
+      { title: "Charging Port Repair", desc: "USB-C port repair. 45W fast charging tested.", time: "25–40 min" },
+    ],
+    faqs: [
+      { q: "Can TurboFix repair the Glyph Interface on Nothing Phone?", a: "Yes — Glyph LED repair is a specialized service we offer. We test all Glyph notification zones after repair." },
+      { q: "Is Nothing Phone (2) hard to repair?", a: "Nothing Phone uses a more standard Android architecture, making most repairs comparable in complexity to similar OLED devices." },
+    ],
+    keywords: ["Nothing Phone repair Hyderabad", "Nothing Phone screen repair", "Glyph repair", "Nothing Phone 2 repair", "Nothing repair near me"],
+  },
+];
+
+export function getBrandBySlug(slug: string): BrandData | undefined {
+  return brandData.find((b) => b.slug === slug);
+}

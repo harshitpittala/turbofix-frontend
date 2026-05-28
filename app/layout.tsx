@@ -1,0 +1,299 @@
+import type { Metadata } from "next";
+import { Inter, Syne, JetBrains_Mono } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import WhatsAppButton from "@/components/common/WhatsAppButton";
+import LoadingScreen from "@/components/common/LoadingScreen";
+import { Toaster } from "react-hot-toast";
+import { JsonLd } from "@/components/seo/JsonLd";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const syne = Syne({
+  subsets: ["latin"],
+  variable: "--font-syne",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-jetbrains",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://turbofix.in"),
+  title: {
+    default: "TurboFix — Mobile Repair at Your Doorstep | Hyderabad",
+    template: "%s | TurboFix",
+  },
+  description:
+    "TurboFix — Hyderabad's most trusted doorstep mobile repair service. Screen replacement, battery replacement, charging port repair, water damage, iPhone & Samsung repair. Certified technicians, OEM parts, 6-month warranty. Book now!",
+  keywords: [
+    "mobile repair hyderabad", "doorstep mobile repair hyderabad",
+    "iphone repair hyderabad", "samsung repair hyderabad",
+    "oneplus repair hyderabad", "realme repair hyderabad",
+    "phone screen replacement hyderabad", "battery replacement hyderabad",
+    "charging port repair hyderabad", "water damage repair hyderabad",
+    "mobile repair near me", "phone repair at home hyderabad",
+    "same day mobile repair", "mobile technician at home",
+    "smartphone repair hyderabad", "doorstep phone repair",
+    "TurboFix", "mobile service hyderabad",
+  ],
+  authors: [{ name: "TurboFix", url: "https://turbofix.in" }],
+  creator: "TurboFix",
+  publisher: "TurboFix",
+  formatDetection: { email: false, address: false, telephone: false },
+  alternates: { canonical: "https://turbofix.in" },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://turbofix.in",
+    title: "TurboFix — Mobile Repair at Your Doorstep | Hyderabad",
+    description:
+      "Certified doorstep mobile repair in Hyderabad. Screen, battery, charging port, water damage repair for iPhone, Samsung, OnePlus & more. OEM parts, 6-month warranty.",
+    siteName: "TurboFix",
+    images: [{
+      url: "https://turbofix.in/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "TurboFix — Premium Doorstep Mobile Repair in Hyderabad",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "TurboFix — Mobile Repair at Your Doorstep | Hyderabad",
+    description: "Fast doorstep mobile repair in Hyderabad. Screen, battery, water damage & more. Book now!",
+    images: ["https://turbofix.in/og-image.jpg"],
+    site: "@turbofix",
+    creator: "@turbofix",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  verification: {
+    google: "your-google-site-verification-token",
+  },
+  category: "technology",
+};
+
+// ── STRUCTURED DATA ──────────────────────────────────────────────────────────
+// Using plain <script> tags (not next/script) so that Google Rich Results Test
+// and Googlebot read the schema from server-rendered HTML.
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "MobilePhoneRepairShop"],
+  "@id": "https://turbofix.in/#business",
+  name: "TurboFix",
+  alternateName: ["TurboFix Mobile Repair", "TurboFix Hyderabad"],
+  description:
+    "TurboFix is Hyderabad's most trusted doorstep mobile repair service. We offer certified, same-day repair for all brands including Apple iPhone, Samsung Galaxy, OnePlus, Xiaomi, Vivo, Oppo, Realme, Motorola, Google Pixel and Nothing phones — at your home or office.",
+  url: "https://turbofix.in",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://turbofix.in/logo.png",
+    width: 200,
+    height: 200,
+  },
+  image: "https://turbofix.in/og-image.jpg",
+  telephone: "+918639605147",
+  email: "support@turbofix.in",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "11-1-441, Aghapura, Nampally",
+    addressLocality: "Hyderabad",
+    addressRegion: "Telangana",
+    postalCode: "500001",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 17.3850,
+    longitude: 78.4867,
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "09:00",
+      closes: "21:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Sunday"],
+      opens: "10:00",
+      closes: "18:00",
+    },
+  ],
+  priceRange: "₹₹",
+  currenciesAccepted: "INR",
+  paymentAccepted: "Cash, Credit Card, Debit Card, UPI, Net Banking",
+  areaServed: [
+    { "@type": "City", name: "Hyderabad" },
+    { "@type": "City", name: "Secunderabad" },
+  ],
+  sameAs: [
+    "https://www.instagram.com/turbofix",
+    "https://www.facebook.com/turbofix",
+    "https://twitter.com/turbofix",
+    "https://www.youtube.com/@turbofix",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Mobile Repair Services",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "RepairService", name: "Screen Replacement", serviceType: "Mobile Phone Screen Repair" } },
+      { "@type": "Offer", itemOffered: { "@type": "RepairService", name: "Battery Replacement", serviceType: "Mobile Phone Battery Repair" } },
+      { "@type": "Offer", itemOffered: { "@type": "RepairService", name: "Charging Port Repair", serviceType: "Mobile Phone Charging Port Repair" } },
+      { "@type": "Offer", itemOffered: { "@type": "RepairService", name: "Water Damage Recovery", serviceType: "Mobile Phone Water Damage Repair" } },
+      { "@type": "Offer", itemOffered: { "@type": "RepairService", name: "Camera Repair", serviceType: "Mobile Phone Camera Repair" } },
+      { "@type": "Offer", itemOffered: { "@type": "RepairService", name: "Speaker & Mic Repair", serviceType: "Mobile Phone Speaker Repair" } },
+      { "@type": "Offer", itemOffered: { "@type": "RepairService", name: "Back Glass Replacement", serviceType: "Mobile Phone Back Panel Repair" } },
+      { "@type": "Offer", itemOffered: { "@type": "RepairService", name: "Motherboard Repair", serviceType: "Mobile Phone Motherboard Repair" } },
+    ],
+  },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "2400",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  review: [
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Rahul Sharma" },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody: "Got my iPhone 14 screen replaced in 35 minutes at my office in HITEC City. The technician was professional and the screen quality is excellent. Highly recommend TurboFix!",
+      datePublished: "2024-11-15",
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Priya Reddy" },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody: "Samsung S23 battery replaced at home. The TurboFix technician arrived on time, explained everything, and the repair was done in 25 minutes. 6-month warranty is a great bonus.",
+      datePublished: "2024-12-03",
+    },
+    {
+      "@type": "Review",
+      author: { "@type": "Person", name: "Mohammed Aslam" },
+      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+      reviewBody: "Water damage repair done on my OnePlus 11. Thought the phone was dead — TurboFix recovered it completely. Transparent pricing and no hidden charges.",
+      datePublished: "2025-01-20",
+    },
+  ],
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://turbofix.in/#organization",
+  name: "TurboFix",
+  url: "https://turbofix.in",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://turbofix.in/logo.png",
+    width: 200,
+    height: 200,
+  },
+  foundingDate: "2023",
+  foundingLocation: {
+    "@type": "Place",
+    name: "Hyderabad, Telangana, India",
+  },
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+918639605147",
+      contactType: "customer service",
+      areaServed: "IN",
+      availableLanguage: ["en", "hi", "te"],
+      hoursAvailable: {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        opens: "09:00",
+        closes: "21:00",
+      },
+    },
+    {
+      "@type": "ContactPoint",
+      contactType: "technical support",
+      email: "support@turbofix.in",
+      areaServed: "IN",
+    },
+  ],
+  sameAs: [
+    "https://www.instagram.com/turbofix",
+    "https://www.facebook.com/turbofix",
+    "https://twitter.com/turbofix",
+    "https://www.youtube.com/@turbofix",
+  ],
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://turbofix.in/#website",
+  name: "TurboFix",
+  url: "https://turbofix.in",
+  description: "Doorstep mobile repair service in Hyderabad — certified technicians, OEM parts, 6-month warranty",
+  publisher: { "@id": "https://turbofix.in/#organization" },
+  inLanguage: "en-IN",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://turbofix.in/services?q={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" className={`${inter.variable} ${syne.variable} ${jetbrainsMono.variable}`}>
+      <head>
+        <link rel="canonical" href="https://turbofix.in" />
+      </head>
+      <body className="bg-[#02040F] text-white overflow-x-hidden">
+        {/* JSON-LD — plain <script> tags so Google Rich Results Test detects them */}
+        <JsonLd schema={localBusinessSchema} id="schema-local-business" />
+        <JsonLd schema={organizationSchema} id="schema-organization" />
+        <JsonLd schema={websiteSchema} id="schema-website" />
+
+        <LoadingScreen />
+        <Navbar />
+        <main className="min-h-screen">
+          {children}
+        </main>
+        <Footer />
+        <WhatsAppButton />
+        <Toaster
+          position="bottom-right"
+          toastOptions={{
+            style: {
+              background: "rgba(5,10,26,0.95)",
+              color: "#fff",
+              border: "1px solid rgba(0,170,255,0.2)",
+              backdropFilter: "blur(20px)",
+            },
+          }}
+        />
+      </body>
+    </html>
+  );
+}
