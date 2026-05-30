@@ -23,7 +23,7 @@ const SECTIONS: Section[] = [
         items: [
           {
             kind: "para",
-            text: "Welcome to TurboFix ("TurboFix", "we", "our", or "us"). TurboFix operates the website turbofix.in and provides mobile device repair, doorstep pickup and delivery, diagnostics, maintenance, and related support services.",
+            text: 'Welcome to TurboFix (“TurboFix”, “we”, “our”, or “us”). TurboFix operates the website turbofix.in and provides mobile device repair, doorstep pickup and delivery, diagnostics, maintenance, and related support services.',
           },
           {
             kind: "para",
@@ -538,7 +538,7 @@ const SECTIONS: Section[] = [
         items: [
           {
             kind: "para",
-            text: "TurboFix may update this Privacy Policy periodically. Any updates will be posted on this page with a revised "Last Updated" date. Continued use of our services after changes become effective constitutes acceptance of the revised Privacy Policy.",
+            text: 'TurboFix may update this Privacy Policy periodically. Any updates will be posted on this page with a revised "Last Updated" date. Continued use of our services after changes become effective constitutes acceptance of the revised Privacy Policy.',
           },
         ],
       },
