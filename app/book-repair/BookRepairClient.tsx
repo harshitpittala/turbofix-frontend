@@ -133,6 +133,92 @@ const brands = [
     ],
   },
   {
+    name: "Nothing", logo: "https://cdn.simpleicons.org/nothing/ffffff", color: "#FF3B30",
+    models: [
+      "Nothing Phone (1)", "Nothing Phone (2)", "Nothing Phone (2a)",
+      "Nothing Phone (2a Plus)", "Nothing Phone (3)",
+      "Nothing Phone (3a)", "Nothing Phone (3a Pro)",
+      "CMF Phone 1", "CMF Phone 2",
+    ],
+  },
+  {
+    name: "ASUS", logo: "https://cdn.simpleicons.org/asus/ffffff", color: "#0055A8",
+    models: [
+      "ROG Phone 8", "ROG Phone 7", "ROG Phone 6", "ROG Phone 5",
+      "Zenfone 10", "Zenfone 9", "Zenfone 8",
+    ],
+  },
+  {
+    name: "Sony", logo: "https://cdn.simpleicons.org/sony/ffffff", color: "#003087",
+    models: [
+      "Xperia 1 VI", "Xperia 1 V",
+      "Xperia 5 V", "Xperia 10 VI",
+    ],
+  },
+  {
+    name: "Nokia", logo: "https://cdn.simpleicons.org/nokia/ffffff", color: "#124191",
+    models: [
+      "Nokia XR21", "Nokia X30", "Nokia G60", "Nokia G42", "Nokia C32",
+    ],
+  },
+  {
+    name: "Huawei", logo: "https://cdn.simpleicons.org/huawei/ffffff", color: "#CF0A2C",
+    models: [
+      "Pura 70", "Mate 60 Pro", "Mate 50 Pro",
+      "P60 Pro", "P50 Pro",
+    ],
+  },
+  {
+    name: "Honor", logo: "https://cdn.simpleicons.org/honor/ffffff", color: "#C1272D",
+    models: [
+      "Magic 6 Pro", "Magic 5 Pro",
+      "Honor 200 Pro", "Honor 200", "Honor 90",
+    ],
+  },
+  {
+    name: "iQOO", logo: "https://cdn.simpleicons.org/iqoo/ffffff", color: "#0055FF",
+    models: [
+      "iQOO 13", "iQOO 12",
+      "iQOO Neo 10", "iQOO Neo 9",
+      "iQOO Z9 Turbo", "iQOO Z9", "iQOO Z7",
+    ],
+  },
+  {
+    name: "POCO", logo: "https://cdn.simpleicons.org/poco/ffffff", color: "#F5CF00",
+    models: [
+      "POCO F6 Pro", "POCO F6", "POCO F5",
+      "POCO X6 Pro", "POCO X6",
+      "POCO M6", "POCO C65",
+    ],
+  },
+  {
+    name: "Infinix", logo: "https://cdn.simpleicons.org/infinix/ffffff", color: "#DA291C",
+    models: [
+      "GT 20 Pro", "Note 50", "Note 40 Pro",
+      "Zero 30", "Smart 8",
+    ],
+  },
+  {
+    name: "Tecno", logo: "https://cdn.simpleicons.org/tecno/ffffff", color: "#0070C0",
+    models: [
+      "Phantom V Fold", "Camon 40", "Camon 30",
+      "Pova 6", "Spark 20",
+    ],
+  },
+  {
+    name: "Lava", logo: "https://cdn.simpleicons.org/lava/ffffff", color: "#E31E24",
+    models: [
+      "Storm 5G", "Agni 3", "Agni 2",
+      "Blaze 3", "Blaze 2",
+    ],
+  },
+  {
+    name: "itel", logo: "https://cdn.simpleicons.org/itel/ffffff", color: "#00AAFF",
+    models: [
+      "Vision 5", "A80", "A70", "P55", "S24",
+    ],
+  },
+  {
     name: "Other", logo: "", color: "#6B7280",
     models: [],
   },
