@@ -84,24 +84,33 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  verification: {
-    google: "your-google-site-verification-token",
-  },
   category: "technology",
+
+  // ── Favicon / App Icons ─────────────────────────────────────────────────────
+  // Google Search requires a PNG/ICO/JPG — SVG is NOT supported for search icons.
+  // Files must exist in /public before building.
+  icons: {
+    icon: [
+      { url: "/favicon.svg",    type: "image/svg+xml"  },   // browser tab fallback
+      { url: "/icon-192.png",   type: "image/png", sizes: "192x192"  },
+      { url: "/icon-512.png",   type: "image/png", sizes: "512x512"  },
+    ],
+    apple:    [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: "/icon-192.png",
+  },
 };
 
 // ── STRUCTURED DATA ──────────────────────────────────────────────────────────
-// Using plain <script> tags (not next/script) so that Google Rich Results Test
-// and Googlebot read the schema from server-rendered HTML.
+// Using explicit classifications to sever any automotive context or AI confusion.
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": ["LocalBusiness", "MobilePhoneRepairShop"],
+  "@type": ["MobilePhoneStore", "HardwareStore"],
   "@id": "https://turbofix.in/#business",
   name: "TurboFix",
   alternateName: ["TurboFix Mobile Repair", "TurboFix Hyderabad"],
   description:
-    "TurboFix is Hyderabad's most trusted doorstep mobile repair service. We offer certified, same-day repair for all brands including Apple iPhone, Samsung Galaxy, OnePlus, Xiaomi, Vivo, Oppo, Realme, Motorola, Google Pixel and Nothing phones — at your home or office.",
+    "TurboFix is a specialized electronics and mobile phone repair shop in Hyderabad. We provide doorstep mobile screen replacement, cell phone battery repairs, charging port troubleshooting, and service for Apple iPhone, Samsung Galaxy, OnePlus, and Android devices.",
   url: "https://turbofix.in",
   logo: {
     "@type": "ImageObject",
