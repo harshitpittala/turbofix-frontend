@@ -1,14 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { toast, Toaster } from "react-hot-toast";
 import { motion, AnimatePresence } from "framer-motion";
-import { API_URL, WHATSAPP_URL } from "@/lib/config";
+import { API_URL } from "@/lib/config";
 import {
   Smartphone, Battery, Camera, Droplets, Mic2, Wifi, Wrench,
-  MonitorSmartphone, Check, ChevronRight, ChevronLeft, Zap,
-  User, Phone, Mail, MapPin, Calendar, Clock, Star, Shield,
-  CheckCircle, Sparkles, ArrowRight, HelpCircle,
+  MonitorSmartphone, Check, ChevronRight, ChevronLeft,
+  User, Phone, Mail, MapPin, Calendar, Star, Shield, HelpCircle,
 } from "lucide-react";
 
 /* ─── Types ─────────────────────────────────────────────────────────────── */
@@ -736,133 +736,12 @@ function StepDetails({ data, setData }: { data: BookingData; setData: (d: Partia
   );
 }
 
-/* ─── Success screen ────────────────────────────────────────────────────── */
-function SuccessScreen({ data, orderId }: { data: BookingData; orderId: string }) {
-  const refId = orderId;
-  return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5, ease: "backOut" }}
-      className="text-center py-12 px-4"
-    >
-      <div className="flex justify-center mb-8">
-        <div className="relative">
-          <motion.div
-            animate={{ scale: [1, 1.2, 1], opacity: [0.4, 0.7, 0.4] }}
-            transition={{ duration: 3, repeat: Infinity }}
-            className="absolute inset-0 rounded-full blur-xl"
-            style={{ background: "rgba(34,197,94,0.4)", transform: "scale(1.5)" }}
-          />
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-            className="relative w-20 h-20 rounded-full flex items-center justify-center"
-            style={{ background: "rgba(34,197,94,0.15)", border: "2px solid rgba(34,197,94,0.4)" }}
-          >
-            <CheckCircle className="w-10 h-10 text-green-400" />
-          </motion.div>
-        </div>
-      </div>
-
-      <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35 }}>
-        <h2 className="font-display text-3xl font-bold text-white mb-3">Booking Confirmed!</h2>
-        <p className="text-gray-400 mb-2 text-base">
-          Hey <span className="text-white font-medium">{data.name}</span>, you're all set.
-        </p>
-        <p className="text-gray-500 text-sm mb-8">
-          Confirmation sent to <span className="text-[#00AAFF]">{data.email}</span>
-        </p>
-
-        <div
-          className="inline-flex items-center gap-3 px-5 py-3 rounded-xl mb-8"
-          style={{ background: "rgba(0,170,255,0.08)", border: "1px solid rgba(0,170,255,0.2)" }}
-        >
-          <Zap className="w-4 h-4 text-[#00AAFF]" />
-          <div className="text-left">
-            <p className="text-xs text-gray-500">Booking Reference</p>
-            <p className="text-white font-mono font-bold text-sm">{refId}</p>
-          </div>
-        </div>
-
-        <div className="grid grid-cols-2 gap-3 mb-10 text-sm text-left max-w-sm mx-auto">
-          {[
-            { icon: "📱", label: "Device", value: `${data.brand === "Other" ? data.customBrand : data.brand} ${data.model}`.trim() },
-            { icon: "🔧", label: "Services", value: `${data.services.length} repair${data.services.length > 1 ? "s" : ""}` },
-            {
-              icon: "📅",
-              label: "Date",
-              value: data.date
-                ? new Date(data.date + "T00:00:00").toLocaleDateString("en-IN", { day: "2-digit", month: "short" })
-                : "—",
-            },
-            { icon: "⏰", label: "Time", value: data.time },
-          ].map((item) => (
-            <div key={item.label} className="glass rounded-xl p-3">
-              <p className="text-lg mb-1">{item.icon}</p>
-              <p className="text-gray-500 text-xs">{item.label}</p>
-              <p className="text-white text-xs font-medium">{item.value}</p>
-            </div>
-          ))}
-        </div>
-
-        <div
-          className="rounded-xl p-5 mb-8 text-left max-w-sm mx-auto"
-          style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}
-        >
-          <p className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-3">
-            What Happens Next
-          </p>
-          {[
-            "You'll receive an SMS & email confirmation",
-            "Our technician will call 30 min before pickup",
-            "Free diagnostic assessment — no payment yet",
-            "Repair approved? We get to work immediately",
-          ].map((s, i) => (
-            <div key={i} className="flex items-start gap-2.5 mb-2 last:mb-0">
-              <div
-                className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 text-[10px] font-bold mt-0.5"
-                style={{ background: "rgba(0,170,255,0.15)", color: "#00AAFF" }}
-              >
-                {i + 1}
-              </div>
-              <p className="text-gray-400 text-xs leading-relaxed">{s}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white"
-            style={{ background: "#25D366" }}
-          >
-            <Sparkles className="w-4 h-4" />
-            WhatsApp Us
-          </a>
-          <a
-            href="/"
-            className="btn-outline-neon flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold"
-          >
-            Back to Home
-            <ArrowRight className="w-4 h-4" />
-          </a>
-        </div>
-      </motion.div>
-    </motion.div>
-  );
-}
-
 /* ─── Main component ────────────────────────────────────────────────────── */
 export default function BookRepairClient() {
+  const router = useRouter();
   const [step, setStep] = useState(0);
   const [direction, setDirection] = useState(1);
-  const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [orderId, setOrderId] = useState("");
 
   const [data, setData] = useState<BookingData>({
     brand: "", customBrand: "", model: "", services: [], issueDesc: "",
@@ -914,8 +793,17 @@ export default function BookRepairClient() {
       const result = await res.json();
       if (!res.ok) throw new Error(result.message || "Booking failed. Please try again.");
 
-      setOrderId(result.data.order_id);
-      setSubmitted(true);
+      sessionStorage.setItem('tfx_booking_success', JSON.stringify({
+        orderId:  result.data.order_id,
+        name:     data.name,
+        email:    data.email,
+        brand:    data.brand === 'Other' ? data.customBrand : data.brand,
+        model:    data.model,
+        services: data.services,
+        date:     data.date,
+        time:     data.time,
+      }));
+      router.push('/book-repair/success');
     } catch (err: any) {
       toast.error(err.message || "Something went wrong. Please try again.", {
         duration: 5000,
@@ -956,23 +844,21 @@ export default function BookRepairClient() {
 
       <div className="relative container max-w-3xl mx-auto px-4 sm:px-6 pt-28 pb-20">
         {/* Page heading */}
-        {!submitted && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-10"
-          >
-            <span className="section-label mb-4 inline-flex">Book a Repair</span>
-            <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-3">
-              Fix It{" "}
-              <span className="gradient-text">Today</span>
-            </h1>
-            <p className="text-gray-400 text-sm sm:text-base">
-              Complete in under 2 minutes · Free diagnostics · No payment upfront
-            </p>
-          </motion.div>
-        )}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-10"
+        >
+          <span className="section-label mb-4 inline-flex">Book a Repair</span>
+          <h1 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold mt-4 mb-3">
+            Fix It{" "}
+            <span className="gradient-text">Today</span>
+          </h1>
+          <p className="text-gray-400 text-sm sm:text-base">
+            Complete in under 2 minutes · Free diagnostics · No payment upfront
+          </p>
+        </motion.div>
 
         {/* Card */}
         <motion.div
@@ -996,10 +882,7 @@ export default function BookRepairClient() {
             }}
           />
 
-          {submitted ? (
-            <SuccessScreen data={data} orderId={orderId} />
-          ) : (
-            <>
+          <>
               {/* Progress header */}
               <div
                 className="px-5 sm:px-8 pt-7 pb-6"
@@ -1146,22 +1029,19 @@ export default function BookRepairClient() {
                 </motion.button>
               </div>
             </>
-          )}
         </motion.div>
 
         {/* Trust bar */}
-        {!submitted && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.7 }}
-            className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-8 text-xs text-gray-600"
-          >
-            {["🔒 Secure booking", "🆓 Free diagnostics", "🛡 6-month warranty", "⚡ Same-day service"].map((t) => (
-              <span key={t}>{t}</span>
-            ))}
-          </motion.div>
-        )}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7 }}
+          className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-8 text-xs text-gray-600"
+        >
+          {["🔒 Secure booking", "🆓 Free diagnostics", "🛡 6-month warranty", "⚡ Same-day service"].map((t) => (
+            <span key={t}>{t}</span>
+          ))}
+        </motion.div>
       </div>
     </div>
   );
