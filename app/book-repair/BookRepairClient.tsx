@@ -133,7 +133,7 @@ const brands = [
     ],
   },
   {
-    name: "Nothing", logo: "https://cdn.simpleicons.org/nothing/ffffff", color: "#FF3B30",
+    name: "Nothing", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Ctext x='14' y='22' text-anchor='middle' fill='white' font-size='22' font-weight='900' font-family='Arial,sans-serif'%3EN%3C/text%3E%3C/svg%3E", color: "#FF3B30",
     models: [
       "Nothing Phone (1)", "Nothing Phone (2)", "Nothing Phone (2a)",
       "Nothing Phone (2a Plus)", "Nothing Phone (3)",
@@ -176,7 +176,7 @@ const brands = [
     ],
   },
   {
-    name: "iQOO", logo: "https://cdn.simpleicons.org/iqoo/ffffff", color: "#0055FF",
+    name: "iQOO", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 20'%3E%3Ctext x='22' y='15' text-anchor='middle' fill='white' font-size='13' font-weight='700' font-family='Arial,sans-serif'%3EiQOO%3C/text%3E%3C/svg%3E", color: "#0055FF",
     models: [
       "iQOO 13", "iQOO 12",
       "iQOO Neo 10", "iQOO Neo 9",
@@ -184,7 +184,7 @@ const brands = [
     ],
   },
   {
-    name: "POCO", logo: "https://cdn.simpleicons.org/poco/ffffff", color: "#F5CF00",
+    name: "POCO", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 20'%3E%3Ctext x='22' y='15' text-anchor='middle' fill='white' font-size='13' font-weight='700' font-family='Arial,sans-serif'%3EPOCO%3C/text%3E%3C/svg%3E", color: "#F5CF00",
     models: [
       "POCO F6 Pro", "POCO F6", "POCO F5",
       "POCO X6 Pro", "POCO X6",
@@ -192,28 +192,28 @@ const brands = [
     ],
   },
   {
-    name: "Infinix", logo: "https://cdn.simpleicons.org/infinix/ffffff", color: "#DA291C",
+    name: "Infinix", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Ctext x='14' y='22' text-anchor='middle' fill='white' font-size='22' font-weight='900' font-family='Arial,sans-serif'%3EX%3C/text%3E%3C/svg%3E", color: "#DA291C",
     models: [
       "GT 20 Pro", "Note 50", "Note 40 Pro",
       "Zero 30", "Smart 8",
     ],
   },
   {
-    name: "Tecno", logo: "https://cdn.simpleicons.org/tecno/ffffff", color: "#0070C0",
+    name: "Tecno", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 20'%3E%3Ctext x='26' y='15' text-anchor='middle' fill='white' font-size='11' font-weight='700' font-family='Arial,sans-serif'%3ETECNO%3C/text%3E%3C/svg%3E", color: "#0070C0",
     models: [
       "Phantom V Fold", "Camon 40", "Camon 30",
       "Pova 6", "Spark 20",
     ],
   },
   {
-    name: "Lava", logo: "https://cdn.simpleicons.org/lava/ffffff", color: "#E31E24",
+    name: "Lava", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 20'%3E%3Ctext x='22' y='15' text-anchor='middle' fill='white' font-size='13' font-weight='700' font-family='Arial,sans-serif'%3ELAVA%3C/text%3E%3C/svg%3E", color: "#E31E24",
     models: [
       "Storm 5G", "Agni 3", "Agni 2",
       "Blaze 3", "Blaze 2",
     ],
   },
   {
-    name: "itel", logo: "https://cdn.simpleicons.org/itel/ffffff", color: "#00AAFF",
+    name: "itel", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 20'%3E%3Ctext x='18' y='15' text-anchor='middle' fill='white' font-size='13' font-weight='700' font-family='Arial,sans-serif'%3Eitel%3C/text%3E%3C/svg%3E", color: "#00AAFF",
     models: [
       "Vision 5", "A80", "A70", "P55", "S24",
     ],
