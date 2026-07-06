@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ArrowRight, Clock, CheckCircle2, Plus } from "lucide-react";
 import { useState } from "react";
@@ -39,14 +40,17 @@ export default function BrandRepairClient({ brand }: Props) {
                     className="w-16 h-16 rounded-2xl flex items-center justify-center shrink-0"
                     style={{ background: `${brand.color}15`, border: `1px solid ${brand.color}30` }}
                   >
-                    <img
-                      src={brand.logo}
-                      alt={`${brand.name} logo`}
-                      width={32}
-                      height={32}
-                      className="object-contain"
-                      onError={(e) => { (e.currentTarget as HTMLImageElement).style.visibility = "hidden"; }}
-                    />
+                    {brand.logo && (
+                      <Image
+                        src={brand.logo}
+                        alt={`${brand.name} logo`}
+                        width={32}
+                        height={32}
+                        className="object-contain"
+                        unoptimized
+                        onError={(e) => { (e.currentTarget as HTMLImageElement).style.visibility = "hidden"; }}
+                      />
+                    )}
                   </div>
                   <span className="section-label">{brand.name}</span>
                 </div>
@@ -70,6 +74,17 @@ export default function BrandRepairClient({ brand }: Props) {
               </motion.div>
             </div>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Independence disclosure */}
+      <section className="relative py-4 border-y border-white/5">
+        <div className="absolute inset-0 bg-[#030712]" />
+        <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
+          <p className="text-center text-xs text-gray-500 leading-relaxed">
+            TurboFix is an independent repair service and is not affiliated with, authorized, sponsored, or endorsed by{" "}
+            {brand.name}. {brand.name} and related trademarks are the property of their respective owners.
+          </p>
         </div>
       </section>
 

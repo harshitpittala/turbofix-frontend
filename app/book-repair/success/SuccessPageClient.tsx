@@ -303,10 +303,16 @@ export default function SuccessPageClient() {
                 className="mt-8 pt-6 flex flex-wrap items-center justify-center gap-4 text-xs text-gray-600"
                 style={{ borderTop: "1px solid rgba(255,255,255,0.05)" }}
               >
-                {["🛡 6-month warranty", "🔒 Secure booking", "🆓 Free diagnostics", "⚡ Same-day service"].map((t) => (
+                {["🛡 6-month warranty", "🔒 Secure booking", "🆓 Free diagnostics", "✅ No fix, no fee"].map((t) => (
                   <span key={t}>{t}</span>
                 ))}
               </motion.div>
+
+              <p className="text-center text-gray-600 text-xs mt-4">
+                <a href="/no-fix-no-fee-policy" className="hover:text-gray-400 underline">
+                  Read our No Fix, No Fee Policy
+                </a>
+              </p>
 
             </motion.div>
           </div>

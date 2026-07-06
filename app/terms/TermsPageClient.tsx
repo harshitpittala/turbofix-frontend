@@ -69,7 +69,7 @@ export default function TermsPageClient() {
             </p>
             <p>
               <strong>Note:</strong> You can also book an appointment through our customer care number:{" "}
-              <strong>8884827842</strong>
+              <strong>+91 86396 05147</strong>
             </p>
 
             {/* Warranty Policy */}
@@ -165,11 +165,27 @@ export default function TermsPageClient() {
               issue after device diagnosis.
             </p>
 
+            {/* Cancellation Policy */}
+            <h3 className="text-2xl font-bold text-white mt-6 mb-3">Cancellation Policy</h3>
+            <ol className="list-decimal list-inside space-y-2 text-gray-300 mb-4">
+              <li>You can cancel or reschedule a booking free of charge any time before a technician is dispatched to your location — call, WhatsApp, or email us and we'll confirm the change.</li>
+              <li>Once a technician has been dispatched or has arrived, cancelling the visit, declining the quoted repair, or the job not being completable for reasons on your side (e.g. no one available, device inaccessible) attracts a minimum ₹499 visit/service charge. This covers the technician's time and travel — it is not a repair fee.</li>
+              <li>If TurboFix needs to cancel or reschedule a confirmed appointment (e.g. parts unavailability, technician unavailability), no charge applies and we will offer the next available slot.</li>
+              <li>No-shows by the customer at the agreed time/location without prior notice may also attract the ₹499 visit charge.</li>
+            </ol>
+            <p>
+              See our <a href="/no-fix-no-fee-policy">No Fix, No Fee Policy</a> for the full breakdown of when this charge does and doesn't apply.
+            </p>
+
             {/* Refund Policy */}
             <h3 className="text-2xl font-bold text-white mt-6 mb-3">Refund Policy</h3>
-            <p>
-              Refunds are not applicable for spare parts once installed, especially display/screen replacements.
-            </p>
+            <ol className="list-decimal list-inside space-y-2 text-gray-300 mb-4">
+              <li>Diagnosis is always free — no charge applies if you haven't approved a repair.</li>
+              <li>Refunds are not applicable for spare parts once installed, especially display/screen replacements, since the part cannot be resold once fitted.</li>
+              <li>If you paid a booking/visit charge and TurboFix is unable to attend at the confirmed time through no fault of yours, the amount will be refunded in full within 5–7 business days to the original payment method.</li>
+              <li>For online payment gateway transactions that fail after the amount is debited, refunds are processed automatically by the payment provider, typically within 5–7 business days.</li>
+              <li>Disputed or duplicate charges should be reported to <a href="mailto:support@turbofix.in">support@turbofix.in</a> with your order number and payment reference — we investigate and respond within 48 hours.</li>
+            </ol>
             <p>Please refer to your invoice or order confirmation email for more information.</p>
 
             {/* Not Covered */}
@@ -236,7 +252,7 @@ export default function TermsPageClient() {
             <p>For support or warranty-related queries:</p>
             <ul className="text-gray-300 space-y-2">
               <li>📧 <a href="mailto:support@turbofix.in">support@turbofix.in</a></li>
-              <li>📞 8884827842</li>
+              <li>📞 +91 86396 05147</li>
               <li>🌐 <a href="https://www.turbofix.in" target="_blank" rel="noopener noreferrer">TurboFix Official Website</a></li>
             </ul>
           </motion.div>

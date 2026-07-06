@@ -8,13 +8,13 @@ import { staggerContainer, fadeInUp } from "@/lib/utils";
 const values = [
   { icon: Target, title: "Precision First", desc: "Every repair is done right the first time. No shortcuts, no compromises.", color: "#00AAFF" },
   { icon: Heart, title: "Customer Obsessed", desc: "We exist to serve you. Your satisfaction defines our success.", color: "#EC4899" },
-  { icon: Award, title: "Quality Always", desc: "OEM parts, certified techniques, and zero compromise on standards.", color: "#F59E0B" },
-  { icon: TrendingUp, title: "Always Improving", desc: "We continuously train and certify our team on the latest devices.", color: "#22C55E" },
+  { icon: Award, title: "Quality Always", desc: "OEM parts, trained repair techniques, and zero compromise on standards.", color: "#F59E0B" },
+  { icon: TrendingUp, title: "Always Improving", desc: "We continuously train our team on the latest devices as new models launch.", color: "#22C55E" },
 ];
 
 const stats = [
-  { value: "12,000+", label: "Devices Repaired" },
-  { value: "5 yrs", label: "In Business" },
+  { value: "1,000+", label: "Devices Repaired" },
+  { value: "2023", label: "Founded" },
   { value: "4.9 ★", label: "Google Rating" },
   { value: "6-mo", label: "Repair Warranty" },
 ];

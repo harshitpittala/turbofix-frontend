@@ -3,14 +3,12 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Zap, Home, ArrowRight, Wrench } from "lucide-react";
-import ParticleBackground from "@/components/common/ParticleBackground";
 
 export default function NotFound() {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#02040F]">
       <div className="absolute inset-0 grid-bg" />
       <div className="absolute inset-0 radial-glow" />
-      <ParticleBackground count={30} />
 
       {/* Glowing orbs */}
       <motion.div

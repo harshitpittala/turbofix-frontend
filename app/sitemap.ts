@@ -4,15 +4,9 @@ import { blogSlugs } from "@/data/sitemapData";
 
 const BASE = "https://turbofix.in";
 
-const brands = [
-  "apple", "samsung", "oneplus", "xiaomi", "vivo",
-  "oppo", "realme", "motorola", "google-pixel", "nothing",
-];
-
-const hyderabadAreas = [
-  "gachibowli", "madhapur", "kukatpally", "ameerpet",
-  "kondapur", "hitech-city", "dilsukhnagar", "lb-nagar",
-];
+// Only brands without a dedicated /[brand]-repair-hyderabad page still live
+// at /repairs/[brand] — the rest 301-redirect there (see next.config.mjs).
+const brands = ["nothing"];
 
 // High-intent service keyword pages
 const servicePages = [
@@ -50,11 +44,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/testimonials`,       lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/blog`,               lastModified: new Date(), changeFrequency: "weekly",  priority: 0.8 },
     { url: `${BASE}/repairs`,            lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
-    { url: `${BASE}/hyderabad`,          lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/locations`,          lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 },
     { url: `${BASE}/sitemap-html`,       lastModified: new Date(), changeFrequency: "monthly", priority: 0.5 },
     { url: `${BASE}/privacy`,            lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },
     { url: `${BASE}/terms`,              lastModified: new Date(), changeFrequency: "yearly",  priority: 0.3 },
+    { url: `${BASE}/no-fix-no-fee-policy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.5 },
   ];
 
   // /repairs/[brand] — brand detail pages
@@ -81,14 +75,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,  // high priority — these target exact search queries
   }));
 
-  // /hyderabad/[area] — legacy area pages
-  const areaPages: MetadataRoute.Sitemap = hyderabadAreas.map((area) => ({
-    url: `${BASE}/hyderabad/${area}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.75,
-  }));
-
   // /locations/[area] — comprehensive location pages (80+)
   const locationPages: MetadataRoute.Sitemap = locationData.map((loc) => ({
     url: `${BASE}/locations/${loc.slug}`,
@@ -110,7 +96,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...brandCityPagesMap,   // brand+city pages get high priority
     ...servicePagesMap,     // service pages get high priority
     ...brandDetailPages,
-    ...areaPages,
     ...locationPages,
     ...blogPages,
   ];

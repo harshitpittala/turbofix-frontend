@@ -13,6 +13,15 @@ export function formatPrice(price: number): string {
   }).format(price);
 }
 
+// Parses a display string like "₹999 – ₹8,999" into numeric bounds for
+// schema.org PriceSpecification (Google's structured data expects numbers,
+// not a formatted string).
+export function parsePriceRange(range: string): { minPrice: number; maxPrice: number } | null {
+  const numbers = range.match(/[\d,]+/g)?.map((n) => Number(n.replace(/,/g, "")));
+  if (!numbers || numbers.length === 0) return null;
+  return { minPrice: Math.min(...numbers), maxPrice: Math.max(...numbers) };
+}
+
 export function slugify(str: string): string {
   return str
     .toLowerCase()

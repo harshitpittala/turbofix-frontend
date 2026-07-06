@@ -1,22 +1,23 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
 
 const brands = [
-  { name: "Apple",    icon: "https://cdn.simpleicons.org/apple/ffffff",    color: "#A0A0A0" },
-  { name: "Samsung",  icon: "https://cdn.simpleicons.org/samsung/ffffff",  color: "#1428A0" },
-  { name: "OnePlus",  icon: "https://cdn.simpleicons.org/oneplus/ffffff",  color: "#F5010C" },
-  { name: "Xiaomi",   icon: "https://cdn.simpleicons.org/xiaomi/ffffff",   color: "#FF6900" },
-  { name: "OPPO",     icon: "https://cdn.simpleicons.org/oppo/ffffff",     color: "#1D8348" },
-  { name: "Vivo",     icon: "https://cdn.simpleicons.org/vivo/ffffff",     color: "#415FFF" },
-  { name: "Realme",   icon: "https://cdn.simpleicons.org/realme/ffffff",   color: "#FEC400" },
-  { name: "Google",   icon: "https://cdn.simpleicons.org/google/ffffff",   color: "#4285F4" },
-  { name: "Motorola", icon: "https://cdn.simpleicons.org/motorola/ffffff", color: "#EB5A1B" },
-  { name: "Nokia",    icon: "https://cdn.simpleicons.org/nokia/ffffff",    color: "#124191" },
-  { name: "Sony",     icon: "https://cdn.simpleicons.org/sony/ffffff",     color: "#003791" },
-  { name: "Nothing",  icon: "https://cdn.simpleicons.org/nothing/ffffff",  color: "#E5E5E5" },
+  { name: "Apple",    icon: "/images/brands/apple.svg",    color: "#A0A0A0" },
+  { name: "Samsung",  icon: "/images/brands/samsung.svg",  color: "#1428A0" },
+  { name: "OnePlus",  icon: "/images/brands/oneplus.svg",  color: "#F5010C" },
+  { name: "Xiaomi",   icon: "/images/brands/xiaomi.svg",   color: "#FF6900" },
+  { name: "OPPO",     icon: "/images/brands/oppo.svg",     color: "#1D8348" },
+  { name: "Vivo",     icon: "/images/brands/vivo.svg",     color: "#415FFF" },
+  { name: "Realme",   icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Ctext x='14' y='22' text-anchor='middle' fill='white' font-size='22' font-weight='900' font-family='Arial,sans-serif'%3ER%3C/text%3E%3C/svg%3E",   color: "#FEC400" },
+  { name: "Google",   icon: "/images/brands/google.svg",   color: "#4285F4" },
+  { name: "Motorola", icon: "/images/brands/motorola.svg", color: "#EB5A1B" },
+  { name: "Nokia",    icon: "/images/brands/nokia.svg",    color: "#124191" },
+  { name: "Sony",     icon: "/images/brands/sony.svg",     color: "#003791" },
+  { name: "Nothing",  icon: "/images/brands/nothing.svg",  color: "#E5E5E5" },
 ];
 
 const doubled = [...brands, ...brands];
@@ -71,14 +72,13 @@ export default function Brands() {
                 border: "1px solid rgba(255,255,255,0.06)",
               }}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={brand.icon}
                 alt={brand.name}
                 width={18}
                 height={18}
                 className="opacity-80"
-                style={{ filter: "none" }}
+                unoptimized
                 onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
               />
               <span className="text-gray-300 text-sm font-medium">{brand.name}</span>
@@ -103,14 +103,13 @@ export default function Brands() {
                 border: "1px solid rgba(255,255,255,0.05)",
               }}
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={brand.icon}
                 alt={brand.name}
                 width={16}
                 height={16}
                 className="opacity-50"
-                style={{ filter: "none" }}
+                unoptimized
                 onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
               />
               <span className="text-gray-400 text-sm">{brand.name}</span>

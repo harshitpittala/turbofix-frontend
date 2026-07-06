@@ -5,7 +5,6 @@ import Script from "next/script";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
-import LoadingScreen from "@/components/common/LoadingScreen";
 import { Toaster } from "react-hot-toast";
 import { JsonLd } from "@/components/seo/JsonLd";
 
@@ -34,7 +33,7 @@ export const metadata: Metadata = {
     template: "%s | TurboFix",
   },
   description:
-    "TurboFix — Hyderabad's most trusted doorstep mobile repair service. Screen replacement, battery replacement, charging port repair, water damage, iPhone & Samsung repair. Certified technicians, OEM parts, 6-month warranty. Book now!",
+    "TurboFix — doorstep mobile repair service in Hyderabad. Screen replacement, battery replacement, charging port repair, water damage, iPhone & Samsung repair. Trained technicians, OEM parts, 6-month warranty. Book now!",
   keywords: [
     "mobile repair hyderabad", "doorstep mobile repair hyderabad",
     "iphone repair hyderabad", "samsung repair hyderabad",
@@ -57,7 +56,7 @@ export const metadata: Metadata = {
     url: "https://turbofix.in",
     title: "TurboFix — Mobile Repair at Your Doorstep | Hyderabad",
     description:
-      "Certified doorstep mobile repair in Hyderabad. Screen, battery, charging port, water damage repair for iPhone, Samsung, OnePlus & more. OEM parts, 6-month warranty.",
+      "Professional doorstep mobile repair in Hyderabad. Screen, battery, charging port, water damage repair for iPhone, Samsung, OnePlus & more. OEM parts, 6-month warranty.",
     siteName: "TurboFix",
     images: [{
       url: "https://turbofix.in/og-image.jpg",
@@ -176,36 +175,9 @@ const localBusinessSchema = {
       { "@type": "Offer", itemOffered: { "@type": "RepairService", name: "Motherboard Repair", serviceType: "Mobile Phone Motherboard Repair" } },
     ],
   },
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "2400",
-    bestRating: "5",
-    worstRating: "1",
-  },
-  review: [
-    {
-      "@type": "Review",
-      author: { "@type": "Person", name: "Rahul Sharma" },
-      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-      reviewBody: "Got my iPhone 14 screen replaced in 35 minutes at my office in HITEC City. The technician was professional and the screen quality is excellent. Highly recommend TurboFix!",
-      datePublished: "2024-11-15",
-    },
-    {
-      "@type": "Review",
-      author: { "@type": "Person", name: "Priya Reddy" },
-      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-      reviewBody: "Samsung S23 battery replaced at home. The TurboFix technician arrived on time, explained everything, and the repair was done in 25 minutes. 6-month warranty is a great bonus.",
-      datePublished: "2024-12-03",
-    },
-    {
-      "@type": "Review",
-      author: { "@type": "Person", name: "Mohammed Aslam" },
-      reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-      reviewBody: "Water damage repair done on my OnePlus 11. Thought the phone was dead — TurboFix recovered it completely. Transparent pricing and no hidden charges.",
-      datePublished: "2025-01-20",
-    },
-  ],
+  // NOTE: aggregateRating / review markup intentionally omitted.
+  // Google penalizes fabricated review schema; only add this back once wired
+  // to a real, verifiable review source (e.g. Google Business Profile API).
 };
 
 const organizationSchema = {
@@ -260,7 +232,7 @@ const websiteSchema = {
   "@id": "https://turbofix.in/#website",
   name: "TurboFix",
   url: "https://turbofix.in",
-  description: "Doorstep mobile repair service in Hyderabad — certified technicians, OEM parts, 6-month warranty",
+  description: "Doorstep mobile repair service in Hyderabad — trained technicians, OEM parts, 6-month warranty",
   publisher: { "@id": "https://turbofix.in/#organization" },
   inLanguage: "en-IN",
   potentialAction: {
@@ -285,7 +257,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <JsonLd schema={organizationSchema} id="schema-organization" />
         <JsonLd schema={websiteSchema} id="schema-website" />
 
-        <LoadingScreen />
         <Navbar />
         <main className="min-h-screen">
           {children}

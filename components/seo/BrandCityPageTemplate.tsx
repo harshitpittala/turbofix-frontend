@@ -84,6 +84,17 @@ export default function BrandCityPageTemplate({ page }: Props) {
         </div>
       </section>
 
+      {/* ── INDEPENDENCE DISCLOSURE ── */}
+      <section className="relative py-4 border-y border-white/5">
+        <div className="absolute inset-0 bg-[#030712]" />
+        <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
+          <p className="text-center text-xs text-gray-500 leading-relaxed">
+            TurboFix is an independent repair service and is not affiliated with, authorized, sponsored, or endorsed by{" "}
+            {page.brand}. {page.brand} and related trademarks are the property of their respective owners.
+          </p>
+        </div>
+      </section>
+
       {/* ── TRUST STRIP ── */}
       <section className="relative py-6 border-y border-white/5">
         <div className="absolute inset-0 bg-[#030712]" />
@@ -198,7 +209,6 @@ export default function BrandCityPageTemplate({ page }: Props) {
             <motion.h3 variants={fadeInUp} className="text-white font-semibold mb-5">Explore More</motion.h3>
             <div className="flex flex-wrap gap-3">
               {[
-                { label: `${page.brand} Repair Details`, href: `/repairs/${page.brandSlug}` },
                 { label: "All Brand Repairs", href: "/repairs" },
                 { label: "Screen Replacement", href: "/screen-replacement-hyderabad" },
                 { label: "Battery Replacement", href: "/battery-replacement-hyderabad" },

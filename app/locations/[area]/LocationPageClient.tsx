@@ -185,7 +185,7 @@ export default function LocationPageClient({ area, faqs }: Props) {
               { icon: <Clock className="w-4 h-4 text-[#00AAFF]" />, text: "Same-day repair in most slots" },
               { icon: <Shield className="w-4 h-4 text-[#22C55E]" />, text: "6-month repair warranty" },
               { icon: <Star className="w-4 h-4 text-[#F59E0B]" />, text: "4.9★ from 2,400+ customers" },
-              { icon: <CheckCircle className="w-4 h-4 text-[#7C3AED]" />, text: "OEM-grade parts, certified tech" },
+              { icon: <CheckCircle className="w-4 h-4 text-[#7C3AED]" />, text: "OEM-grade parts, trained technicians" },
               { icon: <Wrench className="w-4 h-4 text-[#EC4899]" />, text: "Pay after repair — zero upfront" },
             ].map(({ icon, text }) => (
               <div key={text} className="flex items-center gap-2">
@@ -393,7 +393,7 @@ export default function LocationPageClient({ area, faqs }: Props) {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 { step: "01", title: "Book Online",       desc: `Select your repair, choose a time slot, and enter your ${area.name} address.` },
-                { step: "02", title: "Technician Arrives", desc: `A certified TurboFix technician arrives at your door in ${area.name} at the chosen time.` },
+                { step: "02", title: "Technician Arrives", desc: `A trained TurboFix technician arrives at your door in ${area.name} at the chosen time.` },
                 { step: "03", title: "Repair Done",       desc: "Most repairs complete in 20–45 minutes at your home or office. No travel needed." },
                 { step: "04", title: "Pay & Warranty",    desc: "Pay only after the repair. Receive your 6-month warranty documentation." },
               ].map((item, i) => (

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import { Plus } from "lucide-react";
 import CTA from "@/components/home/CTA";
 import { staggerContainer, fadeInUp } from "@/lib/utils";
@@ -11,7 +12,7 @@ const allFaqs = [
     category: "Repair Process",
     items: [
       { q: "How long does a typical repair take?", a: "Most common repairs — screen replacements, battery swaps, charging port fixes — are done in 20–45 minutes. Complex jobs like water damage recovery or motherboard repair may take 2–4 hours or up to a day." },
-      { q: "Do I need to book an appointment?", a: "Walk-ins are welcome, but we strongly recommend booking online to reserve your slot. This guarantees a technician is ready for you and minimizes wait time." },
+      { q: "Do I need to book an appointment?", a: "Walk-ins are welcome, but we strongly recommend booking online to reserve your slot. This ensures a technician is ready for you and minimizes wait time." },
       { q: "Can I wait in-store while my phone is being repaired?", a: "Absolutely! Our waiting area has complimentary coffee, fast Wi-Fi, and a loaner device if needed. We'll text you when your repair is complete." },
       { q: "Do you offer home pickup and delivery?", a: "Yes, within 10 km of our Hitech City store. Book online, choose doorstep service, and we handle the rest — same-day in most cases." },
     ],
@@ -25,7 +26,7 @@ const allFaqs = [
     ],
   },
   {
-    category: "Warranty & Guarantee",
+    category: "Warranty & Policies",
     items: [
       { q: "What warranty do you offer?", a: "All repairs carry a 6-month warranty. If the same issue recurs within 6 months due to parts or workmanship, we fix it free. Physical damage and new issues are not covered." },
       { q: "What if my phone develops a new problem after repair?", a: "If the new issue is related to our repair, it's covered under warranty. If it's an unrelated problem, we'll diagnose it for free and give you a fair quote." },
@@ -151,6 +152,13 @@ export default function FAQPageClient() {
             >
               Ask on WhatsApp
             </a>
+            <p className="text-gray-500 text-sm mt-5">
+              Read our full{" "}
+              <Link href="/no-fix-no-fee-policy" className="text-[#00AAFF] hover:underline">
+                No Fix, No Fee Policy
+              </Link>{" "}
+              for warranty scope and visit-charge details.
+            </p>
           </div>
         </div>
       </section>

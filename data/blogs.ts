@@ -177,7 +177,7 @@ export const blogs: BlogPost[] = [
       },
       {
         faq: [
-          { q: "Will iPhone screen replacement affect Face ID?", a: "When done correctly with proper tools and calibration, Face ID remains fully functional. Cheap screen replacements from unqualified shops can sometimes affect Face ID — our technicians are iPhone-certified and handle Face ID components with care." },
+          { q: "Will iPhone screen replacement affect Face ID?", a: "When done correctly with proper tools and calibration, Face ID remains fully functional. Cheap screen replacements from unqualified shops can sometimes affect Face ID — our technicians are trained on iPhone-specific repair procedures and handle Face ID components with care." },
           { q: "Does TurboFix offer warranty on iPhone screen replacement?", a: "Yes — all screen replacements carry a 6-month warranty. If the screen develops defects within 6 months due to parts or workmanship, we replace it free." },
           { q: "How much does iPhone screen replacement cost in Hyderabad?", a: "Prices vary by model. iPhone 15 Pro Max screens cost more than iPhone 11 screens due to the advanced OLED technology. WhatsApp or call us for an instant quote on your specific model." },
         ],
@@ -198,7 +198,7 @@ export const blogs: BlogPost[] = [
       },
       {
         heading: "Understanding Samsung's AMOLED Displays",
-        text: "Samsung manufactures some of the world's best smartphone displays — the same AMOLED panels used in Samsung Galaxy phones are also sold to Apple for iPhones and to other manufacturers. This means replacement AMOLED screens are available in both genuine and aftermarket quality. The difference in color accuracy, brightness, and viewing angles between quality levels is very noticeable on Samsung devices.",
+        text: "Samsung manufactures some of the industry's highest-regarded smartphone displays — the same AMOLED panels used in Samsung Galaxy phones are also sold to Apple for iPhones and to other manufacturers. This means replacement AMOLED screens are available in both genuine and aftermarket quality. The difference in color accuracy, brightness, and viewing angles between quality levels is very noticeable on Samsung devices.",
       },
       {
         heading: "Samsung Models We Repair",
@@ -668,7 +668,7 @@ export const blogs: BlogPost[] = [
       },
       {
         heading: "TurboFix Screen Protector Installation",
-        text: "We install premium tempered glass screen protectors in our dust-free booth for a guaranteed bubble-free finish. Our premium range comes with a lifetime replacement guarantee — if it cracks from a drop, bring it back and we replace it free, forever.",
+        text: "We install premium tempered glass screen protectors in our dust-free booth for a bubble-free finish. Our premium range includes free replacement for 12 months if it cracks from a drop — ask in-store for full terms.",
       },
     ],
   },
@@ -840,11 +840,11 @@ export const blogs: BlogPost[] = [
       },
       {
         heading: "Step 1: Book Your Repair Online",
-        text: "Visit turbofix.in/book-repair, select your device brand, enter your device model, choose the repair you need, and select a pickup time that suits you. You'll receive an instant booking confirmation with a reference number via email and WhatsApp.",
+        text: "Visit turbofix.in/book-repair, select your device brand, enter your device model, choose the repair you need, and select a pickup time that suits you. You'll receive a booking confirmation with a reference number via email and WhatsApp.",
       },
       {
         heading: "Step 2: We Come to You",
-        text: "Our certified technician arrives at your location within the scheduled window carrying all the tools, parts, and equipment needed for your repair. They'll call ahead 15 minutes before arrival. We service all of Hyderabad — from Gachibowli and Madhapur to Dilsukhnagar and LB Nagar.",
+        text: "Our trained technician arrives at your location within the scheduled window carrying all the tools, parts, and equipment needed for your repair. They'll call ahead 15 minutes before arrival. We service all of Hyderabad — from Gachibowli and Madhapur to Dilsukhnagar and LB Nagar.",
       },
       {
         heading: "Step 3: Diagnosis and Quote Confirmation",
@@ -1008,11 +1008,11 @@ export const blogs: BlogPost[] = [
       {
         heading: "Why TurboFix Stands Out in Hyderabad",
         list: [
-          "Certified technicians with brand-specific training",
+          "Trained technicians with brand-specific experience",
           "Full transparency on parts grade before repair begins",
           "6-month warranty on all repairs, documented digitally",
           "Confirmed quote before any work — no hidden charges",
-          "4.9-star Google rating with over 1,200 verified reviews",
+          "4.9-star Google rating from 2,400+ customer reviews",
           "Doorstep service across all Hyderabad areas",
           "Data privacy commitment — we never access your files",
         ],
@@ -1031,8 +1031,8 @@ export const blogs: BlogPost[] = [
       {
         faq: [
           { q: "Is it safe to hand over my phone to a repair shop?", a: "With a reputable shop, yes. TurboFix never accesses your personal data, photos, or messages. We only access the hardware components being repaired. For sensitive devices, you can change your PIN before and after repair." },
-          { q: "Can I trust repair shops in Hyderabad?", a: "Quality varies significantly. Look for shops with verified Google reviews, physical locations, and clear warranty policies. TurboFix has a 4.9-star rating from 1,200+ verified Hyderabad customers." },
-          { q: "Why is TurboFix different from local repair shops?", a: "TurboFix operates at a studio standard — certified technicians, grade-A parts, digital invoicing, 6-month warranty, and doorstep service. We're not a kiosk; we're a professional repair service." },
+          { q: "Can I trust repair shops in Hyderabad?", a: "Quality varies significantly. Look for shops with verified Google reviews, physical locations, and clear warranty policies. TurboFix has a 4.9-star rating from 2,400+ verified Hyderabad customers." },
+          { q: "Why is TurboFix different from local repair shops?", a: "TurboFix operates at a studio standard — trained technicians, grade-A parts, digital invoicing, 6-month warranty, and doorstep service. We're not a kiosk; we're a professional repair service." },
         ],
       },
     ],

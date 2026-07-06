@@ -27,7 +27,7 @@ const steps = [
     number: "03",
     icon: Wrench,
     title: "Expert Repair",
-    desc: "Once you approve the quote, our certified engineers get to work. Most repairs are completed in under 30 minutes.",
+    desc: "Once you approve the quote, our trained engineers get to work. Most repairs are completed in under 30 minutes.",
     color: "#EC4899",
     highlight: "~30 min average",
   },

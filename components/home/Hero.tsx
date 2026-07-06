@@ -7,9 +7,10 @@ import { TypeAnimation } from "react-type-animation";
 import {
   Zap, ArrowRight, Star, Shield, Clock, ChevronDown,
   ChevronLeft, Activity, MessageSquare, Calendar,
-  Smartphone,
+  Smartphone, MessageCircle,
 } from "lucide-react";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
+import { WHATSAPP_URL } from "@/lib/config";
 
 /* ── Floating badges ─────────────────────────────────────────────────── */
 const floatingBadges = [
@@ -252,7 +253,7 @@ function Screen2() {
             <p className="text-[8px] text-white font-semibold">Vikram Rao</p>
             <div className="flex items-center gap-1">
               <Star className="w-2 h-2 fill-amber-400 text-amber-400" />
-              <span className="text-[7px] text-gray-400">4.9 · 12 yrs exp</span>
+              <span className="text-[7px] text-gray-400">4.9 · Verified Tech</span>
             </div>
           </div>
           <div className="text-right shrink-0">
@@ -528,7 +529,7 @@ export default function Hero() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00AAFF] opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00AAFF]" />
                 </span>
-                Hyderabad's #1 Repair Studio
+                Rated 4.9★ by 1,000+ Hyderabad Customers
               </span>
             </motion.div>
 
@@ -559,9 +560,9 @@ export default function Hero() {
               className="text-gray-400 text-base lg:text-lg xl:text-xl leading-relaxed mb-10 max-w-lg"
             >
               Premium mobile repairs with{" "}
-              <span className="text-white font-medium">certified technicians</span>,{" "}
-              <span className="text-white font-medium">genuine OEM parts</span>, and a
-              satisfaction guarantee — delivered in 30 minutes or less.
+              <span className="text-white font-medium">trained technicians</span>,{" "}
+              <span className="text-white font-medium">genuine OEM parts</span>, and
+              transparent pricing — most repairs completed in about 30 minutes.
             </motion.p>
 
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-3 sm:gap-4 mb-10 sm:mb-12">
@@ -573,6 +574,17 @@ export default function Hero() {
                 Book Instant Repair
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
+
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 sm:px-7 py-3.5 sm:py-4 rounded-xl font-semibold text-white flex items-center gap-2 sm:gap-2.5 text-sm sm:text-base transition-transform hover:-translate-y-0.5"
+                style={{ background: "#25D366", boxShadow: "0 4px 20px rgba(37,211,102,0.3)" }}
+              >
+                <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+                WhatsApp Enquire
+              </a>
             </motion.div>
 
             {/* ── Social proof ──────────────────────────────────────── */}

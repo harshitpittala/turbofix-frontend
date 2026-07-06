@@ -4,12 +4,12 @@ import AboutPage from "./AboutPage";
 export const metadata: Metadata = {
   title: "About TurboFix — Our Story, Mission & Values",
   description:
-    "Learn about TurboFix — Hyderabad's most trusted mobile repair service. Our story, mission, team of expert technicians, and commitment to quality repairs with genuine parts.",
+    "Learn about TurboFix — a doorstep mobile repair service in Hyderabad. Our story, mission, team of trained technicians, and commitment to quality repairs with OEM-grade parts.",
   alternates: { canonical: "https://turbofix.in/about" },
   openGraph: {
     title: "About TurboFix — Our Story, Mission & Values",
     description:
-      "Meet the team behind Hyderabad's fastest mobile repair studio. Certified technicians, genuine parts, 6-month warranty on all repairs.",
+      "Meet the team behind TurboFix's Hyderabad doorstep repair studio. Trained technicians, OEM-grade parts, 6-month warranty on all repairs.",
     url: "https://turbofix.in/about",
   },
 };

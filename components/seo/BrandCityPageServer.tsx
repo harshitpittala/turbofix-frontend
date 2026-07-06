@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import BrandCityPageTemplate from "./BrandCityPageTemplate";
 import { getBrandCityPageBySlug } from "@/data/brandCityPages";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { parsePriceRange } from "@/lib/utils";
 
 interface Props { slug: string }
 
@@ -18,13 +19,24 @@ export default function BrandCityPageServer({ slug }: Props) {
     serviceType: `${page.brand} Mobile Phone Repair`,
     provider: { "@id": "https://turbofix.in/#business" },
     areaServed: { "@type": "City", name: "Hyderabad" },
-    offers: page.topRepairs.map((r) => ({
-      "@type": "Offer",
-      name: r.name,
-      description: r.desc,
-      priceCurrency: "INR",
-      availability: "https://schema.org/InStock",
-    })),
+    offers: page.topRepairs.map((r) => {
+      const priceBounds = parsePriceRange(r.price);
+      return {
+        "@type": "Offer",
+        name: r.name,
+        description: r.desc,
+        priceCurrency: "INR",
+        ...(priceBounds && {
+          priceSpecification: {
+            "@type": "PriceSpecification",
+            priceCurrency: "INR",
+            minPrice: priceBounds.minPrice,
+            maxPrice: priceBounds.maxPrice,
+          },
+        }),
+        availability: "https://schema.org/InStock",
+      };
+    }),
   };
 
   const faqSchema = {

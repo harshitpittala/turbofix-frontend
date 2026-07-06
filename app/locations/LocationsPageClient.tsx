@@ -57,7 +57,7 @@ export default function LocationsPageClient() {
             <motion.p variants={fadeInUp} className="text-gray-400 text-xl leading-relaxed mb-10">
               TurboFix doorstep repair now covers{" "}
               <span className="text-white font-semibold">80+ Hyderabad localities</span> — from HITEC
-              City to Charminar, from Kompally to Shamshabad. Book online and a certified
+              City to Charminar, from Kompally to Shamshabad. Book online and a trained
               technician arrives at your door.
             </motion.p>
 
@@ -204,7 +204,7 @@ export default function LocationsPageClient() {
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-gray-400 text-lg max-w-2xl mx-auto">
               Whether you're in a HITEC City apartment, an old-city lane near Charminar, or a
-              villa on the ORR — TurboFix brings the same certified repair to your door.
+              villa on the ORR — TurboFix brings the same repair quality to your door.
             </motion.p>
           </motion.div>
 
@@ -212,7 +212,7 @@ export default function LocationsPageClient() {
             {[
               {
                 icon: "🔧",
-                title: "Certified Technicians",
+                title: "Trained Technicians",
                 desc: "Background-verified, brand-trained technicians for all Android and iOS devices.",
               },
               {

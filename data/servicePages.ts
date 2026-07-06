@@ -24,7 +24,7 @@ export const servicePages: ServicePageData[] = [
     h1: "Mobile Screen Replacement in Hyderabad",
     tagline: "Cracked screen? We fix it at your door in 30–45 minutes.",
     intro:
-      "A cracked or shattered phone screen doesn't mean the end of your device. TurboFix brings certified screen replacement service directly to your home or office across Hyderabad — using OEM-quality displays that restore original brightness, colour accuracy, and touch sensitivity.",
+      "A cracked or shattered phone screen doesn't mean the end of your device. TurboFix brings professional screen replacement service directly to your home or office across Hyderabad — using OEM-quality displays that restore original brightness, colour accuracy, and touch sensitivity.",
     whyNeeded:
       "Phone screens are the most commonly damaged component — drops, pressure, and impacts break the glass and damage the display layers underneath. A broken screen isn't just cosmetic: touch unresponsiveness, dead pixels, or screen blackout make the phone unusable. Delaying the repair risks further internal damage from exposed components.",
     symptoms: [
@@ -69,7 +69,7 @@ export const servicePages: ServicePageData[] = [
     h1: "Mobile Battery Replacement in Hyderabad",
     tagline: "Fast battery drain or sudden shutdowns? New battery in 20 minutes.",
     intro:
-      "All lithium-ion batteries degrade over time — typically losing significant capacity after 500 charge cycles. TurboFix brings same-day battery replacement to your doorstep across Hyderabad, restoring full-day battery life with certified batteries and a 6-month warranty.",
+      "All lithium-ion batteries degrade over time — typically losing significant capacity after 500 charge cycles. TurboFix brings same-day battery replacement to your doorstep across Hyderabad, restoring full-day battery life with OEM-quality batteries and a 6-month warranty.",
     whyNeeded:
       "A degraded battery doesn't just mean shorter battery life — it causes unexpected shutdowns, slow performance throttling (especially on iPhones), and eventually the battery may swell, which can warp the device body and damage other internal components. Replacing the battery at the right time extends your phone's usable life by 2–3 years.",
     symptoms: [
@@ -84,7 +84,7 @@ export const servicePages: ServicePageData[] = [
     process: [
       { step: "01", title: "Battery Health Test", desc: "We run a diagnostic to confirm actual battery health percentage and charge cycle count before recommending replacement." },
       { step: "02", title: "Confirmed Quote", desc: "Battery replacement price varies by model. We confirm the exact cost before opening the device." },
-      { step: "03", title: "Battery Swap", desc: "Safe disassembly, removal of the old battery with heat-based adhesive release, installation of the new certified battery." },
+      { step: "03", title: "Battery Swap", desc: "Safe disassembly, removal of the old battery with heat-based adhesive release, installation of the new OEM-quality battery." },
       { step: "04", title: "Charging & Runtime Test", desc: "New battery charged to 100%, fast-charge verified, and battery health percentage confirmed before handover." },
     ],
     priceRange: "₹699 – ₹3,999",
@@ -128,7 +128,7 @@ export const servicePages: ServicePageData[] = [
     ],
     process: [
       { step: "01", title: "Port Inspection & Cleaning", desc: "First, we clean the port with a specialised non-conductive tool to remove lint and debris. Many charging problems are resolved at this step for free." },
-      { step: "02", title: "Cable & Adapter Test", desc: "We test with our certified cables to confirm the issue is the port, not the cable or adapter." },
+      { step: "02", title: "Cable & Adapter Test", desc: "We test with standard reference cables to confirm the issue is the port, not the cable or adapter." },
       { step: "03", title: "Port Replacement (if needed)", desc: "If cleaning doesn't resolve it, we replace the USB-C or Lightning port module. Takes 25–35 minutes." },
       { step: "04", title: "Charging Verification", desc: "Fast charging, data transfer, and wired earphone pass-through (where applicable) all tested before handover." },
     ],
@@ -178,7 +178,7 @@ export const servicePages: ServicePageData[] = [
     ],
     priceRange: "₹999 – ₹5,999",
     repairTime: "2–6 hours (same day for most cases)",
-    warranty: "3 months (nature of water damage limits longer guarantee)",
+    warranty: "3 months (nature of water damage limits a longer warranty period)",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel", "Nothing Phone"],
     faqs: [
       { q: "Can a water-damaged phone be repaired?", a: "Yes — in most cases, water-damaged phones can be fully recovered if repaired promptly. Success rate depends on how long the phone was submerged, type of liquid (fresh water vs salt water), and how quickly repair begins." },
@@ -352,7 +352,7 @@ export const servicePages: ServicePageData[] = [
     ],
     priceRange: "₹2,999 – ₹12,999",
     repairTime: "1–3 days (complexity dependent)",
-    warranty: "3 months (motherboard repair complexity limits longer guarantee)",
+    warranty: "3 months (motherboard repair complexity limits a longer warranty period)",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel"],
     faqs: [
       { q: "How much does motherboard repair cost in Hyderabad?", a: "Motherboard repair at TurboFix costs ₹2,999–₹12,999 depending on the specific component failure and repair complexity. We provide a detailed quote after diagnosis." },

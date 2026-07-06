@@ -26,12 +26,12 @@ export const brandCityPages: BrandCityPageData[] = [
     slug: "iphone-repair-hyderabad",
     brand: "iPhone",
     brandSlug: "apple",
-    h1: "iPhone Repair in Hyderabad — Certified Apple Service",
-    tagline: "Doorstep iPhone repair with OEM parts & Face ID preservation guarantee.",
+    h1: "iPhone Repair in Hyderabad — Independent Doorstep Service",
+    tagline: "Doorstep iPhone repair with OEM-quality parts & Face ID calibration checked on every screen replacement.",
     intro:
-      "TurboFix is Hyderabad's most trusted independent iPhone repair service. We repair all iPhone models from iPhone X to the latest iPhone 15 Pro Max — screen replacements, battery swaps, and complex motherboard repairs — at your doorstep with OEM-quality components and a 6-month warranty.",
+      "TurboFix is an independent iPhone repair service serving Hyderabad. We repair all iPhone models from iPhone X to the latest iPhone 15 Pro Max — screen replacements, battery swaps, and complex motherboard repairs — at your doorstep with OEM-quality components and a 6-month warranty.",
     whyHyderabad:
-      "Hyderabad has one of India's fastest-growing iPhone user bases, driven by the city's large IT and tech professional community. Apple's authorised service centres in Hyderabad often require appointments weeks in advance and carry premium pricing. TurboFix fills this gap — certified iPhone repair, same day, at your HITEC City office or Banjara Hills home.",
+      "Hyderabad has one of India's fastest-growing iPhone user bases, driven by the city's large IT and tech professional community. Apple's authorised service centres in Hyderabad often require appointments weeks in advance and carry premium pricing. TurboFix fills this gap — professional independent iPhone repair, same day, at your HITEC City office or Banjara Hills home.",
     popularModels: [
       "iPhone 15 Pro Max / 15 Pro / 15 Plus / 15",
       "iPhone 14 Pro Max / 14 Pro / 14 Plus / 14",
@@ -43,9 +43,9 @@ export const brandCityPages: BrandCityPageData[] = [
     ],
     topRepairs: [
       { name: "iPhone Screen Replacement", desc: "OEM-quality OLED display. Face ID, True Tone, ProMotion all preserved.", price: "₹2,499 – ₹8,999" },
-      { name: "iPhone Battery Replacement", desc: "MFi-certified battery. Battery Health restored to 100%.", price: "₹1,299 – ₹2,999" },
+      { name: "iPhone Battery Replacement", desc: "OEM-grade battery. Battery Health restored to 100%.", price: "₹1,299 – ₹2,999" },
       { name: "iPhone Charging Port Repair", desc: "Lightning / USB-C port. MagSafe compatibility tested.", price: "₹999 – ₹2,499" },
-      { name: "iPhone Back Glass Replacement", desc: "Precision back glass replacement. IP68 re-sealed.", price: "₹1,499 – ₹3,999" },
+      { name: "iPhone Back Glass Replacement", desc: "Precision back glass replacement with fresh water-resistant adhesive seal.", price: "₹1,499 – ₹3,999" },
       { name: "iPhone Camera Repair", desc: "ProRAW & ProRes capability restored after camera module replacement.", price: "₹1,999 – ₹4,999" },
       { name: "iPhone Water Damage Recovery", desc: "Ultrasonic PCB cleaning. Most iPhones recovered same day.", price: "₹1,999 – ₹5,999" },
     ],
@@ -53,12 +53,12 @@ export const brandCityPages: BrandCityPageData[] = [
       "Face ID and Touch ID fully functional after screen replacement",
       "True Tone calibration preserved on all iPhone 12+ repairs",
       "Battery Health visible and accurate in iOS Settings post-repair",
-      "MFi-certified parts for Lightning connector repair",
+      "OEM-grade parts used for Lightning connector repair",
       "ProMotion 120Hz preserved on iPhone 13 Pro and above screen replacements",
     ],
     faqs: [
       { q: "Does TurboFix do iPhone screen replacement in Hyderabad?", a: "Yes — TurboFix replaces iPhone screens for all models from iPhone X to iPhone 15 Pro Max at your doorstep across Hyderabad. Repair takes 35–50 minutes." },
-      { q: "Will Face ID still work after iPhone screen replacement?", a: "Yes — TurboFix technicians are trained to preserve the TrueDepth camera and Face ID sensor during screen replacement. We guarantee Face ID functionality after every iPhone screen repair." },
+      { q: "Will Face ID still work after iPhone screen replacement?", a: "In almost all cases, yes. TurboFix technicians are trained to preserve the TrueDepth camera and Face ID sensor during screen replacement, and we test Face ID before returning your device." },
       { q: "Is TurboFix an Apple Authorised Service Provider?", a: "TurboFix is an independent premium repair service, not an Apple Authorised Service Provider. We use OEM-quality components that match Apple's original specifications. Genuine Apple parts are available on request for an additional charge." },
       { q: "How much does iPhone screen replacement cost in Hyderabad?", a: "iPhone screen replacement at TurboFix costs ₹2,499 for older models up to ₹8,999 for iPhone 15 Pro Max OLED. Exact price confirmed before repair starts." },
       { q: "Can TurboFix repair an iPhone that won't turn on?", a: "Yes — we diagnose and repair iPhones that won't power on, including battery failures, charging IC issues, and motherboard component-level repairs." },
@@ -79,7 +79,7 @@ export const brandCityPages: BrandCityPageData[] = [
     brand: "Samsung",
     brandSlug: "samsung",
     h1: "Samsung Repair in Hyderabad — Galaxy Screen & Battery Experts",
-    tagline: "Samsung Galaxy repair at your doorstep — AMOLED quality guaranteed.",
+    tagline: "Samsung Galaxy repair at your doorstep — AMOLED-grade display quality.",
     intro:
       "Samsung is India's most popular smartphone brand, and TurboFix is Hyderabad's Samsung repair specialist. From Galaxy S24 Ultra flagship repairs to budget Galaxy A and M series, we carry Samsung-compatible AMOLED and LCD display stock for same-day doorstep repair across the city.",
     whyHyderabad:
@@ -128,7 +128,7 @@ export const brandCityPages: BrandCityPageData[] = [
     brand: "OnePlus",
     brandSlug: "oneplus",
     h1: "OnePlus Repair in Hyderabad — Fast Charging & AMOLED Experts",
-    tagline: "OnePlus doorstep repair — Warp Charge compatibility guaranteed after every repair.",
+    tagline: "OnePlus doorstep repair — Warp Charge compatibility tested after every repair.",
     intro:
       "OnePlus has built a loyal following in Hyderabad's tech community with its clean OxygenOS experience and flagship-grade performance at competitive prices. TurboFix repairs all OnePlus models — from the OnePlus 12 Pro to the Nord series — at your doorstep with full Warp/SUPERVOOC charging compatibility preserved.",
     whyHyderabad:
@@ -176,7 +176,7 @@ export const brandCityPages: BrandCityPageData[] = [
     h1: "Realme Repair in Hyderabad — All Models, Same-Day Doorstep",
     tagline: "Realme repair with SUPERVOOC charging maintained — at your doorstep.",
     intro:
-      "Realme has become one of the most widely used smartphone brands in Hyderabad due to its excellent price-to-performance ratio. TurboFix handles the highest volume of Realme repairs in Hyderabad — from the budget Realme C series to the flagship Realme GT series — same-day at your home or office.",
+      "Realme has become one of the most widely used smartphone brands in Hyderabad due to its excellent price-to-performance ratio. TurboFix repairs a high volume of Realme devices in Hyderabad — from the budget Realme C series to the flagship Realme GT series — same-day at your home or office.",
     whyHyderabad:
       "Realme's popularity spans across all age groups in Hyderabad — students in Ameerpet, families in residential colonies, and even working professionals who prefer mid-range Android. TurboFix's Realme repair expertise covers all Realme display types (AMOLED for Pro models, IPS for standard) and maintains SUPERVOOC charging compatibility throughout.",
     popularModels: [
@@ -306,7 +306,7 @@ export const brandCityPages: BrandCityPageData[] = [
     h1: "Xiaomi & Redmi Repair in Hyderabad — Mi, Redmi, POCO Specialists",
     tagline: "Xiaomi / Redmi / POCO doorstep repair — HyperOS experience preserved.",
     intro:
-      "Xiaomi's ecosystem — spanning Xiaomi flagship, Redmi mid-range, and POCO performance series — represents some of the highest repair volume in Hyderabad. TurboFix repairs all Xiaomi, Redmi, and POCO models at your doorstep with same-day service and HyperOS / MIUI-compatible parts.",
+      "Xiaomi's ecosystem — spanning Xiaomi flagship, Redmi mid-range, and POCO performance series — accounts for a large share of the repairs TurboFix handles in Hyderabad. We repair all Xiaomi, Redmi, and POCO models at your doorstep with same-day service and HyperOS / MIUI-compatible parts.",
     whyHyderabad:
       "Xiaomi's value-for-money proposition has made Redmi one of the best-selling series in Hyderabad's budget and mid-range segment. With a wide range of models and display types, finding the right repair service for a specific Redmi model is challenging. TurboFix maintains stock for the top Redmi, POCO, and Xiaomi models sold in Hyderabad.",
     popularModels: [

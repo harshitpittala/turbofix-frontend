@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  Zap, MapPin, Phone, Mail, Instagram, Twitter, Facebook, Youtube,
+  Zap, MapPin, Phone, Mail, Instagram, Facebook, Twitter, Youtube,
   ArrowUpRight, Heart,
 } from "lucide-react";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
@@ -41,6 +41,13 @@ const locations = [
   { label: "Repair in Dilsukhnagar",    href: "/locations/dilsukhnagar" },
 ];
 
+const socials = [
+  { icon: Instagram, href: "https://www.instagram.com/turbofix", label: "Instagram" },
+  { icon: Facebook,  href: "https://www.facebook.com/turbofix",  label: "Facebook" },
+  { icon: Twitter,   href: "https://twitter.com/turbofix",       label: "Twitter" },
+  { icon: Youtube,   href: "https://www.youtube.com/@turbofix",  label: "YouTube" },
+];
+
 const quickLinks = [
   { label: "About TurboFix",  href: "/about" },
   { label: "Our Services",    href: "/services" },
@@ -50,13 +57,6 @@ const quickLinks = [
   { label: "Testimonials",    href: "/testimonials" },
   { label: "FAQs",            href: "/faq" },
   { label: "Contact Us",      href: "/contact" },
-];
-
-const socials = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Twitter,   href: "#", label: "Twitter" },
-  { icon: Facebook,  href: "#", label: "Facebook" },
-  { icon: Youtube,   href: "#", label: "YouTube" },
 ];
 
 export default function Footer() {
@@ -89,14 +89,16 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
-              Hyderabad's most trusted mobile repair service. Doorstep pickup &amp; delivery,
-              genuine parts, and expert certified technicians.
+              Doorstep mobile repair in Hyderabad. Pickup &amp; delivery,
+              OEM-grade parts, and trained technicians.
             </p>
             <div className="flex items-center gap-3 mb-5">
               {socials.map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   className="w-9 h-9 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-[#00AAFF] hover:border-[#00AAFF]/30 transition-all duration-200"
                 >
@@ -188,6 +190,14 @@ export default function Footer() {
           </motion.div>
         </motion.div>
 
+        {/* Independence disclosure */}
+        <p className="text-center text-xs text-gray-600 leading-relaxed mb-6 max-w-3xl mx-auto">
+          TurboFix is an independent mobile repair provider and is not affiliated with, authorized, sponsored, or
+          endorsed by Apple, Samsung, Xiaomi, OnePlus, Vivo, Oppo, Realme, Google, or Motorola. All brand names, logos,
+          and trademarks referenced on this site are the property of their respective owners and are used solely to
+          identify the devices we service.
+        </p>
+
         {/* Bottom bar */}
         <div className="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-500 flex items-center gap-1.5">
@@ -196,12 +206,12 @@ export default function Footer() {
             in Hyderabad.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-gray-500">
-            <Link href="/privacy"         className="hover:text-gray-300 transition-colors">Privacy Policy</Link>
-            <Link href="/terms"           className="hover:text-gray-300 transition-colors">Terms of Service</Link>
-            <Link href="/hyderabad"       className="hover:text-gray-300 transition-colors">Hyderabad</Link>
-            <Link href="/locations"       className="hover:text-gray-300 transition-colors">All Areas</Link>
-            <Link href="/repairs"         className="hover:text-gray-300 transition-colors">All Brands</Link>
-            <Link href="/blog"            className="hover:text-gray-300 transition-colors">Blog</Link>
+            <Link href="/privacy"                className="hover:text-gray-300 transition-colors">Privacy Policy</Link>
+            <Link href="/terms"                  className="hover:text-gray-300 transition-colors">Terms of Service</Link>
+            <Link href="/no-fix-no-fee-policy"   className="hover:text-gray-300 transition-colors">No Fix, No Fee Policy</Link>
+            <Link href="/locations"              className="hover:text-gray-300 transition-colors">All Areas</Link>
+            <Link href="/repairs"                className="hover:text-gray-300 transition-colors">All Brands</Link>
+            <Link href="/blog"                   className="hover:text-gray-300 transition-colors">Blog</Link>
           </div>
         </div>
       </div>

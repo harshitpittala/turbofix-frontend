@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock, MessageCircle, Send, CheckCircle } from "lucide-react";
 import toast from "react-hot-toast";
 import { staggerContainer, fadeInUp, fadeInLeft, fadeInRight } from "@/lib/utils";
+import { API_URL } from "@/lib/config";
 
 const contactInfo = [
   { icon: Phone, label: "Phone", value: "+91 86396 05147", href: "tel:+918639605147", color: "#00AAFF" },
@@ -19,17 +20,54 @@ const hours = [
   { day: "Sunday", time: "10:00 AM – 6:00 PM" },
 ];
 
+// Business hours as [openHour, closeHour] in 24h, indexed by JS getDay() (0=Sun..6=Sat)
+const SCHEDULE: Record<number, [number, number]> = {
+  0: [10, 18], // Sunday
+  1: [9, 21], 2: [9, 21], 3: [9, 21], 4: [9, 21], 5: [9, 21], // Mon–Fri
+  6: [9, 20], // Saturday
+};
+
+function useIsOpenNow() {
+  const [isOpen, setIsOpen] = useState<boolean | null>(null);
+  useEffect(() => {
+    const check = () => {
+      const now = new Date();
+      const [open, close] = SCHEDULE[now.getDay()];
+      const hour = now.getHours() + now.getMinutes() / 60;
+      setIsOpen(hour >= open && hour < close);
+    };
+    check();
+    const interval = setInterval(check, 60_000);
+    return () => clearInterval(interval);
+  }, []);
+  return isOpen;
+}
+
 export default function ContactPageClient() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const isOpen = useIsOpenNow();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    setTimeout(() => {
+    setSending(true);
+    try {
+      const res = await fetch(`${API_URL}/api/contact`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const result = await res.json();
+      if (!res.ok || !result.success) throw new Error(result.message || "Failed to send message.");
+
       setSubmitted(true);
-      toast.success("Message sent! We'll reply within 2 hours.");
-    }, 800);
+      toast.success(result.message || "Message sent! We'll reply within 2 hours.");
+    } catch (err: any) {
+      toast.error(err.message || "Something went wrong. Please call or WhatsApp us instead.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -119,10 +157,14 @@ export default function ContactPageClient() {
                     </div>
                   ))}
                 </div>
-                <div className="mt-4 pt-4 border-t border-white/5 flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-                  <span className="text-green-400 text-xs font-medium">We're open right now</span>
-                </div>
+                {isOpen !== null && (
+                  <div className="mt-4 pt-4 border-t border-white/5 flex items-center gap-2">
+                    <div className={`w-2 h-2 rounded-full ${isOpen ? "bg-green-400 animate-pulse" : "bg-gray-500"}`} />
+                    <span className={`text-xs font-medium ${isOpen ? "text-green-400" : "text-gray-400"}`}>
+                      {isOpen ? "We're open right now" : "We're closed right now"}
+                    </span>
+                  </div>
+                )}
               </motion.div>
             </motion.div>
 
@@ -215,10 +257,11 @@ export default function ContactPageClient() {
                     </div>
                     <button
                       type="submit"
-                      className="btn-neon w-full py-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2"
+                      disabled={sending}
+                      className="btn-neon w-full py-4 rounded-xl font-semibold text-white flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
                     >
                       <Send className="w-4 h-4" />
-                      Send Message
+                      {sending ? "Sending…" : "Send Message"}
                     </button>
                     <p className="text-center text-gray-600 text-xs">We reply within 2 hours on weekdays</p>
                   </form>
@@ -237,7 +280,7 @@ export default function ContactPageClient() {
             style={{ border: "1px solid rgba(255,255,255,0.07)", height: "300px" }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3118684900483!2d78.37194847516713!3d17.446436183445714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93dc8c5d69df%3A0x19688bef58786fe4!2sHitec%20City%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1699000000000!5m2!1sen!2sin"
+              src="https://maps.google.com/maps?q=11-1-441%2C%20Aghapura%2C%20Nampally%2C%20Hyderabad%2C%20Telangana%20500001&output=embed"
               width="100%"
               height="300"
               style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) brightness(0.8) contrast(1.2)" }}

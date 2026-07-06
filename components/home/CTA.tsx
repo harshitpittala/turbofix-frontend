@@ -77,8 +77,8 @@ export default function CTA() {
               variants={fadeInUp}
               className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
             >
-              Stop settling for slow, overpriced repairs. Book with TurboFix today
-              and experience Hyderabad's fastest, most reliable mobile repair service.
+              Get transparent pricing and a clear repair timeline before you commit.
+              Book with TurboFix today for doorstep mobile repair in Hyderabad.
               First-time customers get{" "}
               <span className="text-[#00AAFF] font-semibold">10% off.</span>
             </motion.p>
@@ -127,8 +127,8 @@ export default function CTA() {
               {[
                 "✓ Free Diagnostics",
                 "✓ 6-Month Warranty",
-                "✓ Same-Day Service",
-                "✓ 100% Satisfaction",
+                "✓ Same-Day Slots Available",
+                "✓ No Fix, No Fee",
               ].map((badge) => (
                 <span key={badge} className="text-gray-400">{badge}</span>
               ))}

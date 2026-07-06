@@ -7,12 +7,15 @@ import { notFound } from "next/navigation";
 import ServicePageTemplate from "./ServicePageTemplate";
 import { getServicePageBySlug } from "@/data/servicePages";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { parsePriceRange } from "@/lib/utils";
 
 interface Props { slug: string }
 
 export default function ServicePageServer({ slug }: Props) {
   const svc = getServicePageBySlug(slug);
   if (!svc) notFound();
+
+  const priceBounds = parsePriceRange(svc.priceRange);
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -29,8 +32,8 @@ export default function ServicePageServer({ slug }: Props) {
       priceSpecification: {
         "@type": "PriceSpecification",
         name: svc.name,
-        description: svc.priceRange,
         priceCurrency: "INR",
+        ...(priceBounds && { minPrice: priceBounds.minPrice, maxPrice: priceBounds.maxPrice }),
       },
       availability: "https://schema.org/InStock",
     },

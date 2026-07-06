@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `Mobile Repair in ${area.name}, Hyderabad — ${titleServices} | TurboFix`,
-    description: `TurboFix doorstep mobile repair in ${area.name}, Hyderabad. ${area.intro} Book same-day repair — certified technicians, OEM parts, 6-month warranty.`,
+    description: `TurboFix doorstep mobile repair in ${area.name}, Hyderabad. ${area.intro} Book same-day repair — trained technicians, OEM parts, 6-month warranty.`,
     alternates: { canonical: `https://turbofix.in/locations/${area.slug}` },
     openGraph: {
       title: `Mobile Repair in ${area.name} Hyderabad | TurboFix`,
-      description: `Doorstep mobile repair in ${area.name}. ${area.context} Certified service with 6-month warranty.`,
+      description: `Doorstep mobile repair in ${area.name}. ${area.context} Professional service with 6-month warranty.`,
       url: `https://turbofix.in/locations/${area.slug}`,
     },
   };

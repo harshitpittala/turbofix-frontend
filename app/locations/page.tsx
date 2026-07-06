@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Mobile Repair in All Hyderabad Areas — TurboFix Doorstep Service",
   description:
-    "TurboFix doorstep mobile repair covers all Hyderabad areas — Gachibowli, Madhapur, Banjara Hills, Secunderabad, Dilsukhnagar, Kompally, and 80+ more. Same-day certified repair at your door.",
+    "TurboFix doorstep mobile repair covers all Hyderabad areas — Gachibowli, Madhapur, Banjara Hills, Secunderabad, Dilsukhnagar, Kompally, and 80+ more. Same-day repair slots available at your door.",
   alternates: { canonical: "https://turbofix.in/locations" },
   openGraph: {
     title: "Mobile Repair in All Hyderabad Areas | TurboFix",
@@ -20,7 +20,7 @@ const locationsSchema = {
   "@id": "https://turbofix.in/locations#service",
   name: "Doorstep Mobile Repair — All Hyderabad Areas",
   description:
-    "TurboFix provides certified doorstep mobile repair across all major Hyderabad areas including Gachibowli, Madhapur, Banjara Hills, Secunderabad, Ameerpet, Dilsukhnagar, Kompally, and 80+ more localities.",
+    "TurboFix provides professional doorstep mobile repair across all major Hyderabad areas including Gachibowli, Madhapur, Banjara Hills, Secunderabad, Ameerpet, Dilsukhnagar, Kompally, and 80+ more localities.",
   provider: { "@id": "https://turbofix.in/#business" },
   areaServed: { "@type": "City", name: "Hyderabad" },
 };

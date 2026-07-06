@@ -25,7 +25,7 @@ const mobileLinks = [
   { label: "Blog",          href: "/blog" },
   { label: "FAQ",           href: "/faq" },
   { label: "Contact",       href: "/contact" },
-  { label: "Hyderabad",     href: "/hyderabad" },
+  { label: "Areas We Cover", href: "/locations" },
   { label: "Book a Repair", href: "/book-repair" },
 ];
 
@@ -36,6 +36,7 @@ export default function Navbar() {
   const lastScrollY = useRef(0);
   const pathname    = usePathname();
   const { scrollY } = useScroll();
+  const isLight = pathname === "/book-repair";
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const prev = lastScrollY.current;
@@ -50,17 +51,21 @@ export default function Navbar() {
   return (
     <>
       <motion.header
-        animate={{ y: hidden ? -100 : 0 }}
+        animate={{ y: hidden && !isLight ? -100 : 0 }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-500", scrolled ? "py-3" : "py-5")}
+        className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-500", scrolled || isLight ? "py-3" : "py-5")}
       >
         {/* Background */}
-        <div
-          className={cn(
-            "absolute inset-0 transition-all duration-500",
-            scrolled ? "backdrop-blur-xl bg-[#02040F]/80 border-b border-white/5" : "bg-transparent",
-          )}
-        />
+        {isLight ? (
+          <div className="absolute inset-0 bg-white/95 backdrop-blur-xl border-b border-gray-200" />
+        ) : (
+          <div
+            className={cn(
+              "absolute inset-0 transition-all duration-500",
+              scrolled ? "backdrop-blur-xl bg-[#02040F]/80 border-b border-white/5" : "bg-transparent",
+            )}
+          />
+        )}
 
         <div className="container relative flex items-center justify-between max-w-7xl mx-auto px-4 sm:px-6">
           {/* Logo */}
@@ -73,10 +78,10 @@ export default function Navbar() {
               <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#0066FF] to-[#00AAFF] opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-300" />
             </div>
             <div>
-              <span className="font-display font-800 text-xl tracking-tight text-white">
+              <span className={cn("font-display font-800 text-xl tracking-tight", isLight ? "text-gray-900" : "text-white")}>
                 Turbo<span className="gradient-text-blue">Fix</span>
               </span>
-              <div className="text-[9px] text-gray-500 font-mono tracking-widest leading-none -mt-0.5">
+              <div className={cn("text-[9px] font-mono tracking-widest leading-none -mt-0.5", isLight ? "text-gray-400" : "text-gray-500")}>
                 HYDERABAD
               </div>
             </div>
@@ -91,7 +96,9 @@ export default function Navbar() {
                 className={cn(
                   "relative px-3.5 py-2 text-sm font-medium rounded-lg transition-all duration-200",
                   pathname === link.href || pathname.startsWith(link.href + "/")
-                    ? "text-[#00AAFF]"
+                    ? "text-[#0066FF]"
+                    : isLight
+                    ? "text-gray-600 hover:text-gray-900"
                     : "text-gray-400 hover:text-white",
                 )}
               >
@@ -112,7 +119,10 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="tel:+918639605147"
-              className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
+              className={cn(
+                "flex items-center gap-2 text-sm transition-colors",
+                isLight ? "text-gray-500 hover:text-gray-900" : "text-gray-400 hover:text-white",
+              )}
             >
               <Phone className="w-4 h-4 text-[#00AAFF]" />
               +91 86396 05147
@@ -129,7 +139,10 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden relative w-10 h-10 flex items-center justify-center rounded-xl glass text-gray-300 hover:text-white transition-colors"
+            className={cn(
+              "lg:hidden relative w-10 h-10 flex items-center justify-center rounded-xl transition-colors",
+              isLight ? "bg-gray-100 border border-gray-200 text-gray-600 hover:text-gray-900" : "glass text-gray-300 hover:text-white",
+            )}
             aria-label="Toggle menu"
           >
             <AnimatePresence mode="wait">

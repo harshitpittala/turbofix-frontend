@@ -71,7 +71,6 @@ const sections = [
     title: "Hyderabad Coverage",
     color: "#7C3AED",
     links: [
-      { label: "Mobile Repair Hyderabad",    href: "/hyderabad" },
       { label: "All Hyderabad Areas",        href: "/locations" },
       ...locationData.slice(0, 20).map((l) => ({
         label: `Mobile Repair ${l.name}`,

@@ -7,10 +7,10 @@ import AnimatedCounter from "@/components/common/AnimatedCounter";
 import { staggerContainer, fadeInUp, fadeInLeft, fadeInRight, scaleIn } from "@/lib/utils";
 
 const stats = [
-  { value: 12000, suffix: "+", label: "Devices Repaired" },
+  { value: 1000, suffix: "+", label: "Devices Repaired" },
   { value: 4.9, suffix: "★", label: "Average Rating", decimals: 1 },
   { value: 30, suffix: " min", label: "Avg. Turnaround" },
-  { value: 98, suffix: "%", label: "Success Rate" },
+  { value: 98, suffix: "%", label: "First-Visit Success Rate" },
 ];
 
 const features = [
@@ -28,8 +28,8 @@ const features = [
   },
   {
     icon: Award,
-    title: "Certified Technicians",
-    desc: "All our engineers hold OEM-level certifications with 5+ years of hands-on repair experience.",
+    title: "Trained Technicians",
+    desc: "Our technicians average 5+ years of hands-on repair experience and are trained in-house on every device we service.",
     color: "#A78BFA",
   },
   {
@@ -79,15 +79,15 @@ export default function WhyChooseUs() {
             variants={fadeInUp}
             className="font-display text-4xl md:text-5xl font-bold mb-5"
           >
-            The Standard Others{" "}
-            <span className="gradient-text">Aspire To</span>
+            Built on{" "}
+            <span className="gradient-text">Transparency and Accountability</span>
           </motion.h2>
           <motion.p
             variants={fadeInUp}
             className="text-gray-400 text-lg max-w-2xl mx-auto"
           >
-            We don't just repair phones — we restore your trust in technology.
-            Here's what sets us apart from every other repair shop in Hyderabad.
+            We don't just repair phones — we explain what's wrong, what it costs,
+            and back every repair with a clear warranty.
           </motion.p>
         </motion.div>
 

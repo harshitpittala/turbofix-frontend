@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "TurboFix — Mobile Repair Services at Your Doorstep | Hyderabad",
     description:
-      "Hyderabad's most trusted mobile repair service. Doorstep pickup & delivery. Screen, battery, water damage, iPhone & Samsung repair. Same-day service.",
+      "Rated 4.9★ by 2,400+ customers. Doorstep pickup & delivery. Screen, battery, water damage, iPhone & Samsung repair. Same-day slots available.",
     url: "https://turbofix.in",
     images: [{ url: "https://turbofix.in/og-image.jpg", width: 1200, height: 630 }],
   },

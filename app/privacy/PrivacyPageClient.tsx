@@ -145,7 +145,6 @@ const SECTIONS: Section[] = [
           {
             kind: "list",
             items: [
-              "Send OTP verification codes",
               "Confirm repair bookings",
               "Provide repair status updates",
               "Send pickup and delivery notifications",
@@ -319,7 +318,6 @@ const SECTIONS: Section[] = [
           {
             kind: "list",
             items: [
-              "OTP verification messages",
               "Booking confirmations",
               "Repair status updates",
               "Pickup and delivery notifications",

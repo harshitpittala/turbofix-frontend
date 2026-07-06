@@ -16,9 +16,9 @@ export const brandData: BrandData[] = [
     slug: "apple",
     name: "Apple iPhone",
     tagline: "Expert iPhone Repair in Hyderabad",
-    description: "Apple iPhones are precision-engineered devices that require equally precise repairs. TurboFix technicians are trained specifically on Apple hardware — from Face ID calibration to OLED screen replacement — with access to OEM-quality and genuine Apple parts.",
+    description: "Apple iPhones are precision-engineered devices that require equally precise repairs. TurboFix technicians are trained specifically on Apple hardware — from Face ID calibration to OLED screen replacement — with access to OEM-quality parts as standard, and genuine Apple parts available on request.",
     color: "#A0A0A0",
-    logo: "https://cdn.simpleicons.org/apple/ffffff",
+    logo: "/images/brands/apple.svg",
     models: [
       "iPhone 15 Pro Max", "iPhone 15 Pro", "iPhone 15 Plus", "iPhone 15",
       "iPhone 14 Pro Max", "iPhone 14 Pro", "iPhone 14 Plus", "iPhone 14",
@@ -30,7 +30,7 @@ export const brandData: BrandData[] = [
       { title: "Cracked Screen / Display Issues", desc: "OLED screen replacement with OEM-grade panels. Face ID functionality preserved. True Tone calibrated.", time: "30–45 min" },
       { title: "Battery Degradation", desc: "Grade-A battery replacement. Restores 100% capacity. Health verified before and after.", time: "20–30 min" },
       { title: "Charging Port / Lightning Issues", desc: "Lightning and USB-C port cleaning, repair, and replacement. Fast charge functionality tested.", time: "25–35 min" },
-      { title: "Back Glass Replacement", desc: "Adhesive-bonded rear glass replacement. All color variants available. Water resistance re-sealed.", time: "45–60 min" },
+      { title: "Back Glass Replacement", desc: "Adhesive-bonded rear glass replacement. All color variants available. Fresh water-resistant adhesive seal applied.", time: "45–60 min" },
       { title: "Camera Module Repair", desc: "Front and rear camera repair. Ultra-wide, telephoto, and macro systems handled. OIS module repair.", time: "40–50 min" },
       { title: "Speaker / Microphone Issues", desc: "Earpiece, loudspeaker, and microphone module replacement. Audio tested post-repair.", time: "25–35 min" },
     ],
@@ -46,9 +46,9 @@ export const brandData: BrandData[] = [
     slug: "samsung",
     name: "Samsung Galaxy",
     tagline: "Samsung Galaxy Repair Experts in Hyderabad",
-    description: "Samsung Galaxy phones — from budget A-series to flagship S-series and folding Z-series — all receive the same expert attention at TurboFix. We stock AMOLED screens, genuine batteries, and all components for Samsung's complete lineup.",
+    description: "Samsung Galaxy phones — from budget A-series to flagship S-series and folding Z-series — all receive the same expert attention at TurboFix. We stock AMOLED screens, OEM-grade batteries, and all components for Samsung's complete lineup.",
     color: "#1428A0",
-    logo: "https://cdn.simpleicons.org/samsung/ffffff",
+    logo: "/images/brands/samsung.svg",
     models: [
       "Galaxy S24 Ultra / S24+ / S24",
       "Galaxy S23 Ultra / S23+ / S23",
@@ -82,7 +82,7 @@ export const brandData: BrandData[] = [
     tagline: "OnePlus Repair — Never Settle for Substandard Repairs",
     description: "OnePlus delivers flagship performance at competitive prices — and TurboFix delivers the same standard of repair. From fluid AMOLED screens to Warp Charge port repairs, we cover the full OnePlus lineup.",
     color: "#EB0029",
-    logo: "https://cdn.simpleicons.org/oneplus/ffffff",
+    logo: "/images/brands/oneplus.svg",
     models: [
       "OnePlus 12 / 12R", "OnePlus 11 / 11R",
       "OnePlus 10 Pro / 10T / 10R",
@@ -112,7 +112,7 @@ export const brandData: BrandData[] = [
     tagline: "Xiaomi, Redmi & POCO Repair in Hyderabad",
     description: "Xiaomi's ecosystem — covering Xiaomi, Redmi, and POCO — is one of India's most popular. TurboFix handles the complete range, from budget Redmi A-series to flagship Xiaomi 14 Ultra repairs.",
     color: "#FF6900",
-    logo: "https://cdn.simpleicons.org/xiaomi/ffffff",
+    logo: "/images/brands/xiaomi.svg",
     models: [
       "Xiaomi 14 Ultra / 14 Pro / 14",
       "Xiaomi 13 Pro / 13 series",
@@ -141,7 +141,7 @@ export const brandData: BrandData[] = [
     tagline: "Vivo Phone Repair — Camera & Display Specialists",
     description: "Vivo phones are known for exceptional cameras and displays. TurboFix has specific training on Vivo's camera systems and AMOLED displays to ensure repairs restore your device to full original performance.",
     color: "#415FFF",
-    logo: "https://cdn.simpleicons.org/vivo/ffffff",
+    logo: "/images/brands/vivo.svg",
     models: [
       "Vivo V30 Pro / V30 / V29 Pro / V29",
       "Vivo V27 Pro / V27 / V25 Pro",
@@ -168,7 +168,7 @@ export const brandData: BrandData[] = [
     tagline: "Oppo Phone Repair — Charging & Display Experts",
     description: "Oppo pioneered fast charging technology and VOOC/SuperVOOC systems. TurboFix has specific expertise in Oppo's charging systems and AMOLED displays, ensuring repairs preserve these signature features.",
     color: "#1D8348",
-    logo: "https://cdn.simpleicons.org/oppo/ffffff",
+    logo: "/images/brands/oppo.svg",
     models: [
       "Oppo Reno 12 Pro / Reno 12 / Reno 11 Pro / Reno 11",
       "Oppo Reno 10 Pro+ / Reno 10 Pro / Reno 10",
@@ -192,7 +192,7 @@ export const brandData: BrandData[] = [
     slug: "realme",
     name: "Realme",
     tagline: "Realme Repair — Dare to Repair",
-    description: "Realme has quickly become one of India's most popular phone brands. TurboFix handles the highest volume of Realme repairs in Hyderabad, giving us unmatched depth of experience with Realme's hardware across all price points.",
+    description: "Realme has quickly become one of India's most popular phone brands. TurboFix repairs a high volume of Realme devices in Hyderabad, giving our technicians deep hands-on experience with Realme's hardware across all price points.",
     color: "#FFD700",
     logo: "",
     models: [
@@ -223,7 +223,7 @@ export const brandData: BrandData[] = [
     tagline: "Motorola Repair — Trusted Heritage, Modern Repairs",
     description: "Motorola phones are beloved for their near-stock Android experience and excellent durability. TurboFix handles Motorola's complete lineup — from budget Moto G series to the premium Edge series with curved displays.",
     color: "#E1140A",
-    logo: "https://cdn.simpleicons.org/motorola/ffffff",
+    logo: "/images/brands/motorola.svg",
     models: [
       "Motorola Edge 50 Pro / Edge 50 / Edge 40 Pro / Edge 40",
       "Motorola Edge 30 Ultra / Edge 30 Pro",
@@ -249,7 +249,7 @@ export const brandData: BrandData[] = [
     tagline: "Google Pixel Repair — Pure Android, Expert Care",
     description: "Google Pixel phones run the purest Android experience and feature some of the best computational photography available. TurboFix Pixel technicians understand the unique calibration requirements of Pixel's hardware and Tensor chip ecosystem.",
     color: "#4285F4",
-    logo: "https://cdn.simpleicons.org/googlepixel/ffffff",
+    logo: "/images/brands/google-pixel.svg",
     models: [
       "Google Pixel 9 Pro XL / 9 Pro / 9",
       "Google Pixel 8 Pro / 8 / 8a",

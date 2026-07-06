@@ -8,8 +8,17 @@ interface Props {
   params: { brand: string };
 }
 
+// Brands that have a dedicated /[brand]-repair-hyderabad page are 301-redirected
+// there (see next.config.mjs `redirects`) to avoid two pages competing for the
+// same local-SEO keywords. Only build a static page for brands without one.
+const BRANDS_WITH_CITY_PAGE = new Set([
+  "apple", "samsung", "oneplus", "xiaomi", "vivo", "oppo", "realme", "motorola", "google-pixel",
+]);
+
 export async function generateStaticParams() {
-  return brandData.map((b) => ({ brand: b.slug }));
+  return brandData
+    .filter((b) => !BRANDS_WITH_CITY_PAGE.has(b.slug))
+    .map((b) => ({ brand: b.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -23,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: { canonical: `https://turbofix.in/repairs/${brand.slug}` },
     openGraph: {
       title: `${brand.name} Repair Hyderabad — TurboFix`,
-      description: `Certified ${brand.name} repairs in Hyderabad. OEM-quality parts, 6-month warranty, doorstep service.`,
+      description: `Professional ${brand.name} repairs in Hyderabad. OEM-quality parts, 6-month warranty, doorstep service.`,
       url: `https://turbofix.in/repairs/${brand.slug}`,
     },
   };
@@ -51,12 +60,7 @@ export default function BrandRepairPage({ params }: Props) {
         addressRegion: "Telangana",
         addressCountry: "IN",
       },
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.9",
-        reviewCount: "2400",
-        bestRating: "5",
-      },
+      // aggregateRating intentionally omitted here — see app/layout.tsx note.
     },
     areaServed: { "@type": "City", name: "Hyderabad" },
     serviceType: `${brand.name} Mobile Phone Repair`,

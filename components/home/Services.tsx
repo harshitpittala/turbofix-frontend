@@ -40,7 +40,7 @@ const services = [
   {
     icon: Droplets,
     title: "Water Damage Recovery",
-    desc: "Ultra-sonic cleaning and precision board drying. We rescue phones others can't.",
+    desc: "Ultrasonic cleaning and precision board drying to recover water-damaged devices.",
     color: "#38BDF8",
     gradient: "from-[#38BDF8]/20 to-[#0EA5E9]/5",
     time: "~2 hrs",

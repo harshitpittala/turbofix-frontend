@@ -1,11 +1,26 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import CTA from "@/components/home/CTA";
 import { staggerContainer, fadeInUp } from "@/lib/utils";
 import { brandData } from "@/data/brands";
+
+// Brands with a dedicated /[brand]-repair-hyderabad page link straight there
+// (that's the canonical URL — /repairs/[brand] redirects to it for these slugs).
+const BRAND_CITY_PAGE_HREF: Record<string, string> = {
+  apple: "/iphone-repair-hyderabad",
+  samsung: "/samsung-repair-hyderabad",
+  oneplus: "/oneplus-repair-hyderabad",
+  xiaomi: "/xiaomi-repair-hyderabad",
+  vivo: "/vivo-repair-hyderabad",
+  oppo: "/oppo-repair-hyderabad",
+  realme: "/realme-repair-hyderabad",
+  motorola: "/motorola-repair-hyderabad",
+  "google-pixel": "/google-pixel-repair-hyderabad",
+};
 
 export default function RepairsListClient() {
   return (
@@ -46,7 +61,7 @@ export default function RepairsListClient() {
                 transition={{ delay: (i % 3) * 0.08 }}
               >
                 <Link
-                  href={`/repairs/${brand.slug}`}
+                  href={BRAND_CITY_PAGE_HREF[brand.slug] ?? `/repairs/${brand.slug}`}
                   className="group block rounded-2xl p-7 transition-all duration-300"
                   style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}
                 >
@@ -55,14 +70,17 @@ export default function RepairsListClient() {
                       className="w-14 h-14 rounded-xl flex items-center justify-center shrink-0"
                       style={{ background: `${brand.color}15`, border: `1px solid ${brand.color}25` }}
                     >
-                      <img
-                        src={brand.logo}
-                        alt={`${brand.name} logo`}
-                        width={28}
-                        height={28}
-                        className="object-contain"
-                        onError={(e) => { (e.currentTarget as HTMLImageElement).style.visibility = "hidden"; }}
-                      />
+                      {brand.logo && (
+                        <Image
+                          src={brand.logo}
+                          alt={`${brand.name} logo`}
+                          width={28}
+                          height={28}
+                          className="object-contain"
+                          unoptimized
+                          onError={(e) => { (e.currentTarget as HTMLImageElement).style.visibility = "hidden"; }}
+                        />
+                      )}
                     </div>
                     <div>
                       <h2 className="text-white font-semibold text-lg group-hover:text-[#00AAFF] transition-colors">

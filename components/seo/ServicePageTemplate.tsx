@@ -85,7 +85,7 @@ export default function ServicePageTemplate({ svc }: Props) {
             {[
               { icon: <Clock className="w-4 h-4 text-[#00AAFF]" />, text: svc.repairTime },
               { icon: <Shield className="w-4 h-4 text-[#22C55E]" />, text: svc.warranty },
-              { icon: <Star className="w-4 h-4 text-[#F59E0B]" />, text: "4.9★ · 2,400+ repairs" },
+              { icon: <Star className="w-4 h-4 text-[#F59E0B]" />, text: "4.9★ · 1,000+ repairs" },
               { icon: <CheckCircle className="w-4 h-4 text-[#7C3AED]" />, text: svc.priceRange },
             ].map(({ icon, text }) => (
               <div key={text} className="flex items-center gap-2">{icon}<span>{text}</span></div>
