@@ -21,7 +21,7 @@ export default function TechnicianCard() {
             ))}
           </div>
           <span className="font-medium">4.9</span>
-          <span>· 400+ repairs in Hyderabad</span>
+          <span>· 400+ devices serviced in Hyderabad</span>
         </div>
       </div>
     </div>

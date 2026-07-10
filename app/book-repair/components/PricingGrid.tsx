@@ -4,12 +4,12 @@ import { Smartphone, Battery, Zap, Volume2, PanelTop, Camera, Droplets, Cpu, Inf
 const pricing = [
   { icon: Smartphone, color: "#2563EB", title: "Screen Replacement", price: "from ₹799", note: "Varies by model" },
   { icon: Battery, color: "#16A34A", title: "Battery Replacement", price: "from ₹499", note: "OEM-grade cells" },
-  { icon: Zap, color: "#DB2777", title: "Charging Port Repair", price: "from ₹499", note: "Clean or replace" },
-  { icon: Volume2, color: "#D97706", title: "Speaker / Mic Fix", price: "from ₹399", note: "Speaker & earpiece" },
+  { icon: Zap, color: "#DB2777", title: "Charging Port Cleaning", price: "from ₹499", note: "Clean or replace" },
+  { icon: Volume2, color: "#D97706", title: "Speaker / Mic Replacement", price: "from ₹399", note: "Speaker & earpiece" },
   { icon: PanelTop, color: "#2563EB", title: "Back Glass", price: "from ₹699", note: "All models supported" },
-  { icon: Camera, color: "#7C3AED", title: "Camera Repair", price: "from ₹799", note: "Front & rear cameras" },
+  { icon: Camera, color: "#7C3AED", title: "Camera Module Replacement", price: "from ₹799", note: "Front & rear cameras" },
   { icon: Droplets, color: "#0891B2", title: "Water Damage Recovery", price: "from ₹999", note: "Full diagnostic first" },
-  { icon: Cpu, color: "#EA580C", title: "Motherboard Repair", price: "from ₹1,499", note: "Advanced repair" },
+  { icon: Cpu, color: "#EA580C", title: "Motherboard Service", price: "from ₹1,499", note: "Advanced diagnostics" },
 ];
 
 export default function PricingGrid() {
@@ -33,9 +33,9 @@ export default function PricingGrid() {
         <div className="flex items-start gap-2.5 rounded-xl bg-green-50 border border-green-100 px-5 py-4 mt-5">
           <Info className="w-4 h-4 text-green-600 shrink-0 mt-0.5" />
           <p className="text-sm text-green-800">
-            No hidden charges. You'll receive a fixed quote before any repair starts — free diagnosis, no obligation. If
+            No hidden charges. You'll receive a fixed quote before any work starts — free diagnosis, no obligation. If
             you decline the quote after inspection, a ₹499 visit charge applies (covers the technician's time and
-            travel, not a repair fee).{" "}
+            travel, not a service fee).{" "}
             <Link href="/no-fix-no-fee-policy" className="font-medium underline underline-offset-2">
               See full policy
             </Link>

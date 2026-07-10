@@ -191,11 +191,16 @@ export default function Footer() {
         </motion.div>
 
         {/* Independence disclosure */}
-        <p className="text-center text-xs text-gray-600 leading-relaxed mb-6 max-w-3xl mx-auto">
+        <p className="text-center text-xs text-gray-600 leading-relaxed mb-3 max-w-3xl mx-auto">
           TurboFix is an independent mobile repair provider and is not affiliated with, authorized, sponsored, or
           endorsed by Apple, Samsung, Xiaomi, OnePlus, Vivo, Oppo, Realme, Google, or Motorola. All brand names, logos,
           and trademarks referenced on this site are the property of their respective owners and are used solely to
           identify the devices we service.
+        </p>
+        <p className="text-center text-xs text-gray-600 leading-relaxed mb-6 max-w-3xl mx-auto">
+          TurboFix provides physical smartphone repair services through in-person technician visits and our Hyderabad
+          repair studio. We do not provide remote technical support, remote access services, software helpdesk
+          services, IT support services, or third-party customer support.
         </p>
 
         {/* Bottom bar */}

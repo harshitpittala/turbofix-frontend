@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Shield, Zap, Award, Clock, Cpu, HeartHandshake } from "lucide-react";
@@ -23,7 +24,7 @@ const features = [
   {
     icon: Zap,
     title: "Lightning Fast",
-    desc: "Most repairs completed in under 30 minutes. Book online, walk in, walk out — fully fixed.",
+    desc: "Most repairs completed in under 30 minutes. Book online, walk in, walk out — repaired and ready.",
     color: "#F59E0B",
   },
   {
@@ -164,6 +165,11 @@ export default function WhyChooseUs() {
 
                 <h3 className="text-white font-semibold text-[15px] mb-2">{feat.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{feat.desc}</p>
+                {feat.title === "6-Month Warranty" && (
+                  <Link href="/terms" className="inline-block text-xs text-[#00AAFF] underline underline-offset-2 mt-2">
+                    View full warranty terms
+                  </Link>
+                )}
 
                 {/* Bottom accent */}
                 <div

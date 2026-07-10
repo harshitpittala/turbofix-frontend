@@ -587,6 +587,17 @@ export default function Hero() {
               </a>
             </motion.div>
 
+            <motion.p
+              variants={fadeInUp}
+              className="text-gray-400 text-xs sm:text-[13px] leading-relaxed max-w-xl mb-8 sm:mb-10"
+            >
+              TurboFix is an independent provider of on-site hardware modification and component replacement
+              services. TurboFix is not an authorized service provider, partner, or affiliate of Apple Inc.,
+              Samsung Electronics, OnePlus, Xiaomi, Google Inc., or any other device manufacturer. All third-party
+              trademarks, brand names, and logos are properties of their respective owners and are utilized here
+              for purely informational hardware compatibility descriptions.
+            </motion.p>
+
             {/* ── Social proof ──────────────────────────────────────── */}
             <motion.div variants={fadeInUp} className="flex flex-wrap items-center gap-5 sm:gap-6">
               <div className="flex items-center gap-3">

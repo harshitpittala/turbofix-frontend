@@ -9,7 +9,7 @@ const testimonials = [
     tagColor: "#2563EB",
     tagBg: "#EFF6FF",
     tag: "Screen Replacement",
-    text: "iPhone 14 screen cracked on a Sunday. TurboFix came to my apartment in Hitech City by 3 PM and fixed it in 25 minutes. Display looks brand new.",
+    text: "iPhone 14 screen cracked on a Sunday. TurboFix came to my apartment in Hitech City by 3 PM and had it done in 25 minutes. Display looks brand new.",
   },
   {
     name: "Tanu Rani",
@@ -29,7 +29,7 @@ const testimonials = [
     tagColor: "#16A34A",
     tagBg: "#F0FDF4",
     tag: "Charging Port",
-    text: "Charging port wasn't working for weeks. Booked at 11 AM, tech arrived by 1 PM at my home in Kondapur. Fixed in 30 minutes. Straightforward and professional.",
+    text: "Charging port wasn't working for weeks. Booked at 11 AM, tech arrived by 1 PM at my home in Kondapur. Sorted in 30 minutes. Straightforward and professional.",
   },
 ];
 

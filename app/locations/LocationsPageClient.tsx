@@ -240,6 +240,11 @@ export default function LocationsPageClient() {
                 <div className="text-4xl mb-4">{item.icon}</div>
                 <h3 className="text-white font-semibold mb-2">{item.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                {item.title === "6-Month Warranty" && (
+                  <Link href="/terms" className="inline-block text-xs text-[#00AAFF] underline underline-offset-2 mt-2">
+                    View full terms
+                  </Link>
+                )}
               </motion.div>
             ))}
           </div>

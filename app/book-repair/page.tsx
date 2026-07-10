@@ -4,14 +4,14 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { bookRepairFaqs } from "@/data/bookRepairFaqs";
 
 export const metadata: Metadata = {
-  title: "Book a Mobile Repair — Doorstep Pickup & Delivery in Hyderabad",
+  title: "Book a Doorstep Visit — Screen & Battery Replacement in Hyderabad",
   description:
-    "Book your mobile repair with TurboFix in minutes. Doorstep pickup and delivery in Hyderabad. Same-day service, OEM-grade parts, 6-month warranty. All brands supported.",
+    "Book a TurboFix doorstep visit in minutes. Pickup and delivery across Hyderabad. Same-day appointments, OEM-grade parts, 6-month warranty. All brands supported. Independent, walk-in studio at Aghapura, Nampally — not affiliated with any manufacturer.",
   alternates: { canonical: "https://turbofix.in/book-repair" },
   openGraph: {
-    title: "Book a Mobile Repair — Doorstep Service | TurboFix Hyderabad",
+    title: "Book a Doorstep Visit | TurboFix Hyderabad",
     description:
-      "Book now — we'll pick up your phone, fix it, and deliver it back same day. Screen, battery, charging port, water damage and more.",
+      "Book now — our technician visits you, replaces the part on the spot, and confirms before you pay. Screen, battery, charging port, water damage and more.",
     url: "https://turbofix.in/book-repair",
   },
 };

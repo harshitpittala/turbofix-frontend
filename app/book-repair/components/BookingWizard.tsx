@@ -232,13 +232,13 @@ const FEATURED_COUNT = 8;
 const repairServices = [
   { id: "screen", icon: Smartphone, label: "Screen Replacement", color: "#2563EB" },
   { id: "battery", icon: Battery, label: "Battery Replacement", color: "#16A34A" },
-  { id: "camera", icon: Camera, label: "Camera Repair", color: "#7C3AED" },
+  { id: "camera", icon: Camera, label: "Camera Module", color: "#7C3AED" },
   { id: "water", icon: Droplets, label: "Water Damage", color: "#0891B2" },
-  { id: "speaker", icon: Mic2, label: "Speaker / Mic Fix", color: "#D97706" },
+  { id: "speaker", icon: Mic2, label: "Speaker / Mic", color: "#D97706" },
   { id: "charging", icon: Wifi, label: "Charging Port", color: "#DB2777" },
   { id: "back", icon: Wrench, label: "Back Panel", color: "#0EA5E9" },
   { id: "software", icon: MonitorSmartphone, label: "Software / Data", color: "#65A30D" },
-  { id: "other", icon: HelpCircle, label: "Other Repair", color: "#EA580C" },
+  { id: "other", icon: HelpCircle, label: "Something Else", color: "#EA580C" },
 ];
 
 const timeSlots = [
@@ -251,14 +251,14 @@ const timeSlots = [
 
 const steps = [
   { label: "Device", desc: "Choose your brand & model" },
-  { label: "Service", desc: "Select repairs needed" },
+  { label: "Service", desc: "Select what's needed" },
   { label: "Schedule", desc: "Pick a date & time" },
   { label: "Details", desc: "Your contact info" },
 ];
 
 const stepHints = [
   "Select your phone brand to continue",
-  "Pick at least one repair to continue",
+  "Pick at least one item to continue",
   "Choose a date & time to continue",
   "Fill in your contact details to finish",
 ];
@@ -579,7 +579,7 @@ function StepService({ data, setData }: { data: BookingData; setData: (d: Partia
   return (
     <div className="space-y-8">
       <div>
-        <h3 className="text-gray-500 text-xs font-semibold mb-1 uppercase tracking-wider">Select Repairs Needed</h3>
+        <h3 className="text-gray-500 text-xs font-semibold mb-1 uppercase tracking-wider">Select What's Needed</h3>
         <p className="text-gray-400 text-xs mb-5">
           Pick one or more issues — our expert technicians will diagnose and provide you with details.
         </p>
@@ -929,7 +929,7 @@ export default function BookingWizard() {
         <div className="flex items-center justify-between mb-5">
           <h2 className="flex items-center gap-2.5 text-lg sm:text-xl font-bold text-gray-900">
             <span className="w-1 h-5 rounded-full bg-[#0066FF]" />
-            Book Your Repair
+            Book Your Visit
           </h2>
           <span className="text-xs text-gray-400">Takes about 2 minutes</span>
         </div>

@@ -1,9 +1,9 @@
 import { ClipboardList, Bike, CheckCircle2 } from "lucide-react";
 
 const steps = [
-  { icon: ClipboardList, title: "Book in 2 minutes", desc: "Tell us your device and repair needed" },
+  { icon: ClipboardList, title: "Book in 2 minutes", desc: "Tell us your device and what's wrong" },
   { icon: Bike, title: "We come to you", desc: "Technician arrives at your door" },
-  { icon: CheckCircle2, title: "Pay after repair", desc: "Only if you're fully satisfied" },
+  { icon: CheckCircle2, title: "Pay after service", desc: "Only if you're fully satisfied" },
 ];
 
 export default function HowItWorks() {

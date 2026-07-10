@@ -129,9 +129,15 @@ export default function CTA() {
                 "✓ 6-Month Warranty",
                 "✓ Same-Day Slots Available",
                 "✓ No Fix, No Fee",
-              ].map((badge) => (
-                <span key={badge} className="text-gray-400">{badge}</span>
-              ))}
+              ].map((badge) =>
+                badge === "✓ 6-Month Warranty" ? (
+                  <Link key={badge} href="/terms" className="text-gray-400 hover:text-[#00AAFF] underline underline-offset-2 transition-colors">
+                    {badge}
+                  </Link>
+                ) : (
+                  <span key={badge} className="text-gray-400">{badge}</span>
+                )
+              )}
             </motion.div>
           </div>
         </motion.div>

@@ -1,12 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { MapPin, Star, ShieldCheck, BadgeCheck, ArrowRight } from "lucide-react";
 
 const trustBadges = [
   { icon: Star, label: "4.9 Google Rating" },
   { icon: ShieldCheck, label: "6-Month Warranty" },
-  { icon: BadgeCheck, label: "Pay After Repair" },
+  { icon: BadgeCheck, label: "Pay After Service" },
 ];
 
 export default function Hero() {
@@ -24,7 +25,7 @@ export default function Hero() {
           className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 mb-5"
         >
           <MapPin className="w-3.5 h-3.5 text-[#0066FF]" />
-          Hyderabad · Doorstep Repair Service
+          Hyderabad · Doorstep Device Service
         </motion.div>
 
         <motion.h1
@@ -35,7 +36,7 @@ export default function Hero() {
         >
           Screen cracked?
           <br />
-          <span className="text-[#0066FF]">We fix it at your door.</span>{" "}
+          <span className="text-[#0066FF]">We come to your door.</span>{" "}
           Today.
         </motion.h1>
 
@@ -54,15 +55,26 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="flex flex-wrap items-center justify-center gap-2.5 mb-8"
         >
-          {trustBadges.map(({ icon: Icon, label }) => (
-            <span
-              key={label}
-              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium text-gray-700 bg-gray-50 border border-gray-200"
-            >
-              <Icon className="w-3.5 h-3.5 text-[#0066FF]" />
-              {label}
-            </span>
-          ))}
+          {trustBadges.map(({ icon: Icon, label }) =>
+            label === "6-Month Warranty" ? (
+              <Link
+                key={label}
+                href="/terms"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium text-gray-700 bg-gray-50 border border-gray-200 hover:border-[#0066FF]/40 hover:text-[#0066FF] transition-colors"
+              >
+                <Icon className="w-3.5 h-3.5 text-[#0066FF]" />
+                {label}
+              </Link>
+            ) : (
+              <span
+                key={label}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium text-gray-700 bg-gray-50 border border-gray-200"
+              >
+                <Icon className="w-3.5 h-3.5 text-[#0066FF]" />
+                {label}
+              </span>
+            )
+          )}
         </motion.div>
 
         <motion.div
@@ -75,7 +87,7 @@ export default function Hero() {
             onClick={scrollToWizard}
             className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base font-semibold text-white bg-[#0066FF] hover:bg-[#0052CC] shadow-lg shadow-blue-500/25 transition-all duration-200 hover:-translate-y-0.5"
           >
-            Book Doorstep Repair
+            Book Doorstep Visit
             <ArrowRight className="w-4 h-4" />
           </button>
         </motion.div>

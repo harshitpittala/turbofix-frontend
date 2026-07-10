@@ -13,7 +13,7 @@ const services = [
   {
     icon: Smartphone,
     title: "Screen Replacement",
-    desc: "Cracked or shattered? We restore your display to factory perfection with AMOLED-grade panels.",
+    desc: "Cracked or shattered? We restore your display with AMOLED-grade panels for like-new clarity and touch response.",
     color: "#0EA5E9",
     gradient: "from-[#0EA5E9]/20 to-[#0066FF]/5",
     time: "~30 min",
@@ -22,7 +22,7 @@ const services = [
   {
     icon: Battery,
     title: "Battery Replacement",
-    desc: "Restore 100% battery health with genuine-grade cells. Back to all-day power.",
+    desc: "Fresh high-capacity cells restore full-day battery life. Health verified before and after.",
     color: "#22C55E",
     gradient: "from-[#22C55E]/20 to-[#16A34A]/5",
     time: "~20 min",
