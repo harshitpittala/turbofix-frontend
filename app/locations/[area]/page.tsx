@@ -19,12 +19,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const titleServices = area.popularServices.slice(0, 2).join(" & ");
 
   return {
-    title: `Mobile Repair in ${area.name}, Hyderabad — ${titleServices} | TurboFix`,
-    description: `TurboFix doorstep mobile repair in ${area.name}, Hyderabad. ${area.intro} Book same-day repair — trained technicians, OEM parts, 6-month warranty.`,
+    title: `Mobile Service in ${area.name}, Hyderabad — ${titleServices} | TurboFix`,
+    description: `TurboFix doorstep mobile service in ${area.name}, Hyderabad. ${area.intro} Book same-day service — trained technicians, OEM parts, 6-month warranty.`,
     alternates: { canonical: `https://turbofix.in/locations/${area.slug}` },
     openGraph: {
-      title: `Mobile Repair in ${area.name} Hyderabad | TurboFix`,
-      description: `Doorstep mobile repair in ${area.name}. ${area.context} Professional service with 6-month warranty.`,
+      title: `Mobile Service in ${area.name} Hyderabad | TurboFix`,
+      description: `Doorstep mobile service in ${area.name}. ${area.context} Professional service with 6-month warranty.`,
       url: `https://turbofix.in/locations/${area.slug}`,
     },
   };
@@ -38,9 +38,9 @@ export default function LocationPage({ params }: Props) {
 
   const localSchema = {
     "@context": "https://schema.org",
-    "@type": "RepairService",
+    "@type": "Service",
     "@id": `https://turbofix.in/locations/${area.slug}#service`,
-    name: `Mobile Repair in ${area.name}, Hyderabad`,
+    name: `Mobile Service in ${area.name}, Hyderabad`,
     description: `${area.intro} ${area.context}`,
     provider: {
       "@id": "https://turbofix.in/#business",

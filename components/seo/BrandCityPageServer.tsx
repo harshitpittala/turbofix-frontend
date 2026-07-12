@@ -12,11 +12,11 @@ export default function BrandCityPageServer({ slug }: Props) {
 
   const serviceSchema = {
     "@context": "https://schema.org",
-    "@type": "RepairService",
+    "@type": "Service",
     "@id": `https://turbofix.in/${page.slug}#service`,
     name: page.h1,
     description: page.intro,
-    serviceType: `${page.brand} Mobile Phone Repair`,
+    serviceType: `${page.brand} Mobile Phone Service`,
     provider: { "@id": "https://turbofix.in/#business" },
     areaServed: { "@type": "City", name: "Hyderabad" },
     offers: page.topRepairs.map((r) => {
@@ -54,8 +54,8 @@ export default function BrandCityPageServer({ slug }: Props) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home",          item: "https://turbofix.in" },
-      { "@type": "ListItem", position: 2, name: "Repair by Brand", item: "https://turbofix.in/repairs" },
-      { "@type": "ListItem", position: 3, name: `${page.brand} Repair Hyderabad`, item: `https://turbofix.in/${page.slug}` },
+      { "@type": "ListItem", position: 2, name: "Service by Brand", item: "https://turbofix.in/brands" },
+      { "@type": "ListItem", position: 3, name: `${page.brand} Service Hyderabad`, item: `https://turbofix.in/${page.slug}` },
     ],
   };
 

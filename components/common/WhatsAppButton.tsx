@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 const quickMessages = [
   "Hi! I need a screen replacement 📱",
   "What's the cost for battery replacement?",
-  "How long does a repair take?",
+  "How long does a service visit take?",
   "I have water-damaged phone 💧",
 ];
 
@@ -17,7 +17,7 @@ export default function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
   const [showButton, setShowButton] = useState(false);
   const pathname = usePathname();
-  const isBookRepair = pathname === "/book-repair";
+  const isBookRepair = pathname === "/book-a-visit";
 
   useEffect(() => {
     const timer = setTimeout(() => setShowButton(true), 2500);
@@ -75,7 +75,7 @@ export default function WhatsAppButton() {
                     className="rounded-xl p-3 mb-4 text-sm text-gray-300"
                     style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)" }}
                   >
-                    👋 Hi there! Need a quick repair? We reply in minutes. Choose a message below or type your own.
+                    👋 Hi there! Need a quick service visit? We reply in minutes. Choose a message below or type your own.
                   </div>
 
                   <div className="space-y-2 mb-4">

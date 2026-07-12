@@ -6,7 +6,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
   title: "Site Map — All Pages | TurboFix",
-  description: "Complete list of all pages on TurboFix — mobile repair services, brand pages, Hyderabad area pages, blog posts, and more.",
+  description: "Complete list of all pages on TurboFix — mobile services, brand pages, Hyderabad area pages, blog posts, and more.",
   alternates: { canonical: "https://turbofix.in/sitemap-html" },
   robots: { index: true, follow: true },
 };
@@ -28,7 +28,7 @@ const sections = [
       { label: "Home",              href: "/" },
       { label: "About TurboFix",   href: "/about" },
       { label: "Our Services",     href: "/services" },
-      { label: "Book a Repair",    href: "/book-repair" },
+      { label: "Book a Visit",     href: "/book-a-visit" },
       { label: "Testimonials",     href: "/testimonials" },
       { label: "FAQ",              href: "/faq" },
       { label: "Blog",             href: "/blog" },
@@ -38,33 +38,33 @@ const sections = [
     ],
   },
   {
-    title: "Repair by Service",
+    title: "Service by Type",
     color: "#22C55E",
     links: [
       { label: "Screen Replacement Hyderabad",       href: "/screen-replacement-hyderabad" },
       { label: "Battery Replacement Hyderabad",      href: "/battery-replacement-hyderabad" },
-      { label: "Charging Port Repair Hyderabad",     href: "/charging-port-repair-hyderabad" },
-      { label: "Water Damage Repair Hyderabad",      href: "/water-damage-repair-hyderabad" },
-      { label: "Speaker & Mic Repair Hyderabad",     href: "/speaker-repair-hyderabad" },
-      { label: "Camera Repair Hyderabad",            href: "/camera-repair-hyderabad" },
+      { label: "Charging Port Service Hyderabad",    href: "/charging-port-service-hyderabad" },
+      { label: "Water Damage Service Hyderabad",     href: "/water-damage-hyderabad" },
+      { label: "Speaker & Mic Service Hyderabad",    href: "/speaker-service-hyderabad" },
+      { label: "Camera Service Hyderabad",           href: "/camera-service-hyderabad" },
       { label: "Back Panel Replacement Hyderabad",   href: "/back-panel-replacement-hyderabad" },
-      { label: "Motherboard Repair Hyderabad",       href: "/motherboard-repair-hyderabad" },
+      { label: "Motherboard Service Hyderabad",      href: "/motherboard-service-hyderabad" },
     ],
   },
   {
-    title: "Repair by Brand",
+    title: "Service by Brand",
     color: "#EC4899",
     links: [
-      { label: "All Brand Repairs",               href: "/repairs" },
-      { label: "iPhone Repair Hyderabad",         href: "/iphone-repair-hyderabad" },
-      { label: "Samsung Repair Hyderabad",        href: "/samsung-repair-hyderabad" },
-      { label: "OnePlus Repair Hyderabad",        href: "/oneplus-repair-hyderabad" },
-      { label: "Realme Repair Hyderabad",         href: "/realme-repair-hyderabad" },
-      { label: "Oppo Repair Hyderabad",           href: "/oppo-repair-hyderabad" },
-      { label: "Vivo Repair Hyderabad",           href: "/vivo-repair-hyderabad" },
-      { label: "Xiaomi Repair Hyderabad",         href: "/xiaomi-repair-hyderabad" },
-      { label: "Google Pixel Repair Hyderabad",   href: "/google-pixel-repair-hyderabad" },
-      { label: "Motorola Repair Hyderabad",       href: "/motorola-repair-hyderabad" },
+      { label: "All Brands",                      href: "/brands" },
+      { label: "iPhone Service Hyderabad",        href: "/iphone-service-hyderabad" },
+      { label: "Samsung Service Hyderabad",       href: "/samsung-service-hyderabad" },
+      { label: "OnePlus Service Hyderabad",       href: "/oneplus-service-hyderabad" },
+      { label: "Realme Service Hyderabad",        href: "/realme-service-hyderabad" },
+      { label: "Oppo Service Hyderabad",          href: "/oppo-service-hyderabad" },
+      { label: "Vivo Service Hyderabad",          href: "/vivo-service-hyderabad" },
+      { label: "Xiaomi Service Hyderabad",        href: "/xiaomi-service-hyderabad" },
+      { label: "Google Pixel Service Hyderabad",  href: "/google-pixel-service-hyderabad" },
+      { label: "Motorola Service Hyderabad",      href: "/motorola-service-hyderabad" },
     ],
   },
   {
@@ -73,7 +73,7 @@ const sections = [
     links: [
       { label: "All Hyderabad Areas",        href: "/locations" },
       ...locationData.slice(0, 20).map((l) => ({
-        label: `Mobile Repair ${l.name}`,
+        label: `Mobile Service ${l.name}`,
         href: `/locations/${l.slug}`,
       })),
     ],
@@ -166,7 +166,7 @@ export default function SitemapHtmlPage() {
               Can't find what you're looking for?{" "}
               <Link href="/contact" className="text-[#00AAFF] hover:text-white transition-colors">Contact us</Link>
               {" "}or{" "}
-              <Link href="/book-repair" className="text-[#00AAFF] hover:text-white transition-colors">book a repair</Link>.
+              <Link href="/book-a-visit" className="text-[#00AAFF] hover:text-white transition-colors">book a visit</Link>.
             </p>
           </div>
         </div>

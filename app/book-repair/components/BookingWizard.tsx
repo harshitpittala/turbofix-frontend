@@ -905,7 +905,7 @@ export default function BookingWizard() {
         date:     data.date,
         time:     data.time,
       }));
-      router.push('/book-repair/success');
+      router.push('/book-a-visit/success');
     } catch (err: any) {
       toast.error(err.message || "Something went wrong. Please try again.", {
         duration: 5000,

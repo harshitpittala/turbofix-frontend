@@ -11,34 +11,34 @@ import { fadeInUp, staggerContainer } from "@/lib/utils";
 const services = [
   { label: "Screen Replacement",         href: "/screen-replacement-hyderabad" },
   { label: "Battery Replacement",        href: "/battery-replacement-hyderabad" },
-  { label: "Charging Port Repair",       href: "/charging-port-repair-hyderabad" },
-  { label: "Water Damage Repair",        href: "/water-damage-repair-hyderabad" },
-  { label: "Camera Repair",              href: "/camera-repair-hyderabad" },
-  { label: "Speaker & Mic Repair",       href: "/speaker-repair-hyderabad" },
+  { label: "Charging Port Service",      href: "/charging-port-service-hyderabad" },
+  { label: "Water Damage Service",       href: "/water-damage-hyderabad" },
+  { label: "Camera Service",             href: "/camera-service-hyderabad" },
+  { label: "Speaker & Mic Service",      href: "/speaker-service-hyderabad" },
   { label: "Back Panel Replacement",     href: "/back-panel-replacement-hyderabad" },
-  { label: "Motherboard Repair",         href: "/motherboard-repair-hyderabad" },
+  { label: "Motherboard Service",        href: "/motherboard-service-hyderabad" },
 ];
 
 const brands = [
-  { label: "iPhone Repair Hyderabad",       href: "/iphone-repair-hyderabad" },
-  { label: "Samsung Repair Hyderabad",      href: "/samsung-repair-hyderabad" },
-  { label: "OnePlus Repair Hyderabad",      href: "/oneplus-repair-hyderabad" },
-  { label: "Xiaomi Repair Hyderabad",       href: "/xiaomi-repair-hyderabad" },
-  { label: "Realme Repair Hyderabad",       href: "/realme-repair-hyderabad" },
-  { label: "Oppo Repair Hyderabad",         href: "/oppo-repair-hyderabad" },
-  { label: "Google Pixel Repair Hyderabad", href: "/google-pixel-repair-hyderabad" },
-  { label: "Vivo Repair Hyderabad",         href: "/vivo-repair-hyderabad" },
+  { label: "iPhone Service Hyderabad",      href: "/iphone-service-hyderabad" },
+  { label: "Samsung Service Hyderabad",     href: "/samsung-service-hyderabad" },
+  { label: "OnePlus Service Hyderabad",     href: "/oneplus-service-hyderabad" },
+  { label: "Xiaomi Service Hyderabad",      href: "/xiaomi-service-hyderabad" },
+  { label: "Realme Service Hyderabad",      href: "/realme-service-hyderabad" },
+  { label: "Oppo Service Hyderabad",        href: "/oppo-service-hyderabad" },
+  { label: "Google Pixel Service Hyderabad", href: "/google-pixel-service-hyderabad" },
+  { label: "Vivo Service Hyderabad",        href: "/vivo-service-hyderabad" },
 ];
 
 const locations = [
   { label: "All Hyderabad Areas",       href: "/locations" },
-  { label: "Repair in Gachibowli",      href: "/locations/gachibowli" },
-  { label: "Repair in Madhapur",        href: "/locations/madhapur" },
-  { label: "Repair in HITEC City",      href: "/locations/hitech-city" },
-  { label: "Repair in Banjara Hills",   href: "/locations/banjara-hills" },
-  { label: "Repair in Ameerpet",        href: "/locations/ameerpet" },
-  { label: "Repair in Kondapur",        href: "/locations/kondapur" },
-  { label: "Repair in Dilsukhnagar",    href: "/locations/dilsukhnagar" },
+  { label: "Service in Gachibowli",     href: "/locations/gachibowli" },
+  { label: "Service in Madhapur",       href: "/locations/madhapur" },
+  { label: "Service in HITEC City",     href: "/locations/hitech-city" },
+  { label: "Service in Banjara Hills",  href: "/locations/banjara-hills" },
+  { label: "Service in Ameerpet",       href: "/locations/ameerpet" },
+  { label: "Service in Kondapur",       href: "/locations/kondapur" },
+  { label: "Service in Dilsukhnagar",   href: "/locations/dilsukhnagar" },
 ];
 
 const socials = [
@@ -51,8 +51,8 @@ const socials = [
 const quickLinks = [
   { label: "About TurboFix",  href: "/about" },
   { label: "Our Services",    href: "/services" },
-  { label: "All Brands",      href: "/repairs" },
-  { label: "Book a Repair",   href: "/book-repair" },
+  { label: "All Brands",      href: "/brands" },
+  { label: "Book a Visit",    href: "/book-a-visit" },
   { label: "Blog",            href: "/blog" },
   { label: "Testimonials",    href: "/testimonials" },
   { label: "FAQs",            href: "/faq" },
@@ -89,7 +89,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
-              Doorstep mobile repair in Hyderabad. Pickup &amp; delivery,
+              Doorstep mobile service in Hyderabad. Pickup &amp; delivery,
               OEM-grade parts, and trained technicians.
             </p>
             <div className="flex items-center gap-3 mb-5">
@@ -124,7 +124,7 @@ export default function Footer() {
           <motion.div variants={fadeInUp}>
             <h4 className="text-white font-semibold mb-5 flex items-center gap-2">
               <span className="w-1 h-4 rounded-full bg-[#00AAFF]" />
-              Repair Services
+              Our Services
             </h4>
             <ul className="space-y-2">
               {services.map((s) => (
@@ -142,7 +142,7 @@ export default function Footer() {
           <motion.div variants={fadeInUp}>
             <h4 className="text-white font-semibold mb-5 flex items-center gap-2">
               <span className="w-1 h-4 rounded-full bg-[#EC4899]" />
-              Repair by Brand
+              Service by Brand
             </h4>
             <ul className="space-y-2">
               {brands.map(({ label, href }) => (
@@ -192,14 +192,14 @@ export default function Footer() {
 
         {/* Independence disclosure */}
         <p className="text-center text-xs text-gray-600 leading-relaxed mb-3 max-w-3xl mx-auto">
-          TurboFix is an independent mobile repair provider and is not affiliated with, authorized, sponsored, or
+          TurboFix is an independent mobile service provider and is not affiliated with, authorized, sponsored, or
           endorsed by Apple, Samsung, Xiaomi, OnePlus, Vivo, Oppo, Realme, Google, or Motorola. All brand names, logos,
           and trademarks referenced on this site are the property of their respective owners and are used solely to
           identify the devices we service.
         </p>
         <p className="text-center text-xs text-gray-600 leading-relaxed mb-6 max-w-3xl mx-auto">
-          TurboFix provides physical smartphone repair services through in-person technician visits and our Hyderabad
-          repair studio. We do not provide remote technical support, remote access services, software helpdesk
+          TurboFix provides physical smartphone service through in-person technician visits and our Hyderabad
+          service studio. We do not provide remote technical support, remote access services, software helpdesk
           services, IT support services, or third-party customer support.
         </p>
 
@@ -215,7 +215,7 @@ export default function Footer() {
             <Link href="/terms"                  className="hover:text-gray-300 transition-colors">Terms of Service</Link>
             <Link href="/no-fix-no-fee-policy"   className="hover:text-gray-300 transition-colors">No Fix, No Fee Policy</Link>
             <Link href="/locations"              className="hover:text-gray-300 transition-colors">All Areas</Link>
-            <Link href="/repairs"                className="hover:text-gray-300 transition-colors">All Brands</Link>
+            <Link href="/brands"                 className="hover:text-gray-300 transition-colors">All Brands</Link>
             <Link href="/blog"                   className="hover:text-gray-300 transition-colors">Blog</Link>
           </div>
         </div>

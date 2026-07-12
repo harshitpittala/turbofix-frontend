@@ -27,14 +27,14 @@ export default function BlogListClient() {
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <motion.div variants={staggerContainer} initial="hidden" animate="show">
             <motion.div variants={fadeInUp} className="flex justify-center mb-4">
-              <span className="section-label">Repair Knowledge</span>
+              <span className="section-label">Service Knowledge</span>
             </motion.div>
             <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-5">
-              Mobile Repair{" "}
+              Mobile Service{" "}
               <span className="gradient-text">Blog</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-gray-400 text-xl max-w-2xl mx-auto">
-              Expert guides, tips, and insights from Hyderabad's top mobile repair technicians.
+              Expert guides, tips, and insights from Hyderabad's top mobile service technicians.
             </motion.p>
           </motion.div>
         </div>

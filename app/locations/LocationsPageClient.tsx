@@ -49,13 +49,13 @@ export default function LocationsPageClient() {
             </motion.div>
 
             <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-6">
-              Mobile Repair{" "}
+              Mobile Service{" "}
               <span className="gradient-text">Everywhere</span>
               <br />in Hyderabad
             </motion.h1>
 
             <motion.p variants={fadeInUp} className="text-gray-400 text-xl leading-relaxed mb-10">
-              TurboFix doorstep repair now covers{" "}
+              TurboFix doorstep service now covers{" "}
               <span className="text-white font-semibold">80+ Hyderabad localities</span> — from HITEC
               City to Charminar, from Kompally to Shamshabad. Book online and a trained
               technician arrives at your door.
@@ -63,11 +63,11 @@ export default function LocationsPageClient() {
 
             <motion.div variants={fadeInUp} className="flex flex-wrap justify-center gap-4">
               <Link
-                href="/book-repair"
+                href="/book-a-visit"
                 className="btn-neon inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white"
               >
                 <Zap className="w-4 h-4" fill="white" />
-                Book Doorstep Repair
+                Book a Doorstep Visit
               </Link>
               <a
                 href="tel:+918639605147"
@@ -89,7 +89,7 @@ export default function LocationsPageClient() {
             {[
               { label: "Areas Covered",       value: "80+" },
               { label: "Same-Day Service",     value: "Most Areas" },
-              { label: "Repair Warranty",      value: "6 Months" },
+              { label: "Service Warranty",     value: "6 Months" },
               { label: "Zero Travel Charge",   value: "All Zones" },
             ].map(({ label, value }) => (
               <div key={label} className="text-center">
@@ -204,7 +204,7 @@ export default function LocationsPageClient() {
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-gray-400 text-lg max-w-2xl mx-auto">
               Whether you're in a HITEC City apartment, an old-city lane near Charminar, or a
-              villa on the ORR — TurboFix brings the same repair quality to your door.
+              villa on the ORR — TurboFix brings the same service quality to your door.
             </motion.p>
           </motion.div>
 
@@ -218,16 +218,16 @@ export default function LocationsPageClient() {
               {
                 icon: "✅",
                 title: "OEM-Grade Parts",
-                desc: "Original quality components used on every repair — regardless of your area.",
+                desc: "Original quality components used on every job — regardless of your area.",
               },
               {
                 icon: "🛡️",
                 title: "6-Month Warranty",
-                desc: "Every repair comes with a 6-month warranty on parts and workmanship.",
+                desc: "Every service visit comes with a 6-month warranty on parts and workmanship.",
               },
               {
                 icon: "💳",
-                title: "Pay After Repair",
+                title: "Pay After Service",
                 desc: "No upfront payment. Confirmed quote before work begins. Pay only when you're satisfied.",
               },
             ].map((item) => (

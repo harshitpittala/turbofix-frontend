@@ -6,17 +6,17 @@ import CTA from "@/components/home/CTA";
 import { staggerContainer, fadeInUp } from "@/lib/utils";
 
 const values = [
-  { icon: Target, title: "Precision First", desc: "Every repair is done right the first time. No shortcuts, no compromises.", color: "#00AAFF" },
+  { icon: Target, title: "Precision First", desc: "Every job is done right the first time. No shortcuts, no compromises.", color: "#00AAFF" },
   { icon: Heart, title: "Customer Obsessed", desc: "We exist to serve you. Your satisfaction defines our success.", color: "#EC4899" },
-  { icon: Award, title: "Quality Always", desc: "OEM parts, trained repair techniques, and zero compromise on standards.", color: "#F59E0B" },
+  { icon: Award, title: "Quality Always", desc: "OEM parts, trained technicians, and zero compromise on standards.", color: "#F59E0B" },
   { icon: TrendingUp, title: "Always Improving", desc: "We continuously train our team on the latest devices as new models launch.", color: "#22C55E" },
 ];
 
 const stats = [
-  { value: "1,000+", label: "Devices Repaired" },
+  { value: "1,000+", label: "Devices Serviced" },
   { value: "2023", label: "Founded" },
   { value: "4.9 ★", label: "Google Rating" },
-  { value: "6-mo", label: "Repair Warranty" },
+  { value: "6-mo", label: "Service Warranty" },
 ];
 
 export default function AboutPage() {
@@ -42,7 +42,7 @@ export default function AboutPage() {
               <span className="gradient-text">Passion for Tech</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed mb-12">
-              TurboFix was born from a simple frustration — mobile repair in Hyderabad was slow,
+              TurboFix was born from a simple frustration — mobile service in Hyderabad was slow,
               overpriced, and unpredictable. We built the studio we wished existed.
             </motion.p>
 

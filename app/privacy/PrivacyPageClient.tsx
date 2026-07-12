@@ -23,11 +23,11 @@ const SECTIONS: Section[] = [
         items: [
           {
             kind: "para",
-            text: 'Welcome to TurboFix (“TurboFix”, “we”, “our”, or “us”). TurboFix operates the website turbofix.in and provides mobile device repair, doorstep pickup and delivery, diagnostics, maintenance, and related support services.',
+            text: 'Welcome to TurboFix (“TurboFix”, “we”, “our”, or “us”). TurboFix operates the website turbofix.in and provides mobile device service, doorstep pickup and delivery, diagnostics, maintenance, and related support services.',
           },
           {
             kind: "para",
-            text: "This Privacy Policy explains how we collect, use, store, process, and protect your personal information when you use our website, book repair services, communicate with us, or interact with our platform.",
+            text: "This Privacy Policy explains how we collect, use, store, process, and protect your personal information when you use our website, book our services, communicate with us, or interact with our platform.",
           },
           {
             kind: "para",
@@ -56,7 +56,7 @@ const SECTIONS: Section[] = [
               "Device Model",
               "Device IMEI Number (if provided)",
               "Device Condition Details",
-              "Repair Requests and Service Requirements",
+              "Service Requests and Requirements",
               "Payment Information",
               "Customer Support Communications",
               "Feedback and Reviews",
@@ -70,7 +70,7 @@ const SECTIONS: Section[] = [
           {
             kind: "list",
             items: [
-              "Repair Orders",
+              "Service Orders",
               "Service History",
               "Booking Details",
               "Invoice Records",
@@ -115,10 +115,10 @@ const SECTIONS: Section[] = [
           {
             kind: "list",
             items: [
-              "Process repair requests",
+              "Process service requests",
               "Schedule pickups and deliveries",
               "Diagnose device issues",
-              "Complete repair services",
+              "Complete service work",
               "Manage warranties",
             ],
           },
@@ -130,8 +130,8 @@ const SECTIONS: Section[] = [
           {
             kind: "list",
             items: [
-              "Generate repair tickets",
-              "Track repair progress",
+              "Generate service tickets",
+              "Track service progress",
               "Maintain service records",
               "Generate invoices",
               "Process payments",
@@ -145,8 +145,8 @@ const SECTIONS: Section[] = [
           {
             kind: "list",
             items: [
-              "Confirm repair bookings",
-              "Provide repair status updates",
+              "Confirm service bookings",
+              "Provide service status updates",
               "Send pickup and delivery notifications",
               "Respond to customer support requests",
             ],
@@ -199,19 +199,19 @@ const SECTIONS: Section[] = [
           },
           {
             kind: "para",
-            text: "However, certain repairs may require device testing to verify functionality after repair. Customers are strongly advised to:",
+            text: "However, certain services may require device testing to verify functionality afterward. Customers are strongly advised to:",
           },
           {
             kind: "list",
             items: [
-              "Back up all important data before submitting a device for repair.",
+              "Back up all important data before submitting a device for service.",
               "Remove confidential information whenever possible.",
               "Disable security locks only when necessary for diagnostics.",
             ],
           },
           {
             kind: "para",
-            text: "TurboFix is not responsible for data loss caused by existing hardware failures, existing software corruption, device manufacturer limitations, pre-existing device defects, or unavoidable repair procedures.",
+            text: "TurboFix is not responsible for data loss caused by existing hardware failures, existing software corruption, device manufacturer limitations, pre-existing device defects, or unavoidable service procedures.",
           },
         ],
       },
@@ -319,7 +319,7 @@ const SECTIONS: Section[] = [
             kind: "list",
             items: [
               "Booking confirmations",
-              "Repair status updates",
+              "Service status updates",
               "Pickup and delivery notifications",
               "Invoice notifications",
               "Service reminders",
@@ -431,7 +431,7 @@ const SECTIONS: Section[] = [
           {
             kind: "list",
             items: [
-              "Complete repair services",
+              "Complete service work",
               "Fulfill warranty obligations",
               "Maintain service history",
               "Process payments",
@@ -617,7 +617,7 @@ export default function PrivacyPageClient() {
             <p className="text-gray-300 leading-relaxed">
               At TurboFix, we are committed to protecting your privacy and ensuring the security of
               your personal data. This Privacy Policy explains how we collect, use, store, process,
-              and protect your personal information when you use our website, book repair services,
+              and protect your personal information when you use our website, book our services,
               communicate with us, or interact with our platform.
             </p>
           </motion.div>

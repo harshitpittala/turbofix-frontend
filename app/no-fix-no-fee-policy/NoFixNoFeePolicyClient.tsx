@@ -11,25 +11,25 @@ const pillars = [
   {
     icon: Wallet,
     title: "Diagnostics are free",
-    desc: "Every repair starts with a free diagnostic check. You'll get a fixed quote before we touch anything — no obligation to proceed.",
+    desc: "Every visit starts with a free diagnostic check. You'll get a fixed quote before we touch anything — no obligation to proceed.",
     color: "#00AAFF",
   },
   {
     icon: ShieldCheck,
-    title: "No fix, no repair fee",
-    desc: "If we diagnose your device and can't fix it, you don't pay for the repair. You only pay once the device is working again.",
+    title: "No fix, no service fee",
+    desc: "If we diagnose your device and can't resolve the issue, you don't pay for the work. You only pay once the device is working again.",
     color: "#22C55E",
   },
   {
     icon: Clock3,
-    title: "Clear repair timelines",
-    desc: "Most common repairs — screens, batteries, charging ports — are done in 20–45 minutes. Complex jobs like water damage or motherboard repair can take 2–4 hours, occasionally up to a day.",
+    title: "Clear service timelines",
+    desc: "Most common services — screens, batteries, charging ports — are done in 20–45 minutes. Complex jobs like water damage or motherboard service can take 2–4 hours, occasionally up to a day.",
     color: "#F59E0B",
   },
   {
     icon: ShieldQuestion,
     title: "One visit charge exception",
-    desc: "A ₹499 visit/service charge applies only if you decline a quoted repair, the device isn't repairable, or a job can't be completed for reasons on your side. It covers the technician's time and travel — not a repair fee.",
+    desc: "A ₹499 visit/service charge applies only if you decline a quoted service, the device can't be resolved, or a job can't be completed for reasons on your side. It covers the technician's time and travel — not a service fee.",
     color: "#EC4899",
   },
 ];
@@ -108,11 +108,11 @@ export default function NoFixNoFeePolicyClient() {
           >
             <h2 className="text-3xl font-bold text-white mt-0 mb-4">What "No Fix, No Fee" Covers</h2>
             <p>
-              Every TurboFix repair starts the same way: a technician runs a free diagnostic check on your
+              Every TurboFix visit starts the same way: a technician runs a free diagnostic check on your
               device — no charge, no obligation. Once the issue is confirmed, you get a fixed quote before
-              any repair work begins. If you approve it, we repair the device and you pay only after it's
-              working again. If we diagnose the device and find we <strong>can't</strong> fix it, you owe
-              nothing for the repair itself.
+              any service work begins. If you approve it, we service the device and you pay only after it's
+              working again. If we diagnose the device and find we <strong>can't</strong> resolve it, you owe
+              nothing for the work itself.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-8 mb-4">When a Visit Charge Applies</h2>
@@ -122,31 +122,31 @@ export default function NoFixNoFeePolicyClient() {
               technician has already come to you or you've visited our service point:
             </p>
             <ul className="list-disc list-inside space-y-2 text-gray-300 mb-4">
-              <li>You decide not to go ahead with a repair after receiving the quote.</li>
-              <li>The device is inspected and found not to be repairable.</li>
+              <li>You decide not to go ahead with the service after receiving the quote.</li>
+              <li>The device is inspected and found not to be serviceable.</li>
               <li>The job can't be completed for reasons on the customer's side (e.g. missing device access, no availability at pickup).</li>
             </ul>
             <p>
               This charge covers the technician's time and travel for that visit — it is separate from, and
-              should not be confused with, the free diagnostic itself. If your repair goes ahead as quoted,
+              should not be confused with, the free diagnostic itself. If your service goes ahead as quoted,
               this charge never applies.
             </p>
 
             <h2 className="text-3xl font-bold text-white mt-8 mb-4">6-Month Warranty, In Brief</h2>
             <p>
-              Eligible screen repairs carry a 6-month warranty; other replaced parts carry a 3-month
-              warranty. If the same issue recurs within that period due to parts or workmanship, we fix it
-              at no cost. Physical damage, water damage after repair, and issues unrelated to the original
-              repair are not covered. See our{" "}
+              Eligible screen replacements carry a 6-month warranty; other replaced parts carry a 3-month
+              warranty. If the same issue recurs within that period due to parts or workmanship, we resolve it
+              at no cost. Physical damage, water damage after service, and issues unrelated to the original
+              service are not covered. See our{" "}
               <Link href="/terms">full Terms of Service</Link> for the complete warranty terms, exclusions,
               and claim process.
             </p>
 
-            <h2 className="text-3xl font-bold text-white mt-8 mb-4">Typical Repair Timelines</h2>
+            <h2 className="text-3xl font-bold text-white mt-8 mb-4">Typical Service Timelines</h2>
             <ul className="list-disc list-inside space-y-2 text-gray-300 mb-4">
-              <li>Screen replacement, battery swap, charging port repair: 20–45 minutes</li>
-              <li>Water damage recovery: 2–4 hours, occasionally up to a day depending on severity</li>
-              <li>Motherboard-level repair: 1–3 days depending on component availability</li>
+              <li>Screen replacement, battery swap, charging port service: 20–45 minutes</li>
+              <li>Water damage service: 2–4 hours, occasionally up to a day depending on severity</li>
+              <li>Motherboard-level service: 1–3 days depending on component availability</li>
             </ul>
             <p>
               We'll always confirm an expected timeline for your specific device and issue before starting

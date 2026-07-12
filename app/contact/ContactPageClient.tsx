@@ -87,7 +87,7 @@ export default function ContactPageClient() {
               <span className="gradient-text">Talk</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-gray-400 text-xl max-w-xl mx-auto">
-              Have a question? Need a repair? We respond within 2 hours on weekdays.
+              Have a question? Need a visit? We respond within 2 hours on weekdays.
             </motion.p>
           </motion.div>
         </div>
@@ -240,7 +240,7 @@ export default function ContactPageClient() {
                         type="text"
                         value={form.subject}
                         onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                        placeholder="Screen repair inquiry"
+                        placeholder="Screen service inquiry"
                         className="input-glass"
                       />
                     </div>

@@ -77,8 +77,8 @@ export default function CTA() {
               variants={fadeInUp}
               className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
             >
-              Get transparent pricing and a clear repair timeline before you commit.
-              Book with TurboFix today for doorstep mobile repair in Hyderabad.
+              Get transparent pricing and a clear service timeline before you commit.
+              Book with TurboFix today for doorstep mobile service in Hyderabad.
               First-time customers get{" "}
               <span className="text-[#00AAFF] font-semibold">10% off.</span>
             </motion.p>
@@ -88,11 +88,11 @@ export default function CTA() {
               className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
             >
               <Link
-                href="/book-repair"
+                href="/book-a-visit"
                 className="btn-neon px-8 py-4 rounded-xl font-semibold text-white flex items-center gap-2.5 group text-base"
               >
                 <Zap className="w-5 h-5" fill="white" />
-                Book Your Repair
+                Book Your Visit
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
 

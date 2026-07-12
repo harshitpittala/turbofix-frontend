@@ -8,7 +8,7 @@ import AnimatedCounter from "@/components/common/AnimatedCounter";
 import { staggerContainer, fadeInUp, fadeInLeft, fadeInRight, scaleIn } from "@/lib/utils";
 
 const stats = [
-  { value: 1000, suffix: "+", label: "Devices Repaired" },
+  { value: 1000, suffix: "+", label: "Devices Serviced" },
   { value: 4.9, suffix: "★", label: "Average Rating", decimals: 1 },
   { value: 30, suffix: " min", label: "Avg. Turnaround" },
   { value: 98, suffix: "%", label: "First-Visit Success Rate" },
@@ -18,19 +18,19 @@ const features = [
   {
     icon: Shield,
     title: "6-Month Warranty",
-    desc: "Every repair comes backed by our 180-day warranty. If it breaks again within warranty — we fix it free.",
+    desc: "Every visit comes backed by our 180-day warranty. If it breaks again within warranty — we resolve it free.",
     color: "#00AAFF",
   },
   {
     icon: Zap,
     title: "Lightning Fast",
-    desc: "Most repairs completed in under 30 minutes. Book online, walk in, walk out — repaired and ready.",
+    desc: "Most visits completed in under 30 minutes. Book online, walk in, walk out — serviced and ready.",
     color: "#F59E0B",
   },
   {
     icon: Award,
     title: "Trained Technicians",
-    desc: "Our technicians average 5+ years of hands-on repair experience and are trained in-house on every device we service.",
+    desc: "Our technicians average 5+ years of hands-on service experience and are trained in-house on every device we handle.",
     color: "#A78BFA",
   },
   {
@@ -87,8 +87,8 @@ export default function WhyChooseUs() {
             variants={fadeInUp}
             className="text-gray-400 text-lg max-w-2xl mx-auto"
           >
-            We don't just repair phones — we explain what's wrong, what it costs,
-            and back every repair with a clear warranty.
+            We don't just service phones — we explain what's wrong, what it costs,
+            and back every visit with a clear warranty.
           </motion.p>
         </motion.div>
 

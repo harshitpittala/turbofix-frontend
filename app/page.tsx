@@ -9,14 +9,14 @@ import FAQ from "@/components/home/FAQ";
 import CTA from "@/components/home/CTA";
 
 export const metadata: Metadata = {
-  title: "TurboFix — Mobile Repair Services at Your Doorstep | Hyderabad",
+  title: "TurboFix — Mobile Service at Your Doorstep | Hyderabad",
   description:
-    "TurboFix provides fast, reliable, affordable mobile repair services at your doorstep in Hyderabad. Screen replacement, battery replacement, charging issues, water damage repair, iPhone repair, Samsung repair and more. Book now!",
+    "TurboFix provides fast, reliable, affordable mobile service at your doorstep in Hyderabad. Screen replacement, battery replacement, charging issues, water damage service, iPhone service, Samsung service and more. Book now!",
   alternates: { canonical: "https://turbofix.in" },
   openGraph: {
-    title: "TurboFix — Mobile Repair Services at Your Doorstep | Hyderabad",
+    title: "TurboFix — Mobile Service at Your Doorstep | Hyderabad",
     description:
-      "Rated 4.9★ by 2,400+ customers. Doorstep pickup & delivery. Screen, battery, water damage, iPhone & Samsung repair. Same-day slots available.",
+      "Rated 4.9★ by 1,000+ customers. Doorstep pickup & delivery. Screen, battery, water damage, iPhone & Samsung service. Same-day slots available.",
     url: "https://turbofix.in",
     images: [{ url: "https://turbofix.in/og-image.jpg", width: 1200, height: 630 }],
   },

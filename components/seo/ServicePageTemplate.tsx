@@ -65,7 +65,7 @@ export default function ServicePageTemplate({ svc }: Props) {
             <motion.p variants={fadeInUp} className="text-gray-400 text-lg leading-relaxed max-w-3xl mb-10">{svc.intro}</motion.p>
 
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
-              <Link href="/book-repair" className="btn-neon inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white">
+              <Link href="/book-a-visit" className="btn-neon inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white">
                 <Zap className="w-4 h-4" fill="white" /> Book {svc.name}
               </Link>
               <a href="tel:+918639605147" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-medium text-gray-300"
@@ -85,7 +85,7 @@ export default function ServicePageTemplate({ svc }: Props) {
             {[
               { icon: <Clock className="w-4 h-4 text-[#00AAFF]" />, text: svc.repairTime },
               { icon: <Shield className="w-4 h-4 text-[#22C55E]" />, text: svc.warranty },
-              { icon: <Star className="w-4 h-4 text-[#F59E0B]" />, text: "4.9★ · 1,000+ repairs" },
+              { icon: <Star className="w-4 h-4 text-[#F59E0B]" />, text: "4.9★ · 1,000+ jobs done" },
               { icon: <CheckCircle className="w-4 h-4 text-[#7C3AED]" />, text: svc.priceRange },
             ].map(({ icon, text }) => (
               <div key={text} className="flex items-center gap-2">{icon}<span>{text}</span></div>
@@ -118,18 +118,18 @@ export default function ServicePageTemplate({ svc }: Props) {
               <div className="p-6 rounded-2xl" style={{ background: "rgba(0,170,255,0.04)", border: "1px solid rgba(0,170,255,0.12)" }}>
                 <h3 className="text-white font-semibold mb-4 text-lg">Quick Summary</h3>
                 {[
-                  { label: "Repair Time",  value: svc.repairTime },
+                  { label: "Time Needed",  value: svc.repairTime },
                   { label: "Price Range",  value: svc.priceRange },
                   { label: "Warranty",     value: svc.warranty },
                   { label: "Service Type", value: "Doorstep (we come to you)" },
-                  { label: "Payment",      value: "Pay after repair · UPI / Card / Cash" },
+                  { label: "Payment",      value: "Pay after service · UPI / Card / Cash" },
                 ].map(({ label, value }) => (
                   <div key={label} className="flex justify-between gap-4 py-2.5 border-b border-white/5 last:border-0">
                     <span className="text-sm text-gray-500">{label}</span>
                     <span className="text-sm text-white font-medium text-right">{value}</span>
                   </div>
                 ))}
-                <Link href="/book-repair" className="btn-neon w-full flex items-center justify-center gap-2 mt-5 py-3 rounded-xl font-semibold text-white text-sm">
+                <Link href="/book-a-visit" className="btn-neon w-full flex items-center justify-center gap-2 mt-5 py-3 rounded-xl font-semibold text-white text-sm">
                   <Zap className="w-4 h-4" fill="white" /> Book Now
                 </Link>
               </div>
@@ -204,7 +204,7 @@ export default function ServicePageTemplate({ svc }: Props) {
         <div className="absolute inset-0 bg-[#02040F]" />
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true }}>
-            <motion.h3 variants={fadeInUp} className="text-white font-semibold mb-5">Related Repair Services</motion.h3>
+            <motion.h3 variants={fadeInUp} className="text-white font-semibold mb-5">Related Services</motion.h3>
             <div className="flex flex-wrap gap-3">
               {svc.relatedServiceSlugs.map((slug) => {
                 const label = slug.replace(/-hyderabad$/, "").replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());

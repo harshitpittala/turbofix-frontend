@@ -44,14 +44,14 @@ export default function Brands() {
             variants={fadeInUp}
             className="font-display text-4xl md:text-5xl font-bold mb-4"
           >
-            We Repair{" "}
+            We Service{" "}
             <span className="gradient-text">Every Brand</span>
           </motion.h2>
           <motion.p
             variants={fadeInUp}
             className="text-gray-400 text-lg max-w-xl mx-auto"
           >
-            Apple to Nothing — if it has a screen and a battery, we fix it.
+            Apple to Nothing — if it has a screen and a battery, we service it.
           </motion.p>
         </motion.div>
       </div>
@@ -123,7 +123,7 @@ export default function Brands() {
         <p className="text-gray-600 text-sm">
           Don't see your brand?{" "}
           <a href="/contact" className="text-[#00AAFF] hover:underline">Contact us</a>{" "}
-          — we most likely repair it too.
+          — we most likely service it too.
         </p>
       </div>
     </section>

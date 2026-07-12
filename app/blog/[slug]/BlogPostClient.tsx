@@ -134,16 +134,16 @@ export default function BlogPostClient({ blog }: Props) {
             style={{ background: "rgba(0,102,255,0.06)", border: "1px solid rgba(0,170,255,0.2)" }}
           >
             <h3 className="font-display text-2xl font-bold text-white mb-3">
-              Need a Repair? We Come to You.
+              Need a Visit? We Come to You.
             </h3>
             <p className="text-gray-400 mb-6">
-              TurboFix offers doorstep mobile repair across Hyderabad. Book online and we'll handle the rest.
+              TurboFix offers doorstep mobile service across Hyderabad. Book online and we'll handle the rest.
             </p>
             <Link
-              href="/book-repair"
+              href="/book-a-visit"
               className="btn-neon inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white"
             >
-              Book a Repair
+              Book a Visit
               <ArrowRight className="w-4 h-4" />
             </Link>
           </motion.div>

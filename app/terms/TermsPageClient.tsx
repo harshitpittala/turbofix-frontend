@@ -25,7 +25,7 @@ export default function TermsPageClient() {
               <span className="gradient-text">TurboFix Policies</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Complete information about our repair services, warranty coverage, and terms of service.
+              Complete information about our service offerings, warranty coverage, and terms of service.
             </motion.p>
           </motion.div>
         </div>
@@ -55,8 +55,8 @@ export default function TermsPageClient() {
             {/* How TurboFix Works */}
             <h2 className="text-3xl font-bold text-white mt-0 mb-4">How TurboFix Works?</h2>
             <p>
-              TurboFix provides onsite mobile repair services at your convenient time and place. We also provide pickup
-              and delivery service, where our field executive will collect your phone, repair it, and deliver it back
+              TurboFix provides onsite mobile service at your convenient time and place. We also provide pickup
+              and delivery service, where our field executive will collect your phone, service it, and deliver it back
               safely.
             </p>
             <p>
@@ -76,7 +76,7 @@ export default function TermsPageClient() {
             <h2 className="text-3xl font-bold text-white mt-8 mb-4">TurboFix Warranty Policy</h2>
             <p>
               TurboFix offers a <strong>6-month warranty</strong> on Redmi, Oppo, Vivo, and selected mobile screen
-              repairs/replacements carried out by us from the date of invoice.
+              services/replacements carried out by us from the date of invoice.
             </p>
             <p>
               We also provide a <strong>3-month warranty</strong> on all other spare parts replaced by TurboFix.
@@ -96,11 +96,11 @@ export default function TermsPageClient() {
             {/* Warranty Terms */}
             <h3 className="text-2xl font-bold text-white mt-6 mb-3">Warranty Terms</h3>
             <ol className="list-decimal list-inside space-y-2 text-gray-300">
-              <li>Warranty is valid only for the specific repaired device and original customer.</li>
+              <li>Warranty is valid only for the specific serviced device and original customer.</li>
               <li>Warranty is non-transferable if the device is sold or handed over to another person.</li>
               <li>The mobile phone must switch on and function normally apart from the screen issue.</li>
               <li>
-                If the old damaged screen is not handed over to the technician during repair, warranty validity will be
+                If the old damaged screen is not handed over to the technician during service, warranty validity will be
                 limited to 3 months only.
               </li>
             </ol>
@@ -124,44 +124,44 @@ export default function TermsPageClient() {
               your complaint. You will receive an acknowledgement email once your request is registered.
             </p>
             <p>
-              Warranty is limited only to the repaired/replaced parts and services paid for during the original repair.
+              Warranty is limited only to the serviced/replaced parts and services paid for during the original visit.
             </p>
 
             {/* Not Applicable */}
             <h3 className="text-2xl font-bold text-white mt-6 mb-3">Warranty Will Not Apply Under These Conditions</h3>
             <ol className="list-decimal list-inside space-y-2 text-gray-300">
-              <li>Any accidental or physical damage after repair.</li>
+              <li>Any accidental or physical damage after service.</li>
               <li>Visible lines or blank display issues caused after manual or accidental damage.</li>
               <li>Excessive or critical device damage affecting internal components.</li>
               <li>Bent, twisted, cracked, or heavily damaged frames.</li>
               <li>Hard pressure damage causing display discoloration or lines.</li>
-              <li>Accidental drops after repair.</li>
+              <li>Accidental drops after service.</li>
               <li>Water or liquid damage.</li>
               <li>Tampering with internal hardware.</li>
-              <li>Damage caused due to self-repair attempts.</li>
-              <li>Software-related issues not connected to the repair.</li>
+              <li>Damage caused due to unauthorized self-service attempts.</li>
+              <li>Software-related issues not connected to the service performed.</li>
               <li>Rooted or jailbroken devices.</li>
-              <li>New damages unrelated to the original repair.</li>
-              <li>Data loss during or after repair. Customers are advised to back up data before repair.</li>
-              <li>If the issue occurs within 7 days of repair, TurboFix will provide onsite support at your location.</li>
+              <li>New damages unrelated to the original service.</li>
+              <li>Data loss during or after service. Customers are advised to back up data before any service visit.</li>
+              <li>If the issue occurs within 7 days of service, TurboFix will provide onsite support at your location.</li>
               <li>
                 If the same issue occurs after 7 days, the customer may need to visit the TurboFix service center and a
                 service charge of ₹499 may apply.
               </li>
-              <li>TurboFix is responsible only for the repairs/services performed by us. Any unrelated physical damage is not covered.</li>
+              <li>TurboFix is responsible only for the services performed by us. Any unrelated physical damage is not covered.</li>
             </ol>
 
-            {/* Pre-Repair Conditions */}
+            {/* Pre-Service Conditions */}
             <h3 className="text-2xl font-bold text-white mt-6 mb-3">Warranty Also Does Not Cover</h3>
             <ol className="list-decimal list-inside space-y-2 text-gray-300 mb-4">
-              <li>Existing manufacturing defects unrelated to the repair.</li>
-              <li>Existing frame damage noted before repair.</li>
+              <li>Existing manufacturing defects unrelated to the service.</li>
+              <li>Existing frame damage noted before service.</li>
               <li>Water-damaged devices.</li>
               <li>Rooted or jailbroken devices.</li>
-              <li>Internal hardware tampering or unauthorized repair attempts.</li>
+              <li>Internal hardware tampering or unauthorized service attempts.</li>
             </ol>
             <p>
-              Under certain circumstances, internal damage may make repair impossible. Our technicians will explain the
+              Under certain circumstances, internal damage may make the service impossible to complete. Our technicians will explain the
               issue after device diagnosis.
             </p>
 
@@ -169,7 +169,7 @@ export default function TermsPageClient() {
             <h3 className="text-2xl font-bold text-white mt-6 mb-3">Cancellation Policy</h3>
             <ol className="list-decimal list-inside space-y-2 text-gray-300 mb-4">
               <li>You can cancel or reschedule a booking free of charge any time before a technician is dispatched to your location — call, WhatsApp, or email us and we'll confirm the change.</li>
-              <li>Once a technician has been dispatched or has arrived, cancelling the visit, declining the quoted repair, or the job not being completable for reasons on your side (e.g. no one available, device inaccessible) attracts a minimum ₹499 visit/service charge. This covers the technician's time and travel — it is not a repair fee.</li>
+              <li>Once a technician has been dispatched or has arrived, cancelling the visit, declining the quoted service, or the job not being completable for reasons on your side (e.g. no one available, device inaccessible) attracts a minimum ₹499 visit/service charge. This covers the technician's time and travel — it is not a service fee.</li>
               <li>If TurboFix needs to cancel or reschedule a confirmed appointment (e.g. parts unavailability, technician unavailability), no charge applies and we will offer the next available slot.</li>
               <li>No-shows by the customer at the agreed time/location without prior notice may also attract the ₹499 visit charge.</li>
             </ol>
@@ -180,7 +180,7 @@ export default function TermsPageClient() {
             {/* Refund Policy */}
             <h3 className="text-2xl font-bold text-white mt-6 mb-3">Refund Policy</h3>
             <ol className="list-decimal list-inside space-y-2 text-gray-300 mb-4">
-              <li>Diagnosis is always free — no charge applies if you haven't approved a repair.</li>
+              <li>Diagnosis is always free — no charge applies if you haven't approved the service.</li>
               <li>Refunds are not applicable for spare parts once installed, especially display/screen replacements, since the part cannot be resold once fitted.</li>
               <li>If you paid a booking/visit charge and TurboFix is unable to attend at the confirmed time through no fault of yours, the amount will be refunded in full within 5–7 business days to the original payment method.</li>
               <li>For online payment gateway transactions that fail after the amount is debited, refunds are processed automatically by the payment provider, typically within 5–7 business days.</li>
@@ -193,7 +193,7 @@ export default function TermsPageClient() {
             <ul className="list-disc list-inside space-y-2 text-gray-300">
               <li>Water damage</li>
               <li>Physical damage</li>
-              <li>Internal hardware failure unrelated to the repair</li>
+              <li>Internal hardware failure unrelated to the service performed</li>
             </ul>
 
             {/* Payment Methods */}
@@ -223,9 +223,9 @@ export default function TermsPageClient() {
             <h3 className="text-2xl font-bold text-white mt-6 mb-3">Service / Visit Charges</h3>
             <p>A minimum service/visit charge of <strong>₹499</strong> will apply in the following situations:</p>
             <ul className="list-disc list-inside space-y-2 text-gray-300 mb-4">
-              <li>Repair declined by the customer</li>
-              <li>Device not repaired after inspection</li>
-              <li>Estimated repair cost not approved</li>
+              <li>Service declined by the customer</li>
+              <li>Device not serviced after inspection</li>
+              <li>Estimated service cost not approved</li>
               <li>Job incomplete due to customer-side reasons</li>
             </ul>
 

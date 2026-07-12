@@ -19,7 +19,7 @@ export default function ServicePageServer({ slug }: Props) {
 
   const serviceSchema = {
     "@context": "https://schema.org",
-    "@type": "RepairService",
+    "@type": "Service",
     "@id": `https://turbofix.in/${svc.slug}#service`,
     name: svc.h1,
     description: svc.intro,

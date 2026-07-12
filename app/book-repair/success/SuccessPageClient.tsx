@@ -22,13 +22,13 @@ interface SuccessData {
 const SERVICE_LABELS: Record<string, string> = {
   screen:   "Screen Replacement",
   battery:  "Battery Replacement",
-  camera:   "Camera Repair",
+  camera:   "Camera Service",
   water:    "Water Damage",
-  speaker:  "Speaker / Mic Fix",
+  speaker:  "Speaker / Mic Service",
   charging: "Charging Port",
   back:     "Back Panel",
   software: "Software / Data",
-  other:    "Other Repair",
+  other:    "Other Service",
 };
 
 /* ─── Helpers ───────────────────────────────────────────────────────────── */
@@ -47,10 +47,10 @@ export default function SuccessPageClient() {
   useEffect(() => {
     try {
       const raw = sessionStorage.getItem("tfx_booking_success");
-      if (!raw) { router.replace("/book-repair"); return; }
+      if (!raw) { router.replace("/book-a-visit"); return; }
       setData(JSON.parse(raw));
     } catch {
-      router.replace("/book-repair");
+      router.replace("/book-a-visit");
       return;
     }
     setReady(true);
@@ -75,7 +75,7 @@ export default function SuccessPageClient() {
 
   const infoCards = [
     { icon: "📱", label: "Device",   value: deviceLabel || "—" },
-    { icon: "🔧", label: "Services", value: `${serviceCount} repair${serviceCount !== 1 ? "s" : ""}` },
+    { icon: "🔧", label: "Services", value: `${serviceCount} service${serviceCount !== 1 ? "s" : ""}` },
     { icon: "📅", label: "Date",     value: data.date ? fmtDate(data.date) : "—" },
     { icon: "⏰", label: "Time",     value: data.time || "—" },
   ];
@@ -84,7 +84,7 @@ export default function SuccessPageClient() {
     "You'll receive an SMS & email confirmation",
     "Our technician will call 30 min before pickup",
     "Free diagnostic assessment — no payment yet",
-    "Repair approved? We get to work immediately",
+    "Approved? We get to work immediately",
   ];
 
   return (
@@ -224,7 +224,7 @@ export default function SuccessPageClient() {
                   }}
                 >
                   <p className="text-[#00AAFF] text-xs font-semibold uppercase tracking-wider mb-2">
-                    Repairs Requested
+                    Services Requested
                   </p>
                   <div className="space-y-1">
                     {data.services.map((s) => (

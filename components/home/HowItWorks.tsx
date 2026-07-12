@@ -26,8 +26,8 @@ const steps = [
   {
     number: "03",
     icon: Wrench,
-    title: "Expert Repair",
-    desc: "Once you approve the quote, our trained engineers get to work. Most repairs are completed in under 30 minutes.",
+    title: "Expert Service",
+    desc: "Once you approve the quote, our trained engineers get to work. Most visits are completed in under 30 minutes.",
     color: "#EC4899",
     highlight: "~30 min average",
   },
@@ -64,11 +64,11 @@ export default function HowItWorks() {
             variants={fadeInUp}
             className="font-display text-4xl md:text-5xl font-bold mb-5"
           >
-            Repair in{" "}
+            Service in{" "}
             <span className="gradient-text">4 Simple Steps</span>
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-gray-400 text-lg max-w-xl mx-auto">
-            We've streamlined the entire repair experience so you can get back to what matters — fast.
+            We've streamlined the entire service experience so you can get back to what matters — fast.
           </motion.p>
         </motion.div>
 
@@ -162,10 +162,10 @@ export default function HowItWorks() {
           className="text-center mt-16"
         >
           <Link
-            href="/book-repair"
+            href="/book-a-visit"
             className="btn-neon inline-flex items-center gap-3 px-8 py-4 rounded-xl font-semibold text-white"
           >
-            Start Your Repair
+            Start Your Visit
             <ArrowRight className="w-5 h-5" />
           </Link>
           <p className="text-gray-600 text-sm mt-4">Free diagnostics · No commitment · Cancel anytime</p>

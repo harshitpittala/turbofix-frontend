@@ -11,13 +11,13 @@ const extendedTestimonials = [
   ...testimonials,
   {
     name: "Nikhil Gupta", role: "Entrepreneur", location: "Secunderabad",
-    rating: 5, text: "Had three phones repaired here over the past year. Consistent quality every single time. Their technicians really know what they're doing and the pricing is genuinely fair.",
-    service: "Multiple Repairs", avatar: "NG", color: "#0EA5E9",
+    rating: 5, text: "Had three phones serviced here over the past year. Consistent quality every single time. Their technicians really know what they're doing and the pricing is genuinely fair.",
+    service: "Multiple Services", avatar: "NG", color: "#0EA5E9",
   },
   {
     name: "Ritu Agarwal", role: "CA", location: "Kukatpally",
-    rating: 5, text: "Lost all my contacts after a factory reset. TurboFix's software team recovered everything in 2 hours. I couldn't believe it. Absolutely brilliant service.",
-    service: "Data Recovery", avatar: "RA", color: "#22C55E",
+    rating: 5, text: "My phone's back glass cracked after a fall. TurboFix replaced it in under an hour and it looks brand new. Couldn't believe how smooth the whole process was.",
+    service: "Back Panel Replacement", avatar: "RA", color: "#22C55E",
   },
   {
     name: "Sai Teja", role: "Student", location: "Dilsukhnagar",
@@ -26,18 +26,18 @@ const extendedTestimonials = [
   },
   {
     name: "Meena Krishnamurthy", role: "Homemaker", location: "Uppal",
-    rating: 5, text: "My husband got our son's phone repaired here. The staff patiently explained everything to us without any techno-jargon. Very polite and professional service.",
+    rating: 5, text: "My husband got our son's phone serviced here. The staff patiently explained everything to us without any techno-jargon. Very polite and professional service.",
     service: "Battery Replacement", avatar: "MK", color: "#A78BFA",
   },
   {
     name: "Farhan Qureshi", role: "Photographer", location: "HITEC City",
-    rating: 5, text: "My iPhone camera module died right before a client shoot. TurboFix did an emergency repair in 90 minutes. The camera quality is better than before. Saved my project!",
-    service: "Camera Repair", avatar: "FQ", color: "#EC4899",
+    rating: 5, text: "My iPhone camera module died right before a client shoot. TurboFix did an emergency service visit in 90 minutes. The camera quality is better than before. Saved my project!",
+    service: "Camera Service", avatar: "FQ", color: "#EC4899",
   },
   {
     name: "Lavanya Reddy", role: "IT Professional", location: "Manikonda",
     rating: 5, text: "Brought in a water-damaged Samsung Galaxy that everyone else said was dead. TurboFix revived it completely. My photos, contacts, everything was intact. Truly amazing!",
-    service: "Water Damage Recovery", avatar: "LR", color: "#38BDF8",
+    service: "Water Damage Service", avatar: "LR", color: "#38BDF8",
   },
 ];
 
@@ -55,11 +55,11 @@ export default function TestimonialsPageClient() {
               <span className="section-label">Customer Stories</span>
             </motion.div>
             <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-5">
-              2,400+ Reasons to{" "}
+              1,000+ Reasons to{" "}
               <span className="gradient-text">Trust TurboFix</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-gray-400 text-xl max-w-2xl mx-auto mb-8">
-              Real customers, real repairs, real results. Here's what Hyderabad is saying.
+              Real customers, real service, real results. Here's what Hyderabad is saying.
             </motion.p>
             {/* Rating summary */}
             <motion.div variants={fadeInUp} className="inline-flex items-center gap-4 glass rounded-2xl px-6 py-3">
@@ -67,7 +67,7 @@ export default function TestimonialsPageClient() {
                 {[1,2,3,4,5].map(i => <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />)}
               </div>
               <div className="text-white font-bold text-xl">4.9</div>
-              <div className="text-gray-400 text-sm">based on 2,400+ reviews</div>
+              <div className="text-gray-400 text-sm">based on 1,000+ reviews</div>
             </motion.div>
           </motion.div>
         </div>

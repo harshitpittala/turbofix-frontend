@@ -3,13 +3,13 @@ import LocationsPageClient from "./LocationsPageClient";
 import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Mobile Repair in All Hyderabad Areas — TurboFix Doorstep Service",
+  title: "Mobile Service in All Hyderabad Areas — TurboFix Doorstep Service",
   description:
-    "TurboFix doorstep mobile repair covers all Hyderabad areas — Gachibowli, Madhapur, Banjara Hills, Secunderabad, Dilsukhnagar, Kompally, and 80+ more. Same-day repair slots available at your door.",
+    "TurboFix doorstep mobile service covers all Hyderabad areas — Gachibowli, Madhapur, Banjara Hills, Secunderabad, Dilsukhnagar, Kompally, and 80+ more. Same-day service slots available at your door.",
   alternates: { canonical: "https://turbofix.in/locations" },
   openGraph: {
-    title: "Mobile Repair in All Hyderabad Areas | TurboFix",
-    description: "Doorstep mobile repair across 80+ Hyderabad localities. Book online — we come to you, same day in most areas.",
+    title: "Mobile Service in All Hyderabad Areas | TurboFix",
+    description: "Doorstep mobile service across 80+ Hyderabad localities. Book online — we come to you, same day in most areas.",
     url: "https://turbofix.in/locations",
   },
 };
@@ -18,9 +18,9 @@ const locationsSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://turbofix.in/locations#service",
-  name: "Doorstep Mobile Repair — All Hyderabad Areas",
+  name: "Doorstep Mobile Service — All Hyderabad Areas",
   description:
-    "TurboFix provides professional doorstep mobile repair across all major Hyderabad areas including Gachibowli, Madhapur, Banjara Hills, Secunderabad, Ameerpet, Dilsukhnagar, Kompally, and 80+ more localities.",
+    "TurboFix provides professional doorstep mobile service across all major Hyderabad areas including Gachibowli, Madhapur, Banjara Hills, Secunderabad, Ameerpet, Dilsukhnagar, Kompally, and 80+ more localities.",
   provider: { "@id": "https://turbofix.in/#business" },
   areaServed: { "@type": "City", name: "Hyderabad" },
 };

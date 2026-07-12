@@ -46,11 +46,11 @@ export default function BrandCityPageTemplate({ page }: Props) {
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <motion.div variants={staggerContainer} initial="hidden" animate="show">
             <motion.div variants={fadeInUp} className="flex items-center gap-2 mb-8 text-sm text-gray-500">
-              <Link href="/repairs" className="hover:text-[#00AAFF] flex items-center gap-1.5 transition-colors">
+              <Link href="/brands" className="hover:text-[#00AAFF] flex items-center gap-1.5 transition-colors">
                 <ArrowLeft className="w-4 h-4" /> All Brands
               </Link>
               <ChevronRight className="w-3 h-3" />
-              <span className="text-gray-400">{page.brand} Repair</span>
+              <span className="text-gray-400">{page.brand} Service</span>
             </motion.div>
 
             <motion.div variants={fadeInUp} className="flex items-center gap-3 mb-5">
@@ -72,8 +72,8 @@ export default function BrandCityPageTemplate({ page }: Props) {
             <motion.p variants={fadeInUp} className="text-gray-500 text-base leading-relaxed max-w-3xl mb-10">{page.whyHyderabad}</motion.p>
 
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
-              <Link href="/book-repair" className="btn-neon inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white">
-                <Zap className="w-4 h-4" fill="white" /> Book {page.brand} Repair
+              <Link href="/book-a-visit" className="btn-neon inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white">
+                <Zap className="w-4 h-4" fill="white" /> Book {page.brand} Service
               </Link>
               <a href="tel:+918639605147" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-medium text-gray-300"
                 style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}>
@@ -89,8 +89,10 @@ export default function BrandCityPageTemplate({ page }: Props) {
         <div className="absolute inset-0 bg-[#030712]" />
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <p className="text-center text-xs text-gray-500 leading-relaxed">
-            TurboFix is an independent repair service and is not affiliated with, authorized, sponsored, or endorsed by{" "}
-            {page.brand}. {page.brand} and related trademarks are the property of their respective owners.
+            TurboFix is an independent service provider and is not affiliated with, authorized, sponsored, or endorsed by{" "}
+            {page.brand}. {page.brand} and related trademarks are the property of their respective owners. TurboFix does
+            not provide remote technical support or software helpdesk services — all work is performed in person via
+            doorstep visit or at our Hyderabad studio.
           </p>
         </div>
       </section>
@@ -101,10 +103,10 @@ export default function BrandCityPageTemplate({ page }: Props) {
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap justify-center md:justify-between gap-6 text-sm text-gray-400">
             {[
-              { icon: <Clock className="w-4 h-4 text-[#00AAFF]" />, text: "Same-day repair in most slots" },
-              { icon: <Shield className="w-4 h-4 text-[#22C55E]" />, text: "6-month repair warranty" },
-              { icon: <Star className="w-4 h-4 text-[#F59E0B]" />, text: `4.9★ · ${page.brand} repair experts` },
-              { icon: <CheckCircle className="w-4 h-4 text-[#7C3AED]" />, text: "OEM-grade parts, pay after repair" },
+              { icon: <Clock className="w-4 h-4 text-[#00AAFF]" />, text: "Same-day service in most slots" },
+              { icon: <Shield className="w-4 h-4 text-[#22C55E]" />, text: "6-month service warranty" },
+              { icon: <Star className="w-4 h-4 text-[#F59E0B]" />, text: `4.9★ · ${page.brand} service experts` },
+              { icon: <CheckCircle className="w-4 h-4 text-[#7C3AED]" />, text: "OEM-grade parts, pay after service" },
             ].map(({ icon, text }) => (
               <div key={text} className="flex items-center gap-2">{icon}<span>{text}</span></div>
             ))}
@@ -118,10 +120,10 @@ export default function BrandCityPageTemplate({ page }: Props) {
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true }}>
             <motion.h2 variants={fadeInUp} className="font-display text-2xl md:text-3xl font-bold text-white mb-2">
-              {page.brand} Repairs in{" "}
+              {page.brand} Services in{" "}
               <span className="gradient-text">Hyderabad</span>
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-gray-500 text-sm mb-8">Most common {page.brand} repairs done at your doorstep</motion.p>
+            <motion.p variants={fadeInUp} className="text-gray-500 text-sm mb-8">Most common {page.brand} services done at your doorstep</motion.p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {page.topRepairs.map((r, i) => (
                 <motion.div key={r.name} variants={fadeInUp} transition={{ delay: i * 0.07 }}
@@ -131,7 +133,7 @@ export default function BrandCityPageTemplate({ page }: Props) {
                   <p className="text-gray-500 text-xs leading-relaxed flex-1">{r.desc}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-medium" style={{ color: page.color }}>{r.price}</span>
-                    <Link href="/book-repair" className="text-xs text-[#00AAFF] hover:text-white transition-colors">Book →</Link>
+                    <Link href="/book-a-visit" className="text-xs text-[#00AAFF] hover:text-white transition-colors">Book →</Link>
                   </div>
                 </motion.div>
               ))}
@@ -146,7 +148,7 @@ export default function BrandCityPageTemplate({ page }: Props) {
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true }}>
             <motion.h2 variants={fadeInUp} className="font-display text-2xl font-bold text-white mb-6">
-              {page.brand} Models We Repair
+              {page.brand} Models We Service
             </motion.h2>
             <div className="flex flex-wrap gap-3">
               {page.popularModels.map((m, i) => (
@@ -158,7 +160,7 @@ export default function BrandCityPageTemplate({ page }: Props) {
               ))}
             </div>
             <motion.p variants={fadeInUp} className="text-gray-600 text-xs mt-4">
-              Don't see your model? <a href="tel:+918639605147" className="text-[#00AAFF] hover:text-white transition-colors">Call us</a> — we repair most {page.brand} models.
+              Don't see your model? <a href="tel:+918639605147" className="text-[#00AAFF] hover:text-white transition-colors">Call us</a> — we service most {page.brand} models.
             </motion.p>
           </motion.div>
         </div>
@@ -170,7 +172,7 @@ export default function BrandCityPageTemplate({ page }: Props) {
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true }}>
             <motion.h2 variants={fadeInUp} className="font-display text-2xl font-bold text-white mb-6">
-              Why Trust TurboFix for <span className="gradient-text">{page.brand}</span> Repair
+              Why Trust TurboFix for <span className="gradient-text">{page.brand}</span> Service
             </motion.h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {page.trustPoints.map((p, i) => (
@@ -192,7 +194,7 @@ export default function BrandCityPageTemplate({ page }: Props) {
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true }}>
             <motion.h2 variants={fadeInUp} className="font-display text-2xl md:text-3xl font-bold text-white mb-8">
-              FAQs — <span className="gradient-text">{page.brand}</span> Repair in Hyderabad
+              FAQs — <span className="gradient-text">{page.brand}</span> Service in Hyderabad
             </motion.h2>
             <div className="max-w-3xl space-y-3">
               {page.faqs.map((f, i) => <FAQItem key={i} q={f.q} a={f.a} i={i} />)}
@@ -209,7 +211,7 @@ export default function BrandCityPageTemplate({ page }: Props) {
             <motion.h3 variants={fadeInUp} className="text-white font-semibold mb-5">Explore More</motion.h3>
             <div className="flex flex-wrap gap-3">
               {[
-                { label: "All Brand Repairs", href: "/repairs" },
+                { label: "All Brand Services", href: "/brands" },
                 { label: "Screen Replacement", href: "/screen-replacement-hyderabad" },
                 { label: "Battery Replacement", href: "/battery-replacement-hyderabad" },
                 { label: "All Areas in Hyderabad", href: "/locations" },

@@ -1,12 +1,8 @@
-import type { Metadata } from "next";
-import SuccessPageClient from "./SuccessPageClient";
+import { redirect } from "next/navigation";
 
-export const metadata: Metadata = {
-  title: "Booking Confirmed — TurboFix",
-  description: "Your repair booking has been confirmed. We'll be in touch shortly.",
-  robots: { index: false, follow: false },
-};
-
-export default function BookingSuccessPage() {
-  return <SuccessPageClient />;
+// This route was renamed to /book-a-visit/success to remove "repair" from
+// the URL for Google Ads policy compliance. See next.config.mjs redirects()
+// for the primary 301 — this is a fallback.
+export default function Page() {
+  redirect("/book-a-visit/success");
 }

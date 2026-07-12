@@ -8,18 +8,18 @@ import CTA from "@/components/home/CTA";
 import { staggerContainer, fadeInUp } from "@/lib/utils";
 import { brandData } from "@/data/brands";
 
-// Brands with a dedicated /[brand]-repair-hyderabad page link straight there
-// (that's the canonical URL — /repairs/[brand] redirects to it for these slugs).
+// Brands with a dedicated /[brand]-service-hyderabad page link straight there
+// (that's the canonical URL — /brands/[brand] redirects to it for these slugs).
 const BRAND_CITY_PAGE_HREF: Record<string, string> = {
-  apple: "/iphone-repair-hyderabad",
-  samsung: "/samsung-repair-hyderabad",
-  oneplus: "/oneplus-repair-hyderabad",
-  xiaomi: "/xiaomi-repair-hyderabad",
-  vivo: "/vivo-repair-hyderabad",
-  oppo: "/oppo-repair-hyderabad",
-  realme: "/realme-repair-hyderabad",
-  motorola: "/motorola-repair-hyderabad",
-  "google-pixel": "/google-pixel-repair-hyderabad",
+  apple: "/iphone-service-hyderabad",
+  samsung: "/samsung-service-hyderabad",
+  oneplus: "/oneplus-service-hyderabad",
+  xiaomi: "/xiaomi-service-hyderabad",
+  vivo: "/vivo-service-hyderabad",
+  oppo: "/oppo-service-hyderabad",
+  realme: "/realme-service-hyderabad",
+  motorola: "/motorola-service-hyderabad",
+  "google-pixel": "/google-pixel-service-hyderabad",
 };
 
 export default function RepairsListClient() {
@@ -33,13 +33,13 @@ export default function RepairsListClient() {
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <motion.div variants={staggerContainer} initial="hidden" animate="show">
             <motion.div variants={fadeInUp} className="flex justify-center mb-4">
-              <span className="section-label">All Brands Repaired</span>
+              <span className="section-label">All Brands Serviced</span>
             </motion.div>
             <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-5">
-              Repair by <span className="gradient-text">Brand</span>
+              Service by <span className="gradient-text">Brand</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-gray-400 text-xl max-w-2xl mx-auto">
-              Expert repair specialists for every major smartphone brand in Hyderabad.
+              Expert service specialists for every major smartphone brand in Hyderabad.
               OEM-quality parts, 6-month warranty, doorstep service.
             </motion.p>
           </motion.div>
@@ -61,7 +61,7 @@ export default function RepairsListClient() {
                 transition={{ delay: (i % 3) * 0.08 }}
               >
                 <Link
-                  href={BRAND_CITY_PAGE_HREF[brand.slug] ?? `/repairs/${brand.slug}`}
+                  href={BRAND_CITY_PAGE_HREF[brand.slug] ?? `/brands/${brand.slug}`}
                   className="group block rounded-2xl p-7 transition-all duration-300"
                   style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}
                 >
@@ -86,7 +86,7 @@ export default function RepairsListClient() {
                       <h2 className="text-white font-semibold text-lg group-hover:text-[#00AAFF] transition-colors">
                         {brand.name}
                       </h2>
-                      <p className="text-gray-500 text-xs">{brand.commonIssues.length} repair services</p>
+                      <p className="text-gray-500 text-xs">{brand.commonIssues.length} services</p>
                     </div>
                   </div>
 
@@ -107,7 +107,7 @@ export default function RepairsListClient() {
                   </div>
 
                   <div className="flex items-center gap-2 text-sm font-medium text-[#00AAFF] group-hover:gap-3 transition-all duration-200">
-                    View {brand.name} repairs
+                    View {brand.name} services
                     <ArrowRight className="w-3.5 h-3.5" />
                   </div>
                 </Link>

@@ -14,26 +14,26 @@ import type { LocationData } from "@/data/locations";
 const ALL_SERVICES = [
   { name: "Screen Replacement",       time: "30–45 min", icon: "📱" },
   { name: "Battery Replacement",      time: "20–30 min", icon: "🔋" },
-  { name: "Charging Port Repair",     time: "25–35 min", icon: "🔌" },
-  { name: "Water Damage Recovery",    time: "2–4 hrs",   icon: "💧" },
-  { name: "Camera Repair",            time: "40–60 min", icon: "📷" },
-  { name: "Speaker & Mic Repair",     time: "25–35 min", icon: "🔊" },
+  { name: "Charging Port Service",    time: "25–35 min", icon: "🔌" },
+  { name: "Water Damage Service",     time: "2–4 hrs",   icon: "💧" },
+  { name: "Camera Service",           time: "40–60 min", icon: "📷" },
+  { name: "Speaker & Mic Service",    time: "25–35 min", icon: "🔊" },
   { name: "Back Glass Replacement",   time: "40–60 min", icon: "🪟" },
-  { name: "Software & Data Recovery", time: "1–2 hrs",   icon: "💾" },
-  { name: "Motherboard Repair",       time: "1–3 days",  icon: "🔧" },
+  { name: "Startup & Performance Service", time: "1–2 hrs",   icon: "💾" },
+  { name: "Motherboard Service",      time: "1–3 days",  icon: "🔧" },
 ];
 
 const BRANDS = [
-  { name: "Apple iPhone", href: "/repairs/apple" },
-  { name: "Samsung Galaxy", href: "/repairs/samsung" },
-  { name: "OnePlus", href: "/repairs/oneplus" },
-  { name: "Xiaomi / Redmi", href: "/repairs/xiaomi" },
-  { name: "Vivo", href: "/repairs/vivo" },
-  { name: "Oppo", href: "/repairs/oppo" },
-  { name: "Realme", href: "/repairs/realme" },
-  { name: "Motorola", href: "/repairs/motorola" },
-  { name: "Google Pixel", href: "/repairs/google-pixel" },
-  { name: "Nothing", href: "/repairs/nothing" },
+  { name: "Apple iPhone", href: "/iphone-service-hyderabad" },
+  { name: "Samsung Galaxy", href: "/samsung-service-hyderabad" },
+  { name: "OnePlus", href: "/oneplus-service-hyderabad" },
+  { name: "Xiaomi / Redmi", href: "/xiaomi-service-hyderabad" },
+  { name: "Vivo", href: "/vivo-service-hyderabad" },
+  { name: "Oppo", href: "/oppo-service-hyderabad" },
+  { name: "Realme", href: "/realme-service-hyderabad" },
+  { name: "Motorola", href: "/motorola-service-hyderabad" },
+  { name: "Google Pixel", href: "/google-pixel-service-hyderabad" },
+  { name: "Nothing", href: "/brands/nothing" },
 ];
 
 const zoneLabelMap: Record<string, string> = {
@@ -144,7 +144,7 @@ export default function LocationPageClient({ area, faqs }: Props) {
             </motion.div>
 
             <motion.h1 variants={fadeInUp} className="font-display text-4xl md:text-5xl lg:text-6xl font-bold mb-6 max-w-4xl">
-              Mobile Repair in{" "}
+              Mobile Service in{" "}
               <span className="gradient-text">{area.name}</span>
             </motion.h1>
 
@@ -157,7 +157,7 @@ export default function LocationPageClient({ area, faqs }: Props) {
 
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-4">
               <Link
-                href="/book-repair"
+                href="/book-a-visit"
                 className="btn-neon inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-white"
               >
                 <Zap className="w-4 h-4" fill="white" />
@@ -182,11 +182,11 @@ export default function LocationPageClient({ area, faqs }: Props) {
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap justify-center md:justify-between gap-6 text-sm text-gray-400">
             {[
-              { icon: <Clock className="w-4 h-4 text-[#00AAFF]" />, text: "Same-day repair in most slots" },
-              { icon: <Shield className="w-4 h-4 text-[#22C55E]" />, text: "6-month repair warranty" },
-              { icon: <Star className="w-4 h-4 text-[#F59E0B]" />, text: "4.9★ from 2,400+ customers" },
+              { icon: <Clock className="w-4 h-4 text-[#00AAFF]" />, text: "Same-day service in most slots" },
+              { icon: <Shield className="w-4 h-4 text-[#22C55E]" />, text: "6-month service warranty" },
+              { icon: <Star className="w-4 h-4 text-[#F59E0B]" />, text: "4.9★ from 1,000+ customers" },
               { icon: <CheckCircle className="w-4 h-4 text-[#7C3AED]" />, text: "OEM-grade parts, trained technicians" },
-              { icon: <Wrench className="w-4 h-4 text-[#EC4899]" />, text: "Pay after repair — zero upfront" },
+              { icon: <Wrench className="w-4 h-4 text-[#EC4899]" />, text: "Pay after service — zero upfront" },
             ].map(({ icon, text }) => (
               <div key={text} className="flex items-center gap-2">
                 {icon}
@@ -239,10 +239,10 @@ export default function LocationPageClient({ area, faqs }: Props) {
           >
             <motion.div variants={fadeInUp} className="mb-10">
               <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-3">
-                Most Requested Repairs in{" "}
+                Most Requested Services in{" "}
                 <span className="gradient-text">{area.name}</span>
               </h2>
-              <p className="text-gray-500">Top repair services booked by customers in this area</p>
+              <p className="text-gray-500">Top services booked by customers in this area</p>
             </motion.div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
@@ -272,7 +272,7 @@ export default function LocationPageClient({ area, faqs }: Props) {
                 href="/services"
                 className="inline-flex items-center gap-2 text-sm text-[#00AAFF] hover:text-white transition-colors"
               >
-                View all repair services
+                View all services
                 <ArrowLeft className="w-3.5 h-3.5 rotate-180" />
               </Link>
             </motion.div>
@@ -291,7 +291,7 @@ export default function LocationPageClient({ area, faqs }: Props) {
             viewport={{ once: true }}
           >
             <motion.h2 variants={fadeInUp} className="font-display text-2xl md:text-3xl font-bold text-white mb-8">
-              All Repairs Available in {area.name}
+              All Services Available in {area.name}
             </motion.h2>
 
             <div className="overflow-hidden rounded-2xl" style={{ border: "1px solid rgba(255,255,255,0.07)" }}>
@@ -299,7 +299,7 @@ export default function LocationPageClient({ area, faqs }: Props) {
                 <thead>
                   <tr style={{ background: "rgba(255,255,255,0.04)" }}>
                     <th className="text-left px-5 py-3.5 text-xs font-medium text-gray-500 uppercase tracking-wider">Service</th>
-                    <th className="text-left px-5 py-3.5 text-xs font-medium text-gray-500 uppercase tracking-wider hidden sm:table-cell">Repair Time</th>
+                    <th className="text-left px-5 py-3.5 text-xs font-medium text-gray-500 uppercase tracking-wider hidden sm:table-cell">Time Needed</th>
                     <th className="px-5 py-3.5"></th>
                   </tr>
                 </thead>
@@ -324,7 +324,7 @@ export default function LocationPageClient({ area, faqs }: Props) {
                       </td>
                       <td className="px-5 py-4 text-right">
                         <Link
-                          href="/book-repair"
+                          href="/book-a-visit"
                           className="text-xs text-[#00AAFF] hover:text-white transition-colors font-medium"
                         >
                           Book →
@@ -350,11 +350,11 @@ export default function LocationPageClient({ area, faqs }: Props) {
             viewport={{ once: true }}
           >
             <motion.h2 variants={fadeInUp} className="font-display text-2xl md:text-3xl font-bold text-white mb-2">
-              All Brands Repaired in{" "}
+              All Brands Serviced in{" "}
               <span className="gradient-text">{area.name}</span>
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-gray-500 text-sm mb-8">
-              We repair every major smartphone brand at your doorstep
+              We service every major smartphone brand at your doorstep
             </motion.p>
 
             <div className="flex flex-wrap gap-3">
@@ -386,16 +386,16 @@ export default function LocationPageClient({ area, faqs }: Props) {
             viewport={{ once: true }}
           >
             <motion.h2 variants={fadeInUp} className="font-display text-2xl md:text-3xl font-bold text-white mb-10 text-center">
-              How Doorstep Repair Works in{" "}
+              How Doorstep Service Works in{" "}
               <span className="gradient-text">{area.name}</span>
             </motion.h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { step: "01", title: "Book Online",       desc: `Select your repair, choose a time slot, and enter your ${area.name} address.` },
+                { step: "01", title: "Book Online",       desc: `Select your service, choose a time slot, and enter your ${area.name} address.` },
                 { step: "02", title: "Technician Arrives", desc: `A trained TurboFix technician arrives at your door in ${area.name} at the chosen time.` },
-                { step: "03", title: "Repair Done",       desc: "Most repairs complete in 20–45 minutes at your home or office. No travel needed." },
-                { step: "04", title: "Pay & Warranty",    desc: "Pay only after the repair. Receive your 6-month warranty documentation." },
+                { step: "03", title: "Service Done",       desc: "Most visits complete in 20–45 minutes at your home or office. No travel needed." },
+                { step: "04", title: "Pay & Warranty",    desc: "Pay only after the service. Receive your 6-month warranty documentation." },
               ].map((item, i) => (
                 <motion.div
                   key={item.step}
@@ -430,7 +430,7 @@ export default function LocationPageClient({ area, faqs }: Props) {
             viewport={{ once: true }}
           >
             <motion.h2 variants={fadeInUp} className="font-display text-2xl md:text-3xl font-bold text-white mb-2">
-              FAQs — Repair in{" "}
+              FAQs — Service in{" "}
               <span className="gradient-text">{area.name}</span>
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-gray-500 text-sm mb-8">
@@ -459,7 +459,7 @@ export default function LocationPageClient({ area, faqs }: Props) {
             >
               <motion.h3 variants={fadeInUp} className="text-white font-semibold mb-5 flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-[#00AAFF]" />
-                We also repair in areas near {area.name}
+                We also service areas near {area.name}
               </motion.h3>
               <div className="flex flex-wrap gap-3">
                 {area.nearbyAreas.map((slug, i) => {

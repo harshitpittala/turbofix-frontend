@@ -30,7 +30,7 @@ const services = [
   },
   {
     icon: Camera,
-    title: "Camera Repair",
+    title: "Camera Service",
     desc: "Blurry shots or broken lens? Our optics team brings your camera back to life.",
     color: "#A78BFA",
     gradient: "from-[#A78BFA]/20 to-[#7C3AED]/5",
@@ -39,8 +39,8 @@ const services = [
   },
   {
     icon: Droplets,
-    title: "Water Damage Recovery",
-    desc: "Ultrasonic cleaning and precision board drying to recover water-damaged devices.",
+    title: "Water Damage Service",
+    desc: "Ultrasonic cleaning and precision board drying to restore water-damaged devices.",
     color: "#38BDF8",
     gradient: "from-[#38BDF8]/20 to-[#0EA5E9]/5",
     time: "~2 hrs",
@@ -48,7 +48,7 @@ const services = [
   },
   {
     icon: Mic2,
-    title: "Speaker & Mic Fix",
+    title: "Speaker & Mic Service",
     desc: "No sound? Muffled calls? We replace speaker units and microphone grilles.",
     color: "#F59E0B",
     gradient: "from-[#F59E0B]/20 to-[#D97706]/5",
@@ -57,7 +57,7 @@ const services = [
   },
   {
     icon: Wifi,
-    title: "Charging Port Repair",
+    title: "Charging Port Service",
     desc: "Loose port or not charging? We solder and replace USB-C / Lightning connectors.",
     color: "#EC4899",
     gradient: "from-[#EC4899]/20 to-[#DB2777]/5",
@@ -107,14 +107,14 @@ export default function Services() {
             variants={fadeInUp}
             className="font-display text-4xl md:text-5xl font-bold mb-5"
           >
-            Every Repair,{" "}
+            Every Service,{" "}
             <span className="gradient-text">Done Right</span>
           </motion.h2>
           <motion.p
             variants={fadeInUp}
             className="text-gray-400 text-lg max-w-xl mx-auto"
           >
-            From cracked screens to complex motherboard repairs — TurboFix handles
+            From cracked screens to complex motherboard work — TurboFix handles
             every issue with precision and speed.
           </motion.p>
         </motion.div>

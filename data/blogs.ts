@@ -25,7 +25,7 @@ export const blogs: BlogPost[] = [
     category: "Battery",
     readTime: "5 min read",
     date: "2025-01-15",
-    keywords: ["battery replacement", "phone battery", "battery health", "mobile battery repair", "phone dying fast"],
+    keywords: ["battery replacement", "phone battery", "battery health", "mobile battery service", "phone dying fast"],
     content: [
       {
         text: "Smartphone batteries degrade over time — it's inevitable. But knowing when to replace your battery versus simply charging your phone more often can save you money and frustration. Here are five unmistakable signs that your phone's battery has reached the end of its usable life.",
@@ -52,7 +52,7 @@ export const blogs: BlogPost[] = [
       },
       {
         heading: "How TurboFix Replaces Your Battery",
-        text: "At TurboFix, battery replacements take approximately 20 minutes and use Grade-A replacement cells that match or exceed OEM specifications. We test battery health before and after replacement, provide a 6-month warranty on the new battery, and safely dispose of the old one. Our doorstep service means we come to you — no need to visit a repair center.",
+        text: "At TurboFix, battery replacements take approximately 20 minutes and use Grade-A replacement cells that match or exceed OEM specifications. We test battery health before and after replacement, provide a 6-month warranty on the new battery, and safely dispose of the old one. Our doorstep service means we come to you — no need to visit a service center.",
         list: [
           "Grade-A battery cells — 100% capacity restoration",
           "20-minute turnaround time",
@@ -64,7 +64,7 @@ export const blogs: BlogPost[] = [
       {
         faq: [
           { q: "How long does a battery replacement take at TurboFix?", a: "Most battery replacements are completed in 20–30 minutes, including our 10-point quality check before handoff." },
-          { q: "Will replacing my battery void my phone's warranty?", a: "If your phone is still under manufacturer warranty, check with the manufacturer first. For out-of-warranty phones, our repairs do not affect any third-party coverage." },
+          { q: "Will replacing my battery void my phone's warranty?", a: "If your phone is still under manufacturer warranty, check with the manufacturer first. For out-of-warranty phones, our service does not affect any third-party coverage." },
           { q: "How much does battery replacement cost?", a: "Battery replacement pricing varies by device model. Contact us via WhatsApp or call +91 86396 05147 for a quote. We provide the price before any work begins." },
           { q: "Do you use genuine Apple or Samsung batteries?", a: "We use high-quality Grade-A replacement batteries. Genuine OEM batteries are available for Apple devices at an additional charge." },
         ],
@@ -72,13 +72,13 @@ export const blogs: BlogPost[] = [
     ],
   },
   {
-    slug: "water-damage-phone-recovery",
+    slug: "water-damage-phone-service",
     title: "Phone Fell in Water? Here's What to Do in the First 30 Minutes",
     excerpt: "Water damage is one of the most common phone emergencies. The first 30 minutes are critical — here's exactly what to do.",
     category: "Water Damage",
     readTime: "6 min read",
     date: "2025-01-20",
-    keywords: ["water damage phone", "phone fell in water", "water damage repair", "wet phone fix", "phone in water"],
+    keywords: ["water damage phone", "phone fell in water", "water damage service", "wet phone care", "phone in water"],
     content: [
       {
         text: "Water damage is a nightmare scenario for any smartphone owner. Whether your phone slipped into a toilet, got caught in the rain, or fell into a swimming pool, the actions you take in the first 30 minutes can be the difference between a saved device and a complete loss.",
@@ -111,21 +111,21 @@ export const blogs: BlogPost[] = [
       },
       {
         heading: "What TurboFix Does for Water-Damaged Phones",
-        text: "Our water damage recovery protocol uses ultrasonic cleaning equipment to remove mineral deposits from the PCB, component-level inspection under microscopes, thermal drying chambers, and corrosion treatment. This isn't something that can be replicated with rice or a hairdryer — it requires professional equipment.",
+        text: "Our water damage service protocol uses ultrasonic cleaning equipment to remove mineral deposits from the PCB, component-level inspection under microscopes, thermal drying chambers, and corrosion treatment. This isn't something that can be replicated with rice or a hairdryer — it requires professional equipment.",
         list: [
           "Ultrasonic PCB cleaning",
           "Component-level inspection under magnification",
           "Controlled thermal drying",
           "Corrosion treatment and flux cleaning",
           "85% success rate on devices within 24 hours",
-          "Free diagnostic — no charge if we can't fix it",
+          "Free diagnostic — no charge if we can't help",
         ],
       },
       {
         faq: [
           { q: "My IP68-rated phone got wet — is it still damaged?", a: "IP68 ratings degrade over time as seals wear. Even IP68 phones can suffer water damage, especially in salt water, chlorinated pools, or after drops that compromise the seal." },
-          { q: "My phone works fine after getting wet — do I still need a repair?", a: "Yes, we strongly recommend a professional inspection. Corrosion from water damage can take days or weeks to cause visible problems. A preventive clean now costs far less than a motherboard replacement later." },
-          { q: "How much does water damage repair cost?", a: "Water damage repair starts from ₹999 for a diagnostic and basic clean. Severe damage with component replacement is quoted after diagnosis. You only pay if we fix it." },
+          { q: "My phone works fine after getting wet — do I still need a service visit?", a: "Yes, we strongly recommend a professional inspection. Corrosion from water damage can take days or weeks to cause visible problems. A preventive clean now costs far less than a motherboard replacement later." },
+          { q: "How much does water damage service cost?", a: "Water damage service starts from ₹999 for a diagnostic and basic clean. Severe damage with component replacement is quoted after diagnosis. You only pay if we can help." },
         ],
       },
     ],
@@ -137,10 +137,10 @@ export const blogs: BlogPost[] = [
     category: "iPhone",
     readTime: "7 min read",
     date: "2025-01-25",
-    keywords: ["iPhone screen replacement", "iPhone repair Hyderabad", "broken iPhone screen", "iPhone display repair", "iPhone screen cost"],
+    keywords: ["iPhone screen replacement", "iPhone service Hyderabad", "broken iPhone screen", "iPhone display service", "iPhone screen cost"],
     content: [
       {
-        text: "A cracked iPhone screen is one of the most common repair needs in Hyderabad — and one of the most misunderstood. Many iPhone users are unsure whether to go to Apple Service, a third-party repair shop, or try it themselves. This guide breaks down everything you need to know.",
+        text: "A cracked iPhone screen is one of the most common service needs in Hyderabad — and one of the most misunderstood. Many iPhone users are unsure whether to go to Apple Service, a third-party service provider, or try it themselves. This guide breaks down everything you need to know.",
       },
       {
         heading: "iPhone Screen Quality Levels Explained",
@@ -153,10 +153,10 @@ export const blogs: BlogPost[] = [
       },
       {
         heading: "At TurboFix, we use OEM-grade screens as standard",
-        text: "For most repairs, OEM-grade screens offer the best value — they match original brightness, color accuracy, and touch sensitivity. Genuine Apple screens are available on request for an additional charge. We always tell you exactly which type we're using before any work begins.",
+        text: "For most replacements, OEM-grade screens offer the best value — they match original brightness, color accuracy, and touch sensitivity. Genuine Apple screens are available on request for an additional charge. We always tell you exactly which type we're using before any work begins.",
       },
       {
-        heading: "iPhone Models We Repair",
+        heading: "iPhone Models We Service",
         list: [
           "iPhone 15, 15 Plus, 15 Pro, 15 Pro Max",
           "iPhone 14, 14 Plus, 14 Pro, 14 Pro Max",
@@ -173,11 +173,11 @@ export const blogs: BlogPost[] = [
       },
       {
         heading: "Is Doorstep iPhone Screen Replacement Possible?",
-        text: "Yes — our technicians carry all common iPhone screen assemblies and perform doorstep repairs across Hyderabad. We'll come to your home or office, complete the repair in 30–45 minutes, and you never need to leave. Book online or WhatsApp +91 86396 05147 to schedule.",
+        text: "Yes — our technicians carry all common iPhone screen assemblies and perform doorstep service across Hyderabad. We'll come to your home or office, complete the replacement in 30–45 minutes, and you never need to leave. Book online or WhatsApp +91 86396 05147 to schedule.",
       },
       {
         faq: [
-          { q: "Will iPhone screen replacement affect Face ID?", a: "When done correctly with proper tools and calibration, Face ID remains fully functional. Cheap screen replacements from unqualified shops can sometimes affect Face ID — our technicians are trained on iPhone-specific repair procedures and handle Face ID components with care." },
+          { q: "Will iPhone screen replacement affect Face ID?", a: "When done correctly with proper tools and calibration, Face ID remains fully functional. Cheap screen replacements from unqualified providers can sometimes affect Face ID — our technicians are trained on iPhone-specific service procedures and handle Face ID components with care." },
           { q: "Does TurboFix offer warranty on iPhone screen replacement?", a: "Yes — all screen replacements carry a 6-month warranty. If the screen develops defects within 6 months due to parts or workmanship, we replace it free." },
           { q: "How much does iPhone screen replacement cost in Hyderabad?", a: "Prices vary by model. iPhone 15 Pro Max screens cost more than iPhone 11 screens due to the advanced OLED technology. WhatsApp or call us for an instant quote on your specific model." },
         ],
@@ -185,23 +185,23 @@ export const blogs: BlogPost[] = [
     ],
   },
   {
-    slug: "samsung-galaxy-screen-repair",
-    title: "Samsung Galaxy Screen Repair: Everything You Need to Know",
-    excerpt: "Samsung screens use AMOLED technology — here's what that means for repair, cost, and what to look for in a repair shop.",
+    slug: "samsung-galaxy-screen-service",
+    title: "Samsung Galaxy Screen Service: Everything You Need to Know",
+    excerpt: "Samsung screens use AMOLED technology — here's what that means for service, cost, and what to look for in a service provider.",
     category: "Samsung",
     readTime: "6 min read",
     date: "2025-02-01",
-    keywords: ["Samsung screen repair", "Samsung Galaxy display", "Samsung AMOLED repair", "Samsung repair Hyderabad", "Galaxy S series screen"],
+    keywords: ["Samsung screen service", "Samsung Galaxy display", "Samsung AMOLED service", "Samsung service Hyderabad", "Galaxy S series screen"],
     content: [
       {
-        text: "Samsung Galaxy phones are among the most repaired devices in Hyderabad — and for good reason. They're popular, premium, and their screens take the most damage. But Samsung repairs have unique considerations compared to iPhone repairs, starting with the AMOLED display technology.",
+        text: "Samsung Galaxy phones are among the most serviced devices in Hyderabad — and for good reason. They're popular, premium, and their screens take the most damage. But Samsung service has unique considerations compared to iPhone service, starting with the AMOLED display technology.",
       },
       {
         heading: "Understanding Samsung's AMOLED Displays",
         text: "Samsung manufactures some of the industry's highest-regarded smartphone displays — the same AMOLED panels used in Samsung Galaxy phones are also sold to Apple for iPhones and to other manufacturers. This means replacement AMOLED screens are available in both genuine and aftermarket quality. The difference in color accuracy, brightness, and viewing angles between quality levels is very noticeable on Samsung devices.",
       },
       {
-        heading: "Samsung Models We Repair",
+        heading: "Samsung Models We Service",
         list: [
           "Samsung Galaxy S24, S24+, S24 Ultra",
           "Samsung Galaxy S23, S23+, S23 Ultra",
@@ -215,30 +215,30 @@ export const blogs: BlogPost[] = [
         ],
       },
       {
-        heading: "Samsung Foldable Screen Repair",
-        text: "Samsung's Z Fold and Z Flip series use ultra-thin glass (UTG) displays that are more delicate than standard glass. These repairs are significantly more complex and require specialized tools and training. TurboFix technicians are trained in foldable screen repairs — contact us for a specific quote on foldable devices.",
+        heading: "Samsung Foldable Screen Service",
+        text: "Samsung's Z Fold and Z Flip series use ultra-thin glass (UTG) displays that are more delicate than standard glass. This work is significantly more complex and requires specialized tools and training. TurboFix technicians are trained in foldable screen service — contact us for a specific quote on foldable devices.",
       },
       {
-        heading: "What to Expect During a Samsung Screen Repair",
+        heading: "What to Expect During a Samsung Screen Service Visit",
         text: "Samsung screen replacements at TurboFix typically take 30–60 minutes depending on the model. We use heat to safely remove adhesive-mounted displays, replace the full display assembly (glass + AMOLED + frame in most cases), test all functions including in-display fingerprint sensor, and complete a full device check before handoff.",
       },
       {
         faq: [
           { q: "Does the in-display fingerprint sensor work after Samsung screen replacement?", a: "Yes — we test all sensor functions including the in-display fingerprint sensor, proximity sensor, and ambient light sensor after every screen replacement." },
           { q: "Are Samsung screens more expensive to replace than iPhone screens?", a: "Flagship Samsung models (S24 Ultra, for example) have comparable screen replacement costs to flagship iPhones. Mid-range Galaxy A-series screens are typically more affordable." },
-          { q: "Can TurboFix repair Samsung Galaxy Z Fold screens?", a: "Yes, though foldable repairs are more complex and take longer. Please contact us specifically for foldable device repairs as they require advance booking." },
+          { q: "Can TurboFix service Samsung Galaxy Z Fold screens?", a: "Yes, though foldable service is more complex and takes longer. Please contact us specifically for foldable devices as they require advance booking." },
         ],
       },
     ],
   },
   {
-    slug: "phone-overheating-fix",
-    title: "Why Is My Phone Overheating? Causes and Fixes Explained",
-    excerpt: "Phone overheating is more than just uncomfortable — it can permanently damage your device. Here's why it happens and how to fix it.",
+    slug: "phone-overheating-causes",
+    title: "Why Is My Phone Overheating? Causes and Solutions Explained",
+    excerpt: "Phone overheating is more than just uncomfortable — it can permanently damage your device. Here's why it happens and how to address it.",
     category: "Troubleshooting",
     readTime: "5 min read",
     date: "2025-02-05",
-    keywords: ["phone overheating", "smartphone heating issue", "phone gets hot", "phone overheating fix", "mobile overheating"],
+    keywords: ["phone overheating", "smartphone heating issue", "phone gets hot", "phone overheating causes", "mobile overheating"],
     content: [
       {
         text: "A warm phone during intensive gaming or video calls is normal. A phone that's uncomfortably hot during basic tasks, or one that shuts itself down due to heat, is telling you something is wrong. Here's everything you need to know about smartphone overheating.",
@@ -257,7 +257,7 @@ export const blogs: BlogPost[] = [
         ],
       },
       {
-        heading: "Software Fixes to Try First",
+        heading: "Software Steps to Try First",
         list: [
           "Update your OS and all apps to the latest version",
           "Clear the cache partition (check your phone model's specific steps)",
@@ -268,29 +268,29 @@ export const blogs: BlogPost[] = [
         ],
       },
       {
-        heading: "When to See a Repair Professional",
-        text: "If your phone still overheats after software troubleshooting, the issue is likely hardware. The most common hardware causes are a degraded battery, a damaged charging port (causing inefficient charging), or a failing motherboard component. At TurboFix, our diagnostic assessment is free — we'll identify the exact cause and give you a transparent quote before any repair.",
+        heading: "When to See a Service Professional",
+        text: "If your phone still overheats after software troubleshooting, the issue is likely hardware. The most common hardware causes are a degraded battery, a damaged charging port (causing inefficient charging), or a failing motherboard component. At TurboFix, our diagnostic assessment is free — we'll identify the exact cause and give you a transparent quote before any service begins.",
       },
       {
         faq: [
           { q: "Is it dangerous to use an overheating phone?", a: "Persistently hot phones can cause battery swelling, screen delamination, and in rare cases, battery fires. If your phone is hot to the point of discomfort, stop using it and get it checked immediately." },
           { q: "Can overheating permanently damage my phone?", a: "Yes. Sustained high temperatures damage lithium-ion batteries permanently, can cause screen adhesive to fail, and may damage sensitive IC components on the motherboard." },
-          { q: "Does TurboFix handle phone overheating diagnostics?", a: "Yes — we diagnose overheating issues for free. Whether it's a battery, charging port, or motherboard issue, we'll find the cause and fix it." },
+          { q: "Does TurboFix handle phone overheating diagnostics?", a: "Yes — we diagnose overheating issues for free. Whether it's a battery, charging port, or motherboard issue, we'll find the cause and help resolve it." },
         ],
       },
     ],
   },
   {
-    slug: "charging-port-repair-guide",
-    title: "Charging Port Repair: Signs, Causes, and When to Replace",
-    excerpt: "Loose charging port? Phone charges only in certain positions? Here's everything about charging port repair and when you need it.",
+    slug: "charging-port-service-guide",
+    title: "Charging Port Issues: Signs, Causes, and When to Replace",
+    excerpt: "Loose charging port? Phone charges only in certain positions? Here's everything about charging port service and when you need it.",
     category: "Charging",
     readTime: "5 min read",
     date: "2025-02-10",
-    keywords: ["charging port repair", "phone not charging", "loose charging port", "USB-C repair", "Lightning port repair"],
+    keywords: ["charging port service", "phone not charging", "loose charging port", "USB-C service", "Lightning port service"],
     content: [
       {
-        text: "Charging port problems are one of the most common reasons people bring phones in for repair. A failing charging port makes your most essential daily routine — keeping your phone powered — unreliable and frustrating.",
+        text: "Charging port problems are one of the most common reasons people bring phones in for service. A failing charging port makes your most essential daily routine — keeping your phone powered — unreliable and frustrating.",
       },
       {
         heading: "Signs Your Charging Port Needs Attention",
@@ -305,7 +305,7 @@ export const blogs: BlogPost[] = [
         ],
       },
       {
-        heading: "Before You Repair: Check These First",
+        heading: "Before You Book a Visit: Check These First",
         list: [
           "Try a different charging cable — cables fail more often than ports",
           "Try a different charging adapter — adapters can malfunction too",
@@ -314,33 +314,33 @@ export const blogs: BlogPost[] = [
         ],
       },
       {
-        heading: "Repair vs Replace: What We Recommend",
-        text: "Most charging port issues fall into two categories: debris blockage (solved with a clean) or physical/solder damage (requires repair or replacement). At TurboFix, we first attempt to clean and tighten the port connection. If the connector is mechanically damaged, we replace the charging module — a procedure that takes 20–35 minutes.",
+        heading: "Clean vs Replace: What We Recommend",
+        text: "Most charging port issues fall into two categories: debris blockage (solved with a clean) or physical/solder damage (requires replacement). At TurboFix, we first attempt to clean and tighten the port connection. If the connector is mechanically damaged, we replace the charging module — a procedure that takes 20–35 minutes.",
       },
       {
         faq: [
           { q: "Can I clean my charging port myself?", a: "Yes, gently — use a wooden toothpick or a dry, soft-bristle brush. Never use metal objects, liquids, or compressed air directly into the port. If cleaning doesn't help, bring it to us." },
-          { q: "How much does charging port repair cost?", a: "Charging port repair costs vary by device. Most repairs range from ₹499–₹1499. Contact us for a quote on your specific model." },
-          { q: "Will charging port repair affect my phone's IP water resistance?", a: "For IP-rated devices, we re-seal the charging port gasket after replacement to maintain water resistance." },
+          { q: "How much does charging port service cost?", a: "Charging port service costs vary by device. Most visits range from ₹499–₹1499. Contact us for a quote on your specific model." },
+          { q: "Will charging port replacement affect my phone's IP water resistance?", a: "For IP-rated devices, we re-seal the charging port gasket after replacement to maintain water resistance." },
         ],
       },
     ],
   },
   {
-    slug: "android-vs-iphone-repair",
-    title: "Android vs iPhone Repair: Which is Easier and Cheaper?",
-    excerpt: "Thinking about which phone is easier to repair? We break down the real differences between Android and iPhone repairability.",
+    slug: "android-vs-iphone-service",
+    title: "Android vs iPhone Service: Which is Easier and Cheaper?",
+    excerpt: "Thinking about which phone is easier to service? We break down the real differences between Android and iPhone serviceability.",
     category: "Guides",
     readTime: "6 min read",
     date: "2025-02-15",
-    keywords: ["android vs iPhone repair", "iPhone repair cost", "Android repair", "phone repair comparison", "repairability"],
+    keywords: ["android vs iPhone service", "iPhone service cost", "Android service", "phone service comparison", "serviceability"],
     content: [
       {
-        text: "When people ask 'which phone is easier to repair?' the answer is more nuanced than you might expect. It depends heavily on the specific model, what type of repair is needed, and your location. Here's an honest breakdown from Hyderabad's repair professionals.",
+        text: "When people ask 'which phone is easier to service?' the answer is more nuanced than you might expect. It depends heavily on the specific model, what type of work is needed, and your location. Here's an honest breakdown from Hyderabad's service professionals.",
       },
       {
-        heading: "iPhone Repairability",
-        text: "iPhones have historically been complex to repair due to Apple's proprietary components and software locks. However, with Apple's Self Repair Program and the growing ecosystem of OEM-quality parts, iPhone repairs have become more accessible. The biggest advantage: parts are standardized across models, making pricing predictable.",
+        heading: "iPhone Serviceability",
+        text: "iPhones have historically been complex to service due to Apple's proprietary components and software locks. However, with Apple's Self Service Repair Program and the growing ecosystem of OEM-quality parts, iPhone service has become more accessible. The biggest advantage: parts are standardized across models, making pricing predictable.",
         list: [
           "Screen replacement: ₹2,500–₹12,000 depending on model",
           "Battery replacement: ₹999–₹2,500 depending on model",
@@ -349,8 +349,8 @@ export const blogs: BlogPost[] = [
         ],
       },
       {
-        heading: "Android Repairability",
-        text: "Android repairability varies enormously by brand and model. Samsung Galaxy S-series repairs are complex and expensive. Budget Android phones from Realme, Xiaomi, or Vivo are typically much more affordable to repair due to simpler hardware and widely available parts.",
+        heading: "Android Serviceability",
+        text: "Android serviceability varies enormously by brand and model. Samsung Galaxy S-series service is complex and expensive. Budget Android phones from Realme, Xiaomi, or Vivo are typically much more affordable to service due to simpler hardware and widely available parts.",
         list: [
           "Screen replacement: ₹800–₹15,000 depending on brand and model",
           "Battery replacement: ₹500–₹2,000",
@@ -359,13 +359,13 @@ export const blogs: BlogPost[] = [
         ],
       },
       {
-        heading: "What Actually Determines Repair Cost",
-        text: "The primary factors driving repair cost are display technology (AMOLED vs IPS LCD), model popularity (common models have more affordable parts), and repair complexity (adhesive bonding, waterproofing seals, biometric sensors). A mid-range Android like a Realme or Xiaomi is typically the most affordable to repair. A flagship Samsung or iPhone Pro is the most expensive.",
+        heading: "What Actually Determines Service Cost",
+        text: "The primary factors driving service cost are display technology (AMOLED vs IPS LCD), model popularity (common models have more affordable parts), and job complexity (adhesive bonding, waterproofing seals, biometric sensors). A mid-range Android like a Realme or Xiaomi is typically the most affordable to service. A flagship Samsung or iPhone Pro is the most expensive.",
       },
       {
         faq: [
-          { q: "Is it worth repairing an old Android phone?", a: "Generally yes, if the repair cost is less than 40% of a replacement device. Screen and battery repairs almost always make sense financially. Motherboard repairs on budget Androids may not be cost-effective." },
-          { q: "Does TurboFix repair all Android brands?", a: "Yes — we repair all major brands including Samsung, OnePlus, Xiaomi, Vivo, Oppo, Realme, Motorola, Google Pixel, and Nothing phones." },
+          { q: "Is it worth servicing an old Android phone?", a: "Generally yes, if the service cost is less than 40% of a replacement device. Screen and battery replacements almost always make sense financially. Motherboard-level work on budget Androids may not be cost-effective." },
+          { q: "Does TurboFix service all Android brands?", a: "Yes — we service all major brands including Samsung, OnePlus, Xiaomi, Vivo, Oppo, Realme, Motorola, Google Pixel, and Nothing phones." },
         ],
       },
     ],
@@ -420,13 +420,13 @@ export const blogs: BlogPost[] = [
     ],
   },
   {
-    slug: "oneplus-common-problems-fixes",
-    title: "Common OnePlus Phone Problems and How to Fix Them",
-    excerpt: "OnePlus phones are popular in Hyderabad for their performance and value. Here are the most common issues and expert fixes.",
+    slug: "oneplus-common-problems-solutions",
+    title: "Common OnePlus Phone Problems and How to Resolve Them",
+    excerpt: "OnePlus phones are popular in Hyderabad for their performance and value. Here are the most common issues and expert solutions.",
     category: "OnePlus",
     readTime: "6 min read",
     date: "2025-02-25",
-    keywords: ["OnePlus repair", "OnePlus problems", "OnePlus screen repair", "OnePlus battery", "OnePlus Hyderabad"],
+    keywords: ["OnePlus service", "OnePlus problems", "OnePlus screen service", "OnePlus battery", "OnePlus Hyderabad"],
     content: [
       {
         text: "OnePlus has built a strong following in Hyderabad and across India thanks to flagship-level performance at more accessible price points. However, like all smartphones, OnePlus devices have known hardware and software issues that affect users over time.",
@@ -451,32 +451,32 @@ export const blogs: BlogPost[] = [
         heading: "5. Camera Issues",
         text: "OnePlus cameras (especially rear ultra-wide and macro cameras) can develop focus problems, lens flare, or image processing failures. Hasselblad-tuned cameras on newer models are complex — camera module replacement requires careful calibration.",
         list: [
-          "Software-fix: clear camera app cache, update to latest OxygenOS",
-          "Hardware-fix: camera module replacement (30–60 min at TurboFix)",
+          "Software step: clear camera app cache, update to latest OxygenOS",
+          "If that doesn't help: camera module replacement (30–60 min at TurboFix)",
         ],
       },
       {
         faq: [
-          { q: "Does TurboFix repair OnePlus phones in Hyderabad?", a: "Yes — we repair all OnePlus models including Nord series, OnePlus 12, 11, 10 Pro, 9 series, 8 series, and older models." },
+          { q: "Does TurboFix service OnePlus phones in Hyderabad?", a: "Yes — we service all OnePlus models including Nord series, OnePlus 12, 11, 10 Pro, 9 series, 8 series, and older models." },
           { q: "Is OnePlus screen replacement expensive?", a: "OnePlus uses high-quality AMOLED panels which are more expensive than IPS LCD screens but less expensive than Apple OLED. Contact us for a model-specific quote." },
         ],
       },
     ],
   },
   {
-    slug: "smartphone-data-recovery-guide",
-    title: "Smartphone Data Recovery: Can You Get Your Files Back?",
-    excerpt: "Lost your photos, contacts, or files? Here's what's actually possible with smartphone data recovery and what isn't.",
-    category: "Data Recovery",
+    slug: "smartphone-data-loss-guide",
+    title: "Phone Data Loss: What Can Actually Be Recovered?",
+    excerpt: "Lost your photos, contacts, or files? Here's what's realistically recoverable and what isn't, and how it ties into hardware diagnostics.",
+    category: "Tips",
     readTime: "7 min read",
     date: "2025-03-01",
-    keywords: ["phone data recovery", "deleted photos recovery", "smartphone data recovery", "phone backup", "recover deleted files"],
+    keywords: ["phone data loss", "deleted photos restoration", "smartphone data loss", "phone backup", "restore deleted files"],
     content: [
       {
         text: "Few things cause more panic than realizing your photos, contacts, or important documents may be gone forever. The good news: many cases of apparent data loss are recoverable. The bad news: success depends heavily on what happened and how quickly you act.",
       },
       {
-        heading: "When Data Recovery is Possible",
+        heading: "When Data Can Often Be Restored",
         list: [
           "Accidental deletion — recent deletions before the storage has been overwritten",
           "Factory reset without encryption — storage may still contain recoverable data",
@@ -487,9 +487,9 @@ export const blogs: BlogPost[] = [
         ],
       },
       {
-        heading: "When Data Recovery is Difficult or Impossible",
+        heading: "When Data Is Difficult or Impossible to Restore",
         list: [
-          "Full device encryption before factory reset — modern Android defaults to encryption, making recovery extremely difficult",
+          "Full device encryption before factory reset — modern Android defaults to encryption, making restoration extremely difficult",
           "Physical flash storage chip damage — if the NAND chip is physically destroyed",
           "Multiple overwrites — extensive use after data loss overwrites recoverable sectors",
           "Severe water corrosion — if corrosion has damaged the storage chip connections",
@@ -497,24 +497,24 @@ export const blogs: BlogPost[] = [
       },
       {
         heading: "Cloud Backup: Your Best Insurance",
-        text: "The single most effective data recovery strategy is never needing it. Enable automatic cloud backups: Google Photos for Android, iCloud for iPhone. Set them to back up over Wi-Fi overnight. At minimum, back up before any repair. At TurboFix, we always remind customers to back up before bringing in a device.",
+        text: "The single most effective data protection strategy is never needing to restore anything. Enable automatic cloud backups: Google Photos for Android, iCloud for iPhone. Set them to back up over Wi-Fi overnight. At minimum, back up before any service visit. At TurboFix, we always remind customers to back up before bringing in a device.",
       },
       {
-        heading: "TurboFix Data Recovery Services",
-        text: "Our software team handles data recovery from bootlooped devices, physically damaged phones with functional storage, and phones with corrupted file systems. We use professional recovery tools and do not charge if we cannot recover the data.",
+        heading: "How TurboFix Helps With File Restoration",
+        text: "As part of our hardware diagnostics, our technicians check whether your device's storage is still intact — for devices stuck in a restart loop, physically damaged phones with functional storage, or phones with corrupted file systems — and restore accessible files where possible during the service visit. We don't charge extra if files can't be restored.",
         list: [
-          "Bootloop and bricked device data extraction",
-          "Physical damage data recovery (when chip is intact)",
-          "File system repair and data access restoration",
+          "File restoration for devices stuck in a restart loop",
+          "File restoration after physical damage (when the storage chip is intact)",
+          "File system diagnostics and data access restoration",
           "Secure data transfer to new device",
-          "Free assessment — no charge if recovery is not possible",
+          "Free assessment — no charge if restoration is not possible",
         ],
       },
       {
         faq: [
-          { q: "Can you recover data from a phone with a shattered screen?", a: "Yes — if the phone is functionally operational (just inaccessible via the broken screen), we can connect it to specialized equipment to extract or mirror the data without the display." },
-          { q: "Can you recover WhatsApp messages?", a: "WhatsApp messages backed up to Google Drive or iCloud can be restored to a new device. Local backups can sometimes be recovered from damaged devices if the storage is intact." },
-          { q: "How much does data recovery cost?", a: "Data recovery costs depend on the type of failure. Software-based recovery starts from ₹999. Contact us for an assessment — we don't charge if recovery isn't possible." },
+          { q: "Can you restore files from a phone with a shattered screen?", a: "Yes — if the phone is functionally operational (just inaccessible via the broken screen), we can connect it to specialized equipment to extract or mirror the files without the display." },
+          { q: "Can you restore WhatsApp messages?", a: "WhatsApp messages backed up to Google Drive or iCloud can be restored to a new device. Local backups can sometimes be restored from damaged devices if the storage is intact." },
+          { q: "How much does file restoration cost?", a: "File restoration costs depend on the type of failure. Hardware-based diagnostics start from ₹999. Contact us for an assessment — we don't charge if restoration isn't possible." },
         ],
       },
     ],
@@ -561,7 +561,7 @@ export const blogs: BlogPost[] = [
       },
       {
         heading: "When a Lens Needs Professional Cleaning",
-        text: "If cleaning the exterior doesn't improve image quality, the issue may be inside the lens module — condensation under the glass, dust behind the lens cover, or lens element damage. Internal cleaning or camera module replacement is a professional job. TurboFix handles camera repairs for all brands in under 45 minutes.",
+        text: "If cleaning the exterior doesn't improve image quality, the issue may be inside the lens module — condensation under the glass, dust behind the lens cover, or lens element damage. Internal cleaning or camera module replacement is a professional job. TurboFix handles camera service for all brands in under 45 minutes.",
       },
       {
         faq: [
@@ -572,23 +572,23 @@ export const blogs: BlogPost[] = [
     ],
   },
   {
-    slug: "phone-motherboard-repair-guide",
-    title: "Phone Motherboard Repair: When Is It Worth It?",
-    excerpt: "Motherboard repair sounds scary — but modern micro-soldering techniques can fix what was previously considered irreparable. Here's what you need to know.",
-    category: "Advanced Repair",
+    slug: "phone-motherboard-service-guide",
+    title: "Phone Motherboard Service: When Is It Worth It?",
+    excerpt: "Motherboard service sounds scary — but modern micro-soldering techniques can address what was previously considered beyond help. Here's what you need to know.",
+    category: "Advanced Service",
     readTime: "7 min read",
     date: "2025-03-10",
-    keywords: ["phone motherboard repair", "mobile board repair", "micro soldering", "chip level repair", "phone board level repair"],
+    keywords: ["phone motherboard service", "mobile board service", "micro soldering", "chip level service", "phone board level service"],
     content: [
       {
-        text: "A decade ago, a phone with a damaged motherboard was considered unsalvageable. Today, board-level repair using micro-soldering techniques and component-level diagnostics can rescue phones that no ordinary repair shop would attempt. Here's what motherboard repair involves and when it makes financial sense.",
+        text: "A decade ago, a phone with a damaged motherboard was considered unsalvageable. Today, board-level service using micro-soldering techniques and component-level diagnostics can rescue phones that no ordinary service provider would attempt. Here's what motherboard service involves and when it makes financial sense.",
       },
       {
-        heading: "What Is Motherboard (Board-Level) Repair?",
-        text: "The motherboard (also called the logic board or main board) is the central circuit board of your phone containing the processor, RAM, storage chips, power management IC, and dozens of other components. Board-level repair means working directly on these components — soldering, replacing individual ICs, resoldering connections — rather than replacing the entire board.",
+        heading: "What Is Motherboard (Board-Level) Service?",
+        text: "The motherboard (also called the logic board or main board) is the central circuit board of your phone containing the processor, RAM, storage chips, power management IC, and dozens of other components. Board-level service means working directly on these components — soldering, replacing individual ICs, resoldering connections — rather than replacing the entire board.",
       },
       {
-        heading: "Common Issues That Require Board Repair",
+        heading: "Common Issues That Require Board-Level Service",
         list: [
           "No power — phone won't turn on even with known-good battery",
           "No charge — phone won't charge even with known-good cable and port",
@@ -601,8 +601,8 @@ export const blogs: BlogPost[] = [
         ],
       },
       {
-        heading: "When Board Repair Is Worth It",
-        text: "The financial calculus is straightforward: if the board repair cost is less than 50% of a replacement device cost, and the repair success rate is high (our team assesses this before quoting), it's worth repairing. High-end phones (iPhone 14 Pro, Samsung S23 Ultra) are almost always worth board repair given their replacement cost.",
+        heading: "When Board-Level Service Is Worth It",
+        text: "The financial calculus is straightforward: if the service cost is less than 50% of a replacement device cost, and the success rate is high (our team assesses this before quoting), it's worth servicing. High-end phones (iPhone 14 Pro, Samsung S23 Ultra) are almost always worth board-level service given their replacement cost.",
       },
       {
         heading: "TurboFix Board-Level Capabilities",
@@ -610,16 +610,16 @@ export const blogs: BlogPost[] = [
           "Microscope-assisted soldering for component-level work",
           "IC replacement (power management, charging ICs, audio codecs)",
           "NAND chip reball and replacement",
-          "Water damage trace repair",
+          "Water damage trace restoration",
           "Free diagnostic assessment for all board-level issues",
-          "Estimated 1–3 day turnaround for complex board repairs",
+          "Estimated 1–3 day turnaround for complex board-level service",
         ],
       },
       {
         faq: [
-          { q: "Is board-level repair reliable?", a: "When done by qualified technicians with proper equipment, yes. TurboFix has microscope workstations and technicians trained in micro-soldering. We provide a 3-month warranty on board-level repairs." },
-          { q: "How long does board repair take?", a: "Simple board repairs (single component replacement) take 2–4 hours. Complex water damage or multi-component repairs may take 1–3 days." },
-          { q: "What if the board can't be repaired?", a: "We don't charge if we can't fix it. The diagnostic assessment is free." },
+          { q: "Is board-level service reliable?", a: "When done by qualified technicians with proper equipment, yes. TurboFix has microscope workstations and technicians trained in micro-soldering. We provide a 3-month warranty on board-level service." },
+          { q: "How long does board-level service take?", a: "Simple jobs (single component replacement) take 2–4 hours. Complex water damage or multi-component service may take 1–3 days." },
+          { q: "What if the board can't be serviced?", a: "We don't charge if we can't help. The diagnostic assessment is free." },
         ],
       },
     ],
@@ -627,14 +627,14 @@ export const blogs: BlogPost[] = [
   {
     slug: "protect-phone-screen-tips",
     title: "Best Ways to Protect Your Phone Screen From Cracks",
-    excerpt: "Screen replacement is the most common repair we see. These prevention strategies can save you thousands of rupees.",
+    excerpt: "Screen replacement is the most common service we see. These prevention strategies can save you thousands of rupees.",
     category: "Tips",
     readTime: "4 min read",
     date: "2025-03-15",
     keywords: ["protect phone screen", "phone screen protector", "phone case", "prevent cracked screen", "phone screen protection"],
     content: [
       {
-        text: "Screen replacement is the most requested repair at TurboFix — it's also the most preventable. A few hundred rupees spent on protection today can save you ₹3,000–₹12,000 in screen replacement costs.",
+        text: "Screen replacement is the most requested service at TurboFix — it's also the most preventable. A few hundred rupees spent on protection today can save you ₹3,000–₹12,000 in screen replacement costs.",
       },
       {
         heading: "Layer 1: Tempered Glass Screen Protector",
@@ -675,14 +675,14 @@ export const blogs: BlogPost[] = [
   {
     slug: "software-vs-hardware-phone-issues",
     title: "Software vs Hardware Phone Issues: How to Tell the Difference",
-    excerpt: "Before booking a repair, find out if your phone's issue is software or hardware. It could save you time and money.",
+    excerpt: "Before booking a service visit, find out if your phone's issue is software or hardware. It could save you time and money.",
     category: "Troubleshooting",
     readTime: "5 min read",
     date: "2025-03-20",
-    keywords: ["phone software issues", "phone hardware problems", "phone repair diagnosis", "phone troubleshooting", "mobile software problem"],
+    keywords: ["phone software issues", "phone hardware problems", "phone service diagnosis", "phone troubleshooting", "mobile software problem"],
     content: [
       {
-        text: "Not every phone problem requires hardware repair. Many common issues — random restarts, app crashes, slow performance, battery drain — can be resolved with software fixes that cost nothing. Knowing the difference saves both time and money.",
+        text: "Not every phone problem requires hardware service. Many common issues — random restarts, app crashes, slow performance, battery drain — can be resolved with software steps that cost nothing. Knowing the difference saves both time and money.",
       },
       {
         heading: "Signs of a Software Problem",
@@ -707,7 +707,7 @@ export const blogs: BlogPost[] = [
         ],
       },
       {
-        heading: "Software Fixes to Try Before Repair",
+        heading: "Software Steps to Try Before a Service Visit",
         list: [
           "Restart your device (solves more than you'd think)",
           "Boot into Safe Mode to test without third-party apps",
@@ -718,30 +718,30 @@ export const blogs: BlogPost[] = [
       },
       {
         heading: "When to Bring It In",
-        text: "If Safe Mode doesn't resolve the issue, the problem persists after a factory reset, or any physical component isn't working, it's hardware. Bring it to TurboFix for a free diagnostic assessment. We'll tell you exactly what's wrong and what it will cost — before any repair begins.",
+        text: "If Safe Mode doesn't resolve the issue, the problem persists after a factory reset, or any physical component isn't working, it's hardware. Bring it to TurboFix for a free diagnostic assessment. We'll tell you exactly what's wrong and what it will cost — before any service begins.",
       },
       {
         faq: [
-          { q: "Does TurboFix handle software issues?", a: "Yes — we handle bootloops, bricked devices, OS corruption, and performance optimization. We also do data recovery and OS reinstallation." },
-          { q: "Is software repair cheaper than hardware repair?", a: "Generally yes — software fixes are typically ₹499–₹999. Hardware repairs vary widely by component and model." },
+          { q: "Does TurboFix handle software issues?", a: "As part of our in-person diagnostic visits, our technicians can address certain software-related symptoms — like performance slowdowns or a device stuck restarting — when they're tied to a hardware visit. We don't offer standalone remote software or IT support." },
+          { q: "Is a software step cheaper than a hardware service?", a: "Generally yes — software-related steps are typically ₹499–₹999. Hardware service varies widely by component and model." },
         ],
       },
     ],
   },
   {
-    slug: "google-pixel-repair-guide",
-    title: "Google Pixel Repair in Hyderabad: Common Issues & Solutions",
-    excerpt: "Google Pixel phones are unique in the repair world. Here's what Pixel owners in Hyderabad need to know about repairs.",
+    slug: "google-pixel-service-guide",
+    title: "Google Pixel Service in Hyderabad: Common Issues & Solutions",
+    excerpt: "Google Pixel phones are unique in the service world. Here's what Pixel owners in Hyderabad need to know about service.",
     category: "Google Pixel",
     readTime: "6 min read",
     date: "2025-03-25",
-    keywords: ["Google Pixel repair", "Pixel screen repair", "Pixel battery", "Google Pixel Hyderabad", "Pixel repair guide"],
+    keywords: ["Google Pixel service", "Pixel screen service", "Pixel battery", "Google Pixel Hyderabad", "Pixel service guide"],
     content: [
       {
-        text: "Google Pixel phones offer the purest Android experience and some of the best cameras in the smartphone market. However, they come with unique repair considerations that differ from Samsung and other Android brands.",
+        text: "Google Pixel phones offer the purest Android experience and some of the best cameras in the smartphone market. However, they come with unique service considerations that differ from Samsung and other Android brands.",
       },
       {
-        heading: "Pixel Models We Repair at TurboFix",
+        heading: "Pixel Models We Service at TurboFix",
         list: [
           "Google Pixel 8, 8 Pro, 8a",
           "Google Pixel 7, 7 Pro, 7a",
@@ -768,30 +768,30 @@ export const blogs: BlogPost[] = [
       },
       {
         heading: "Pixel Software: Android Update Issues",
-        text: "Pixel phones receive Android updates first — which means they also encounter update bugs first. If your Pixel developed issues after an update (battery drain, overheating, connectivity problems), a system cache clear or OS reinstallation often resolves it without hardware repair.",
+        text: "Pixel phones receive Android updates first — which means they also encounter update bugs first. If your Pixel developed issues after an update (battery drain, overheating, connectivity problems), a system cache clear or OS reinstallation often resolves it without a hardware visit.",
       },
       {
         faq: [
-          { q: "Are Google Pixel repair parts available in Hyderabad?", a: "Yes — TurboFix stocks screens, batteries, and common components for popular Pixel models. Contact us to confirm parts availability for your specific model." },
-          { q: "Is Pixel harder to repair than Samsung or iPhone?", a: "Pixel devices have some proprietary software calibration requirements, but are not significantly harder to repair than other flagship devices. Our Pixel-experienced technicians handle them routinely." },
+          { q: "Are Google Pixel service parts available in Hyderabad?", a: "Yes — TurboFix stocks screens, batteries, and common components for popular Pixel models. Contact us to confirm parts availability for your specific model." },
+          { q: "Is Pixel harder to service than Samsung or iPhone?", a: "Pixel devices have some proprietary software calibration requirements, but are not significantly harder to service than other flagship devices. Our Pixel-experienced technicians handle them routinely." },
         ],
       },
     ],
   },
   {
-    slug: "realme-phone-repair-guide",
-    title: "Realme Phone Repair: Complete Guide for Hyderabad Users",
-    excerpt: "Realme is one of the fastest-growing phone brands in India. Here's what Realme owners need to know about repairs.",
+    slug: "realme-phone-service-guide",
+    title: "Realme Phone Service: Complete Guide for Hyderabad Users",
+    excerpt: "Realme is one of the fastest-growing phone brands in India. Here's what Realme owners need to know about service.",
     category: "Realme",
     readTime: "5 min read",
     date: "2025-03-30",
-    keywords: ["Realme repair", "Realme screen repair", "Realme battery replacement", "Realme repair Hyderabad", "Realme service"],
+    keywords: ["Realme service", "Realme screen service", "Realme battery replacement", "Realme service Hyderabad", "Realme service guide"],
     content: [
       {
-        text: "Realme has become one of India's most popular smartphone brands, offering impressive specs at competitive prices. Their popularity means TurboFix handles a large volume of Realme repairs in Hyderabad — giving us deep expertise across their entire lineup.",
+        text: "Realme has become one of India's most popular smartphone brands, offering impressive specs at competitive prices. Their popularity means TurboFix handles a large volume of Realme service requests in Hyderabad — giving us deep expertise across their entire lineup.",
       },
       {
-        heading: "Realme Models We Repair",
+        heading: "Realme Models We Service",
         list: [
           "Realme 13, 12, 11 series (all variants)",
           "Realme GT series (GT 5, GT Neo 5, GT 3)",
@@ -801,18 +801,18 @@ export const blogs: BlogPost[] = [
         ],
       },
       {
-        heading: "Most Common Realme Repairs",
+        heading: "Most Common Realme Services",
         list: [
           "Screen replacement — Realme uses both IPS LCD and AMOLED depending on model tier",
           "Battery replacement — Realme batteries degrade noticeably after 18–24 months of heavy use",
-          "Charging port repair — USB-C wear is common on heavily-used mid-range devices",
+          "Charging port service — USB-C wear is common on heavily-used mid-range devices",
           "Back glass replacement — Realme glass backs crack easily in drops",
-          "Speaker repair — loud, clear speakers are a Realme selling point but are relatively fragile",
+          "Speaker service — loud, clear speakers are a Realme selling point but are relatively fragile",
         ],
       },
       {
-        heading: "Realme Repair Costs: Budget-Friendly",
-        text: "One advantage of Realme's popularity is parts availability. Realme spare parts are widely available in India, keeping repair costs accessible. A Realme screen replacement typically costs significantly less than a Samsung or Apple equivalent, making repairs almost always financially sensible versus replacement.",
+        heading: "Realme Service Costs: Budget-Friendly",
+        text: "One advantage of Realme's popularity is parts availability. Realme spare parts are widely available in India, keeping service costs accessible. A Realme screen replacement typically costs significantly less than a Samsung or Apple equivalent, making service almost always financially sensible versus replacement.",
       },
       {
         heading: "Realme SUPERVOOC Charging Issues",
@@ -820,52 +820,52 @@ export const blogs: BlogPost[] = [
       },
       {
         faq: [
-          { q: "Is Realme warranty void if repaired by TurboFix?", a: "Third-party repairs after the warranty period do not affect any coverage — manufacturer warranties typically expire after 12 months. For in-warranty devices, we recommend checking Realme Service first." },
+          { q: "Is Realme warranty void if serviced by TurboFix?", a: "Third-party service after the warranty period does not affect any coverage — manufacturer warranties typically expire after 12 months. For in-warranty devices, we recommend checking Realme Service first." },
           { q: "How long does Realme screen replacement take?", a: "Realme screen replacements take 20–40 minutes at TurboFix. We test all touch functions, speakers, and cameras after every screen replacement." },
         ],
       },
     ],
   },
   {
-    slug: "how-doorstep-mobile-repair-works",
-    title: "How Doorstep Mobile Repair Works: A Step-by-Step Guide",
-    excerpt: "Curious how TurboFix's doorstep repair service actually works? Here's exactly what happens from booking to delivery.",
+    slug: "how-doorstep-mobile-service-works",
+    title: "How Doorstep Mobile Service Works: A Step-by-Step Guide",
+    excerpt: "Curious how TurboFix's doorstep service actually works? Here's exactly what happens from booking to delivery.",
     category: "Service Guide",
     readTime: "4 min read",
     date: "2025-04-05",
-    keywords: ["doorstep mobile repair", "home mobile repair", "pickup delivery phone repair", "mobile repair at home", "on-site phone repair"],
+    keywords: ["doorstep mobile service", "home mobile service", "pickup delivery phone service", "mobile service at home", "on-site phone service"],
     content: [
       {
-        text: "The idea of getting your phone repaired without leaving your home or office sounds almost too convenient — but that's exactly what TurboFix's doorstep service delivers. Here's exactly what happens from the moment you book to the moment your repaired phone is back in your hands.",
+        text: "The idea of getting your phone serviced without leaving your home or office sounds almost too convenient — but that's exactly what TurboFix's doorstep service delivers. Here's exactly what happens from the moment you book to the moment your phone is back in your hands.",
       },
       {
-        heading: "Step 1: Book Your Repair Online",
-        text: "Visit turbofix.in/book-repair, select your device brand, enter your device model, choose the repair you need, and select a pickup time that suits you. You'll receive a booking confirmation with a reference number via email and WhatsApp.",
+        heading: "Step 1: Book Your Visit Online",
+        text: "Visit turbofix.in/book-a-visit, select your device brand, enter your device model, choose the service you need, and select a pickup time that suits you. You'll receive a booking confirmation with a reference number via email and WhatsApp.",
       },
       {
         heading: "Step 2: We Come to You",
-        text: "Our trained technician arrives at your location within the scheduled window carrying all the tools, parts, and equipment needed for your repair. They'll call ahead 15 minutes before arrival. We service all of Hyderabad — from Gachibowli and Madhapur to Dilsukhnagar and LB Nagar.",
+        text: "Our trained technician arrives at your location within the scheduled window carrying all the tools, parts, and equipment needed for your visit. They'll call ahead 15 minutes before arrival. We service all of Hyderabad — from Gachibowli and Madhapur to Dilsukhnagar and LB Nagar.",
       },
       {
         heading: "Step 3: Diagnosis and Quote Confirmation",
-        text: "Before opening your device, our technician does a visual inspection and confirms the repair scope with you. If any additional issues are found (not mentioned in the booking), you'll get a revised quote before any extra work is done. You're always in control.",
+        text: "Before opening your device, our technician does a visual inspection and confirms the service scope with you. If any additional issues are found (not mentioned in the booking), you'll get a revised quote before any extra work is done. You're always in control.",
       },
       {
-        heading: "Step 4: Repair on the Spot",
-        text: "Most repairs are completed at your location in 20–45 minutes. Our technicians carry professional repair stations for common repairs. For complex issues (board-level, water damage), the device may need to come to our workshop and be returned the same day.",
+        heading: "Step 4: Service on the Spot",
+        text: "Most visits are completed at your location in 20–45 minutes. Our technicians carry professional service stations for common jobs. For complex issues (board-level, water damage), the device may need to come to our workshop and be returned the same day.",
       },
       {
         heading: "Step 5: Quality Check and Handoff",
-        text: "Every repair goes through our 10-point quality checklist before handoff: screen/display, touch sensitivity, cameras (front & rear), speakers, microphone, charging, connectivity (Wi-Fi, Bluetooth), call quality, biometrics, and general device function. You inspect and approve before we leave.",
+        text: "Every visit goes through our 10-point quality checklist before handoff: screen/display, touch sensitivity, cameras (front & rear), speakers, microphone, charging, connectivity (Wi-Fi, Bluetooth), call quality, biometrics, and general device function. You inspect and approve before we leave.",
       },
       {
         heading: "Step 6: Digital Invoice and Warranty",
-        text: "You receive a digital invoice with repair details, parts used, and your 6-month warranty terms via email. Your repair is registered in our system — contact us anytime within the warranty period for related issues.",
+        text: "You receive a digital invoice with service details, parts used, and your 6-month warranty terms via email. Your visit is registered in our system — contact us anytime within the warranty period for related issues.",
       },
       {
         faq: [
-          { q: "Do I need to provide any tools or equipment?", a: "No — our technicians arrive fully equipped with all tools, parts, and diagnostic equipment needed for your repair." },
-          { q: "What areas in Hyderabad does TurboFix serve for doorstep repairs?", a: "We cover all major areas of Hyderabad including Gachibowli, Madhapur, HITEC City, Kukatpally, Ameerpet, Kondapur, Dilsukhnagar, LB Nagar, and surrounding areas." },
+          { q: "Do I need to provide any tools or equipment?", a: "No — our technicians arrive fully equipped with all tools, parts, and diagnostic equipment needed for your visit." },
+          { q: "What areas in Hyderabad does TurboFix serve for doorstep service?", a: "We cover all major areas of Hyderabad including Gachibowli, Madhapur, HITEC City, Kukatpally, Ameerpet, Kondapur, Dilsukhnagar, LB Nagar, and surrounding areas." },
           { q: "What if the part isn't available for my device model?", a: "We'll confirm parts availability when you book. For uncommon models, we may need 24 hours to source the part. We'll always inform you before scheduling the appointment." },
         ],
       },
@@ -929,11 +929,11 @@ export const blogs: BlogPost[] = [
   {
     slug: "back-glass-replacement-guide",
     title: "Phone Back Glass Replacement: What to Expect and What It Costs",
-    excerpt: "Cracked back glass is increasingly common as manufacturers move to all-glass designs. Here's everything about back glass repair.",
-    category: "Repairs",
+    excerpt: "Cracked back glass is increasingly common as manufacturers move to all-glass designs. Here's everything about back glass replacement.",
+    category: "Guides",
     readTime: "5 min read",
     date: "2025-04-15",
-    keywords: ["back glass replacement", "phone back glass repair", "cracked back glass", "phone rear glass", "iPhone back glass"],
+    keywords: ["back glass replacement", "phone back glass replacement", "cracked back glass", "phone rear glass", "iPhone back glass"],
     content: [
       {
         text: "Glass backs became standard on premium smartphones when wireless charging became popular. The trade-off: rear glass is just as breakable as front glass, but it costs significantly more to replace on certain devices. Here's what you need to know.",
@@ -958,7 +958,7 @@ export const blogs: BlogPost[] = [
       },
       {
         heading: "Is Back Glass Replacement Worth It?",
-        text: "Cosmetically cracked back glass without function impact: a high-quality skin or case can hide the damage cost-effectively if the repair is expensive. If wireless charging has stopped working or the crack is worsening, repair is recommended. Ask TurboFix for a quote — we provide the cost before any work.",
+        text: "Cosmetically cracked back glass without function impact: a high-quality skin or case can hide the damage cost-effectively if replacement is expensive. If wireless charging has stopped working or the crack is worsening, replacement is recommended. Ask TurboFix for a quote — we provide the cost before any work.",
       },
       {
         faq: [
@@ -970,23 +970,23 @@ export const blogs: BlogPost[] = [
     ],
   },
   {
-    slug: "choosing-mobile-repair-service-hyderabad",
-    title: "How to Choose the Right Mobile Repair Service in Hyderabad",
-    excerpt: "Not all repair shops are equal. Here's what to look for — and red flags to avoid — when choosing a mobile repair service in Hyderabad.",
+    slug: "choosing-mobile-service-hyderabad",
+    title: "How to Choose the Right Mobile Service Provider in Hyderabad",
+    excerpt: "Not all service providers are equal. Here's what to look for — and red flags to avoid — when choosing a mobile service provider in Hyderabad.",
     category: "Guides",
     readTime: "6 min read",
     date: "2025-04-20",
-    keywords: ["mobile repair Hyderabad", "best mobile repair service", "choose phone repair shop", "reliable phone repair", "trusted mobile repair"],
+    keywords: ["mobile service Hyderabad", "best mobile service provider", "choose phone service provider", "reliable phone service", "trusted mobile service"],
     content: [
       {
-        text: "Hyderabad has hundreds of mobile repair shops — from roadside kiosks to premium studios like TurboFix. Choosing the wrong one can mean substandard parts, voided warranties, privacy risks, or worse — getting your phone back in worse condition. Here's how to choose wisely.",
+        text: "Hyderabad has hundreds of mobile service providers — from roadside kiosks to premium studios like TurboFix. Choosing the wrong one can mean substandard parts, voided warranties, privacy risks, or worse — getting your phone back in worse condition. Here's how to choose wisely.",
       },
       {
         heading: "What to Look For",
         list: [
           "Certified technicians — look for brands or industry certifications",
-          "Parts transparency — they should tell you exactly what grade parts they use before repairing",
-          "Warranty on repairs — minimum 3–6 months on parts and labor",
+          "Parts transparency — they should tell you exactly what grade parts they use before starting work",
+          "Warranty on service — minimum 3–6 months on parts and labor",
           "Written quotes before work begins — no surprise charges",
           "Verified reviews — check Google reviews, not just the shop's website testimonials",
           "Physical store or verifiable business address — not just a WhatsApp number",
@@ -1001,7 +1001,7 @@ export const blogs: BlogPost[] = [
           "Pressure to decide immediately — good shops give you time to decide",
           "No receipt or invoice — you need documentation for warranty claims",
           "Asking for your device passcode upfront and unnecessarily",
-          "Unable to confirm what parts they'll use before the repair",
+          "Unable to confirm what parts they'll use before the work begins",
           "No reviews or all 5-star reviews with no detail",
         ],
       },
@@ -1009,30 +1009,30 @@ export const blogs: BlogPost[] = [
         heading: "Why TurboFix Stands Out in Hyderabad",
         list: [
           "Trained technicians with brand-specific experience",
-          "Full transparency on parts grade before repair begins",
-          "6-month warranty on all repairs, documented digitally",
+          "Full transparency on parts grade before work begins",
+          "6-month warranty on all service, documented digitally",
           "Confirmed quote before any work — no hidden charges",
-          "4.9-star Google rating from 2,400+ customer reviews",
+          "4.9-star Google rating from 1,000+ customer reviews",
           "Doorstep service across all Hyderabad areas",
           "Data privacy commitment — we never access your files",
         ],
       },
       {
-        heading: "Questions to Ask Before Choosing a Repair Shop",
+        heading: "Questions to Ask Before Choosing a Service Provider",
         list: [
-          "What grade parts do you use for this repair?",
-          "What warranty do you offer on this repair?",
+          "What grade parts do you use for this job?",
+          "What warranty do you offer on this service?",
           "Can I get a written quote before you start?",
-          "Who will be performing the repair — what certifications do they have?",
+          "Who will be performing the work — what certifications do they have?",
           "Do you have experience with my specific phone model?",
-          "What happens if the repair fails or a new problem appears?",
+          "What happens if the service fails or a new problem appears?",
         ],
       },
       {
         faq: [
-          { q: "Is it safe to hand over my phone to a repair shop?", a: "With a reputable shop, yes. TurboFix never accesses your personal data, photos, or messages. We only access the hardware components being repaired. For sensitive devices, you can change your PIN before and after repair." },
-          { q: "Can I trust repair shops in Hyderabad?", a: "Quality varies significantly. Look for shops with verified Google reviews, physical locations, and clear warranty policies. TurboFix has a 4.9-star rating from 2,400+ verified Hyderabad customers." },
-          { q: "Why is TurboFix different from local repair shops?", a: "TurboFix operates at a studio standard — trained technicians, grade-A parts, digital invoicing, 6-month warranty, and doorstep service. We're not a kiosk; we're a professional repair service." },
+          { q: "Is it safe to hand over my phone to a service provider?", a: "With a reputable provider, yes. TurboFix never accesses your personal data, photos, or messages. We only access the hardware components being serviced. For sensitive devices, you can change your PIN before and after your visit." },
+          { q: "Can I trust mobile service providers in Hyderabad?", a: "Quality varies significantly. Look for providers with verified Google reviews, physical locations, and clear warranty policies. TurboFix has a 4.9-star rating from 1,000+ verified Hyderabad customers." },
+          { q: "Why is TurboFix different from local service providers?", a: "TurboFix operates at a studio standard — trained technicians, grade-A parts, digital invoicing, 6-month warranty, and doorstep service. We're not a kiosk; we're a professional mobile service studio." },
         ],
       },
     ],

@@ -26,7 +26,7 @@ export default function BrandRepairClient({ brand }: Props) {
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <motion.div variants={staggerContainer} initial="hidden" animate="show">
             <motion.div variants={fadeInUp}>
-              <Link href="/repairs" className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-[#00AAFF] transition-colors mb-8">
+              <Link href="/brands" className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-[#00AAFF] transition-colors mb-8">
                 <ArrowLeft className="w-4 h-4" />
                 All Brands
               </Link>
@@ -62,8 +62,8 @@ export default function BrandRepairClient({ brand }: Props) {
                 <p className="text-gray-400 text-xl leading-relaxed max-w-2xl">{brand.description}</p>
 
                 <div className="flex flex-wrap gap-3 mt-8">
-                  <Link href="/book-repair" className="btn-neon inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white">
-                    Book a Repair
+                  <Link href="/book-a-visit" className="btn-neon inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white">
+                    Book a Visit
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                   <a href="tel:+918639605147" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-gray-300 transition-colors"
@@ -82,20 +82,20 @@ export default function BrandRepairClient({ brand }: Props) {
         <div className="absolute inset-0 bg-[#030712]" />
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <p className="text-center text-xs text-gray-500 leading-relaxed">
-            TurboFix is an independent repair service and is not affiliated with, authorized, sponsored, or endorsed by{" "}
+            TurboFix is an independent service provider and is not affiliated with, authorized, sponsored, or endorsed by{" "}
             {brand.name}. {brand.name} and related trademarks are the property of their respective owners.
           </p>
         </div>
       </section>
 
-      {/* Repair Services */}
+      {/* Services */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0 bg-[#030712]" />
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
-            <span className="section-label mb-4 inline-flex">What We Fix</span>
+            <span className="section-label mb-4 inline-flex">What We Service</span>
             <h2 className="font-display text-4xl font-bold mt-4">
-              {brand.name} <span className="gradient-text">Repair Services</span>
+              {brand.name} <span className="gradient-text">Services</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -142,7 +142,7 @@ export default function BrandRepairClient({ brand }: Props) {
             ))}
           </div>
           <p className="text-center text-gray-500 text-sm mt-6">
-            Don't see your model? Contact us — we repair all {brand.name} models.
+            Don't see your model? Contact us — we service all {brand.name} models.
           </p>
         </div>
       </section>
@@ -154,7 +154,7 @@ export default function BrandRepairClient({ brand }: Props) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
             {[
               { title: "OEM-Quality Parts", desc: "Grade-A parts that match or exceed original specifications." },
-              { title: "6-Month Warranty", desc: "All repairs covered for 6 months on parts and workmanship." },
+              { title: "6-Month Warranty", desc: "All service work covered for 6 months on parts and workmanship." },
               { title: "Doorstep Service", desc: "We come to your home or office anywhere in Hyderabad." },
             ].map((item) => (
               <div
@@ -182,7 +182,7 @@ export default function BrandRepairClient({ brand }: Props) {
           <div className="absolute inset-0 bg-[#02040F]" />
           <div className="container relative max-w-3xl mx-auto px-4 sm:px-6">
             <h2 className="font-display text-3xl font-bold text-center mb-10">
-              {brand.name} Repair <span className="gradient-text">FAQs</span>
+              {brand.name} Service <span className="gradient-text">FAQs</span>
             </h2>
             <div className="space-y-3">
               {brand.faqs.map((faq, i) => (

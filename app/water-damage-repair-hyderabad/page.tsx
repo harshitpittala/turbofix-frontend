@@ -1,25 +1,8 @@
-import type { Metadata } from "next";
-import ServicePageServer from "@/components/seo/ServicePageServer";
-import { getServicePageBySlug } from "@/data/servicePages";
+import { redirect } from "next/navigation";
 
-const SLUG = "water-damage-repair-hyderabad";
-
-export function generateMetadata(): Metadata {
-  const svc = getServicePageBySlug(SLUG);
-  if (!svc) return { title: "Service Not Found" };
-  return {
-    title: `${svc.h1} — Doorstep Service | TurboFix`,
-    description: `${svc.intro} ${svc.repairTime}. ${svc.priceRange}. OEM parts, 6-month warranty. Book now!`,
-    keywords: svc.keywords,
-    alternates: { canonical: `https://turbofix.in/${SLUG}` },
-    openGraph: {
-      title: `${svc.h1} | TurboFix`,
-      description: `${svc.tagline} ${svc.priceRange}. Doorstep service across Hyderabad.`,
-      url: `https://turbofix.in/${SLUG}`,
-    },
-  };
-}
-
+// This route was renamed to /water-damage-hyderabad to avoid "repair"
+// trigger language in the URL for Google Ads policy compliance.
+// See next.config.js redirects() for the primary 301 — this is a fallback.
 export default function Page() {
-  return <ServicePageServer slug={SLUG} />;
+  redirect("/water-damage-hyderabad");
 }

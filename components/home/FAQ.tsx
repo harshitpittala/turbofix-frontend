@@ -8,8 +8,8 @@ import { staggerContainer, fadeInUp } from "@/lib/utils";
 
 export const faqs = [
   {
-    q: "How long does a typical repair take?",
-    a: "Most repairs — screen replacements, battery swaps, and charging port fixes — are completed in 20–45 minutes. Complex repairs like water damage recovery or motherboard work may take 2–4 hours. We'll always give you an accurate time estimate upfront.",
+    q: "How long does a typical visit take?",
+    a: "Most visits — screen replacements, battery swaps, and charging port work — are completed in 20–45 minutes. Complex jobs like water damage service or motherboard work may take 2–4 hours. We'll always give you an accurate time estimate upfront.",
   },
   {
     q: "Do you use original parts?",
@@ -17,27 +17,27 @@ export const faqs = [
   },
   {
     q: "What warranty do you offer?",
-    a: "Every repair comes with a 6-month warranty. If the same issue reoccurs within that period due to a parts or workmanship failure, we fix it absolutely free. The warranty doesn't cover physical damage or water damage after the repair.",
+    a: "Every visit comes with a 6-month warranty. If the same issue reoccurs within that period due to a parts or workmanship failure, we resolve it absolutely free. The warranty doesn't cover physical damage or water damage after the visit.",
   },
   {
-    q: "Will my data be safe during the repair?",
-    a: "Your data is completely safe. We only access the parts being repaired — your files, photos, and apps remain untouched. We recommend a backup before any repair as a precaution, and our staff will never ask for your passcode unless software troubleshooting is explicitly needed.",
+    q: "Will my data be safe during the visit?",
+    a: "Your data is completely safe. We only access the parts being serviced — your files, photos, and apps remain untouched. We recommend a backup before any visit as a precaution, and our staff will never ask for your passcode unless software troubleshooting is explicitly needed.",
   },
   {
-    q: "Can I get a cost estimate before the repair?",
+    q: "Can I get a cost estimate before the visit?",
     a: "Absolutely. Our diagnostic check is completely free. We'll assess your device and provide a fixed, transparent quote before any work begins. You're under no obligation to proceed if you don't like the price.",
   },
   {
     q: "Do you offer home pickup and delivery?",
-    a: "Yes! We offer doorstep pickup and delivery within a 10 km radius of Hitech City. Book the service online, and our technician will collect your device, repair it in our lab, and deliver it back — typically same day.",
+    a: "Yes! We offer doorstep pickup and delivery within a 10 km radius of Hitech City. Book the service online, and our technician will service it in our lab, and deliver it back — typically same day.",
   },
   {
-    q: "Which phone brands do you repair?",
-    a: "We repair all major brands including Apple iPhone, Samsung, OnePlus, Xiaomi, Oppo, Vivo, Realme, Google Pixel, Motorola, Nokia, Sony, and Nothing. If you have a less common brand, contact us — we likely handle it.",
+    q: "Which phone brands do you service?",
+    a: "We service all major brands including Apple iPhone, Samsung, OnePlus, Xiaomi, Oppo, Vivo, Realme, Google Pixel, Motorola, Nokia, Sony, and Nothing. If you have a less common brand, contact us — we likely handle it.",
   },
   {
     q: "Is my device insured while at your shop?",
-    a: "Yes. All devices in our custody are covered under our in-shop insurance. In the extremely unlikely event of accidental damage while in our care, we will repair or replace the device at no cost to you.",
+    a: "Yes. All devices in our custody are covered under our in-shop insurance. In the extremely unlikely event of accidental damage while in our care, we will service or replace the device at no cost to you.",
   },
 ];
 
@@ -115,7 +115,7 @@ export default function FAQ() {
               <span className="gradient-text">We've Got Answers.</span>
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-gray-400 text-lg mb-8 leading-relaxed">
-              Everything you need to know before booking a repair.
+              Everything you need to know before booking a visit.
               Can't find your answer? Just WhatsApp us.
             </motion.p>
             <motion.div variants={fadeInUp}>

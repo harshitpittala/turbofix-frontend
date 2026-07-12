@@ -8,7 +8,7 @@ const pricing = [
   { icon: Volume2, color: "#D97706", title: "Speaker / Mic Replacement", price: "from ₹399", note: "Speaker & earpiece" },
   { icon: PanelTop, color: "#2563EB", title: "Back Glass", price: "from ₹699", note: "All models supported" },
   { icon: Camera, color: "#7C3AED", title: "Camera Module Replacement", price: "from ₹799", note: "Front & rear cameras" },
-  { icon: Droplets, color: "#0891B2", title: "Water Damage Recovery", price: "from ₹999", note: "Full diagnostic first" },
+  { icon: Droplets, color: "#0891B2", title: "Water Damage Service", price: "from ₹999", note: "Full diagnostic first" },
   { icon: Cpu, color: "#EA580C", title: "Motherboard Service", price: "from ₹1,499", note: "Advanced diagnostics" },
 ];
 

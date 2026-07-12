@@ -63,7 +63,7 @@ function StatusBar() {
   );
 }
 
-/* ── SCREEN 1: Repair Dashboard ──────────────────────────────────────── */
+/* ── SCREEN 1: Service Dashboard ──────────────────────────────────────── */
 function Screen1() {
   return (
     <div className="flex flex-col gap-2 h-full">
@@ -93,9 +93,9 @@ function Screen1() {
       >
         <div className="flex items-center gap-1 mb-1">
           <div className="w-[5px] h-[5px] rounded-full bg-[#00AAFF] animate-pulse" />
-          <span className="text-[7px] text-[#00AAFF] font-bold uppercase tracking-wider">Active Repair</span>
+          <span className="text-[7px] text-[#00AAFF] font-bold uppercase tracking-wider">Active Service</span>
         </div>
-        <p className="text-[9px] text-white font-semibold mb-1.5">iPhone 16 Pro — Screen Repair</p>
+        <p className="text-[9px] text-white font-semibold mb-1.5">iPhone 16 Pro — Screen Service</p>
         <div className="flex items-center gap-2">
           <div className="flex-1 h-[3px] rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,0.08)" }}>
             <motion.div
@@ -142,7 +142,7 @@ function Screen1() {
           <span className="text-[7px] text-[#00AAFF]">Manage →</span>
         </div>
         {[
-          { name: "iPhone 16 Pro",  status: "In Repair",  color: "#F59E0B" },
+          { name: "iPhone 16 Pro",  status: "In Service", color: "#F59E0B" },
           { name: "Samsung S25",    status: "Protected",  color: "#22C55E" },
         ].map(({ name, status, color }) => (
           <div
@@ -165,14 +165,14 @@ function Screen1() {
   );
 }
 
-/* ── SCREEN 2: Live Repair Tracking ──────────────────────────────────── */
+/* ── SCREEN 2: Live Service Tracking ──────────────────────────────────── */
 function Screen2() {
   return (
     <div className="flex flex-col gap-2 h-full">
       {/* Header */}
       <div className="flex items-center gap-1.5 shrink-0">
         <ChevronLeft className="w-3.5 h-3.5 text-gray-500" />
-        <p className="text-[10px] font-bold text-white flex-1">Repair Tracker</p>
+        <p className="text-[10px] font-bold text-white flex-1">Service Tracker</p>
         <div className="flex items-center gap-1 px-1.5 py-0.5 rounded-full" style={{ background: "rgba(0,170,255,0.1)", border: "1px solid rgba(0,170,255,0.2)" }}>
           <div className="w-[4px] h-[4px] rounded-full bg-[#00AAFF] animate-pulse" />
           <span className="text-[6.5px] text-[#00AAFF] font-semibold">Live</span>
@@ -191,14 +191,14 @@ function Screen2() {
           <span className="text-[7px] text-[#00AAFF] font-bold uppercase tracking-wider">#TFX-9821</span>
           <span className="text-[6.5px] text-gray-500 font-mono">Today, 10:15 AM</span>
         </div>
-        <p className="text-[9px] text-white font-semibold mb-2">iPhone 16 Pro — Screen Repair</p>
+        <p className="text-[9px] text-white font-semibold mb-2">iPhone 16 Pro — Screen Service</p>
 
         {/* Steps */}
         <div className="flex items-start gap-0.5 mb-2">
           {[
             { label: "Received",  done: true  },
             { label: "Diagnosis", done: true  },
-            { label: "Repair",    active: true },
+            { label: "Service",   active: true },
             { label: "Done",      done: false  },
           ].map((step, i) => (
             <div key={step.label} className="flex items-start flex-1 flex-col items-center gap-0.5 relative">
@@ -272,7 +272,7 @@ function Screen2() {
         {[
           { time: "09:30",  label: "Device received",     done: true  },
           { time: "09:45",  label: "Diagnosis complete",  done: true  },
-          { time: "10:15",  label: "Screen repair started", active: true },
+          { time: "10:15",  label: "Screen service started", active: true },
           { time: "~10:35", label: "Quality check",       done: false },
         ].map(({ time, label, done, active }) => (
           <div key={time} className="flex items-start gap-2 mb-1.5">
@@ -362,7 +362,7 @@ function Screen3() {
         {[
           { icon: "🖥️", label: "Screen Replacement", color: "#0EA5E9" },
           { icon: "🔋", label: "Battery Replacement", color: "#22C55E" },
-          { icon: "📷", label: "Camera Repair",       color: "#A78BFA" },
+          { icon: "📷", label: "Camera Service",      color: "#A78BFA" },
           { icon: "💧", label: "Water Damage",        color: "#38BDF8" },
         ].map(({ icon, label, color }) => (
           <div
@@ -537,7 +537,7 @@ export default function Hero() {
               variants={fadeInUp}
               className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 tracking-tight"
             >
-              We Fix Every
+              We Service Every
               <br />
               <span className="gradient-text">
                 <TypeAnimation
@@ -559,19 +559,19 @@ export default function Hero() {
               variants={fadeInUp}
               className="text-gray-400 text-base lg:text-lg xl:text-xl leading-relaxed mb-10 max-w-lg"
             >
-              Premium mobile repairs with{" "}
+              Premium mobile service with{" "}
               <span className="text-white font-medium">trained technicians</span>,{" "}
               <span className="text-white font-medium">genuine OEM parts</span>, and
-              transparent pricing — most repairs completed in about 30 minutes.
+              transparent pricing — most visits completed in about 30 minutes.
             </motion.p>
 
             <motion.div variants={fadeInUp} className="flex flex-wrap gap-3 sm:gap-4 mb-10 sm:mb-12">
               <Link
-                href="/book-repair"
+                href="/book-a-visit"
                 className="btn-neon px-5 sm:px-7 py-3.5 sm:py-4 rounded-xl font-semibold text-white flex items-center gap-2 sm:gap-2.5 group text-sm sm:text-base"
               >
                 <Zap className="w-4 h-4 sm:w-5 sm:h-5" fill="white" />
-                Book Instant Repair
+                Book a Visit Now
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
 
@@ -628,7 +628,7 @@ export default function Hero() {
                   </div>
                   <p className="text-[11px] sm:text-xs text-gray-300">
                     <span className="text-white font-semibold">4.9</span>
-                    {" · "}2,400+ happy customers
+                    {" · "}1,000+ happy customers
                   </p>
                 </div>
               </div>
@@ -637,7 +637,7 @@ export default function Hero() {
 
               <div className="flex items-center gap-2 text-sm text-gray-400">
                 <span className="text-[#00AAFF] font-semibold">30 min</span>
-                average repair time
+                average service time
               </div>
             </motion.div>
           </motion.div>

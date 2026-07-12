@@ -5,7 +5,7 @@ export interface ServicePageData {
   tagline: string;
   intro: string;
   whyNeeded: string;     // paragraph explaining the problem this service solves
-  symptoms: string[];    // list: signs you need this repair
+  symptoms: string[];    // list: signs you need this service
   process: { step: string; title: string; desc: string }[];
   priceRange: string;
   repairTime: string;
@@ -22,11 +22,11 @@ export const servicePages: ServicePageData[] = [
     slug: "screen-replacement-hyderabad",
     name: "Screen Replacement",
     h1: "Mobile Screen Replacement in Hyderabad",
-    tagline: "Cracked screen? We fix it at your door in 30–45 minutes.",
+    tagline: "Cracked screen? We resolve it at your door in 30–45 minutes.",
     intro:
       "A cracked or shattered phone screen doesn't mean the end of your device. TurboFix brings professional screen replacement service directly to your home or office across Hyderabad — using OEM-quality displays that restore original brightness, colour accuracy, and touch sensitivity.",
     whyNeeded:
-      "Phone screens are the most commonly damaged component — drops, pressure, and impacts break the glass and damage the display layers underneath. A broken screen isn't just cosmetic: touch unresponsiveness, dead pixels, or screen blackout make the phone unusable. Delaying the repair risks further internal damage from exposed components.",
+      "Phone screens are the most commonly damaged component — drops, pressure, and impacts break the glass and damage the display layers underneath. A broken screen isn't just cosmetic: touch unresponsiveness, dead pixels, or screen blackout make the phone unusable. Delaying the replacement risks further internal damage from exposed components.",
     symptoms: [
       "Cracked or shattered glass on the front panel",
       "Black spots, bleeding ink, or discolouration on the display",
@@ -46,20 +46,20 @@ export const servicePages: ServicePageData[] = [
     warranty: "6 months on screen and workmanship",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel", "Nothing Phone"],
     faqs: [
-      { q: "What is the cost of screen replacement in Hyderabad?", a: "Screen replacement at TurboFix costs ₹999–₹8,999 depending on the model. iPhone OLED screens and Samsung Ultra AMOLED displays are at the higher end. Basic Android screens start from ₹999. You receive the exact quote before repair begins." },
+      { q: "What is the cost of screen replacement in Hyderabad?", a: "Screen replacement at TurboFix costs ₹999–₹8,999 depending on the model. iPhone OLED screens and Samsung Ultra AMOLED displays are at the higher end. Basic Android screens start from ₹999. You receive the exact quote before work begins." },
       { q: "How long does screen replacement take at your doorstep?", a: "Most screen replacements take 30–45 minutes at your home or office. We carry common screen models on our service vehicle, so there's no waiting." },
       { q: "Will Face ID still work after an iPhone screen replacement?", a: "Yes — TurboFix technicians preserve the Face ID sensor and TrueDepth camera module during screen replacement. We do not damage the Face ID components." },
       { q: "Is OEM screen the same quality as the original?", a: "OEM-quality (Original Equipment Manufacturer) screens are made by the same factories that supply the phone brands, using identical specifications. The colour accuracy, brightness, and touch sensitivity are equivalent to the original." },
-      { q: "Do you replace just the glass or the full display assembly?", a: "We typically replace the full display assembly (glass + digitizer + LCD/OLED) as this gives the best quality result. Glass-only repair is available for certain models on request." },
+      { q: "Do you replace just the glass or the full display assembly?", a: "We typically replace the full display assembly (glass + digitizer + LCD/OLED) as this gives the best quality result. Glass-only replacement is available for certain models on request." },
       { q: "Can you replace my phone screen at my office in HITEC City?", a: "Yes — we serve all Hyderabad locations including HITEC City, Gachibowli, Madhapur, and all major areas. Book a slot and we arrive at your office reception or desk." },
     ],
     keywords: [
-      "screen replacement hyderabad", "mobile screen repair hyderabad",
-      "phone screen replacement hyderabad", "cracked screen repair hyderabad",
+      "screen replacement hyderabad", "mobile screen replacement hyderabad",
+      "phone screen replacement hyderabad", "cracked screen replacement hyderabad",
       "iphone screen replacement hyderabad", "samsung screen replacement hyderabad",
-      "doorstep screen repair hyderabad", "mobile display replacement hyderabad",
+      "doorstep screen replacement hyderabad", "mobile display replacement hyderabad",
     ],
-    relatedServiceSlugs: ["battery-replacement-hyderabad", "back-panel-replacement-hyderabad", "camera-repair-hyderabad"],
+    relatedServiceSlugs: ["battery-replacement-hyderabad", "back-panel-replacement-hyderabad", "camera-service-hyderabad"],
     repairType: "Mobile Phone Screen Replacement",
   },
 
@@ -94,29 +94,29 @@ export const servicePages: ServicePageData[] = [
     faqs: [
       { q: "How much does battery replacement cost in Hyderabad?", a: "Battery replacement at TurboFix costs ₹699–₹3,999 depending on the model. iPhone battery replacement starts from ₹1,299. Samsung and OnePlus from ₹999. Budget Android models from ₹699." },
       { q: "How do I know if my phone battery needs to be replaced?", a: "Key signs: battery drains faster than normal, phone shuts down unexpectedly, battery percentage jumps erratically, or the phone back panel has a slight bulge. On iPhone, check Settings → Battery → Battery Health — below 80% strongly indicates replacement is needed." },
-      { q: "Does battery replacement affect my phone's warranty?", a: "If your phone is still under manufacturer warranty, please check whether a third-party repair affects it. For out-of-warranty phones, our battery replacement comes with a 6-month TurboFix warranty." },
-      { q: "Will fast charging still work after battery replacement?", a: "Yes — we use batteries compatible with your model's fast charging standard (SUPERVOOC, Warp Charge, Fast Charge, etc.) and verify fast charging after the repair." },
-      { q: "Can you replace a swollen battery safely?", a: "Yes — swollen batteries are handled with care using proper tools and ventilation. Do not press or puncture a swollen battery. Book a repair immediately as swollen batteries are a fire risk." },
+      { q: "Does battery replacement affect my phone's warranty?", a: "If your phone is still under manufacturer warranty, please check whether third-party service affects it. For out-of-warranty phones, our battery replacement comes with a 6-month TurboFix warranty." },
+      { q: "Will fast charging still work after battery replacement?", a: "Yes — we use batteries compatible with your model's fast charging standard (SUPERVOOC, Warp Charge, Fast Charge, etc.) and verify fast charging after the visit." },
+      { q: "Can you replace a swollen battery safely?", a: "Yes — swollen batteries are handled with care using proper tools and ventilation. Do not press or puncture a swollen battery. Book a visit immediately as swollen batteries are a fire risk." },
     ],
     keywords: [
       "battery replacement hyderabad", "mobile battery replacement hyderabad",
       "iphone battery replacement hyderabad", "samsung battery replacement hyderabad",
-      "phone battery replacement hyderabad", "battery drain fix hyderabad",
-      "doorstep battery replacement hyderabad", "mobile battery repair hyderabad",
+      "phone battery replacement hyderabad", "battery drain solutions hyderabad",
+      "doorstep battery replacement hyderabad", "mobile battery service hyderabad",
     ],
-    relatedServiceSlugs: ["screen-replacement-hyderabad", "charging-port-repair-hyderabad", "motherboard-repair-hyderabad"],
+    relatedServiceSlugs: ["screen-replacement-hyderabad", "charging-port-service-hyderabad", "motherboard-service-hyderabad"],
     repairType: "Mobile Phone Battery Replacement",
   },
 
   {
-    slug: "charging-port-repair-hyderabad",
-    name: "Charging Port Repair",
-    h1: "Mobile Charging Port Repair in Hyderabad",
-    tagline: "Phone not charging? Loose port? Fixed in under 35 minutes.",
+    slug: "charging-port-service-hyderabad",
+    name: "Charging Port Service",
+    h1: "Mobile Charging Port Service in Hyderabad",
+    tagline: "Phone not charging? Loose port? Resolved in under 35 minutes.",
     intro:
       "A faulty charging port is one of the most frustrating phone problems — but it's also one of the most fixable. TurboFix technicians diagnose charging issues on-site, often resolving them with a thorough port cleaning at no extra charge. For genuine port damage, full port replacement is completed at your doorstep in under 35 minutes.",
     whyNeeded:
-      "Charging ports accumulate lint, dust, and corrosion over time, causing intermittent or complete charging failure. Forcing bent or wrong-size cables can physically damage the pins. A fully dead charging port means the phone can't charge at all — leaving you without a working device unless repaired promptly.",
+      "Charging ports accumulate lint, dust, and corrosion over time, causing intermittent or complete charging failure. Forcing bent or wrong-size cables can physically damage the pins. A fully dead charging port means the phone can't charge at all — leaving you without a working device unless serviced promptly.",
     symptoms: [
       "Phone only charges at certain angles",
       "Cable feels very loose in the charging port",
@@ -137,30 +137,30 @@ export const servicePages: ServicePageData[] = [
     warranty: "6 months on port and workmanship",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel", "Nothing Phone"],
     faqs: [
-      { q: "How much does charging port repair cost in Hyderabad?", a: "Charging port repair at TurboFix costs ₹499–₹2,999 depending on whether cleaning resolves it or a full port replacement is needed. Cleaning-only service starts from ₹299." },
+      { q: "How much does charging port service cost in Hyderabad?", a: "Charging port service at TurboFix costs ₹499–₹2,999 depending on whether cleaning resolves it or a full port replacement is needed. Cleaning-only service starts from ₹299." },
       { q: "Can lint in the charging port cause charging problems?", a: "Yes — accumulated lint and debris are the most common cause of intermittent charging. Our technician cleans the port first. If cleaning fixes it, no replacement is needed and the cost is minimal." },
-      { q: "My phone charges wirelessly but not via cable — what's wrong?", a: "This almost always indicates a faulty USB-C or Lightning port. The wireless charging coil is a separate component and still works. Port repair or replacement will restore wired charging." },
-      { q: "Will data transfer work after port repair?", a: "Yes — we verify USB data transfer functionality as part of our port repair test protocol." },
+      { q: "My phone charges wirelessly but not via cable — what's wrong?", a: "This almost always indicates a faulty USB-C or Lightning port. The wireless charging coil is a separate component and still works. Port service or replacement will restore wired charging." },
+      { q: "Will data transfer work after port service?", a: "Yes — we verify USB data transfer functionality as part of our port service test protocol." },
     ],
     keywords: [
-      "charging port repair hyderabad", "phone not charging hyderabad",
-      "mobile charging port repair hyderabad", "usb port repair hyderabad",
-      "iphone charging port repair hyderabad", "samsung charging port repair hyderabad",
-      "doorstep charging repair hyderabad",
+      "charging port service hyderabad", "phone not charging hyderabad",
+      "mobile charging port service hyderabad", "usb port replacement hyderabad",
+      "iphone charging port service hyderabad", "samsung charging port service hyderabad",
+      "doorstep charging service hyderabad",
     ],
-    relatedServiceSlugs: ["battery-replacement-hyderabad", "screen-replacement-hyderabad", "water-damage-repair-hyderabad"],
-    repairType: "Mobile Phone Charging Port Repair",
+    relatedServiceSlugs: ["battery-replacement-hyderabad", "screen-replacement-hyderabad", "water-damage-hyderabad"],
+    repairType: "Mobile Phone Charging Port Service",
   },
 
   {
-    slug: "water-damage-repair-hyderabad",
-    name: "Water Damage Repair",
-    h1: "Water Damage Mobile Repair in Hyderabad",
-    tagline: "Phone dropped in water? Act fast — recovery is possible.",
+    slug: "water-damage-hyderabad",
+    name: "Water Damage Service",
+    h1: "Water Damage Mobile Service in Hyderabad",
+    tagline: "Phone dropped in water? Act fast — restoration is possible.",
     intro:
-      "Water damage is time-critical — the longer liquid remains inside a phone, the more corrosion spreads across the motherboard. TurboFix's water damage recovery service uses ultrasonic cleaning and professional drying equipment to maximise recovery rates, even for phones submerged for several minutes.",
+      "Water damage is time-critical — the longer liquid remains inside a phone, the more corrosion spreads across the motherboard. TurboFix's water damage service uses ultrasonic cleaning and professional drying equipment to maximise restoration rates, even for phones submerged for several minutes.",
     whyNeeded:
-      "Modern phones with IP ratings can withstand brief water exposure, but even IP68 phones are not waterproof indefinitely — pressure, salt water, and repeated exposure degrade the seals. Phones without IP ratings are immediately vulnerable. Corrosion from water damage is progressive: a phone that 'recovered on its own' may fail weeks later from ongoing internal corrosion.",
+      "Modern phones with IP ratings can withstand brief water exposure, but even IP68 phones are not waterproof indefinitely — pressure, salt water, and repeated exposure degrade the seals. Phones without IP ratings are immediately vulnerable. Corrosion from water damage is progressive: a phone that 'seemed fine on its own' may fail weeks later from ongoing internal corrosion.",
     symptoms: [
       "Phone dropped in water, toilet, or rain",
       "Phone won't turn on after water exposure",
@@ -171,7 +171,7 @@ export const servicePages: ServicePageData[] = [
       "Touch screen unresponsive or erratic after water contact",
     ],
     process: [
-      { step: "01", title: "Immediate Power-Off", desc: "CRITICAL: Do not attempt to charge or turn on a water-damaged phone. Power off immediately and book repair. This prevents short-circuit damage." },
+      { step: "01", title: "Immediate Power-Off", desc: "CRITICAL: Do not attempt to charge or turn on a water-damaged phone. Power off immediately and book a service visit. This prevents short-circuit damage." },
       { step: "02", title: "Full Disassembly & Inspection", desc: "Complete teardown to assess water ingress points, identify corroded components, and map the damage extent." },
       { step: "03", title: "Ultrasonic Cleaning", desc: "PCB and affected components cleaned with ultrasonic equipment and isopropyl alcohol to remove corrosive mineral deposits." },
       { step: "04", title: "Drying & Component Replacement", desc: "Professional drying process followed by replacement of any damaged components — battery, charging port, speaker modules as needed." },
@@ -181,28 +181,28 @@ export const servicePages: ServicePageData[] = [
     warranty: "3 months (nature of water damage limits a longer warranty period)",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel", "Nothing Phone"],
     faqs: [
-      { q: "Can a water-damaged phone be repaired?", a: "Yes — in most cases, water-damaged phones can be fully recovered if repaired promptly. Success rate depends on how long the phone was submerged, type of liquid (fresh water vs salt water), and how quickly repair begins." },
+      { q: "Can a water-damaged phone be restored?", a: "Yes — in most cases, water-damaged phones can be fully restored if serviced promptly. Success rate depends on how long the phone was submerged, type of liquid (fresh water vs salt water), and how quickly the service process begins." },
       { q: "Should I put my phone in rice after water damage?", a: "Rice is not effective — it does not absorb internal moisture fast enough and can introduce dust into ports. The correct action is: power off immediately, do not charge, and bring to TurboFix for professional drying as soon as possible." },
       { q: "My phone worked after getting wet but stopped working a few days later — why?", a: "Corrosion from water damage is progressive. Even if a phone initially 'works', mineral deposits from the water corrode circuit board traces over hours or days. This is called latent water damage. It's important to have the phone professionally cleaned even if it seems fine initially." },
-      { q: "How much does water damage repair cost in Hyderabad?", a: "Water damage repair at TurboFix starts from ₹999 for cleaning and assessment. Full recovery including component replacement costs ₹1,999–₹5,999 depending on damage extent." },
+      { q: "How much does water damage service cost in Hyderabad?", a: "Water damage service at TurboFix starts from ₹999 for cleaning and assessment. Full restoration including component replacement costs ₹1,999–₹5,999 depending on damage extent." },
     ],
     keywords: [
-      "water damage repair hyderabad", "phone water damage repair hyderabad",
+      "water damage service hyderabad", "phone water damage service hyderabad",
       "mobile water damage hyderabad", "phone dropped in water hyderabad",
-      "water damaged phone repair hyderabad", "iphone water damage hyderabad",
-      "doorstep water damage repair hyderabad",
+      "water damaged phone service hyderabad", "iphone water damage hyderabad",
+      "doorstep water damage service hyderabad",
     ],
-    relatedServiceSlugs: ["charging-port-repair-hyderabad", "motherboard-repair-hyderabad", "screen-replacement-hyderabad"],
-    repairType: "Mobile Phone Water Damage Recovery",
+    relatedServiceSlugs: ["charging-port-service-hyderabad", "motherboard-service-hyderabad", "screen-replacement-hyderabad"],
+    repairType: "Mobile Phone Water Damage Service",
   },
 
   {
-    slug: "speaker-repair-hyderabad",
-    name: "Speaker & Mic Repair",
-    h1: "Mobile Speaker & Microphone Repair in Hyderabad",
-    tagline: "No sound, muffled audio, or mic issues? Repaired at your doorstep.",
+    slug: "speaker-service-hyderabad",
+    name: "Speaker & Mic Service",
+    h1: "Mobile Speaker & Microphone Service in Hyderabad",
+    tagline: "No sound, muffled audio, or mic issues? Resolved at your doorstep.",
     intro:
-      "Speaker failures can range from completely silent to distorted or crackling audio — and microphone problems make calls and voice recordings unusable. TurboFix diagnoses and repairs all speaker, earpiece, and microphone issues across all major phone brands at your doorstep in Hyderabad.",
+      "Speaker issues can range from completely silent to distorted or crackling audio — and microphone problems make calls and voice recordings unusable. TurboFix diagnoses and services all speaker, earpiece, and microphone issues across all major phone brands at your doorstep in Hyderabad.",
     whyNeeded:
       "Phone speakers and microphones are vulnerable to dust, moisture, and physical impact. A clogged speaker grille often mimics a broken speaker — our technician checks this first. For genuine component failure, speaker module replacement restores full audio quality including stereo separation, Dolby Atmos compatibility, and call clarity.",
     symptoms: [
@@ -225,29 +225,29 @@ export const servicePages: ServicePageData[] = [
     warranty: "6 months on speaker/mic and workmanship",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel", "Nothing Phone"],
     faqs: [
-      { q: "How much does speaker repair cost in Hyderabad?", a: "Speaker repair at TurboFix costs ₹499–₹2,999. Simple cleaning is often ₹299–₹499. Full speaker module replacement costs ₹799–₹2,999 depending on the model." },
+      { q: "How much does speaker service cost in Hyderabad?", a: "Speaker service at TurboFix costs ₹499–₹2,999. Simple cleaning is often ₹299–₹499. Full speaker module replacement costs ₹799–₹2,999 depending on the model." },
       { q: "Why does my phone speaker sound muffled?", a: "The most common cause is blocked speaker grilles from dust and lint accumulation — this is extremely common. Our technician cleans the speaker first. If the mesh is clear and the problem persists, the speaker module itself needs replacement." },
-      { q: "Can you fix my phone's microphone so people can hear me properly?", a: "Yes — microphone issues are commonly caused by blocked mic holes, moisture, or physical damage to the microphone module. We diagnose and repair both earpiece mic and bottom microphone." },
+      { q: "Can you service my phone's microphone so people can hear me properly?", a: "Yes — microphone issues are commonly caused by blocked mic holes, moisture, or physical damage to the microphone module. We diagnose and service both earpiece mic and bottom microphone." },
     ],
     keywords: [
-      "speaker repair hyderabad", "mobile speaker repair hyderabad",
-      "phone speaker not working hyderabad", "microphone repair hyderabad",
-      "mobile mic repair hyderabad", "earpiece repair hyderabad",
-      "doorstep speaker repair hyderabad",
+      "speaker service hyderabad", "mobile speaker service hyderabad",
+      "phone speaker not working hyderabad", "microphone service hyderabad",
+      "mobile mic service hyderabad", "earpiece replacement hyderabad",
+      "doorstep speaker service hyderabad",
     ],
-    relatedServiceSlugs: ["screen-replacement-hyderabad", "charging-port-repair-hyderabad", "water-damage-repair-hyderabad"],
-    repairType: "Mobile Phone Speaker and Microphone Repair",
+    relatedServiceSlugs: ["screen-replacement-hyderabad", "charging-port-service-hyderabad", "water-damage-hyderabad"],
+    repairType: "Mobile Phone Speaker and Microphone Service",
   },
 
   {
-    slug: "camera-repair-hyderabad",
-    name: "Camera Repair",
-    h1: "Mobile Camera Repair in Hyderabad",
-    tagline: "Blurry photos, cracked lens, or camera app crashing? Fixed at your door.",
+    slug: "camera-service-hyderabad",
+    name: "Camera Service",
+    h1: "Mobile Camera Service in Hyderabad",
+    tagline: "Blurry photos, cracked lens, or camera app crashing? Resolved at your door.",
     intro:
-      "Modern smartphones carry multi-camera systems with complex optics and sensor technology. TurboFix handles camera module replacement, cracked lens repair, and camera calibration for all brands in Hyderabad — at your doorstep with OEM-grade camera components.",
+      "Modern smartphones carry multi-camera systems with complex optics and sensor technology. TurboFix handles camera module replacement, cracked lens replacement, and camera calibration for all brands in Hyderabad — at your doorstep with OEM-grade camera components.",
     whyNeeded:
-      "Camera issues range from cracked outer glass (purely cosmetic but worsens image quality) to complete module failure (camera app crashes or shows black screen). Blurry photos can indicate autofocus motor failure. Leaving a cracked camera lens unrepaired allows dust and moisture to enter the camera module, causing more expensive damage.",
+      "Camera issues range from cracked outer glass (purely cosmetic but worsens image quality) to complete module failure (camera app crashes or shows black screen). Blurry photos can indicate autofocus motor failure. Leaving a cracked camera lens unaddressed allows dust and moisture to enter the camera module, causing more expensive damage.",
     symptoms: [
       "Camera lens glass cracked or shattered",
       "Photos come out blurry despite cleaning the lens",
@@ -268,19 +268,19 @@ export const servicePages: ServicePageData[] = [
     warranty: "6 months on camera module and workmanship",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel", "Nothing Phone"],
     faqs: [
-      { q: "How much does camera repair cost in Hyderabad?", a: "Camera repair at TurboFix costs ₹799–₹4,999. Lens glass replacement is cheaper. Full camera module replacement for flagship phones (Pixel, iPhone Pro, Galaxy Ultra) is at the higher end." },
+      { q: "How much does camera service cost in Hyderabad?", a: "Camera service at TurboFix costs ₹799–₹4,999. Lens glass replacement is cheaper. Full camera module replacement for flagship phones (Pixel, iPhone Pro, Galaxy Ultra) is at the higher end." },
       { q: "My phone camera is blurry after dropping — what's wrong?", a: "A drop can dislodge the lens element or damage the OIS module, causing permanently blurry images. Autofocus motor damage is also common from drops. Camera module replacement will restore sharp image quality." },
-      { q: "Will the camera performance be the same after repair?", a: "With OEM-grade camera modules, image quality is equivalent to the original. We verify sharpness, colour accuracy, and special features (portrait mode, zoom) after every camera repair." },
-      { q: "Can you fix only the cracked camera glass without replacing the full module?", a: "Yes — for many models, we can replace just the camera lens glass (the outer protective cover) if the sensor and optics underneath are undamaged. This is a more affordable option." },
+      { q: "Will the camera performance be the same after service?", a: "With OEM-grade camera modules, image quality is equivalent to the original. We verify sharpness, colour accuracy, and special features (portrait mode, zoom) after every camera visit." },
+      { q: "Can you replace only the cracked camera glass without replacing the full module?", a: "Yes — for many models, we can replace just the camera lens glass (the outer protective cover) if the sensor and optics underneath are undamaged. This is a more affordable option." },
     ],
     keywords: [
-      "camera repair hyderabad", "mobile camera repair hyderabad",
+      "camera service hyderabad", "mobile camera service hyderabad",
       "phone camera replacement hyderabad", "camera not working hyderabad",
-      "iphone camera repair hyderabad", "samsung camera repair hyderabad",
-      "blurry camera repair hyderabad", "doorstep camera repair hyderabad",
+      "iphone camera service hyderabad", "samsung camera service hyderabad",
+      "blurry camera fix hyderabad", "doorstep camera service hyderabad",
     ],
-    relatedServiceSlugs: ["screen-replacement-hyderabad", "back-panel-replacement-hyderabad", "water-damage-repair-hyderabad"],
-    repairType: "Mobile Phone Camera Repair",
+    relatedServiceSlugs: ["screen-replacement-hyderabad", "back-panel-replacement-hyderabad", "water-damage-hyderabad"],
+    repairType: "Mobile Phone Camera Service",
   },
 
   {
@@ -291,7 +291,7 @@ export const servicePages: ServicePageData[] = [
     intro:
       "Shattered back glass is both a cosmetic and functional problem — sharp edges, compromised wireless charging, and moisture ingress all result from a broken back panel. TurboFix replaces back glass and back panels for all major phones at your doorstep in Hyderabad, using correctly coloured OEM-quality panels.",
     whyNeeded:
-      "Modern glass-back smartphones are as fragile on the rear as the front. Unlike older plastic-back phones, glass backs shatter under impact and cannot be ignored — sharp glass edges cause injuries, wireless charging efficiency drops significantly, and the integrity of the IP water resistance is broken. Back panel replacement at the right time prevents more expensive repairs.",
+      "Modern glass-back smartphones are as fragile on the rear as the front. Unlike older plastic-back phones, glass backs shatter under impact and cannot be ignored — sharp glass edges cause injuries, wireless charging efficiency drops significantly, and the integrity of the IP water resistance is broken. Back panel replacement at the right time prevents more expensive work down the line.",
     symptoms: [
       "Back glass cracked, shattered, or completely broken",
       "Back panel has dents, cracks, or structural damage",
@@ -318,57 +318,56 @@ export const servicePages: ServicePageData[] = [
     ],
     keywords: [
       "back panel replacement hyderabad", "back glass replacement hyderabad",
-      "phone back cover repair hyderabad", "iphone back glass repair hyderabad",
-      "samsung back glass replacement hyderabad", "mobile back panel repair hyderabad",
-      "doorstep back panel repair hyderabad",
+      "phone back cover replacement hyderabad", "iphone back glass replacement hyderabad",
+      "samsung back glass replacement hyderabad", "mobile back panel service hyderabad",
+      "doorstep back panel service hyderabad",
     ],
-    relatedServiceSlugs: ["screen-replacement-hyderabad", "camera-repair-hyderabad", "water-damage-repair-hyderabad"],
+    relatedServiceSlugs: ["screen-replacement-hyderabad", "camera-service-hyderabad", "water-damage-hyderabad"],
     repairType: "Mobile Phone Back Panel Replacement",
   },
 
   {
-    slug: "motherboard-repair-hyderabad",
-    name: "Motherboard Repair",
-    h1: "Mobile Motherboard Repair in Hyderabad",
-    tagline: "Phone won't turn on or bootlooping? Component-level repair available.",
+    slug: "motherboard-service-hyderabad",
+    name: "Motherboard Service",
+    h1: "Mobile Motherboard Service in Hyderabad",
+    tagline: "Phone not powering on or restarting on its own? Component-level service available.",
     intro:
-      "Motherboard repair is the most complex form of mobile repair — requiring micro-soldering skills, component-level diagnostics, and specialist equipment. TurboFix offers component-level motherboard repair in Hyderabad as an alternative to expensive phone replacement, successfully recovering phones that others declare 'unrepairable'.",
+      "Motherboard service is the most complex form of mobile hardware work — requiring micro-soldering skills, component-level diagnostics, and specialist equipment. TurboFix offers component-level motherboard service in Hyderabad as an alternative to expensive phone replacement, successfully restoring phones that others declare beyond help.",
     whyNeeded:
-      "The motherboard (main PCB) is the brain of the phone — it contains the processor, RAM, storage, and all key chips. Damage from drops, water, power surges, or component failure can make the phone completely non-functional. Replacing a motherboard is usually more expensive than the phone itself, making component-level repair the only economical path.",
+      "The motherboard (main PCB) is the brain of the phone — it contains the processor, RAM, storage, and all key chips. Damage from drops, water, power surges, or component wear can make the phone completely non-functional. Replacing a motherboard is usually more expensive than the phone itself, making component-level service the only economical path.",
     symptoms: [
-      "Phone does not turn on at all despite charging",
-      "Phone stuck on bootloop (keeps restarting at logo screen)",
+      "Phone does not power on at all despite charging",
+      "Phone restarts repeatedly at the logo screen",
       "No signal — SIM not detected despite correct SIM",
       "Phone restarts randomly throughout the day",
       "Phone gets extremely hot near the processor area",
       "Screen doesn't respond though display is fine",
-      "Data corrupted — apps crash constantly or phone factory resets itself",
+      "Apps crash constantly or phone resets itself unexpectedly",
     ],
     process: [
       { step: "01", title: "Component-Level Diagnosis", desc: "Full PCB inspection using specialised diagnostic equipment to identify the specific failed component — power IC, charging IC, CPU, baseband chip, or storage module." },
-      { step: "02", title: "Repair Assessment", desc: "We provide a detailed report on what's damaged, what's repairable, success probability, and cost — before starting any repair." },
-      { step: "03", title: "Micro-Soldering Repair", desc: "Component-level repair under microscope — reballing, chip replacement, trace repair, or pad restoration as required." },
-      { step: "04", title: "Full Function Test", desc: "After repair, all functions tested: power on, cellular signal, WiFi, touch, camera, charging, and data integrity." },
+      { step: "02", title: "Service Assessment", desc: "We provide a detailed report on what's damaged, what's serviceable, success probability, and cost — before starting any work." },
+      { step: "03", title: "Micro-Soldering Service", desc: "Component-level work under microscope — reballing, chip replacement, trace restoration, or pad restoration as required." },
+      { step: "04", title: "Full Function Test", desc: "After service, all functions tested: power on, cellular signal, WiFi, touch, camera, charging, and general device stability." },
     ],
     priceRange: "₹2,999 – ₹12,999",
     repairTime: "1–3 days (complexity dependent)",
-    warranty: "3 months (motherboard repair complexity limits a longer warranty period)",
+    warranty: "3 months (motherboard service complexity limits a longer warranty period)",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel"],
     faqs: [
-      { q: "How much does motherboard repair cost in Hyderabad?", a: "Motherboard repair at TurboFix costs ₹2,999–₹12,999 depending on the specific component failure and repair complexity. We provide a detailed quote after diagnosis." },
-      { q: "Is it worth repairing a phone motherboard?", a: "It depends on the phone's value and the repair cost. For flagship phones (iPhone, Galaxy Ultra, OnePlus Pro) costing ₹50,000+, motherboard repair at ₹3,000–₹8,000 is almost always worthwhile. We'll give you an honest assessment." },
-      { q: "My phone doesn't turn on at all — can it be repaired?", a: "In many cases, yes. 'Dead phone' is often caused by a failed power management IC, charging IC, or PCB trace damage — all repairable at the component level. We diagnose first and only charge for the repair if successful." },
-      { q: "Can data be recovered from a phone with a damaged motherboard?", a: "In many cases, yes. We can often recover data from phones with motherboard damage, depending on whether the storage chip itself is intact. Data recovery is assessed as a separate service." },
-      { q: "How long does motherboard repair take?", a: "Motherboard repair takes 1–3 working days depending on the specific fault. Complex chip-level repairs require more time. We provide a timeline estimate after diagnosis." },
+      { q: "How much does motherboard service cost in Hyderabad?", a: "Motherboard service at TurboFix costs ₹2,999–₹12,999 depending on the specific component failure and complexity. We provide a detailed quote after diagnosis." },
+      { q: "Is it worth servicing a phone motherboard?", a: "It depends on the phone's value and the service cost. For flagship phones (iPhone, Galaxy Ultra, OnePlus Pro) costing ₹50,000+, motherboard service at ₹3,000–₹8,000 is almost always worthwhile. We'll give you an honest assessment." },
+      { q: "My phone doesn't power on at all — can it be serviced?", a: "In many cases, yes. A phone that won't power on is often caused by a failed power management IC, charging IC, or PCB trace damage — all addressable at the component level. We diagnose first and only proceed with your approval." },
+      { q: "How long does motherboard service take?", a: "Motherboard service takes 1–3 working days depending on the specific fault. Complex chip-level work requires more time. We provide a timeline estimate after diagnosis." },
     ],
     keywords: [
-      "motherboard repair hyderabad", "mobile motherboard repair hyderabad",
-      "phone not turning on repair hyderabad", "bootloop repair hyderabad",
-      "iphone motherboard repair hyderabad", "samsung motherboard repair hyderabad",
-      "component level repair hyderabad", "PCB repair hyderabad",
+      "motherboard service hyderabad", "mobile motherboard service hyderabad",
+      "phone not turning on hyderabad", "phone restarting on its own hyderabad",
+      "iphone motherboard service hyderabad", "samsung motherboard service hyderabad",
+      "component level phone service hyderabad", "PCB service hyderabad",
     ],
-    relatedServiceSlugs: ["water-damage-repair-hyderabad", "battery-replacement-hyderabad", "screen-replacement-hyderabad"],
-    repairType: "Mobile Phone Motherboard Repair",
+    relatedServiceSlugs: ["water-damage-hyderabad", "battery-replacement-hyderabad", "screen-replacement-hyderabad"],
+    repairType: "Mobile Phone Motherboard Service",
   },
 ];
 

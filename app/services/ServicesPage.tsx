@@ -30,36 +30,36 @@ const services = [
   },
   {
     icon: Camera,
-    title: "Camera Repair",
+    title: "Camera Service",
     shortDesc: "Restore crystal-clear photography",
-    fullDesc: "From cracked lens covers to failed autofocus modules — our optics specialists handle it all. We repair front and rear cameras, including ultra-wide, telephoto, and ToF sensors.",
-    features: ["Front & rear cameras", "Lens replacement", "Autofocus repair", "OIS module fix"],
+    fullDesc: "From cracked lens covers to failed autofocus modules — our optics specialists handle it all. We service front and rear cameras, including ultra-wide, telephoto, and ToF sensors.",
+    features: ["Front & rear cameras", "Lens replacement", "Autofocus service", "OIS module service"],
     time: "~45 min",
     color: "#A78BFA",
   },
   {
     icon: Droplets,
-    title: "Water Damage Recovery",
+    title: "Water Damage Service",
     shortDesc: "Rescue your device from liquid damage",
-    fullDesc: "Ultrasonic cleaning, PCB inspection, and component-level drying — our water damage recovery protocol saves phones others write off. 85% success rate on devices brought in within 24 hours.",
+    fullDesc: "Ultrasonic cleaning, PCB inspection, and component-level drying — our water damage service protocol saves phones others write off. 85% success rate on devices brought in within 24 hours.",
     features: ["Ultrasonic cleaning", "PCB inspection", "Component drying", "85% success rate"],
     time: "~2–4 hrs",
     color: "#38BDF8",
   },
   {
     icon: Mic2,
-    title: "Speaker & Mic Repair",
+    title: "Speaker & Mic Service",
     shortDesc: "Crystal-clear audio restored",
     fullDesc: "Muffled calls, distorted audio, or complete silence — we diagnose and replace speaker units, microphone assemblies, and earpiece speakers with precision.",
-    features: ["Earpiece speaker", "Loudspeaker replacement", "Microphone module", "Audio testing post-repair"],
+    features: ["Earpiece speaker", "Loudspeaker replacement", "Microphone module", "Audio testing post-service"],
     time: "~25 min",
     color: "#F59E0B",
   },
   {
     icon: Wifi,
-    title: "Charging Port Repair",
-    shortDesc: "Fix loose or dead charging ports",
-    fullDesc: "USB-C, Lightning, or Micro-USB — we solder, clean, or replace charging connectors with precision. Also covers headphone jack repairs and data transfer port issues.",
+    title: "Charging Port Service",
+    shortDesc: "Resolve loose or dead charging ports",
+    fullDesc: "USB-C, Lightning, or Micro-USB — we solder, clean, or replace charging connectors with precision. Also covers headphone jack service and data transfer port issues.",
     features: ["USB-C & Lightning", "Soldering & replacement", "Headphone jack", "Data port tested"],
     time: "~30 min",
     color: "#EC4899",
@@ -68,25 +68,25 @@ const services = [
     icon: Wrench,
     title: "Back Panel Replacement",
     shortDesc: "Pristine exterior restored",
-    fullDesc: "Restore your phone's premium look with genuine-grade back glass or panel replacements. We also repair dented frames and replace antenna bands for full signal restoration.",
-    features: ["Back glass replacement", "Frame repair", "Antenna bands", "Premium finish"],
+    fullDesc: "Restore your phone's premium look with genuine-grade back glass or panel replacements. We also service dented frames and replace antenna bands for full signal restoration.",
+    features: ["Back glass replacement", "Frame service", "Antenna bands", "Premium finish"],
     time: "~40 min",
     color: "#06B6D4",
   },
   {
     icon: MonitorSmartphone,
-    title: "Software & Data Recovery",
-    shortDesc: "Fix crashes, bootloops, and data loss",
-    fullDesc: "Bootloops, factory reset loops, bricked devices, and lost data — our software team handles OS-level issues, data extraction, and system optimization.",
-    features: ["Bootloop fix", "Data recovery", "OS repair", "Speed optimization"],
+    title: "Startup & Performance Service",
+    shortDesc: "Device stuck or running slow?",
+    fullDesc: "Device stuck on the logo screen, stuck in a restart loop, or running slow — our technicians diagnose the hardware and firmware cause on-site and restore normal operation, preserving access to your files where the storage hardware itself is intact.",
+    features: ["Won't-start diagnostics", "Performance tune-up", "File access preserved (hardware permitting)", "Speed optimization"],
     time: "~1–2 hrs",
     color: "#84CC16",
   },
   {
     icon: Cpu,
-    title: "Motherboard Repair",
-    shortDesc: "Advanced board-level repairs",
-    fullDesc: "Chip-level soldering, IC replacement, and board diagnostics for complex hardware failures. Our microscope workstations handle repairs no other shop in Hyderabad will attempt.",
+    title: "Motherboard Service",
+    shortDesc: "Advanced board-level service",
+    fullDesc: "Chip-level soldering, IC replacement, and board diagnostics for complex hardware failures. Our microscope workstations handle jobs no other shop in Hyderabad will attempt.",
     features: ["Chip-level soldering", "IC replacement", "Microscope stations", "Expert diagnostics"],
     time: "~1–3 days",
     color: "#F97316",
@@ -113,14 +113,14 @@ export default function ServicesPage() {
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <motion.div variants={staggerContainer} initial="hidden" animate="show">
             <motion.div variants={fadeInUp} className="flex justify-center mb-4">
-              <span className="section-label">What We Fix</span>
+              <span className="section-label">What We Service</span>
             </motion.div>
             <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-5">
-              Every Repair,{" "}
+              Every Service,{" "}
               <span className="gradient-text">Perfected</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-gray-400 text-xl max-w-2xl mx-auto">
-              10 specialist repair services under one roof — from quick screen swaps to
+              10 specialist services under one roof — from quick screen swaps to
               complex motherboard-level work.
             </motion.p>
           </motion.div>
@@ -184,9 +184,9 @@ export default function ServicesPage() {
           </div>
 
           <div className="text-center mt-14">
-            <Link href="/book-repair" className="btn-neon inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white">
+            <Link href="/book-a-visit" className="btn-neon inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold text-white">
               <Zap className="w-5 h-5" fill="white" />
-              Book Any Repair
+              Book a Visit
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

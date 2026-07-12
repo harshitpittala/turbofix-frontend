@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 const navLinks = [
   { label: "Home",     href: "/" },
   { label: "Services", href: "/services" },
-  { label: "Brands",   href: "/repairs" },
+  { label: "Brands",   href: "/brands" },
   { label: "About",    href: "/about" },
   { label: "Blog",     href: "/blog" },
   { label: "FAQ",      href: "/faq" },
@@ -20,13 +20,13 @@ const navLinks = [
 const mobileLinks = [
   { label: "Home",          href: "/" },
   { label: "Services",      href: "/services" },
-  { label: "Brands",        href: "/repairs" },
+  { label: "Brands",        href: "/brands" },
   { label: "About",         href: "/about" },
   { label: "Blog",          href: "/blog" },
   { label: "FAQ",           href: "/faq" },
   { label: "Contact",       href: "/contact" },
   { label: "Areas We Cover", href: "/locations" },
-  { label: "Book a Repair", href: "/book-repair" },
+  { label: "Book a Visit",  href: "/book-a-visit" },
 ];
 
 export default function Navbar() {
@@ -36,7 +36,7 @@ export default function Navbar() {
   const lastScrollY = useRef(0);
   const pathname    = usePathname();
   const { scrollY } = useScroll();
-  const isLight = pathname === "/book-repair";
+  const isLight = pathname === "/book-a-visit";
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const prev = lastScrollY.current;
@@ -128,10 +128,10 @@ export default function Navbar() {
               +91 86396 05147
             </a>
             <Link
-              href="/book-repair"
+              href="/book-a-visit"
               className="btn-neon px-5 py-2.5 rounded-xl text-sm font-semibold text-white flex items-center gap-2"
             >
-              Book Repair
+              Book a Visit
               <ChevronRight className="w-4 h-4" />
             </Link>
           </div>

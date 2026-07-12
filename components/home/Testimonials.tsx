@@ -22,8 +22,8 @@ export const testimonials = [
     role: "UX Designer",
     location: "Gachibowli",
     rating: 5,
-    text: "Dropped my phone in water and panicked. The team at TurboFix ran diagnostics within 10 minutes, explained everything clearly, and had it fully recovered by evening. Absolute lifesavers!",
-    service: "Water Damage Recovery",
+    text: "Dropped my phone in water and panicked. The team at TurboFix ran diagnostics within 10 minutes, explained everything clearly, and had it fully restored by evening. Absolute lifesavers!",
+    service: "Water Damage Service",
     avatar: "PS",
     color: "#A78BFA",
   },
@@ -43,7 +43,7 @@ export const testimonials = [
     location: "Jubilee Hills",
     rating: 5,
     text: "My camera was broken and another store wanted way too much for a fix. TurboFix did it quickly and it works perfectly. The transparency and honesty here is unmatched. 10/10 recommend.",
-    service: "Camera Repair",
+    service: "Camera Service",
     avatar: "SP",
     color: "#F59E0B",
   },
@@ -52,8 +52,8 @@ export const testimonials = [
     role: "Doctor",
     location: "Kondapur",
     rating: 5,
-    text: "Needed my phone fixed urgently between hospital shifts. Booked online, walked in, and walked out in 30 minutes with a repaired charging port. The booking system is brilliant.",
-    service: "Charging Port Repair",
+    text: "Needed my phone sorted urgently between hospital shifts. Booked online, walked in, and walked out in 30 minutes with a working charging port. The booking system is brilliant.",
+    service: "Charging Port Service",
     avatar: "RV",
     color: "#EC4899",
   },
@@ -116,7 +116,7 @@ export default function Testimonials() {
             <span className="gradient-text">Real Customers</span>
           </motion.h2>
           <motion.p variants={fadeInUp} className="text-gray-400 text-lg max-w-xl mx-auto">
-            Over 2,400 five-star reviews across Google, JustDial & WhatsApp.
+            Over 1,000 five-star reviews across Google, JustDial & WhatsApp.
             Here's what they're saying.
           </motion.p>
         </motion.div>

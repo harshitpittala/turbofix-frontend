@@ -102,11 +102,11 @@ export default function NotFound() {
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </Link>
           <Link
-            href="/book-repair"
+            href="/book-a-visit"
             className="btn-outline-neon flex items-center gap-2.5 px-7 py-3.5 rounded-xl font-semibold"
           >
             <Zap className="w-4 h-4 text-[#00AAFF]" />
-            Book a Repair
+            Book a Visit
           </Link>
         </motion.div>
 
