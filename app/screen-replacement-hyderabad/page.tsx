@@ -8,7 +8,7 @@ export function generateMetadata(): Metadata {
   const svc = getServicePageBySlug(SLUG);
   if (!svc) return { title: "Service Not Found" };
   return {
-    title: `${svc.h1} — Doorstep Service | TurboFix`,
+    title: `${svc.h1} — Repair & Doorstep Service`,
     description: `${svc.intro} ${svc.repairTime}. ${svc.priceRange}. OEM parts, 6-month warranty. Book now!`,
     keywords: svc.keywords,
     alternates: { canonical: `https://turbofix.in/${SLUG}` },

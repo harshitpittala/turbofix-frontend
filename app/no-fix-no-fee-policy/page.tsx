@@ -3,7 +3,7 @@ import NoFixNoFeePolicyClient from "./NoFixNoFeePolicyClient";
 import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "No Fix, No Fee Policy — TurboFix",
+  title: "No Fix, No Fee Policy",
   description:
     "TurboFix's No Fix, No Fee policy explained: what's free, what a visit charge covers, our 6-month warranty scope, and typical service timelines.",
   alternates: { canonical: "https://turbofix.in/no-fix-no-fee-policy" },

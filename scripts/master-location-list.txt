@@ -1,0 +1,1347 @@
+## CENTRAL HYDERABAD
+Abids
+Abids Circle
+Chirag Ali Lane
+Bank Street
+Boggulkunta
+Troop Bazaar
+Sultan Bazaar
+Koti
+Koti Women's College
+Esamia Bazaar
+Jambagh
+Putlibowli
+Ramkoti
+King Koti
+Badichowdi
+Nallakunta
+Tilak Road
+Mozamjahi Market
+Mufeedpura
+Afzal Gunj
+Chaderghat
+Residency Road
+Nayapul
+
+## NAMPALLY
+Nampally
+Nampally Railway Station
+Nampally Market
+Aghapura
+Gosha Mahal
+Goshamahal Road
+Mangalhat
+Dhoolpet
+Doolpet
+Jali Hanuman
+Purani Haveli
+Darussalam
+Mallepally
+Ahmed Nagar
+Asif Nagar
+Murad Nagar
+Seetaram Bagh
+Kulsumpura
+Razdar Khanpet
+Totaguda
+Bazar Ghat
+Red Hills
+Vijayanagar Colony
+Shanti Nagar
+Lakdi Ka Pul
+Masab Tank
+Chintal Basti
+
+## HIMAYATNAGAR / BASHEERBAGH
+Himayatnagar
+Himayatnagar Road
+Basheerbagh
+Liberty
+Domalguda
+Ashok Nagar
+Vittalwadi
+Hyderguda
+King Koti
+Old MLA Quarters
+Lower Tank Bund
+Narayanguda
+Bagh Lingampally
+Gaganmahal
+Daira
+Hasanaliguda
+
+## LAKDICAPUL / SAIFABAD
+Lakdikapul
+Saifabad
+Anand Nagar
+Chintal Basti
+Shanti Nagar
+Red Hills
+AC Guards
+Masab Tank
+Khairatabad
+Raj Bhavan Road
+Secretariat Area
+Iqbal Minar Area
+
+## KHAIRATABAD
+Khairatabad
+Khairatabad X Road
+Chintal Basti
+Anand Nagar
+Naveen Nagar
+Dwarakapuri Colony
+Raj Bhavan Road
+Saifabad
+Errum Manzil
+Somajiguda
+Punjagutta
+Venkataramana Colony
+Anand Banjara
+
+## BANJARA HILLS
+Banjara Hills
+Road No. 1
+Road No. 2
+Road No. 3
+Road No. 4
+Road No. 5
+Road No. 6
+Road No. 7
+Road No. 8
+Road No. 9
+Road No. 10
+Road No. 11
+Road No. 12
+Road No. 13
+Road No. 14
+Road No. 36
+Road No. 45
+Road No. 92
+NBT Nagar
+Khaja Nagar
+Bhola Nagar
+Mithila Nagar
+Banjara Saman
+Banjara Kamal
+Ministers Colony
+Anand Banjara Colony
+Film Nagar
+Sagar Society
+IAS Colony
+MLA Colony
+Journalist Colony
+CBI Colony
+LV Prasad Road
+KBR Park Area
+Masab Tank Side
+
+## JUBILEE HILLS
+Jubilee Hills
+Jubilee Hills Check Post
+Film Nagar
+Prashasan Nagar
+Journalist Colony
+Sagar Society
+CBI Colony
+Kavuri Hills
+Kavuri Hills Phase 1
+Kavuri Hills Phase 2
+Peddamma Temple
+Peddamma Gudi Area
+Gayatri Hills
+Hakimpet
+Shaikpet
+Madhura Nagar
+Yousufguda
+
+## PUNJAGUTTA
+Punjagutta
+Punjagutta X Road
+Irrum Manzil
+Raj Bhavan Road
+Somajiguda
+Greenlands
+Ameerpet
+Yellareddyguda
+Srinagar Colony
+Khairatabad
+
+## SOMAJIGUDA
+Somajiguda
+Raj Bhavan Road
+Greenlands
+Anand Nagar
+Punjagutta
+Khairatabad
+Irrum Manzil
+Necklace Road
+Begumpet
+Sanjeeva Reddy Nagar
+
+## BEGUMPET
+Begumpet
+Prakash Nagar
+Greenlands
+Rasoolpura
+Sindhi Colony
+Mayur Marg
+Patny
+Begumpet Railway Station
+Airport Road
+Minister Road
+Somajiguda
+Balkampet
+
+## AMEERPET
+Ameerpet
+Ameerpet X Road
+Maitrivanam
+Balkampet
+SR Nagar
+Yellareddyguda
+Vengal Rao Nagar
+Sanjeeva Reddy Nagar
+Dharam Karam Road
+Punjagutta
+Srinagar Colony
+Yousufguda
+
+## SR NAGAR
+SR Nagar
+Sanjeeva Reddy Nagar
+Vengal Rao Nagar
+Balkampet
+ESI
+Ameerpet
+Yousufguda
+Moti Nagar
+
+## YOUSUFGUDA
+Yousufguda
+Krishna Nagar
+Sri Ram Nagar
+Yousufguda Check Post
+Rahmat Nagar
+Vengal Rao Nagar
+Madhura Nagar
+Film Nagar
+
+## SANATH NAGAR
+Sanath Nagar
+Industrial Estate
+IE Sanath Nagar
+Fathenagar
+Bharat Nagar
+Czech Colony
+Balanagar
+Moosapet
+Erragadda
+IDPL
+Moti Nagar
+
+## ERRAGADDA
+Erragadda
+ESI Hospital Area
+Moti Nagar
+Rahmat Nagar
+Borabanda
+Prem Nagar
+Sanath Nagar
+Bharat Nagar
+Moosapet
+
+## WEST HYDERABAD / IT CORRIDOR
+HITEC City
+Cyber Towers
+Cyber Gateway
+Mindspace
+Knowledge City
+Vittal Rao Nagar
+Durgam Cheruvu
+Image Gardens
+Cyber Hills
+Patrika Nagar
+Ayyappa Society
+Madhapur
+Kavuri Hills
+Raidurg
+Kondapur
+
+## MADHAPUR
+Madhapur
+Ayyappa Society
+Durgam Cheruvu
+Vittal Rao Nagar
+Patrika Nagar
+Image Gardens Road
+Cyber Hills
+Sri Ram Nagar
+Parvath Nagar
+Raja Rajeshwari Nagar
+Telecom Nagar
+Kavuri Hills
+Kothaguda
+
+## KONDAPUR
+Kondapur
+Kothaguda
+Botanical Garden
+Botanical Garden Road
+Masjid Banda
+Raghavendra Colony
+Sri Ram Nagar
+Shilpa Park
+Hanuman Nagar
+Raja Rajeshwari Colony
+Hafeezpet
+Kothaguda X Road
+
+## GACHIBOWLI
+Gachibowli
+Anjaiah Nagar
+Telecom Nagar
+Indira Nagar
+DLF
+DLF Cyber City
+Gachibowli Stadium
+Khajaguda
+Nanakramguda
+Financial District
+Gowlidoddi
+Nallagandla
+Kokapet
+
+## FINANCIAL DISTRICT
+Financial District
+Nanakramguda
+Waverock
+WaveRock SEZ
+GAR
+Mantri Celestia
+Kokapet
+Narsingi
+Neopolis
+Gachibowli
+Gowlidoddi
+
+## NANAKRAMGUDA
+Nanakramguda
+Financial District
+Khajaguda
+Gachibowli
+Kokapet Road
+Puppalaguda
+Osman Nagar
+
+## RAIDURG
+Raidurg
+Raidurgam
+Knowledge City
+Mindspace
+IKEA Area
+Biodiversity Road
+Durgam Cheruvu
+Gachibowli
+
+## MANIKONDA
+Manikonda
+Lanco Hills
+Alkapur Township
+Puppalaguda
+Neknampur
+Chaitanya Enclave
+OU Colony
+Khajaguda
+Shaikpet
+Narsingi Road
+Neknampur Lake
+
+## PUPPALAGUDA
+Puppalaguda
+Alkapur Township
+Manikonda
+Neknampur
+Khajaguda
+Gandipet Road
+Narsingi Road
+
+## NARSINGI
+Narsingi
+Kokapet Road
+Gandipet
+Puppalaguda
+Manikonda
+Neknampur
+Himayath Sagar Road
+Osman Nagar
+
+## KOKAPET
+Kokapet
+Neopolis
+Golden Mile
+Narsingi Road
+Financial District Road
+Gandipet Road
+Osman Nagar
+Khajaguda
+
+## TELLAPUR
+Tellapur
+Osman Nagar
+Kollur Road
+Nallagandla
+Mokila Road
+Lingampally
+BHEL
+Gopanapally
+
+## OSMAN NAGAR
+Osman Nagar
+Tellapur
+Kollur
+Nallagandla
+Mokila Road
+Gachibowli
+
+## KUKATPALLY / NORTHWEST
+Kukatpally
+KPHB
+KPHB Colony
+Vivekananda Nagar
+Bhagya Nagar Colony
+Balaji Nagar
+Allwyn Colony
+Hyder Nagar
+JNTU
+Pragathi Nagar
+Moosapet
+KPHB Phase 1
+KPHB Phase 2
+KPHB Phase 3
+KPHB Phase 4
+KPHB Phase 5
+KPHB Phase 6
+KPHB Phase 7
+KPHB Phase 8
+KPHB Phase 9
+KPHB Phase 10
+
+## MIYAPUR
+Miyapur
+Miyapur X Road
+Madinaguda
+Deepthisree Nagar
+Hafeezpet
+Allwyn Colony
+Ameenpur
+Chandanagar
+Bachupally Road
+Madeenaguda
+
+## HAFEEZPET
+Hafeezpet
+Gangaram
+Janapriya Nagar
+Allwyn Colony
+Madinaguda
+Chandanagar
+Miyapur
+Kondapur
+
+## CHANDANAGAR
+Chandanagar
+Gangaram
+HUDA Colony
+Deepthisree Nagar
+Madinaguda
+Lingampally
+Serilingampally
+BHEL
+Miyapur
+
+## LINGAMPALLY
+Lingampally
+Serilingampally
+BHEL
+Chandanagar
+Nallagandla
+Tellapur
+Gachibowli
+
+## NIZAMPET
+Nizampet
+Nizampet Village
+Pragathi Nagar
+JNTU
+Hyder Nagar
+Bachupally
+Mallampet Road
+Pragathi Enclave
+
+## BACHUPALLY
+Bachupally
+Pragathi Nagar
+Nizampet
+Bowrampet
+Mallampet
+Dundigal
+Suraram
+Miyapur Road
+
+## PRAGATHI NAGAR
+Pragathi Nagar
+Nizampet
+JNTU
+Bachupally
+Hyder Nagar
+KPHB
+
+## KOLLUR
+Kollur
+Osman Nagar
+Tellapur
+Velimela
+Mokila Road
+Nallagandla
+Shankarpally Road
+
+## PATANCHERU
+Patancheru
+IDA Patancheru
+Isnapur
+Pashamylaram
+BHEL
+Ramachandrapuram
+RC Puram
+Beeramguda
+Ameenpur
+
+## BEERAMGUDA
+Beeramguda
+Kistareddypet
+Ameenpur
+Ashok Nagar
+BHEL
+RC Puram
+Ramachandrapuram
+
+## AMEENPUR
+Ameenpur
+Beeramguda
+BHEL
+Miyapur
+Hafeezpet
+Chandanagar
+Patelguda
+Bachupally
+
+## RC PURAM
+Ramachandrapuram
+RC Puram
+BHEL Township
+BHEL HIG
+BHEL MIG
+Jyothi Nagar
+Beeramguda
+Lingampally
+
+## SECUNDERABAD / NORTH
+Secunderabad
+Paradise
+Patny
+MG Road
+RP Road
+James Street
+Minister Road
+Rani Gunj
+General Bazaar
+Monda Market
+Clock Tower
+Chilkalguda
+Padmarao Nagar
+Musheerabad
+Kavadiguda
+Bhoiguda
+Ranigunj
+Sindhi Colony
+Namalagundu
+Parsigutta
+Sitaphalmandi
+Warsiguda
+Marredpally
+East Marredpally
+West Marredpally
+Lalaguda
+Mettuguda
+Bholakpur
+Rasoolpura
+Sikh Village
+Tadbund
+Karkhana
+Thokatta
+Ammuguda
+Yapral
+
+## MALKAJGIRI
+Malkajgiri
+Anandbagh
+East Anandbagh
+Gautam Nagar
+Mirjalguda
+Vinayak Nagar
+Neredmet
+Safilguda
+Sainikpuri
+Defence Colony
+Moula Ali
+
+## TARNAKA
+Tarnaka
+Habsiguda
+Osmania University
+Lalapet
+Mettuguda
+Sitaphalmandi
+Nacharam
+Uppal Road
+
+## HABSIGUDA
+Habsiguda
+Street No. 8
+Tarnaka
+NGRI
+OU Campus
+Ramanthapur
+Nacharam
+Uppal
+
+## UPPAL
+Uppal
+Chilkanagar
+Ramanthapur
+Nagole
+Uppal Depot
+Medipally
+Boduppal
+Peerzadiguda
+
+## RAMANTHAPUR
+Ramanthapur
+Amberpet
+Habsiguda
+Uppal
+Tilak Nagar
+TV Studio Road
+Nagole
+
+## NACHARAM
+Nacharam
+Mallapur
+HMT Nagar
+Industrial Estate
+Tarnaka
+Uppal
+Chilkanagar
+
+## MALLAPUR
+Mallapur
+Nacharam
+HMT Nagar
+ECIL
+Kapra
+Moula Ali
+Uppal
+
+## BODUPPAL
+Boduppal
+Peerzadiguda
+Medipally
+Chengicherla
+Uppal
+Nagole
+NTR Nagar
+Venkateshwara Colony
+
+## PEERZADIGUDA
+Peerzadiguda
+Boduppal
+Medipally
+Uppal
+Chengicherla
+Ghatkesar Road
+Pocharam
+
+## ALWAL
+Alwal
+Old Alwal
+Temple Alwal
+Venkatapuram
+Yapral
+Lothkunta
+Bolarum
+Surya Nagar
+Kanajiguda
+Turkapally
+
+## KOMPALLY
+Kompally
+Suchitra
+Petbasheerabad
+Jeedimetla
+Dulapally
+Gundlapochampally
+Medchal Road
+
+## SUCHITRA
+Suchitra
+Jeedimetla
+Quthbullapur
+Kompally
+Petbasheerabad
+Bowenpally
+Bolarum
+
+## BOWENPALLY
+Bowenpally
+Old Bowenpally
+Hasmathpet
+Balamrai
+Ferozguda
+Fateh Nagar
+Tadbund
+Sikh Village
+Balanagar
+Trimulgherry
+
+## TRIMULGHERRY
+Trimulgherry
+Karkhana
+Sikh Village
+Bowenpally
+Bolarum
+Alwal
+Lal Bazaar
+Secunderabad Cantonment
+
+## SAINIKPURI
+Sainikpuri
+Vayupuri
+Neredmet
+Yapral
+AS Rao Nagar
+ECIL
+Kapra
+Kowkoor
+Defence Colony
+
+## ECIL
+ECIL
+AS Rao Nagar
+Kushaiguda
+Kamalanagar
+Kapra
+Sainikpuri
+Cherlapally
+Moula Ali
+
+## AS RAO NAGAR
+AS Rao Nagar
+ECIL
+Kapra
+Kamalanagar
+Sainikpuri
+Neredmet
+Kushaiguda
+
+## KAPRA
+Kapra
+ECIL
+Kushaiguda
+Cherlapally
+AS Rao Nagar
+Kamalanagar
+Saket
+Nagaram
+
+## MOULA ALI
+Moula Ali
+Kakatiya Nagar
+Safilguda
+Neredmet
+East Anandbagh
+Malkajgiri
+HB Colony
+
+## MEDCHAL
+Medchal
+Gundlapochampally
+Kandlakoya
+Athvelly
+Dabilpur
+Kompally
+Medchal Road
+
+## MEHDIPATNAM / SOUTH-CENTRAL
+Mehdipatnam
+Humayun Nagar
+NMDC
+Gudimalkapur
+Asif Nagar
+Murad Nagar
+Tolichowki Road
+Vijayanagar Colony
+Langer Houz
+Mallepally
+Ahmed Nagar
+
+## TOLICHOWKI
+Tolichowki
+Seven Tombs
+Shaikpet
+Nanal Nagar
+Galaxy
+Al Hasnath Colony
+Paramount Hills
+Humayun Nagar
+Mehdipatnam
+Langer House
+OU Colony
+Hakimpet
+
+## SHAIKPET
+Shaikpet
+OU Colony
+Al Hasnath Colony
+Nanal Nagar
+Seven Tombs
+Manikonda Road
+Film Nagar
+Khajaguda
+
+## ATTAPUR
+Attapur
+Hyderguda
+Upparpally
+Pillar No. 143
+Suleman Nagar
+Rajendranagar Road
+Kishan Bagh
+Mailardevpally
+Shivrampally
+
+## RAJENDRANAGAR
+Rajendranagar
+Budwel
+Shivrampally
+Attapur
+Kishan Bagh
+Himayatsagar Road
+Premavathi Pet
+Suleman Nagar
+Mailardevpally
+
+## LANGER HOUZ
+Langer Houz
+Golconda
+Qila Mohammad Nagar
+Ibrahim Bagh
+Shaikpet
+Seven Tombs
+Tolichowki
+Mehdipatnam
+
+## OLD CITY / CHARMINAR
+Charminar
+Laad Bazaar
+Pathergatti
+Gulzar Houz
+Madina Building
+Mir Chowk
+Shahalibanda
+Ghansi Bazaar
+Moghalpura
+Hussaini Alam
+Purani Haveli
+Darulshifa
+Yakutpura
+Dabeerpura
+
+## OLD CITY / SHAHALIBANDA
+Shahalibanda
+Hussaini Alam
+Moghalpura
+Aliabad
+Edi Bazaar
+Kalapather
+Charminar
+Falaknuma Road
+
+## OLD CITY / MOGHALPURA
+Moghalpura
+Charminar
+Shahalibanda
+Hussaini Alam
+Yakutpura
+Lal Darwaza
+Aliabad
+
+## OLD CITY / HUSSAINI ALAM
+Hussaini Alam
+Charminar
+Shahalibanda
+Aliabad
+Moghalpura
+Yakutpura
+
+## OLD CITY / FALAKNUMA
+Falaknuma
+Jahanuma
+Doodh Bowli
+Nawab Saheb Kunta
+Kishan Bagh
+Shastripuram
+Bahadurpura
+Falaknuma Palace Area
+
+## OLD CITY / BAHADURPURA
+Bahadurpura
+Kishan Bagh
+Puranapul
+Doodh Bowli
+Falaknuma
+Shastripuram
+Zoo Park
+Kalapathar
+
+## OLD CITY / CHANDRAYANGUTTA
+Chandrayangutta
+Barkas
+Kanchanbagh
+Lalith Bagh
+Riyasat Nagar
+Uppuguda
+Jangammet
+Bandlaguda
+IS Sadan
+
+## OLD CITY / BARKAS
+Barkas
+Chandrayangutta
+Kanchanbagh
+Bandlaguda
+Jangammet
+Riyasat Nagar
+
+## OLD CITY / KANCHANBAGH
+Kanchanbagh
+Chandrayangutta
+DRDO
+Santosh Nagar
+Barkas
+Bandlaguda
+
+## OLD CITY / MALAKPET
+Malakpet
+Old Malakpet
+New Malakpet
+Moosarambagh
+Akbarbagh
+Azampura
+Chawani
+Dabeerpura
+Nalgonda X Road
+Musarambagh
+
+## OLD CITY / DABEERPURA
+Dabeerpura
+Yakutpura
+Malakpet
+Rein Bazaar
+Chanchalguda
+Darulshifa
+Talab Katta
+
+## OLD CITY / YAKUTPURA
+Yakutpura
+Dabeerpura
+Rein Bazaar
+Hussaini Alam
+Chanchalguda
+Madannapet
+Darulshifa
+Talab Katta
+Moghalpura
+
+## OLD CITY / SANTOSHNAGAR
+Santosh Nagar
+IS Sadan
+Kurmaguda
+Talab Katta
+Talabchanchalam
+Gowlipura
+Rein Bazaar
+Saidabad
+Champapet
+
+## OLD CITY / SAIDABAD
+Saidabad
+Singareni Colony
+IS Sadan
+Santosh Nagar
+Chanchalguda
+Moosarambagh
+Madannapet
+Chawani
+Teegalguda
+
+## OLD CITY / REIN BAZAAR
+Rein Bazaar
+Yakutpura
+Dabeerpura
+Madannapet
+Talab Katta
+Chanchalguda
+Malakpet
+
+## OLD CITY / CHANCHALGUDA
+Chanchalguda
+Saidabad
+Madannapet
+Yakutpura
+Dabeerpura
+Malakpet
+
+## OLD CITY / MADANNAPET
+Madannapet
+Saidabad
+Moosarambagh
+Chanchalguda
+Dabeerpura
+Rein Bazaar
+Santosh Nagar
+
+## LB NAGAR / EAST / SOUTH-EAST
+LB Nagar
+Chintalkunta
+Kothapet
+Chaitanyapuri
+Saroornagar
+Mansoorabad
+Nagole
+RTC Colony
+Kamineni Hospital Area
+Hasthinapuram
+Bairamalguda
+
+## KOTHAPET
+Kothapet
+Chaitanyapuri
+Gaddiannaram
+Dilsukhnagar
+Saroornagar
+LB Nagar
+Nagole
+
+## DILSUKHNAGAR
+Dilsukhnagar
+Gaddiannaram
+Kothapet
+Chaitanyapuri
+Moosarambagh
+Saroornagar
+P&T Colony
+Maruthi Nagar
+Konark Theatre Area
+
+## SAROORNAGAR
+Saroornagar
+RK Puram
+Lingojiguda
+Doctors Colony
+NTR Nagar
+Kothapet
+Gaddiannaram
+Champapet
+P&T Colony
+
+## NAGOLE
+Nagole
+Bandlaguda
+Kothapet
+LB Nagar
+Mansoorabad
+Alkapuri
+Snehapuri Colony
+Uppal
+
+## MANSOORABAD
+Mansoorabad
+LB Nagar
+Nagole
+Alkapuri
+Hayathnagar
+Saroornagar
+
+## VANASTHALIPURAM
+Vanasthalipuram
+BN Reddy Nagar
+Hasthinapuram
+Hayathnagar
+Auto Nagar
+Sahebnagar
+Chintalkunta
+NGO Colony
+RTC Colony
+
+## HASTHINAPURAM
+Hasthinapuram
+Vanasthalipuram
+BN Reddy Nagar
+Chintalkunta
+Hayathnagar
+Bairamalguda
+
+## BN REDDY NAGAR
+BN Reddy Nagar
+Vanasthalipuram
+Hayathnagar
+Hasthinapuram
+Sahebnagar
+Nagole
+
+## HAYATHNAGAR
+Hayathnagar
+Pedda Amberpet
+Vanasthalipuram
+BN Reddy Nagar
+Kuntloor
+Pasumamula
+Batasingaram
+Injamamoor
+
+## CHINTALKUNTA
+Chintalkunta
+LB Nagar
+Vanasthalipuram
+Hasthinapuram
+Hayathnagar
+
+## MEERPET
+Meerpet
+HB Colony
+Jillelaguda
+Badangpet
+Balapur
+Almasguda
+Karmanghat
+
+## JILLELAGUDA
+Jillelaguda
+Meerpet
+Balapur
+Badangpet
+Almasguda
+Karmanghat
+
+## BADANGPET
+Badangpet
+Jillelaguda
+Meerpet
+Balapur
+Nadargul
+Prashanthi Hills
+
+## AIRPORT / SOUTH / SHAMSHABAD
+Shamshabad
+Hyderabad Airport
+Airport Road
+Airport Colony
+Kothwalguda
+Sardarpur
+Madhura Nagar
+Gollapally
+Rashidguda
+
+## AIRPORT / SOUTH / ADIBATLA
+Adibatla
+TCS Adibatla
+Aerospace SEZ
+Kongara Kalan
+Raviryal
+Nadargul
+Turkayamjal
+Bongloor
+
+## AIRPORT / SOUTH / KONGARA KALAN
+Kongara Kalan
+Adibatla
+Raviryal
+Tukkuguda
+Ibrahimpatnam Road
+
+## AIRPORT / SOUTH / TURKAYAMJAL
+Turkayamjal
+Adibatla
+Bongloor
+Abdullapurmet
+Ibrahimpatnam Road
+Nadargul
+
+## AIRPORT / SOUTH / TUKKUGUDA
+Tukkuguda
+Maheshwaram
+Srisailam Highway
+Raviryal
+Kongara Kalan
+Airport Road
+
+## AIRPORT / SOUTH / MAHESHWARAM
+Maheshwaram
+Mansanpally
+Srisailam Highway
+Kongara Kalan
+Raviryal
+Tukkuguda
+Kandukur Road
+
+## AIRPORT / SOUTH / IBRAHIMPATNAM
+Ibrahimpatnam
+Manchal
+Yacharam Road
+Turkayamjal
+Bongloor
+Nagaram
+
+## EAST / NORTH-EAST / GHATKESAR
+Ghatkesar
+Pocharam
+Edulabad
+Ankushapur
+Kondamadugu
+Keesara Road
+Medipally
+
+## EAST / NORTH-EAST / POCHARAM
+Pocharam
+Ghatkesar
+Medipally
+Peerzadiguda
+Edulabad
+Infosys SEZ Area
+
+## EAST / NORTH-EAST / KEESARA
+Keesara
+Dammaiguda
+Nagaram
+Rampally
+Cherlapally
+Jawahar Nagar
+Ankireddypally
+Yadgarpally
+
+## EAST / NORTH-EAST / DAMMAIGUDA
+Dammaiguda
+Nagaram
+Keesara
+Rampally
+Yapral
+Sainikpuri
+Cherlapally
+
+## EAST / NORTH-EAST / NAGARAM
+Nagaram
+Keesara
+Dammaiguda
+Rampally
+ECIL
+Kapra
+Cherlapally
+
+## EAST / NORTH-EAST / RAMPALLY
+Rampally
+Nagaram
+Keesara
+Cherlapally
+ECIL
+Dammaiguda
+
+## EAST / NORTH-EAST / JAWAHAR NAGAR
+Jawahar Nagar
+Keesara
+Dammaiguda
+Yapral
+Shamirpet
+Kapra
+
+## EAST / NORTH-EAST / SHAMIRPET
+Shamirpet
+Thumkunta
+Hakimpet
+Turkapally
+Yapral
+
+## ADDITIONAL LOCALITIES
+Chintal
+Quthbullapur
+Jeedimetla
+Gajularamaram
+Suraram
+Suchitra
+Petbasheerabad
+Bahadurpally
+Bolarum
+Gundlapochampally
+Doolapally
+Bowrampet
+Mallampet
+Dundigal
+Bollaram
+IDA Bollaram
+Medchal
+Kandlakoya
+Nallagandla
+Gopanapally
+Gowlidoddi
+Khajaguda
+Neknampur
+Velimela
+Mokila
+Shankarpally Road
+Maktha Mahboobpet
+Amberpet
+Golnaka
+Tilak Nagar
+DD Colony
+Ramnagar
+Bagh Amberpet
+Vidyanagar
+Adikmet
+Shivam Road
+Bagh Lingampally
+Musheerabad
+Zamistanpur
+Bakaram
+RTC X Roads
+Kavadiguda
+Bholakpur
+Lalaguda
+Thokatta
+Rasoolpura
+Vampuguda
+Chakripuram
+Charlapally
+Meerpet HB Colony
+Shakti Sai Nagar
+
+## BATCH 13 — MISSING MASTER-LIST ADDITIONS
+Kachiguda
+Chikkadpally
+Barkatpura
+Gandimaisamma
+Manchirevula
+Kismatpur
+Aramghar
+Gaganpahad
+Vijayapuri Colony
+Karwan

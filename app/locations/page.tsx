@@ -3,13 +3,13 @@ import LocationsPageClient from "./LocationsPageClient";
 import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Mobile Service in All Hyderabad Areas — TurboFix Doorstep Service",
+  title: "Doorstep Mobile Service in All Hyderabad Areas",
   description:
-    "TurboFix doorstep mobile service covers all Hyderabad areas — Gachibowli, Madhapur, Banjara Hills, Secunderabad, Dilsukhnagar, Kompally, and 80+ more. Same-day service slots available at your door.",
+    "TurboFix's independent doorstep mobile-device servicing covers all Hyderabad areas — Gachibowli, Madhapur, Banjara Hills, Secunderabad, Dilsukhnagar, Kompally, and 90+ more. Same-day service slots available at your door.",
   alternates: { canonical: "https://turbofix.in/locations" },
   openGraph: {
-    title: "Mobile Service in All Hyderabad Areas | TurboFix",
-    description: "Doorstep mobile service across 80+ Hyderabad localities. Book online — we come to you, same day in most areas.",
+    title: "Doorstep Mobile Service in All Hyderabad Areas | TurboFix",
+    description: "Doorstep mobile servicing across 90+ Hyderabad localities. Book online — we come to you, same day in most areas.",
     url: "https://turbofix.in/locations",
   },
 };
@@ -20,7 +20,7 @@ const locationsSchema = {
   "@id": "https://turbofix.in/locations#service",
   name: "Doorstep Mobile Service — All Hyderabad Areas",
   description:
-    "TurboFix provides professional doorstep mobile service across all major Hyderabad areas including Gachibowli, Madhapur, Banjara Hills, Secunderabad, Ameerpet, Dilsukhnagar, Kompally, and 80+ more localities.",
+    "TurboFix provides independent doorstep mobile-device servicing across all major Hyderabad areas including Gachibowli, Madhapur, Banjara Hills, Secunderabad, Ameerpet, Dilsukhnagar, Kompally, and 90+ more localities.",
   provider: { "@id": "https://turbofix.in/#business" },
   areaServed: { "@type": "City", name: "Hyderabad" },
 };

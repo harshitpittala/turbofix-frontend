@@ -4,8 +4,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { MapPin, ArrowRight, Zap, ChevronRight } from "lucide-react";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
-import { locationData } from "@/data/locations";
+import { getPublishedLocations } from "@/data/locations";
 import CTA from "@/components/home/CTA";
+
+const locationData = getPublishedLocations();
 
 const zones = [
   { key: "central",   label: "Central Hyderabad",    color: "#00AAFF", desc: "Banjara Hills, Jubilee Hills, Ameerpet, Abids & more" },
@@ -56,7 +58,7 @@ export default function LocationsPageClient() {
 
             <motion.p variants={fadeInUp} className="text-gray-400 text-xl leading-relaxed mb-10">
               TurboFix doorstep service now covers{" "}
-              <span className="text-white font-semibold">80+ Hyderabad localities</span> — from HITEC
+              <span className="text-white font-semibold">90+ Hyderabad localities</span> — from HITEC
               City to Charminar, from Kompally to Shamshabad. Book online and a trained
               technician arrives at your door.
             </motion.p>
@@ -87,7 +89,7 @@ export default function LocationsPageClient() {
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap justify-center gap-8 md:gap-16">
             {[
-              { label: "Areas Covered",       value: "80+" },
+              { label: "Areas Covered",       value: "90+" },
               { label: "Same-Day Service",     value: "Most Areas" },
               { label: "Service Warranty",     value: "6 Months" },
               { label: "Zero Travel Charge",   value: "All Zones" },
@@ -121,9 +123,12 @@ export default function LocationsPageClient() {
                     style={{ background: zone.color }}
                   />
                   <div>
-                    <h2 className="font-display text-2xl md:text-3xl font-bold text-white">
-                      {zone.label}
-                    </h2>
+                    <Link href={`/locations/zones/${zone.key}`} className="group inline-flex items-center gap-2">
+                      <h2 className="font-display text-2xl md:text-3xl font-bold text-white group-hover:text-[#00AAFF] transition-colors">
+                        {zone.label}
+                      </h2>
+                      <ChevronRight className="w-4 h-4 text-gray-600 group-hover:text-[#00AAFF] transition-colors" />
+                    </Link>
                     <p className="text-gray-500 text-sm mt-0.5">{zone.desc}</p>
                   </div>
                   <span

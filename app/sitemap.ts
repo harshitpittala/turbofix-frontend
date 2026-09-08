@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { locationData } from "@/data/locations";
+import { getPublishedLocations, zoneLabels } from "@/data/locations";
 import { blogSlugs } from "@/data/sitemapData";
 
 const BASE = "https://turbofix.in";
@@ -75,12 +75,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.9,  // high priority — these target exact search queries
   }));
 
-  // /locations/[area] — comprehensive location pages (80+)
-  const locationPages: MetadataRoute.Sitemap = locationData.map((loc) => ({
+  // /locations/[area] — comprehensive location pages (90+), published only.
+  // Draft locations (status: "draft" in data/locations.ts) are intentionally
+  // excluded until reviewed — see getPublishedLocations().
+  const publishedLocations = getPublishedLocations();
+  const locationPages: MetadataRoute.Sitemap = publishedLocations.map((loc) => ({
     url: `${BASE}/locations/${loc.slug}`,
     lastModified: new Date(),
     changeFrequency: "monthly",
     priority: 0.8,
+  }));
+
+  // /locations/zones/[zone] — six zone hub pages
+  const zonePages: MetadataRoute.Sitemap = (Object.keys(zoneLabels) as (keyof typeof zoneLabels)[]).map((zone) => ({
+    url: `${BASE}/locations/zones/${zone}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.75,
   }));
 
   // /blog/[slug] — blog posts
@@ -96,6 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...brandCityPagesMap,   // brand+city pages get high priority
     ...servicePagesMap,     // service pages get high priority
     ...brandDetailPages,
+    ...zonePages,
     ...locationPages,
     ...blogPages,
   ];

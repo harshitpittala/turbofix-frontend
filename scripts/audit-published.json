@@ -1,0 +1,4342 @@
+[
+  {
+    "slug": "abids",
+    "name": "Abids",
+    "pincode": "500001",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Abids is the commercial nerve centre of old Hyderabad, packed with banks, jewellery shops, electronics arcades, and government offices that draw thousands of working professionals every day.",
+    "context": "With so many people constantly on the move for business and trade, a broken phone means lost deals — TurboFix brings same-day doorstep service directly to Abids offices and residences.",
+    "nearbyAreas": [
+      "koti",
+      "himayatnagar",
+      "nampally",
+      "basheerbagh"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "koti",
+    "name": "Koti",
+    "pincode": "500095",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Koti is one of Hyderabad's oldest and most bustling commercial hubs, famous for its textile markets, electronics wholesale market, and dense concentration of coaching institutes that attract thousands of students and traders.",
+    "context": "From students preparing for competitive exams to traders who depend on smartphones for daily operations, the demand for fast, trustworthy phone service in Koti is constant — TurboFix responds with on-the-spot doorstep service.",
+    "nearbyAreas": [
+      "abids",
+      "himayatnagar",
+      "nampally",
+      "malakpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "himayatnagar",
+    "name": "Himayatnagar",
+    "pincode": "500029",
+    "zone": "central",
+    "type": "mixed",
+    "intro": "Himayatnagar is a vibrant mixed-use neighbourhood connecting central Hyderabad to Banjara Hills, known for its diverse food scene, media offices, boutiques, and long-established residential communities.",
+    "context": "Residents and media professionals in Himayatnagar rely heavily on their smartphones — TurboFix provides doorstep mobile service that fits around busy professional and family schedules in the area.",
+    "nearbyAreas": [
+      "somajiguda",
+      "banjara-hills",
+      "basheerbagh",
+      "koti"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "basheerbagh",
+    "name": "Basheerbagh",
+    "pincode": "500029",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Basheerbagh is a key commercial and administrative junction in central Hyderabad, known for government offices, media houses, law firms, and its proximity to the Hyderabad High Court.",
+    "context": "Legal professionals, government employees, and media personnel in Basheerbagh depend on reliable communication — a broken phone here means missed hearings, deadlines, and critical calls that TurboFix can urgently address.",
+    "nearbyAreas": [
+      "abids",
+      "himayatnagar",
+      "somajiguda",
+      "khairatabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "lakdikapul",
+    "name": "Lakdikapul",
+    "pincode": "500004",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Lakdikapul is a major transit and commercial junction near Masab Tank, well-known for its car showrooms, electronics retail outlets, and its position as a key route connecting Banjara Hills to the city centre.",
+    "context": "High footfall from commuters and automotive-industry professionals creates strong demand for quick, reliable mobile service in Lakdikapul — our technicians reach you at home or office within the scheduled window.",
+    "nearbyAreas": [
+      "masab-tank",
+      "khairatabad",
+      "basheerbagh",
+      "nampally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "nampally",
+    "name": "Nampally",
+    "pincode": "500001",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Nampally is the gateway to old Hyderabad, anchored by the historic Hyderabad Deccan Railway Station, exhibition grounds, and a dense commercial market area that sees massive daily footfall.",
+    "context": "Travellers, traders, and railway-commuter families in Nampally need quick mobile service solutions — TurboFix's doorstep service means you don't need to abandon your journey or business for a phone service.",
+    "nearbyAreas": [
+      "abids",
+      "koti",
+      "lakdikapul",
+      "masab-tank"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "masab-tank",
+    "name": "Masab Tank",
+    "pincode": "500028",
+    "zone": "central",
+    "type": "mixed",
+    "intro": "Masab Tank is a well-established central Hyderabad neighbourhood that balances residential living with commercial activity, popular for its restaurants, hospitals, and proximity to government institutions.",
+    "context": "Families and working professionals settled in Masab Tank benefit from TurboFix's home service visits — no need to navigate central Hyderabad traffic to get a screen or battery replaced.",
+    "nearbyAreas": [
+      "lakdikapul",
+      "khairatabad",
+      "banjara-hills",
+      "tolichowki"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "khairatabad",
+    "name": "Khairatabad",
+    "pincode": "500004",
+    "zone": "central",
+    "type": "mixed",
+    "intro": "Khairatabad is a prominent central Hyderabad locality famous for its iconic Ganesh idol, metro station, and its role as a major commercial and residential crossing between Banjara Hills and the old city.",
+    "context": "The dense mix of residents, shoppers, and government workers in Khairatabad means phones take a beating — TurboFix provides doorstep service that respects your schedule without wasting your day.",
+    "nearbyAreas": [
+      "banjara-hills",
+      "somajiguda",
+      "masab-tank",
+      "basheerbagh"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "banjara-hills",
+    "name": "Banjara Hills",
+    "pincode": "500034",
+    "zone": "central",
+    "type": "premium",
+    "intro": "Banjara Hills is Hyderabad's most prestigious residential and commercial address, home to luxury hotels, top hospitals, fashion boutiques, media companies, and the residences of Hyderabad's elite.",
+    "context": "Residents of Banjara Hills own some of the most premium smartphones available — iPhone Pro, Samsung Galaxy Ultra, Google Pixel — and expect service that matches the quality of their devices. TurboFix delivers exactly that.",
+    "nearbyAreas": [
+      "jubilee-hills",
+      "somajiguda",
+      "khairatabad",
+      "himayatnagar",
+      "yousufguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "jubilee-hills",
+    "name": "Jubilee Hills",
+    "pincode": "500033",
+    "zone": "central",
+    "type": "premium",
+    "intro": "Jubilee Hills is synonymous with Hyderabad's film industry, luxury living, and high-net-worth residences — it's home to Tollywood celebrities, top executives, and some of the city's finest restaurants and clubs.",
+    "context": "Premium smartphone users in Jubilee Hills expect premium service. TurboFix brings trained technicians with OEM-grade parts directly to your home or studio — no waiting, no compromise on quality.",
+    "nearbyAreas": [
+      "banjara-hills",
+      "madhapur",
+      "kondapur",
+      "somajiguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "panjagutta",
+    "name": "Panjagutta",
+    "pincode": "500082",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Panjagutta is a major commercial and financial hub in central Hyderabad, hosting banks, insurance companies, corporate offices, and luxury shopping — making it one of the city's busiest business corridors.",
+    "context": "Banking professionals, insurance agents, and corporate workers in Panjagutta are on their phones around the clock — TurboFix ensures a cracked screen or dead battery never interrupts critical business.",
+    "nearbyAreas": [
+      "somajiguda",
+      "banjara-hills",
+      "begumpet",
+      "ameerpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "somajiguda",
+    "name": "Somajiguda",
+    "pincode": "500082",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Somajiguda is one of Hyderabad's premium commercial corridors, known for its cluster of banks, IT firms, hotels, and upscale restaurants along the Raj Bhavan Road stretch.",
+    "context": "With a mix of corporate offices and premium residences, Somajiguda residents and professionals get TurboFix's same-day doorstep service — professional service without interrupting the workday.",
+    "nearbyAreas": [
+      "panjagutta",
+      "banjara-hills",
+      "begumpet",
+      "khairatabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "begumpet",
+    "name": "Begumpet",
+    "pincode": "500016",
+    "zone": "central",
+    "type": "mixed",
+    "intro": "Begumpet is a prestigious mixed-use area near Secunderabad, home to diplomatic residences, five-star hotels, airline offices, and major corporate headquarters close to the old Hyderabad Airport grounds.",
+    "context": "International travellers, corporate executives, and airline industry professionals in Begumpet need service that matches their pace — TurboFix provides English-language support and premium-grade service at your doorstep.",
+    "nearbyAreas": [
+      "somajiguda",
+      "panjagutta",
+      "ameerpet",
+      "sr-nagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ameerpet",
+    "name": "Ameerpet",
+    "pincode": "500016",
+    "zone": "central",
+    "type": "student",
+    "intro": "Ameerpet is Hyderabad's unrivalled coaching hub — thousands of students preparing for IT, banking, and competitive exams crowd its institutes, making it one of the most densely active areas in the city.",
+    "context": "Students in Ameerpet live and study on their smartphones — YouTube tutorials, mock tests, note apps, and video calls. TurboFix offers student-friendly pricing and fast doorstep service so you never miss a study session.",
+    "nearbyAreas": [
+      "sr-nagar",
+      "begumpet",
+      "panjagutta",
+      "sanath-nagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "sr-nagar",
+    "name": "SR Nagar",
+    "pincode": "500038",
+    "zone": "central",
+    "type": "residential",
+    "intro": "SR Nagar (Srinagar Colony) is a densely populated residential area adjacent to Ameerpet, known for its working-class and middle-class families, coaching centres, and active local markets.",
+    "context": "Middle-class families in SR Nagar get exceptional value from TurboFix's affordable doorstep service — OEM-grade parts, 6-month warranty, and no auto-rickshaw ride to a shop across town.",
+    "nearbyAreas": [
+      "ameerpet",
+      "sanath-nagar",
+      "erragadda",
+      "moosapet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "yousufguda",
+    "name": "Yousufguda",
+    "pincode": "500045",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Yousufguda is a mid-segment residential locality wedged between Banjara Hills and SR Nagar, built around its own metro station and the green space of NTR Gardens.",
+    "context": "Residents here get the same TurboFix doorstep service available in neighbouring Banjara Hills, at the more accessible pace this residential pocket is known for.",
+    "nearbyAreas": [
+      "banjara-hills",
+      "sr-nagar",
+      "ameerpet",
+      "begumpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "sanath-nagar",
+    "name": "Sanath Nagar",
+    "pincode": "500018",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Sanath Nagar is a large BHEL township and residential area in western Hyderabad, home to BHEL workers, industrial employees, and several established colonies with long-term residents.",
+    "context": "BHEL employees and industrial workers in Sanath Nagar depend on durable, well-serviced phones for shift communication and family connectivity — TurboFix's 6-month warranty is exactly the reliability they need.",
+    "nearbyAreas": [
+      "erragadda",
+      "sr-nagar",
+      "moosapet",
+      "kukatpally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "erragadda",
+    "name": "Erragadda",
+    "pincode": "500018",
+    "zone": "central",
+    "type": "mixed",
+    "intro": "Erragadda is a well-established residential and commercial area in western Hyderabad, known for government hospitals, mental health institutions, dense colonies, and its position as a key connector between Kukatpally and Ameerpet.",
+    "context": "Families and healthcare workers in Erragadda benefit from TurboFix's discreet, efficient doorstep service — we understand that healthcare professionals cannot afford device downtime at any hour.",
+    "nearbyAreas": [
+      "sanath-nagar",
+      "sr-nagar",
+      "moosapet",
+      "kukatpally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "moosapet",
+    "name": "Moosapet",
+    "pincode": "500018",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Moosapet is a large working-class residential area on the western edge of central Hyderabad, with dense housing colonies, local markets, and a significant auto-driver and small-business population.",
+    "context": "Moosapet residents get professional-grade mobile service at affordable pricing through TurboFix's doorstep visits — the same quality available in Banjara Hills is now accessible here.",
+    "nearbyAreas": [
+      "kukatpally",
+      "erragadda",
+      "sanath-nagar",
+      "sr-nagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "hitech-city",
+    "name": "HITEC City",
+    "pincode": "500081",
+    "zone": "west",
+    "type": "tech",
+    "intro": "HITEC City is Hyderabad's globally recognised IT destination — Cyber Towers, Cyber Pearl, Microsoft, Google, Amazon, and dozens of Fortune 500 R&D centres call this address home.",
+    "context": "IT professionals in HITEC City operate on flagship smartphones that are integral work tools — a broken screen or failing battery means lost productivity. TurboFix offers on-site office visits during lunch hours or doorstep home service for the same evening.",
+    "nearbyAreas": [
+      "madhapur",
+      "kondapur",
+      "gachibowli",
+      "raidurg"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "madhapur",
+    "name": "Madhapur",
+    "pincode": "500081",
+    "zone": "west",
+    "type": "tech",
+    "intro": "Madhapur is the dense residential and commercial spine of the HITEC City corridor, packed with tech professionals, upscale restaurants, co-working spaces, and high-rise apartments.",
+    "context": "Tech workers and startup founders in Madhapur demand same-day, no-nonsense service — TurboFix's HITEC-area technicians are calibrated for quick, office-friendly visits that respect confidentiality and efficiency.",
+    "nearbyAreas": [
+      "hitech-city",
+      "kondapur",
+      "gachibowli",
+      "jubilee-hills"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kondapur",
+    "name": "Kondapur",
+    "pincode": "500084",
+    "zone": "west",
+    "type": "tech",
+    "intro": "Kondapur is a preferred residential address for Hyderabad's IT workforce — modern apartment complexes, tech-park proximity, quality schools, and a thriving local market make it one of the city's most sought-after neighbourhoods.",
+    "context": "TurboFix's Kondapur service covers all gated communities, apartments, and co-working spaces in the area — same-day service slots are often available for bookings made earlier in the day, subject to availability.",
+    "nearbyAreas": [
+      "madhapur",
+      "hitech-city",
+      "gachibowli",
+      "narsingi"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "gachibowli",
+    "name": "Gachibowli",
+    "pincode": "500032",
+    "zone": "west",
+    "type": "tech",
+    "intro": "Gachibowli anchors Hyderabad's Financial District and IT spine, home to DLF Cyber City, ISB, global finance offices, the Gachibowli Stadium, and premium high-rise living.",
+    "context": "Finance and IT professionals in Gachibowli carry premium devices as daily tools — TurboFix provides discreet, professional doorstep service with OEM-grade components and a 6-month warranty.",
+    "nearbyAreas": [
+      "hitech-city",
+      "financial-district",
+      "nanakramguda",
+      "narsingi"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "financial-district",
+    "name": "Financial District",
+    "pincode": "500032",
+    "zone": "west",
+    "type": "tech",
+    "intro": "The Financial District is Hyderabad's rapidly growing commercial zone adjacent to Gachibowli, housing global finance giants, luxury hotels, Telangana Secretariat, and the upcoming futuristic office complexes.",
+    "context": "C-suite executives and senior finance professionals in the Financial District need a service partner that meets their standard — TurboFix operates at that level, with verified technicians, premium parts, and zero data access beyond what the job requires.",
+    "nearbyAreas": [
+      "gachibowli",
+      "nanakramguda",
+      "raidurg",
+      "narsingi"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "nanakramguda",
+    "name": "Nanakramguda",
+    "pincode": "500032",
+    "zone": "west",
+    "type": "tech",
+    "intro": "Nanakramguda is a fast-growing tech and residential hub between Gachibowli and Narsingi, famous for the Nanakramguda IT park cluster and luxury villa communities along the Outer Ring Road.",
+    "context": "ORR-corridor professionals and villa residents in Nanakramguda get TurboFix's premium doorstep service — same trained technicians, same OEM-grade parts, now reaching this expanding western corridor.",
+    "nearbyAreas": [
+      "gachibowli",
+      "financial-district",
+      "raidurg",
+      "narsingi"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "raidurg",
+    "name": "Raidurg",
+    "pincode": "500032",
+    "zone": "west",
+    "type": "tech",
+    "intro": "Raidurg is an emerging tech and residential neighbourhood flanking the HITEC City metro line's western extension, known for high-density apartment towers and proximity to major IT campuses.",
+    "context": "Young tech professionals settling into Raidurg's new apartments rely on TurboFix for fast, transparent mobile service — doorstep service with upfront pricing, no surprises.",
+    "nearbyAreas": [
+      "nanakramguda",
+      "madhapur",
+      "hitech-city",
+      "gachibowli"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "manikonda",
+    "name": "Manikonda",
+    "pincode": "500089",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Manikonda is one of Hyderabad's fastest-growing residential areas, with thousands of mid-range and premium apartment complexes serving the HITEC City workforce and their families.",
+    "context": "Working families in Manikonda apartments get TurboFix's doorstep service at a time that suits their shift schedule — early morning, lunch, or evening — with no extra charge for the home visit.",
+    "nearbyAreas": [
+      "narsingi",
+      "puppalaguda",
+      "kondapur",
+      "tolichowki"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "puppalaguda",
+    "name": "Puppalaguda",
+    "pincode": "500089",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Puppalaguda is a quiet residential enclave near Manikonda and Narsingi, popular with IT professionals seeking more affordable housing on the western outskirts of HITEC City.",
+    "context": "With quick ORR access and growing gated-community density, Puppalaguda residents appreciate TurboFix arriving at their door — eliminating the need to navigate western Hyderabad traffic for a phone service.",
+    "nearbyAreas": [
+      "narsingi",
+      "manikonda",
+      "kokapet",
+      "narsingi"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "narsingi",
+    "name": "Narsingi",
+    "pincode": "500075",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Narsingi is a rapidly developing ORR-adjacent residential zone on the western edge of Hyderabad, popular for villa communities and mid-rise apartments favoured by software engineers.",
+    "context": "Growing villa communities in Narsingi have discovered TurboFix as their go-to phone service service — doorstep visits that reach this far western zone on the same day.",
+    "nearbyAreas": [
+      "puppalaguda",
+      "manikonda",
+      "kokapet",
+      "financial-district"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kokapet",
+    "name": "Kokapet",
+    "pincode": "500075",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Kokapet is one of Hyderabad's newest premium real estate destinations, known for luxury high-rise projects and its position adjacent to the Financial District along the Outer Ring Road.",
+    "context": "Hyderabad's newest luxury residential zone gets the same TurboFix service that premium areas like Banjara Hills enjoy — trained technicians, OEM-grade parts, and doorstep convenience.",
+    "nearbyAreas": [
+      "narsingi",
+      "financial-district",
+      "puppalaguda",
+      "tellapur"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "tellapur",
+    "name": "Tellapur",
+    "pincode": "502032",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Tellapur is a fast-expanding township area on the western ORR corridor, home to large villa developments and township projects that house thousands of families working in HITEC City.",
+    "context": "Tellapur's township residents now have access to TurboFix's doorstep service — same quality, same warranty, same day — without the long commute to a city service centre.",
+    "nearbyAreas": [
+      "kokapet",
+      "osman-nagar",
+      "kollur",
+      "rc-puram"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "osman-nagar",
+    "name": "Osman Nagar",
+    "pincode": "500019",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Osman Nagar is an established residential locality near Tolichowki, popular with middle-class families and students for its affordable housing and proximity to Mehdipatnam and HITEC City.",
+    "context": "Families in Osman Nagar value affordability and trust — TurboFix delivers both, with transparent pricing and a 6-month service warranty that gives genuine peace of mind.",
+    "nearbyAreas": [
+      "tolichowki",
+      "mehdipatnam",
+      "manikonda",
+      "narsingi"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kukatpally",
+    "name": "Kukatpally",
+    "pincode": "500072",
+    "zone": "west",
+    "type": "mixed",
+    "intro": "Kukatpally is one of Hyderabad's largest and most self-sufficient localities, anchored by KPHB Colony, JNTU, the Forum Mall, and a vast network of apartments, schools, and commercial establishments.",
+    "context": "Kukatpally's enormous population of students, IT workers, and families makes it one of TurboFix's most active service zones — same-day doorstep services across all KPHB phases and surrounding areas.",
+    "nearbyAreas": [
+      "kphb",
+      "miyapur",
+      "moosapet",
+      "hafeezpet",
+      "jeedimetla"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "jeedimetla",
+    "name": "Jeedimetla",
+    "pincode": "500055",
+    "zone": "west",
+    "type": "commercial",
+    "intro": "Jeedimetla is a residential and industrial suburb on Hyderabad's northern periphery, anchored by the Jeedimetla Industrial Area's pharmaceutical, chemical, and machine-tool units alongside residential colonies like Padmanagar and Chintal.",
+    "context": "Factory staff and residents in Jeedimetla can book a technician between shifts — TurboFix reaches this industrial corridor with the same doorstep service used across the Kukatpally–Moosapet belt.",
+    "nearbyAreas": [
+      "kukatpally",
+      "moosapet",
+      "sanath-nagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kphb",
+    "name": "KPHB Colony",
+    "pincode": "500072",
+    "zone": "west",
+    "type": "residential",
+    "intro": "KPHB (Kukatpally Housing Board) Colony is Hyderabad's largest planned residential colony, spanning multiple phases and housing over three lakh residents in a dense but well-organised township.",
+    "context": "KPHB's massive residential density means TurboFix has strong presence here — our technicians know every phase and sector of the colony, ensuring fast and accurate doorstep navigation.",
+    "nearbyAreas": [
+      "kukatpally",
+      "miyapur",
+      "hafeezpet",
+      "nizampet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "miyapur",
+    "name": "Miyapur",
+    "pincode": "500049",
+    "zone": "west",
+    "type": "mixed",
+    "intro": "Miyapur is a thriving mid-western Hyderabad hub known for its metro terminus, large residential population, growing commercial strip, and position as the transit gateway to Hyderabad's western expansion.",
+    "context": "As the western metro terminus, Miyapur sees huge daily footfall — residents here appreciate TurboFix arriving at home instead of navigating the busy metro-junction area for a service visit.",
+    "nearbyAreas": [
+      "kukatpally",
+      "hafeezpet",
+      "chandanagar",
+      "lingampally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "hafeezpet",
+    "name": "Hafeezpet",
+    "pincode": "500049",
+    "zone": "west",
+    "type": "tech",
+    "intro": "Hafeezpet has evolved from a quiet suburb into a booming tech-professional residential area due to its proximity to HITEC City and excellent ORR connectivity, with dozens of high-rise apartment projects.",
+    "context": "IT professionals settling into Hafeezpet's new developments depend on TurboFix for reliable device service — we understand that for software engineers, a broken phone isn't optional to ignore.",
+    "nearbyAreas": [
+      "miyapur",
+      "kukatpally",
+      "kondapur",
+      "lingampally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "chandanagar",
+    "name": "Chandanagar",
+    "pincode": "500050",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Chandanagar is a peaceful residential suburb between Miyapur and Patancheru, known for affordable housing, schools, and its role as a bedroom community for Hyderabad's IT and pharmaceutical workforce.",
+    "context": "Working families in Chandanagar love TurboFix's doorstep model — a technician at the door means no disruption to school runs or evening family routines just for a phone service.",
+    "nearbyAreas": [
+      "miyapur",
+      "lingampally",
+      "hafeezpet",
+      "bachupally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "lingampally",
+    "name": "Lingampally",
+    "pincode": "500049",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Lingampally is a growing residential and commercial area on the western metro line, connecting Miyapur to Patancheru and popular with middle-income families seeking Hyderabad's western suburbs.",
+    "context": "Lingampally residents booking TurboFix save hours otherwise spent commuting to a city service shop — our technician brings the service to your doorstep.",
+    "nearbyAreas": [
+      "chandanagar",
+      "miyapur",
+      "patancheru",
+      "hafeezpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "nizampet",
+    "name": "Nizampet",
+    "pincode": "500090",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Nizampet is a quiet, mid-sized residential locality north of Kukatpally, known for its schools, temples, and increasing number of IT professional families choosing it for affordable yet well-connected living.",
+    "context": "Nizampet families can now access TurboFix's professional service quality without travelling to a service centre — we come to your flat, test the work before you pay, and leave a 6-month warranty.",
+    "nearbyAreas": [
+      "kukatpally",
+      "kphb",
+      "bachupally",
+      "pragathi-nagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "bachupally",
+    "name": "Bachupally",
+    "pincode": "500090",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Bachupally is a rapidly developing residential area north-west of Hyderabad, popular with young families and IT professionals for its affordable gated communities and expanding social infrastructure.",
+    "context": "Bachupally's growing population of young families and professionals deserve doorstep access to quality mobile service — TurboFix extends its same-day coverage to this fast-developing zone.",
+    "nearbyAreas": [
+      "nizampet",
+      "pragathi-nagar",
+      "kompally",
+      "chandanagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "pragathi-nagar",
+    "name": "Pragathi Nagar",
+    "pincode": "500090",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Pragathi Nagar is a planned residential township north-west of Hyderabad, known for its GHMC layout structure, strong community feel, and increasing amenities serving a growing residential base.",
+    "context": "Planned-colony residents of Pragathi Nagar get TurboFix's full doorstep service — the same service quality that HITEC City professionals receive, now available in this north-western township.",
+    "nearbyAreas": [
+      "nizampet",
+      "bachupally",
+      "kompally",
+      "hafeezpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kollur",
+    "name": "Kollur",
+    "pincode": "502300",
+    "zone": "west",
+    "type": "outskirts",
+    "intro": "Kollur is an emerging township area on Hyderabad's western fringe near the ORR and Tellapur, popular for large villa and apartment developments catering to the HITEC City workforce seeking a quieter lifestyle.",
+    "context": "TurboFix now serves Kollur's growing township communities — because living on the city's edge shouldn't mean settling for lower-quality mobile service service.",
+    "nearbyAreas": [
+      "tellapur",
+      "patancheru",
+      "osman-nagar",
+      "narsingi"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "patancheru",
+    "name": "Patancheru",
+    "pincode": "502319",
+    "zone": "west",
+    "type": "outskirts",
+    "intro": "Patancheru is an industrial and residential area on the north-western outskirts of Hyderabad, home to a major pharmaceutical and chemical industry cluster as well as residential colonies for factory workers.",
+    "context": "Industrial workers and pharmaceutical professionals in Patancheru can now book TurboFix for doorstep phone service — eliminating the need to travel into the city during busy working hours.",
+    "nearbyAreas": [
+      "lingampally",
+      "chandanagar",
+      "rc-puram",
+      "beeramguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "beeramguda",
+    "name": "Beeramguda",
+    "pincode": "502032",
+    "zone": "west",
+    "type": "outskirts",
+    "intro": "Beeramguda is a growing residential and commercial town straddling the Hyderabad–Sangareddy highway, popular for affordable plots, commercial activity along NH-65, and its connectivity to Patancheru and Miyapur.",
+    "context": "Beeramguda residents travelling daily into Hyderabad for work get TurboFix's doorstep service — same-day service that saves the round trip to a city service centre.",
+    "nearbyAreas": [
+      "patancheru",
+      "rc-puram",
+      "chandanagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "rc-puram",
+    "name": "RC Puram",
+    "pincode": "502032",
+    "zone": "west",
+    "type": "outskirts",
+    "intro": "RC Puram (Ramachandrapuram) is a planned satellite township on Hyderabad's western corridor, developed by HUDA with residential sectors and good ORR connectivity to both Patancheru and Miyapur.",
+    "context": "RC Puram township residents who previously had no quality service option nearby can now book TurboFix's doorstep service — extending professional mobile service to this planned satellite zone.",
+    "nearbyAreas": [
+      "patancheru",
+      "beeramguda",
+      "tellapur",
+      "chandanagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "secunderabad",
+    "name": "Secunderabad",
+    "pincode": "500003",
+    "zone": "north",
+    "type": "commercial",
+    "intro": "Secunderabad is Hyderabad's twin city — a historic cantonment town now transformed into a vibrant commercial, medical, and residential hub anchored by the iconic Secunderabad Railway Station.",
+    "context": "Railway travellers, Army personnel, and Secunderabad's large medical community trust TurboFix for quick, reliable mobile service — our technicians cover all sectors of the cantonment and civilian areas.",
+    "nearbyAreas": [
+      "trimulgherry",
+      "bowenpally",
+      "malkajgiri",
+      "tarnaka"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "malkajgiri",
+    "name": "Malkajgiri",
+    "pincode": "500047",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Malkajgiri is a large, densely populated municipality on Hyderabad's north-eastern fringe, known for its self-sufficient residential character, large local markets, and significant government employee population.",
+    "context": "Government employees and large families in Malkajgiri get maximum value from TurboFix's doorstep service — professional-grade service at their convenience, with warranty documentation for every visit.",
+    "nearbyAreas": [
+      "secunderabad",
+      "tarnaka",
+      "uppal",
+      "nacharam"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "tarnaka",
+    "name": "Tarnaka",
+    "pincode": "500017",
+    "zone": "north",
+    "type": "student",
+    "intro": "Tarnaka is an academic enclave in north-east Hyderabad, home to Osmania University, EFLU, NIT Warangal (nearby), and a large student population that makes it one of the city's most education-dense areas.",
+    "context": "Students at Osmania University and surrounding colleges depend on TurboFix for affordable, fast phone service — we understand that students can't be without their devices and can't overpay for service.",
+    "nearbyAreas": [
+      "malkajgiri",
+      "habsiguda",
+      "uppal",
+      "sainikpuri",
+      "amberpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "habsiguda",
+    "name": "Habsiguda",
+    "pincode": "500007",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Habsiguda is a pleasant residential and commercial area in north-east Hyderabad with a strong community character, well-established local shops, and proximity to Tarnaka and Uppal.",
+    "context": "Long-established families in Habsiguda rely on TurboFix's doorstep model rather than travelling into busier areas for a service visit — the quality is the same, the convenience is much greater.",
+    "nearbyAreas": [
+      "tarnaka",
+      "uppal",
+      "nacharam",
+      "malkajgiri"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "amberpet",
+    "name": "Amberpet",
+    "pincode": "500013",
+    "zone": "north",
+    "type": "mixed",
+    "intro": "Amberpet is one of the older residential neighbourhoods of eastern Hyderabad, sitting directly alongside Osmania University and linked to Kachiguda, Vidyanagar and Chikkadpally by rail and metro.",
+    "context": "Students, university staff, and long-settled families in Amberpet get TurboFix's doorstep service without a trip into the busier Kachiguda commercial strip — a technician comes to the hostel, flat, or family home instead.",
+    "nearbyAreas": [
+      "tarnaka",
+      "habsiguda",
+      "koti",
+      "himayatnagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "uppal",
+    "name": "Uppal",
+    "pincode": "500039",
+    "zone": "north",
+    "type": "mixed",
+    "intro": "Uppal is a major east Hyderabad hub known for its large Metro station, the MGBS Uppal Bus Terminal, stadium, and a dense mix of residential colonies, IT parks, and industrial activity.",
+    "context": "Uppal's massive daily commuter and resident population has made TurboFix one of the most in-demand service providers in east Hyderabad — book online and we'll be at your door the same day.",
+    "nearbyAreas": [
+      "nacharam",
+      "boduppal",
+      "ramanthapur",
+      "habsiguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "nacharam",
+    "name": "Nacharam",
+    "pincode": "500076",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Nacharam is an industrial-residential locality in east Hyderabad, known for its IDPL factory, industrial estates, and residential colonies housing factory and government employees.",
+    "context": "Factory workers and government employees in Nacharam get professional phone service without the commute — TurboFix's doorstep service ensures minimal disruption to work and family schedules.",
+    "nearbyAreas": [
+      "uppal",
+      "boduppal",
+      "habsiguda",
+      "malkajgiri"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "boduppal",
+    "name": "Boduppal",
+    "pincode": "500039",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Boduppal is a fast-growing residential area in east Hyderabad popular for its affordable housing projects and strategic position close to Uppal Metro and the ORR for easy city access.",
+    "context": "Boduppal's expanding apartment communities get TurboFix's same-day doorstep service — premium service quality that was previously accessible only in the city's interior is now right at your door.",
+    "nearbyAreas": [
+      "uppal",
+      "nacharam",
+      "peerzadiguda",
+      "ghatkesar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "alwal",
+    "name": "Alwal",
+    "pincode": "500010",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Alwal is a large north Hyderabad residential municipality adjacent to Secunderabad Cantonment, home to a significant Army and defence services population as well as established civilian colonies.",
+    "context": "Defence personnel and long-term residents in Alwal appreciate TurboFix's punctual, disciplined doorstep service — professional standards that match the expectations of a cantonment-adjacent community.",
+    "nearbyAreas": [
+      "secunderabad",
+      "bowenpally",
+      "kompally",
+      "yapral"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kompally",
+    "name": "Kompally",
+    "pincode": "500014",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Kompally is one of north Hyderabad's most popular residential destinations, known for its clean environment, large independent houses, good schools, and rapid infrastructure development.",
+    "context": "Kompally's upper-middle-class families often own premium smartphones — TurboFix provides premium-grade service with OEM components and a full warranty at the convenience of your front door.",
+    "nearbyAreas": [
+      "alwal",
+      "bachupally",
+      "suchitra",
+      "medchal"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "suchitra",
+    "name": "Suchitra",
+    "pincode": "500067",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Suchitra is a quiet, tree-lined residential area in north Hyderabad known for its peaceful character, well-maintained colonies, and proximity to Kompally and the Medchal corridor.",
+    "context": "Families in Suchitra's residential layouts enjoy the peace and quiet — and now enjoy professional mobile service without leaving their neighbourhood, thanks to TurboFix's doorstep service.",
+    "nearbyAreas": [
+      "kompally",
+      "bowenpally",
+      "medchal",
+      "alwal"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "bowenpally",
+    "name": "Bowenpally",
+    "pincode": "500011",
+    "zone": "north",
+    "type": "commercial",
+    "intro": "Bowenpally is a busy north Hyderabad market area known for its vegetable wholesale market — one of the largest in the region — as well as residential colonies and proximity to Secunderabad.",
+    "context": "Traders and market workers in Bowenpally use their phones constantly for orders, payments, and logistics — TurboFix ensures a broken screen never disrupts business operations.",
+    "nearbyAreas": [
+      "secunderabad",
+      "alwal",
+      "suchitra",
+      "trimulgherry"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "trimulgherry",
+    "name": "Trimulgherry",
+    "pincode": "500015",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Trimulgherry is a historic cantonment area within Greater Secunderabad, home to military establishments, well-maintained quarters, and civilian communities living around the Trimulgherry Army base.",
+    "context": "Army families in Trimulgherry get TurboFix's reliable doorstep service — our background-verified technicians meet the trust standards expected in a cantonment environment.",
+    "nearbyAreas": [
+      "secunderabad",
+      "alwal",
+      "bowenpally",
+      "sainikpuri"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "sainikpuri",
+    "name": "Sainikpuri",
+    "pincode": "500094",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Sainikpuri is a well-planned residential locality in north-east Hyderabad, developed primarily for defence personnel and their families, known for its wide roads, greenery, and peaceful atmosphere.",
+    "context": "Defence families in Sainikpuri trust TurboFix's vetted, professional technicians — our service ethic aligns with the discipline and punctuality that residents of this locality expect.",
+    "nearbyAreas": [
+      "tarnaka",
+      "alwal",
+      "kapra",
+      "as-rao-nagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ecil",
+    "name": "ECIL",
+    "pincode": "500062",
+    "zone": "north",
+    "type": "mixed",
+    "intro": "ECIL (Electronics Corporation of India Limited) Cross Roads is a major node in north-east Hyderabad that serves as the commercial and transit hub for a vast residential catchment covering AS Rao Nagar, Kapra, and Kushaiguda.",
+    "context": "ECIL's electronics industry heritage translates into tech-savvy residents who appreciate quality service — TurboFix serves the entire ECIL corridor with same-day doorstep service.",
+    "nearbyAreas": [
+      "as-rao-nagar",
+      "kapra",
+      "kushaiguda",
+      "moula-ali"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "as-rao-nagar",
+    "name": "AS Rao Nagar",
+    "pincode": "500062",
+    "zone": "north",
+    "type": "residential",
+    "intro": "AS Rao Nagar is a large, planned residential colony in north-east Hyderabad, popular with ECIL employees, government workers, and middle-income families for its structured layout and social amenities.",
+    "context": "AS Rao Nagar's tight-knit community of government and public-sector workers rely on TurboFix for honest, no-surprise service — our transparent pricing and written warranty documents build exactly the kind of trust this community values.",
+    "nearbyAreas": [
+      "ecil",
+      "kapra",
+      "sainikpuri",
+      "kushaiguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kapra",
+    "name": "Kapra",
+    "pincode": "500062",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Kapra is a rapidly expanding north-east Hyderabad residential area with a strong GHMC housing colony base, growing commercial activity along the Kapra main road, and easy access to ECIL Cross Roads.",
+    "context": "Kapra residents can book TurboFix and have their phone serviceed at home — within the scheduled window, with no travel into the city's congested interior.",
+    "nearbyAreas": [
+      "ecil",
+      "as-rao-nagar",
+      "kushaiguda",
+      "cherlapally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "moula-ali",
+    "name": "Moula Ali",
+    "pincode": "500040",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Moula Ali is a large north-east Hyderabad residential area centred around the iconic Moula Ali Hill Dargah, with a dense Muslim-majority community, local markets, and strong neighbourhood character.",
+    "context": "Moula Ali's diverse residential population benefits from TurboFix's inclusive, community-friendly doorstep service — service quality that respects your home and your schedule.",
+    "nearbyAreas": [
+      "ecil",
+      "kushaiguda",
+      "nacharam",
+      "cherlapally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "medchal",
+    "name": "Medchal",
+    "pincode": "501401",
+    "zone": "north",
+    "type": "outskirts",
+    "intro": "Medchal is a rapidly growing semi-urban area on Hyderabad's northern outskirts, now part of the GHMC and booming with large residential townships and IT/pharma industry expansion along the Medchal Road.",
+    "context": "Medchal's expanding residential communities deserve the same service quality available in the city — TurboFix now serves Medchal with doorstep visits that bridge the urban–suburban gap.",
+    "nearbyAreas": [
+      "kompally",
+      "suchitra",
+      "shamirpet",
+      "alwal"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "mehdipatnam",
+    "name": "Mehdipatnam",
+    "pincode": "500028",
+    "zone": "south",
+    "type": "commercial",
+    "intro": "Mehdipatnam is one of the most densely populated and commercially active areas in south Hyderabad, serving as the transition point between old city and western Hyderabad with its famous bus terminus and bazaars.",
+    "context": "Mehdipatnam's enormous daily footfall of traders, bus commuters, and local residents creates constant demand for fast, affordable phone service — TurboFix delivers doorstep service so you never miss a bus or business opportunity.",
+    "nearbyAreas": [
+      "tolichowki",
+      "attapur",
+      "masab-tank",
+      "osman-nagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "tolichowki",
+    "name": "Tolichowki",
+    "pincode": "500008",
+    "zone": "south",
+    "type": "mixed",
+    "intro": "Tolichowki is a vibrant mixed-use area in south-west Hyderabad, known for its electronics and mobile markets, restaurants, mosques, and a significant Muslim community that gives the area a distinctive cultural character.",
+    "context": "Tolichowki's mobile phone market makes residents particularly aware of device quality — TurboFix's doorstep service at transparent prices fills the gap between untrustworthy local kiosks and expensive authorised centres.",
+    "nearbyAreas": [
+      "mehdipatnam",
+      "attapur",
+      "manikonda",
+      "osman-nagar",
+      "golconda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "golconda",
+    "name": "Golconda",
+    "pincode": "500008",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Golconda is the historic fortified citadel on Hyderabad's western old-city edge, built around the 16th-century Golconda Fort and its neighbouring Qutub Shahi Tombs, with residential colonies spread around the monument.",
+    "context": "Families living in the lanes around the fort get the same doorstep service TurboFix runs across the rest of the old city — no need to travel toward Mehdipatnam or Toli Chowki for a service visit.",
+    "nearbyAreas": [
+      "tolichowki",
+      "mehdipatnam"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "attapur",
+    "name": "Attapur",
+    "pincode": "500048",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Attapur is a large southern Hyderabad residential locality connecting Mehdipatnam to Rajendranagar, popular with working-class and middle-class families for its affordable housing and local market activity.",
+    "context": "Attapur families appreciate TurboFix's honest, affordable service — we quote the price before touching the device, use genuine-grade parts, and back every job with a 6-month warranty.",
+    "nearbyAreas": [
+      "mehdipatnam",
+      "rajendranagar",
+      "tolichowki",
+      "santoshnagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "rajendranagar",
+    "name": "Rajendranagar",
+    "pincode": "500052",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Rajendranagar is a large southern Hyderabad suburb with a significant residential population, home to MABS&SE University, numerous government offices, and an increasingly diverse community.",
+    "context": "Rajendranagar's university students and government families now get the same TurboFix quality — doorstep service with 6-month warranty and transparent pricing.",
+    "nearbyAreas": [
+      "attapur",
+      "shamshabad",
+      "mehdipatnam",
+      "santoshnagar",
+      "meerpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "meerpet",
+    "name": "Meerpet",
+    "pincode": "500097",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Meerpet is an emerging affordable residential suburb south-east of Hyderabad, neighbouring LB Nagar, Badangpet and Jillelaguda, with the Matsya Avatara Kalyana Venkateswara Swamy Temple and a string of local lakes as its community landmarks.",
+    "context": "As new colonies fill in around Meerpet, residents get TurboFix's doorstep service extended down from the LB Nagar corridor rather than needing to travel back into the city.",
+    "nearbyAreas": [
+      "lb-nagar",
+      "rajendranagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "falaknuma",
+    "name": "Falaknuma",
+    "pincode": "500053",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Falaknuma is a historic neighbourhood in old Hyderabad, famous for the magnificent Taj Falaknuma Palace, its old-world charm, and a tight-knit community with deep cultural roots in the Nizami heritage.",
+    "context": "Falaknuma's residents deserve reliable mobile service that comes to them — TurboFix serves this historic neighbourhood with the same professionalism we bring to every corner of Hyderabad.",
+    "nearbyAreas": [
+      "charminar",
+      "chandrayangutta",
+      "bahadurpura",
+      "saidabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "charminar",
+    "name": "Charminar",
+    "pincode": "500002",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Charminar is the soul of Hyderabad — the iconic 16th-century mosque-monument that anchors the old city's bazaars, including the famous Laad Bazaar and Chowk Bazar, drawing both tourists and local traders.",
+    "context": "In this high-footfall historic district, traders and locals need fast, trustworthy phone service without trekking to distant service centres — TurboFix's doorstep service reaches the old city.",
+    "nearbyAreas": [
+      "falaknuma",
+      "yakutpura",
+      "malakpet",
+      "bahadurpura"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "chandrayangutta",
+    "name": "Chandrayangutta",
+    "pincode": "500005",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Chandrayangutta is a historic south Hyderabad area adjacent to Falaknuma and Charminar, characterised by a strong community identity, active local markets, and residential areas with deep old-city character.",
+    "context": "Chandrayangutta residents benefit from TurboFix's doorstep service — bringing professional service to the old city's doorstep rather than asking residents to travel to modern service centres.",
+    "nearbyAreas": [
+      "falaknuma",
+      "charminar",
+      "bahadurpura",
+      "rajendranagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "bahadurpura",
+    "name": "Bahadurpura",
+    "pincode": "500064",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Bahadurpura is a densely populated old city locality adjacent to Charminar, known for its traditional markets, industrial small-businesses, and strong community cohesion.",
+    "context": "TurboFix's transparent, honest service builds exactly the kind of trust that old-city communities demand — quoted price before work begins, OEM-grade parts, and documented warranty.",
+    "nearbyAreas": [
+      "charminar",
+      "chandrayangutta",
+      "falaknuma",
+      "malakpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "malakpet",
+    "name": "Malakpet",
+    "pincode": "500036",
+    "zone": "south",
+    "type": "commercial",
+    "intro": "Malakpet is a major commercial and residential area connecting the old city to the eastern Hyderabad zones, known for its wholesale market, Malakpet race course, and active bazaars.",
+    "context": "Malakpet's traders and residents get TurboFix's same-day doorstep service — keeping the area's active commercial community online without downtime.",
+    "nearbyAreas": [
+      "koti",
+      "charminar",
+      "saidabad",
+      "yakutpura"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "santoshnagar",
+    "name": "Santoshnagar",
+    "pincode": "500059",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Santoshnagar is a south Hyderabad residential area known for its large colony developments, proximity to the ORR, and its position as a gateway between Attapur and Rajendranagar.",
+    "context": "Santoshnagar's growing family population gets TurboFix's professional doorstep service — the convenience of home service with the quality of a premium studio.",
+    "nearbyAreas": [
+      "attapur",
+      "rajendranagar",
+      "mehdipatnam",
+      "saidabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "saidabad",
+    "name": "Saidabad",
+    "pincode": "500059",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Saidabad is a sprawling south Hyderabad residential locality known for its large Muslim community, wholesale business activity, and well-established schools and mosques.",
+    "context": "Saidabad families trust TurboFix's transparent doorstep service — confirmed price before work begins, 6-month warranty, and respect for the home and family schedule.",
+    "nearbyAreas": [
+      "santoshnagar",
+      "malakpet",
+      "dilsukhnagar",
+      "yakutpura"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "yakutpura",
+    "name": "Yakutpura",
+    "pincode": "500023",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Yakutpura is a historic old-city locality between Charminar and Malakpet, steeped in Hyderabadi culture with traditional households, local markets, and religious institutions that have stood for centuries.",
+    "context": "TurboFix serves Yakutpura's households with doorstep service — modern, professional service that fits into traditional neighbourhood rhythms without disruption.",
+    "nearbyAreas": [
+      "charminar",
+      "malakpet",
+      "bahadurpura",
+      "saidabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "shamshabad",
+    "name": "Shamshabad",
+    "pincode": "501218",
+    "zone": "south",
+    "type": "outskirts",
+    "intro": "Shamshabad is the home of Rajiv Gandhi International Airport and a fast-growing aerospace/logistics hub, with new residential townships emerging to serve the airport's massive workforce.",
+    "context": "Airport workers, airline crew, and Shamshabad township residents on irregular shifts find TurboFix's flexible booking particularly valuable — same-day doorstep service that fits around the airport schedule.",
+    "nearbyAreas": [
+      "rajendranagar",
+      "tukkuguda",
+      "adibatla",
+      "maheshwaram"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "lb-nagar",
+    "name": "LB Nagar",
+    "pincode": "500074",
+    "zone": "east",
+    "type": "commercial",
+    "intro": "LB Nagar (Lal Bahadur Nagar) is the commercial and transit hub of south-east Hyderabad, with a major metro station, RTC bus services, and a thriving market area serving a huge residential catchment.",
+    "context": "LB Nagar's massive daily traffic of commuters and traders makes quick mobile service essential — TurboFix's doorstep service eliminates the wait at a busy service shop.",
+    "nearbyAreas": [
+      "dilsukhnagar",
+      "vanasthalipuram",
+      "saroor-nagar",
+      "kothapet",
+      "meerpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "dilsukhnagar",
+    "name": "Dilsukhnagar",
+    "pincode": "500060",
+    "zone": "east",
+    "type": "commercial",
+    "intro": "Dilsukhnagar is one of Hyderabad's busiest commercial areas, known for its shopping malls, electronics market, multiple cinema screens, and the vibrant retail activity that draws shoppers from across south-east Hyderabad.",
+    "context": "Shoppers and traders who spend their days in Dilsukhnagar's markets rely on TurboFix's same-day doorstep service — a working phone is non-negotiable for anyone running a business here.",
+    "nearbyAreas": [
+      "lb-nagar",
+      "kothapet",
+      "santoshnagar",
+      "nagole"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "nagole",
+    "name": "Nagole",
+    "pincode": "500035",
+    "zone": "east",
+    "type": "residential",
+    "intro": "Nagole is a residential area on Hyderabad's eastern corridor with a significant IT township component, known for being the terminus of the east metro line and a growing residential population.",
+    "context": "Nagole's metro-accessible residential community gets TurboFix's doorstep service conveniently — same-day service that means no wasted metro journey to a service centre.",
+    "nearbyAreas": [
+      "uppal",
+      "dilsukhnagar",
+      "peerzadiguda",
+      "boduppal"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "vanasthalipuram",
+    "name": "Vanasthalipuram",
+    "pincode": "500070",
+    "zone": "east",
+    "type": "residential",
+    "intro": "Vanasthalipuram is a large, self-contained residential area in south-east Hyderabad, known for its government-employee colonies, wide roads, and proximity to LB Nagar and Hayathnagar.",
+    "context": "Government employees and established families in Vanasthalipuram get TurboFix's doorstep service delivered to their colony — no travel, full warranty, transparent pricing.",
+    "nearbyAreas": [
+      "lb-nagar",
+      "hayathnagar",
+      "saroor-nagar",
+      "kothapet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "hayathnagar",
+    "name": "Hayathnagar",
+    "pincode": "501505",
+    "zone": "east",
+    "type": "residential",
+    "intro": "Hayathnagar is a growing residential area on Hyderabad's far eastern edge near the ORR, popular with families seeking affordable large homes away from the city's density.",
+    "context": "TurboFix extends its doorstep coverage to Hayathnagar — families in this eastern suburb get the same service quality without the commute to a busy city area.",
+    "nearbyAreas": [
+      "vanasthalipuram",
+      "lb-nagar",
+      "peerzadiguda",
+      "ibrahimpatnam"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kothapet",
+    "name": "Kothapet",
+    "pincode": "500035",
+    "zone": "east",
+    "type": "residential",
+    "intro": "Kothapet is a mid-density residential area in south-east Hyderabad between Dilsukhnagar and LB Nagar, known for its local markets, schools, and working-family communities.",
+    "context": "Kothapet families depend on TurboFix for honest, affordable phone service that respects their budget — written quotes upfront, OEM-quality parts, and a 6-month warranty.",
+    "nearbyAreas": [
+      "dilsukhnagar",
+      "lb-nagar",
+      "saroor-nagar",
+      "nagole"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "saroor-nagar",
+    "name": "Saroor Nagar",
+    "pincode": "500035",
+    "zone": "east",
+    "type": "residential",
+    "intro": "Saroor Nagar is an established south-east Hyderabad residential locality popular with middle-income families, characterised by government housing layouts, a natural lake, and a strong neighbourhood identity.",
+    "context": "Saroor Nagar's stable, community-oriented families get TurboFix's dependable doorstep service — arriving on time, working quickly, and leaving with a 6-month warranty and digital invoice.",
+    "nearbyAreas": [
+      "lb-nagar",
+      "kothapet",
+      "vanasthalipuram",
+      "dilsukhnagar",
+      "karmanghat"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "karmanghat",
+    "name": "Karmanghat",
+    "pincode": "500079",
+    "zone": "east",
+    "type": "residential",
+    "intro": "Karmanghat is a south-eastern Hyderabad locality best known for the centuries-old Karmanghat Hanuman Temple on Sagar Ring Road, with residential growth spreading around the temple in recent years.",
+    "context": "Families settling in Karmanghat's newer colonies get TurboFix's doorstep coverage extended from the neighbouring Saroor Nagar and LB Nagar service area.",
+    "nearbyAreas": [
+      "saroor-nagar",
+      "lb-nagar",
+      "dilsukhnagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "peerzadiguda",
+    "name": "Peerzadiguda",
+    "pincode": "500039",
+    "zone": "east",
+    "type": "residential",
+    "intro": "Peerzadiguda is a developing east Hyderabad area between Uppal and Boduppal, popular for its affordable apartments and growing connectivity via the Outer Ring Road.",
+    "context": "Peerzadiguda's young residential community gets TurboFix's same-day doorstep service — professional service that no longer requires a trip to the busy Uppal junction.",
+    "nearbyAreas": [
+      "boduppal",
+      "uppal",
+      "nagole",
+      "ghatkesar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ghatkesar",
+    "name": "Ghatkesar",
+    "pincode": "501301",
+    "zone": "east",
+    "type": "outskirts",
+    "intro": "Ghatkesar is a fast-growing town on Hyderabad's eastern ORR corridor, known for its large residential townships, IT industry expansion, and rapid population growth from city professionals.",
+    "context": "Ghatkesar's booming township population now gets TurboFix's professional doorstep service — same quality, same warranty, delivered to this eastern expansion zone.",
+    "nearbyAreas": [
+      "peerzadiguda",
+      "boduppal",
+      "keesara",
+      "adibatla"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "shamirpet",
+    "name": "Shamirpet",
+    "pincode": "500078",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Shamirpet is a northern Hyderabad outskirt area known for Shamirpet Lake, forest ranges, and growing residential development catering to families seeking space on the city's quieter north side.",
+    "context": "Shamirpet residents receive TurboFix's extended doorstep service — professional mobile service reaching further north than any other premium service provider in Hyderabad.",
+    "nearbyAreas": [
+      "medchal",
+      "kompally",
+      "keesara",
+      "alwal"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "adibatla",
+    "name": "Adibatla",
+    "pincode": "501301",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Adibatla is one of Hyderabad's emerging industrial and aerospace corridors, home to BDL, DRDO, and a growing IT and defence manufacturing ecosystem attracting skilled workers to newly developed townships.",
+    "context": "Defence and aerospace professionals in Adibatla's growing township communities deserve high-quality doorstep service — TurboFix is one of the few services extending coverage to this strategically important corridor.",
+    "nearbyAreas": [
+      "ghatkesar",
+      "shamshabad",
+      "ibrahimpatnam",
+      "hayathnagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ibrahimpatnam",
+    "name": "Ibrahimpatnam",
+    "pincode": "501506",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Ibrahimpatnam is a growing town on Hyderabad's far eastern outskirts, known for its agricultural heritage and rapid transformation into a residential suburb for professionals seeking affordable large-plot housing.",
+    "context": "TurboFix now covers Ibrahimpatnam — residents in this eastern suburb can book doorstep service and get the same quality service that city-centre customers receive.",
+    "nearbyAreas": [
+      "hayathnagar",
+      "ghatkesar",
+      "adibatla",
+      "keesara"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "maheshwaram",
+    "name": "Maheshwaram",
+    "pincode": "500005",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Maheshwaram is an emerging pharma and IT-SEZ cluster on Hyderabad's southern ORR, attracting large industrial investments and creating a new residential corridor for the pharma industry workforce.",
+    "context": "Pharmaceutical and IT professionals in Maheshwaram's growing industrial township can now book TurboFix for doorstep service — extending the city's best service to the southern ORR corridor.",
+    "nearbyAreas": [
+      "shamshabad",
+      "tukkuguda",
+      "rajendranagar",
+      "adibatla"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "tukkuguda",
+    "name": "Tukkuguda",
+    "pincode": "501359",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Tukkuguda is a small but growing satellite town south of Hyderabad near Shamshabad, developing rapidly due to its ORR proximity and the expansion of the airport logistics ecosystem.",
+    "context": "TurboFix extends its doorstep service service to Tukkuguda — ensuring that even residents of Hyderabad's developing southern satellite towns have access to professional mobile service.",
+    "nearbyAreas": [
+      "shamshabad",
+      "maheshwaram",
+      "rajendranagar",
+      "adibatla"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "keesara",
+    "name": "Keesara",
+    "pincode": "501301",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Keesara is a growing north-eastern township area along the ORR corridor, increasingly popular for villa developments and large-format residential projects serving Hyderabad's IT professional community.",
+    "context": "Keesara's villa communities now have a premium doorstep service option — TurboFix reaches this ORR corridor with the same trained technicians and 6-month warranty.",
+    "nearbyAreas": [
+      "ghatkesar",
+      "shamirpet",
+      "medchal",
+      "ibrahimpatnam"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ameenpur",
+    "name": "Ameenpur",
+    "pincode": "502032",
+    "zone": "west",
+    "type": "outskirts",
+    "intro": "Ameenpur is a lake-side satellite township on Hyderabad's north-western edge, best known for Ameenpur Lake and its fast-growing residential colonies serving the nearby Miyapur and HITEC City workforce.",
+    "context": "TurboFix extends doorstep phone service to Ameenpur's growing colonies — the same trained technicians and 6-month warranty available across the city, now reaching this lakeside township.",
+    "nearbyAreas": [
+      "miyapur",
+      "beeramguda",
+      "patancheru"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ramanthapur",
+    "name": "Ramanthapur",
+    "pincode": "500013",
+    "zone": "north",
+    "type": "mixed",
+    "intro": "Ramanthapur is an established residential locality in eastern Hyderabad near Amberpet and Dilsukhnagar, home to the CMR Shopping Mall and a mix of old and newer apartment communities.",
+    "context": "Residents here get TurboFix's doorstep phone service without the trip into busier Dilsukhnagar or Koti — a technician comes to the flat or shop instead.",
+    "nearbyAreas": [
+      "amberpet",
+      "habsiguda",
+      "dilsukhnagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "mallapur",
+    "name": "Mallapur",
+    "pincode": "500076",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Mallapur is a residential and commercial neighbourhood in eastern Hyderabad between Malkajgiri and Nacharam, with a mix of older housing and newer apartment blocks near the Malkajgiri railway line.",
+    "context": "Families and shop owners in Mallapur get the same TurboFix's service quality available across the city, brought directly to their door instead of a trip into Malkajgiri.",
+    "nearbyAreas": [
+      "malkajgiri",
+      "nacharam",
+      "moula-ali"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "shaikpet",
+    "name": "Shaikpet",
+    "pincode": "500008",
+    "zone": "south",
+    "type": "mixed",
+    "intro": "Shaikpet is one of Hyderabad's older suburbs, bordering Jubilee Hills, Manikonda and Tolichowki near the historic Golconda Fort, with a mix of established housing and newer developments along the Shaikpet Flyover.",
+    "context": "Shaikpet's mix of long-time residents and newer families get TurboFix's doorstep phone service at their convenience — no need to travel toward HITEC City or Tolichowki for a screen or battery job.",
+    "nearbyAreas": [
+      "jubilee-hills",
+      "manikonda",
+      "tolichowki",
+      "golconda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "langer-houz",
+    "name": "Langer Houz",
+    "pincode": "500008",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Langer Houz is a culturally diverse residential and commercial locality in south-west Hyderabad, known for its mosques, temples, street food, and the nearby Gudimalkapur flower market.",
+    "context": "TurboFix brings doorstep phone service to Langer Houz's mixed community — transparent pricing and the same 6-month warranty offered everywhere else in the city.",
+    "nearbyAreas": [
+      "mehdipatnam",
+      "tolichowki"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "shahalibanda",
+    "name": "Shahalibanda",
+    "pincode": "500065",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Shahalibanda is a historic old-city locality about two kilometres south of Charminar, once home to Nizam-era nobility and now a dense residential quarter with deep Hyderabadi roots.",
+    "context": "TurboFix's doorstep service reaches Shahalibanda's old-city lanes directly — residents no longer need to travel toward Koti for a trustworthy screen or battery job.",
+    "nearbyAreas": [
+      "charminar",
+      "bahadurpura"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "moghalpura",
+    "name": "Moghalpura",
+    "pincode": "500002",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Moghalpura is one of Hyderabad's oldest neighbourhoods, dating to the Qutub Shahi era and sitting right next to Charminar, with a dense mix of historic mosques, bazaars and residential lanes.",
+    "context": "TurboFix's doorstep phone service reaches Moghalpura's old-city households directly, with the same OEM-grade parts and 6-month warranty used across the rest of Hyderabad.",
+    "nearbyAreas": [
+      "charminar",
+      "yakutpura"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "hussaini-alam",
+    "name": "Hussaini Alam",
+    "pincode": "500064",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Hussaini Alam is a bustling old-city locality close to Charminar, known for its markets and easy access via the Shalibanda and Charminar metro stations.",
+    "context": "Traders and residents in Hussaini Alam get TurboFix's doorstep service without pausing their day at the market — a technician comes to the shop or home instead.",
+    "nearbyAreas": [
+      "charminar",
+      "bahadurpura",
+      "shahalibanda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "barkas",
+    "name": "Barkas",
+    "pincode": "500005",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Barkas is a distinctive old-city locality in the Chandrayangutta constituency, its name derived from the English word \\",
+    "context": "TurboFix extends its doorstep phone service to Barkas, bringing the same transparent pricing and 6-month warranty available across Hyderabad to this close-knit locality.",
+    "nearbyAreas": [
+      "chandrayangutta"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kanchanbagh",
+    "name": "Kanchanbagh",
+    "pincode": "500058",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Kanchanbagh is a quiet, family-friendly locality in southern Hyderabad near Mehdipatnam, home to the DRDO Kanchanbagh township and a mix of government and private residential colonies.",
+    "context": "DRDO employees and long-settled families in Kanchanbagh get TurboFix's doorstep phone service at a convenient time — no need to navigate toward Saidabad or Mehdipatnam for a service visit.",
+    "nearbyAreas": [
+      "saidabad",
+      "chandrayangutta"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "dabeerpura",
+    "name": "Dabeerpura",
+    "pincode": "500023",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Dabeerpura is one of the oldest neighbourhoods in Hyderabad's old city, anchored by the historic Dabeerpura Darwaza gateway and close to the Purani Haveli palace complex.",
+    "context": "TurboFix's doorstep service reaches Dabeerpura's historic lanes directly, with the same OEM-grade parts and warranty documentation used everywhere else in the city.",
+    "nearbyAreas": [
+      "yakutpura",
+      "malakpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "rein-bazaar",
+    "name": "Rein Bazaar",
+    "pincode": "500023",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Rein Bazaar is a busy old-city sub-locality of Yakutpura known for its crowded food stalls and shops selling clothes, accessories and meat, reachable via the nearby Yakutpura and Dabirpura railway stations.",
+    "context": "TurboFix's doorstep phone service means Rein Bazaar's traders and residents don't have to close up shop for a screen or battery job — a technician comes to them instead.",
+    "nearbyAreas": [
+      "yakutpura",
+      "dabeerpura",
+      "malakpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "chanchalguda",
+    "name": "Chanchalguda",
+    "pincode": "500024",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Chanchalguda is an old-city locality best known as the site of Chanchalguda Central Jail, sitting between Saidabad and Dabirpura with its own established residential lanes.",
+    "context": "TurboFix now offers doorstep phone service to Chanchalguda residents, the same transparent-pricing service available across the rest of Hyderabad.",
+    "nearbyAreas": [
+      "saidabad",
+      "dabeerpura",
+      "malakpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "madannapet",
+    "name": "Madannapet",
+    "pincode": "500059",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Madannapet is a residential locality in southern Hyderabad known for its long-running vegetable mandi and fish market, along with the 16th-century Old Eidgah built during Qutub Shahi rule.",
+    "context": "Traders and families around Madannapet's markets get TurboFix's doorstep phone service between shifts — no need to shut the stall for a screen or battery replacement.",
+    "nearbyAreas": [
+      "saidabad",
+      "santoshnagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "mansoorabad",
+    "name": "Mansoorabad",
+    "pincode": "500068",
+    "zone": "east",
+    "type": "residential",
+    "intro": "Mansoorabad is a rapidly expanding residential locality in south-east Hyderabad near LB Nagar and Nagole, popular with families for its relatively affordable housing along the Vijayawada Highway.",
+    "context": "Mansoorabad's growing family population gets TurboFix's doorstep phone service without the trip into busier LB Nagar — a technician arrives at the flat instead.",
+    "nearbyAreas": [
+      "lb-nagar",
+      "nagole",
+      "vanasthalipuram"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "hasthinapuram",
+    "name": "Hasthinapuram",
+    "pincode": "500079",
+    "zone": "east",
+    "type": "residential",
+    "intro": "Hasthinapuram is a fast-developing residential locality in southern Hyderabad near LB Nagar, offering a mix of established colonies and newer apartment developments close to the Outer Ring Road.",
+    "context": "Families in Hasthinapuram get TurboFix's doorstep phone service at a convenient time — the same 6-month warranty available across the rest of the city, without the drive into LB Nagar.",
+    "nearbyAreas": [
+      "lb-nagar",
+      "vanasthalipuram"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "bn-reddy-nagar",
+    "name": "BN Reddy Nagar",
+    "pincode": "500079",
+    "zone": "east",
+    "type": "residential",
+    "intro": "BN Reddy Nagar is a residential locality in the Cherlapalli–Ibrahimpatnam corridor of south-east Hyderabad, connected to the rest of the city via Nagarjuna Sagar Road and Ibrahimpatnam Road.",
+    "context": "TurboFix's doorstep phone service now reaches BN Reddy Nagar's colonies directly — the same trained technicians and OEM-grade parts used everywhere else in Hyderabad.",
+    "nearbyAreas": [
+      "vanasthalipuram",
+      "hasthinapuram"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "chintalkunta",
+    "name": "Chintalkunta",
+    "pincode": "500070",
+    "zone": "east",
+    "type": "residential",
+    "intro": "Chintalkunta is a residential neighbourhood in the LB Nagar suburb of south-east Hyderabad, popular for its relatively affordable housing and well-known local checkpost landmark.",
+    "context": "Chintalkunta families get TurboFix's doorstep phone service delivered to their colony — no travel required to reach a city-centre service shop.",
+    "nearbyAreas": [
+      "lb-nagar",
+      "vanasthalipuram",
+      "hasthinapuram"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "jillelaguda",
+    "name": "Jillelaguda",
+    "pincode": "500097",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Jillelaguda is a mid-sized residential locality near Meerpet in south Hyderabad, home to the Jillelguda Lake Park and a growing base of apartment communities.",
+    "context": "Residents around Jillelaguda's lake-side colonies get TurboFix's doorstep phone service without travelling toward LB Nagar — a technician comes to the home or office instead.",
+    "nearbyAreas": [
+      "meerpet",
+      "lb-nagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "badangpet",
+    "name": "Badangpet",
+    "pincode": "500058",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Badangpet is a municipal locality on Hyderabad's southern edge near Jillelaguda and Meerpet, with a mix of older village-era landmarks and newer residential colonies.",
+    "context": "TurboFix's doorstep phone service extends to Badangpet's colonies — the same transparent pricing and 6-month warranty available across the rest of Hyderabad, reaching this southern municipality.",
+    "nearbyAreas": [
+      "jillelaguda",
+      "meerpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kongara-kalan",
+    "name": "Kongara Kalan",
+    "pincode": "501510",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Kongara Kalan is a developing village locality in the Ibrahimpatnam mandal south-east of Hyderabad, close to Rajiv Gandhi International Airport and the Adibatla aerospace corridor.",
+    "context": "TurboFix has extended its doorstep phone service coverage out to Kongara Kalan — the same service quality available in the city centre, now reaching this airport-adjacent growth corridor.",
+    "nearbyAreas": [
+      "adibatla",
+      "ibrahimpatnam"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "turkayamjal",
+    "name": "Turkayamjal",
+    "pincode": "501510",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Turkayamjal is a municipality on Hyderabad's southern outskirts near Adibatla, home to a campus of the Tata Institute of Social Sciences and a growing mix of modern and traditional housing.",
+    "context": "TurboFix now covers Turkayamjal with the same doorstep phone service available across Hyderabad — no need to travel back into the city for a screen or battery job.",
+    "nearbyAreas": [
+      "adibatla",
+      "kongara-kalan"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "pocharam",
+    "name": "Pocharam",
+    "pincode": "",
+    "zone": "east",
+    "type": "outskirts",
+    "intro": "Pocharam is a village locality on Hyderabad's eastern edge near Ghatkesar, known for the Pocharam Wildlife Sanctuary and its proximity to the Infosys SEZ area.",
+    "context": "TurboFix's doorstep phone service now reaches Pocharam's residential pockets — the same trained technicians and warranty used across the rest of the eastern corridor.",
+    "nearbyAreas": [
+      "ghatkesar",
+      "peerzadiguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "dammaiguda",
+    "name": "Dammaiguda",
+    "pincode": "500083",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Dammaiguda is an outer suburb of Hyderabad in the Keesara mandal, a residential neighbourhood near Kapra and Nagaram known locally for Dammaiguda Lake.",
+    "context": "TurboFix's doorstep phone service extends to Dammaiguda — residents get the same OEM-grade parts and 6-month warranty available across the rest of the city, without travelling toward Kapra.",
+    "nearbyAreas": [
+      "kapra",
+      "keesara"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "nagaram",
+    "name": "Nagaram",
+    "pincode": "500083",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Nagaram is a municipality in north-east Hyderabad's Keesara mandal, made up of over a hundred colonies and growing quickly due to its proximity to ECIL and the Pocharam IT/SEZ belt.",
+    "context": "TurboFix's doorstep phone service reaches Nagaram's colonies directly — the same transparent pricing available across the city, now extended to this expanding municipality.",
+    "nearbyAreas": [
+      "kapra",
+      "dammaiguda",
+      "moula-ali"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "rampally",
+    "name": "Rampally",
+    "pincode": "501301",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Rampally is a residential and commercial locality near Ghatkesar and Keesara on Hyderabad's eastern outskirts, with a growing mix of shops and housing along the Ghatkesar corridor.",
+    "context": "TurboFix now serves Rampally with the same doorstep phone service available across the rest of Hyderabad — trained technicians, OEM-grade parts, and a 6-month warranty.",
+    "nearbyAreas": [
+      "ghatkesar",
+      "keesara"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "chintal",
+    "name": "Chintal",
+    "pincode": "",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Chintal is a calm, tree-lined residential locality in the Quthbullapur area of north-west Hyderabad, connected to the rest of the city via the Sanathnagar and Fatehnagar railway stations.",
+    "context": "TurboFix's doorstep phone service now reaches Chintal's residential streets — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "jeedimetla",
+      "sanath-nagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "musheerabad",
+    "name": "Musheerabad",
+    "pincode": "500020",
+    "zone": "north",
+    "type": "mixed",
+    "intro": "Musheerabad is a well-established central Hyderabad locality anchored by the historic Musheerabad Mosque (Masjid-e-Kalan), sitting between Secunderabad and the RTC Cross Roads junction with a mix of old residential lanes and newer commercial stretches.",
+    "context": "TurboFix's doorstep phone service reaches Musheerabad's households and shops directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "secunderabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "domalguda",
+    "name": "Domalguda",
+    "pincode": "500029",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Domalguda is an established residential locality just south of Hussain Sagar and Indira Park, part of the Himayatnagar area with a mix of independent houses and 2–3 BHK apartments.",
+    "context": "TurboFix's doorstep service reaches Domalguda's residential streets directly — no need to travel toward busier Himayatnagar for a screen or battery job.",
+    "nearbyAreas": [
+      "himayatnagar",
+      "narayanguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "vidyanagar",
+    "name": "Vidyanagar",
+    "pincode": "500044",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Vidyanagar is a busy commercial and residential locality in central Hyderabad, built up around Vidyanagar Railway Station with a dense cluster of shopping outlets, schools, and hospitals.",
+    "context": "Shoppers and residents around Vidyanagar's commercial strip get TurboFix's doorstep phone service between errands — a technician comes to the shop or home instead.",
+    "nearbyAreas": [
+      "adikmet",
+      "narayanguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "adikmet",
+    "name": "Adikmet",
+    "pincode": "500044",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Adikmet is a central Hyderabad locality right next to Osmania University's campus, mixing student housing with established residential streets.",
+    "context": "Students and families in Adikmet get TurboFix's doorstep phone service at a convenient time — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "vidyanagar",
+      "amberpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "narayanguda",
+    "name": "Narayanguda",
+    "pincode": "500029",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Narayanguda is one of central Hyderabad's oldest education and commercial hubs, well connected by its own metro station and close to City Center Mall and CMR Shopping Mall.",
+    "context": "Traders and residents in Narayanguda get TurboFix's doorstep phone service without pausing their day at the shop — a technician comes to them instead.",
+    "nearbyAreas": [
+      "koti",
+      "domalguda",
+      "himayatnagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "aghapura",
+    "name": "Aghapura",
+    "pincode": "500001",
+    "zone": "central",
+    "type": "heritage",
+    "intro": "Aghapura is a historic central Hyderabad locality between Nampally and Mehdipatnam, named after the Sufi saint's disciple Agha Muhammad Dawood Abul Ulai and home to the Aghapura Dargah shrine — it's also where TurboFix's own studio is based.",
+    "context": "Being based right here means TurboFix's doorstep phone service reaches Aghapura and the surrounding Nampally streets especially fast, with the same OEM-grade parts and 6-month warranty offered citywide.",
+    "nearbyAreas": [
+      "nampally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "gosha-mahal",
+    "name": "Gosha Mahal",
+    "pincode": "500001",
+    "zone": "central",
+    "type": "mixed",
+    "intro": "Gosha Mahal is a residential pocket of the Nampally area in central Hyderabad, known locally for its markets near Nampally Bazar Ghat and a dense mix of older and newer housing.",
+    "context": "TurboFix's doorstep phone service reaches Gosha Mahal's lanes directly — the same transparent pricing and warranty documentation used across the rest of Hyderabad.",
+    "nearbyAreas": [
+      "nampally",
+      "aghapura"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "dhoolpet",
+    "name": "Dhoolpet",
+    "pincode": "500006",
+    "zone": "central",
+    "type": "heritage",
+    "intro": "Dhoolpet is an old-city Hyderabad locality known for the 52-foot Hanuman statue at Sri Akashpuri Hanuman Mandir and the weekly Jummerat Bazaar flea market held every Thursday.",
+    "context": "Shoppers and residents around Dhoolpet's Thursday market get TurboFix's doorstep phone service on any other day of the week — a technician comes to the home or shop instead.",
+    "nearbyAreas": [
+      "nampally",
+      "mehdipatnam"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "chaitanyapuri",
+    "name": "Chaitanyapuri",
+    "pincode": "500060",
+    "zone": "east",
+    "type": "residential",
+    "intro": "Chaitanyapuri is an established residential locality near Dilsukhnagar with its own elevated metro station on the Red Line, offering independent houses and mid-rise apartments.",
+    "context": "Chaitanyapuri families get TurboFix's doorstep phone service delivered to their street — no need to travel into busier Dilsukhnagar for a screen or battery replacement.",
+    "nearbyAreas": [
+      "dilsukhnagar",
+      "kothapet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "gaddiannaram",
+    "name": "Gaddiannaram",
+    "pincode": "500060",
+    "zone": "east",
+    "type": "residential",
+    "intro": "Gaddiannaram is a well-established residential locality bordering Dilsukhnagar, close to Moosarambagh Lake and served by the nearby Dilsukhnagar Metro Station.",
+    "context": "Residents here get TurboFix's doorstep phone service without the trip into Dilsukhnagar's busier commercial strip — a technician comes to the flat instead.",
+    "nearbyAreas": [
+      "dilsukhnagar",
+      "chaitanyapuri",
+      "saidabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "srinagar-colony",
+    "name": "Srinagar Colony",
+    "pincode": "500073",
+    "zone": "central",
+    "type": "premium",
+    "intro": "Srinagar Colony is an established residential and commercial locality in western Hyderabad near Yousufguda and Panjagutta, well known locally as a meeting spot for Telugu film and television personalities around Ganapathi Complex.",
+    "context": "TurboFix brings doorstep phone service to Srinagar Colony's homes and offices — the same OEM-grade parts and 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "yousufguda",
+      "panjagutta",
+      "ameerpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kavuri-hills",
+    "name": "Kavuri Hills",
+    "pincode": "500033",
+    "zone": "west",
+    "type": "tech",
+    "intro": "Kavuri Hills is a residential locality straddling the Jubilee Hills–Madhapur boundary, popular with IT professionals for its apartment complexes close to the HITEC City corridor.",
+    "context": "TurboFix's doorstep phone service reaches Kavuri Hills' apartment communities directly — the same trained technicians used across the rest of the HITEC City area.",
+    "nearbyAreas": [
+      "jubilee-hills",
+      "madhapur"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "nallakunta",
+    "name": "Nallakunta",
+    "pincode": "500044",
+    "zone": "central",
+    "type": "student",
+    "intro": "Nallakunta is a central Hyderabad locality known as a major educational hub, home to numerous IIT-JEE and competitive-exam coaching institutes alongside its established residential streets.",
+    "context": "Students and families in Nallakunta get TurboFix's doorstep phone service at student-friendly pricing — fast service that doesn't interrupt a study schedule.",
+    "nearbyAreas": [
+      "vidyanagar",
+      "adikmet",
+      "amberpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "bolarum",
+    "name": "Bolarum",
+    "pincode": "500010",
+    "zone": "north",
+    "type": "heritage",
+    "intro": "Bolarum is a historic cantonment locality in north Hyderabad, home to the 1847 Holy Trinity Church and colonial-era bungalows within the Bolarum Cantonment area.",
+    "context": "TurboFix's doorstep phone service extends to Bolarum's cantonment and civilian streets alike, with the same 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "alwal",
+      "kompally",
+      "trimulgherry"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "dundigal",
+    "name": "Dundigal",
+    "pincode": "500043",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Dundigal is a municipality on Hyderabad's northern outskirts best known as the home of the Indian Air Force Academy, spread across more than 7,000 acres since 1969.",
+    "context": "TurboFix now extends its doorstep phone service coverage to Dundigal — the same service quality available in the city centre, reaching this Air Force Academy township.",
+    "nearbyAreas": [
+      "bachupally",
+      "medchal"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "marredpally",
+    "name": "Marredpally",
+    "pincode": "500026",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Marredpally is a residential suburb of Secunderabad split into East and West Marredpally, known for the green Parade Ground and easy access to the JBS Parade Ground metro station.",
+    "context": "TurboFix's doorstep phone service reaches Marredpally's residential streets directly — the same trained technicians and warranty used across the rest of Secunderabad.",
+    "nearbyAreas": [
+      "secunderabad",
+      "trimulgherry"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "humayun-nagar",
+    "name": "Humayun Nagar",
+    "pincode": "500028",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Humayun Nagar is a residential locality in the heart of west Hyderabad, close to Masab Tank and reachable via the nearby Lakdikapul and Khairatabad railway stations.",
+    "context": "TurboFix's doorstep phone service reaches Humayun Nagar's homes directly — no need to travel toward Mehdipatnam or Masab Tank for a screen or battery job.",
+    "nearbyAreas": [
+      "mehdipatnam",
+      "masab-tank"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "gudimalkapur",
+    "name": "Gudimalkapur",
+    "pincode": "500028",
+    "zone": "south",
+    "type": "commercial",
+    "intro": "Gudimalkapur is a busy residential and commercial locality bordering Mehdipatnam, best known for the Gudimalkapur Flower Market that took over Hyderabad's wholesale flower trade from Jambagh in 2009.",
+    "context": "Traders and residents around Gudimalkapur's market get TurboFix's doorstep phone service between shifts — a technician comes to the shop or home instead.",
+    "nearbyAreas": [
+      "mehdipatnam",
+      "humayun-nagar",
+      "langer-houz"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kushaiguda",
+    "name": "Kushaiguda",
+    "pincode": "500062",
+    "zone": "north",
+    "type": "commercial",
+    "intro": "Kushaiguda is a neighbourhood in the Kapra Circle of north-east Hyderabad, home to the ECIL Bus Terminal and one of the biggest markets in the Medchal district.",
+    "context": "Traders and residents around Kushaiguda's market get TurboFix's doorstep phone service between shifts — the same transparent pricing used across the rest of the city.",
+    "nearbyAreas": [
+      "ecil",
+      "kapra"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "cherlapally",
+    "name": "Cherlapally",
+    "pincode": "501301",
+    "zone": "north",
+    "type": "commercial",
+    "intro": "Cherlapally is an industrial and residential locality in Kapra Mandal, north-east Hyderabad, known for its manufacturing units and as the site of Cherlapally Central Jail.",
+    "context": "TurboFix's doorstep phone service reaches Cherlapally's industrial and residential streets alike — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "kapra",
+      "ecil"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "yapral",
+    "name": "Yapral",
+    "pincode": "500087",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Yapral is a suburban locality in north-east Secunderabad bordered by Sainikpuri and Ammuguda, with a growing base of gated communities near the Bolarum Bazar and Alwal metro stations.",
+    "context": "TurboFix's doorstep phone service now reaches Yapral's residential streets — the same trained technicians and 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "alwal",
+      "bolarum",
+      "sainikpuri"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "bholakpur",
+    "name": "Bholakpur",
+    "pincode": "500080",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Bholakpur is a settled residential locality in Secunderabad near Musheerabad, home to several mosques and temples including Masjid-e-Hazrath Abu Bakar Siddiq and the Sri Anjaneya Swamy Temple.",
+    "context": "TurboFix's doorstep phone service reaches Bholakpur's residential lanes directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "musheerabad",
+      "secunderabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "padmarao-nagar",
+    "name": "Padmarao Nagar",
+    "pincode": "500025",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Padmarao Nagar is a central Secunderabad locality named after Diwan Bahadur Padma Rao Mudaliar, home to Gandhi Medical College and bordered by Musheerabad, Chilkalguda and Sitaphalmandi.",
+    "context": "TurboFix's doorstep phone service reaches Padmarao Nagar directly — the same trained technicians and warranty used across the rest of the city, without a trip toward busier Musheerabad.",
+    "nearbyAreas": [
+      "musheerabad",
+      "chilkalguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "karkhana",
+    "name": "Karkhana",
+    "pincode": "500009",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Karkhana is a residential and commercial locality in eastern Secunderabad close to Bowenpally and Mahendra Hills, with a mix of civilian streets and an adjoining Army Area.",
+    "context": "TurboFix's doorstep phone service reaches Karkhana's homes and shops directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "bowenpally",
+      "trimulgherry"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "lalaguda",
+    "name": "Lalaguda",
+    "pincode": "500017",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Lalaguda is a residential locality in eastern Secunderabad built around the historic Lallaguda Railway Colony, close to Mettuguda and Tarnaka.",
+    "context": "Railway colony families and residents in Lalaguda get TurboFix's doorstep phone service without the trip toward Secunderabad Junction — a technician comes to the home instead.",
+    "nearbyAreas": [
+      "tarnaka"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "sitaphalmandi",
+    "name": "Sitaphalmandi",
+    "pincode": "500061",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Sitaphalmandi is one of the old suburbs of Secunderabad, named after the custard-apple (sitaphal) market that once traded here, sitting close to Osmania University and Tarnaka.",
+    "context": "TurboFix's doorstep phone service reaches Sitaphalmandi directly — the same OEM-grade parts and warranty documentation used across the rest of the city.",
+    "nearbyAreas": [
+      "secunderabad",
+      "tarnaka"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "tadbund",
+    "name": "Tadbund",
+    "pincode": "500009",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Tadbund is a residential locality in the Tirumalagiri area of Secunderabad, bordering Bowenpally and served by the nearby Sanjivaiah Park railway station.",
+    "context": "TurboFix's doorstep phone service reaches Tadbund's streets directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "bowenpally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "warsiguda",
+    "name": "Warsiguda",
+    "pincode": "500061",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Warsiguda is an affordable, established residential locality in central Secunderabad falling under Chilkalguda police station limits, close to Padmarao Nagar and Musheerabad.",
+    "context": "TurboFix's doorstep phone service reaches Warsiguda's homes directly — the same transparent pricing and warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "musheerabad",
+      "padmarao-nagar",
+      "chilkalguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "chilkalguda",
+    "name": "Chilkalguda",
+    "pincode": "500061",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Chilkalguda is a middle-class residential locality of Secunderabad half a kilometre from Secunderabad Junction railway station, known for the Katta Maisamma-Nalla Pochamma temple.",
+    "context": "TurboFix's doorstep phone service reaches Chilkalguda directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "secunderabad",
+      "musheerabad",
+      "warsiguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kavadiguda",
+    "name": "Kavadiguda",
+    "pincode": "500080",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Kavadiguda is a central, family-friendly locality bordering Gandhi Nagar, Bakaram and Lower Tank Bund, next to Indira Park.",
+    "context": "TurboFix's doorstep phone service reaches Kavadiguda's residential streets directly — the same trained technicians used across the rest of central Hyderabad.",
+    "nearbyAreas": [
+      "domalguda",
+      "musheerabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "parsigutta",
+    "name": "Parsigutta",
+    "pincode": "500044",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Parsigutta is a mixed-community locality in Secunderabad named after the Parsi community that once settled there, known for its temples and residential character.",
+    "context": "TurboFix's doorstep phone service reaches Parsigutta directly — the same 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "warsiguda",
+      "padmarao-nagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ammuguda",
+    "name": "Ammuguda",
+    "pincode": "500056",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Ammuguda is a residential locality in Malkajgiri Mandal near Sainikpuri, built around its own railway station and the nearby Ammuguda hillock.",
+    "context": "TurboFix's doorstep phone service reaches Ammuguda directly — the same trained technicians and warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "sainikpuri",
+      "malkajgiri"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "asif-nagar",
+    "name": "Asif Nagar",
+    "pincode": "500028",
+    "zone": "south",
+    "type": "mixed",
+    "intro": "Asif Nagar is a major western Hyderabad locality north of the Musi River near Mehdipatnam, named after the Asaf Jahi dynasty and home to older cinema halls like Amba Theatre.",
+    "context": "TurboFix's doorstep phone service reaches Asif Nagar's homes and shops directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "mehdipatnam",
+      "nampally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "mallepally",
+    "name": "Mallepally",
+    "pincode": "500001",
+    "zone": "central",
+    "type": "heritage",
+    "intro": "Mallepally is one of Hyderabad's old central suburbs near Asif Nagar, home to the Nizam-era Badi Masjid (Tabligi Jamat Mosque) and the vintage Glory Cinema Talkies, opened in 1935.",
+    "context": "TurboFix's doorstep phone service reaches Mallepally directly — the same transparent pricing and warranty documentation used across the rest of the city.",
+    "nearbyAreas": [
+      "nampally",
+      "asif-nagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "vijayanagar-colony",
+    "name": "Vijayanagar Colony",
+    "pincode": "500057",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Vijayanagar Colony is an established central Hyderabad locality with sub-localities spanning Mallepally, Nampally and Mehdipatnam, well known locally for the Daulat Function Hall.",
+    "context": "TurboFix's doorstep phone service reaches Vijayanagar Colony directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "mallepally",
+      "nampally",
+      "mehdipatnam"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "mangalhat",
+    "name": "Mangalhat",
+    "pincode": "500006",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Mangalhat is a lively old-city Hyderabad neighbourhood known for its marketplaces including Chudi Bazaar, close to Sitaram Bagh and Goshamahal.",
+    "context": "Traders and residents around Mangalhat's markets get TurboFix's doorstep phone service between shifts — a technician comes to the shop or home instead.",
+    "nearbyAreas": [
+      "nampally",
+      "gosha-mahal"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kulsumpura",
+    "name": "Kulsumpura",
+    "pincode": "500006",
+    "zone": "central",
+    "type": "heritage",
+    "intro": "Kulsumpura is a central Hyderabad locality in the Asif Nagar area, home to the 17th-century Kulsum Begum Masjid built by the daughter of Sultan Muhammad Qutb Shah.",
+    "context": "TurboFix's doorstep phone service reaches Kulsumpura directly — the same OEM-grade parts and warranty documentation used across the rest of the city.",
+    "nearbyAreas": [
+      "asif-nagar",
+      "nampally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "gajularamaram",
+    "name": "Gajularamaram",
+    "pincode": "500055",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Gajularamaram is a fast-developing residential locality in north Hyderabad bordered by Kukatpally, Suraram, Pragathi Nagar and Jeedimetla, close to the Miyapur and JNTU metro stations.",
+    "context": "TurboFix's doorstep phone service reaches Gajularamaram's residential pockets directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "kukatpally",
+      "jeedimetla"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "bahadurpally",
+    "name": "Bahadurpally",
+    "pincode": "500043",
+    "zone": "west",
+    "type": "tech",
+    "intro": "Bahadurpally is one of Hyderabad's fastest-growing residential areas in the Medchal district, home to the Tech Mahindra Training Center and Mahindra École Centrale engineering institute.",
+    "context": "IT professionals and families in Bahadurpally get TurboFix's doorstep phone service at a convenient time — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "jeedimetla",
+      "suchitra"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "doolapally",
+    "name": "Doolapally",
+    "pincode": "500014",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Doolapally is a locality in Quthbullapur that has merged with Kompally municipality, a primarily residential area in northern Hyderabad near Sanathnagar's rail corridor.",
+    "context": "TurboFix's doorstep phone service now reaches Doolapally — the same service quality available in the city centre, extended to this northern growth area.",
+    "nearbyAreas": [
+      "kompally",
+      "suchitra"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ramnagar",
+    "name": "Ramnagar",
+    "pincode": "500020",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Ramnagar is a central residential neighbourhood under the Musheerabad constituency, once located near the historic VST and Golkunda cigarette factories, close to Vidyanagar and Zamistanpur.",
+    "context": "TurboFix's doorstep phone service reaches Ramnagar directly — the same trained technicians and warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "musheerabad",
+      "zamistanpur"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "zamistanpur",
+    "name": "Zamistanpur",
+    "pincode": "500020",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Zamistanpur is a central Hyderabad locality within Musheerabad, connected to the rest of the city via the RTC Cross Roads metro station.",
+    "context": "TurboFix's doorstep phone service reaches Zamistanpur directly — the same 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "musheerabad",
+      "ramnagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "maktha-mahboobpet",
+    "name": "Maktha Mahboobpet",
+    "pincode": "500049",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Maktha Mahboobpet is a residential and commercial locality in the Miyapur area of Serilingampally mandal, part of the Cyberabad Municipal Corporation and close to Hyderabad's western IT hubs.",
+    "context": "TurboFix's doorstep phone service reaches Maktha Mahboobpet directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "miyapur",
+      "hafeezpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "bollaram",
+    "name": "Bollaram",
+    "pincode": "500010",
+    "zone": "north",
+    "type": "outskirts",
+    "intro": "Bollaram is a growing industrial and residential locality in north-east Hyderabad near Alwal and Kompally, home to the Bollaram Industrial Development Area and the Sri Jagannath Temple.",
+    "context": "TurboFix's doorstep phone service extends to Bollaram's industrial and residential streets alike — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "alwal",
+      "kompally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "film-nagar",
+    "name": "Film Nagar",
+    "pincode": "500096",
+    "zone": "central",
+    "type": "premium",
+    "intro": "Film Nagar — also known as Tollywood or Tinsel Town — is Hyderabad's film industry hub in the western part of the city, home to Annapurna Studios and several major production houses.",
+    "context": "TurboFix's doorstep phone service reaches Film Nagar's studios and residences directly, with the same OEM-grade parts and 6-month warranty used across the rest of Hyderabad.",
+    "nearbyAreas": [
+      "banjara-hills",
+      "jubilee-hills",
+      "tolichowki"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "king-koti",
+    "name": "King Koti",
+    "pincode": "500001",
+    "zone": "central",
+    "type": "heritage",
+    "intro": "King Koti is a central Hyderabad locality named after King Kothi Palace, the residence of the seventh Nizam, Sir Mir Osman Ali Khan, distinguished by the palace's ornate Pardha Gate.",
+    "context": "TurboFix's doorstep phone service reaches King Koti directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "abids",
+      "koti",
+      "himayatnagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "sultan-bazaar",
+    "name": "Sultan Bazaar",
+    "pincode": "500095",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Sultan Bazaar is a major shopping locality between Abids and Koti, historically developed during colonial times and known today for over a hundred shops selling textiles and silverware.",
+    "context": "Shoppers and traders around Sultan Bazaar get TurboFix's doorstep phone service between errands — a technician comes to the shop or home instead.",
+    "nearbyAreas": [
+      "abids",
+      "koti"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "troop-bazaar",
+    "name": "Troop Bazaar",
+    "pincode": "500001",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Troop Bazaar is a commercial locality of Koti known for its fruit market, textile shops and proximity to Ramakrishna Theatre, sitting between Sultan Bazaar and Malakpet.",
+    "context": "Traders and shoppers in Troop Bazaar get TurboFix's doorstep phone service without pausing business at the shop — a technician comes to them instead.",
+    "nearbyAreas": [
+      "abids",
+      "koti",
+      "sultan-bazaar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ashok-nagar",
+    "name": "Ashok Nagar",
+    "pincode": "500020",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Ashok Nagar is a central Hyderabad residential locality close to Himayatnagar, well known for its concentration of coaching centres for government-job aspirants.",
+    "context": "Students and residents in Ashok Nagar get TurboFix's doorstep phone service at a convenient time — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "himayatnagar",
+      "domalguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "bagh-lingampally",
+    "name": "Bagh Lingampally",
+    "pincode": "500044",
+    "zone": "central",
+    "type": "heritage",
+    "intro": "Bagh Lingampally is a commercial and residential locality in the Himayatnagar constituency, once the grounds of a 55-acre royal palace gifted by the fifth Nizam — a remnant of which survives today as Ambedkar College.",
+    "context": "TurboFix's doorstep phone service reaches Bagh Lingampally directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "himayatnagar",
+      "narayanguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "hyderguda",
+    "name": "Hyderguda",
+    "pincode": "500048",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Hyderguda is a central Hyderabad locality near Basheerbagh and King Koti, close to the Salar Jung Museum and Lumbini Park, with a mix of commercial offices and residential apartments.",
+    "context": "TurboFix's doorstep phone service reaches Hyderguda directly — the same transparent pricing and warranty documentation used across the rest of the city.",
+    "nearbyAreas": [
+      "basheerbagh",
+      "king-koti"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "vittalwadi",
+    "name": "Vittalwadi",
+    "pincode": "500029",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Vittalwadi is a central Hyderabad locality within Narayanguda, close to Hyderguda and King Koti, reachable via Kacheguda railway station.",
+    "context": "TurboFix's doorstep phone service reaches Vittalwadi directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "narayanguda",
+      "king-koti"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "afzal-gunj",
+    "name": "Afzal Gunj",
+    "pincode": "500012",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Afzal Gunj is a busy locality on the border of central Hyderabad and the Old City, close to the Musi River and the Salar Jung Museum, serving as both a commercial and residential hub.",
+    "context": "Traders and residents in Afzal Gunj get TurboFix's doorstep phone service between shifts — a technician comes to the shop or home instead.",
+    "nearbyAreas": [
+      "abids",
+      "charminar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "badichowdi",
+    "name": "Badichowdi",
+    "pincode": "500095",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Badichowdi is a commercial locality between Abids and Koti, known for its shopping market for women's clothes, silverware, and a busy vegetable market.",
+    "context": "Shoppers and traders around Badichowdi's market get TurboFix's doorstep phone service between errands — a technician comes to the shop or home instead.",
+    "nearbyAreas": [
+      "abids",
+      "koti"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "boggulkunta",
+    "name": "Boggulkunta",
+    "pincode": "500001",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Boggulkunta is a commercial locality between Abids and Koti, home to the historic Posnett Bhavan church building of the Medak Diocese and Fernandez Maternity Hospital.",
+    "context": "TurboFix's doorstep phone service reaches Boggulkunta directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "abids",
+      "king-koti"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "chaderghat",
+    "name": "Chaderghat",
+    "pincode": "500024",
+    "zone": "south",
+    "type": "mixed",
+    "intro": "Chaderghat is one of Hyderabad's busiest central-south localities, bordering Malakpet and reachable via the nearby Malakpet and Dabirpura railway stations.",
+    "context": "TurboFix's doorstep phone service reaches Chaderghat directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "malakpet",
+      "saidabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "nayapul",
+    "name": "Nayapul",
+    "pincode": "500002",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Nayapul takes its name from a Nizam-era bridge — literally \\",
+    "context": "TurboFix's doorstep phone service reaches Nayapul's shops and homes directly — the same transparent pricing used across the rest of the city.",
+    "nearbyAreas": [
+      "charminar",
+      "afzal-gunj"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "putlibowli",
+    "name": "Putlibowli",
+    "pincode": "500095",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Putlibowli is an old-city Hyderabad locality under the Nampally assembly constituency, close to Osmania Medical College and served by the Malakpet and Dabirpura railway stations.",
+    "context": "TurboFix's doorstep phone service reaches Putlibowli directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "abids",
+      "koti"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ramkoti",
+    "name": "Ramkoti",
+    "pincode": "500001",
+    "zone": "central",
+    "type": "heritage",
+    "intro": "Ramkoti is a central Hyderabad locality between King Koti and Sultan Bazaar, home to a well-known Ram Mandir temple that gives the area its name.",
+    "context": "TurboFix's doorstep phone service reaches Ramkoti directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "king-koti",
+      "sultan-bazaar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "darussalam",
+    "name": "Darussalam",
+    "pincode": "500001",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Darussalam is a well-established residential locality in the Aghapura-Nampally area, home to the Deccan College of Engineering & Technology.",
+    "context": "TurboFix's doorstep phone service reaches Darussalam directly — the same transparent pricing and warranty documentation used across the rest of the city.",
+    "nearbyAreas": [
+      "nampally",
+      "aghapura"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "murad-nagar",
+    "name": "Murad Nagar",
+    "pincode": "500028",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Murad Nagar is a residential locality in the Asif Nagar area near Mehdipatnam, home to the Choti Masjid on Arab Lane and close to the Gudimalkapur Flower Market.",
+    "context": "TurboFix's doorstep phone service reaches Murad Nagar directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "nampally",
+      "mehdipatnam"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "red-hills",
+    "name": "Red Hills",
+    "pincode": "500004",
+    "zone": "central",
+    "type": "premium",
+    "intro": "Red Hills is an affluent central Hyderabad neighbourhood within Lakdikapul, named for the red soil of its hilly terrain and popular among IT and medical professionals for its position along NH 65 and NH 44.",
+    "context": "TurboFix's doorstep phone service reaches Red Hills directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "lakdikapul",
+      "khairatabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "seetaram-bagh",
+    "name": "Seetaram Bagh",
+    "pincode": "500006",
+    "zone": "central",
+    "type": "heritage",
+    "intro": "Seetaram Bagh (Sitaram Bagh) is an old-city locality near Mangalhat, home to the historic Sitaram Bagh Temple that gives the area its name.",
+    "context": "TurboFix's doorstep phone service reaches Seetaram Bagh directly — the same transparent pricing and warranty documentation used across the rest of the city.",
+    "nearbyAreas": [
+      "mangalhat",
+      "nampally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "anandbagh",
+    "name": "Anandbagh",
+    "pincode": "500047",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Anandbagh is a residential and commercial locality and ward in the Malkajgiri suburb of Hyderabad, reachable via the nearby Safilguda railway station.",
+    "context": "TurboFix's doorstep phone service reaches Anandbagh directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "malkajgiri",
+      "moula-ali"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "gautam-nagar",
+    "name": "Gautam Nagar",
+    "pincode": "500056",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Gautam Nagar is a residential locality and ward of the Malkajgiri suburb, connected to the rest of the city via Malkajgiri railway station and Mettuguda metro station.",
+    "context": "TurboFix's doorstep phone service reaches Gautam Nagar directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "malkajgiri"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "mirjalguda",
+    "name": "Mirjalguda",
+    "pincode": "500047",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Mirjalguda (New Mirjalguda) is a developing residential locality in eastern Hyderabad close to Malkajgiri, Mettuguda and East Marredpally, home to Chinmaya High School.",
+    "context": "TurboFix's doorstep phone service reaches Mirjalguda directly — the same trained technicians and warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "malkajgiri"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "neredmet",
+    "name": "Neredmet",
+    "pincode": "500056",
+    "zone": "north",
+    "type": "commercial",
+    "intro": "Neredmet is a residential neighbourhood in Malkajgiri mandal that serves as headquarters of the Rachakonda Police Commissionerate, one of Hyderabad's three police commissionerates.",
+    "context": "TurboFix's doorstep phone service reaches Neredmet directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "malkajgiri",
+      "safilguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "safilguda",
+    "name": "Safilguda",
+    "pincode": "500047",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Safilguda is a residential locality in Malkajgiri mandal built around Safilguda Lake (Nadimi Cheruvu), whose boundary road is styled like Hussain Sagar's Tank Bund and known locally as the Safilguda mini tank bund.",
+    "context": "TurboFix's doorstep phone service reaches Safilguda directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "malkajgiri",
+      "neredmet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "vinayak-nagar",
+    "name": "Vinayak Nagar",
+    "pincode": "500056",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Vinayak Nagar is a residential locality in Neredmet, Malkajgiri mandal, that grew out of a forested hill once called Gubadi Gutta before local settlement in the 1980s.",
+    "context": "TurboFix's doorstep phone service reaches Vinayak Nagar directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "malkajgiri",
+      "neredmet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "azampura",
+    "name": "Azampura",
+    "pincode": "500024",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Azampura is one of Hyderabad's old neighbourhoods on the banks of the Musi River, its commercial area concentrated around Masjid-e-Sahifa and known for its Hyderabadi biryani, haleem and kebab stalls.",
+    "context": "Traders and residents around Azampura's market get TurboFix's doorstep phone service between shifts — a technician comes to the shop or home instead.",
+    "nearbyAreas": [
+      "malakpet",
+      "chaderghat"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "moosarambagh",
+    "name": "Moosarambagh",
+    "pincode": "500036",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Moosarambagh is a residential locality near Malakpet served by its own Musarambagh Metro Station on the Hyderabad Metro.",
+    "context": "TurboFix's doorstep phone service reaches Moosarambagh directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "malakpet",
+      "dilsukhnagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "balanagar",
+    "name": "Balanagar",
+    "pincode": "500037",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Balanagar is a residential locality in northern Hyderabad served by the Dr. B.R. Ambedkar Balanagar Metro Station, with the long-running Shobana Theatre as a local landmark.",
+    "context": "TurboFix's doorstep phone service reaches Balanagar directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "sanath-nagar",
+      "moosapet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "bharat-nagar",
+    "name": "Bharat Nagar",
+    "pincode": "500018",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Bharat Nagar is a north-western Hyderabad neighbourhood on Sanjeeva Reddy Nagar Main Road, served by its own metro and MMTS railway station and known locally for the Hari Hara Temple.",
+    "context": "TurboFix's doorstep phone service reaches Bharat Nagar directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "sanath-nagar",
+      "moosapet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "czech-colony",
+    "name": "Czech Colony",
+    "pincode": "500018",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Czech Colony is a residential locality within Sanath Nagar, home to St. Paul's Church, established in 1965.",
+    "context": "TurboFix's doorstep phone service reaches Czech Colony directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "sanath-nagar",
+      "erragadda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "fathenagar",
+    "name": "Fathenagar",
+    "pincode": "500018",
+    "zone": "central",
+    "type": "mixed",
+    "intro": "Fathenagar is a well-established residential and industrial locality in north-west Hyderabad bordered by Sanath Nagar, Balanagar and Moosapet, known for the Fatehnagar Flyover.",
+    "context": "TurboFix's doorstep phone service reaches Fathenagar directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "sanath-nagar",
+      "erragadda",
+      "moosapet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "lothkunta",
+    "name": "Lothkunta",
+    "pincode": "500015",
+    "zone": "north",
+    "type": "heritage",
+    "intro": "Lothkunta is a suburb of the Secunderabad cantonment on the northern edge of Hyderabad, with a commercial district of restaurants and theatres inside the cantonment area.",
+    "context": "TurboFix's doorstep phone service reaches Lothkunta directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "trimulgherry",
+      "bolarum",
+      "alwal"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "venkatapuram",
+    "name": "Venkatapuram",
+    "pincode": "500010",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Venkatapuram is a locality and ward of Alwal in northern Hyderabad, home to the Sri Balaji Venkateswara Swamy Temple and Pochamma Thalli Temple.",
+    "context": "TurboFix's doorstep phone service reaches Venkatapuram directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "alwal"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "airport-colony",
+    "name": "Airport Colony",
+    "pincode": "501218",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Airport Colony is a residential locality in Shamshabad, right next to Rajiv Gandhi International Airport, serving families connected to the airport's growing workforce.",
+    "context": "TurboFix's doorstep phone service reaches Airport Colony directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "shamshabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "gollapally",
+    "name": "Gollapally",
+    "pincode": "501218",
+    "zone": "south",
+    "type": "outskirts",
+    "intro": "Gollapally is a village locality right next to Rajiv Gandhi International Airport, a mix of rural and urban settlement on Hyderabad's southern edge.",
+    "context": "TurboFix has extended its doorstep phone service coverage to Gollapally — the same service quality available in the city centre, reaching this airport-adjacent village.",
+    "nearbyAreas": [
+      "shamshabad",
+      "tukkuguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kothwalguda",
+    "name": "Kothwalguda",
+    "pincode": "501218",
+    "zone": "south",
+    "type": "outskirts",
+    "intro": "Kothwalguda is a village in Shamshabad mandal about 4 km from Shamshabad town, home to roughly 2,450 residents across 560 households.",
+    "context": "TurboFix now extends its doorstep phone service coverage to Kothwalguda — the same OEM-grade parts and warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "shamshabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "al-hasnath-colony",
+    "name": "Al Hasnath Colony",
+    "pincode": "500008",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Al Hasnath Colony is a residential locality within Tolichowki, close to Salarjung Colony and Nizam Colony in western Hyderabad.",
+    "context": "TurboFix's doorstep phone service reaches Al Hasnath Colony directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "tolichowki",
+      "jubilee-hills"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "nanal-nagar",
+    "name": "Nanal Nagar",
+    "pincode": "500008",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Nanal Nagar is a residential locality in western Hyderabad encircled by Tolichowki, Attapur, Film Nagar and Mehdipatnam, known locally for the Galaxy Theatre.",
+    "context": "TurboFix's doorstep phone service reaches Nanal Nagar directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "tolichowki",
+      "attapur",
+      "mehdipatnam"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "paramount-hills",
+    "name": "Paramount Hills",
+    "pincode": "500008",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Paramount Hills is a residential colony in Tolichowki near Golconda, close to Film Nagar and the IAS Colony area of Banjara Hills.",
+    "context": "TurboFix's doorstep phone service reaches Paramount Hills directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "tolichowki"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "chaitanya-enclave",
+    "name": "Chaitanya Enclave",
+    "pincode": "500089",
+    "zone": "west",
+    "type": "premium",
+    "intro": "Chaitanya Enclave is a premium residential pocket at the intersection of Khajaguda and Manikonda, close to the Financial District and HITEC City corridor.",
+    "context": "TurboFix's doorstep phone service reaches Chaitanya Enclave's residential towers directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "manikonda",
+      "financial-district"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "neknampur",
+    "name": "Neknampur",
+    "pincode": "500089",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Neknampur is a village locality in west Hyderabad close to Manikonda, Narsingi and Kokapet, part of the HUDA layout along Neknampur Road.",
+    "context": "TurboFix's doorstep phone service reaches Neknampur directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "manikonda",
+      "narsingi"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ou-colony",
+    "name": "OU Colony",
+    "pincode": "500089",
+    "zone": "west",
+    "type": "residential",
+    "intro": "OU Colony is a fast-developing residential hub in Shaikpet that connects through to Manikonda, close to the multi-tower Lanco Hills development.",
+    "context": "TurboFix's doorstep phone service reaches OU Colony directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "manikonda",
+      "shaikpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "balkampet",
+    "name": "Balkampet",
+    "pincode": "500038",
+    "zone": "central",
+    "type": "heritage",
+    "intro": "Balkampet is a central Hyderabad suburb near Ameerpet and Sanjeeva Reddy Nagar, best known for the Balkampet Yellamma Temple that draws devotees especially during Bonalu.",
+    "context": "TurboFix's doorstep phone service reaches Balkampet directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "begumpet",
+      "ameerpet",
+      "sr-nagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "patny",
+    "name": "Patny",
+    "pincode": "500003",
+    "zone": "north",
+    "type": "commercial",
+    "intro": "Patny (Patny Circle) is a commercial shopping hub in Secunderabad named after the historic Patny Motors showroom, and home to the 1862-founded Mehboob College where Swami Vivekananda once addressed a gathering.",
+    "context": "Shoppers and traders around Patny's saree and clothing stores get TurboFix's doorstep phone service between shifts — a technician comes to the shop or home instead.",
+    "nearbyAreas": [
+      "secunderabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "prakash-nagar",
+    "name": "Prakash Nagar",
+    "pincode": "500016",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Prakash Nagar is a central Hyderabad locality in Begumpet, built around its own metro station near Shoppers Stop.",
+    "context": "TurboFix's doorstep phone service reaches Prakash Nagar directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "begumpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "rasoolpura",
+    "name": "Rasoolpura",
+    "pincode": "500003",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Rasoolpura is a residential locality near MG Road in Secunderabad, connected to the rest of the city via its own metro station.",
+    "context": "TurboFix's doorstep phone service reaches Rasoolpura directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "begumpet",
+      "secunderabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "sindhi-colony",
+    "name": "Sindhi Colony",
+    "pincode": "500003",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Sindhi Colony is a residential locality within Begumpet, close to the Rainbow Mall and a cluster of garment factory outlets.",
+    "context": "TurboFix's doorstep phone service reaches Sindhi Colony directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "begumpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "jangammet",
+    "name": "Jangammet",
+    "pincode": "500053",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Jangammet is a developing residential locality in south Hyderabad bordered by Falaknuma and Nawab Saheb Kunta, close to the historic Taj Falaknuma Palace.",
+    "context": "TurboFix's doorstep phone service reaches Jangammet directly — the same transparent pricing used across the rest of the city.",
+    "nearbyAreas": [
+      "falaknuma",
+      "chandrayangutta"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "riyasat-nagar",
+    "name": "Riyasat Nagar",
+    "pincode": "500059",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Riyasat Nagar is a residential locality near Moin Bagh in south Hyderabad, connected to the rest of the city via the Charminar and Shalibanda metro stations.",
+    "context": "TurboFix's doorstep phone service reaches Riyasat Nagar directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "chandrayangutta",
+      "saidabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "uppuguda",
+    "name": "Uppuguda",
+    "pincode": "500053",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Uppuguda is an old-city Hyderabad locality with its own railway station, close to Yakutpura in the Charminar tahsil.",
+    "context": "TurboFix's doorstep phone service reaches Uppuguda directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "yakutpura",
+      "chandrayangutta"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "bhoiguda",
+    "name": "Bhoiguda",
+    "pincode": "500003",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Bhoiguda is a residential locality in Secunderabad bordered by Musheerabad, Chilkalguda and Sitaphalmandi, known locally for the Gas Point landmark.",
+    "context": "TurboFix's doorstep phone service reaches Bhoiguda directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "musheerabad",
+      "secunderabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "mettuguda",
+    "name": "Mettuguda",
+    "pincode": "500017",
+    "zone": "north",
+    "type": "heritage",
+    "intro": "Mettuguda is a Secunderabad neighbourhood divided into Mettuguda, Alugadda Bavi and New Mettuguda, home to the well-known Railway Hospital and its own metro station.",
+    "context": "TurboFix's doorstep phone service reaches Mettuguda directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "tarnaka",
+      "lalaguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "namalagundu",
+    "name": "Namalagundu",
+    "pincode": "500061",
+    "zone": "north",
+    "type": "heritage",
+    "intro": "Namalagundu is a residential suburb of Secunderabad named after two boulders marked with vertical lines (namalu) found here, close to the Skandagiri Temple.",
+    "context": "TurboFix's doorstep phone service reaches Namalagundu directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "padmarao-nagar",
+      "sitaphalmandi"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "rani-gunj",
+    "name": "Rani Gunj",
+    "pincode": "500003",
+    "zone": "north",
+    "type": "heritage",
+    "intro": "Rani Gunj (Ranigunj) is a busy Secunderabad locality named after the Victoria Grain Market, marked by an 1877 arch commemorating Queen Victoria's Delhi Durbar, along Mahatma Gandhi Road.",
+    "context": "Traders and residents around Rani Gunj's markets get TurboFix's doorstep phone service between shifts — a technician comes to the shop or home instead.",
+    "nearbyAreas": [
+      "secunderabad",
+      "patny"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "sikh-village",
+    "name": "Sikh Village",
+    "pincode": "500009",
+    "zone": "north",
+    "type": "heritage",
+    "intro": "Sikh Village is a small Secunderabad suburb near Tadbund and Bowenpally, home to a Gurudwara and close to the Tadbund Hanuman Temple.",
+    "context": "TurboFix's doorstep phone service reaches Sikh Village directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "tadbund",
+      "bowenpally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "darulshifa",
+    "name": "Darulshifa",
+    "pincode": "500024",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Darulshifa is an old-city Hyderabad neighbourhood founded in 1591 by Muhammad Quli Qutb Shah, the founder of Hyderabad city, close to the High Court of Telangana.",
+    "context": "TurboFix's doorstep phone service reaches Darulshifa directly — the same transparent pricing and warranty documentation used across the rest of the city.",
+    "nearbyAreas": [
+      "charminar",
+      "chaderghat"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ghansi-bazaar",
+    "name": "Ghansi Bazaar",
+    "pincode": "500002",
+    "zone": "south",
+    "type": "commercial",
+    "intro": "Ghansi Bazaar is a historic old-city market locality near Charminar, known for wholesale shops and jewellery stores close to the Char Kaman gateway.",
+    "context": "Traders and shoppers around Ghansi Bazaar get TurboFix's doorstep phone service between shifts — a technician comes to the shop or home instead.",
+    "nearbyAreas": [
+      "charminar",
+      "afzal-gunj"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "laad-bazaar",
+    "name": "Laad Bazaar",
+    "pincode": "500002",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Laad Bazaar is Hyderabad's famous lacquer-bangle market right beside Charminar, close to the Nizam-era Chowmahalla Palace.",
+    "context": "Shoppers and traders around Laad Bazaar get TurboFix's doorstep phone service between shifts — a technician comes to the shop or home instead.",
+    "nearbyAreas": [
+      "charminar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "pathergatti",
+    "name": "Pathergatti",
+    "pincode": "500002",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Pathergatti is a granite-built commercial boulevard near Charminar constructed in 1911 under the last Nizam, Mir Osman Ali Khan, originally combining ground-floor shops with first-floor residences.",
+    "context": "Traders and shoppers on Pathergatti get TurboFix's doorstep phone service between shifts — a technician comes to the shop or home instead.",
+    "nearbyAreas": [
+      "charminar",
+      "laad-bazaar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kishan-bagh",
+    "name": "Kishan Bagh",
+    "pincode": "500064",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Kishan Bagh is a residential locality in south Hyderabad under the Hussaini Alam postal head office, close to Falaknuma and Shalibanda.",
+    "context": "TurboFix's doorstep phone service reaches Kishan Bagh directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "attapur",
+      "hussaini-alam"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "mailardevpally",
+    "name": "Mailardevpally",
+    "pincode": "500005",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Mailardevpally is a residential locality near Nawab Saheb Kunta in south Hyderabad, close to Attapur and Rajendranagar.",
+    "context": "TurboFix's doorstep phone service reaches Mailardevpally directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "attapur",
+      "rajendranagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "shivrampally",
+    "name": "Shivrampally",
+    "pincode": "500052",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Shivrampally is a commercial and residential locality in south Hyderabad along the PV Narasimha Rao Expressway, home to the historic Rukn-ud-Daula lake built in 1770 and the Sardar Vallabhbhai Patel National Police Academy.",
+    "context": "TurboFix's doorstep phone service reaches Shivrampally directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "attapur",
+      "rajendranagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "suleman-nagar",
+    "name": "Suleman Nagar",
+    "pincode": "500030",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Suleman Nagar is a residential locality in the Chintalmet area of south Hyderabad, close to the PV Narasimha Rao Expressway linking Mehdipatnam-Attapur to the airport.",
+    "context": "TurboFix's doorstep phone service reaches Suleman Nagar directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "attapur",
+      "rajendranagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "upparpally",
+    "name": "Upparpally",
+    "pincode": "500030",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Upparpally is a quieter residential locality near Attapur, Rajendranagar and Mehdipatnam, connected via the PV Narasimha Rao Expressway, NH44 and the Nehru Outer Ring Road.",
+    "context": "TurboFix's doorstep phone service reaches Upparpally directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "attapur",
+      "rajendranagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "allwyn-colony",
+    "name": "Allwyn Colony",
+    "pincode": "500072",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Allwyn Colony is a residential colony on the north-west fringe of Hyderabad near Kukatpally, close to Yellamma Banda and Jagadgiri Gutta.",
+    "context": "TurboFix's doorstep phone service reaches Allwyn Colony directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "kukatpally",
+      "kphb"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "balaji-nagar",
+    "name": "Balaji Nagar",
+    "pincode": "500072",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Balaji Nagar is an established, well-connected residential neighbourhood within the larger Kukatpally belt, with direct access to two Red Line metro stations.",
+    "context": "TurboFix's doorstep phone service reaches Balaji Nagar directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "kukatpally",
+      "kphb"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "bhagya-nagar-colony",
+    "name": "Bhagya Nagar Colony",
+    "pincode": "500072",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Bhagya Nagar Colony is a residential locality near KPHB Phase 2 in Kukatpally, close to APHB Colony and Srikrishna Nagar.",
+    "context": "TurboFix's doorstep phone service reaches Bhagya Nagar Colony directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "kukatpally",
+      "kphb"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "hyder-nagar",
+    "name": "Hyder Nagar",
+    "pincode": "500072",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Hyder Nagar is a residential locality near Kukatpally reachable via the JNTU College metro station, close to Miyapur and Hafeezpet.",
+    "context": "TurboFix's doorstep phone service reaches Hyder Nagar directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "kukatpally",
+      "miyapur"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "vivekananda-nagar",
+    "name": "Vivekananda Nagar",
+    "pincode": "500072",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Vivekananda Nagar is a residential locality in Kukatpally near Balaji Nagar and Shanti Nagar, well served by both the Kukatpally and Balanagar metro stations.",
+    "context": "TurboFix's doorstep phone service reaches Vivekananda Nagar directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "kukatpally",
+      "balanagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "irrum-manzil",
+    "name": "Irrum Manzil",
+    "pincode": "500082",
+    "zone": "central",
+    "type": "heritage",
+    "intro": "Irrum Manzil is a central Hyderabad locality named after the Indo-European baroque palace built around 1870 by nobleman Nawab Safdar Jung, standing on a hillock off the Khairatabad-Panjagutta road.",
+    "context": "TurboFix's doorstep phone service reaches Irrum Manzil directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "panjagutta",
+      "somajiguda",
+      "khairatabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "dwarakapuri-colony",
+    "name": "Dwarakapuri Colony",
+    "pincode": "500082",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Dwarakapuri Colony sits inside the Khairatabad ward of central Hyderabad, its streets running toward the old Irrum Manzil palace grounds and on to Panjagutta.",
+    "context": "TurboFix's doorstep phone service reaches Dwarakapuri Colony directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "irrum-manzil",
+      "somajiguda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "naveen-nagar",
+    "name": "Naveen Nagar",
+    "pincode": "500004",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Naveen Nagar occupies a residential stretch of Khairatabad next to Anand Nagar Colony, a short walk from the Khairatabad metro station.",
+    "context": "TurboFix's doorstep phone service reaches Naveen Nagar directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "khairatabad",
+      "banjara-hills"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "venkataramana-colony",
+    "name": "Venkataramana Colony",
+    "pincode": "500004",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Venkataramana Colony is one of several residential pockets making up Khairatabad, positioned near the old Irrum Manzil Colony area with Khairatabad railway station a short ride away.",
+    "context": "TurboFix's doorstep phone service reaches Venkataramana Colony directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "khairatabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "anjaiah-nagar",
+    "name": "Anjaiah Nagar",
+    "pincode": "500032",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Anjaiah Nagar is a residential locality in Gachibowli close to Laxmi Cyber City, Indira Nagar and Kondapur.",
+    "context": "TurboFix's doorstep phone service reaches Anjaiah Nagar directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "gachibowli",
+      "kondapur"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "gowlidoddi",
+    "name": "Gowlidoddi",
+    "pincode": "500075",
+    "zone": "west",
+    "type": "outskirts",
+    "intro": "Gowlidoddi is a developing village locality on the western edge of Hyderabad near Gachibowli, Nanakramguda and the Financial District.",
+    "context": "TurboFix's doorstep phone service now reaches Gowlidoddi — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "gachibowli",
+      "nanakramguda",
+      "financial-district"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "indira-nagar",
+    "name": "Indira Nagar",
+    "pincode": "500032",
+    "zone": "west",
+    "type": "premium",
+    "intro": "Indira Nagar is a well-connected residential locality in Gachibowli bordering HITEC City and Madhapur, along the Old Mumbai Highway and ISB Road.",
+    "context": "TurboFix's doorstep phone service reaches Indira Nagar directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "gachibowli",
+      "madhapur"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "khajaguda",
+    "name": "Khajaguda",
+    "pincode": "500008",
+    "zone": "west",
+    "type": "premium",
+    "intro": "Khajaguda is a commercial and residential locality in the Gachibowli suburb, built around Khajaguda Lake (Khajaguda Talab) and the adjoining Khajaguda Hills (Fakhruddin Gutta).",
+    "context": "TurboFix's doorstep phone service reaches Khajaguda's residential towers directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "gachibowli",
+      "nanakramguda",
+      "manikonda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "nallagandla",
+    "name": "Nallagandla",
+    "pincode": "500019",
+    "zone": "west",
+    "type": "premium",
+    "intro": "Nallagandla is a posh residential locality in north-western Hyderabad's Serilingampally mandal, built around the natural, rain-fed Nallagandla Lake.",
+    "context": "TurboFix's doorstep phone service reaches Nallagandla directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "lingampally",
+      "tellapur",
+      "gachibowli"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ferozguda",
+    "name": "Ferozguda",
+    "pincode": "500011",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Ferozguda is a Balanagar-mandal neighbourhood near Bowenpally, one of several Hyderabad localities named during the Nizam era.",
+    "context": "TurboFix's doorstep phone service reaches Ferozguda directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "bowenpally",
+      "balanagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "hasmathpet",
+    "name": "Hasmathpet",
+    "pincode": "500009",
+    "zone": "north",
+    "type": "heritage",
+    "intro": "Hasmathpet is a small locality under Old Bowenpally in Secunderabad's North Zone, home to the medieval Hasmathpet cairns archaeological site.",
+    "context": "TurboFix's doorstep phone service reaches Hasmathpet directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "bowenpally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "batasingaram",
+    "name": "Batasingaram",
+    "pincode": "501512",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Batasingaram is a village locality in south Hyderabad's Abdullapurmet mandal, about 16 km from Hayathnagar and close to Ramoji Film City and the Koheda Gutta hill.",
+    "context": "TurboFix has extended its doorstep phone service coverage to Batasingaram — the same service quality available in the city centre, reaching this outer south-eastern village.",
+    "nearbyAreas": [
+      "hayathnagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kuntloor",
+    "name": "Kuntloor",
+    "pincode": "501505",
+    "zone": "outskirts",
+    "type": "heritage",
+    "intro": "Kuntloor is a village locality in Abdullapurmet mandal near Hayathnagar, home to the Kashi Bugga Ramalayam temple built before the 16th century.",
+    "context": "TurboFix's doorstep phone service now reaches Kuntloor — the same OEM-grade parts and warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "hayathnagar",
+      "pasumamula"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "pasumamula",
+    "name": "Pasumamula",
+    "pincode": "501505",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Pasumamula is a village in Hayathnagar mandal close to Kuntloor and Pedda Amberpet, along the Vijayawada Highway.",
+    "context": "TurboFix's doorstep phone service now reaches Pasumamula — the same service quality available in the city centre, extended to this south-eastern village.",
+    "nearbyAreas": [
+      "hayathnagar",
+      "kuntloor",
+      "pedda-amberpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "pedda-amberpet",
+    "name": "Pedda Amberpet",
+    "pincode": "501505",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Pedda Amberpet is a village locality in south-eastern Hyderabad's Hayathnagar mandal, close to Ramoji Film City, Sanghi Temple and Mini Shilparamam Park.",
+    "context": "TurboFix's doorstep phone service now reaches Pedda Amberpet — the same OEM-grade parts and warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "hayathnagar",
+      "pasumamula"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "gayatri-hills",
+    "name": "Gayatri Hills",
+    "pincode": "500033",
+    "zone": "central",
+    "type": "premium",
+    "intro": "Gayatri Hills is a residential locality within Jubilee Hills, next to Nandagiri Hills and Journalist Colony.",
+    "context": "TurboFix's doorstep phone service reaches Gayatri Hills directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "jubilee-hills"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "madhura-nagar",
+    "name": "Madhura Nagar",
+    "pincode": "500038",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Madhura Nagar is an established residential locality near SR Nagar and Ameerpet, built around its own metro station close to GVK One Mall.",
+    "context": "TurboFix's doorstep phone service reaches Madhura Nagar directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "sr-nagar",
+      "ameerpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "hanuman-nagar",
+    "name": "Hanuman Nagar",
+    "pincode": "500084",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Hanuman Nagar sits in the Kondapur residential belt, a short stretch from Raghavendra Colony and the Shilparamam cultural centre.",
+    "context": "TurboFix's doorstep phone service reaches Hanuman Nagar directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "kondapur",
+      "hafeezpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "masjid-banda",
+    "name": "Masjid Banda",
+    "pincode": "500084",
+    "zone": "west",
+    "type": "premium",
+    "intro": "Masjid Banda is a residential locality in Kondapur near Gautami Enclave and Camelot Layout, within a short drive of major IT hubs.",
+    "context": "TurboFix's doorstep phone service reaches Masjid Banda directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "kondapur",
+      "hafeezpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "raghavendra-colony",
+    "name": "Raghavendra Colony",
+    "pincode": "500084",
+    "zone": "west",
+    "type": "premium",
+    "intro": "Raghavendra Colony is a Kondapur neighbourhood near Hanuman Nagar, within easy reach of Shilparamam and AMB Cinemas.",
+    "context": "TurboFix's doorstep phone service reaches Raghavendra Colony directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "kondapur"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "raja-rajeshwari-colony",
+    "name": "Raja Rajeshwari Colony",
+    "pincode": "500084",
+    "zone": "west",
+    "type": "premium",
+    "intro": "Raja Rajeshwari Colony is a well-developed residential locality in Kondapur near Hafeezpet, Nallagandla and Madhapur, close to the Kotla Vijayabhaskara Reddy Botanical Garden.",
+    "context": "TurboFix's doorstep phone service reaches Raja Rajeshwari Colony directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "kondapur",
+      "hafeezpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "bongloor",
+    "name": "Bongloor",
+    "pincode": "501510",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Bongloor is a village locality near Ibrahimpatnam in Rangareddy district, about 5 km from central Hyderabad.",
+    "context": "TurboFix has extended its doorstep phone service coverage to Bongloor — the same service quality available in the city centre, reaching this outer village.",
+    "nearbyAreas": [
+      "adibatla",
+      "ibrahimpatnam"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "raviryal",
+    "name": "Raviryal",
+    "pincode": "501359",
+    "zone": "outskirts",
+    "type": "outskirts",
+    "intro": "Raviryal is a village near Adibatla in Maheshwaram mandal, home to a semiconductor FAB City facility, the Aga Khan Academy, and the 216-foot Statue of Equality.",
+    "context": "TurboFix's doorstep phone service now reaches Raviryal — the same OEM-grade parts and warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "adibatla"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ahmed-nagar",
+    "name": "Ahmed Nagar",
+    "pincode": "",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Ahmed Nagar is a residential sub-locality of Banjara Hills in central Hyderabad, a few kilometres from Masab Tank and the Nampally railway station.",
+    "context": "TurboFix's doorstep phone service reaches Ahmed Nagar directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "banjara-hills",
+      "masab-tank"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ayyappa-society",
+    "name": "Ayyappa Society",
+    "pincode": "500081",
+    "zone": "west",
+    "type": "tech",
+    "intro": "Ayyappa Society is a residential pocket within Madhapur, tucked between Arunodaya Colony and Megha Hills at the heart of HITEC City.",
+    "context": "TurboFix's doorstep phone service reaches Ayyappa Society directly — the same trained technicians used across the rest of the HITEC City area.",
+    "nearbyAreas": [
+      "madhapur",
+      "hitech-city"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "image-gardens",
+    "name": "Image Gardens",
+    "pincode": "500081",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Image Gardens is a residential locality along Image Gardens Road in Madhapur's VIP Hills / Silicon Valley area, close to Surya Enclave and Megha Hills.",
+    "context": "TurboFix's doorstep phone service reaches Image Gardens directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "madhapur",
+      "hitech-city"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "patrika-nagar",
+    "name": "Patrika Nagar",
+    "pincode": "500081",
+    "zone": "west",
+    "type": "tech",
+    "intro": "Patrika Nagar is a residential suburb within HITEC City, about 2 km from Madhapur's IT hubs via 100 Feet Road.",
+    "context": "TurboFix's doorstep phone service reaches Patrika Nagar directly — the same trained technicians used across the rest of the HITEC City area.",
+    "nearbyAreas": [
+      "madhapur",
+      "hitech-city"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "vittal-rao-nagar",
+    "name": "Vittal Rao Nagar",
+    "pincode": "500081",
+    "zone": "west",
+    "type": "premium",
+    "intro": "Vittal Rao Nagar sits inside Madhapur near Doctor Colony and Megha Hills, part of the dense HITEC City residential core.",
+    "context": "TurboFix's doorstep phone service reaches Vittal Rao Nagar directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "madhapur",
+      "hitech-city"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kothaguda",
+    "name": "Kothaguda",
+    "pincode": "500084",
+    "zone": "west",
+    "type": "tech",
+    "intro": "Kothaguda sits at the Kothaguda Junction transition zone between Kondapur and HITEC City, bordering Kukatpally and Hafeezpet.",
+    "context": "TurboFix's doorstep phone service reaches Kothaguda directly — the same trained technicians used across the rest of the IT corridor.",
+    "nearbyAreas": [
+      "kondapur"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "deepthisree-nagar",
+    "name": "Deepthisree Nagar",
+    "pincode": "500049",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Deepthisree Nagar is a residential locality in Miyapur off the Old Mumbai Highway, with its own dedicated bus station.",
+    "context": "TurboFix's doorstep phone service reaches Deepthisree Nagar directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "miyapur",
+      "chandanagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "madinaguda",
+    "name": "Madinaguda",
+    "pincode": "500049",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Madinaguda is a well-established locality on NH-9, sitting between Chandanagar, Hafeezpet and Miyapur.",
+    "context": "TurboFix's doorstep phone service reaches Madinaguda directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "chandanagar",
+      "hafeezpet",
+      "miyapur"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "bowrampet",
+    "name": "Bowrampet",
+    "pincode": "500043",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Bowrampet is a fast-growing residential and commercial suburb in north-west Hyderabad, close to Bachupally and the Outer Ring Road.",
+    "context": "TurboFix's doorstep phone service reaches Bowrampet directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "bachupally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "suraram",
+    "name": "Suraram",
+    "pincode": "500055",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Suraram is an established residential locality with its own GHMC ward, centred on the well-known Suraram Crossroads near Jeedimetla.",
+    "context": "TurboFix's doorstep phone service reaches Suraram directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "jeedimetla"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "gundlapochampally",
+    "name": "Gundlapochampally",
+    "pincode": "",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Gundlapochampally is its own municipality near Kompally, formed from five merged gram panchayats and served by its own railway station.",
+    "context": "TurboFix's doorstep phone service reaches Gundlapochampally directly — the same trained technicians used across the rest of the city.",
+    "nearbyAreas": [
+      "kompally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "pet-basheerabad",
+    "name": "Pet Basheerabad",
+    "pincode": "500055",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Pet Basheerabad is a long-established locality in the Suchitra–Kompally corridor, named after a Nizam-era prince.",
+    "context": "TurboFix's doorstep phone service reaches Pet Basheerabad directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "suchitra",
+      "kompally"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "ac-guards",
+    "name": "AC Guards",
+    "pincode": "500004",
+    "zone": "central",
+    "type": "heritage",
+    "intro": "AC Guards is a historic Khairatabad-area locality named for the African Cavalry Guards once stationed there under the Nizam's forces.",
+    "context": "TurboFix's doorstep phone service reaches AC Guards directly — the same trained technicians used across the rest of central Hyderabad.",
+    "nearbyAreas": [
+      "khairatabad"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "saifabad",
+    "name": "Saifabad",
+    "pincode": "",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Saifabad is a central Hyderabad locality adjoining Khairatabad and Lakdikapul, home to the well-known Ravindra Bharathi auditorium.",
+    "context": "TurboFix's doorstep phone service reaches Saifabad directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "khairatabad",
+      "lakdikapul"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "jahanuma",
+    "name": "Jahanuma",
+    "pincode": "500053",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Jahanuma is a former Paigah palace estate turned residential locality next to Falaknuma Palace, with surviving century-old gate structures.",
+    "context": "TurboFix's doorstep phone service reaches Jahanuma directly — the same trained technicians used across the rest of the Old City.",
+    "nearbyAreas": [
+      "falaknuma"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "nawab-saheb-kunta",
+    "name": "Nawab Saheb Kunta",
+    "pincode": "500053",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Nawab Saheb Kunta is an established Old City neighbourhood near Falaknuma with its own GHMC ward, developed since the late 1970s.",
+    "context": "TurboFix's doorstep phone service reaches Nawab Saheb Kunta directly — the same 6-month warranty available across the rest of the Old City.",
+    "nearbyAreas": [
+      "falaknuma",
+      "bahadurpura"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "doodh-bowli",
+    "name": "Doodh Bowli",
+    "pincode": "500064",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Doodh Bowli is a residential locality in Bahadurpura near the Falaknuma and Huppuguda railway stations.",
+    "context": "TurboFix's doorstep phone service reaches Doodh Bowli directly — the same 6-month warranty available across the rest of the Old City.",
+    "nearbyAreas": [
+      "bahadurpura"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "gowlipura",
+    "name": "Gowlipura",
+    "pincode": "500065",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Gowlipura is an established Old City locality in Bahadurpura near Lal Darwaza, with historic markets and mosques.",
+    "context": "TurboFix's doorstep phone service reaches Gowlipura directly — the same trained technicians used across the rest of the Old City.",
+    "nearbyAreas": [
+      "bahadurpura"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "champapet",
+    "name": "Champapet",
+    "pincode": "500079",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Champapet is a sizable residential locality neighbouring Santoshnagar, with its own distinct pincode.",
+    "context": "TurboFix's doorstep phone service reaches Champapet directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "santoshnagar",
+      "saroor-nagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "talabchanchalam",
+    "name": "Talabchanchalam",
+    "pincode": "",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Talabchanchalam is a large, long-established Old City locality under the Yakutpura constituency, named for its former water reservoirs.",
+    "context": "TurboFix's doorstep phone service reaches Talabchanchalam directly — the same trained technicians used across the rest of the Old City.",
+    "nearbyAreas": [
+      "yakutpura",
+      "charminar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "lingojiguda",
+    "name": "Lingojiguda",
+    "pincode": "500035",
+    "zone": "east",
+    "type": "residential",
+    "intro": "Lingojiguda is a residential neighbourhood near Saroor Nagar, grouped with Brindavan Colony and Trimurti Colony along Karmanghat Road.",
+    "context": "Booking a technician here means Lingojiguda residents skip the trip toward busier Saroor Nagar shops for a screen or battery job.",
+    "nearbyAreas": [
+      "saroor-nagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "chengicherla",
+    "name": "Chengicherla",
+    "pincode": "",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Chengicherla is a former village now merged into Boduppal Municipal Corporation, known locally for its abattoir facility.",
+    "context": "TurboFix's doorstep technicians cover Chengicherla as part of the Boduppal service area — no trip into central Hyderabad needed for a device visit.",
+    "nearbyAreas": [
+      "boduppal"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "aliabad",
+    "name": "Aliabad",
+    "pincode": "500053",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Aliabad is a historic Old City neighbourhood on the Falaknuma–Charminar road, about 2.5 km from Charminar itself.",
+    "context": "The centuries-old Aliabad Sarai marks this stretch of the old city, where TurboFix's technicians now make doorstep visits instead of residents travelling toward Charminar for a screen or battery job.",
+    "nearbyAreas": [
+      "falaknuma"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "kalapathar",
+    "name": "Kalapathar",
+    "pincode": "500058",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Kalapathar is an established Old City neighbourhood within the Bahadurpura assembly constituency, near Tadbun and Ansari Road.",
+    "context": "Families around Kalapathar get TurboFix's doorstep visit without a trip toward Bahadurpura's busier lanes for a screen or battery job.",
+    "nearbyAreas": [
+      "bahadurpura"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "puranapul",
+    "name": "Puranapul",
+    "pincode": "500006",
+    "zone": "south",
+    "type": "heritage",
+    "intro": "Puranapul is an Old City locality named for the historic Puranapul Bridge across the Musi River, near Bahadurpura.",
+    "context": "TurboFix reaches Puranapul directly with the same doorstep visit standard used across the rest of the Old City — no trip toward the bridge crossing needed.",
+    "nearbyAreas": [
+      "bahadurpura"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "isnapur",
+    "name": "Isnapur",
+    "pincode": "502307",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Isnapur is a municipality near Patancheru in Sangareddy district, upgraded from census town to full municipal status in 2025.",
+    "context": "TurboFix's coverage now extends to Isnapur alongside the rest of the Patancheru corridor, bringing a technician to the door instead of a trip toward the city.",
+    "nearbyAreas": [
+      "patancheru"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "pashamylaram",
+    "name": "Pashamylaram",
+    "pincode": "502307",
+    "zone": "west",
+    "type": "residential",
+    "intro": "Pashamylaram is a village with its own Gram Panchayat in Patancheru mandal, Sangareddy district.",
+    "context": "Residents and workers around Pashamylaram get the same doorstep visit standard TurboFix runs across the rest of the Patancheru corridor.",
+    "nearbyAreas": [
+      "patancheru"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "jambagh",
+    "name": "Jambagh",
+    "pincode": "",
+    "zone": "central",
+    "type": "commercial",
+    "intro": "Jambagh is its own GHMC ward adjoining Abids, historically home to Hyderabad's flower market before it relocated to Gudimalkapur in 2009.",
+    "context": "Traders and residents around Jambagh get TurboFix's doorstep visit between shifts — a technician comes to the shop or home instead.",
+    "nearbyAreas": [
+      "abids"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "snehapuri-colony",
+    "name": "Snehapuri Colony",
+    "pincode": "500035",
+    "zone": "east",
+    "type": "residential",
+    "intro": "Snehapuri Colony is a residential pocket near Kothapet and RK Puram, within the Saroornagar postal circle.",
+    "context": "TurboFix's doorstep phone service reaches Snehapuri Colony directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "kothapet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "vengal-rao-nagar",
+    "name": "Vengal Rao Nagar",
+    "pincode": "500038",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Vengal Rao Nagar is its own GHMC ward (Ward 99), sitting centrally between Ameerpet, SR Nagar and Panjagutta.",
+    "context": "TurboFix's doorstep phone service reaches Vengal Rao Nagar directly — the same trained technicians used across the rest of central Hyderabad.",
+    "nearbyAreas": [
+      "ameerpet",
+      "sr-nagar",
+      "panjagutta"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "moti-nagar",
+    "name": "Moti Nagar",
+    "pincode": "",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Moti Nagar is a residential neighbourhood adjoining Erragadda, Borabanda and Sanathnagar, known locally for its film and TV studios.",
+    "context": "TurboFix's doorstep phone service reaches Moti Nagar directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "erragadda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "yellareddyguda",
+    "name": "Yellareddyguda",
+    "pincode": "500073",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Yellareddyguda sits directly between Panjagutta, Ameerpet and Srinagar Colony — a distinct locality from the unrelated Yellareddyguda near ECIL.",
+    "context": "TurboFix's doorstep phone service reaches Yellareddyguda directly — the same OEM-grade parts and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "panjagutta",
+      "ameerpet"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "chilkanagar",
+    "name": "Chilkanagar",
+    "pincode": "500039",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Chilkanagar is its own GHMC ward (Ward 7) adjoining Uppal, grouped with Swaroopnagar Colony and Adarsh Nagar.",
+    "context": "TurboFix's doorstep phone service reaches Chilkanagar directly — the same trained technicians used across the rest of the city.",
+    "nearbyAreas": [
+      "uppal"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "medipally",
+    "name": "Medipally",
+    "pincode": "",
+    "zone": "north",
+    "type": "residential",
+    "intro": "Medipally is the headquarters of its own mandal in Medchal-Malkajgiri district, inside the Outer Ring Road near Uppal and Ghatkesar.",
+    "context": "TurboFix's doorstep phone service reaches Medipally directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "uppal"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "borabanda",
+    "name": "Borabanda",
+    "pincode": "500018",
+    "zone": "central",
+    "type": "residential",
+    "intro": "Borabanda is the headquarters of its own GHMC circle spanning five wards, directly adjoining Erragadda.",
+    "context": "TurboFix's doorstep phone service reaches Borabanda directly — the same trained technicians and 6-month warranty used across the rest of the city.",
+    "nearbyAreas": [
+      "erragadda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "prem-nagar",
+    "name": "Prem Nagar",
+    "pincode": "500018",
+    "zone": "central",
+    "type": "residential",
+    "intro": "This Prem Nagar sits inside Erragadda near the NH44 corridor — one of many places sharing the name across India, but the only one on TurboFix's Hyderabad coverage map.",
+    "context": "Families around Prem Nagar get TurboFix's doorstep visit without a trip toward busier Erragadda shops for a screen or battery job.",
+    "nearbyAreas": [
+      "erragadda"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "budwel",
+    "name": "Budwel",
+    "pincode": "",
+    "zone": "south",
+    "type": "residential",
+    "intro": "Budwel (also spelled Budvel) is a census village in Rajendranagar mandal, anchored by its own railway station.",
+    "context": "TurboFix's doorstep phone service reaches Budwel directly — the same 6-month warranty available across the rest of the city.",
+    "nearbyAreas": [
+      "rajendranagar"
+    ],
+    "hasStatusDraft": false
+  },
+  {
+    "slug": "new-maruthi-nagar",
+    "name": "New Maruthi Nagar",
+    "pincode": "500060",
+    "zone": "east",
+    "type": "residential",
+    "intro": "New Maruthi Nagar sits near Chaitanyapuri and Dilsukhnagar — distinct from the unrelated Maruthi Nagar near HMT Colony in north Hyderabad.",
+    "context": "TurboFix's doorstep phone service reaches New Maruthi Nagar directly — the same trained technicians used across the rest of the city.",
+    "nearbyAreas": [
+      "dilsukhnagar"
+    ],
+    "hasStatusDraft": false
+  }
+]

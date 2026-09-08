@@ -19,9 +19,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const titleServices = area.popularServices.slice(0, 2).join(" & ");
 
   return {
-    title: `Mobile Service in ${area.name}, Hyderabad — ${titleServices} | TurboFix`,
-    description: `TurboFix doorstep mobile service in ${area.name}, Hyderabad. ${area.intro} Book same-day service — trained technicians, OEM parts, 6-month warranty.`,
+    title: `Doorstep Mobile Service in ${area.name}, Hyderabad — ${titleServices}`,
+    description: `TurboFix provides independent doorstep mobile-device servicing in ${area.name}, Hyderabad. ${area.intro} Book same-day service — trained technicians, OEM parts, 6-month warranty.`,
     alternates: { canonical: `https://turbofix.in/locations/${area.slug}` },
+    // Draft locations still build (so they're reviewable at their URL) but
+    // stay out of the index and off the sitemap until marked published —
+    // see getPublishedLocations() in data/locations.ts.
+    ...(area.status === "draft" && { robots: { index: false, follow: false } }),
     openGraph: {
       title: `Mobile Service in ${area.name} Hyderabad | TurboFix`,
       description: `Doorstep mobile service in ${area.name}. ${area.context} Professional service with 6-month warranty.`,

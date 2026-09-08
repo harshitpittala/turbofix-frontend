@@ -33,13 +33,15 @@ export const metadata: Metadata = {
     template: "%s | TurboFix",
   },
   description:
-    "TurboFix — doorstep mobile service in Hyderabad. Screen replacement, battery replacement, charging port service, water damage, iPhone & Samsung service. Trained technicians, OEM parts, 6-month warranty. Book now!",
+    "TurboFix — doorstep mobile repair and service in Hyderabad. Screen replacement, battery replacement, charging port service, water damage, iPhone & Samsung repair. Trained technicians, OEM parts, 6-month warranty. Book now!",
   keywords: [
     "mobile service hyderabad", "doorstep mobile service hyderabad",
-    "iphone service hyderabad", "samsung service hyderabad",
+    "mobile repair hyderabad", "mobile repair near me",
+    "phone repair near me", "doorstep mobile repair hyderabad",
+    "iphone service hyderabad", "iphone repair near me", "samsung service hyderabad",
     "oneplus service hyderabad", "realme service hyderabad",
-    "phone screen replacement hyderabad", "battery replacement hyderabad",
-    "charging port service hyderabad", "water damage service hyderabad",
+    "phone screen replacement hyderabad", "mobile screen replacement near me", "battery replacement hyderabad",
+    "phone battery replacement near me", "charging port service hyderabad", "water damage service hyderabad",
     "mobile service near me", "phone service at home hyderabad",
     "same day mobile service", "mobile technician at home",
     "smartphone service hyderabad", "doorstep phone service",
@@ -56,7 +58,7 @@ export const metadata: Metadata = {
     url: "https://turbofix.in",
     title: "TurboFix — Mobile Service at Your Doorstep | Hyderabad",
     description:
-      "Professional doorstep mobile service in Hyderabad. Screen, battery, charging port, water damage service for iPhone, Samsung, OnePlus & more. OEM parts, 6-month warranty.",
+      "Professional doorstep mobile repair and service in Hyderabad. Screen, battery, charging port, water damage service for iPhone, Samsung, OnePlus & more. OEM parts, 6-month warranty.",
     siteName: "TurboFix",
     images: [{
       url: "https://turbofix.in/og-image.jpg",
@@ -110,7 +112,7 @@ const localBusinessSchema = {
   name: "TurboFix",
   alternateName: ["TurboFix Mobile Service", "TurboFix Hyderabad"],
   description:
-    "TurboFix is a specialized electronics and mobile phone service studio in Hyderabad. We provide doorstep mobile screen replacement, cell phone battery replacement, charging port troubleshooting, and service for Apple iPhone, Samsung Galaxy, OnePlus, and Android devices.",
+    "TurboFix is a specialized electronics and mobile phone repair and service studio in Hyderabad. We provide doorstep mobile screen replacement, cell phone battery replacement, charging port troubleshooting, and repair for Apple iPhone, Samsung Galaxy, OnePlus, and Android devices.",
   url: "https://turbofix.in",
   logo: {
     "@type": "ImageObject",

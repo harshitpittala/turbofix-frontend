@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import PrivacyPageClient from "./PrivacyPageClient";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — TurboFix",
+  title: "Privacy Policy",
   description:
     "TurboFix Privacy Policy. Learn how we collect, use, store, process and protect your personal information when you use our mobile service in Hyderabad.",
   alternates: { canonical: "https://turbofix.in/privacy" },

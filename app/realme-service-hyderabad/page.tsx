@@ -8,7 +8,7 @@ export function generateMetadata(): Metadata {
   const page = getBrandCityPageBySlug(SLUG);
   if (!page) return { title: "Not Found" };
   return {
-    title: `${page.h1} — Doorstep Service | TurboFix`,
+    title: `${page.h1} — Repair & Doorstep Service`,
     description: `${page.intro.slice(0, 160)}...`,
     keywords: page.keywords,
     alternates: { canonical: `https://turbofix.in/${SLUG}` },
