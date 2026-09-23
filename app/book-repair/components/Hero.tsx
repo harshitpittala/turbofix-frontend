@@ -5,6 +5,10 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { MapPin, Star, ShieldCheck, BadgeCheck, ArrowRight } from "lucide-react";
 
+// Festival promo (Ganesh Chaturthi 2026) ended — hidden, not deleted, so the
+// artwork/badge can be reused for the next campaign. Set true to show again.
+const SHOW_FESTIVAL_PROMO = false;
+
 const trustBadges = [
   { icon: Star, label: "4.9 Google Rating", color: "text-amber-500" },
   { icon: ShieldCheck, label: "6-Month Warranty", color: "text-emerald-700" },
@@ -55,26 +59,28 @@ export default function Hero() {
         </motion.div>
 
         <div className="relative flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-5 mb-2">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.7, y: 24 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1, type: "spring", stiffness: 180 }}
-            className="relative shrink-0 order-first sm:self-end sm:-mb-2"
-          >
-            <div
-              className="absolute inset-0 -z-10 scale-[1.6] rounded-full blur-2xl opacity-70"
-              style={{ background: "radial-gradient(circle, #FDE68A 0%, rgba(253,230,138,0) 70%)" }}
-              aria-hidden="true"
-            />
-            <Image
-              src="/images/promo/ganesh-chaturthi.png"
-              alt="Ganesh Chaturthi special offer"
-              width={220}
-              height={244}
-              priority
-              className="h-28 w-auto sm:h-36 md:h-44 object-contain drop-shadow-xl"
-            />
-          </motion.div>
+          {SHOW_FESTIVAL_PROMO && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.7, y: 24 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1, type: "spring", stiffness: 180 }}
+              className="relative shrink-0 order-first sm:self-end sm:-mb-2"
+            >
+              <div
+                className="absolute inset-0 -z-10 scale-[1.6] rounded-full blur-2xl opacity-70"
+                style={{ background: "radial-gradient(circle, #FDE68A 0%, rgba(253,230,138,0) 70%)" }}
+                aria-hidden="true"
+              />
+              <Image
+                src="/images/promo/ganesh-chaturthi.png"
+                alt="Ganesh Chaturthi special offer"
+                width={220}
+                height={244}
+                priority
+                className="h-28 w-auto sm:h-36 md:h-44 object-contain drop-shadow-xl"
+              />
+            </motion.div>
+          )}
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -89,25 +95,29 @@ export default function Hero() {
             In 30 Mins.
           </motion.h1>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.35, type: "spring", stiffness: 220 }}
-            className="absolute -top-8 sm:-top-10 right-0 sm:right-0 md:right-2"
-          >
-            <DiscountTag className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24" />
-          </motion.div>
+          {SHOW_FESTIVAL_PROMO && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.35, type: "spring", stiffness: 220 }}
+              className="absolute -top-8 sm:-top-10 right-0 sm:right-0 md:right-2"
+            >
+              <DiscountTag className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24" />
+            </motion.div>
+          )}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-white mb-5 shadow-md shadow-red-600/20"
-          style={{ background: "linear-gradient(135deg,#F97316,#DC2626)" }}
-        >
-          🪔 Ganesh Chaturthi Special — Flat 15% Off This Week
-        </motion.div>
+        {SHOW_FESTIVAL_PROMO && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-white mb-5 shadow-md shadow-red-600/20"
+            style={{ background: "linear-gradient(135deg,#F97316,#DC2626)" }}
+          >
+            🪔 Ganesh Chaturthi Special — Flat 15% Off This Week
+          </motion.div>
+        )}
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}

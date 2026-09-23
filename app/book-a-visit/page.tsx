@@ -6,7 +6,7 @@ import { bookRepairFaqs } from "@/data/bookRepairFaqs";
 export const metadata: Metadata = {
   title: "Book a Doorstep Visit in Hyderabad",
   description:
-    "Book a TurboFix doorstep visit in minutes. Same-day appointments, OEM-grade parts, 6-month warranty, all brands supported across Hyderabad.",
+    "Book a TurboFix doorstep visit in minutes. Same-day slots, OEM-grade parts, 6-month warranty. Independent service — not affiliated with any manufacturer.",
   alternates: { canonical: "https://turbofix.in/book-a-visit" },
   openGraph: {
     title: "Book a Doorstep Visit | TurboFix Hyderabad",
