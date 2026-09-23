@@ -4,6 +4,8 @@
 // data/locationInventory.ts — regenerate it with
 // `node scripts/build-location-inventory.js` after adding an entry here.
 
+import localityMerges from "./locality-merges.json";
+
 export type AreaType = "tech" | "premium" | "residential" | "commercial" | "heritage" | "outskirts" | "student" | "mixed";
 export type FaqSet  = "tech" | "premium" | "family" | "commercial" | "heritage" | "outskirts";
 
@@ -4747,7 +4749,52 @@ export function getLocationBySlug(slug: string): LocationData | undefined {
 // and internal link surfaces, and gets a noindex robots tag — see
 // app/locations/[area]/page.tsx and app/sitemap.ts.
 export function getPublishedLocations(): LocationData[] {
-  return locationData.filter((l) => l.status !== "draft");
+  return locationData.filter((l) => l.status !== "draft" && !isMergedLocality(l.slug));
+}
+
+// ── Micro-locality consolidation (approved 23 Sep 2026) ─────────────────────
+// Small neighbourhoods that Google declined to index as standalone pages are
+// folded into a parent area page. Their URL 301-redirects to the parent (see
+// next.config.mjs), they leave the XML sitemap, and their name, PIN code and
+// local details are shown in the parent's "Areas We Cover" section so no
+// Hyderabad coverage is lost. Source of truth: data/locality-merges.json
+// (old slug → parent slug). A parent is never itself merged (no chains).
+export const MERGED_LOCALITIES: Record<string, string> = localityMerges as Record<string, string>;
+
+export function isMergedLocality(slug: string): boolean {
+  return Object.prototype.hasOwnProperty.call(MERGED_LOCALITIES, slug);
+}
+
+/** Maps a merged micro-locality slug to its parent page; other slugs unchanged. */
+export function resolveLocalitySlug(slug: string): string {
+  return MERGED_LOCALITIES[slug] ?? slug;
+}
+
+/** Micro-localities folded into this parent page, A–Z. */
+export function getCoveredAreas(parentSlug: string): LocationData[] {
+  return locationData
+    .filter((l) => MERGED_LOCALITIES[l.slug] === parentSlug)
+    .sort((a, b) => a.name.localeCompare(b.name));
+}
+
+/**
+ * Nearby standalone area pages for internal linking. Uses the page's own
+ * nearbyAreas, then the nearbyAreas of the micro-localities folded into it,
+ * then pages that list this area as nearby — all resolved to live pages,
+ * de-duplicated, never the page itself.
+ */
+export function getNearbyAreaPages(area: LocationData, max = 8): LocationData[] {
+  const out: string[] = [];
+  const add = (slug: string) => {
+    const s = resolveLocalitySlug(slug);
+    if (s !== area.slug && !out.includes(s) && getLocationBySlug(s) && !isMergedLocality(s)) out.push(s);
+  };
+  area.nearbyAreas.forEach(add);
+  getCoveredAreas(area.slug).forEach((c) => c.nearbyAreas.forEach(add));
+  locationData
+    .filter((l) => !isMergedLocality(l.slug) && l.nearbyAreas.some((n) => resolveLocalitySlug(n) === area.slug))
+    .forEach((l) => add(l.slug));
+  return out.slice(0, max).map((s) => getLocationBySlug(s)!).filter(Boolean);
 }
 
 export const zoneLabels: Record<LocationData["zone"], string> = {

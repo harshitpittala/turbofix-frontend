@@ -9,9 +9,9 @@ import FAQ from "@/components/home/FAQ";
 import CTA from "@/components/home/CTA";
 
 export const metadata: Metadata = {
-  title: "TurboFix — Mobile Service at Your Doorstep | Hyderabad",
+  title: { absolute: "Doorstep Mobile Service in Hyderabad | TurboFix" },
   description:
-    "Fast, reliable doorstep mobile service in Hyderabad — screen, battery, charging port & water damage repair for all major brands. Book now!",
+    "A TurboFix technician services your phone at home or office across Hyderabad: screen, battery, charging port & more. 6-month warranty, pay after service.",
   alternates: { canonical: "https://turbofix.in" },
   openGraph: {
     title: "TurboFix — Mobile Service at Your Doorstep | Hyderabad",

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ZonePageClient from "./ZonePageClient";
-import { getLocationsByZone, zoneLabels, zoneDescriptions, type LocationData } from "@/data/locations";
+import { getLocationsByZone, getCoveredAreas, zoneLabels, zoneDescriptions, type LocationData } from "@/data/locations";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { buildMetaDescription } from "@/lib/utils";
 
@@ -54,7 +54,7 @@ export default function ZonePage({ params }: Props) {
     name: `Doorstep Mobile Service in ${label}, Hyderabad`,
     description: zoneDescriptions[zone],
     provider: { "@id": "https://turbofix.in/#business" },
-    areaServed: areas.map((a) => ({
+    areaServed: areas.flatMap((a) => [a, ...getCoveredAreas(a.slug)]).map((a) => ({
       "@type": "Place",
       name: `${a.name}, Hyderabad, Telangana`,
       ...(a.pincode ? { postalCode: a.pincode } : {}),
@@ -75,7 +75,15 @@ export default function ZonePage({ params }: Props) {
     <>
       <JsonLd schema={zoneSchema} id={`schema-zone-${zone}`} />
       <JsonLd schema={breadcrumbSchema} id={`schema-breadcrumb-zone-${zone}`} />
-      <ZonePageClient zone={zone} label={label} description={zoneDescriptions[zone]} areas={areas} />
+      <ZonePageClient
+        zone={zone}
+        label={label}
+        description={zoneDescriptions[zone]}
+        areas={areas}
+        covered={areas
+          .map((a) => ({ parent: a, children: getCoveredAreas(a.slug) }))
+          .filter((g) => g.children.length > 0)}
+      />
     </>
   );
 }

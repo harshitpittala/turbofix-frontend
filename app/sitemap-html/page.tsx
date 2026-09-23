@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { locationData } from "@/data/locations";
+import { getPublishedLocations, getCoveredAreas } from "@/data/locations";
+
+// Standalone area pages only — merged micro-localities 301 to these and are
+// listed by name beside their parent below.
+const locationData = getPublishedLocations();
 import { blogSlugs, blogTitles } from "@/data/sitemapData";
 import { JsonLd } from "@/components/seo/JsonLd";
 
@@ -156,6 +160,19 @@ export default function SitemapHtmlPage() {
                     {loc.name}
                   </Link>
                 ))}
+              </div>
+              <h3 className="font-semibold text-slate-900 mt-8 mb-3 text-sm">Neighbourhoods covered within these areas</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-sm text-slate-500">
+                {locationData
+                  .map((loc) => ({ loc, kids: getCoveredAreas(loc.slug) }))
+                  .filter((g) => g.kids.length > 0)
+                  .map(({ loc, kids }) => (
+                    <p key={loc.slug}>
+                      <Link href={`/locations/${loc.slug}`} className="text-slate-700 hover:text-sky-700">{loc.name}</Link>
+                      {": "}
+                      {kids.map((k) => k.name).join(", ")}
+                    </p>
+                  ))}
               </div>
             </div>
           </div>

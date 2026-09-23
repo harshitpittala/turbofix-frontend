@@ -11,16 +11,16 @@ import CTA from "@/components/home/CTA";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
 import type { LocationData } from "@/data/locations";
 
-const ALL_SERVICES = [
-  { name: "Screen Replacement",       time: "30–45 min", icon: "📱" },
-  { name: "Battery Replacement",      time: "20–30 min", icon: "🔋" },
-  { name: "Charging Port Service",    time: "25–35 min", icon: "🔌" },
-  { name: "Water Damage Service",     time: "2–4 hrs",   icon: "💧" },
-  { name: "Camera Service",           time: "40–60 min", icon: "📷" },
-  { name: "Speaker & Mic Service",    time: "25–35 min", icon: "🔊" },
-  { name: "Back Glass Replacement",   time: "40–60 min", icon: "🪟" },
+const ALL_SERVICES: { name: string; time: string; icon: string; href?: string }[] = [
+  { name: "Screen Replacement",       time: "30–45 min", icon: "📱", href: "/screen-replacement-hyderabad" },
+  { name: "Battery Replacement",      time: "20–30 min", icon: "🔋", href: "/battery-replacement-hyderabad" },
+  { name: "Charging Port Service",    time: "25–35 min", icon: "🔌", href: "/charging-port-service-hyderabad" },
+  { name: "Water Damage Service",     time: "2–4 hrs",   icon: "💧", href: "/water-damage-hyderabad" },
+  { name: "Camera Service",           time: "40–60 min", icon: "📷", href: "/camera-service-hyderabad" },
+  { name: "Speaker & Mic Service",    time: "25–35 min", icon: "🔊", href: "/speaker-service-hyderabad" },
+  { name: "Back Glass Replacement",   time: "40–60 min", icon: "🪟", href: "/back-panel-replacement-hyderabad" },
   { name: "Startup & Performance Service", time: "1–2 hrs",   icon: "💾" },
-  { name: "Motherboard Service",      time: "1–3 days",  icon: "🔧" },
+  { name: "Motherboard Service",      time: "1–3 days",  icon: "🔧", href: "/motherboard-service-hyderabad" },
 ];
 
 const BRANDS = [
@@ -59,6 +59,10 @@ const typeTagMap: Record<string, { label: string; color: string }> = {
 interface Props {
   area: LocationData;
   faqs: { q: string; a: string }[];
+  /** Micro-localities folded into this page (their old URLs 301 here). */
+  coveredAreas?: LocationData[];
+  /** Nearby standalone area pages, already resolved past merged slugs. */
+  nearbyAreas?: LocationData[];
 }
 
 function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
@@ -95,7 +99,7 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
   );
 }
 
-export default function LocationPageClient({ area, faqs }: Props) {
+export default function LocationPageClient({ area, faqs, coveredAreas = [], nearbyAreas = [] }: Props) {
   const typeTag = typeTagMap[area.type];
   const zoneLabel = zoneLabelMap[area.zone];
 
@@ -119,6 +123,10 @@ export default function LocationPageClient({ area, faqs }: Props) {
                 All Hyderabad Areas
               </Link>
               <ChevronRight className="w-3 h-3" />
+              <Link href={`/locations/zones/${area.zone}`} className="hover:text-blue-700 transition-colors">
+                {zoneLabel}
+              </Link>
+              <ChevronRight className="w-3 h-3" />
               <span className="text-slate-500">{area.name}</span>
             </motion.div>
 
@@ -129,10 +137,10 @@ export default function LocationPageClient({ area, faqs }: Props) {
                 <MapPin className="w-3 h-3" />
                 {typeTag.label}
               </span>
-              <span className="text-xs text-slate-500 px-3 py-1.5 rounded-full"
+              <Link href={`/locations/zones/${area.zone}`} className="text-xs text-slate-500 hover:text-blue-700 px-3 py-1.5 rounded-full"
                 style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
                 {zoneLabel}
-              </span>
+              </Link>
               {area.pincode && (
                 <span className="text-xs text-slate-500 px-3 py-1.5 rounded-full"
                   style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
@@ -225,6 +233,41 @@ export default function LocationPageClient({ area, faqs }: Props) {
         </div>
       </section>
 
+      {/* ── AREAS WE COVER (incl. merged micro-localities) ─────────────── */}
+      {coveredAreas.length > 0 && (
+        <section className="relative py-14 overflow-hidden border-t border-slate-100">
+          <div className="absolute inset-0 bg-white" />
+          <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-slate-900 mb-3">
+              Areas We Cover in and around {area.name}
+            </h2>
+            <p className="text-slate-500 mb-8 max-w-3xl">
+              TurboFix technicians visit homes and offices across {area.name}
+              {area.pincode ? ` (${area.pincode})` : ""} and these neighbourhoods served from the same route:
+            </p>
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {coveredAreas.map((c) => (
+                <li
+                  key={c.slug}
+                  className="p-5 rounded-2xl"
+                  style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}
+                >
+                  <h3 className="text-slate-900 font-semibold flex items-center gap-2 mb-1">
+                    <MapPin className="w-4 h-4 text-blue-700" />
+                    {c.name}
+                    {c.pincode && <span className="text-xs font-mono text-slate-500">PIN {c.pincode}</span>}
+                  </h3>
+                  <p className="text-sm text-slate-600 leading-relaxed">{c.intro}</p>
+                  {c.landmarks.length > 0 && (
+                    <p className="text-xs text-slate-500 mt-2">Near: {c.landmarks.slice(0, 3).join(" · ")}</p>
+                  )}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
       {/* ── POPULAR SERVICES IN THIS AREA ─────────────────────────────── */}
       <section className="relative py-14 overflow-hidden border-t border-slate-100">
         <div className="absolute inset-0 bg-white" />
@@ -254,7 +297,15 @@ export default function LocationPageClient({ area, faqs }: Props) {
                 >
                   <span className="text-3xl">{svc.icon}</span>
                   <div>
-                    <div className="text-slate-900 font-medium mb-1">{svc.name}</div>
+                    <div className="text-slate-900 font-medium mb-1">
+                      {svc.href ? (
+                        <Link href={svc.href} className="hover:text-blue-700 transition-colors">
+                          {svc.name} in {area.name}
+                        </Link>
+                      ) : (
+                        svc.name
+                      )}
+                    </div>
                     <div className="flex items-center gap-1.5 text-xs text-slate-500">
                       <Clock className="w-3 h-3" />
                       {svc.time}
@@ -445,7 +496,7 @@ export default function LocationPageClient({ area, faqs }: Props) {
       </section>
 
       {/* ── NEARBY AREAS ──────────────────────────────────────────────── */}
-      {area.nearbyAreas.length > 0 && (
+      {nearbyAreas.length > 0 && (
         <section className="relative py-12 overflow-hidden border-t border-slate-100">
           <div className="absolute inset-0 bg-white" />
           <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
@@ -460,12 +511,12 @@ export default function LocationPageClient({ area, faqs }: Props) {
                 We also service areas near {area.name}
               </motion.h3>
               <div className="flex flex-wrap gap-3">
-                {area.nearbyAreas.map((slug, i) => {
-                  const label = slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+                {nearbyAreas.map((nb, i) => {
+                  const label = nb.name;
                   return (
-                    <motion.div key={slug} variants={fadeInUp} transition={{ delay: i * 0.06 }}>
+                    <motion.div key={nb.slug} variants={fadeInUp} transition={{ delay: i * 0.06 }}>
                       <Link
-                        href={`/locations/${slug}`}
+                        href={`/locations/${nb.slug}`}
                         className="flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm text-slate-500 hover:text-blue-700 hover:border-blue-600/30 transition-all"
                         style={{ background: "rgba(37,99,235,0.04)", border: "1px solid rgba(37,99,235,0.15)" }}
                       >

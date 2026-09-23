@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import LocationPageClient from "./LocationPageClient";
-import { locationData, getLocationBySlug, faqSets } from "@/data/locations";
+import { getLocationBySlug, getPublishedLocations, getCoveredAreas, getNearbyAreaPages, isMergedLocality, resolveLocalitySlug, faqSets, zoneLabels } from "@/data/locations";
+import { permanentRedirect } from "next/navigation";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { buildMetaDescription } from "@/lib/utils";
 
@@ -10,19 +11,24 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return locationData.map((l) => ({ area: l.slug }));
+  // Merged micro-localities are not built: next.config.mjs 301-redirects them.
+  return getPublishedLocations().map((l) => ({ area: l.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const area = getLocationBySlug(params.area);
   if (!area) return { title: "Area Not Found" };
 
+  const title = area.name.length <= 16
+    ? `Mobile Service in ${area.name} – At Your Door`
+    : `Mobile Service in ${area.name}, Hyderabad`;
+  const pin = area.pincode ? ` (${area.pincode})` : "";
+  let description = `Doorstep phone service in ${area.name}${pin}, Hyderabad: screen, battery, charging port & more at home or office. 6-month warranty, pay after service.`;
+  if (description.length > 155) description = `Doorstep phone service in ${area.name}${pin}: screen, battery & charging port at home or office. 6-month warranty.`;
+
   return {
-    title: `Mobile Service in ${area.name}, Hyderabad`,
-    description: buildMetaDescription(
-      `TurboFix provides independent doorstep mobile-device servicing in ${area.name}, Hyderabad. ${area.intro}`,
-      "Trained technicians, OEM parts, 6-month warranty. Book now!"
-    ),
+    title,
+    description,
     alternates: { canonical: `https://turbofix.in/locations/${area.slug}` },
     // Draft locations still build (so they're reviewable at their URL) but
     // stay out of the index and off the sitemap until marked published —
@@ -37,9 +43,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function LocationPage({ params }: Props) {
+  // Safety net — next.config.mjs already 301s merged slugs before this runs.
+  if (isMergedLocality(params.area)) permanentRedirect(`/locations/${resolveLocalitySlug(params.area)}`);
   const area = getLocationBySlug(params.area);
   if (!area) notFound();
 
+  const coveredAreas = getCoveredAreas(area.slug);
+  const nearbyAreas = getNearbyAreaPages(area);
   const faqs = faqSets[area.faqSet];
 
   const localSchema = {
@@ -51,11 +61,18 @@ export default function LocationPage({ params }: Props) {
     provider: {
       "@id": "https://turbofix.in/#business",
     },
-    areaServed: {
-      "@type": "Place",
-      name: `${area.name}, Hyderabad, Telangana`,
-      ...(area.pincode ? { postalCode: area.pincode } : {}),
-    },
+    areaServed: [
+      {
+        "@type": "Place",
+        name: `${area.name}, Hyderabad, Telangana`,
+        ...(area.pincode ? { postalCode: area.pincode } : {}),
+      },
+      ...coveredAreas.map((c) => ({
+        "@type": "Place",
+        name: `${c.name}, Hyderabad, Telangana`,
+        ...(c.pincode ? { postalCode: c.pincode } : {}),
+      })),
+    ],
     offers: area.popularServices.map((svc) => ({
       "@type": "Offer",
       name: svc,
@@ -80,7 +97,8 @@ export default function LocationPage({ params }: Props) {
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: "https://turbofix.in" },
       { "@type": "ListItem", position: 2, name: "All Areas", item: "https://turbofix.in/locations" },
-      { "@type": "ListItem", position: 3, name: `${area.name}`, item: `https://turbofix.in/locations/${area.slug}` },
+      { "@type": "ListItem", position: 3, name: zoneLabels[area.zone], item: `https://turbofix.in/locations/zones/${area.zone}` },
+      { "@type": "ListItem", position: 4, name: `${area.name}`, item: `https://turbofix.in/locations/${area.slug}` },
     ],
   };
 
@@ -89,7 +107,7 @@ export default function LocationPage({ params }: Props) {
       <JsonLd schema={localSchema} id={`schema-location-${area.slug}`} />
       <JsonLd schema={faqSchema} id={`schema-faq-${area.slug}`} />
       <JsonLd schema={breadcrumbSchema} id={`schema-breadcrumb-${area.slug}`} />
-      <LocationPageClient area={area} faqs={faqs} />
+      <LocationPageClient area={area} faqs={faqs} coveredAreas={coveredAreas} nearbyAreas={nearbyAreas} />
     </>
   );
 }

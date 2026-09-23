@@ -82,9 +82,9 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.05 }}
             className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 leading-[1.1]"
           >
-            Don&apos;t step out.
+            Don&apos;t step out.{" "}
             <br />
-            <span className="text-blue-700">We fix it at your door.</span>
+            <span className="text-blue-700">We fix it at your door.</span>{" "}
             <br />
             In 30 Mins.
           </motion.h1>

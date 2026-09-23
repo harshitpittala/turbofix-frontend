@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import BrandCityPageTemplate from "./BrandCityPageTemplate";
 import { getBrandCityPageBySlug } from "@/data/brandCityPages";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { getPriorityAreas } from "@/lib/priorityAreas";
 import { parsePriceRange } from "@/lib/utils";
 
 interface Props { slug: string }
@@ -64,7 +65,7 @@ export default function BrandCityPageServer({ slug }: Props) {
       <JsonLd schema={serviceSchema}    id={`schema-brand-city-${page.slug}`} />
       <JsonLd schema={faqSchema}        id={`schema-faq-${page.slug}`} />
       <JsonLd schema={breadcrumbSchema} id={`schema-breadcrumb-${page.slug}`} />
-      <BrandCityPageTemplate page={page} />
+      <BrandCityPageTemplate page={page} popularAreas={getPriorityAreas()} />
     </>
   );
 }

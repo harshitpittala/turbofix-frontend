@@ -23,9 +23,11 @@ interface Props {
   label: string;
   description: string;
   areas: LocationData[];
+  /** Standalone area pages and the neighbourhoods folded into each. */
+  covered?: { parent: LocationData; children: LocationData[] }[];
 }
 
-export default function ZonePageClient({ label, description, areas }: Props) {
+export default function ZonePageClient({ label, description, areas, covered = [] }: Props) {
   return (
     <>
       {/* Hero */}
@@ -105,6 +107,27 @@ export default function ZonePageClient({ label, description, areas }: Props) {
                 </motion.div>
               ))}
             </div>
+
+            {covered.length > 0 && (
+              <div className="mt-12">
+                <h2 className="font-display text-2xl font-bold text-slate-900 mb-2">
+                  Neighbourhoods covered in {label}
+                </h2>
+                <p className="text-slate-500 text-sm mb-6">
+                  Every neighbourhood below gets the same doorstep visit — open the area page for local details.
+                </p>
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {covered.map(({ parent, children }) => (
+                    <li key={parent.slug} className="p-4 rounded-xl" style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
+                      <Link href={`/locations/${parent.slug}`} className="font-medium text-slate-900 hover:text-blue-700">
+                        {parent.name}
+                      </Link>
+                      <p className="text-sm text-slate-600 mt-1">{children.map((c) => c.name).join(", ")}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             <motion.div variants={fadeInUp} className="mt-8">
               <Link

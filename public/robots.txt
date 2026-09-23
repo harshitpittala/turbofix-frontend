@@ -3,6 +3,5 @@ Allow: /
 
 Disallow: /api/
 Disallow: /book-repair/success
-Disallow: /_next/
 
 Sitemap: https://turbofix.in/sitemap.xml

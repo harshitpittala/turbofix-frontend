@@ -1,5 +1,9 @@
 export interface ServicePageData {
   slug: string;          // URL path: screen-replacement-hyderabad
+  /** Search-result title (≤ 50 chars + " | TurboFix"). Ads-safe wording. */
+  seoTitle?: string;
+  /** Search-result snippet, ≤ 155 chars. Ads-safe wording. */
+  metaDescription?: string;
   name: string;          // Screen Replacement
   h1: string;            // Mobile Screen Replacement in Hyderabad
   tagline: string;
@@ -20,6 +24,8 @@ export interface ServicePageData {
 export const servicePages: ServicePageData[] = [
   {
     slug: "screen-replacement-hyderabad",
+    seoTitle: "Screen Replacement in Hyderabad at Home – ₹999+",
+    metaDescription: "Cracked or dead display? We replace your phone screen at your home or office in 30–45 min. OEM-grade displays, 6-month warranty, pay after service.",
     name: "Screen Replacement",
     h1: "Mobile Screen Replacement in Hyderabad",
     tagline: "Cracked screen? We resolve it at your door in 30–45 minutes.",
@@ -65,6 +71,8 @@ export const servicePages: ServicePageData[] = [
 
   {
     slug: "battery-replacement-hyderabad",
+    seoTitle: "Battery Replacement in Hyderabad at Home – ₹699+",
+    metaDescription: "Battery draining fast or swelling? We replace it at your doorstep in 20–30 min. OEM-grade batteries, 6-month warranty, all major brands.",
     name: "Battery Replacement",
     h1: "Mobile Battery Replacement in Hyderabad",
     tagline: "Fast battery drain or sudden shutdowns? New battery in 20 minutes.",
@@ -110,6 +118,8 @@ export const servicePages: ServicePageData[] = [
 
   {
     slug: "charging-port-service-hyderabad",
+    seoTitle: "Charging Port Service in Hyderabad at Home – ₹499+",
+    metaDescription: "Phone not charging or loose cable? Charging port cleaning and replacement at your home in 25–35 min. 6-month warranty, all brands.",
     name: "Charging Port Service",
     h1: "Mobile Charging Port Service in Hyderabad",
     tagline: "Phone not charging? Loose port? Resolved in under 35 minutes.",
@@ -154,6 +164,8 @@ export const servicePages: ServicePageData[] = [
 
   {
     slug: "water-damage-hyderabad",
+    seoTitle: "Water Damage Phone Service in Hyderabad",
+    metaDescription: "Phone dropped in water? Power it off and book a doorstep visit. Ultrasonic cleaning and part replacement, same day for most cases. From ₹999.",
     name: "Water Damage Service",
     h1: "Water Damage Mobile Service in Hyderabad",
     tagline: "Phone dropped in water? Act fast — restoration is possible.",
@@ -198,6 +210,8 @@ export const servicePages: ServicePageData[] = [
 
   {
     slug: "speaker-service-hyderabad",
+    seoTitle: "Phone Mic & Speaker Service in Hyderabad – ₹499+",
+    metaDescription: "Callers can't hear you or sound is crackling? Mic, speaker and earpiece service at your door in 25–40 min. 6-month warranty.",
     name: "Speaker & Mic Service",
     h1: "Mobile Speaker & Microphone Service in Hyderabad",
     tagline: "No sound, muffled audio, or mic issues? Resolved at your doorstep.",
@@ -241,6 +255,8 @@ export const servicePages: ServicePageData[] = [
 
   {
     slug: "camera-service-hyderabad",
+    seoTitle: "Phone Camera Service in Hyderabad – Lens & Module",
+    metaDescription: "Blurry photos, cracked lens or black camera? Camera lens and module replacement at home, from ₹799. OEM-grade parts, 6-month warranty.",
     name: "Camera Service",
     h1: "Mobile Camera Service in Hyderabad",
     tagline: "Blurry photos, cracked lens, or camera app crashing? Resolved at your door.",
@@ -285,6 +301,8 @@ export const servicePages: ServicePageData[] = [
 
   {
     slug: "back-panel-replacement-hyderabad",
+    seoTitle: "Back Panel & Back Glass Replacement Hyderabad",
+    metaDescription: "Cracked back glass or broken back panel? We replace it at your home with a model-matched part in 40–60 min. From ₹699, 6-month warranty.",
     name: "Back Panel Replacement",
     h1: "Mobile Back Panel & Back Glass Replacement in Hyderabad",
     tagline: "Shattered back glass or damaged back panel? Restored at your door.",
@@ -328,6 +346,8 @@ export const servicePages: ServicePageData[] = [
 
   {
     slug: "motherboard-service-hyderabad",
+    seoTitle: "Mobile Motherboard Service Hyderabad – Chip-Level",
+    metaDescription: "Dead, boot-looping or water-damaged phone? Chip-level motherboard service in Hyderabad from ₹2,999. Free diagnosis, no fix no fee, warranty.",
     name: "Motherboard Service",
     h1: "Mobile Motherboard Service in Hyderabad",
     tagline: "Phone not powering on or restarting on its own? Component-level service available.",

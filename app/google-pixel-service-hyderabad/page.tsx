@@ -8,9 +8,9 @@ export function generateMetadata(): Metadata {
   const page = getBrandCityPageBySlug(SLUG);
   if (!page) return { title: "Not Found" };
   return {
-    title: page.h1.split(" — ")[0],
+    title: page.seoTitle ?? page.h1.split(" — ")[0],
     description:
-      "TurboFix's Pixel-trained technicians service the Tensor chip and camera system for all Pixel models in Hyderabad. Book now!",
+      page.metaDescription ?? "TurboFix's Pixel-trained technicians service the Tensor chip and camera system for all Pixel models in Hyderabad. Book now!",
     keywords: page.keywords,
     alternates: { canonical: `https://turbofix.in/${SLUG}` },
     openGraph: {

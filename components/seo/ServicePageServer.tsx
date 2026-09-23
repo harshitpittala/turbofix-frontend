@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import ServicePageTemplate from "./ServicePageTemplate";
 import { getServicePageBySlug } from "@/data/servicePages";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { getPriorityAreas } from "@/lib/priorityAreas";
 import { parsePriceRange } from "@/lib/utils";
 
 interface Props { slug: string }
@@ -64,7 +65,7 @@ export default function ServicePageServer({ slug }: Props) {
       <JsonLd schema={serviceSchema}   id={`schema-service-${svc.slug}`} />
       <JsonLd schema={faqSchema}       id={`schema-faq-${svc.slug}`} />
       <JsonLd schema={breadcrumbSchema} id={`schema-breadcrumb-${svc.slug}`} />
-      <ServicePageTemplate svc={svc} />
+      <ServicePageTemplate svc={svc} popularAreas={getPriorityAreas()} />
     </>
   );
 }

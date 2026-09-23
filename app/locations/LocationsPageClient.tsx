@@ -51,7 +51,7 @@ export default function LocationsPageClient() {
             <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-6 text-slate-900">
               Mobile Service{" "}
               <span className="gradient-text">Everywhere</span>
-              <br />in Hyderabad
+              {" "}<br />in Hyderabad
             </motion.h1>
 
             <motion.p variants={fadeInUp} className="text-slate-600 text-xl leading-relaxed mb-10">

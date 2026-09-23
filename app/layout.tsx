@@ -52,7 +52,6 @@ export const metadata: Metadata = {
   creator: "TurboFix",
   publisher: "TurboFix",
   formatDetection: { email: false, address: false, telephone: false },
-  alternates: { canonical: "https://turbofix.in" },
   openGraph: {
     type: "website",
     locale: "en_IN",
@@ -207,12 +206,11 @@ const organizationSchema = {
       contactType: "customer service",
       areaServed: "IN",
       availableLanguage: ["en", "hi", "te"],
-      hoursAvailable: {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        opens: "09:00",
-        closes: "21:00",
-      },
+      // Same as the business's visit hours (Mon–Sat 09–21, Sun 10–18).
+      hoursAvailable: [
+        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "09:00", closes: "21:00" },
+        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Sunday"], opens: "10:00", closes: "18:00" },
+      ],
     },
     {
       "@type": "ContactPoint",
@@ -238,14 +236,6 @@ const websiteSchema = {
   description: "Doorstep mobile service in Hyderabad — trained technicians, OEM parts, 6-month warranty",
   publisher: { "@id": "https://turbofix.in/#organization" },
   inLanguage: "en-IN",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: "https://turbofix.in/services?q={search_term_string}",
-    },
-    "query-input": "required name=search_term_string",
-  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

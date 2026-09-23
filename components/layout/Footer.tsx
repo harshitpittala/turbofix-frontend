@@ -39,6 +39,12 @@ const locations = [
   { label: "Service in Ameerpet",       href: "/locations/ameerpet" },
   { label: "Service in Kondapur",       href: "/locations/kondapur" },
   { label: "Service in Dilsukhnagar",   href: "/locations/dilsukhnagar" },
+  { label: "Central Hyderabad Areas",   href: "/locations/zones/central" },
+  { label: "West / HITEC Corridor Areas", href: "/locations/zones/west" },
+  { label: "North / Secunderabad Areas", href: "/locations/zones/north" },
+  { label: "South / Old City Areas",    href: "/locations/zones/south" },
+  { label: "East Hyderabad Areas",      href: "/locations/zones/east" },
+  { label: "Outskirts & Growth Areas",  href: "/locations/zones/outskirts" },
 ];
 
 const socials = [

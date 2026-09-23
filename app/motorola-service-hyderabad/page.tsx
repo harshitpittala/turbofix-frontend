@@ -9,8 +9,8 @@ export function generateMetadata(): Metadata {
   const page = getBrandCityPageBySlug(SLUG);
   if (!page) return { title: "Not Found" };
   return {
-    title: page.h1.split(" — ")[0],
-    description: buildMetaDescription(page.intro, "Same-day doorstep service across Hyderabad. Book now!"),
+    title: page.seoTitle ?? page.h1.split(" — ")[0],
+    description: page.metaDescription ?? buildMetaDescription(page.intro, "Same-day doorstep service across Hyderabad. Book now!"),
     keywords: page.keywords,
     alternates: { canonical: `https://turbofix.in/${SLUG}` },
     openGraph: {

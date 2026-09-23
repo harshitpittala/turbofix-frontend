@@ -8,9 +8,9 @@ export function generateMetadata(): Metadata {
   const page = getBrandCityPageBySlug(SLUG);
   if (!page) return { title: "Not Found" };
   return {
-    title: page.h1.split(" — ")[0],
+    title: page.seoTitle ?? page.h1.split(" — ")[0],
     description:
-      "TurboFix services Realme phones across Hyderabad, from the budget C series to the flagship GT series. Same-day doorstep repair. Book now!",
+      page.metaDescription ?? "TurboFix services Realme phones across Hyderabad, from the budget C series to the flagship GT series. Same-day doorstep repair. Book now!",
     keywords: page.keywords,
     alternates: { canonical: `https://turbofix.in/${SLUG}` },
     openGraph: {

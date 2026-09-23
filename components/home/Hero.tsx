@@ -510,6 +510,13 @@ export default function Hero() {
 
             <motion.h1
               variants={fadeInUp}
+              className="text-sm font-semibold uppercase tracking-wider text-blue-700 mb-3"
+            >
+              Doorstep Mobile Service in Hyderabad
+            </motion.h1>
+
+            <motion.p
+              variants={fadeInUp}
               className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 tracking-tight text-slate-900"
             >
               We Service Every
@@ -528,7 +535,7 @@ export default function Hero() {
                   repeat={Infinity}
                 />
               </span>
-            </motion.h1>
+            </motion.p>
 
             <motion.p
               variants={fadeInUp}

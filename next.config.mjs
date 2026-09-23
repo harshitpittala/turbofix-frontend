@@ -1,3 +1,16 @@
+import { readFileSync } from 'node:fs';
+
+// Approved micro-locality consolidation (23 Sep 2026): old slug -> parent slug.
+// Same file drives data/locations.ts, so redirects and page content can't drift.
+const localityMerges = JSON.parse(
+  readFileSync(new URL('./data/locality-merges.json', import.meta.url), 'utf8'),
+);
+// Every parent must be a standalone page, never merged itself (no chains).
+for (const [from, to] of Object.entries(localityMerges)) {
+  if (localityMerges[to]) throw new Error(`Redirect chain: ${from} -> ${to} -> ${localityMerges[to]}`);
+  if (from === to) throw new Error(`Redirect loop: ${from}`);
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -45,7 +58,18 @@ const nextConfig = {
     return [{ source: '/:path*', headers: securityHeaders }];
   },
   async redirects() {
+    // 301 (not Next's default 308) — explicit status requested for the
+    // locality consolidation. Listed first so the /hyderabad/:area catch-all
+    // below can't send a merged slug through a second hop.
+    const localityRedirects = Object.entries(localityMerges).flatMap(([from, to]) => [
+      { source: `/locations/${from}`, destination: `/locations/${to}`, statusCode: 301 },
+      { source: `/hyderabad/${from}`, destination: `/locations/${to}`, statusCode: 301 },
+    ]);
     return [
+      ...localityRedirects,
+      // /locations/zones has no index page of its own; the zone hubs live under it.
+      { source: '/locations/zones', destination: '/locations', statusCode: 301 },
+
       // /hyderabad/[area] duplicated /locations/[area] for the same local-SEO
       // intent — consolidate all link equity onto /locations.
       { source: '/hyderabad', destination: '/locations', permanent: true },

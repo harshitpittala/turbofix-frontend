@@ -9,6 +9,8 @@ import {
   Zap, ChevronDown, ChevronRight, Phone, MapPin,
 } from "lucide-react";
 import CTA from "@/components/home/CTA";
+import PopularAreas from "@/components/seo/PopularAreas";
+import type { AreaLink } from "@/lib/priorityAreas";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
 import type { BrandCityPageData } from "@/data/brandCityPages";
 
@@ -34,9 +36,9 @@ function FAQItem({ q, a, i }: { q: string; a: string; i: number }) {
   );
 }
 
-interface Props { page: BrandCityPageData }
+interface Props { page: BrandCityPageData; popularAreas?: AreaLink[] }
 
-export default function BrandCityPageTemplate({ page }: Props) {
+export default function BrandCityPageTemplate({ page, popularAreas = [] }: Props) {
   return (
     <>
       {/* ── HERO ── */}
@@ -232,6 +234,8 @@ export default function BrandCityPageTemplate({ page }: Props) {
           </motion.div>
         </div>
       </section>
+
+      <PopularAreas label={`${page.brand} Service`} areas={popularAreas} />
 
       <CTA />
     </>
