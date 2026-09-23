@@ -46,7 +46,7 @@ for (const z of ["central", "west", "north", "south", "east", "outskirts"])
 // Blog posts: the post's own date field (content is per-post in data/blogs.ts).
 const blogSrc = readFileSync("data/blogs.ts", "utf8");
 for (const [, slug, date] of blogSrc.matchAll(/slug: "([^"]+)",[\s\S]*?date: "(\d{4}-\d{2}-\d{2})"/g))
-  map[`/blog/${slug}`] = newest(date, gitDate("app/blog/[slug]"));
+  map[`/blog/${slug}`] = date;
 
 writeFileSync("data/lastmod.json", JSON.stringify(map, null, 2) + "\n");
 console.log(`lastmod.json: ${Object.keys(map).length} URLs`);
