@@ -27,18 +27,16 @@ export default function RepairsListClient() {
     <>
       {/* Hero */}
       <section className="relative pt-32 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-[#02040F]" />
-        <div className="absolute inset-0 grid-bg" />
-        <div className="absolute inset-0 radial-glow" />
+        <div className="absolute inset-0 bg-white" />
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <motion.div variants={staggerContainer} initial="hidden" animate="show">
             <motion.div variants={fadeInUp} className="flex justify-center mb-4">
               <span className="section-label">All Brands Serviced</span>
             </motion.div>
-            <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-5">
+            <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-5 text-slate-900">
               Service by <span className="gradient-text">Brand</span>
             </motion.h1>
-            <motion.p variants={fadeInUp} className="text-gray-400 text-xl max-w-2xl mx-auto">
+            <motion.p variants={fadeInUp} className="text-slate-600 text-xl max-w-2xl mx-auto">
               Expert service specialists for every major smartphone brand in Hyderabad.
               OEM-quality parts, 6-month warranty, doorstep service.
             </motion.p>
@@ -47,9 +45,8 @@ export default function RepairsListClient() {
       </section>
 
       {/* Brand Grid */}
-      <section className="relative py-16 pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[#030712]" />
-        <div className="absolute inset-0 grid-bg opacity-20" />
+      <section className="relative py-16 pb-28 overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-white" />
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {brandData.map((brand, i) => (
@@ -63,7 +60,7 @@ export default function RepairsListClient() {
                 <Link
                   href={BRAND_CITY_PAGE_HREF[brand.slug] ?? `/brands/${brand.slug}`}
                   className="group block rounded-2xl p-7 transition-all duration-300"
-                  style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}
+                  style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}
                 >
                   <div className="flex items-center gap-4 mb-4">
                     <div
@@ -83,14 +80,14 @@ export default function RepairsListClient() {
                       )}
                     </div>
                     <div>
-                      <h2 className="text-white font-semibold text-lg group-hover:text-[#00AAFF] transition-colors">
+                      <h2 className="text-slate-900 font-semibold text-lg group-hover:text-blue-700 transition-colors">
                         {brand.name}
                       </h2>
-                      <p className="text-gray-500 text-xs">{brand.commonIssues.length} services</p>
+                      <p className="text-slate-500 text-xs">{brand.commonIssues.length} services</p>
                     </div>
                   </div>
 
-                  <p className="text-gray-500 text-sm leading-relaxed mb-5 line-clamp-2">
+                  <p className="text-slate-500 text-sm leading-relaxed mb-5 line-clamp-2">
                     {brand.description.slice(0, 100)}...
                   </p>
 
@@ -106,7 +103,7 @@ export default function RepairsListClient() {
                     ))}
                   </div>
 
-                  <div className="flex items-center gap-2 text-sm font-medium text-[#00AAFF] group-hover:gap-3 transition-all duration-200">
+                  <div className="flex items-center gap-2 text-sm font-medium text-blue-700 group-hover:gap-3 transition-all duration-200">
                     View {brand.name} services
                     <ArrowRight className="w-3.5 h-3.5" />
                   </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { toast } from "react-hot-toast";
@@ -12,6 +12,58 @@ import {
   User, Phone, Mail, MapPin, Calendar, Shield, HelpCircle, MessageCircle,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { modelPhotoCatalog } from "@/data/modelPhotos.generated";
+
+/* Maps a BookingWizard brand name to its slug in the generated photo catalog. */
+const PHOTO_BRAND_SLUG: Record<string, string> = {
+  Apple: "apple",
+  Samsung: "samsung",
+  OnePlus: "oneplus",
+  Xiaomi: "xiaomi",
+  Motorola: "motorola",
+  Google: "google-pixel",
+};
+
+function normalizeModelName(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/^motorola\s+/, "")
+    .replace(/\+/g, " plus")
+    .replace(/\s+5g\b/, "")
+    .replace(/\s+4g\b/, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+const modelPhotoLookup: Record<string, Map<string, string>> = {};
+for (const [brandName, slug] of Object.entries(PHOTO_BRAND_SLUG)) {
+  const map = new Map<string, string>();
+  for (const series of modelPhotoCatalog[slug] ?? []) {
+    for (const m of series.models) {
+      map.set(normalizeModelName(m.name), m.image);
+    }
+  }
+  modelPhotoLookup[brandName] = map;
+}
+
+const UNAVAILABLE_PHOTO = "/images/models/unavailable.webp";
+
+/** Every brand with a real photo catalog always resolves to *some* image —
+ * a matched real photo, or the shared "unavailable" placeholder as fallback. */
+function getModelPhoto(brandName: string, modelName: string): string | undefined {
+  const map = modelPhotoLookup[brandName];
+  if (!map) return undefined;
+  return map.get(normalizeModelName(modelName)) ?? UNAVAILABLE_PHOTO;
+}
+
+// Aliases for naming differences between the booking form's model list and the photo catalog.
+const appleMap = modelPhotoLookup.Apple;
+if (appleMap) {
+  const se2020 = appleMap.get(normalizeModelName("iPhone SE (2020)"));
+  if (se2020) appleMap.set(normalizeModelName("iPhone SE (2nd Gen)"), se2020);
+  const se2016 = appleMap.get(normalizeModelName("iPhone SE (2016)"));
+  if (se2016) appleMap.set(normalizeModelName("iPhone SE (1st Gen)"), se2016);
+}
 
 /* ─── Types ─────────────────────────────────────────────────────────────── */
 interface BookingData {
@@ -31,9 +83,18 @@ interface BookingData {
 }
 
 /* ─── Data ──────────────────────────────────────────────────────────────── */
-const brands = [
+interface BrandOption {
+  name: string;
+  logo: string;
+  color: string;
+  models: string[];
+  /** true for legacy white-on-color icon assets that need a solid color backdrop */
+  mono?: boolean;
+}
+
+const brands: BrandOption[] = [
   {
-    name: "Apple", logo: "/images/brands/apple.svg", color: "#4B5563",
+    name: "Apple", logo: "/images/brands/apple.webp", color: "#4B5563",
     models: [
       "iPhone 16 Pro Max", "iPhone 16 Pro", "iPhone 16 Plus", "iPhone 16",
       "iPhone 15 Pro Max", "iPhone 15 Pro", "iPhone 15 Plus", "iPhone 15",
@@ -46,7 +107,7 @@ const brands = [
     ],
   },
   {
-    name: "Samsung", logo: "/images/brands/samsung.svg", color: "#1428A0",
+    name: "Samsung", logo: "/images/brands/samsung.webp", color: "#1428A0",
     models: [
       "Galaxy S25 Ultra", "Galaxy S25+", "Galaxy S25",
       "Galaxy S24 Ultra", "Galaxy S24+", "Galaxy S24",
@@ -60,7 +121,7 @@ const brands = [
     ],
   },
   {
-    name: "OnePlus", logo: "/images/brands/oneplus.svg", color: "#F5010C",
+    name: "OnePlus", logo: "/images/brands/oneplus.webp", color: "#F5010C",
     models: [
       "OnePlus 13", "OnePlus 13R", "OnePlus 12", "OnePlus 12R",
       "OnePlus 11", "OnePlus 11R", "OnePlus 10 Pro", "OnePlus 10T",
@@ -70,7 +131,7 @@ const brands = [
     ],
   },
   {
-    name: "Xiaomi", logo: "/images/brands/xiaomi.svg", color: "#FF6900",
+    name: "Xiaomi", logo: "/images/brands/xiaomi.webp", color: "#FF6900",
     models: [
       "Xiaomi 15 Ultra", "Xiaomi 15 Pro", "Xiaomi 15",
       "Xiaomi 14 Ultra", "Xiaomi 14 Pro", "Xiaomi 14",
@@ -81,7 +142,7 @@ const brands = [
     ],
   },
   {
-    name: "Vivo", logo: "/images/brands/vivo.svg", color: "#415FFF",
+    name: "Vivo", logo: "/images/brands/vivo.webp", color: "#415FFF",
     models: [
       "Vivo X200 Pro", "Vivo X200", "Vivo X100 Pro", "Vivo X100",
       "Vivo V40 Pro", "Vivo V40", "Vivo V30 Pro", "Vivo V30",
@@ -92,18 +153,17 @@ const brands = [
     ],
   },
   {
-    name: "OPPO", logo: "/images/brands/oppo.svg", color: "#1D8348",
+    name: "Google", logo: "/images/brands/google-pixel.webp", color: "#4285F4",
     models: [
-      "OPPO Find X8 Pro", "OPPO Find X8", "OPPO Find X7 Pro",
-      "OPPO Reno 13 Pro", "OPPO Reno 13", "OPPO Reno 12 Pro", "OPPO Reno 12",
-      "OPPO Reno 11 Pro", "OPPO Reno 11",
-      "OPPO F27 Pro+", "OPPO F27 Pro", "OPPO F25 Pro",
-      "OPPO A3 Pro", "OPPO A3", "OPPO A79", "OPPO A60",
-      "OPPO K13", "OPPO K12",
+      "Pixel 9 Pro Fold", "Pixel 9 Pro XL", "Pixel 9 Pro", "Pixel 9",
+      "Pixel 8 Pro", "Pixel 8a", "Pixel 8",
+      "Pixel 7 Pro", "Pixel 7a", "Pixel 7",
+      "Pixel 6 Pro", "Pixel 6a", "Pixel 6",
+      "Pixel Fold",
     ],
   },
   {
-    name: "Realme", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Ctext x='14' y='22' text-anchor='middle' fill='white' font-size='22' font-weight='900' font-family='Arial,sans-serif'%3ER%3C/text%3E%3C/svg%3E", color: "#FFAD00",
+    name: "Realme", logo: "/images/brands/realme.webp", color: "#FFAD00",
     models: [
       "Realme GT 7 Pro", "Realme GT 6T", "Realme GT 6",
       "Realme GT Neo 6", "Realme GT Neo 5",
@@ -115,7 +175,7 @@ const brands = [
     ],
   },
   {
-    name: "Motorola", logo: "/images/brands/motorola.svg", color: "#005EB8",
+    name: "Motorola", logo: "/images/brands/motorola.webp", color: "#005EB8",
     models: [
       "Motorola Edge 50 Ultra", "Motorola Edge 50 Pro", "Motorola Edge 50 Fusion",
       "Motorola Edge 40 Pro", "Motorola Edge 40 Neo", "Motorola Edge 40",
@@ -126,17 +186,18 @@ const brands = [
     ],
   },
   {
-    name: "Google", logo: "/images/brands/google.svg", color: "#4285F4",
+    name: "OPPO", logo: "/images/brands/oppo.webp", color: "#1D8348",
     models: [
-      "Pixel 9 Pro Fold", "Pixel 9 Pro XL", "Pixel 9 Pro", "Pixel 9",
-      "Pixel 8 Pro", "Pixel 8a", "Pixel 8",
-      "Pixel 7 Pro", "Pixel 7a", "Pixel 7",
-      "Pixel 6 Pro", "Pixel 6a", "Pixel 6",
-      "Pixel Fold",
+      "OPPO Find X8 Pro", "OPPO Find X8", "OPPO Find X7 Pro",
+      "OPPO Reno 13 Pro", "OPPO Reno 13", "OPPO Reno 12 Pro", "OPPO Reno 12",
+      "OPPO Reno 11 Pro", "OPPO Reno 11",
+      "OPPO F27 Pro+", "OPPO F27 Pro", "OPPO F25 Pro",
+      "OPPO A3 Pro", "OPPO A3", "OPPO A79", "OPPO A60",
+      "OPPO K13", "OPPO K12",
     ],
   },
   {
-    name: "Nothing", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Ctext x='14' y='22' text-anchor='middle' fill='white' font-size='22' font-weight='900' font-family='Arial,sans-serif'%3EN%3C/text%3E%3C/svg%3E", color: "#FF3B30",
+    name: "Nothing", logo: "/images/brands/nothing.png", color: "#FF3B30",
     models: [
       "Nothing Phone (1)", "Nothing Phone (2)", "Nothing Phone (2a)",
       "Nothing Phone (2a Plus)", "Nothing Phone (3)",
@@ -145,41 +206,41 @@ const brands = [
     ],
   },
   {
-    name: "ASUS", logo: "/images/brands/asus.svg", color: "#0055A8",
+    name: "ASUS", logo: "/images/brands/asus.webp", color: "#0055A8",
     models: [
       "ROG Phone 8", "ROG Phone 7", "ROG Phone 6", "ROG Phone 5",
       "Zenfone 10", "Zenfone 9", "Zenfone 8",
     ],
   },
   {
-    name: "Sony", logo: "/images/brands/sony.svg", color: "#003087",
+    name: "Sony", logo: "/images/brands/sony.svg", color: "#003087", mono: true,
     models: [
       "Xperia 1 VI", "Xperia 1 V",
       "Xperia 5 V", "Xperia 10 VI",
     ],
   },
   {
-    name: "Nokia", logo: "/images/brands/nokia.svg", color: "#124191",
+    name: "Nokia", logo: "/images/brands/nokia.svg", color: "#124191", mono: true,
     models: [
       "Nokia XR21", "Nokia X30", "Nokia G60", "Nokia G42", "Nokia C32",
     ],
   },
   {
-    name: "Huawei", logo: "/images/brands/huawei.svg", color: "#CF0A2C",
+    name: "Huawei", logo: "/images/brands/huawei.webp", color: "#CF0A2C",
     models: [
       "Pura 70", "Mate 60 Pro", "Mate 50 Pro",
       "P60 Pro", "P50 Pro",
     ],
   },
   {
-    name: "Honor", logo: "/images/brands/honor.svg", color: "#C1272D",
+    name: "Honor", logo: "/images/brands/honor.svg", color: "#C1272D", mono: true,
     models: [
       "Magic 6 Pro", "Magic 5 Pro",
       "Honor 200 Pro", "Honor 200", "Honor 90",
     ],
   },
   {
-    name: "iQOO", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 20'%3E%3Ctext x='22' y='15' text-anchor='middle' fill='white' font-size='13' font-weight='700' font-family='Arial,sans-serif'%3EiQOO%3C/text%3E%3C/svg%3E", color: "#0055FF",
+    name: "iQOO", logo: "/images/brands/iqoo.webp", color: "#0055FF",
     models: [
       "iQOO 13", "iQOO 12",
       "iQOO Neo 10", "iQOO Neo 9",
@@ -187,7 +248,7 @@ const brands = [
     ],
   },
   {
-    name: "POCO", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 20'%3E%3Ctext x='22' y='15' text-anchor='middle' fill='white' font-size='13' font-weight='700' font-family='Arial,sans-serif'%3EPOCO%3C/text%3E%3C/svg%3E", color: "#B08D00",
+    name: "POCO", logo: "/images/brands/poco.webp", color: "#B08D00",
     models: [
       "POCO F6 Pro", "POCO F6", "POCO F5",
       "POCO X6 Pro", "POCO X6",
@@ -195,28 +256,28 @@ const brands = [
     ],
   },
   {
-    name: "Infinix", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Ctext x='14' y='22' text-anchor='middle' fill='white' font-size='22' font-weight='900' font-family='Arial,sans-serif'%3EX%3C/text%3E%3C/svg%3E", color: "#DA291C",
+    name: "Infinix", logo: "/images/brands/infinix.png", color: "#DA291C",
     models: [
       "GT 20 Pro", "Note 50", "Note 40 Pro",
       "Zero 30", "Smart 8",
     ],
   },
   {
-    name: "Tecno", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 52 20'%3E%3Ctext x='26' y='15' text-anchor='middle' fill='white' font-size='11' font-weight='700' font-family='Arial,sans-serif'%3ETECNO%3C/text%3E%3C/svg%3E", color: "#0070C0",
+    name: "Tecno", logo: "/images/brands/tecno.png", color: "#0070C0",
     models: [
       "Phantom V Fold", "Camon 40", "Camon 30",
       "Pova 6", "Spark 20",
     ],
   },
   {
-    name: "Lava", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 20'%3E%3Ctext x='22' y='15' text-anchor='middle' fill='white' font-size='13' font-weight='700' font-family='Arial,sans-serif'%3ELAVA%3C/text%3E%3C/svg%3E", color: "#E31E24",
+    name: "Lava", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 20'%3E%3Ctext x='22' y='15' text-anchor='middle' fill='white' font-size='13' font-weight='700' font-family='Arial,sans-serif'%3ELAVA%3C/text%3E%3C/svg%3E", color: "#E31E24", mono: true,
     models: [
       "Storm 5G", "Agni 3", "Agni 2",
       "Blaze 3", "Blaze 2",
     ],
   },
   {
-    name: "itel", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 20'%3E%3Ctext x='18' y='15' text-anchor='middle' fill='white' font-size='13' font-weight='700' font-family='Arial,sans-serif'%3Eitel%3C/text%3E%3C/svg%3E", color: "#0066FF",
+    name: "itel", logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 20'%3E%3Ctext x='18' y='15' text-anchor='middle' fill='white' font-size='13' font-weight='700' font-family='Arial,sans-serif'%3Eitel%3C/text%3E%3C/svg%3E", color: "#0066FF", mono: true,
     models: [
       "Vision 5", "A80", "A70", "P55", "S24",
     ],
@@ -231,14 +292,14 @@ const FEATURED_COUNT = 8;
 
 const repairServices = [
   { id: "screen", icon: Smartphone, label: "Screen Replacement", color: "#2563EB" },
-  { id: "battery", icon: Battery, label: "Battery Replacement", color: "#16A34A" },
-  { id: "camera", icon: Camera, label: "Camera Module", color: "#7C3AED" },
-  { id: "water", icon: Droplets, label: "Water Damage", color: "#0891B2" },
-  { id: "speaker", icon: Mic2, label: "Speaker / Mic", color: "#D97706" },
-  { id: "charging", icon: Wifi, label: "Charging Port", color: "#DB2777" },
-  { id: "back", icon: Wrench, label: "Back Panel", color: "#0EA5E9" },
-  { id: "software", icon: MonitorSmartphone, label: "Software / Data", color: "#65A30D" },
-  { id: "other", icon: HelpCircle, label: "Something Else", color: "#EA580C" },
+  { id: "battery", icon: Battery, label: "Battery Replacement", color: "#1D4ED8" },
+  { id: "camera", icon: Camera, label: "Camera Module", color: "#3B82F6" },
+  { id: "water", icon: Droplets, label: "Water Damage", color: "#0EA5E9" },
+  { id: "speaker", icon: Mic2, label: "Speaker / Mic", color: "#1E40AF" },
+  { id: "charging", icon: Wifi, label: "Charging Port", color: "#0284C7" },
+  { id: "back", icon: Wrench, label: "Back Panel", color: "#60A5FA" },
+  { id: "software", icon: MonitorSmartphone, label: "Software / Data", color: "#0369A1" },
+  { id: "other", icon: HelpCircle, label: "Something Else", color: "#075985" },
 ];
 
 const timeSlots = [
@@ -386,9 +447,9 @@ function CalendarPicker({ selected, onChange }: { selected: string; onChange: (d
                 className={cn(
                   "aspect-square flex items-center justify-center rounded-lg text-xs font-medium transition-all",
                   isSelected
-                    ? "bg-[#0066FF] text-white shadow-md shadow-blue-500/30"
+                    ? "bg-blue-600 text-white shadow-md shadow-blue-600/30"
                     : isToday
-                    ? "bg-blue-100 text-[#0066FF] border border-blue-300"
+                    ? "bg-blue-100 text-blue-700 border border-blue-300"
                     : isPast
                     ? "text-gray-300 cursor-not-allowed"
                     : "text-gray-600 hover:bg-white",
@@ -410,8 +471,8 @@ function CalendarPicker({ selected, onChange }: { selected: string; onChange: (d
             exit={{ opacity: 0, y: -5 }}
             className="mt-3 pt-3 flex items-center gap-2 border-t border-blue-100"
           >
-            <Calendar className="w-3.5 h-3.5 text-[#0066FF] shrink-0" />
-            <span className="text-xs text-[#0066FF] font-medium">
+            <Calendar className="w-3.5 h-3.5 text-blue-700 shrink-0" />
+            <span className="text-xs text-blue-700 font-medium">
               {new Date(selected + "T00:00:00").toLocaleDateString("en-IN", {
                 weekday: "long",
                 day: "2-digit",
@@ -430,9 +491,28 @@ function CalendarPicker({ selected, onChange }: { selected: string; onChange: (d
 function StepDevice({ data, setData }: { data: BookingData; setData: (d: Partial<BookingData>) => void }) {
   const [expanded, setExpanded] = useState(false);
   const selected = brands.find((b) => b.name === data.brand);
-  const other = brands[brands.length - 1];
-  const visibleBrands = expanded ? brands : [...brands.slice(0, FEATURED_COUNT), other];
-  const hiddenNames = brands.slice(FEATURED_COUNT, -1).map((b) => b.name).slice(0, 4).join(", ");
+  const visibleBrands = expanded ? brands : brands.slice(0, FEATURED_COUNT);
+  const modelSectionRef = useRef<HTMLDivElement>(null);
+
+  // Brand picked -> reveal & scroll to its model list (or the custom-brand form for "Other").
+  useEffect(() => {
+    if (!data.brand) return;
+    const id = requestAnimationFrame(() => {
+      modelSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    return () => cancelAnimationFrame(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data.brand]);
+
+  // Model picked -> scroll on to the Continue button so the user can move forward.
+  useEffect(() => {
+    if (!data.model) return;
+    const id = requestAnimationFrame(() => {
+      document.getElementById("booking-wizard-footer-nav")?.scrollIntoView({ behavior: "smooth", block: "end" });
+    });
+    return () => cancelAnimationFrame(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data.model]);
 
   return (
     <div className="space-y-8">
@@ -449,28 +529,32 @@ function StepDevice({ data, setData }: { data: BookingData; setData: (d: Partial
               className={cn(
                 "relative flex flex-col items-center gap-2 p-3 sm:p-4 rounded-xl border transition-all duration-200",
                 data.brand === brand.name
-                  ? "bg-blue-50 border-[#0066FF]/40"
+                  ? "bg-blue-50 border-blue-600/40"
                   : "bg-gray-50 border-gray-200 hover:border-gray-300",
               )}
             >
               {data.brand === brand.name && (
                 <div
-                  className="absolute top-2 right-2 w-5 h-5 rounded-full flex items-center justify-center bg-[#0066FF]"
+                  className="absolute top-2 right-2 w-5 h-5 rounded-full flex items-center justify-center bg-blue-600"
                 >
                   <Check className="w-3 h-3 text-white" strokeWidth={3} />
                 </div>
               )}
               <div
-                className="w-9 h-9 rounded-full flex items-center justify-center"
-                style={{ background: brand.color || "#6B7280" }}
+                className="w-9 h-9 rounded-full flex items-center justify-center overflow-hidden"
+                style={
+                  brand.logo && !brand.mono
+                    ? { background: "#FFFFFF", border: `1px solid ${brand.color || "#E2E8F0"}30` }
+                    : { background: brand.color || "#6B7280" }
+                }
               >
                 {brand.logo ? (
                   /* eslint-disable-next-line @next/next/no-img-element */
                   <img
                     src={brand.logo}
                     alt={brand.name}
-                    width={18}
-                    height={18}
+                    width={22}
+                    height={22}
                     className="object-contain"
                     onError={(e) => { (e.currentTarget as HTMLImageElement).style.visibility = "hidden"; }}
                   />
@@ -481,27 +565,32 @@ function StepDevice({ data, setData }: { data: BookingData; setData: (d: Partial
               <span
                 className={cn(
                   "text-xs sm:text-sm font-medium",
-                  data.brand === brand.name ? "text-[#0066FF]" : "text-gray-600",
+                  data.brand === brand.name ? "text-blue-700" : "text-gray-600",
                 )}
               >
                 {brand.name}
               </span>
             </motion.button>
           ))}
-        </div>
 
-        {!expanded && (
-          <button
-            type="button"
-            onClick={() => setExpanded(true)}
-            className="w-full mt-3 flex items-center justify-center gap-1.5 py-2.5 rounded-xl text-sm font-medium text-[#0066FF] bg-blue-50 border border-blue-100 hover:bg-blue-100 transition-colors"
-          >
-            <ChevronDown className="w-4 h-4" />
-            Show more brands — {hiddenNames}…
-          </button>
-        )}
+          {!expanded && (
+            <motion.button
+              type="button"
+              onClick={() => setExpanded(true)}
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="flex flex-col items-center gap-2 p-3 sm:p-4 rounded-xl border transition-all duration-200 bg-gray-50 border-gray-200 hover:border-gray-300"
+            >
+              <div className="w-9 h-9 rounded-full flex items-center justify-center bg-gray-200">
+                <ChevronDown className="w-4 h-4 text-gray-600" />
+              </div>
+              <span className="text-xs sm:text-sm font-medium text-gray-600">More</span>
+            </motion.button>
+          )}
+        </div>
       </div>
 
+      <div ref={modelSectionRef} className="scroll-mt-24">
       <AnimatePresence>
         {selected && data.brand !== "Other" && (
           <motion.div
@@ -511,24 +600,37 @@ function StepDevice({ data, setData }: { data: BookingData; setData: (d: Partial
             transition={{ duration: 0.3 }}
           >
             <h3 className="text-gray-500 text-xs font-semibold mb-4 uppercase tracking-wider">Select Model</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-64 overflow-y-auto pr-1 model-list">
-              {selected.models.map((model) => (
-                <motion.button
-                  key={model}
-                  type="button"
-                  onClick={() => setData({ model })}
-                  whileHover={{ x: 3 }}
-                  className={cn(
-                    "flex items-center justify-between px-4 py-3 rounded-xl text-sm text-left transition-all border",
-                    data.model === model
-                      ? "bg-blue-50 border-[#0066FF]/30 text-gray-900"
-                      : "bg-white border-gray-200 text-gray-600",
-                  )}
-                >
-                  {model}
-                  {data.model === model && <Check className="w-4 h-4 shrink-0 text-[#0066FF]" />}
-                </motion.button>
-              ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-80 overflow-y-auto pr-1 model-list">
+              {selected.models.map((model) => {
+                const photo = getModelPhoto(selected.name, model);
+                return (
+                  <motion.button
+                    key={model}
+                    type="button"
+                    onClick={() => setData({ model })}
+                    whileHover={{ x: 3 }}
+                    className={cn(
+                      "flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm text-left transition-all border",
+                      data.model === model
+                        ? "bg-blue-50 border-blue-600/30 text-gray-900"
+                        : "bg-white border-gray-200 text-gray-600",
+                    )}
+                  >
+                    {photo && (
+                      /* eslint-disable-next-line @next/next/no-img-element */
+                      <img
+                        src={photo}
+                        alt=""
+                        width={32}
+                        height={32}
+                        className="w-8 h-8 object-contain shrink-0 rounded-md bg-gray-50"
+                      />
+                    )}
+                    <span className="flex-1">{model}</span>
+                    {data.model === model && <Check className="w-4 h-4 shrink-0 text-blue-700" />}
+                  </motion.button>
+                );
+              })}
             </div>
           </motion.div>
         )}
@@ -565,6 +667,7 @@ function StepDevice({ data, setData }: { data: BookingData; setData: (d: Partial
           </motion.div>
         )}
       </AnimatePresence>
+      </div>
     </div>
   );
 }
@@ -596,7 +699,7 @@ function StepService({ data, setData }: { data: BookingData; setData: (d: Partia
                 whileTap={{ scale: 0.98 }}
                 className={cn(
                   "relative flex items-center gap-4 p-4 rounded-xl text-left transition-all duration-200 border",
-                  active ? "bg-blue-50 border-[#0066FF]/30" : "bg-gray-50 border-gray-200",
+                  active ? "bg-blue-50 border-blue-600/30" : "bg-gray-50 border-gray-200",
                 )}
               >
                 <div
@@ -646,13 +749,25 @@ function StepService({ data, setData }: { data: BookingData; setData: (d: Partia
 
 /* ─── Step: Schedule ────────────────────────────────────────────────────── */
 function StepSchedule({ data, setData }: { data: BookingData; setData: (d: Partial<BookingData>) => void }) {
+  const timeSectionRef = useRef<HTMLDivElement>(null);
+
+  // Date picked -> reveal & scroll to the time-slot section.
+  useEffect(() => {
+    if (!data.date) return;
+    const id = requestAnimationFrame(() => {
+      timeSectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    return () => cancelAnimationFrame(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data.date]);
+
   return (
     <div className="space-y-8">
       {/* Service type — Doorstep only */}
       <div>
         <h3 className="text-gray-500 text-xs font-semibold mb-4 uppercase tracking-wider">Service Type</h3>
-        <div className="flex items-center gap-4 p-5 rounded-xl bg-purple-50 border border-purple-200">
-          <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0 bg-white border border-purple-200">
+        <div className="flex items-center gap-4 p-5 rounded-xl bg-blue-50 border border-blue-200">
+          <div className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0 bg-white border border-blue-200">
             🛵
           </div>
           <div className="flex-1">
@@ -661,7 +776,7 @@ function StepSchedule({ data, setData }: { data: BookingData; setData: (d: Parti
               We collect &amp; deliver — covers Hyderabad (10 km radius)
             </p>
           </div>
-          <div className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 bg-[#7C3AED]">
+          <div className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 bg-blue-600">
             <Check className="w-3.5 h-3.5 text-white" strokeWidth={3} />
           </div>
         </div>
@@ -677,10 +792,12 @@ function StepSchedule({ data, setData }: { data: BookingData; setData: (d: Parti
       <AnimatePresence>
         {data.date && (
           <motion.div
+            ref={timeSectionRef}
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.3 }}
+            className="scroll-mt-24"
           >
             <h3 className="text-gray-500 text-xs font-semibold mb-4 uppercase tracking-wider">Select Time</h3>
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-2">
@@ -694,7 +811,7 @@ function StepSchedule({ data, setData }: { data: BookingData; setData: (d: Parti
                   className={cn(
                     "py-2.5 rounded-xl text-xs sm:text-sm transition-all font-medium border",
                     data.time === slot
-                      ? "bg-blue-50 border-[#0066FF]/40 text-[#0066FF]"
+                      ? "bg-blue-50 border-blue-600/40 text-blue-700"
                       : "bg-gray-50 border-gray-200 text-gray-600",
                   )}
                 >
@@ -775,7 +892,7 @@ function StepDetails({ data, setData }: { data: BookingData; setData: (d: Partia
         transition={{ delay: 0.1 }}
         className="rounded-xl p-5 mt-6 bg-blue-50 border border-blue-100"
       >
-        <h4 className="text-[#0066FF] text-xs font-semibold uppercase tracking-wider mb-4">
+        <h4 className="text-blue-700 text-xs font-semibold uppercase tracking-wider mb-4">
           Booking Summary
         </h4>
         <div className="space-y-2.5 text-sm">
@@ -820,15 +937,15 @@ function StepDetails({ data, setData }: { data: BookingData; setData: (d: Partia
           type="checkbox"
           checked={data.consent}
           onChange={(e) => setData({ consent: e.target.checked })}
-          className="mt-0.5 w-4 h-4 rounded border-gray-300 text-[#0066FF] focus:ring-[#0066FF] shrink-0"
+          className="mt-0.5 w-4 h-4 rounded border-gray-300 text-blue-700 focus:ring-blue-600 shrink-0"
         />
         <span className="text-xs text-gray-500 leading-relaxed">
           I agree to TurboFix's{" "}
-          <Link href="/terms" target="_blank" className="text-[#0066FF] underline underline-offset-2">
+          <Link href="/terms" target="_blank" className="text-blue-700 underline underline-offset-2">
             Terms of Service
           </Link>{" "}
           and{" "}
-          <Link href="/privacy" target="_blank" className="text-[#0066FF] underline underline-offset-2">
+          <Link href="/privacy" target="_blank" className="text-blue-700 underline underline-offset-2">
             Privacy Policy
           </Link>
           , and consent to being contacted about this booking.
@@ -844,6 +961,20 @@ export default function BookingWizard() {
   const [step, setStep] = useState(0);
   const [direction, setDirection] = useState(1);
   const [loading, setLoading] = useState(false);
+  const isFirstStepRender = useRef(true);
+
+  // Step advanced (e.g. Continue clicked) -> scroll the wizard back into view
+  // so the next section (Calendar, Timing, Details form...) is visible.
+  useEffect(() => {
+    if (isFirstStepRender.current) {
+      isFirstStepRender.current = false;
+      return;
+    }
+    const id = requestAnimationFrame(() => {
+      document.getElementById("book-your-repair")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    return () => cancelAnimationFrame(id);
+  }, [step]);
 
   const [data, setData] = useState<BookingData>({
     brand: "", customBrand: "", model: "", services: [], issueDesc: "",
@@ -928,7 +1059,7 @@ export default function BookingWizard() {
       <div className="container max-w-3xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between mb-5">
           <h2 className="flex items-center gap-2.5 text-lg sm:text-xl font-bold text-gray-900">
-            <span className="w-1 h-5 rounded-full bg-[#0066FF]" />
+            <span className="w-1 h-5 rounded-full bg-blue-600" />
             Book Your Visit
           </h2>
           <span className="text-xs text-gray-400">Takes about 2 minutes</span>
@@ -945,9 +1076,9 @@ export default function BookingWizard() {
                     <motion.div
                       animate={{
                         background: i < step
-                          ? "linear-gradient(135deg,#22C55E,#16A34A)"
+                          ? "linear-gradient(135deg,#10B981,#059669)"
                           : i === step
-                          ? "linear-gradient(135deg,#0066FF,#2563EB)"
+                          ? "linear-gradient(135deg,#1D4ED8,#2563EB)"
                           : "#F3F4F6",
                         scale: i === step ? 1.1 : 1,
                       }}
@@ -959,7 +1090,7 @@ export default function BookingWizard() {
                     </motion.div>
                     <span
                       className="text-[10px] mt-1.5 font-medium hidden sm:block"
-                      style={{ color: i === step ? "#0066FF" : i < step ? "#16A34A" : "#9CA3AF" }}
+                      style={{ color: i === step ? "#1D4ED8" : i < step ? "#059669" : "#9CA3AF" }}
                     >
                       {s.label}
                     </span>
@@ -967,7 +1098,7 @@ export default function BookingWizard() {
                   {i < steps.length - 1 && (
                     <motion.div
                       className="h-px mx-1 sm:mx-2 hidden sm:block"
-                      animate={{ background: i < step ? "#16A34A" : "#E5E7EB" }}
+                      animate={{ background: i < step ? "#059669" : "#E5E7EB" }}
                       style={{ width: "clamp(16px, 6vw, 56px)" }}
                     />
                   )}
@@ -1003,7 +1134,7 @@ export default function BookingWizard() {
           </div>
 
           {/* Footer nav */}
-          <div className="px-5 sm:px-8 py-5 border-t border-gray-100">
+          <div id="booking-wizard-footer-nav" className="px-5 sm:px-8 py-5 border-t border-gray-100 scroll-mt-24">
             <div className="flex items-center justify-between gap-4">
               <motion.button
                 type="button"
@@ -1025,7 +1156,7 @@ export default function BookingWizard() {
                 whileTap={canProceed[step] ? { scale: 0.98 } : {}}
                 className={cn(
                   "relative flex items-center gap-2 px-5 sm:px-7 py-2.5 rounded-xl text-sm font-semibold overflow-hidden disabled:cursor-not-allowed transition-all",
-                  canProceed[step] ? "text-white bg-[#0066FF] shadow-md shadow-blue-500/25" : "text-gray-400 bg-gray-100",
+                  canProceed[step] ? "text-white bg-blue-600 shadow-md shadow-blue-600/25" : "text-gray-400 bg-gray-100",
                 )}
               >
                 {loading ? (
@@ -1049,10 +1180,10 @@ export default function BookingWizard() {
 
             <div className="flex items-center justify-center gap-5 mt-4 text-xs">
               <a href="tel:+918639605147" className="flex items-center gap-1.5 text-gray-500 hover:text-gray-900 transition-colors">
-                <Phone className="w-3.5 h-3.5 text-[#0066FF]" /> Call us
+                <Phone className="w-3.5 h-3.5 text-blue-700" /> Call us
               </a>
               <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1.5 text-gray-500 hover:text-gray-900 transition-colors">
-                <MessageCircle className="w-3.5 h-3.5 text-[#16A34A]" /> WhatsApp
+                <MessageCircle className="w-3.5 h-3.5 text-emerald-700" /> WhatsApp
               </a>
             </div>
 

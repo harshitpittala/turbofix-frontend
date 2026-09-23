@@ -12,7 +12,7 @@ const steps = [
     icon: ClipboardList,
     title: "Book Online",
     desc: "Use our smart booking form to describe your issue, choose a time slot, and lock in your appointment in under 2 minutes.",
-    color: "#00AAFF",
+    color: "#2563EB",
     highlight: "Takes 2 minutes",
   },
   {
@@ -20,7 +20,7 @@ const steps = [
     icon: ScanLine,
     title: "Free Diagnostics",
     desc: "Drop off your device. Our technicians run a 15-point diagnostic check — completely free of charge, no commitment.",
-    color: "#7C3AED",
+    color: "#1D4ED8",
     highlight: "Always free",
   },
   {
@@ -28,7 +28,7 @@ const steps = [
     icon: Wrench,
     title: "Expert Service",
     desc: "Once you approve the quote, our trained engineers get to work. Most visits are completed in under 30 minutes.",
-    color: "#EC4899",
+    color: "#3B82F6",
     highlight: "~30 min average",
   },
   {
@@ -36,7 +36,7 @@ const steps = [
     icon: PackageCheck,
     title: "Pick Up & Protect",
     desc: "Your device is tested, cleaned, and returned with a 6-month warranty card. You leave happier than you arrived.",
-    color: "#22C55E",
+    color: "#0EA5E9",
     highlight: "6-month warranty",
   },
 ];
@@ -45,9 +45,8 @@ export default function HowItWorks() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section ref={ref} className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-[#030712]" />
-      <div className="absolute inset-0 grid-bg opacity-40" />
+    <section ref={ref} className="relative py-28 overflow-hidden border-t border-slate-100">
+      <div className="absolute inset-0 bg-white" />
 
       <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
@@ -62,12 +61,12 @@ export default function HowItWorks() {
           </motion.div>
           <motion.h2
             variants={fadeInUp}
-            className="font-display text-4xl md:text-5xl font-bold mb-5"
+            className="font-display text-4xl md:text-5xl font-bold mb-5 text-slate-900"
           >
             Service in{" "}
             <span className="gradient-text">4 Simple Steps</span>
           </motion.h2>
-          <motion.p variants={fadeInUp} className="text-gray-400 text-lg max-w-xl mx-auto">
+          <motion.p variants={fadeInUp} className="text-slate-600 text-lg max-w-xl mx-auto">
             We've streamlined the entire service experience so you can get back to what matters — fast.
           </motion.p>
         </motion.div>
@@ -78,7 +77,7 @@ export default function HowItWorks() {
           <div className="absolute top-16 left-0 right-0 hidden lg:block">
             <div
               className="absolute left-[12.5%] right-[12.5%] top-0 h-px"
-              style={{ background: "linear-gradient(90deg, transparent, rgba(0,170,255,0.2) 15%, rgba(0,170,255,0.2) 85%, transparent)" }}
+              style={{ background: "linear-gradient(90deg, transparent, rgba(15,23,42,0.12) 15%, rgba(15,23,42,0.12) 85%, transparent)" }}
             />
           </div>
 
@@ -99,20 +98,12 @@ export default function HowItWorks() {
                   {/* Step number + icon */}
                   <div className="flex flex-col items-center text-center">
                     <div className="relative mb-6">
-                      {/* Outer glow ring */}
-                      <motion.div
-                        animate={{ scale: [1, 1.15, 1], opacity: [0.3, 0.6, 0.3] }}
-                        transition={{ duration: 3, repeat: Infinity, delay: i * 0.4 }}
-                        className="absolute inset-0 rounded-full blur-md"
-                        style={{ background: step.color }}
-                      />
                       {/* Icon circle */}
                       <div
                         className="relative w-16 h-16 rounded-full flex items-center justify-center"
                         style={{
-                          background: `linear-gradient(135deg, ${step.color}25, ${step.color}08)`,
-                          border: `1px solid ${step.color}40`,
-                          boxShadow: `0 0 20px ${step.color}20`,
+                          background: `${step.color}12`,
+                          border: `1px solid ${step.color}30`,
                         }}
                       >
                         <Icon className="w-7 h-7" style={{ color: step.color }} />
@@ -120,7 +111,7 @@ export default function HowItWorks() {
                       {/* Step number badge */}
                       <div
                         className="absolute -top-1 -right-1 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-bold"
-                        style={{ background: step.color, color: "#02040F" }}
+                        style={{ background: step.color, color: "#FFFFFF" }}
                       >
                         {i + 1}
                       </div>
@@ -138,14 +129,14 @@ export default function HowItWorks() {
                       {step.highlight}
                     </div>
 
-                    <h3 className="text-white font-semibold text-lg mb-3">{step.title}</h3>
-                    <p className="text-gray-500 text-sm leading-relaxed">{step.desc}</p>
+                    <h3 className="text-slate-900 font-semibold text-lg mb-3">{step.title}</h3>
+                    <p className="text-slate-500 text-sm leading-relaxed">{step.desc}</p>
                   </div>
 
                   {/* Arrow connector (desktop) */}
                   {i < steps.length - 1 && (
                     <div className="hidden lg:flex absolute top-6 -right-4 z-10 items-center justify-center">
-                      <ArrowRight className="w-5 h-5 text-gray-700" />
+                      <ArrowRight className="w-5 h-5 text-slate-300" />
                     </div>
                   )}
                 </motion.div>
@@ -168,7 +159,7 @@ export default function HowItWorks() {
             Start Your Visit
             <ArrowRight className="w-5 h-5" />
           </Link>
-          <p className="text-gray-600 text-sm mt-4">Free diagnostics · No commitment · Cancel anytime</p>
+          <p className="text-slate-500 text-sm mt-4">Free diagnostics · No commitment · Cancel anytime</p>
         </motion.div>
       </div>
     </section>

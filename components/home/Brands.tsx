@@ -3,22 +3,60 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { fadeInUp, staggerContainer } from "@/lib/utils";
+import { fadeInUp, staggerContainer, cn } from "@/lib/utils";
 
 const brands = [
-  { name: "Apple",    icon: "/images/brands/apple.svg",    color: "#A0A0A0" },
-  { name: "Samsung",  icon: "/images/brands/samsung.svg",  color: "#1428A0" },
-  { name: "OnePlus",  icon: "/images/brands/oneplus.svg",  color: "#F5010C" },
-  { name: "Xiaomi",   icon: "/images/brands/xiaomi.svg",   color: "#FF6900" },
-  { name: "OPPO",     icon: "/images/brands/oppo.svg",     color: "#1D8348" },
-  { name: "Vivo",     icon: "/images/brands/vivo.svg",     color: "#415FFF" },
-  { name: "Realme",   icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Ctext x='14' y='22' text-anchor='middle' fill='white' font-size='22' font-weight='900' font-family='Arial,sans-serif'%3ER%3C/text%3E%3C/svg%3E",   color: "#FEC400" },
-  { name: "Google",   icon: "/images/brands/google.svg",   color: "#4285F4" },
-  { name: "Motorola", icon: "/images/brands/motorola.svg", color: "#EB5A1B" },
-  { name: "Nokia",    icon: "/images/brands/nokia.svg",    color: "#124191" },
-  { name: "Sony",     icon: "/images/brands/sony.svg",     color: "#003791" },
-  { name: "Nothing",  icon: "/images/brands/nothing.svg",  color: "#E5E5E5" },
+  { name: "Apple",    icon: "/images/brands/apple.webp",       color: "#A0A0A0" },
+  { name: "Samsung",  icon: "/images/brands/samsung.webp",     color: "#1428A0" },
+  { name: "OnePlus",  icon: "/images/brands/oneplus.webp",     color: "#F5010C" },
+  { name: "Xiaomi",   icon: "/images/brands/xiaomi.webp",      color: "#FF6900" },
+  // Nokia/Sony marks are solid-white SVGs (no full-color asset available) — need a colored
+  // backdrop chip, since the marquee cards themselves are white/near-white. Kept several
+  // brands apart from each other so the two similar navy chips don't sit side by side.
+  { name: "Sony",     icon: "/images/brands/sony.svg",         color: "#003791", mono: true },
+  { name: "OPPO",     icon: "/images/brands/oppo.webp",        color: "#1D8348" },
+  { name: "Vivo",     icon: "/images/brands/vivo.webp",        color: "#415FFF" },
+  { name: "Realme",   icon: "/images/brands/realme.webp",      color: "#FEC400" },
+  { name: "Google",   icon: "/images/brands/google-pixel.webp", color: "#4285F4" },
+  { name: "Motorola", icon: "/images/brands/motorola.webp",    color: "#EB5A1B" },
+  { name: "Nothing",  icon: "/images/brands/nothing.png",      color: "#E5E5E5" },
+  { name: "Nokia",    icon: "/images/brands/nokia.svg",        color: "#124191", mono: true },
 ];
+
+function BrandIcon({
+  brand,
+  width,
+  height,
+  opacity,
+}: {
+  brand: (typeof brands)[number];
+  width: number;
+  height: number;
+  opacity: string;
+}) {
+  const img = (
+    <Image
+      src={brand.icon}
+      alt={brand.name}
+      width={width}
+      height={height}
+      className={cn("object-contain", !brand.mono && opacity)}
+      unoptimized
+      onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
+    />
+  );
+
+  if (!brand.mono) return img;
+
+  return (
+    <span
+      className="flex items-center justify-center rounded-md shrink-0 px-1.5 py-1"
+      style={{ background: brand.color }}
+    >
+      {img}
+    </span>
+  );
+}
 
 const doubled = [...brands, ...brands];
 
@@ -26,8 +64,8 @@ export default function Brands() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section ref={ref} className="relative py-24 overflow-hidden">
-      <div className="absolute inset-0 bg-[#02040F]" />
+    <section ref={ref} className="relative py-24 overflow-hidden border-t border-slate-100">
+      <div className="absolute inset-0 bg-white" />
 
       <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
@@ -42,14 +80,14 @@ export default function Brands() {
           </motion.div>
           <motion.h2
             variants={fadeInUp}
-            className="font-display text-4xl md:text-5xl font-bold mb-4"
+            className="font-display text-4xl md:text-5xl font-bold mb-4 text-slate-900"
           >
             We Service{" "}
             <span className="gradient-text">Every Brand</span>
           </motion.h2>
           <motion.p
             variants={fadeInUp}
-            className="text-gray-400 text-lg max-w-xl mx-auto"
+            className="text-slate-600 text-lg max-w-xl mx-auto"
           >
             Apple to Nothing — if it has a screen and a battery, we service it.
           </motion.p>
@@ -68,20 +106,12 @@ export default function Brands() {
               key={`${brand.name}-${i}`}
               className="flex items-center gap-3 px-6 py-3 rounded-xl whitespace-nowrap select-none"
               style={{
-                background: "rgba(255,255,255,0.03)",
-                border: "1px solid rgba(255,255,255,0.06)",
+                background: "#FFFFFF",
+                border: "1px solid #E2E8F0",
               }}
             >
-              <Image
-                src={brand.icon}
-                alt={brand.name}
-                width={18}
-                height={18}
-                className="opacity-80"
-                unoptimized
-                onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
-              />
-              <span className="text-gray-300 text-sm font-medium">{brand.name}</span>
+              <BrandIcon brand={brand} width={40} height={18} opacity="opacity-80" />
+              <span className="text-slate-700 text-sm font-medium">{brand.name}</span>
             </div>
           ))}
         </motion.div>
@@ -99,20 +129,12 @@ export default function Brands() {
               key={`${brand.name}-rev-${i}`}
               className="flex items-center gap-3 px-6 py-3 rounded-xl whitespace-nowrap select-none"
               style={{
-                background: "rgba(255,255,255,0.02)",
-                border: "1px solid rgba(255,255,255,0.05)",
+                background: "#F8FAFC",
+                border: "1px solid #E2E8F0",
               }}
             >
-              <Image
-                src={brand.icon}
-                alt={brand.name}
-                width={16}
-                height={16}
-                className="opacity-50"
-                unoptimized
-                onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
-              />
-              <span className="text-gray-400 text-sm">{brand.name}</span>
+              <BrandIcon brand={brand} width={36} height={16} opacity="opacity-50" />
+              <span className="text-slate-500 text-sm">{brand.name}</span>
             </div>
           ))}
         </motion.div>
@@ -120,9 +142,9 @@ export default function Brands() {
 
       {/* Bottom note */}
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 mt-10 text-center">
-        <p className="text-gray-600 text-sm">
+        <p className="text-slate-500 text-sm">
           Don't see your brand?{" "}
-          <a href="/contact" className="text-[#00AAFF] hover:underline">Contact us</a>{" "}
+          <a href="/contact" className="text-blue-700 hover:underline">Contact us</a>{" "}
           — we most likely service it too.
         </p>
       </div>

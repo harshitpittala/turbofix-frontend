@@ -51,7 +51,7 @@ export default function FaqAccordion() {
 
         <p className="text-center text-sm text-gray-500 mt-6">
           Still have questions? Call us:{" "}
-          <a href="tel:+918639605147" className="text-[#0066FF] font-medium">
+          <a href="tel:+918639605147" className="text-blue-700 font-medium">
             86396 05147
           </a>
         </p>

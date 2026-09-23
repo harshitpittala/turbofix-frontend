@@ -14,18 +14,18 @@ import { WHATSAPP_URL } from "@/lib/config";
 
 /* ── Floating badges ─────────────────────────────────────────────────── */
 const floatingBadges = [
-  { icon: Shield, label: "Warranty Protected", color: "#00AAFF", delay: 0 },
-  { icon: Clock,  label: "Same Day Service",   color: "#7C3AED", delay: 0.3 },
-  { icon: Star,   label: "5-Star Rated",       color: "#F59E0B", delay: 0.6 },
+  { icon: Shield, label: "Warranty Protected", color: "#059669", delay: 0 },
+  { icon: Clock,  label: "Same Day Service",   color: "#2563EB", delay: 0.3 },
+  { icon: Star,   label: "5-Star Rated",       color: "#B45309", delay: 0.6 },
 ];
 
 /* ── Social-proof avatar data ────────────────────────────────────────── */
 const avatarData = [
-  { initial: "A", from: "#0066FF", to: "#00AAFF" },
-  { initial: "R", from: "#7C3AED", to: "#A78BFA" },
-  { initial: "S", from: "#EC4899", to: "#F472B6" },
-  { initial: "P", from: "#F59E0B", to: "#FCD34D" },
-  { initial: "M", from: "#22C55E", to: "#4ADE80" },
+  { initial: "A", from: "#1E3A8A", to: "#2563EB" },
+  { initial: "R", from: "#1D4ED8", to: "#3B82F6" },
+  { initial: "S", from: "#0EA5E9", to: "#38BDF8" },
+  { initial: "P", from: "#0284C7", to: "#0EA5E9" },
+  { initial: "M", from: "#1E40AF", to: "#60A5FA" },
 ];
 
 /* ── Screen transition variants ──────────────────────────────────────── */
@@ -35,28 +35,28 @@ const screenVariants = {
   exit:   { opacity: 0, y: -10, transition: { duration: 0.25, ease: "easeIn" as any } },
 };
 
-/* ── Status bar (shared) ─────────────────────────────────────────────── */
+/* ── Status bar (shared) — dark icons, the screen content behind it is light ── */
 function StatusBar() {
   return (
     <div className="relative flex items-center justify-between px-5 pt-4 pb-2 shrink-0">
-      <span className="text-[10px] text-white font-semibold font-mono">9:41</span>
+      <span className="text-[10px] text-slate-900 font-semibold font-mono">9:41</span>
       <div className="absolute left-1/2 -translate-x-1/2 top-2.5 w-[68px] h-[22px] rounded-full bg-black" />
       <div className="flex items-center gap-1.5">
         <div className="flex items-end gap-[2px]">
           {[3, 4, 5, 6].map((h) => (
-            <div key={h} className="w-[2.5px] rounded-sm bg-white" style={{ height: `${h}px` }} />
+            <div key={h} className="w-[2.5px] rounded-sm bg-slate-900" style={{ height: `${h}px` }} />
           ))}
         </div>
         <svg width="11" height="9" viewBox="0 0 11 9" fill="none">
-          <path d="M5.5 7.5a.75.75 0 100-1.5.75.75 0 000 1.5z" fill="white" />
-          <path d="M3 5.5a3.5 3.5 0 015 0" stroke="white" strokeWidth="1.2" strokeLinecap="round" />
-          <path d="M0.5 3A6.5 6.5 0 0110.5 3" stroke="white" strokeWidth="1.2" strokeLinecap="round" />
+          <path d="M5.5 7.5a.75.75 0 100-1.5.75.75 0 000 1.5z" fill="#0F172A" />
+          <path d="M3 5.5a3.5 3.5 0 015 0" stroke="#0F172A" strokeWidth="1.2" strokeLinecap="round" />
+          <path d="M0.5 3A6.5 6.5 0 0110.5 3" stroke="#0F172A" strokeWidth="1.2" strokeLinecap="round" />
         </svg>
         <div className="flex items-center">
-          <div className="w-[18px] h-[9px] rounded-[2px] border border-white/60 relative p-[1.5px]">
-            <div className="h-full rounded-[1px] bg-green-400" style={{ width: "78%" }} />
+          <div className="w-[18px] h-[9px] rounded-[2px] border border-slate-900/60 relative p-[1.5px]">
+            <div className="h-full rounded-[1px] bg-blue-600" style={{ width: "78%" }} />
           </div>
-          <div className="w-[2px] h-[5px] bg-white/40 rounded-r-sm ml-[1px]" />
+          <div className="w-[2px] h-[5px] bg-slate-900/40 rounded-r-sm ml-[1px]" />
         </div>
       </div>
     </div>
@@ -70,14 +70,14 @@ function Screen1() {
       {/* Header */}
       <div className="flex items-center justify-between shrink-0">
         <div>
-          <p className="text-[8px] text-gray-500">Good morning ☀️</p>
-          <p className="text-[11px] font-bold text-white">TurboFix</p>
+          <p className="text-[8px] text-slate-500">Good morning ☀️</p>
+          <p className="text-[11px] font-bold text-slate-900">TurboFix</p>
         </div>
         <div className="relative">
-          <div className="w-[28px] h-[28px] rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+          <div className="w-[28px] h-[28px] rounded-xl bg-gradient-to-br from-[#0066FF] to-[#00AAFF] flex items-center justify-center">
             <Zap className="w-3.5 h-3.5 text-white" fill="white" />
           </div>
-          <div className="absolute -top-[3px] -right-[3px] w-[10px] h-[10px] rounded-full bg-red-500 border-[1.5px] border-[#040816] flex items-center justify-center">
+          <div className="absolute -top-[3px] -right-[3px] w-[10px] h-[10px] rounded-full bg-red-500 border-[1.5px] border-white flex items-center justify-center">
             <span className="text-[5px] text-white font-bold leading-none">2</span>
           </div>
         </div>
@@ -87,41 +87,41 @@ function Screen1() {
       <div
         className="rounded-xl p-2.5 shrink-0"
         style={{
-          background: "linear-gradient(135deg, rgba(0,102,255,0.25), rgba(0,170,255,0.12))",
-          border: "1px solid rgba(0,170,255,0.25)",
+          background: "linear-gradient(135deg, rgba(37,99,235,0.12), rgba(59,130,246,0.06))",
+          border: "1px solid rgba(37,99,235,0.2)",
         }}
       >
         <div className="flex items-center gap-1 mb-1">
-          <div className="w-[5px] h-[5px] rounded-full bg-[#00AAFF] animate-pulse" />
-          <span className="text-[7px] text-[#00AAFF] font-bold uppercase tracking-wider">Active Service</span>
+          <div className="w-[5px] h-[5px] rounded-full bg-blue-600 animate-pulse" />
+          <span className="text-[7px] text-blue-700 font-bold uppercase tracking-wider">Active Service</span>
         </div>
-        <p className="text-[9px] text-white font-semibold mb-1.5">iPhone 16 Pro — Screen Service</p>
+        <p className="text-[9px] text-slate-900 font-semibold mb-1.5">iPhone 16 Pro — Screen Service</p>
         <div className="flex items-center gap-2">
-          <div className="flex-1 h-[3px] rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,0.08)" }}>
+          <div className="flex-1 h-[3px] rounded-full overflow-hidden" style={{ background: "rgba(15,23,42,0.08)" }}>
             <motion.div
               className="h-full rounded-full"
-              style={{ background: "linear-gradient(90deg, #0066FF, #00AAFF)" }}
+              style={{ background: "linear-gradient(90deg, #1D4ED8, #2563EB)" }}
               animate={{ width: ["65%", "78%", "65%"] }}
               transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
             />
           </div>
-          <span className="text-[7px] text-[#00AAFF] font-mono shrink-0">~20 min</span>
+          <span className="text-[7px] text-blue-700 font-mono shrink-0">~20 min</span>
         </div>
       </div>
 
       {/* Quick actions */}
       <div className="shrink-0">
-        <p className="text-[7px] text-gray-500 uppercase tracking-wider mb-1.5">Quick Actions</p>
+        <p className="text-[7px] text-slate-500 uppercase tracking-wider mb-1.5">Quick Actions</p>
         <div className="grid grid-cols-3 gap-1.5">
           {[
-            { icon: Calendar,     label: "Book",    color: "#00AAFF" },
-            { icon: Activity,     label: "Track",   color: "#A78BFA" },
-            { icon: MessageSquare,label: "Support", color: "#22C55E" },
+            { icon: Calendar,     label: "Book",    color: "#2563EB" },
+            { icon: Activity,     label: "Track",   color: "#0EA5E9" },
+            { icon: MessageSquare,label: "Support", color: "#1D4ED8" },
           ].map(({ icon: Icon, label, color }) => (
             <div
               key={label}
               className="flex flex-col items-center gap-1 p-2 rounded-xl"
-              style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)" }}
+              style={{ background: "#F8FAFC", border: "1px solid #E2E8F0" }}
             >
               <div
                 className="w-6 h-6 rounded-lg flex items-center justify-center"
@@ -129,7 +129,7 @@ function Screen1() {
               >
                 <Icon className="w-3 h-3" style={{ color }} />
               </div>
-              <span className="text-[7px] text-gray-400">{label}</span>
+              <span className="text-[7px] text-slate-500">{label}</span>
             </div>
           ))}
         </div>
@@ -138,20 +138,20 @@ function Screen1() {
       {/* My devices */}
       <div className="flex-1 flex flex-col min-h-0">
         <div className="flex items-center justify-between mb-1.5">
-          <p className="text-[7px] text-gray-500 uppercase tracking-wider">My Devices</p>
-          <span className="text-[7px] text-[#00AAFF]">Manage →</span>
+          <p className="text-[7px] text-slate-500 uppercase tracking-wider">My Devices</p>
+          <span className="text-[7px] text-blue-700">Manage →</span>
         </div>
         {[
-          { name: "iPhone 16 Pro",  status: "In Service", color: "#F59E0B" },
-          { name: "Samsung S25",    status: "Protected",  color: "#22C55E" },
+          { name: "iPhone 16 Pro",  status: "In Service", color: "#2563EB" },
+          { name: "Samsung S25",    status: "Protected",  color: "#059669" },
         ].map(({ name, status, color }) => (
           <div
             key={name}
             className="flex items-center gap-2 px-2 py-1.5 rounded-lg mb-1.5"
-            style={{ background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.05)" }}
+            style={{ background: "#F8FAFC", border: "1px solid #E2E8F0" }}
           >
-            <Smartphone className="w-3 h-3 text-gray-500 shrink-0" />
-            <p className="text-[8px] text-white font-medium flex-1 truncate">{name}</p>
+            <Smartphone className="w-3 h-3 text-slate-500 shrink-0" />
+            <p className="text-[8px] text-slate-900 font-medium flex-1 truncate">{name}</p>
             <span
               className="text-[7px] font-semibold px-1.5 py-0.5 rounded-full shrink-0"
               style={{ background: `${color}18`, color }}
@@ -171,11 +171,11 @@ function Screen2() {
     <div className="flex flex-col gap-2 h-full">
       {/* Header */}
       <div className="flex items-center gap-1.5 shrink-0">
-        <ChevronLeft className="w-3.5 h-3.5 text-gray-500" />
-        <p className="text-[10px] font-bold text-white flex-1">Service Tracker</p>
-        <div className="flex items-center gap-1 px-1.5 py-0.5 rounded-full" style={{ background: "rgba(0,170,255,0.1)", border: "1px solid rgba(0,170,255,0.2)" }}>
-          <div className="w-[4px] h-[4px] rounded-full bg-[#00AAFF] animate-pulse" />
-          <span className="text-[6.5px] text-[#00AAFF] font-semibold">Live</span>
+        <ChevronLeft className="w-3.5 h-3.5 text-slate-500" />
+        <p className="text-[10px] font-bold text-slate-900 flex-1">Service Tracker</p>
+        <div className="flex items-center gap-1 px-1.5 py-0.5 rounded-full" style={{ background: "rgba(37,99,235,0.1)", border: "1px solid rgba(37,99,235,0.25)" }}>
+          <div className="w-[4px] h-[4px] rounded-full bg-blue-500 animate-pulse" />
+          <span className="text-[6.5px] text-blue-700 font-semibold">Live</span>
         </div>
       </div>
 
@@ -183,15 +183,15 @@ function Screen2() {
       <div
         className="rounded-xl p-2.5 shrink-0"
         style={{
-          background: "linear-gradient(135deg, rgba(0,102,255,0.2), rgba(0,170,255,0.08))",
-          border: "1px solid rgba(0,170,255,0.22)",
+          background: "linear-gradient(135deg, rgba(37,99,235,0.1), rgba(59,130,246,0.05))",
+          border: "1px solid rgba(37,99,235,0.18)",
         }}
       >
         <div className="flex items-center justify-between mb-1">
-          <span className="text-[7px] text-[#00AAFF] font-bold uppercase tracking-wider">#TFX-9821</span>
-          <span className="text-[6.5px] text-gray-500 font-mono">Today, 10:15 AM</span>
+          <span className="text-[7px] text-blue-700 font-bold uppercase tracking-wider">#TFX-9821</span>
+          <span className="text-[6.5px] text-slate-500 font-mono">Today, 10:15 AM</span>
         </div>
-        <p className="text-[9px] text-white font-semibold mb-2">iPhone 16 Pro — Screen Service</p>
+        <p className="text-[9px] text-slate-900 font-semibold mb-2">iPhone 16 Pro — Screen Service</p>
 
         {/* Steps */}
         <div className="flex items-start gap-0.5 mb-2">
@@ -206,8 +206,8 @@ function Screen2() {
                 <div
                   className="w-[8px] h-[8px] rounded-full flex items-center justify-center shrink-0 relative z-10"
                   style={{
-                    background: step.done ? "#22C55E" : (step as any).active ? "#00AAFF" : "rgba(255,255,255,0.08)",
-                    boxShadow: (step as any).active ? "0 0 6px rgba(0,170,255,0.6)" : "none",
+                    background: step.done ? "#059669" : (step as any).active ? "#2563EB" : "rgba(15,23,42,0.1)",
+                    boxShadow: (step as any).active ? "0 0 4px rgba(37,99,235,0.5)" : "none",
                   }}
                 >
                   {step.done && <span style={{ fontSize: "4px", color: "white" }}>✓</span>}
@@ -215,11 +215,11 @@ function Screen2() {
                 {i < 3 && (
                   <div
                     className="flex-1 h-[1.5px]"
-                    style={{ background: step.done ? "#22C55E" : "rgba(255,255,255,0.08)" }}
+                    style={{ background: step.done ? "#059669" : "rgba(15,23,42,0.1)" }}
                   />
                 )}
               </div>
-              <span className="text-[5.5px] text-gray-600 text-center leading-none mt-0.5 whitespace-nowrap">
+              <span className="text-[5.5px] text-slate-500 text-center leading-none mt-0.5 whitespace-nowrap">
                 {step.label}
               </span>
             </div>
@@ -227,48 +227,48 @@ function Screen2() {
         </div>
 
         <div className="flex items-center gap-2">
-          <div className="flex-1 h-[3px] rounded-full overflow-hidden" style={{ background: "rgba(255,255,255,0.08)" }}>
+          <div className="flex-1 h-[3px] rounded-full overflow-hidden" style={{ background: "rgba(15,23,42,0.08)" }}>
             <motion.div
               className="h-full rounded-full"
-              style={{ background: "linear-gradient(90deg, #0066FF, #00AAFF)" }}
+              style={{ background: "linear-gradient(90deg, #1D4ED8, #2563EB)" }}
               animate={{ width: ["68%", "80%", "68%"] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             />
           </div>
-          <span className="text-[7px] text-[#00AAFF] font-mono shrink-0">~20 min</span>
+          <span className="text-[7px] text-blue-700 font-mono shrink-0">~20 min</span>
         </div>
       </div>
 
       {/* Technician */}
       <div
         className="rounded-xl p-2 shrink-0"
-        style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}
+        style={{ background: "#F8FAFC", border: "1px solid #E2E8F0" }}
       >
-        <p className="text-[6.5px] text-gray-500 uppercase tracking-wider mb-1.5">Your Technician</p>
+        <p className="text-[6.5px] text-slate-500 uppercase tracking-wider mb-1.5">Your Technician</p>
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center shrink-0">
+          <div className="w-7 h-7 rounded-xl bg-gradient-to-br from-[#1D4ED8] to-[#3B82F6] flex items-center justify-center shrink-0">
             <span className="text-[8px] text-white font-bold">VR</span>
           </div>
           <div className="flex-1 min-w-0">
-            <p className="text-[8px] text-white font-semibold">Vikram Rao</p>
+            <p className="text-[8px] text-slate-900 font-semibold">Vikram Rao</p>
             <div className="flex items-center gap-1">
               <Star className="w-2 h-2 fill-amber-400 text-amber-400" />
-              <span className="text-[7px] text-gray-400">4.9 · Verified Tech</span>
+              <span className="text-[7px] text-slate-500">4.9 · Verified Tech</span>
             </div>
           </div>
           <div className="text-right shrink-0">
-            <div className="w-[5px] h-[5px] rounded-full bg-green-400 ml-auto mb-0.5 animate-pulse" />
-            <span className="text-[6px] text-green-400">Working</span>
+            <div className="w-[5px] h-[5px] rounded-full bg-blue-500 ml-auto mb-0.5 animate-pulse" />
+            <span className="text-[6px] text-blue-700">Working</span>
           </div>
         </div>
-        <p className="text-[7px] text-gray-400 mt-1.5 leading-relaxed">
+        <p className="text-[7px] text-slate-500 mt-1.5 leading-relaxed">
           "Screen panel replaced. Running display tests now…"
         </p>
       </div>
 
       {/* Timeline */}
       <div className="flex-1 flex flex-col min-h-0">
-        <p className="text-[6.5px] text-gray-500 uppercase tracking-wider mb-1.5">Timeline</p>
+        <p className="text-[6.5px] text-slate-500 uppercase tracking-wider mb-1.5">Timeline</p>
         {[
           { time: "09:30",  label: "Device received",     done: true  },
           { time: "09:45",  label: "Diagnosis complete",  done: true  },
@@ -278,15 +278,15 @@ function Screen2() {
           <div key={time} className="flex items-start gap-2 mb-1.5">
             <div
               className="w-[6px] h-[6px] rounded-full mt-0.5 shrink-0"
-              style={{ background: done ? "#22C55E" : active ? "#00AAFF" : "rgba(255,255,255,0.1)" }}
+              style={{ background: done ? "#059669" : active ? "#2563EB" : "rgba(15,23,42,0.12)" }}
             />
             <p
               className="flex-1 text-[7px] leading-none"
-              style={{ color: done ? "#D1D5DB" : active ? "#00AAFF" : "#4B5563" }}
+              style={{ color: done ? "#475569" : active ? "#1D4ED8" : "#94A3B8" }}
             >
               {label}
             </p>
-            <span className="text-[6px] text-gray-600 font-mono shrink-0">{time}</span>
+            <span className="text-[6px] text-slate-500 font-mono shrink-0">{time}</span>
           </div>
         ))}
       </div>
@@ -300,54 +300,54 @@ function Screen3() {
     <div className="flex flex-col gap-2 h-full">
       {/* Header */}
       <div className="flex items-center justify-between shrink-0">
-        <p className="text-[10px] font-bold text-white">Services</p>
+        <p className="text-[10px] font-bold text-slate-900">Services</p>
         <div
           className="flex items-center gap-0.5 px-1.5 py-0.5 rounded-full"
-          style={{ background: "rgba(245,158,11,0.12)", border: "1px solid rgba(245,158,11,0.25)" }}
+          style={{ background: "rgba(217,119,6,0.1)", border: "1px solid rgba(217,119,6,0.22)" }}
         >
           <Star className="w-2 h-2 fill-amber-400 text-amber-400" />
-          <span className="text-[7px] text-amber-400 font-bold">4.9</span>
+          <span className="text-[7px] text-amber-700 font-bold">4.9</span>
         </div>
       </div>
 
       {/* Warranty card */}
       <div
         className="rounded-xl p-2.5 shrink-0"
-        style={{ background: "rgba(34,197,94,0.08)", border: "1px solid rgba(34,197,94,0.2)" }}
+        style={{ background: "rgba(5,150,105,0.07)", border: "1px solid rgba(5,150,105,0.18)" }}
       >
         <div className="flex items-center gap-2">
           <div
             className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0"
-            style={{ background: "rgba(34,197,94,0.15)" }}
+            style={{ background: "rgba(5,150,105,0.14)" }}
           >
-            <Shield className="w-3.5 h-3.5 text-green-400" />
+            <Shield className="w-3.5 h-3.5 text-emerald-700" />
           </div>
           <div className="flex-1 min-w-0">
-            <p className="text-[8px] text-green-400 font-bold">Warranty Active</p>
-            <p className="text-[7px] text-gray-400">6-month coverage · Next service free</p>
+            <p className="text-[8px] text-emerald-700 font-bold">Warranty Active</p>
+            <p className="text-[7px] text-slate-500">6-month coverage · Next service free</p>
           </div>
-          <div className="w-[5px] h-[5px] rounded-full bg-green-400 animate-pulse shrink-0" />
+          <div className="w-[5px] h-[5px] rounded-full bg-emerald-500 animate-pulse shrink-0" />
         </div>
       </div>
 
       {/* Diagnostics */}
       <div
         className="rounded-xl p-2 shrink-0"
-        style={{ background: "rgba(124,58,237,0.08)", border: "1px solid rgba(124,58,237,0.15)" }}
+        style={{ background: "rgba(37,99,235,0.06)", border: "1px solid rgba(37,99,235,0.15)" }}
       >
-        <p className="text-[6.5px] text-purple-300 font-semibold uppercase tracking-wider mb-1.5">
+        <p className="text-[6.5px] text-blue-700 font-semibold uppercase tracking-wider mb-1.5">
           Device Diagnostics
         </p>
         <div className="grid grid-cols-4 gap-1">
           {[
-            { label: "Screen",  val: "85%",  color: "#F59E0B" },
-            { label: "Battery", val: "62%",  color: "#22C55E" },
-            { label: "Camera",  val: "OK",   color: "#00AAFF" },
-            { label: "Temp",    val: "32°C", color: "#EC4899" },
+            { label: "Screen",  val: "85%",  color: "#2563EB" },
+            { label: "Battery", val: "62%",  color: "#1D4ED8" },
+            { label: "Camera",  val: "OK",   color: "#3B82F6" },
+            { label: "Temp",    val: "32°C", color: "#0EA5E9" },
           ].map(({ label, val, color }) => (
-            <div key={label} className="text-center p-1 rounded-lg" style={{ background: "rgba(255,255,255,0.03)" }}>
+            <div key={label} className="text-center p-1 rounded-lg" style={{ background: "#F8FAFC" }}>
               <div className="text-[8px] font-bold leading-none mb-0.5" style={{ color }}>{val}</div>
-              <div className="text-[6px] text-gray-600">{label}</div>
+              <div className="text-[6px] text-slate-500">{label}</div>
             </div>
           ))}
         </div>
@@ -356,22 +356,22 @@ function Screen3() {
       {/* Services list */}
       <div className="flex-1 flex flex-col min-h-0">
         <div className="flex items-center justify-between mb-1.5">
-          <p className="text-[6.5px] text-gray-500 uppercase tracking-wider">Our Services</p>
-          <span className="text-[7px] text-[#00AAFF]">All →</span>
+          <p className="text-[6.5px] text-slate-500 uppercase tracking-wider">Our Services</p>
+          <span className="text-[7px] text-blue-700">All →</span>
         </div>
         {[
-          { icon: "🖥️", label: "Screen Replacement", color: "#0EA5E9" },
-          { icon: "🔋", label: "Battery Replacement", color: "#22C55E" },
-          { icon: "📷", label: "Camera Service",      color: "#A78BFA" },
-          { icon: "💧", label: "Water Damage",        color: "#38BDF8" },
-        ].map(({ icon, label, color }) => (
+          { icon: "🖥️", label: "Screen Replacement" },
+          { icon: "🔋", label: "Battery Replacement" },
+          { icon: "📷", label: "Camera Service" },
+          { icon: "💧", label: "Water Damage" },
+        ].map(({ icon, label }) => (
           <div
             key={label}
             className="flex items-center gap-2 px-2 py-1.5 rounded-lg mb-1"
-            style={{ background: "rgba(255,255,255,0.025)", border: "1px solid rgba(255,255,255,0.05)" }}
+            style={{ background: "#F8FAFC", border: "1px solid #E2E8F0" }}
           >
             <span className="text-[10px] shrink-0">{icon}</span>
-            <p className="text-[7.5px] text-gray-300 font-medium flex-1 truncate">{label}</p>
+            <p className="text-[7.5px] text-slate-700 font-medium flex-1 truncate">{label}</p>
           </div>
         ))}
       </div>
@@ -379,15 +379,15 @@ function Screen3() {
       {/* Customer review */}
       <div
         className="rounded-xl p-2 shrink-0"
-        style={{ background: "rgba(245,158,11,0.06)", border: "1px solid rgba(245,158,11,0.12)" }}
+        style={{ background: "rgba(217,119,6,0.05)", border: "1px solid rgba(217,119,6,0.12)" }}
       >
         <div className="flex items-center gap-0.5 mb-1">
           {[1, 2, 3, 4, 5].map((i) => (
             <Star key={i} className="w-2 h-2 fill-amber-400 text-amber-400" />
           ))}
         </div>
-        <p className="text-[7px] text-gray-300 leading-relaxed">"Fixed my iPhone in just 25 minutes!"</p>
-        <p className="text-[6.5px] text-gray-600 mt-0.5">— Arjun R. · 2 days ago</p>
+        <p className="text-[7px] text-slate-700 leading-relaxed">"Fixed my iPhone in just 25 minutes!"</p>
+        <p className="text-[6.5px] text-slate-500 mt-0.5">— Arjun R. · 2 days ago</p>
       </div>
     </div>
   );
@@ -411,18 +411,18 @@ function PhoneMockup() {
       transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       className="relative z-10 will-change-transform"
     >
-      {/* Phone frame */}
+      {/* Phone frame — kept dark; a device bezel reads as hardware, not page theme */}
       <div
         className="relative w-[240px] sm:w-[260px] h-[500px] sm:h-[560px] rounded-[3.5rem]"
         style={{
           background: "linear-gradient(145deg, #1e2340 0%, #0d1020 100%)",
           border: "2px solid rgba(255,255,255,0.10)",
           boxShadow:
-            "0 40px 80px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.04), inset 0 1px 0 rgba(255,255,255,0.12), 0 0 60px rgba(0,102,255,0.12)",
+            "0 20px 50px rgba(15,23,42,0.35), 0 0 0 1px rgba(255,255,255,0.04), inset 0 1px 0 rgba(255,255,255,0.12)",
         }}
       >
-        {/* Screen area */}
-        <div className="absolute inset-[3px] rounded-[3.2rem] overflow-hidden bg-[#040816] flex flex-col">
+        {/* Screen area — light app UI */}
+        <div className="absolute inset-[3px] rounded-[3.2rem] overflow-hidden bg-white flex flex-col">
 
           {/* Status bar — always visible */}
           <StatusBar />
@@ -434,7 +434,7 @@ function PhoneMockup() {
                 key={i}
                 animate={{
                   width:      i === screen ? 14 : 5,
-                  background: i === screen ? "#00AAFF" : "rgba(255,255,255,0.2)",
+                  background: i === screen ? "#2563EB" : "rgba(15,23,42,0.15)",
                 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
                 className="h-[3.5px] rounded-full cursor-pointer"
@@ -461,29 +461,21 @@ function PhoneMockup() {
 
           {/* Home indicator */}
           <div className="flex justify-center py-2 shrink-0">
-            <div className="w-14 h-[3px] rounded-full bg-white/15" />
+            <div className="w-14 h-[3px] rounded-full bg-slate-300" />
           </div>
         </div>
 
-        {/* Side buttons */}
+        {/* Side buttons (on the dark bezel) */}
         <div className="absolute -right-px top-28 w-[3px] h-10 rounded-l-full bg-white/15" />
         <div className="absolute -left-px top-20 w-[3px] h-8 rounded-r-full bg-white/15" />
         <div className="absolute -left-px top-32 w-[3px] h-14 rounded-r-full bg-white/15" />
         <div className="absolute -left-px top-48 w-[3px] h-14 rounded-r-full bg-white/15" />
-
-        {/* Scanner line */}
-        <motion.div
-          className="absolute inset-x-0 h-px z-20 pointer-events-none"
-          style={{ background: "linear-gradient(90deg, transparent, rgba(0,170,255,0.28), transparent)" }}
-          animate={{ top: ["5%", "95%", "5%"] }}
-          transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        />
       </div>
 
-      {/* Glow under phone */}
+      {/* Soft contact shadow under phone (not a colored glow) */}
       <div
         className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-44 h-4 rounded-full blur-xl"
-        style={{ background: "rgba(0,170,255,0.22)" }}
+        style={{ background: "rgba(15,23,42,0.14)" }}
       />
     </motion.div>
   );
@@ -493,25 +485,8 @@ function PhoneMockup() {
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20">
-      {/* Backgrounds */}
-      <div className="absolute inset-0 bg-[#02040F]" />
-      <div className="absolute inset-0 grid-bg" />
-      <div className="absolute inset-0 radial-glow" />
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-full radial-glow-purple" />
-
-      {/* Ambient orbs */}
-      <motion.div
-        animate={{ x: [0, 20, 0], y: [0, -15, 0] }}
-        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/4 right-1/4 w-80 h-80 rounded-full blur-3xl pointer-events-none will-change-transform"
-        style={{ background: "rgba(0,102,255,0.10)" }}
-      />
-      <motion.div
-        animate={{ x: [0, -15, 0], y: [0, 20, 0] }}
-        transition={{ duration: 13, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-        className="absolute bottom-1/4 right-1/3 w-64 h-64 rounded-full blur-3xl pointer-events-none will-change-transform"
-        style={{ background: "rgba(124,58,237,0.08)" }}
-      />
+      {/* Background */}
+      <div className="absolute inset-0 bg-white" />
 
       <div className="container relative max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-0">
         <div className="grid lg:grid-cols-2 gap-8 xl:gap-12 items-center min-h-[80vh]">
@@ -526,8 +501,8 @@ export default function Hero() {
             <motion.div variants={fadeInUp} className="mb-6">
               <span className="section-label">
                 <span className="relative flex w-2 h-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00AAFF] opacity-75" />
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00AAFF]" />
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
                 </span>
                 Rated 4.9★ by 1,000+ Hyderabad Customers
               </span>
@@ -535,7 +510,7 @@ export default function Hero() {
 
             <motion.h1
               variants={fadeInUp}
-              className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 tracking-tight"
+              className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] mb-6 tracking-tight text-slate-900"
             >
               We Service Every
               <br />
@@ -557,11 +532,11 @@ export default function Hero() {
 
             <motion.p
               variants={fadeInUp}
-              className="text-gray-400 text-base lg:text-lg xl:text-xl leading-relaxed mb-10 max-w-lg"
+              className="text-slate-600 text-base lg:text-lg xl:text-xl leading-relaxed mb-10 max-w-lg"
             >
               Premium mobile service with{" "}
-              <span className="text-white font-medium">trained technicians</span>,{" "}
-              <span className="text-white font-medium">genuine OEM parts</span>, and
+              <span className="text-slate-900 font-medium">trained technicians</span>,{" "}
+              <span className="text-slate-900 font-medium">genuine OEM parts</span>, and
               transparent pricing — most visits completed in about 30 minutes.
             </motion.p>
 
@@ -589,7 +564,7 @@ export default function Hero() {
 
             <motion.p
               variants={fadeInUp}
-              className="text-gray-400 text-xs sm:text-[13px] leading-relaxed max-w-xl mb-8 sm:mb-10"
+              className="text-slate-500 text-xs sm:text-[13px] leading-relaxed max-w-xl mb-8 sm:mb-10"
             >
               TurboFix is an independent provider of on-site hardware modification and component replacement
               services. TurboFix is not an authorized service provider, partner, or affiliate of Apple Inc.,
@@ -606,7 +581,7 @@ export default function Hero() {
                   {avatarData.map(({ initial, from, to }, i) => (
                     <div
                       key={i}
-                      className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border-[2.5px] border-[#02040F] flex items-center justify-center shrink-0"
+                      className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border-[2.5px] border-slate-50 flex items-center justify-center shrink-0"
                       style={{ background: `linear-gradient(135deg, ${from}, ${to})` }}
                     >
                       <span className="text-[9px] sm:text-[10px] text-white font-bold leading-none select-none">
@@ -626,17 +601,17 @@ export default function Hero() {
                       />
                     ))}
                   </div>
-                  <p className="text-[11px] sm:text-xs text-gray-300">
-                    <span className="text-white font-semibold">4.9</span>
+                  <p className="text-[11px] sm:text-xs text-slate-600">
+                    <span className="text-slate-900 font-semibold">4.9</span>
                     {" · "}1,000+ happy customers
                   </p>
                 </div>
               </div>
 
-              <div className="h-8 w-px bg-white/10 hidden sm:block" />
+              <div className="h-8 w-px bg-slate-300 hidden sm:block" />
 
-              <div className="flex items-center gap-2 text-sm text-gray-400">
-                <span className="text-[#00AAFF] font-semibold">30 min</span>
+              <div className="flex items-center gap-2 text-sm text-slate-500">
+                <span className="text-blue-700 font-semibold">30 min</span>
                 average service time
               </div>
             </motion.div>
@@ -649,24 +624,18 @@ export default function Hero() {
             transition={{ duration: 0.9, delay: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="relative flex justify-center items-center mt-8 lg:mt-0"
           >
-            {/* Background glow */}
-            <div
-              className="absolute w-72 h-72 sm:w-80 sm:h-80 rounded-full blur-3xl pointer-events-none"
-              style={{ background: "radial-gradient(circle, rgba(0,102,255,0.18) 0%, transparent 70%)" }}
-            />
-
-            {/* Orbit rings */}
+            {/* Orbit rings — subtle, monochrome */}
             <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
               className="absolute w-[340px] sm:w-[380px] h-[340px] sm:h-[380px] rounded-full will-change-transform"
-              style={{ border: "1px dashed rgba(0,170,255,0.12)" }}
+              style={{ border: "1px dashed rgba(15,23,42,0.08)" }}
             />
             <motion.div
               animate={{ rotate: -360 }}
               transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
               className="absolute w-[420px] sm:w-[460px] h-[420px] sm:h-[460px] rounded-full will-change-transform"
-              style={{ border: "1px dashed rgba(124,58,237,0.08)" }}
+              style={{ border: "1px dashed rgba(37,99,235,0.08)" }}
             />
 
             <PhoneMockup />
@@ -684,11 +653,10 @@ export default function Hero() {
                 }}
                 className="absolute glass-strong rounded-xl px-2.5 sm:px-3 py-1.5 sm:py-2 flex items-center gap-1.5 sm:gap-2"
                 style={{
-                  border:    `1px solid ${color}28`,
+                  border:    `1px solid ${color}30`,
                   top:       i === 0 ? "12%" : i === 1 ? "78%" : "47%",
                   left:      i === 0 ? "-5%" : i === 1 ? "-10%" : "auto",
                   right:     i === 2 ? "-5%" : "auto",
-                  boxShadow: `0 4px 20px ${color}18`,
                 }}
               >
                 <div
@@ -697,7 +665,7 @@ export default function Hero() {
                 >
                   <Icon className="w-3 h-3 sm:w-3.5 sm:h-3.5" style={{ color }} />
                 </div>
-                <span className="text-[10px] sm:text-xs text-white font-medium whitespace-nowrap">
+                <span className="text-[10px] sm:text-xs text-slate-900 font-medium whitespace-nowrap">
                   {label}
                 </span>
               </motion.div>
@@ -710,7 +678,7 @@ export default function Hero() {
       <motion.div
         animate={{ y: [0, 8, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500"
       >
         <span className="text-xs tracking-widest uppercase font-mono">Scroll</span>
         <ChevronDown className="w-4 h-4" />

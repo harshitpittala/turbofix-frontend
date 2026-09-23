@@ -550,16 +550,16 @@ function RenderItems({ items }: { items: Item[] }) {
     <>
       {items.map((item, i) =>
         item.kind === "para" ? (
-          <p key={i} className="text-gray-400 leading-relaxed mb-3 last:mb-0">
+          <p key={i} className="text-slate-500 leading-relaxed mb-3 last:mb-0">
             {item.text}
           </p>
         ) : (
           <ul key={i} className="mt-2 mb-3 last:mb-0 space-y-1.5 pl-1">
             {item.items.map((li) => (
-              <li key={li} className="flex items-start gap-2.5 text-gray-400 text-sm leading-relaxed">
+              <li key={li} className="flex items-start gap-2.5 text-slate-500 text-sm leading-relaxed">
                 <span
                   className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0"
-                  style={{ background: "#00AAFF" }}
+                  style={{ background: "#2563EB" }}
                 />
                 {li}
               </li>
@@ -577,9 +577,7 @@ export default function PrivacyPageClient() {
     <>
       {/* ── Hero ── */}
       <section className="relative pt-32 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-[#02040F]" />
-        <div className="absolute inset-0 grid-bg" />
-        <div className="absolute inset-0 radial-glow" />
+        <div className="absolute inset-0 bg-white" />
         <div className="container relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <motion.div variants={staggerContainer} initial="hidden" animate="show">
             <motion.div variants={fadeInUp} className="flex justify-center mb-4">
@@ -587,11 +585,11 @@ export default function PrivacyPageClient() {
             </motion.div>
             <motion.h1
               variants={fadeInUp}
-              className="font-display text-5xl md:text-6xl font-bold mb-5"
+              className="font-display text-5xl md:text-6xl font-bold mb-5 text-slate-900"
             >
               Privacy <span className="gradient-text">Policy</span>
             </motion.h1>
-            <motion.p variants={fadeInUp} className="text-gray-400 text-lg">
+            <motion.p variants={fadeInUp} className="text-slate-500 text-lg">
               Last Updated: May 31, 2026
             </motion.p>
           </motion.div>
@@ -599,8 +597,8 @@ export default function PrivacyPageClient() {
       </section>
 
       {/* ── Content ── */}
-      <section className="relative py-16 pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[#030712]" />
+      <section className="relative py-16 pb-28 overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-white" />
         <div className="container relative max-w-4xl mx-auto px-4 sm:px-6">
 
           {/* Intro banner */}
@@ -610,11 +608,11 @@ export default function PrivacyPageClient() {
             transition={{ duration: 0.5 }}
             className="rounded-2xl p-8 mb-10"
             style={{
-              background: "rgba(0,170,255,0.05)",
-              border: "1px solid rgba(0,170,255,0.2)",
+              background: "rgba(37,99,235,0.05)",
+              border: "1px solid rgba(37,99,235,0.2)",
             }}
           >
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-slate-700 leading-relaxed">
               At TurboFix, we are committed to protecting your privacy and ensuring the security of
               your personal data. This Privacy Policy explains how we collect, use, store, process,
               and protect your personal information when you use our website, book our services,
@@ -634,15 +632,15 @@ export default function PrivacyPageClient() {
                 transition={{ delay: Math.min(si * 0.04, 0.3) }}
                 className="rounded-2xl p-7"
                 style={{
-                  background: "rgba(255,255,255,0.02)",
-                  border: "1px solid rgba(255,255,255,0.06)",
+                  background: "#FFFFFF",
+                  border: "1px solid #E2E8F0",
                 }}
               >
                 {/* Section title */}
-                <h2 className="text-white font-bold text-xl mb-5 flex items-center gap-3">
+                <h2 className="text-slate-900 font-bold text-xl mb-5 flex items-center gap-3">
                   <span
                     className="w-1.5 h-5 rounded-full shrink-0"
-                    style={{ background: "linear-gradient(180deg,#0066FF,#00AAFF)" }}
+                    style={{ background: "linear-gradient(180deg,#1E3A8A,#2563EB)" }}
                   />
                   {section.title}
                 </h2>
@@ -652,7 +650,7 @@ export default function PrivacyPageClient() {
                   {section.subs.map((sub, sj) => (
                     <div key={sj}>
                       {sub.heading && (
-                        <h3 className="text-[#00AAFF] font-semibold text-sm uppercase tracking-wider mb-2">
+                        <h3 className="text-blue-700 font-semibold text-sm uppercase tracking-wider mb-2">
                           {sub.heading}
                         </h3>
                       )}
@@ -671,47 +669,47 @@ export default function PrivacyPageClient() {
             viewport={{ once: true }}
             className="mt-8 rounded-2xl p-8"
             style={{
-              background: "rgba(0,170,255,0.05)",
-              border: "1px solid rgba(0,170,255,0.2)",
+              background: "rgba(37,99,235,0.05)",
+              border: "1px solid rgba(37,99,235,0.2)",
             }}
           >
-            <h2 className="text-white font-bold text-xl mb-4 flex items-center gap-3">
+            <h2 className="text-slate-900 font-bold text-xl mb-4 flex items-center gap-3">
               <span
                 className="w-1.5 h-5 rounded-full shrink-0"
-                style={{ background: "linear-gradient(180deg,#0066FF,#00AAFF)" }}
+                style={{ background: "linear-gradient(180deg,#1E3A8A,#2563EB)" }}
               />
               Contact Us
             </h2>
-            <p className="text-gray-400 leading-relaxed mb-4">
+            <p className="text-slate-500 leading-relaxed mb-4">
               If you have any questions, requests, or concerns regarding this Privacy Policy or
               your personal information, please contact us:
             </p>
             <div className="space-y-2 text-sm">
-              <p className="text-gray-300 font-semibold">TurboFix</p>
-              <p className="text-gray-400">
+              <p className="text-slate-700 font-semibold">TurboFix</p>
+              <p className="text-slate-500">
                 Website:{" "}
                 <a
                   href="https://turbofix.in"
-                  className="text-[#00AAFF] hover:underline"
+                  className="text-blue-700 hover:underline"
                 >
                   https://turbofix.in
                 </a>
               </p>
-              <p className="text-gray-400">
+              <p className="text-slate-500">
                 Email:{" "}
                 <a
                   href="mailto:support@turbofix.in"
-                  className="text-[#00AAFF] hover:underline"
+                  className="text-blue-700 hover:underline"
                 >
                   support@turbofix.in
                 </a>
               </p>
-              <p className="text-gray-400">
+              <p className="text-slate-500">
                 Customer Support: Available through the TurboFix website and official communication
                 channels.
               </p>
             </div>
-            <p className="text-gray-500 text-xs mt-6 pt-4" style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}>
+            <p className="text-slate-500 text-xs mt-6 pt-4" style={{ borderTop: "1px solid #F1F5F9" }}>
               By using TurboFix services, you acknowledge that you have read, understood, and agreed
               to this Privacy Policy.
             </p>
@@ -724,7 +722,7 @@ export default function PrivacyPageClient() {
             viewport={{ once: true }}
             className="mt-12 text-center"
           >
-            <p className="text-gray-500 text-sm mb-4">
+            <p className="text-slate-500 text-sm mb-4">
               Questions about our privacy practices?
             </p>
             <Link

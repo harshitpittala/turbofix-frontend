@@ -12,9 +12,7 @@ export default function TermsPageClient() {
     <>
       {/* Hero */}
       <section className="relative pt-32 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-[#02040F]" />
-        <div className="absolute inset-0 grid-bg" />
-        <div className="absolute inset-0 radial-glow" />
+        <div className="absolute inset-0 bg-white" />
 
         <div className="container relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <motion.div variants={staggerContainer} initial="hidden" animate="show">
@@ -24,7 +22,7 @@ export default function TermsPageClient() {
             <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-5">
               <span className="gradient-text">TurboFix Policies</span>
             </motion.h1>
-            <motion.p variants={fadeInUp} className="text-gray-400 text-lg max-w-2xl mx-auto">
+            <motion.p variants={fadeInUp} className="text-slate-600 text-lg max-w-2xl mx-auto">
               Complete information about our service offerings, warranty coverage, and terms of service.
             </motion.p>
           </motion.div>
@@ -32,28 +30,28 @@ export default function TermsPageClient() {
       </section>
 
       {/* Content */}
-      <section className="relative py-16 overflow-hidden">
-        <div className="absolute inset-0 bg-[#030712]" />
+      <section className="relative py-16 overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-white" />
         <div className="container relative max-w-4xl mx-auto px-4 sm:px-6">
           <motion.div
             ref={ref}
             initial={{ opacity: 0, y: 20 }}
             animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6 }}
-            className="prose prose-invert max-w-none"
+            className="prose max-w-none"
             style={{
-              "--tw-prose-body": "rgb(209, 213, 219)",
-              "--tw-prose-headings": "rgb(255, 255, 255)",
-              "--tw-prose-links": "rgb(0, 170, 255)",
-              "--tw-prose-strong": "rgb(255, 255, 255)",
-              "--tw-prose-code": "rgb(156, 163, 175)",
-              "--tw-prose-pre-bg": "rgba(0, 0, 0, 0.3)",
-              "--tw-prose-th-borders": "rgba(255, 255, 255, 0.1)",
-              "--tw-prose-td-borders": "rgba(255, 255, 255, 0.05)",
+              "--tw-prose-body": "rgb(51, 65, 85)",
+              "--tw-prose-headings": "rgb(15, 23, 42)",
+              "--tw-prose-links": "rgb(37, 99, 235)",
+              "--tw-prose-strong": "rgb(15, 23, 42)",
+              "--tw-prose-code": "rgb(71, 85, 105)",
+              "--tw-prose-pre-bg": "rgb(241, 245, 249)",
+              "--tw-prose-th-borders": "rgb(226, 232, 240)",
+              "--tw-prose-td-borders": "rgb(241, 245, 249)",
             } as any}
           >
             {/* How TurboFix Works */}
-            <h2 className="text-3xl font-bold text-white mt-0 mb-4">How TurboFix Works?</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-0 mb-4">How TurboFix Works?</h2>
             <p>
               TurboFix provides onsite mobile service at your convenient time and place. We also provide pickup
               and delivery service, where our field executive will collect your phone, service it, and deliver it back
@@ -73,7 +71,7 @@ export default function TermsPageClient() {
             </p>
 
             {/* Warranty Policy */}
-            <h2 className="text-3xl font-bold text-white mt-8 mb-4">TurboFix Warranty Policy</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-8 mb-4">TurboFix Warranty Policy</h2>
             <p>
               TurboFix offers a <strong>6-month warranty</strong> on Redmi, Oppo, Vivo, and selected mobile screen
               services/replacements carried out by us from the date of invoice.
@@ -82,8 +80,8 @@ export default function TermsPageClient() {
               We also provide a <strong>3-month warranty</strong> on all other spare parts replaced by TurboFix.
             </p>
 
-            <h3 className="text-2xl font-bold text-white mt-6 mb-3">The 6-Month Warranty Covers:</h3>
-            <ol className="list-decimal list-inside space-y-2 text-gray-300 mb-4">
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">The 6-Month Warranty Covers:</h3>
+            <ol className="list-decimal list-inside space-y-2 text-slate-700 mb-4">
               <li>Screen/LCD malfunctioning or not functioning as intended.</li>
               <li>Touch-related display issues arising without physical or manual damage.</li>
               <li>Manufacturing defects related to the replaced screen.</li>
@@ -94,8 +92,8 @@ export default function TermsPageClient() {
             </p>
 
             {/* Warranty Terms */}
-            <h3 className="text-2xl font-bold text-white mt-6 mb-3">Warranty Terms</h3>
-            <ol className="list-decimal list-inside space-y-2 text-gray-300">
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">Warranty Terms</h3>
+            <ol className="list-decimal list-inside space-y-2 text-slate-700">
               <li>Warranty is valid only for the specific serviced device and original customer.</li>
               <li>Warranty is non-transferable if the device is sold or handed over to another person.</li>
               <li>The mobile phone must switch on and function normally apart from the screen issue.</li>
@@ -106,9 +104,9 @@ export default function TermsPageClient() {
             </ol>
 
             {/* How to Claim Warranty */}
-            <h3 className="text-2xl font-bold text-white mt-6 mb-3">How to Claim Warranty?</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">How to Claim Warranty?</h3>
             <p>To claim your warranty, you need to:</p>
-            <ol className="list-decimal list-inside space-y-2 text-gray-300 mb-4">
+            <ol className="list-decimal list-inside space-y-2 text-slate-700 mb-4">
               <li>
                 Share a video showing the display issue with your device at{" "}
                 <a href="mailto:support@turbofix.in">support@turbofix.in</a>
@@ -118,7 +116,7 @@ export default function TermsPageClient() {
             <p>You can also contact our support team through chat or email for additional assistance.</p>
 
             {/* Resolution Time */}
-            <h3 className="text-2xl font-bold text-white mt-6 mb-3">Warranty Resolution Time</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">Warranty Resolution Time</h3>
             <p>
               TurboFix generally resolves warranty-related issues within <strong>48 to 72 hours</strong> after receiving
               your complaint. You will receive an acknowledgement email once your request is registered.
@@ -128,8 +126,8 @@ export default function TermsPageClient() {
             </p>
 
             {/* Not Applicable */}
-            <h3 className="text-2xl font-bold text-white mt-6 mb-3">Warranty Will Not Apply Under These Conditions</h3>
-            <ol className="list-decimal list-inside space-y-2 text-gray-300">
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">Warranty Will Not Apply Under These Conditions</h3>
+            <ol className="list-decimal list-inside space-y-2 text-slate-700">
               <li>Any accidental or physical damage after service.</li>
               <li>Visible lines or blank display issues caused after manual or accidental damage.</li>
               <li>Excessive or critical device damage affecting internal components.</li>
@@ -152,8 +150,8 @@ export default function TermsPageClient() {
             </ol>
 
             {/* Pre-Service Conditions */}
-            <h3 className="text-2xl font-bold text-white mt-6 mb-3">Warranty Also Does Not Cover</h3>
-            <ol className="list-decimal list-inside space-y-2 text-gray-300 mb-4">
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">Warranty Also Does Not Cover</h3>
+            <ol className="list-decimal list-inside space-y-2 text-slate-700 mb-4">
               <li>Existing manufacturing defects unrelated to the service.</li>
               <li>Existing frame damage noted before service.</li>
               <li>Water-damaged devices.</li>
@@ -166,8 +164,8 @@ export default function TermsPageClient() {
             </p>
 
             {/* Cancellation Policy */}
-            <h3 className="text-2xl font-bold text-white mt-6 mb-3">Cancellation Policy</h3>
-            <ol className="list-decimal list-inside space-y-2 text-gray-300 mb-4">
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">Cancellation Policy</h3>
+            <ol className="list-decimal list-inside space-y-2 text-slate-700 mb-4">
               <li>You can cancel or reschedule a booking free of charge any time before a technician is dispatched to your location — call, WhatsApp, or email us and we'll confirm the change.</li>
               <li>Once a technician has been dispatched or has arrived, cancelling the visit, declining the quoted service, or the job not being completable for reasons on your side (e.g. no one available, device inaccessible) attracts a minimum ₹499 visit/service charge. This covers the technician's time and travel — it is not a service fee.</li>
               <li>If TurboFix needs to cancel or reschedule a confirmed appointment (e.g. parts unavailability, technician unavailability), no charge applies and we will offer the next available slot.</li>
@@ -178,8 +176,8 @@ export default function TermsPageClient() {
             </p>
 
             {/* Refund Policy */}
-            <h3 className="text-2xl font-bold text-white mt-6 mb-3">Refund Policy</h3>
-            <ol className="list-decimal list-inside space-y-2 text-gray-300 mb-4">
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">Refund Policy</h3>
+            <ol className="list-decimal list-inside space-y-2 text-slate-700 mb-4">
               <li>Diagnosis is always free — no charge applies if you haven't approved the service.</li>
               <li>Refunds are not applicable for spare parts once installed, especially display/screen replacements, since the part cannot be resold once fitted.</li>
               <li>If you paid a booking/visit charge and TurboFix is unable to attend at the confirmed time through no fault of yours, the amount will be refunded in full within 5–7 business days to the original payment method.</li>
@@ -189,17 +187,17 @@ export default function TermsPageClient() {
             <p>Please refer to your invoice or order confirmation email for more information.</p>
 
             {/* Not Covered */}
-            <h3 className="text-2xl font-bold text-white mt-6 mb-3">What Is Not Covered Under Warranty?</h3>
-            <ul className="list-disc list-inside space-y-2 text-gray-300">
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">What Is Not Covered Under Warranty?</h3>
+            <ul className="list-disc list-inside space-y-2 text-slate-700">
               <li>Water damage</li>
               <li>Physical damage</li>
               <li>Internal hardware failure unrelated to the service performed</li>
             </ul>
 
             {/* Payment Methods */}
-            <h3 className="text-2xl font-bold text-white mt-6 mb-3">Payment Methods</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">Payment Methods</h3>
             <p>Customers can make payment through:</p>
-            <ul className="list-disc list-inside space-y-2 text-gray-300 mb-4">
+            <ul className="list-disc list-inside space-y-2 text-slate-700 mb-4">
               <li>Cash</li>
               <li>UPI</li>
               <li>Google Pay</li>
@@ -213,16 +211,16 @@ export default function TermsPageClient() {
             </p>
 
             {/* Faulty Parts */}
-            <h3 className="text-2xl font-bold text-white mt-6 mb-3">Faulty Parts Return Policy</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">Faulty Parts Return Policy</h3>
             <p>
               Replaced faulty parts must be handed over to the TurboFix technician after service completion. Failure to
               do so may void the warranty.
             </p>
 
             {/* Service Charges */}
-            <h3 className="text-2xl font-bold text-white mt-6 mb-3">Service / Visit Charges</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">Service / Visit Charges</h3>
             <p>A minimum service/visit charge of <strong>₹499</strong> will apply in the following situations:</p>
-            <ul className="list-disc list-inside space-y-2 text-gray-300 mb-4">
+            <ul className="list-disc list-inside space-y-2 text-slate-700 mb-4">
               <li>Service declined by the customer</li>
               <li>Device not serviced after inspection</li>
               <li>Estimated service cost not approved</li>
@@ -230,7 +228,7 @@ export default function TermsPageClient() {
             </ul>
 
             {/* Copyright Policy */}
-            <h3 className="text-2xl font-bold text-white mt-6 mb-3">Copyright Policy</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">Copyright Policy</h3>
             <p>
               TurboFix respects the intellectual property rights of others. Any copyright infringement claims related to
               content available on our platform should be reported to:
@@ -248,9 +246,9 @@ export default function TermsPageClient() {
             </p>
 
             {/* Contact */}
-            <h3 className="text-2xl font-bold text-white mt-6 mb-3">Contact Information</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">Contact Information</h3>
             <p>For support or warranty-related queries:</p>
-            <ul className="text-gray-300 space-y-2">
+            <ul className="text-slate-700 space-y-2">
               <li>📧 <a href="mailto:support@turbofix.in">support@turbofix.in</a></li>
               <li>📞 +91 86396 05147</li>
               <li>🌐 <a href="https://www.turbofix.in" target="_blank" rel="noopener noreferrer">TurboFix Official Website</a></li>

@@ -17,7 +17,7 @@ const services = [
     fullDesc: "We replace cracked, shattered, or malfunctioning screens with OEM-grade panels. AMOLED, LCD, and Retina displays — all restored to original specifications. Includes digitizer replacement and screen protector installation.",
     features: ["OEM-grade panels", "AMOLED / LCD / Retina", "Digitizer included", "Complimentary screen protector"],
     time: "~30 min",
-    color: "#0EA5E9",
+    color: "#2563EB",
   },
   {
     icon: Battery,
@@ -26,7 +26,7 @@ const services = [
     fullDesc: "Genuine-grade battery cells that restore your device to 100% capacity. We use cells that match or exceed OEM specifications. Battery health optimization included with every replacement.",
     features: ["Grade-A cells", "100% capacity restoration", "Health optimization", "Safe disposal of old battery"],
     time: "~20 min",
-    color: "#22C55E",
+    color: "#1D4ED8",
   },
   {
     icon: Camera,
@@ -35,7 +35,7 @@ const services = [
     fullDesc: "From cracked lens covers to failed autofocus modules — our optics specialists handle it all. We service front and rear cameras, including ultra-wide, telephoto, and ToF sensors.",
     features: ["Front & rear cameras", "Lens replacement", "Autofocus service", "OIS module service"],
     time: "~45 min",
-    color: "#A78BFA",
+    color: "#3B82F6",
   },
   {
     icon: Droplets,
@@ -44,7 +44,7 @@ const services = [
     fullDesc: "Ultrasonic cleaning, PCB inspection, and component-level drying — our water damage service protocol saves phones others write off. 85% success rate on devices brought in within 24 hours.",
     features: ["Ultrasonic cleaning", "PCB inspection", "Component drying", "85% success rate"],
     time: "~2–4 hrs",
-    color: "#38BDF8",
+    color: "#0EA5E9",
   },
   {
     icon: Mic2,
@@ -53,7 +53,7 @@ const services = [
     fullDesc: "Muffled calls, distorted audio, or complete silence — we diagnose and replace speaker units, microphone assemblies, and earpiece speakers with precision.",
     features: ["Earpiece speaker", "Loudspeaker replacement", "Microphone module", "Audio testing post-service"],
     time: "~25 min",
-    color: "#F59E0B",
+    color: "#1E40AF",
   },
   {
     icon: Wifi,
@@ -62,7 +62,7 @@ const services = [
     fullDesc: "USB-C, Lightning, or Micro-USB — we solder, clean, or replace charging connectors with precision. Also covers headphone jack service and data transfer port issues.",
     features: ["USB-C & Lightning", "Soldering & replacement", "Headphone jack", "Data port tested"],
     time: "~30 min",
-    color: "#EC4899",
+    color: "#0284C7",
   },
   {
     icon: Wrench,
@@ -71,7 +71,7 @@ const services = [
     fullDesc: "Restore your phone's premium look with genuine-grade back glass or panel replacements. We also service dented frames and replace antenna bands for full signal restoration.",
     features: ["Back glass replacement", "Frame service", "Antenna bands", "Premium finish"],
     time: "~40 min",
-    color: "#06B6D4",
+    color: "#60A5FA",
   },
   {
     icon: MonitorSmartphone,
@@ -80,7 +80,7 @@ const services = [
     fullDesc: "Device stuck on the logo screen, stuck in a restart loop, or running slow — our technicians diagnose the hardware and firmware cause on-site and restore normal operation, preserving access to your files where the storage hardware itself is intact.",
     features: ["Won't-start diagnostics", "Performance tune-up", "File access preserved (hardware permitting)", "Speed optimization"],
     time: "~1–2 hrs",
-    color: "#84CC16",
+    color: "#0369A1",
   },
   {
     icon: Cpu,
@@ -89,7 +89,7 @@ const services = [
     fullDesc: "Chip-level soldering, IC replacement, and board diagnostics for complex hardware failures. Our microscope workstations handle jobs no other shop in Hyderabad will attempt.",
     features: ["Chip-level soldering", "IC replacement", "Microscope stations", "Expert diagnostics"],
     time: "~1–3 days",
-    color: "#F97316",
+    color: "#2563EB",
   },
   {
     icon: Shield,
@@ -98,7 +98,7 @@ const services = [
     fullDesc: "Premium tempered glass and privacy screen protectors applied in our dust-free booth for a bubble-free finish every time. Free replacement for 12 months on our premium range if it cracks from a drop.",
     features: ["Dust-free installation", "Tempered glass", "Privacy filters", "12-month replacement"],
     time: "~10 min",
-    color: "#8B5CF6",
+    color: "#075985",
   },
 ];
 
@@ -107,19 +107,17 @@ export default function ServicesPage() {
     <>
       {/* Hero */}
       <section className="relative pt-32 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-[#02040F]" />
-        <div className="absolute inset-0 grid-bg" />
-        <div className="absolute inset-0 radial-glow" />
+        <div className="absolute inset-0 bg-white" />
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <motion.div variants={staggerContainer} initial="hidden" animate="show">
             <motion.div variants={fadeInUp} className="flex justify-center mb-4">
               <span className="section-label">What We Service</span>
             </motion.div>
-            <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-5">
+            <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-5 text-slate-900">
               Every Service,{" "}
               <span className="gradient-text">Perfected</span>
             </motion.h1>
-            <motion.p variants={fadeInUp} className="text-gray-400 text-xl max-w-2xl mx-auto">
+            <motion.p variants={fadeInUp} className="text-slate-600 text-xl max-w-2xl mx-auto">
               10 specialist services under one roof — from quick screen swaps to
               complex motherboard-level work.
             </motion.p>
@@ -128,9 +126,8 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Detail Grid */}
-      <section className="relative py-16 pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[#030712]" />
-        <div className="absolute inset-0 grid-bg opacity-30" />
+      <section className="relative py-16 pb-28 overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-white" />
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((svc, i) => {
@@ -143,8 +140,8 @@ export default function ServicesPage() {
                   viewport={{ once: true }}
                   transition={{ delay: (i % 2) * 0.1 }}
                   className="group rounded-2xl p-7 relative overflow-hidden"
-                  style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.05)" }}
-                  whileHover={{ y: -4, borderColor: `${svc.color}25` }}
+                  style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}
+                  whileHover={{ y: -4, borderColor: `${svc.color}35` }}
                 >
                   {/* Hover glow */}
                   <div
@@ -161,10 +158,10 @@ export default function ServicesPage() {
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center justify-between flex-wrap gap-2 mb-1">
-                        <h3 className="text-white font-semibold text-lg">{svc.title}</h3>
+                        <h3 className="text-slate-900 font-semibold text-lg">{svc.title}</h3>
                       </div>
-                      <p className="text-gray-500 text-xs mb-3">{svc.shortDesc} · ⏱ {svc.time}</p>
-                      <p className="text-gray-400 text-sm leading-relaxed mb-4">{svc.fullDesc}</p>
+                      <p className="text-slate-500 text-xs mb-3">{svc.shortDesc} · ⏱ {svc.time}</p>
+                      <p className="text-slate-500 text-sm leading-relaxed mb-4">{svc.fullDesc}</p>
                       <div className="flex flex-wrap gap-2">
                         {svc.features.map((f) => (
                           <span

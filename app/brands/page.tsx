@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import RepairsListClient from "../repairs/RepairsListClient";
 
 export const metadata: Metadata = {
-  title: "Mobile Service by Brand — Apple, Samsung, OnePlus & More | Hyderabad",
+  title: "Mobile Service by Brand in Hyderabad",
   description:
-    "TurboFix offers expert mobile service for all major brands in Hyderabad — Apple iPhone, Samsung Galaxy, OnePlus, Xiaomi, Vivo, Oppo, Realme, Motorola, Google Pixel, and Nothing Phone.",
+    "Expert doorstep service for iPhone, Samsung, OnePlus, Xiaomi, Vivo, Oppo & all major brands in Hyderabad. OEM parts, 6-month warranty. Book now!",
   alternates: { canonical: "https://turbofix.in/brands" },
   openGraph: {
     title: "Mobile Service by Brand — All Brands Serviced | TurboFix Hyderabad",

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import LocationPageClient from "./LocationPageClient";
 import { locationData, getLocationBySlug, faqSets } from "@/data/locations";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { buildMetaDescription } from "@/lib/utils";
 
 interface Props {
   params: { area: string };
@@ -16,11 +17,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const area = getLocationBySlug(params.area);
   if (!area) return { title: "Area Not Found" };
 
-  const titleServices = area.popularServices.slice(0, 2).join(" & ");
-
   return {
-    title: `Doorstep Mobile Service in ${area.name}, Hyderabad — ${titleServices}`,
-    description: `TurboFix provides independent doorstep mobile-device servicing in ${area.name}, Hyderabad. ${area.intro} Book same-day service — trained technicians, OEM parts, 6-month warranty.`,
+    title: `Mobile Service in ${area.name}, Hyderabad`,
+    description: buildMetaDescription(
+      `TurboFix provides independent doorstep mobile-device servicing in ${area.name}, Hyderabad. ${area.intro}`,
+      "Trained technicians, OEM parts, 6-month warranty. Book now!"
+    ),
     alternates: { canonical: `https://turbofix.in/locations/${area.slug}` },
     // Draft locations still build (so they're reviewable at their URL) but
     // stay out of the index and off the sitemap until marked published —

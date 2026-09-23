@@ -59,12 +59,12 @@ export default function SuccessPageClient() {
   /* Loading spinner while reading sessionStorage */
   if (!ready || !data) {
     return (
-      <div className="min-h-screen bg-[#02040F] flex items-center justify-center">
+      <div className="min-h-screen bg-white flex items-center justify-center">
         <motion.div
           animate={{ rotate: 360 }}
           transition={{ duration: 0.8, repeat: Infinity, ease: "linear" }}
           className="w-8 h-8 border-2 rounded-full"
-          style={{ borderColor: "rgba(0,170,255,0.25)", borderTopColor: "#00AAFF" }}
+          style={{ borderColor: "rgba(37,99,235,0.2)", borderTopColor: "#2563EB" }}
         />
       </div>
     );
@@ -90,23 +90,7 @@ export default function SuccessPageClient() {
   return (
     <div className="relative min-h-screen overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-[#02040F]" />
-      <div className="absolute inset-0 grid-bg" />
-      <div className="absolute inset-0 radial-glow opacity-50" />
-
-      {/* Ambient orbs */}
-      <motion.div
-        animate={{ x: [0, 25, 0], y: [0, -18, 0] }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 right-1/4 w-80 h-80 rounded-full blur-3xl pointer-events-none will-change-transform"
-        style={{ background: "rgba(0,102,255,0.07)" }}
-      />
-      <motion.div
-        animate={{ x: [0, -18, 0], y: [0, 25, 0] }}
-        transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-        className="absolute bottom-40 left-1/4 w-64 h-64 rounded-full blur-3xl pointer-events-none will-change-transform"
-        style={{ background: "rgba(34,197,94,0.05)" }}
-      />
+      <div className="absolute inset-0 bg-white" />
 
       <div className="relative container max-w-2xl mx-auto px-4 sm:px-6 pt-28 pb-20">
         <motion.div
@@ -115,43 +99,35 @@ export default function SuccessPageClient() {
           transition={{ duration: 0.5 }}
           className="rounded-3xl overflow-hidden relative"
           style={{
-            background: "rgba(255,255,255,0.03)",
-            border: "1px solid rgba(255,255,255,0.07)",
-            backdropFilter: "blur(20px)",
-            WebkitBackdropFilter: "blur(20px)",
-            boxShadow: "0 40px 80px rgba(0,0,0,0.5), 0 0 60px rgba(0,170,255,0.04)",
+            background: "#FFFFFF",
+            border: "1px solid #E2E8F0",
+            boxShadow: "0 20px 50px rgba(15,23,42,0.1)",
           }}
         >
-          {/* Top shimmer line */}
+          {/* Top accent line */}
           <div
             className="absolute top-0 left-0 right-0 h-px"
             style={{
-              background: "linear-gradient(90deg, transparent 0%, rgba(0,170,255,0.5) 50%, transparent 100%)",
+              background: "linear-gradient(90deg, transparent 0%, rgba(37,99,235,0.5) 50%, transparent 100%)",
             }}
           />
 
           <div className="text-center py-12 px-6 sm:px-10">
 
-            {/* ── Green success icon ── */}
+            {/* ── Success icon ── */}
             <div className="flex justify-center mb-8">
               <div className="relative">
-                <motion.div
-                  animate={{ scale: [1, 1.25, 1], opacity: [0.3, 0.6, 0.3] }}
-                  transition={{ duration: 3, repeat: Infinity }}
-                  className="absolute inset-0 rounded-full blur-xl"
-                  style={{ background: "rgba(34,197,94,0.4)", transform: "scale(1.6)" }}
-                />
                 <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ delay: 0.2, type: "spring", stiffness: 220 }}
                   className="relative w-20 h-20 rounded-full flex items-center justify-center"
                   style={{
-                    background: "rgba(34,197,94,0.12)",
-                    border: "2px solid rgba(34,197,94,0.4)",
+                    background: "rgba(5,150,105,0.1)",
+                    border: "2px solid rgba(5,150,105,0.3)",
                   }}
                 >
-                  <CheckCircle className="w-10 h-10 text-green-400" />
+                  <CheckCircle className="w-10 h-10 text-emerald-700" />
                 </motion.div>
               </div>
             </div>
@@ -162,29 +138,29 @@ export default function SuccessPageClient() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              <h1 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3">
+              <h1 className="font-display text-3xl sm:text-4xl font-bold text-slate-900 mb-3">
                 Booking Confirmed!
               </h1>
-              <p className="text-gray-400 mb-2 text-base">
-                Hey <span className="text-white font-semibold">{data.name}</span>, you&apos;re all set.
+              <p className="text-slate-500 mb-2 text-base">
+                Hey <span className="text-slate-900 font-semibold">{data.name}</span>, you&apos;re all set.
               </p>
-              <p className="text-gray-500 text-sm mb-8">
+              <p className="text-slate-500 text-sm mb-8">
                 Confirmation sent to{" "}
-                <span className="text-[#00AAFF]">{data.email}</span>
+                <span className="text-blue-700">{data.email}</span>
               </p>
 
               {/* ── Booking reference ── */}
               <div
                 className="inline-flex items-center gap-3 px-5 py-3 rounded-xl mb-8"
                 style={{
-                  background: "rgba(0,170,255,0.08)",
-                  border: "1px solid rgba(0,170,255,0.22)",
+                  background: "rgba(37,99,235,0.06)",
+                  border: "1px solid rgba(37,99,235,0.2)",
                 }}
               >
-                <Zap className="w-4 h-4 text-[#00AAFF] shrink-0" />
+                <Zap className="w-4 h-4 text-blue-700 shrink-0" />
                 <div className="text-left">
-                  <p className="text-xs text-gray-500">Booking Reference</p>
-                  <p className="text-white font-mono font-bold text-sm tracking-wide">
+                  <p className="text-xs text-slate-500">Booking Reference</p>
+                  <p className="text-slate-900 font-mono font-bold text-sm tracking-wide">
                     {data.orderId}
                   </p>
                 </div>
@@ -200,13 +176,13 @@ export default function SuccessPageClient() {
                     transition={{ delay: 0.45 }}
                     className="rounded-xl p-3"
                     style={{
-                      background: "rgba(255,255,255,0.03)",
-                      border: "1px solid rgba(255,255,255,0.08)",
+                      background: "#F8FAFC",
+                      border: "1px solid #E2E8F0",
                     }}
                   >
                     <p className="text-lg mb-1">{card.icon}</p>
-                    <p className="text-gray-500 text-xs">{card.label}</p>
-                    <p className="text-white text-xs font-semibold mt-0.5">{card.value}</p>
+                    <p className="text-slate-500 text-xs">{card.label}</p>
+                    <p className="text-slate-900 text-xs font-semibold mt-0.5">{card.value}</p>
                   </motion.div>
                 ))}
               </div>
@@ -219,11 +195,11 @@ export default function SuccessPageClient() {
                   transition={{ delay: 0.5 }}
                   className="rounded-xl p-4 mb-6 text-left max-w-sm mx-auto"
                   style={{
-                    background: "rgba(0,170,255,0.04)",
-                    border: "1px solid rgba(0,170,255,0.12)",
+                    background: "rgba(37,99,235,0.05)",
+                    border: "1px solid rgba(37,99,235,0.15)",
                   }}
                 >
-                  <p className="text-[#00AAFF] text-xs font-semibold uppercase tracking-wider mb-2">
+                  <p className="text-blue-700 text-xs font-semibold uppercase tracking-wider mb-2">
                     Services Requested
                   </p>
                   <div className="space-y-1">
@@ -231,9 +207,9 @@ export default function SuccessPageClient() {
                       <div key={s} className="flex items-center gap-2">
                         <div
                           className="w-1.5 h-1.5 rounded-full shrink-0"
-                          style={{ background: "#00AAFF" }}
+                          style={{ background: "#2563EB" }}
                         />
-                        <span className="text-gray-300 text-xs">
+                        <span className="text-slate-700 text-xs">
                           {SERVICE_LABELS[s] ?? s}
                         </span>
                       </div>
@@ -249,22 +225,22 @@ export default function SuccessPageClient() {
                 transition={{ delay: 0.55 }}
                 className="rounded-xl p-5 mb-8 text-left max-w-sm mx-auto"
                 style={{
-                  background: "rgba(255,255,255,0.02)",
-                  border: "1px solid rgba(255,255,255,0.06)",
+                  background: "#F8FAFC",
+                  border: "1px solid #E2E8F0",
                 }}
               >
-                <p className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                <p className="text-slate-500 text-xs font-semibold uppercase tracking-wider mb-4">
                   What Happens Next
                 </p>
                 {nextSteps.map((step, i) => (
                   <div key={i} className="flex items-start gap-3 mb-3 last:mb-0">
                     <div
                       className="w-5 h-5 rounded-full flex items-center justify-center shrink-0 text-[10px] font-bold mt-0.5"
-                      style={{ background: "rgba(0,170,255,0.15)", color: "#00AAFF" }}
+                      style={{ background: "rgba(37,99,235,0.15)", color: "#2563EB" }}
                     >
                       {i + 1}
                     </div>
-                    <p className="text-gray-400 text-xs leading-relaxed">{step}</p>
+                    <p className="text-slate-500 text-xs leading-relaxed">{step}</p>
                   </div>
                 ))}
               </motion.div>
@@ -300,16 +276,16 @@ export default function SuccessPageClient() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.75 }}
-                className="mt-8 pt-6 flex flex-wrap items-center justify-center gap-4 text-xs text-gray-600"
-                style={{ borderTop: "1px solid rgba(255,255,255,0.05)" }}
+                className="mt-8 pt-6 flex flex-wrap items-center justify-center gap-4 text-xs text-slate-500"
+                style={{ borderTop: "1px solid #E2E8F0" }}
               >
                 {["🛡 6-month warranty", "🔒 Secure booking", "🆓 Free diagnostics", "✅ No fix, no fee"].map((t) => (
                   <span key={t}>{t}</span>
                 ))}
               </motion.div>
 
-              <p className="text-center text-gray-600 text-xs mt-4">
-                <a href="/no-fix-no-fee-policy" className="hover:text-gray-400 underline">
+              <p className="text-center text-slate-500 text-xs mt-4">
+                <a href="/no-fix-no-fee-policy" className="hover:text-slate-600 underline">
                   Read our No Fix, No Fee Policy
                 </a>
               </p>

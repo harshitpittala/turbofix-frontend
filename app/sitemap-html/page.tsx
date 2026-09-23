@@ -23,7 +23,7 @@ const breadcrumbSchema = {
 const sections = [
   {
     title: "Main Pages",
-    color: "#00AAFF",
+    color: "#2563EB",
     links: [
       { label: "Home",              href: "/" },
       { label: "About TurboFix",   href: "/about" },
@@ -39,7 +39,7 @@ const sections = [
   },
   {
     title: "Service by Type",
-    color: "#22C55E",
+    color: "#1D4ED8",
     links: [
       { label: "Screen Replacement Hyderabad",       href: "/screen-replacement-hyderabad" },
       { label: "Battery Replacement Hyderabad",      href: "/battery-replacement-hyderabad" },
@@ -53,7 +53,7 @@ const sections = [
   },
   {
     title: "Service by Brand",
-    color: "#EC4899",
+    color: "#3B82F6",
     links: [
       { label: "All Brands",                      href: "/brands" },
       { label: "iPhone Service Hyderabad",        href: "/iphone-service-hyderabad" },
@@ -69,7 +69,7 @@ const sections = [
   },
   {
     title: "Hyderabad Coverage",
-    color: "#7C3AED",
+    color: "#0EA5E9",
     links: [
       { label: "All Hyderabad Areas",        href: "/locations" },
       ...locationData.slice(0, 20).map((l) => ({
@@ -86,19 +86,18 @@ export default function SitemapHtmlPage() {
       <JsonLd schema={breadcrumbSchema} id="schema-breadcrumb-sitemap" />
 
       <div className="relative min-h-screen">
-        <div className="absolute inset-0 bg-[#02040F]" />
-        <div className="absolute inset-0 grid-bg opacity-30" />
+        <div className="absolute inset-0 bg-white" />
 
         <div className="relative container max-w-7xl mx-auto px-4 sm:px-6 pt-32 pb-20">
           <div className="mb-12">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium mb-5"
-              style={{ background: "rgba(0,170,255,0.1)", color: "#00AAFF", border: "1px solid rgba(0,170,255,0.2)" }}>
+              style={{ background: "rgba(37,99,235,0.08)", color: "#1D4ED8", border: "1px solid rgba(37,99,235,0.25)" }}>
               Navigation
             </div>
-            <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="font-display text-4xl md:text-5xl font-bold text-slate-900 mb-4">
               Site <span className="gradient-text">Map</span>
             </h1>
-            <p className="text-gray-400 text-lg max-w-2xl">
+            <p className="text-slate-600 text-lg max-w-2xl">
               Complete index of all pages on TurboFix — find any service, brand, area, or resource instantly.
             </p>
           </div>
@@ -106,16 +105,16 @@ export default function SitemapHtmlPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {sections.map((sec) => (
               <div key={sec.title} className="p-6 rounded-2xl"
-                style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
-                <h2 className="font-semibold text-white mb-4 flex items-center gap-2">
+                style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
+                <h2 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
                   <span className="w-1 h-4 rounded-full shrink-0" style={{ background: sec.color }} />
                   {sec.title}
                 </h2>
                 <ul className="space-y-1.5">
                   {sec.links.map(({ label, href }) => (
                     <li key={href}>
-                      <Link href={href} className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                        <span className="w-1 h-1 rounded-full bg-gray-700 group-hover:bg-white/50 transition-colors shrink-0" />
+                      <Link href={href} className="text-sm text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-2 group">
+                        <span className="w-1 h-1 rounded-full bg-slate-300 group-hover:bg-blue-500 transition-colors shrink-0" />
                         {label}
                       </Link>
                     </li>
@@ -126,16 +125,16 @@ export default function SitemapHtmlPage() {
 
             {/* Blog section */}
             <div className="p-6 rounded-2xl md:col-span-2"
-              style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
-              <h2 className="font-semibold text-white mb-4 flex items-center gap-2">
-                <span className="w-1 h-4 rounded-full bg-[#F59E0B] shrink-0" />
+              style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
+              <h2 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
+                <span className="w-1 h-4 rounded-full bg-blue-700 shrink-0" />
                 Blog Posts
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-1.5">
                 {blogSlugs.map((slug, i) => (
                   <Link key={slug} href={`/blog/${slug}`}
-                    className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2 group py-0.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-700 group-hover:bg-[#F59E0B] transition-colors shrink-0" />
+                    className="text-sm text-slate-500 hover:text-slate-900 transition-colors flex items-center gap-2 group py-0.5">
+                    <span className="w-1 h-1 rounded-full bg-slate-300 group-hover:bg-blue-700 transition-colors shrink-0" />
                     {blogTitles[i] || slug}
                   </Link>
                 ))}
@@ -144,16 +143,16 @@ export default function SitemapHtmlPage() {
 
             {/* All locations */}
             <div className="p-6 rounded-2xl md:col-span-2"
-              style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}>
-              <h2 className="font-semibold text-white mb-4 flex items-center gap-2">
-                <span className="w-1 h-4 rounded-full bg-[#06B6D4] shrink-0" />
+              style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
+              <h2 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
+                <span className="w-1 h-4 rounded-full bg-sky-600 shrink-0" />
                 All Hyderabad Areas ({locationData.length} areas)
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-1.5">
                 {locationData.map((loc) => (
                   <Link key={loc.slug} href={`/locations/${loc.slug}`}
-                    className="text-sm text-gray-400 hover:text-[#06B6D4] transition-colors flex items-center gap-1.5 group py-0.5">
-                    <span className="w-1 h-1 rounded-full bg-gray-700 group-hover:bg-[#06B6D4] transition-colors shrink-0" />
+                    className="text-sm text-slate-500 hover:text-sky-700 transition-colors flex items-center gap-1.5 group py-0.5">
+                    <span className="w-1 h-1 rounded-full bg-slate-300 group-hover:bg-sky-600 transition-colors shrink-0" />
                     {loc.name}
                   </Link>
                 ))}
@@ -162,11 +161,11 @@ export default function SitemapHtmlPage() {
           </div>
 
           <div className="mt-10 text-center">
-            <p className="text-gray-600 text-sm">
+            <p className="text-slate-500 text-sm">
               Can't find what you're looking for?{" "}
-              <Link href="/contact" className="text-[#00AAFF] hover:text-white transition-colors">Contact us</Link>
+              <Link href="/contact" className="text-blue-700 hover:text-blue-800 transition-colors">Contact us</Link>
               {" "}or{" "}
-              <Link href="/book-a-visit" className="text-[#00AAFF] hover:text-white transition-colors">book a visit</Link>.
+              <Link href="/book-a-visit" className="text-blue-700 hover:text-blue-800 transition-colors">book a visit</Link>.
             </p>
           </div>
         </div>

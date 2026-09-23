@@ -15,7 +15,7 @@ export const testimonials = [
     text: "My iPhone 14 Pro's screen was completely shattered. TurboFix replaced it in 25 minutes with an original panel. The display is flawless — honestly better than I expected. Will never go anywhere else.",
     service: "Screen Replacement",
     avatar: "AR",
-    color: "#0EA5E9",
+    color: "#2563EB",
   },
   {
     name: "Priya Sharma",
@@ -25,7 +25,7 @@ export const testimonials = [
     text: "Dropped my phone in water and panicked. The team at TurboFix ran diagnostics within 10 minutes, explained everything clearly, and had it fully restored by evening. Absolute lifesavers!",
     service: "Water Damage Service",
     avatar: "PS",
-    color: "#A78BFA",
+    color: "#1D4ED8",
   },
   {
     name: "Karthik Naidu",
@@ -35,7 +35,7 @@ export const testimonials = [
     text: "Battery was draining within 2 hours on my Samsung Galaxy. TurboFix replaced it in 20 minutes. Now I get a full day's use. Professional, fast, and honest.",
     service: "Battery Replacement",
     avatar: "KN",
-    color: "#22C55E",
+    color: "#3B82F6",
   },
   {
     name: "Sneha Patel",
@@ -45,7 +45,7 @@ export const testimonials = [
     text: "My camera was broken and another store wanted way too much for a fix. TurboFix did it quickly and it works perfectly. The transparency and honesty here is unmatched. 10/10 recommend.",
     service: "Camera Service",
     avatar: "SP",
-    color: "#F59E0B",
+    color: "#0EA5E9",
   },
   {
     name: "Rahul Verma",
@@ -55,7 +55,7 @@ export const testimonials = [
     text: "Needed my phone sorted urgently between hospital shifts. Booked online, walked in, and walked out in 30 minutes with a working charging port. The booking system is brilliant.",
     service: "Charging Port Service",
     avatar: "RV",
-    color: "#EC4899",
+    color: "#1E40AF",
   },
   {
     name: "Divya Krishnan",
@@ -65,7 +65,7 @@ export const testimonials = [
     text: "First time using TurboFix and I'm completely impressed. The staff explained what was wrong without any jargon, the price was fair, and they even cleaned my phone before returning it.",
     service: "Screen Replacement",
     avatar: "DK",
-    color: "#38BDF8",
+    color: "#0284C7",
   },
 ];
 
@@ -95,10 +95,8 @@ export default function Testimonials() {
   const current = testimonials[active];
 
   return (
-    <section ref={ref} className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-[#030712]" />
-      <div className="absolute inset-0 grid-bg opacity-30" />
-      <div className="absolute inset-0 radial-glow opacity-40" />
+    <section ref={ref} className="relative py-28 overflow-hidden border-t border-slate-100">
+      <div className="absolute inset-0 bg-white" />
 
       <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
@@ -111,11 +109,11 @@ export default function Testimonials() {
           <motion.div variants={fadeInUp} className="flex justify-center mb-4">
             <span className="section-label">Testimonials</span>
           </motion.div>
-          <motion.h2 variants={fadeInUp} className="font-display text-4xl md:text-5xl font-bold mb-4">
+          <motion.h2 variants={fadeInUp} className="font-display text-4xl md:text-5xl font-bold mb-4 text-slate-900">
             Real Words from{" "}
             <span className="gradient-text">Real Customers</span>
           </motion.h2>
-          <motion.p variants={fadeInUp} className="text-gray-400 text-lg max-w-xl mx-auto">
+          <motion.p variants={fadeInUp} className="text-slate-600 text-lg max-w-xl mx-auto">
             Over 1,000 five-star reviews across Google, JustDial & WhatsApp.
             Here's what they're saying.
           </motion.p>
@@ -132,12 +130,12 @@ export default function Testimonials() {
               transition={{ duration: 0.4, ease: "easeInOut" }}
               className="relative rounded-3xl p-8 md:p-10"
               style={{
-                background: "rgba(255,255,255,0.03)",
-                border: "1px solid rgba(255,255,255,0.07)",
-                boxShadow: "0 20px 60px rgba(0,0,0,0.4)",
+                background: "#FFFFFF",
+                border: "1px solid #E2E8F0",
+                boxShadow: "0 8px 30px rgba(15,23,42,0.08)",
               }}
             >
-              {/* Top glow accent */}
+              {/* Top accent */}
               <div
                 className="absolute top-0 left-0 right-0 h-px rounded-t-3xl"
                 style={{ background: `linear-gradient(90deg, transparent, ${current.color}60, transparent)` }}
@@ -152,7 +150,7 @@ export default function Testimonials() {
               </div>
 
               {/* Text */}
-              <p className="text-gray-200 text-lg leading-relaxed mb-8">
+              <p className="text-slate-700 text-lg leading-relaxed mb-8">
                 "{current.text}"
               </p>
 
@@ -163,7 +161,7 @@ export default function Testimonials() {
                   <div
                     className="w-12 h-12 rounded-full flex items-center justify-center text-sm font-bold"
                     style={{
-                      background: `linear-gradient(135deg, ${current.color}30, ${current.color}10)`,
+                      background: `linear-gradient(135deg, ${current.color}25, ${current.color}10)`,
                       border: `2px solid ${current.color}30`,
                       color: current.color,
                     }}
@@ -171,8 +169,8 @@ export default function Testimonials() {
                     {current.avatar}
                   </div>
                   <div>
-                    <p className="text-white font-semibold">{current.name}</p>
-                    <p className="text-gray-500 text-sm">{current.role} · {current.location}</p>
+                    <p className="text-slate-900 font-semibold">{current.name}</p>
+                    <p className="text-slate-500 text-sm">{current.role} · {current.location}</p>
                   </div>
                 </div>
                 <div className="flex flex-col items-end gap-1">
@@ -201,7 +199,7 @@ export default function Testimonials() {
         <div className="flex items-center justify-center gap-6">
           <button
             onClick={prev}
-            className="w-10 h-10 rounded-full glass flex items-center justify-center text-gray-400 hover:text-white transition-colors"
+            className="w-10 h-10 rounded-full glass flex items-center justify-center text-slate-500 hover:text-slate-900 transition-colors"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
@@ -215,8 +213,7 @@ export default function Testimonials() {
                 style={{
                   width: i === active ? "24px" : "8px",
                   height: "8px",
-                  background: i === active ? "#00AAFF" : "rgba(255,255,255,0.15)",
-                  boxShadow: i === active ? "0 0 10px rgba(0,170,255,0.6)" : "none",
+                  background: i === active ? "#2563EB" : "rgba(15,23,42,0.15)",
                 }}
               />
             ))}
@@ -224,7 +221,7 @@ export default function Testimonials() {
 
           <button
             onClick={next}
-            className="w-10 h-10 rounded-full glass flex items-center justify-center text-gray-400 hover:text-white transition-colors"
+            className="w-10 h-10 rounded-full glass flex items-center justify-center text-slate-500 hover:text-slate-900 transition-colors"
           >
             <ChevronRight className="w-5 h-5" />
           </button>
@@ -238,8 +235,8 @@ export default function Testimonials() {
               onClick={() => { setAutoplay(false); setActive(i); }}
               className="rounded-xl p-3 text-left transition-all duration-300"
               animate={{
-                background: i === active ? "rgba(0,170,255,0.08)" : "rgba(255,255,255,0.02)",
-                borderColor: i === active ? "rgba(0,170,255,0.3)" : "rgba(255,255,255,0.05)",
+                background: i === active ? "rgba(37,99,235,0.06)" : "#FFFFFF",
+                borderColor: i === active ? "rgba(37,99,235,0.3)" : "#E2E8F0",
               }}
               style={{ border: "1px solid" }}
             >
@@ -250,7 +247,7 @@ export default function Testimonials() {
                 >
                   {t.avatar}
                 </div>
-                <span className="text-[11px] text-gray-300 font-medium truncate">{t.name}</span>
+                <span className="text-[11px] text-slate-700 font-medium truncate">{t.name}</span>
               </div>
               <div className="flex items-center gap-0.5">
                 {[1,2,3,4,5].map(j => (

@@ -3,7 +3,7 @@ import { Star } from "lucide-react";
 
 export default function TechnicianCard() {
   return (
-    <div className="rounded-2xl border border-blue-100 bg-blue-50/60 p-5 sm:p-6 flex items-center gap-5 mt-8">
+    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 flex items-center gap-5 mt-8">
       <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden shrink-0 border-2 border-white shadow-sm">
         <Image src="/images/technician.jpg" alt="Varma, TurboFix technician" fill sizes="80px" className="object-cover" />
       </div>

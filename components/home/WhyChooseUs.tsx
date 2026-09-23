@@ -19,37 +19,37 @@ const features = [
     icon: Shield,
     title: "6-Month Warranty",
     desc: "Every visit comes backed by our 180-day warranty. If it breaks again within warranty — we resolve it free.",
-    color: "#00AAFF",
+    color: "#059669",
   },
   {
     icon: Zap,
     title: "Lightning Fast",
     desc: "Most visits completed in under 30 minutes. Book online, walk in, walk out — serviced and ready.",
-    color: "#F59E0B",
+    color: "#2563EB",
   },
   {
     icon: Award,
     title: "Trained Technicians",
     desc: "Our technicians average 5+ years of hands-on service experience and are trained in-house on every device we handle.",
-    color: "#A78BFA",
+    color: "#1D4ED8",
   },
   {
     icon: Clock,
     title: "Same-Day Service",
     desc: "Drop off in the morning, pick up by afternoon. We respect your time as much as your device.",
-    color: "#22C55E",
+    color: "#3B82F6",
   },
   {
     icon: Cpu,
     title: "Genuine OEM Parts",
     desc: "We source only OEM and Grade-A quality parts. No shortcuts. Your device deserves the best.",
-    color: "#EC4899",
+    color: "#1E40AF",
   },
   {
     icon: HeartHandshake,
     title: "Free Expert Diagnosis",
     desc: "Comprehensive device assessment at no cost. Our technicians identify issues accurately.",
-    color: "#38BDF8",
+    color: "#0EA5E9",
   },
 ];
 
@@ -57,13 +57,12 @@ export default function WhyChooseUs() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.05 });
 
   return (
-    <section ref={ref} className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-[#02040F]" />
-      <div className="absolute inset-0 radial-glow opacity-50" />
+    <section ref={ref} className="relative py-28 overflow-hidden border-t border-slate-100">
+      <div className="absolute inset-0 bg-white" />
 
       {/* Decorative lines */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-px h-64 bg-gradient-to-b from-transparent via-[#00AAFF]/20 to-transparent" />
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-px h-64 bg-gradient-to-b from-transparent via-[#7C3AED]/20 to-transparent" />
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-px h-64 bg-gradient-to-b from-transparent via-blue-500/15 to-transparent" />
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-px h-64 bg-gradient-to-b from-transparent via-sky-500/15 to-transparent" />
 
       <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section header */}
@@ -78,14 +77,14 @@ export default function WhyChooseUs() {
           </motion.div>
           <motion.h2
             variants={fadeInUp}
-            className="font-display text-4xl md:text-5xl font-bold mb-5"
+            className="font-display text-4xl md:text-5xl font-bold mb-5 text-slate-900"
           >
             Built on{" "}
             <span className="gradient-text">Transparency and Accountability</span>
           </motion.h2>
           <motion.p
             variants={fadeInUp}
-            className="text-gray-400 text-lg max-w-2xl mx-auto"
+            className="text-slate-600 text-lg max-w-2xl mx-auto"
           >
             We don't just service phones — we explain what's wrong, what it costs,
             and back every visit with a clear warranty.
@@ -104,11 +103,10 @@ export default function WhyChooseUs() {
               key={stat.label}
               variants={scaleIn}
               className="glass rounded-2xl p-6 text-center relative overflow-hidden group"
-              style={{ border: "1px solid rgba(255,255,255,0.06)" }}
             >
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                style={{ background: "radial-gradient(circle at 50% 50%, rgba(0,170,255,0.05), transparent)" }}
+                style={{ background: "radial-gradient(circle at 50% 50%, rgba(37,99,235,0.04), transparent)" }}
               />
               <div className="font-display text-4xl lg:text-5xl font-bold gradient-text-blue mb-2">
                 <AnimatedCounter
@@ -117,7 +115,7 @@ export default function WhyChooseUs() {
                   decimals={stat.decimals || 0}
                 />
               </div>
-              <div className="text-gray-400 text-sm">{stat.label}</div>
+              <div className="text-slate-500 text-sm">{stat.label}</div>
             </motion.div>
           ))}
         </motion.div>
@@ -137,36 +135,34 @@ export default function WhyChooseUs() {
                 variants={fadeInUp}
                 className="group relative rounded-2xl p-6 cursor-default"
                 style={{
-                  background: "rgba(255,255,255,0.02)",
-                  border: "1px solid rgba(255,255,255,0.05)",
+                  background: "#FFFFFF",
+                  border: "1px solid #E2E8F0",
                   transition: "all 0.4s ease",
                 }}
                 whileHover={{
-                  borderColor: `${feat.color}30`,
-                  background: `rgba(255,255,255,0.03)`,
+                  borderColor: `${feat.color}40`,
                   y: -4,
                 }}
               >
                 <div
                   className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-                  style={{ background: `radial-gradient(circle at 30% 30%, ${feat.color}05, transparent 60%)` }}
+                  style={{ background: `radial-gradient(circle at 30% 30%, ${feat.color}06, transparent 60%)` }}
                 />
 
                 <div
                   className="w-12 h-12 rounded-xl flex items-center justify-center mb-5"
                   style={{
-                    background: `${feat.color}15`,
+                    background: `${feat.color}12`,
                     border: `1px solid ${feat.color}25`,
-                    boxShadow: `0 0 20px ${feat.color}10`,
                   }}
                 >
                   <Icon className="w-5.5 h-5.5" style={{ color: feat.color }} />
                 </div>
 
-                <h3 className="text-white font-semibold text-[15px] mb-2">{feat.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{feat.desc}</p>
+                <h3 className="text-slate-900 font-semibold text-[15px] mb-2">{feat.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">{feat.desc}</p>
                 {feat.title === "6-Month Warranty" && (
-                  <Link href="/terms" className="inline-block text-xs text-[#00AAFF] underline underline-offset-2 mt-2">
+                  <Link href="/terms" className="inline-block text-xs text-blue-700 underline underline-offset-2 mt-2">
                     View full warranty terms
                   </Link>
                 )}

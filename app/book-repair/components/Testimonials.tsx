@@ -15,9 +15,9 @@ const testimonials = [
     name: "Tanu Rani",
     initials: "TR",
     location: "Gachibowli",
-    color: "#7C3AED",
-    tagColor: "#7C3AED",
-    tagBg: "#F5F3FF",
+    color: "#1D4ED8",
+    tagColor: "#1D4ED8",
+    tagBg: "#EFF6FF",
     tag: "Water Damage",
     text: "Dropped my phone in water. Thought it was gone for good. The technician came to my office in Gachibowli, recovered everything, and it's been perfect since.",
   },
@@ -25,9 +25,9 @@ const testimonials = [
     name: "Madhava",
     initials: "MD",
     location: "Kondapur",
-    color: "#16A34A",
-    tagColor: "#16A34A",
-    tagBg: "#F0FDF4",
+    color: "#0EA5E9",
+    tagColor: "#0EA5E9",
+    tagBg: "#F0F9FF",
     tag: "Charging Port",
     text: "Charging port wasn't working for weeks. Booked at 11 AM, tech arrived by 1 PM at my home in Kondapur. Sorted in 30 minutes. Straightforward and professional.",
   },
@@ -35,10 +35,10 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-gray-50 py-14 sm:py-16">
+    <section className="bg-white py-14 sm:py-16 border-t border-gray-100">
       <div className="container max-w-5xl mx-auto px-4 sm:px-6">
         <h2 className="flex items-center gap-2.5 text-lg sm:text-xl font-bold text-gray-900 mb-6">
-          <span className="w-1 h-5 rounded-full bg-[#0066FF]" />
+          <span className="w-1 h-5 rounded-full bg-blue-600" />
           What Customers Say
         </h2>
 

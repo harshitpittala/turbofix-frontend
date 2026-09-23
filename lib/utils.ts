@@ -13,6 +13,34 @@ export function formatPrice(price: number): string {
   }).format(price);
 }
 
+// Builds a meta description that never exceeds ~155 chars (Google's SERP
+// snippet limit) while always keeping the trailing CTA/suffix intact —
+// truncates the lead-in text at a word boundary instead of the whole string.
+export function buildMetaDescription(intro: string, suffix: string, maxLen = 155): string {
+  const budget = maxLen - suffix.length - 1; // space before suffix
+  const cleanIntro = intro.trim();
+  if (cleanIntro.length <= budget) return `${cleanIntro} ${suffix}`;
+
+  // Prefer cutting at the end of the first full sentence if it fits — avoids
+  // lopping off mid-clause right after a stray proper noun or comma.
+  const firstSentence = cleanIntro.match(/^.*?[.!?](?=\s|$)/)?.[0];
+  if (firstSentence && firstSentence.length <= budget && firstSentence.length > budget * 0.4) {
+    return `${firstSentence} ${suffix}`;
+  }
+
+  // Otherwise cut at the last clause boundary (comma or em dash) if there is
+  // one past the halfway point of the budget — reads better than stopping
+  // mid-adjective at an arbitrary word boundary.
+  const truncated = cleanIntro.slice(0, budget);
+  const lastComma = truncated.lastIndexOf(",");
+  const lastDash = truncated.lastIndexOf(" — ");
+  const lastClause = Math.max(lastComma, lastDash);
+  const lastSpace = truncated.lastIndexOf(" ");
+  const cutPoint = lastClause > budget * 0.5 ? lastClause : lastSpace;
+  const cut = truncated.slice(0, cutPoint > 0 ? cutPoint : budget).trim().replace(/[,.;:—-]+$/, "").trim();
+  return `${cut}. ${suffix}`;
+}
+
 // Parses a display string like "₹999 – ₹8,999" into numeric bounds for
 // schema.org PriceSpecification (Google's structured data expects numbers,
 // not a formatted string).

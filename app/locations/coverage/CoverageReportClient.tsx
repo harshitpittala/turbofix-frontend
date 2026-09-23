@@ -86,10 +86,10 @@ export default function CoverageReportClient({ inventory }: Props) {
   }, [inventory, query, category, zoneFilter, parentFilter]);
 
   return (
-    <div style={{ background: "#02040F", minHeight: "100vh", color: "#e5e7eb", fontFamily: "system-ui, sans-serif" }}>
+    <div style={{ background: "#FFFFFF", minHeight: "100vh", color: "#334155", fontFamily: "system-ui, sans-serif" }}>
       <div style={{ maxWidth: 1400, margin: "0 auto", padding: "32px 20px 80px" }}>
-        <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 6 }}>Location Coverage Report</h1>
-        <p style={{ color: "#9ca3af", fontSize: 14, marginBottom: 24 }}>
+        <h1 style={{ fontSize: 28, fontWeight: 700, marginBottom: 6, color: "#0F172A" }}>Location Coverage Report</h1>
+        <p style={{ color: "#94A3B8", fontSize: 14, marginBottom: 24 }}>
           Internal review tool — not indexed, not linked from the public site. Every location from the
           supplied master list, deduplicated, cross-referenced against live pages.
         </p>
@@ -97,18 +97,18 @@ export default function CoverageReportClient({ inventory }: Props) {
         <div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 24 }}>
           {[
             { label: "Total distinct locations", value: stats.total, key: "all" as CategoryFilter },
-            { label: "Published / indexable", value: stats.published, color: "#22C55E", key: "published" as CategoryFilter },
-            { label: "Alias / duplicate", value: stats.alias, color: "#06B6D4", key: "alias" as CategoryFilter },
-            { label: "Sub-unit (not standalone)", value: stats.notViable, color: "#8B5CF6", key: "not-viable" as CategoryFilter },
-            { label: "Draft — needs research", value: stats.draft, color: "#F59E0B", key: "draft" as CategoryFilter },
-            { label: "Flagged for review", value: stats.needsReview, color: "#EC4899", key: "needs-review" as CategoryFilter },
+            { label: "Published / indexable", value: stats.published, color: "#2563EB", key: "published" as CategoryFilter },
+            { label: "Alias / duplicate", value: stats.alias, color: "#0EA5E9", key: "alias" as CategoryFilter },
+            { label: "Sub-unit (not standalone)", value: stats.notViable, color: "#475569", key: "not-viable" as CategoryFilter },
+            { label: "Draft — needs research", value: stats.draft, color: "#1D4ED8", key: "draft" as CategoryFilter },
+            { label: "Flagged for review", value: stats.needsReview, color: "#1E40AF", key: "needs-review" as CategoryFilter },
           ].map((s) => (
             <button
               key={s.label}
               onClick={() => setCategory(s.key)}
               style={{
-                background: category === s.key ? "rgba(0,170,255,0.12)" : "rgba(255,255,255,0.04)",
-                border: category === s.key ? "1px solid rgba(0,170,255,0.4)" : "1px solid rgba(255,255,255,0.08)",
+                background: category === s.key ? "rgba(37,99,235,0.08)" : "#FFFFFF",
+                border: category === s.key ? "1px solid rgba(37,99,235,0.35)" : "1px solid #E2E8F0",
                 borderRadius: 12,
                 padding: "12px 18px",
                 minWidth: 160,
@@ -118,30 +118,30 @@ export default function CoverageReportClient({ inventory }: Props) {
                 color: "inherit",
               }}
             >
-              <div style={{ fontSize: 24, fontWeight: 700, color: s.color || "#fff" }}>{s.value}</div>
-              <div style={{ fontSize: 12, color: "#9ca3af" }}>{s.label}</div>
+              <div style={{ fontSize: 24, fontWeight: 700, color: s.color || "#0F172A" }}>{s.value}</div>
+              <div style={{ fontSize: 12, color: "#94A3B8" }}>{s.label}</div>
             </button>
           ))}
         </div>
 
         <div style={{ display: "flex", gap: 20, flexWrap: "wrap", marginBottom: 24 }}>
-          <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 12, padding: 16, minWidth: 220 }}>
-            <div style={{ fontSize: 12, color: "#9ca3af", marginBottom: 8, textTransform: "uppercase", letterSpacing: 0.5 }}>
+          <div style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: 12, padding: 16, minWidth: 220 }}>
+            <div style={{ fontSize: 12, color: "#94A3B8", marginBottom: 8, textTransform: "uppercase", letterSpacing: 0.5 }}>
               Drafts by zone — where to look next
             </div>
             {byZone.map(([zone, count]) => (
               <button
                 key={zone}
                 onClick={() => { setCategory("draft"); setZoneFilter(zone); }}
-                style={{ display: "flex", justifyContent: "space-between", width: "100%", background: "none", border: "none", color: "#e5e7eb", padding: "3px 0", cursor: "pointer", font: "inherit", fontSize: 13 }}
+                style={{ display: "flex", justifyContent: "space-between", width: "100%", background: "none", border: "none", color: "#334155", padding: "3px 0", cursor: "pointer", font: "inherit", fontSize: 13 }}
               >
                 <span>{zone}</span>
-                <span style={{ color: "#F59E0B" }}>{count}</span>
+                <span style={{ color: "#1D4ED8" }}>{count}</span>
               </button>
             ))}
           </div>
-          <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 12, padding: 16, minWidth: 280, flex: "1 1 320px" }}>
-            <div style={{ fontSize: 12, color: "#9ca3af", marginBottom: 8, textTransform: "uppercase", letterSpacing: 0.5 }}>
+          <div style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: 12, padding: 16, minWidth: 280, flex: "1 1 320px" }}>
+            <div style={{ fontSize: 12, color: "#94A3B8", marginBottom: 8, textTransform: "uppercase", letterSpacing: 0.5 }}>
               Top 20 parent localities by draft count — where to look next
             </div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", columnGap: 16 }}>
@@ -149,10 +149,10 @@ export default function CoverageReportClient({ inventory }: Props) {
                 <button
                   key={parent}
                   onClick={() => { setCategory("draft"); setParentFilter(parent === "(no parent hint)" ? "all" : parent); }}
-                  style={{ display: "flex", justifyContent: "space-between", background: "none", border: "none", color: "#e5e7eb", padding: "3px 0", cursor: "pointer", font: "inherit", fontSize: 13, textAlign: "left" }}
+                  style={{ display: "flex", justifyContent: "space-between", background: "none", border: "none", color: "#334155", padding: "3px 0", cursor: "pointer", font: "inherit", fontSize: 13, textAlign: "left" }}
                 >
                   <span style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>{parent}</span>
-                  <span style={{ color: "#F59E0B", marginLeft: 8 }}>{count}</span>
+                  <span style={{ color: "#1D4ED8", marginLeft: 8 }}>{count}</span>
                 </button>
               ))}
             </div>
@@ -165,18 +165,18 @@ export default function CoverageReportClient({ inventory }: Props) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             style={{
-              background: "rgba(255,255,255,0.05)",
-              border: "1px solid rgba(255,255,255,0.1)",
+              background: "#FFFFFF",
+              border: "1px solid #E2E8F0",
               borderRadius: 8,
               padding: "8px 12px",
-              color: "#fff",
+              color: "#0F172A",
               minWidth: 220,
             }}
           />
           <select
             value={category}
             onChange={(e) => setCategory(e.target.value as CategoryFilter)}
-            style={{ background: "#0b1120", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8, padding: "8px 12px", color: "#fff" }}
+            style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: 8, padding: "8px 12px", color: "#0F172A" }}
           >
             {(Object.keys(CATEGORY_LABELS) as CategoryFilter[]).map((c) => (
               <option key={c} value={c}>{CATEGORY_LABELS[c]}</option>
@@ -185,7 +185,7 @@ export default function CoverageReportClient({ inventory }: Props) {
           <select
             value={zoneFilter}
             onChange={(e) => setZoneFilter(e.target.value)}
-            style={{ background: "#0b1120", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8, padding: "8px 12px", color: "#fff" }}
+            style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: 8, padding: "8px 12px", color: "#0F172A" }}
           >
             <option value="all">All zones</option>
             {ZONES.map((z) => (
@@ -195,22 +195,22 @@ export default function CoverageReportClient({ inventory }: Props) {
           <select
             value={parentFilter}
             onChange={(e) => setParentFilter(e.target.value)}
-            style={{ background: "#0b1120", border: "1px solid rgba(255,255,255,0.1)", borderRadius: 8, padding: "8px 12px", color: "#fff" }}
+            style={{ background: "#FFFFFF", border: "1px solid #E2E8F0", borderRadius: 8, padding: "8px 12px", color: "#0F172A" }}
           >
             <option value="all">All parents</option>
             {parentOptions.map((p) => (
               <option key={p} value={p}>{p}</option>
             ))}
           </select>
-          <span style={{ marginLeft: "auto", fontSize: 13, color: "#6b7280", alignSelf: "center" }}>
+          <span style={{ marginLeft: "auto", fontSize: 13, color: "#94A3B8", alignSelf: "center" }}>
             Showing {filtered.length} of {inventory.length}
           </span>
         </div>
 
-        <div style={{ overflowX: "auto", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 12 }}>
-          <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13 }}>
+        <div style={{ overflowX: "auto", border: "1px solid #E2E8F0", borderRadius: 12 }}>
+          <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, background: "#FFFFFF" }}>
             <thead>
-              <tr style={{ background: "rgba(255,255,255,0.04)", textAlign: "left" }}>
+              <tr style={{ background: "#F8FAFC", textAlign: "left" }}>
                 <th style={{ padding: "10px 12px" }}>Name</th>
                 <th style={{ padding: "10px 12px" }}>Slug</th>
                 <th style={{ padding: "10px 12px" }}>Parent</th>
@@ -226,34 +226,34 @@ export default function CoverageReportClient({ inventory }: Props) {
             <tbody>
               {filtered.map((i) => {
                 const cat = categoryOf(i);
-                const catColor = { published: "#22C55E", alias: "#06B6D4", "not-viable": "#8B5CF6", draft: "#F59E0B" }[cat];
+                const catColor = { published: "#2563EB", alias: "#0EA5E9", "not-viable": "#64748B", draft: "#1D4ED8" }[cat];
                 return (
-                  <tr key={i.name + i.slug} style={{ borderTop: "1px solid rgba(255,255,255,0.05)" }}>
-                    <td style={{ padding: "8px 12px", fontWeight: 500 }}>
+                  <tr key={i.name + i.slug} style={{ borderTop: "1px solid #F1F5F9" }}>
+                    <td style={{ padding: "8px 12px", fontWeight: 500, color: "#0F172A" }}>
                       {i.name}
                       {i.flagForReview && <span title="Flagged for review" style={{ marginLeft: 6 }}>⚑</span>}
                     </td>
-                    <td style={{ padding: "8px 12px", color: "#6b7280", fontSize: 12 }}>{i.slug}</td>
-                    <td style={{ padding: "8px 12px", color: "#9ca3af" }}>{i.parentName || (i.status === "published" ? "—" : "—")}</td>
-                    <td style={{ padding: "8px 12px", color: "#9ca3af" }}>{i.zoneHint}</td>
+                    <td style={{ padding: "8px 12px", color: "#94A3B8", fontSize: 12 }}>{i.slug}</td>
+                    <td style={{ padding: "8px 12px", color: "#64748B" }}>{i.parentName || (i.status === "published" ? "—" : "—")}</td>
+                    <td style={{ padding: "8px 12px", color: "#64748B" }}>{i.zoneHint}</td>
                     <td style={{ padding: "8px 12px" }}>
-                      <span style={{ fontSize: 11, padding: "2px 8px", borderRadius: 999, background: `${catColor}22`, color: catColor }}>
+                      <span style={{ fontSize: 11, padding: "2px 8px", borderRadius: 999, background: `${catColor}18`, color: catColor }}>
                         {CATEGORY_LABELS[cat]}
                       </span>
                     </td>
-                    <td style={{ padding: "8px 12px" }}>{i.verified ? "✓" : "—"}</td>
-                    <td style={{ padding: "8px 12px" }}>{i.indexable ? "✓" : "—"}</td>
-                    <td style={{ padding: "8px 12px" }}>{i.inSitemap ? "✓" : "—"}</td>
+                    <td style={{ padding: "8px 12px", color: "#334155" }}>{i.verified ? "✓" : "—"}</td>
+                    <td style={{ padding: "8px 12px", color: "#334155" }}>{i.indexable ? "✓" : "—"}</td>
+                    <td style={{ padding: "8px 12px", color: "#334155" }}>{i.inSitemap ? "✓" : "—"}</td>
                     <td style={{ padding: "8px 12px" }}>
                       {i.status === "published" && i.publishedSlug ? (
-                        <Link href={`/locations/${i.publishedSlug}`} style={{ color: "#00AAFF" }}>
+                        <Link href={`/locations/${i.publishedSlug}`} style={{ color: "#2563EB" }}>
                           /locations/{i.publishedSlug}
                         </Link>
                       ) : (
-                        <span style={{ color: "#4b5563" }}>none yet</span>
+                        <span style={{ color: "#CBD5E1" }}>none yet</span>
                       )}
                     </td>
-                    <td style={{ padding: "8px 12px", color: "#6b7280", fontSize: 12 }}>{i.reason}</td>
+                    <td style={{ padding: "8px 12px", color: "#94A3B8", fontSize: 12 }}>{i.reason}</td>
                   </tr>
                 );
               })}

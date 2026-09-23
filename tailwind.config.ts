@@ -29,29 +29,28 @@ const config: Config = {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
-        neon: {
-          blue: "#00AAFF",
-          cyan: "#00FFFF",
-          purple: "#7C3AED",
-          pink: "#EC4899",
-        },
-        dark: {
-          900: "#02040F",
-          800: "#050A1A",
-          700: "#080E22",
-          600: "#0C1230",
+        brand: {
+          navy: "#0F172A",
+          "navy-deep": "#1E3A8A",
+          blue: "#2563EB",
+          "blue-deep": "#1D4ED8",
+          "blue-light": "#3B82F6",
+          sky: "#0EA5E9",
+          "trust-green": "#059669",
+          "trust-green-light": "#10B981",
+          "trust-gold": "#D97706",
         },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-neon":
-          "linear-gradient(135deg, #00AAFF 0%, #7C3AED 50%, #EC4899 100%)",
+        "gradient-navy-blue":
+          "linear-gradient(135deg, #1E3A8A 0%, #2563EB 100%)",
         "gradient-blue":
-          "linear-gradient(135deg, #0EA5E9 0%, #0066FF 100%)",
-        "gradient-dark":
-          "linear-gradient(180deg, #02040F 0%, #050A1A 50%, #02040F 100%)",
-        "glass-border":
-          "linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.02) 100%)",
+          "linear-gradient(135deg, #1D4ED8 0%, #2563EB 100%)",
+        "gradient-navy":
+          "linear-gradient(180deg, #0F172A 0%, #1E293B 50%, #0F172A 100%)",
+        "card-border":
+          "linear-gradient(135deg, rgba(15,23,42,0.08) 0%, rgba(15,23,42,0.02) 100%)",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
@@ -86,8 +85,8 @@ const config: Config = {
           to: { opacity: "1", transform: "translateY(0)" },
         },
         glowPulse: {
-          "0%, 100%": { boxShadow: "0 0 20px rgba(0,170,255,0.3)" },
-          "50%": { boxShadow: "0 0 40px rgba(0,170,255,0.8), 0 0 80px rgba(0,170,255,0.3)" },
+          "0%, 100%": { boxShadow: "0 0 0 rgba(37,99,235,0)" },
+          "50%": { boxShadow: "0 4px 14px rgba(37,99,235,0.25)" },
         },
         float: {
           "0%, 100%": { transform: "translateY(0px)" },
@@ -102,8 +101,8 @@ const config: Config = {
           to: { transform: "translateX(0)" },
         },
         borderGlow: {
-          "0%, 100%": { borderColor: "rgba(0,170,255,0.3)" },
-          "50%": { borderColor: "rgba(0,170,255,0.8)" },
+          "0%, 100%": { borderColor: "rgba(37,99,235,0.25)" },
+          "50%": { borderColor: "rgba(37,99,235,0.5)" },
         },
         scanner: {
           "0%": { top: "0%", opacity: "1" },
@@ -112,11 +111,11 @@ const config: Config = {
         },
       },
       boxShadow: {
-        "neon-blue": "0 0 20px rgba(0,170,255,0.5), 0 0 60px rgba(0,170,255,0.2)",
-        "neon-purple": "0 0 20px rgba(124,58,237,0.5), 0 0 60px rgba(124,58,237,0.2)",
-        "neon-cyan": "0 0 20px rgba(0,255,255,0.5), 0 0 60px rgba(0,255,255,0.2)",
-        "glass": "0 8px 32px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05)",
-        "card": "0 20px 60px rgba(0,0,0,0.5)",
+        "soft": "0 1px 3px rgba(15,23,42,0.08), 0 1px 2px rgba(15,23,42,0.04)",
+        "card": "0 4px 16px rgba(15,23,42,0.06), 0 1px 3px rgba(15,23,42,0.04)",
+        "card-hover": "0 8px 24px rgba(15,23,42,0.1), 0 2px 6px rgba(15,23,42,0.05)",
+        "primary": "0 4px 14px rgba(37,99,235,0.2)",
+        "trust": "0 2px 10px rgba(5,150,105,0.15)",
       },
       backdropBlur: {
         xs: "2px",

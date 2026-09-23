@@ -6,35 +6,38 @@
 
 @layer base {
   :root {
-    --background: 222 47% 4%;
-    --foreground: 210 40% 98%;
-    --card: 222 47% 6%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222 47% 5%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 199 100% 50%;
-    --primary-foreground: 222 47% 4%;
-    --secondary: 217 33% 12%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217 33% 12%;
-    --muted-foreground: 215 20% 55%;
-    --accent: 263 70% 50%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217 33% 15%;
-    --input: 217 33% 12%;
-    --ring: 199 100% 50%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 221 83% 53%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 221 83% 53%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;
     --radius: 0.75rem;
 
-    /* Custom neon colors */
-    --neon-blue: #00AAFF;
-    --neon-cyan: #00FFFF;
-    --neon-purple: #7C3AED;
-    --neon-pink: #EC4899;
-    --bg-primary: #02040F;
-    --bg-secondary: #050A1A;
-    --bg-tertiary: #080E22;
+    /* Brand colors */
+    --brand-navy: #0F172A;
+    --brand-navy-deep: #1E3A8A;
+    --brand-blue: #2563EB;
+    --brand-blue-deep: #1D4ED8;
+    --brand-blue-light: #3B82F6;
+    --brand-sky: #0EA5E9;
+    --trust-green: #059669;
+    --trust-green-light: #10B981;
+    --trust-gold: #D97706;
+    --bg-canvas: #FFFFFF;
   }
 }
 
@@ -46,17 +49,17 @@
 
   html {
     scroll-behavior: smooth;
-    @apply bg-[#02040F] text-white;
+    @apply bg-white text-slate-700;
   }
 
   body {
-    @apply bg-[#02040F] text-white font-sans antialiased;
+    @apply bg-white text-slate-700 font-sans antialiased;
     overflow-x: hidden;
   }
 
   ::selection {
-    background: rgba(0, 170, 255, 0.3);
-    color: white;
+    background: rgba(37, 99, 235, 0.18);
+    color: #0F172A;
   }
 
   ::-webkit-scrollbar {
@@ -65,76 +68,77 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #02040F;
+    background: #F1F5F9;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: rgba(0, 170, 255, 0.4);
+    background: rgba(100, 116, 139, 0.4);
     border-radius: 3px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 170, 255, 0.7);
+    background: rgba(37, 99, 235, 0.5);
   }
 }
 
 @layer components {
-  /* Glass card */
+  /* Light card (formerly a dark translucent "glass" panel — now a clean white surface) */
   .glass {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 1px 3px rgba(15,23,42,0.06), 0 1px 2px rgba(15,23,42,0.03);
   }
 
   .glass-strong {
-    background: rgba(255, 255, 255, 0.06);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 16px rgba(15,23,42,0.08), 0 1px 3px rgba(15,23,42,0.04);
   }
 
-  /* Neon text glow */
+  /* Solid brand-color text (no glow — flat, professional) */
   .text-neon-blue {
-    color: #00AAFF;
-    text-shadow: 0 0 20px rgba(0, 170, 255, 0.8), 0 0 40px rgba(0, 170, 255, 0.4);
+    color: #2563EB;
   }
 
   .text-neon-cyan {
-    color: #00FFFF;
-    text-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.4);
+    color: #0EA5E9;
   }
 
   .text-neon-purple {
-    color: #A78BFA;
-    text-shadow: 0 0 20px rgba(167, 139, 250, 0.8), 0 0 40px rgba(167, 139, 250, 0.4);
+    color: #1E3A8A;
   }
 
-  /* Gradient text */
+  /* Gradient text — electric blue, the primary headline highlight */
   .gradient-text {
-    background: linear-gradient(135deg, #00AAFF 0%, #7C3AED 60%, #EC4899 100%);
+    background: linear-gradient(135deg, #1E40AF 0%, #2563EB 60%, #0EA5E9 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .gradient-text-blue {
-    background: linear-gradient(135deg, #38BDF8 0%, #00AAFF 50%, #0066FF 100%);
+    background: linear-gradient(135deg, #0F172A 0%, #2563EB 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  /* Glow button */
+  /* TurboFix wordmark — solid white on the dark Navbar/Footer chrome (bolt icon carries the brand blue) */
+  .brand-wordmark {
+    color: #FFFFFF;
+  }
+
+  /* Primary CTA button — electric blue, soft elevation shadow (no glow blur).
+     Darkened top stop so white button text clears WCAG AA (4.5:1) at normal text sizes. */
   .btn-neon {
     @apply relative overflow-hidden;
-    background: linear-gradient(135deg, #0066FF 0%, #00AAFF 100%);
-    box-shadow: 0 0 20px rgba(0, 170, 255, 0.4), 0 4px 20px rgba(0, 102, 255, 0.3);
+    background: linear-gradient(135deg, #1D4ED8 0%, #2563EB 100%);
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
     transition: all 0.3s ease;
   }
 
   .btn-neon:hover {
-    box-shadow: 0 0 40px rgba(0, 170, 255, 0.7), 0 8px 30px rgba(0, 102, 255, 0.5);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
     transform: translateY(-2px);
   }
 
@@ -145,7 +149,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
     transition: left 0.5s ease;
   }
 
@@ -153,77 +157,76 @@
     left: 100%;
   }
 
-  /* Outline neon button */
+  /* Outline button — electric blue border, fills on hover */
   .btn-outline-neon {
-    @apply relative overflow-hidden border text-white;
-    border-color: rgba(0, 170, 255, 0.5);
+    @apply relative overflow-hidden border;
+    border-color: rgba(37, 99, 235, 0.4);
+    color: #1D4ED8;
     transition: all 0.3s ease;
   }
 
   .btn-outline-neon:hover {
-    border-color: #00AAFF;
-    box-shadow: 0 0 20px rgba(0, 170, 255, 0.3), inset 0 0 20px rgba(0, 170, 255, 0.1);
-    color: #00AAFF;
+    border-color: #1D4ED8;
+    background: rgba(37, 99, 235, 0.06);
+    color: #1E40AF;
   }
 
-  /* Section headings */
+  /* Section badge pill — electric blue, reserved for badges/active-state accents */
   .section-label {
     @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase;
-    background: rgba(0, 170, 255, 0.1);
-    border: 1px solid rgba(0, 170, 255, 0.3);
-    color: #00AAFF;
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.25);
+    color: #1D4ED8;
   }
 
-  /* Animated grid background */
+  /* Barely-visible grid texture (simplified from the neon-glow version) */
   .grid-bg {
     background-image:
-      linear-gradient(rgba(0, 170, 255, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 170, 255, 0.03) 1px, transparent 1px);
+      linear-gradient(rgba(15, 23, 42, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 23, 42, 0.025) 1px, transparent 1px);
     background-size: 60px 60px;
   }
 
-  /* Radial glow overlay */
+  /* Radial glow overlays — simplified away (kept as no-ops so existing markup doesn't need stripping) */
   .radial-glow {
-    background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0, 170, 255, 0.15) 0%, transparent 70%);
+    background: transparent;
   }
 
   .radial-glow-purple {
-    background: radial-gradient(ellipse 60% 40% at 80% 50%, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+    background: transparent;
   }
 
-  /* Input styles */
+  /* Input styles — light, emerald focus ring */
   .input-glass {
-    @apply w-full px-4 py-3 rounded-xl text-white placeholder-gray-500 outline-none transition-all duration-300;
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    @apply w-full px-4 py-3 rounded-xl text-slate-900 placeholder-slate-400 outline-none transition-all duration-300 bg-slate-50 border border-slate-200;
   }
 
   .input-glass:focus {
-    border-color: rgba(0, 170, 255, 0.5);
-    box-shadow: 0 0 0 3px rgba(0, 170, 255, 0.1), 0 0 20px rgba(0, 170, 255, 0.1);
-    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(37, 99, 235, 0.5);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    background: #ffffff;
   }
 
-  /* Light input styles (used on light-themed pages, e.g. /book-repair) */
+  /* Light input styles (used across the light-themed booking flow) */
   .input-light {
     @apply w-full px-4 py-3 rounded-xl text-gray-900 placeholder-gray-400 outline-none transition-all duration-300 bg-gray-50 border border-gray-200;
   }
 
   .input-light:focus {
-    border-color: rgba(0, 102, 255, 0.5);
-    box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+    border-color: rgba(37, 99, 235, 0.5);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
     background: #ffffff;
   }
 
   /* Card hover */
   .card-hover {
-    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
 
   .card-hover:hover {
-    transform: translateY(-8px);
-    border-color: rgba(0, 170, 255, 0.3);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 170, 255, 0.1);
+    transform: translateY(-4px);
+    border-color: rgba(37, 99, 235, 0.25);
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.1), 0 2px 6px rgba(15, 23, 42, 0.05);
   }
 
   /* Noise texture overlay */
@@ -252,12 +255,12 @@
     content: '';
     width: 8px;
     height: 8px;
-    background: #22c55e;
+    background: #10B981;
     border-radius: 50%;
     position: absolute;
     top: 0;
     right: 0;
-    box-shadow: 0 0 8px rgba(34, 197, 94, 0.8);
+    box-shadow: 0 0 6px rgba(16, 185, 129, 0.5);
     animation: pulse 2s infinite;
   }
 
@@ -323,6 +326,6 @@ img {
   background: transparent;
 }
 .model-list::-webkit-scrollbar-thumb {
-  background: rgba(0, 170, 255, 0.3);
+  background: rgba(100, 116, 139, 0.35);
   border-radius: 2px;
 }

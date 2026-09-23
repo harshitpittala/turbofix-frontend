@@ -46,26 +46,26 @@ function FAQItem({ q, a, isOpen, onToggle }: { q: string; a: string; isOpen: boo
     <div
       className="rounded-xl overflow-hidden transition-all duration-300"
       style={{
-        background: isOpen ? "rgba(0,170,255,0.04)" : "rgba(255,255,255,0.02)",
-        border: isOpen ? "1px solid rgba(0,170,255,0.2)" : "1px solid rgba(255,255,255,0.05)",
+        background: isOpen ? "rgba(37,99,235,0.05)" : "#FFFFFF",
+        border: isOpen ? "1px solid rgba(37,99,235,0.25)" : "1px solid #E2E8F0",
       }}
     >
       <button
         onClick={onToggle}
         className="w-full flex items-center justify-between px-6 py-5 text-left"
       >
-        <span className={`font-medium text-[15px] pr-4 transition-colors duration-200 ${isOpen ? "text-white" : "text-gray-300"}`}>
+        <span className={`font-medium text-[15px] pr-4 transition-colors duration-200 ${isOpen ? "text-slate-900" : "text-slate-700"}`}>
           {q}
         </span>
         <div
           className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 transition-all duration-300"
           style={{
-            background: isOpen ? "rgba(0,170,255,0.15)" : "rgba(255,255,255,0.05)",
-            border: isOpen ? "1px solid rgba(0,170,255,0.3)" : "1px solid rgba(255,255,255,0.08)",
+            background: isOpen ? "rgba(37,99,235,0.15)" : "#F1F5F9",
+            border: isOpen ? "1px solid rgba(37,99,235,0.3)" : "1px solid #E2E8F0",
           }}
         >
           <motion.div animate={{ rotate: isOpen ? 45 : 0 }} transition={{ duration: 0.2 }}>
-            <Plus className="w-3.5 h-3.5" style={{ color: isOpen ? "#00AAFF" : "#6B7280" }} />
+            <Plus className="w-3.5 h-3.5" style={{ color: isOpen ? "#2563EB" : "#94A3B8" }} />
           </motion.div>
         </div>
       </button>
@@ -78,7 +78,7 @@ function FAQItem({ q, a, isOpen, onToggle }: { q: string; a: string; isOpen: boo
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <div className="px-6 pb-5 text-gray-400 text-sm leading-relaxed border-t border-white/5">
+            <div className="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-100">
               <div className="pt-4">{a}</div>
             </div>
           </motion.div>
@@ -93,9 +93,8 @@ export default function FAQ() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section ref={ref} className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-[#02040F]" />
-      <div className="absolute inset-0 grid-bg opacity-30" />
+    <section ref={ref} className="relative py-28 overflow-hidden border-t border-slate-100">
+      <div className="absolute inset-0 bg-white" />
 
       <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
@@ -109,12 +108,12 @@ export default function FAQ() {
             <motion.div variants={fadeInUp} className="mb-4">
               <span className="section-label">FAQ</span>
             </motion.div>
-            <motion.h2 variants={fadeInUp} className="font-display text-4xl md:text-5xl font-bold mb-5">
+            <motion.h2 variants={fadeInUp} className="font-display text-4xl md:text-5xl font-bold mb-5 text-slate-900">
               Questions?
               <br />
               <span className="gradient-text">We've Got Answers.</span>
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-gray-400 text-lg mb-8 leading-relaxed">
+            <motion.p variants={fadeInUp} className="text-slate-600 text-lg mb-8 leading-relaxed">
               Everything you need to know before booking a visit.
               Can't find your answer? Just WhatsApp us.
             </motion.p>
@@ -138,10 +137,10 @@ export default function FAQ() {
                 <div
                   key={s.label}
                   className="rounded-xl p-4"
-                  style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}
+                  style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}
                 >
                   <div className="text-2xl font-bold gradient-text-blue mb-1">{s.value}</div>
-                  <div className="text-gray-500 text-xs">{s.label}</div>
+                  <div className="text-slate-500 text-xs">{s.label}</div>
                 </div>
               ))}
             </motion.div>

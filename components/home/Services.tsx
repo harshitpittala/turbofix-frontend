@@ -14,8 +14,7 @@ const services = [
     icon: Smartphone,
     title: "Screen Replacement",
     desc: "Cracked or shattered? We restore your display with AMOLED-grade panels for like-new clarity and touch response.",
-    color: "#0EA5E9",
-    gradient: "from-[#0EA5E9]/20 to-[#0066FF]/5",
+    color: "#2563EB",
     time: "~30 min",
     popular: true,
   },
@@ -23,8 +22,7 @@ const services = [
     icon: Battery,
     title: "Battery Replacement",
     desc: "Fresh high-capacity cells restore full-day battery life. Health verified before and after.",
-    color: "#22C55E",
-    gradient: "from-[#22C55E]/20 to-[#16A34A]/5",
+    color: "#1D4ED8",
     time: "~20 min",
     popular: false,
   },
@@ -32,8 +30,7 @@ const services = [
     icon: Camera,
     title: "Camera Service",
     desc: "Blurry shots or broken lens? Our optics team brings your camera back to life.",
-    color: "#A78BFA",
-    gradient: "from-[#A78BFA]/20 to-[#7C3AED]/5",
+    color: "#3B82F6",
     time: "~45 min",
     popular: false,
   },
@@ -41,8 +38,7 @@ const services = [
     icon: Droplets,
     title: "Water Damage Service",
     desc: "Ultrasonic cleaning and precision board drying to restore water-damaged devices.",
-    color: "#38BDF8",
-    gradient: "from-[#38BDF8]/20 to-[#0EA5E9]/5",
+    color: "#0EA5E9",
     time: "~2 hrs",
     popular: false,
   },
@@ -50,8 +46,7 @@ const services = [
     icon: Mic2,
     title: "Speaker & Mic Service",
     desc: "No sound? Muffled calls? We replace speaker units and microphone grilles.",
-    color: "#F59E0B",
-    gradient: "from-[#F59E0B]/20 to-[#D97706]/5",
+    color: "#1E40AF",
     time: "~25 min",
     popular: false,
   },
@@ -59,8 +54,7 @@ const services = [
     icon: Wifi,
     title: "Charging Port Service",
     desc: "Loose port or not charging? We solder and replace USB-C / Lightning connectors.",
-    color: "#EC4899",
-    gradient: "from-[#EC4899]/20 to-[#DB2777]/5",
+    color: "#0284C7",
     time: "~30 min",
     popular: false,
   },
@@ -68,8 +62,7 @@ const services = [
     icon: Wrench,
     title: "Back Panel Replacement",
     desc: "Scratched or shattered back glass? Restore premium looks instantly.",
-    color: "#06B6D4",
-    gradient: "from-[#06B6D4]/20 to-[#0891B2]/5",
+    color: "#60A5FA",
     time: "~40 min",
     popular: false,
   },
@@ -77,8 +70,7 @@ const services = [
     icon: MonitorSmartphone,
     title: "Software & Data Issues",
     desc: "Bootloops, crashes, lost data — our software team handles it all.",
-    color: "#84CC16",
-    gradient: "from-[#84CC16]/20 to-[#65A30D]/5",
+    color: "#0369A1",
     time: "~1 hr",
     popular: false,
   },
@@ -88,9 +80,8 @@ export default function Services() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section ref={ref} className="relative py-28 overflow-hidden">
-      <div className="absolute inset-0 bg-[#030712]" />
-      <div className="absolute inset-0 grid-bg opacity-30" />
+    <section ref={ref} className="relative py-28 overflow-hidden border-t border-slate-100">
+      <div className="absolute inset-0 bg-white" />
 
       <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section header */}
@@ -105,14 +96,14 @@ export default function Services() {
           </motion.div>
           <motion.h2
             variants={fadeInUp}
-            className="font-display text-4xl md:text-5xl font-bold mb-5"
+            className="font-display text-4xl md:text-5xl font-bold mb-5 text-slate-900"
           >
             Every Service,{" "}
             <span className="gradient-text">Done Right</span>
           </motion.h2>
           <motion.p
             variants={fadeInUp}
-            className="text-gray-400 text-lg max-w-xl mx-auto"
+            className="text-slate-600 text-lg max-w-xl mx-auto"
           >
             From cracked screens to complex motherboard work — TurboFix handles
             every issue with precision and speed.
@@ -134,8 +125,8 @@ export default function Services() {
                 variants={scaleIn}
                 className="card-hover relative group rounded-2xl p-6 cursor-pointer"
                 style={{
-                  background: "rgba(255,255,255,0.02)",
-                  border: "1px solid rgba(255,255,255,0.06)",
+                  background: "#FFFFFF",
+                  border: "1px solid #E2E8F0",
                 }}
               >
                 {service.popular && (
@@ -167,11 +158,11 @@ export default function Services() {
                   <Icon className="w-5.5 h-5.5" style={{ color: service.color }} />
                 </div>
 
-                <h3 className="text-white font-semibold mb-2 text-[15px]">{service.title}</h3>
-                <p className="text-gray-500 text-xs leading-relaxed mb-4">{service.desc}</p>
+                <h3 className="text-slate-900 font-semibold mb-2 text-[15px]">{service.title}</h3>
+                <p className="text-slate-500 text-xs leading-relaxed mb-4">{service.desc}</p>
 
                 <div className="flex items-center justify-between">
-                  <div className="text-[11px] text-gray-600">⏱ {service.time}</div>
+                  <div className="text-[11px] text-slate-500">⏱ {service.time}</div>
                   <div
                     className="w-7 h-7 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-2 group-hover:translate-x-0"
                     style={{ background: `${service.color}20` }}

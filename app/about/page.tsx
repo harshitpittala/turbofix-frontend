@@ -4,7 +4,7 @@ import AboutPage from "./AboutPage";
 export const metadata: Metadata = {
   title: "About TurboFix — Our Story, Mission & Values",
   description:
-    "Learn about TurboFix — a doorstep mobile service in Hyderabad. Our story, mission, team of trained technicians, and commitment to quality service with OEM-grade parts.",
+    "TurboFix's story, mission, and team of trained technicians behind Hyderabad's doorstep mobile repair service.",
   alternates: { canonical: "https://turbofix.in/about" },
   openGraph: {
     title: "About TurboFix — Our Story, Mission & Values",

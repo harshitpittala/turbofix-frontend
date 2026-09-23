@@ -4,7 +4,7 @@ import BlogListClient from "./BlogListClient";
 export const metadata: Metadata = {
   title: "Blog — Mobile Service Tips, Guides & Advice",
   description:
-    "TurboFix blog — expert mobile service tips, battery guides, screen replacement advice, iPhone & Android troubleshooting, and insights from Hyderabad's top service technicians.",
+    "Mobile service tips, battery guides, and screen replacement advice from TurboFix's Hyderabad repair technicians.",
   alternates: { canonical: "https://turbofix.in/blog" },
   openGraph: {
     title: "Mobile Service Blog — Tips, Guides & Expert Advice | TurboFix",

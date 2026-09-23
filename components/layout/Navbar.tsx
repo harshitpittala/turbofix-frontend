@@ -36,7 +36,6 @@ export default function Navbar() {
   const lastScrollY = useRef(0);
   const pathname    = usePathname();
   const { scrollY } = useScroll();
-  const isLight = pathname === "/book-a-visit";
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const prev = lastScrollY.current;
@@ -51,37 +50,32 @@ export default function Navbar() {
   return (
     <>
       <motion.header
-        animate={{ y: hidden && !isLight ? -100 : 0 }}
+        animate={{ y: hidden ? -100 : 0 }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
-        className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-500", scrolled || isLight ? "py-3" : "py-5")}
+        className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-500", scrolled ? "py-3" : "py-5")}
       >
-        {/* Background */}
-        {isLight ? (
-          <div className="absolute inset-0 bg-white/95 backdrop-blur-xl border-b border-gray-200" />
-        ) : (
-          <div
-            className={cn(
-              "absolute inset-0 transition-all duration-500",
-              scrolled ? "backdrop-blur-xl bg-[#02040F]/80 border-b border-white/5" : "bg-transparent",
-            )}
-          />
-        )}
+        {/* Background — always solid navy so nav content stays readable over a light page */}
+        <div
+          className={cn(
+            "absolute inset-0 bg-slate-900 transition-shadow duration-500",
+            scrolled ? "shadow-lg shadow-slate-900/10" : "",
+          )}
+        />
 
         <div className="container relative flex items-center justify-between max-w-7xl mx-auto px-4 sm:px-6">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <div className="relative w-9 h-9">
-              <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#0066FF] to-[#00AAFF] group-hover:shadow-neon-blue transition-all duration-300" />
+              <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#0066FF] to-[#00AAFF] transition-all duration-300 group-hover:shadow-[0_0_20px_rgba(0,170,255,0.5),0_0_60px_rgba(0,170,255,0.2)]" />
               <div className="absolute inset-0 rounded-lg flex items-center justify-center">
                 <Zap className="w-5 h-5 text-white" fill="white" />
               </div>
-              <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#0066FF] to-[#00AAFF] opacity-0 group-hover:opacity-100 blur-lg transition-opacity duration-300" />
             </div>
             <div>
-              <span className={cn("font-display font-800 text-xl tracking-tight", isLight ? "text-gray-900" : "text-white")}>
-                Turbo<span className="gradient-text-blue">Fix</span>
+              <span className="font-display font-800 text-xl tracking-tight text-white">
+                Turbo<span className="brand-wordmark">Fix</span>
               </span>
-              <div className={cn("text-[9px] font-mono tracking-widest leading-none -mt-0.5", isLight ? "text-gray-400" : "text-gray-500")}>
+              <div className="text-[9px] font-mono tracking-widest leading-none -mt-0.5 text-gray-400">
                 HYDERABAD
               </div>
             </div>
@@ -96,9 +90,7 @@ export default function Navbar() {
                 className={cn(
                   "relative px-3.5 py-2 text-sm font-medium rounded-lg transition-all duration-200",
                   pathname === link.href || pathname.startsWith(link.href + "/")
-                    ? "text-[#0066FF]"
-                    : isLight
-                    ? "text-gray-600 hover:text-gray-900"
+                    ? "text-blue-400"
                     : "text-gray-400 hover:text-white",
                 )}
               >
@@ -106,7 +98,7 @@ export default function Navbar() {
                   <motion.div
                     layoutId="navbar-indicator"
                     className="absolute inset-0 rounded-lg"
-                    style={{ background: "rgba(0,170,255,0.08)", border: "1px solid rgba(0,170,255,0.2)" }}
+                    style={{ background: "rgba(37,99,235,0.1)", border: "1px solid rgba(37,99,235,0.25)" }}
                     transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                   />
                 )}
@@ -119,12 +111,9 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="tel:+918639605147"
-              className={cn(
-                "flex items-center gap-2 text-sm transition-colors",
-                isLight ? "text-gray-500 hover:text-gray-900" : "text-gray-400 hover:text-white",
-              )}
+              className="flex items-center gap-2 text-sm transition-colors text-gray-400 hover:text-white"
             >
-              <Phone className="w-4 h-4 text-[#00AAFF]" />
+              <Phone className="w-4 h-4 text-blue-400" />
               +91 86396 05147
             </a>
             <Link
@@ -139,10 +128,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className={cn(
-              "lg:hidden relative w-10 h-10 flex items-center justify-center rounded-xl transition-colors",
-              isLight ? "bg-gray-100 border border-gray-200 text-gray-600 hover:text-gray-900" : "glass text-gray-300 hover:text-white",
-            )}
+            className="lg:hidden relative w-10 h-10 flex items-center justify-center rounded-xl transition-colors bg-white/10 border border-white/10 text-gray-300 hover:text-white hover:bg-white/15"
             aria-label="Toggle menu"
           >
             <AnimatePresence mode="wait">
@@ -177,7 +163,7 @@ export default function Navbar() {
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 30, stiffness: 300 }}
               className="fixed top-0 right-0 bottom-0 z-50 w-72 lg:hidden overflow-y-auto"
-              style={{ background: "rgba(5, 10, 26, 0.98)", borderLeft: "1px solid rgba(255,255,255,0.06)" }}
+              style={{ background: "rgba(15, 23, 42, 0.98)", borderLeft: "1px solid rgba(255,255,255,0.06)" }}
             >
               <div className="flex flex-col h-full pt-20 pb-8 px-6">
                 <nav className="flex flex-col gap-1.5 flex-1">
@@ -193,7 +179,7 @@ export default function Navbar() {
                         className={cn(
                           "flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium transition-all",
                           pathname === link.href
-                            ? "bg-[#00AAFF]/10 text-[#00AAFF] border border-[#00AAFF]/20"
+                            ? "bg-blue-400/10 text-blue-400 border border-blue-400/20"
                             : "text-gray-400 hover:text-white hover:bg-white/5",
                         )}
                       >
@@ -210,8 +196,8 @@ export default function Navbar() {
                   transition={{ delay: 0.4 }}
                   className="flex flex-col gap-3 mt-4"
                 >
-                  <a href="tel:+918639605147" className="flex items-center gap-3 px-4 py-3 rounded-xl glass text-sm text-gray-300">
-                    <Phone className="w-4 h-4 text-[#00AAFF]" />
+                  <a href="tel:+918639605147" className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-sm text-gray-300">
+                    <Phone className="w-4 h-4 text-blue-400" />
                     +91 86396 05147
                   </a>
                 </motion.div>

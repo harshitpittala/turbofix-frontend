@@ -6,10 +6,10 @@ import CTA from "@/components/home/CTA";
 import { staggerContainer, fadeInUp } from "@/lib/utils";
 
 const values = [
-  { icon: Target, title: "Precision First", desc: "Every job is done right the first time. No shortcuts, no compromises.", color: "#00AAFF" },
-  { icon: Heart, title: "Customer Obsessed", desc: "We exist to serve you. Your satisfaction defines our success.", color: "#EC4899" },
-  { icon: Award, title: "Quality Always", desc: "OEM parts, trained technicians, and zero compromise on standards.", color: "#F59E0B" },
-  { icon: TrendingUp, title: "Always Improving", desc: "We continuously train our team on the latest devices as new models launch.", color: "#22C55E" },
+  { icon: Target, title: "Precision First", desc: "Every job is done right the first time. No shortcuts, no compromises.", color: "#2563EB" },
+  { icon: Heart, title: "Customer Obsessed", desc: "We exist to serve you. Your satisfaction defines our success.", color: "#1D4ED8" },
+  { icon: Award, title: "Quality Always", desc: "OEM parts, trained technicians, and zero compromise on standards.", color: "#3B82F6" },
+  { icon: TrendingUp, title: "Always Improving", desc: "We continuously train our team on the latest devices as new models launch.", color: "#0EA5E9" },
 ];
 
 const stats = [
@@ -24,9 +24,7 @@ export default function AboutPage() {
     <>
       {/* Hero */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-[#02040F]" />
-        <div className="absolute inset-0 grid-bg" />
-        <div className="absolute inset-0 radial-glow" />
+        <div className="absolute inset-0 bg-white" />
 
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <motion.div
@@ -37,11 +35,11 @@ export default function AboutPage() {
             <motion.div variants={fadeInUp} className="flex justify-center mb-4">
               <span className="section-label">Our Story</span>
             </motion.div>
-            <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-7xl font-bold mb-6">
+            <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-7xl font-bold mb-6 text-slate-900">
               Built on{" "}
               <span className="gradient-text">Passion for Tech</span>
             </motion.h1>
-            <motion.p variants={fadeInUp} className="text-gray-400 text-xl max-w-3xl mx-auto leading-relaxed mb-12">
+            <motion.p variants={fadeInUp} className="text-slate-600 text-xl max-w-3xl mx-auto leading-relaxed mb-12">
               TurboFix was born from a simple frustration — mobile service in Hyderabad was slow,
               overpriced, and unpredictable. We built the studio we wished existed.
             </motion.p>
@@ -55,12 +53,11 @@ export default function AboutPage() {
                 <div
                   key={s.label}
                   className="glass rounded-2xl p-5 text-center"
-                  style={{ border: "1px solid rgba(255,255,255,0.06)" }}
                 >
                   <div className="font-display text-3xl font-bold gradient-text-blue mb-1">
                     {s.value}
                   </div>
-                  <div className="text-gray-500 text-xs">{s.label}</div>
+                  <div className="text-slate-500 text-xs">{s.label}</div>
                 </div>
               ))}
             </motion.div>
@@ -69,12 +66,12 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-[#030712]" />
+      <section className="relative py-20 overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-white" />
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
             <span className="section-label mb-4 inline-flex">Our Values</span>
-            <h2 className="font-display text-4xl font-bold mt-4">
+            <h2 className="font-display text-4xl font-bold mt-4 text-slate-900">
               What We Stand For
             </h2>
           </div>
@@ -89,14 +86,14 @@ export default function AboutPage() {
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
                   className="rounded-2xl p-6 group"
-                  style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.05)" }}
-                  whileHover={{ y: -4, borderColor: `${v.color}30` }}
+                  style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}
+                  whileHover={{ y: -4, borderColor: `${v.color}40` }}
                 >
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: `${v.color}15`, border: `1px solid ${v.color}20` }}>
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: `${v.color}12`, border: `1px solid ${v.color}25` }}>
                     <Icon className="w-5.5 h-5.5" style={{ color: v.color }} />
                   </div>
-                  <h3 className="text-white font-semibold mb-2">{v.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{v.desc}</p>
+                  <h3 className="text-slate-900 font-semibold mb-2">{v.title}</h3>
+                  <p className="text-slate-500 text-sm leading-relaxed">{v.desc}</p>
                 </motion.div>
               );
             })}

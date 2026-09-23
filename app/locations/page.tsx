@@ -5,7 +5,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Doorstep Mobile Service in All Hyderabad Areas",
   description:
-    "TurboFix's independent doorstep mobile-device servicing covers all Hyderabad areas — Gachibowli, Madhapur, Banjara Hills, Secunderabad, Dilsukhnagar, Kompally, and 90+ more. Same-day service slots available at your door.",
+    "TurboFix's doorstep mobile service covers 90+ Hyderabad areas — Gachibowli, Madhapur, Banjara Hills, Secunderabad & more. Book now!",
   alternates: { canonical: "https://turbofix.in/locations" },
   openGraph: {
     title: "Doorstep Mobile Service in All Hyderabad Areas | TurboFix",

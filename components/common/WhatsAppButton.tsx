@@ -1,10 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, X, Phone, Send } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 const quickMessages = [
   "Hi! I need a screen replacement 📱",
@@ -16,8 +14,6 @@ const quickMessages = [
 export default function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
   const [showButton, setShowButton] = useState(false);
-  const pathname = usePathname();
-  const isBookRepair = pathname === "/book-a-visit";
 
   useEffect(() => {
     const timer = setTimeout(() => setShowButton(true), 2500);
@@ -32,12 +28,7 @@ export default function WhatsAppButton() {
   return (
     <AnimatePresence>
       {showButton && (
-        <div
-          className={cn(
-            "fixed bottom-6 right-6 z-50 flex-col items-end gap-3",
-            isBookRepair ? "hidden sm:flex" : "flex",
-          )}
-        >
+        <div className="fixed bottom-6 right-6 z-50 hidden flex-col items-end gap-3 lg:flex">
           {/* Chat popup */}
           <AnimatePresence>
             {isOpen && (
@@ -48,7 +39,7 @@ export default function WhatsAppButton() {
                 transition={{ type: "spring", damping: 25, stiffness: 400 }}
                 className="w-80 rounded-2xl overflow-hidden shadow-2xl"
                 style={{
-                  background: "rgba(5,10,26,0.98)",
+                  background: "rgba(15,23,42,0.98)",
                   border: "1px solid rgba(255,255,255,0.08)",
                   backdropFilter: "blur(20px)",
                 }}

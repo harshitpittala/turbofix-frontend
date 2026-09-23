@@ -17,14 +17,14 @@ export default function FinalCta() {
         <button
           type="button"
           onClick={scrollToWizard}
-          className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base font-semibold text-white bg-[#0066FF] hover:bg-[#0052CC] shadow-lg shadow-blue-500/25 transition-all duration-200 hover:-translate-y-0.5"
+          className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl text-base font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-lg shadow-blue-600/25 transition-all duration-200 hover:-translate-y-0.5"
         >
           Book Doorstep Visit
           <ArrowRight className="w-4 h-4" />
         </button>
         <p className="text-sm text-gray-400 mt-4">
           Or call us directly:{" "}
-          <a href="tel:+918639605147" className="text-[#0066FF] font-medium">
+          <a href="tel:+918639605147" className="text-blue-700 font-medium">
             86396 05147
           </a>
         </p>

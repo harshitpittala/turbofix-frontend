@@ -8,9 +8,9 @@ import { staggerContainer, fadeInUp, fadeInLeft, fadeInRight } from "@/lib/utils
 import { API_URL } from "@/lib/config";
 
 const contactInfo = [
-  { icon: Phone, label: "Phone", value: "+91 86396 05147", href: "tel:+918639605147", color: "#00AAFF" },
-  { icon: Mail, label: "Email", value: "support@turbofix.in", href: "mailto:support@turbofix.in", color: "#A78BFA" },
-  { icon: MapPin, label: "Address", value: "11-1-441, Aghapura, Nampally, Hyderabad", href: "#map", color: "#22C55E" },
+  { icon: Phone, label: "Phone", value: "+91 86396 05147", href: "tel:+918639605147", color: "#2563EB" },
+  { icon: Mail, label: "Email", value: "support@turbofix.in", href: "mailto:support@turbofix.in", color: "#1D4ED8" },
+  { icon: MapPin, label: "Address", value: "11-1-441, Aghapura, Nampally, Hyderabad", href: "#map", color: "#3B82F6" },
   { icon: MessageCircle, label: "WhatsApp", value: "+91 86396 05147", href: "https://wa.me/918639605147", color: "#25D366" },
 ];
 
@@ -74,19 +74,17 @@ export default function ContactPageClient() {
     <>
       {/* Hero */}
       <section className="relative pt-32 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-[#02040F]" />
-        <div className="absolute inset-0 grid-bg" />
-        <div className="absolute inset-0 radial-glow" />
+        <div className="absolute inset-0 bg-white" />
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <motion.div variants={staggerContainer} initial="hidden" animate="show">
             <motion.div variants={fadeInUp} className="flex justify-center mb-4">
               <span className="section-label">Contact Us</span>
             </motion.div>
-            <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-4">
+            <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-4 text-slate-900">
               Let's{" "}
               <span className="gradient-text">Talk</span>
             </motion.h1>
-            <motion.p variants={fadeInUp} className="text-gray-400 text-xl max-w-xl mx-auto">
+            <motion.p variants={fadeInUp} className="text-slate-600 text-xl max-w-xl mx-auto">
               Have a question? Need a visit? We respond within 2 hours on weekdays.
             </motion.p>
           </motion.div>
@@ -94,8 +92,8 @@ export default function ContactPageClient() {
       </section>
 
       {/* Contact Grid */}
-      <section className="relative py-16 pb-28 overflow-hidden">
-        <div className="absolute inset-0 bg-[#030712]" />
+      <section className="relative py-16 pb-28 overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-white" />
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Left - Info */}
@@ -105,7 +103,7 @@ export default function ContactPageClient() {
               whileInView="show"
               viewport={{ once: true }}
             >
-              <motion.h2 variants={fadeInLeft} className="font-display text-3xl font-bold mb-8">
+              <motion.h2 variants={fadeInLeft} className="font-display text-3xl font-bold mb-8 text-slate-900">
                 Find Us, Reach Us
               </motion.h2>
 
@@ -121,18 +119,18 @@ export default function ContactPageClient() {
                       target={item.label === "WhatsApp" ? "_blank" : undefined}
                       rel={item.label === "WhatsApp" ? "noopener noreferrer" : undefined}
                       className="flex items-center gap-4 p-4 rounded-xl group"
-                      style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.05)" }}
-                      whileHover={{ x: 4, borderColor: `${item.color}30` }}
+                      style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}
+                      whileHover={{ x: 4, borderColor: `${item.color}40` }}
                     >
                       <div
                         className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0"
-                        style={{ background: `${item.color}15`, border: `1px solid ${item.color}20` }}
+                        style={{ background: `${item.color}12`, border: `1px solid ${item.color}25` }}
                       >
                         <Icon className="w-4.5 h-4.5" style={{ color: item.color }} />
                       </div>
                       <div>
-                        <p className="text-gray-500 text-xs mb-0.5">{item.label}</p>
-                        <p className="text-gray-200 text-sm font-medium">{item.value}</p>
+                        <p className="text-slate-500 text-xs mb-0.5">{item.label}</p>
+                        <p className="text-slate-700 text-sm font-medium">{item.value}</p>
                       </div>
                     </motion.a>
                   );
@@ -143,24 +141,24 @@ export default function ContactPageClient() {
               <motion.div
                 variants={fadeInLeft}
                 className="rounded-xl p-6"
-                style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.05)" }}
+                style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}
               >
                 <div className="flex items-center gap-2 mb-4">
-                  <Clock className="w-4 h-4 text-[#00AAFF]" />
-                  <h3 className="text-white font-semibold">Opening Hours</h3>
+                  <Clock className="w-4 h-4 text-blue-700" />
+                  <h3 className="text-slate-900 font-semibold">Opening Hours</h3>
                 </div>
                 <div className="space-y-3">
                   {hours.map((h) => (
                     <div key={h.day} className="flex items-center justify-between">
-                      <span className="text-gray-400 text-sm">{h.day}</span>
-                      <span className="text-white text-sm font-medium">{h.time}</span>
+                      <span className="text-slate-500 text-sm">{h.day}</span>
+                      <span className="text-slate-900 text-sm font-medium">{h.time}</span>
                     </div>
                   ))}
                 </div>
                 {isOpen !== null && (
-                  <div className="mt-4 pt-4 border-t border-white/5 flex items-center gap-2">
-                    <div className={`w-2 h-2 rounded-full ${isOpen ? "bg-green-400 animate-pulse" : "bg-gray-500"}`} />
-                    <span className={`text-xs font-medium ${isOpen ? "text-green-400" : "text-gray-400"}`}>
+                  <div className="mt-4 pt-4 border-t border-slate-100 flex items-center gap-2">
+                    <div className={`w-2 h-2 rounded-full ${isOpen ? "bg-emerald-500 animate-pulse" : "bg-slate-300"}`} />
+                    <span className={`text-xs font-medium ${isOpen ? "text-emerald-700" : "text-slate-500"}`}>
                       {isOpen ? "We're open right now" : "We're closed right now"}
                     </span>
                   </div>
@@ -177,7 +175,7 @@ export default function ContactPageClient() {
             >
               <div
                 className="rounded-2xl p-8"
-                style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)" }}
+                style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}
               >
                 {submitted ? (
                   <motion.div
@@ -185,24 +183,24 @@ export default function ContactPageClient() {
                     animate={{ opacity: 1, scale: 1 }}
                     className="flex flex-col items-center justify-center py-12 text-center"
                   >
-                    <div className="w-16 h-16 rounded-full flex items-center justify-center mb-4" style={{ background: "rgba(34,197,94,0.15)", border: "2px solid rgba(34,197,94,0.3)" }}>
-                      <CheckCircle className="w-8 h-8 text-green-400" />
+                    <div className="w-16 h-16 rounded-full flex items-center justify-center mb-4" style={{ background: "rgba(5,150,105,0.1)", border: "2px solid rgba(5,150,105,0.3)" }}>
+                      <CheckCircle className="w-8 h-8 text-emerald-700" />
                     </div>
-                    <h3 className="text-xl font-bold text-white mb-2">Message Received!</h3>
-                    <p className="text-gray-400 text-sm max-w-xs">Thanks for reaching out. We'll get back to you within 2 hours.</p>
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">Message Received!</h3>
+                    <p className="text-slate-500 text-sm max-w-xs">Thanks for reaching out. We'll get back to you within 2 hours.</p>
                     <button
                       onClick={() => setSubmitted(false)}
-                      className="mt-6 text-sm text-[#00AAFF] hover:underline"
+                      className="mt-6 text-sm text-blue-700 hover:underline"
                     >
                       Send another message
                     </button>
                   </motion.div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-5">
-                    <h2 className="font-display text-2xl font-bold text-white mb-6">Send a Message</h2>
+                    <h2 className="font-display text-2xl font-bold text-slate-900 mb-6">Send a Message</h2>
                     <div className="grid grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-xs text-gray-400 mb-1.5">Your Name</label>
+                        <label className="block text-xs text-slate-500 mb-1.5">Your Name</label>
                         <input
                           type="text"
                           required
@@ -213,7 +211,7 @@ export default function ContactPageClient() {
                         />
                       </div>
                       <div>
-                        <label className="block text-xs text-gray-400 mb-1.5">Phone Number</label>
+                        <label className="block text-xs text-slate-500 mb-1.5">Phone Number</label>
                         <input
                           type="tel"
                           value={form.phone}
@@ -224,7 +222,7 @@ export default function ContactPageClient() {
                       </div>
                     </div>
                     <div>
-                      <label className="block text-xs text-gray-400 mb-1.5">Email Address</label>
+                      <label className="block text-xs text-slate-500 mb-1.5">Email Address</label>
                       <input
                         type="email"
                         required
@@ -235,7 +233,7 @@ export default function ContactPageClient() {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs text-gray-400 mb-1.5">Subject</label>
+                      <label className="block text-xs text-slate-500 mb-1.5">Subject</label>
                       <input
                         type="text"
                         value={form.subject}
@@ -245,7 +243,7 @@ export default function ContactPageClient() {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs text-gray-400 mb-1.5">Message</label>
+                      <label className="block text-xs text-slate-500 mb-1.5">Message</label>
                       <textarea
                         required
                         rows={5}
@@ -263,7 +261,7 @@ export default function ContactPageClient() {
                       <Send className="w-4 h-4" />
                       {sending ? "Sending…" : "Send Message"}
                     </button>
-                    <p className="text-center text-gray-600 text-xs">We reply within 2 hours on weekdays</p>
+                    <p className="text-center text-slate-500 text-xs">We reply within 2 hours on weekdays</p>
                   </form>
                 )}
               </div>
@@ -277,13 +275,13 @@ export default function ContactPageClient() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="mt-12 rounded-2xl overflow-hidden"
-            style={{ border: "1px solid rgba(255,255,255,0.07)", height: "300px" }}
+            style={{ border: "1px solid #E2E8F0", height: "300px" }}
           >
             <iframe
               src="https://maps.google.com/maps?q=11-1-441%2C%20Aghapura%2C%20Nampally%2C%20Hyderabad%2C%20Telangana%20500001&output=embed"
               width="100%"
               height="300"
-              style={{ border: 0, filter: "invert(90%) hue-rotate(180deg) brightness(0.8) contrast(1.2)" }}
+              style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

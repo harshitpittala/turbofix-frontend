@@ -10,9 +10,9 @@ export default function StickyCallBar() {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 1, type: "spring", damping: 20, stiffness: 200 }}
-      className="fixed bottom-0 left-0 right-0 z-40 sm:hidden"
+      className="fixed bottom-0 left-0 right-0 z-40 lg:hidden"
       style={{
-        background: "rgba(2,4,15,0.97)",
+        background: "rgba(15,23,42,0.97)",
         borderTop: "1px solid rgba(255,255,255,0.08)",
         backdropFilter: "blur(20px)",
         paddingBottom: "env(safe-area-inset-bottom)",
@@ -23,7 +23,7 @@ export default function StickyCallBar() {
         <a
           href="tel:+918639605147"
           className="flex-1 flex items-center justify-center gap-1.5 py-3 rounded-xl text-sm font-semibold text-white transition-opacity active:opacity-80"
-          style={{ background: "linear-gradient(135deg,#0066FF,#00AAFF)" }}
+          style={{ background: "linear-gradient(135deg,#1E3A8A,#334155)" }}
         >
           <Phone className="w-4 h-4" />
           Call Now
@@ -46,7 +46,7 @@ export default function StickyCallBar() {
           href="/book-a-visit"
           className="flex-1 flex items-center justify-center gap-1.5 py-3 rounded-xl text-sm font-semibold text-white transition-opacity active:opacity-80"
           style={{
-            background: "linear-gradient(135deg,#7C3AED,#9F67FF)",
+            background: "linear-gradient(135deg,#1D4ED8,#2563EB)",
           }}
         >
           <Zap className="w-4 h-4" />

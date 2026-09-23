@@ -3,9 +3,9 @@ import FAQPageClient from "./FAQPageClient";
 import { JsonLd } from "@/components/seo/JsonLd";
 
 export const metadata: Metadata = {
-  title: "FAQ — Frequently Asked Questions About Mobile Service",
+  title: "FAQ — Mobile Service Questions Answered",
   description:
-    "Get answers to all your questions about TurboFix mobile service. How long does a visit take? Do you use genuine parts? What warranty do you offer? Is doorstep service safe?",
+    "Answers to common TurboFix questions — visit time, genuine parts, warranty, and doorstep service safety in Hyderabad.",
   alternates: { canonical: "https://turbofix.in/faq" },
   openGraph: {
     title: "FAQ — Frequently Asked Questions About Mobile Service | TurboFix",

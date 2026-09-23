@@ -10,12 +10,12 @@ import CTA from "@/components/home/CTA";
 const locationData = getPublishedLocations();
 
 const zones = [
-  { key: "central",   label: "Central Hyderabad",    color: "#00AAFF", desc: "Banjara Hills, Jubilee Hills, Ameerpet, Abids & more" },
-  { key: "west",      label: "West / HITEC Corridor", color: "#7C3AED", desc: "HITEC City, Madhapur, Gachibowli, Kukatpally & more" },
-  { key: "north",     label: "North Hyderabad",       color: "#22C55E", desc: "Secunderabad, Kompally, ECIL, Alwal & more" },
-  { key: "south",     label: "South / Old City",      color: "#F59E0B", desc: "Charminar, Mehdipatnam, Falaknuma, Malakpet & more" },
-  { key: "east",      label: "East Hyderabad",        color: "#EC4899", desc: "Dilsukhnagar, LB Nagar, Uppal, Nagole & more" },
-  { key: "outskirts", label: "Outskirts & Growth",    color: "#06B6D4", desc: "Shamshabad, Medchal, Ghatkesar, Adibatla & more" },
+  { key: "central",   label: "Central Hyderabad",    color: "#2563EB", desc: "Banjara Hills, Jubilee Hills, Ameerpet, Abids & more" },
+  { key: "west",      label: "West / HITEC Corridor", color: "#1D4ED8", desc: "HITEC City, Madhapur, Gachibowli, Kukatpally & more" },
+  { key: "north",     label: "North Hyderabad",       color: "#3B82F6", desc: "Secunderabad, Kompally, ECIL, Alwal & more" },
+  { key: "south",     label: "South / Old City",      color: "#0EA5E9", desc: "Charminar, Mehdipatnam, Falaknuma, Malakpet & more" },
+  { key: "east",      label: "East Hyderabad",        color: "#1E40AF", desc: "Dilsukhnagar, LB Nagar, Uppal, Nagole & more" },
+  { key: "outskirts", label: "Outskirts & Growth",    color: "#0284C7", desc: "Shamshabad, Medchal, Ghatkesar, Adibatla & more" },
 ] as const;
 
 const typeEmoji: Record<string, string> = {
@@ -34,9 +34,7 @@ export default function LocationsPageClient() {
     <>
       {/* Hero */}
       <section className="relative pt-32 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-[#02040F]" />
-        <div className="absolute inset-0 grid-bg" />
-        <div className="absolute inset-0 radial-glow" />
+        <div className="absolute inset-0 bg-white" />
 
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <motion.div
@@ -46,19 +44,19 @@ export default function LocationsPageClient() {
             className="text-center max-w-4xl mx-auto"
           >
             <motion.div variants={fadeInUp} className="flex items-center justify-center gap-2 mb-6">
-              <MapPin className="w-4 h-4 text-[#00AAFF]" />
+              <MapPin className="w-4 h-4 text-blue-600" />
               <span className="section-label">All Hyderabad Areas</span>
             </motion.div>
 
-            <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-6">
+            <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-6 text-slate-900">
               Mobile Service{" "}
               <span className="gradient-text">Everywhere</span>
               <br />in Hyderabad
             </motion.h1>
 
-            <motion.p variants={fadeInUp} className="text-gray-400 text-xl leading-relaxed mb-10">
+            <motion.p variants={fadeInUp} className="text-slate-600 text-xl leading-relaxed mb-10">
               TurboFix doorstep service now covers{" "}
-              <span className="text-white font-semibold">90+ Hyderabad localities</span> — from HITEC
+              <span className="text-slate-900 font-semibold">90+ Hyderabad localities</span> — from HITEC
               City to Charminar, from Kompally to Shamshabad. Book online and a trained
               technician arrives at your door.
             </motion.p>
@@ -73,8 +71,8 @@ export default function LocationsPageClient() {
               </Link>
               <a
                 href="tel:+918639605147"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-medium text-gray-300"
-                style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)" }}
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-medium text-slate-700"
+                style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}
               >
                 Call +91 86396 05147
               </a>
@@ -84,8 +82,8 @@ export default function LocationsPageClient() {
       </section>
 
       {/* Stats strip */}
-      <section className="relative py-8 overflow-hidden border-y border-white/5">
-        <div className="absolute inset-0 bg-[#030712]" />
+      <section className="relative py-8 overflow-hidden border-y border-slate-200">
+        <div className="absolute inset-0 bg-white" />
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap justify-center gap-8 md:gap-16">
             {[
@@ -95,8 +93,8 @@ export default function LocationsPageClient() {
               { label: "Zero Travel Charge",   value: "All Zones" },
             ].map(({ label, value }) => (
               <div key={label} className="text-center">
-                <div className="text-3xl font-bold text-white font-display mb-1">{value}</div>
-                <div className="text-sm text-gray-500">{label}</div>
+                <div className="text-3xl font-bold text-slate-900 font-display mb-1">{value}</div>
+                <div className="text-sm text-slate-500">{label}</div>
               </div>
             ))}
           </div>
@@ -107,8 +105,8 @@ export default function LocationsPageClient() {
       {zones.map((zone) => {
         const areas = locationData.filter((a) => a.zone === zone.key);
         return (
-          <section key={zone.key} className="relative py-14 overflow-hidden">
-            <div className="absolute inset-0 bg-[#02040F]" />
+          <section key={zone.key} className="relative py-14 overflow-hidden border-t border-slate-100">
+            <div className="absolute inset-0 bg-white" />
             <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
               <motion.div
                 variants={staggerContainer}
@@ -124,12 +122,12 @@ export default function LocationsPageClient() {
                   />
                   <div>
                     <Link href={`/locations/zones/${zone.key}`} className="group inline-flex items-center gap-2">
-                      <h2 className="font-display text-2xl md:text-3xl font-bold text-white group-hover:text-[#00AAFF] transition-colors">
+                      <h2 className="font-display text-2xl md:text-3xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors">
                         {zone.label}
                       </h2>
-                      <ChevronRight className="w-4 h-4 text-gray-600 group-hover:text-[#00AAFF] transition-colors" />
+                      <ChevronRight className="w-4 h-4 text-slate-300 group-hover:text-blue-700 transition-colors" />
                     </Link>
-                    <p className="text-gray-500 text-sm mt-0.5">{zone.desc}</p>
+                    <p className="text-slate-500 text-sm mt-0.5">{zone.desc}</p>
                   </div>
                   <span
                     className="ml-auto text-xs font-medium px-3 py-1 rounded-full shrink-0"
@@ -155,27 +153,27 @@ export default function LocationsPageClient() {
                         href={`/locations/${area.slug}`}
                         className="group flex items-start gap-2 p-3.5 rounded-xl transition-all duration-200 h-full"
                         style={{
-                          background: "rgba(255,255,255,0.03)",
-                          border: "1px solid rgba(255,255,255,0.06)",
+                          background: "#FFFFFF",
+                          border: "1px solid #E2E8F0",
                         }}
                         onMouseEnter={(e) => {
                           (e.currentTarget as HTMLElement).style.background = `${zone.color}0d`;
-                          (e.currentTarget as HTMLElement).style.borderColor = `${zone.color}30`;
+                          (e.currentTarget as HTMLElement).style.borderColor = `${zone.color}40`;
                         }}
                         onMouseLeave={(e) => {
-                          (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.03)";
-                          (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.06)";
+                          (e.currentTarget as HTMLElement).style.background = "#FFFFFF";
+                          (e.currentTarget as HTMLElement).style.borderColor = "#E2E8F0";
                         }}
                       >
                         <span className="text-base leading-none mt-0.5 shrink-0">
                           {typeEmoji[area.type]}
                         </span>
                         <div className="min-w-0 flex-1">
-                          <div className="text-sm font-medium text-gray-200 group-hover:text-white transition-colors leading-snug truncate">
+                          <div className="text-sm font-medium text-slate-700 group-hover:text-slate-900 transition-colors leading-snug truncate">
                             {area.name}
                           </div>
                           {area.pincode && (
-                            <div className="text-xs text-gray-600 mt-0.5">{area.pincode}</div>
+                            <div className="text-xs text-slate-500 mt-0.5">{area.pincode}</div>
                           )}
                         </div>
                         <ChevronRight
@@ -193,8 +191,8 @@ export default function LocationsPageClient() {
       })}
 
       {/* Why TurboFix everywhere */}
-      <section className="relative py-16 overflow-hidden">
-        <div className="absolute inset-0 bg-[#030712]" />
+      <section className="relative py-16 overflow-hidden border-t border-slate-100">
+        <div className="absolute inset-0 bg-white" />
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <motion.div
             variants={staggerContainer}
@@ -203,11 +201,11 @@ export default function LocationsPageClient() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <motion.h2 variants={fadeInUp} className="font-display text-3xl md:text-4xl font-bold mb-4 text-white">
+            <motion.h2 variants={fadeInUp} className="font-display text-3xl md:text-4xl font-bold mb-4 text-slate-900">
               Same Quality,{" "}
               <span className="gradient-text">Every Corner</span>
             </motion.h2>
-            <motion.p variants={fadeInUp} className="text-gray-400 text-lg max-w-2xl mx-auto">
+            <motion.p variants={fadeInUp} className="text-slate-600 text-lg max-w-2xl mx-auto">
               Whether you're in a HITEC City apartment, an old-city lane near Charminar, or a
               villa on the ORR — TurboFix brings the same service quality to your door.
             </motion.p>
@@ -240,13 +238,13 @@ export default function LocationsPageClient() {
                 key={item.title}
                 variants={fadeInUp}
                 className="p-6 rounded-2xl text-center"
-                style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}
+                style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}
               >
                 <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-white font-semibold mb-2">{item.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                <h3 className="text-slate-900 font-semibold mb-2">{item.title}</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
                 {item.title === "6-Month Warranty" && (
-                  <Link href="/terms" className="inline-block text-xs text-[#00AAFF] underline underline-offset-2 mt-2">
+                  <Link href="/terms" className="inline-block text-xs text-blue-700 underline underline-offset-2 mt-2">
                     View full terms
                   </Link>
                 )}

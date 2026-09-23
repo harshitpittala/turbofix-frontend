@@ -21,15 +21,13 @@ export default function BlogPostClient({ blog }: Props) {
     <>
       {/* Hero */}
       <section className="relative pt-32 pb-10 overflow-hidden">
-        <div className="absolute inset-0 bg-[#02040F]" />
-        <div className="absolute inset-0 grid-bg" />
-        <div className="absolute inset-0 radial-glow" />
+        <div className="absolute inset-0 bg-white" />
         <div className="container relative max-w-4xl mx-auto px-4 sm:px-6">
           <motion.div variants={staggerContainer} initial="hidden" animate="show">
             <motion.div variants={fadeInUp}>
               <Link
                 href="/blog"
-                className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-[#00AAFF] transition-colors mb-8"
+                className="inline-flex items-center gap-2 text-sm text-slate-500 hover:text-blue-700 transition-colors mb-8"
               >
                 <ArrowLeft className="w-4 h-4" />
                 Back to Blog
@@ -38,24 +36,24 @@ export default function BlogPostClient({ blog }: Props) {
 
             <motion.div variants={fadeInUp} className="flex items-center gap-3 mb-5">
               <span className="flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-lg"
-                style={{ background: "rgba(0,170,255,0.1)", color: "#00AAFF", border: "1px solid rgba(0,170,255,0.2)" }}>
+                style={{ background: "rgba(37,99,235,0.08)", color: "#1D4ED8", border: "1px solid rgba(37,99,235,0.25)" }}>
                 <Tag className="w-3 h-3" />
                 {blog.category}
               </span>
-              <span className="flex items-center gap-1 text-xs text-gray-500">
+              <span className="flex items-center gap-1 text-xs text-slate-500">
                 <Clock className="w-3 h-3" />
                 {blog.readTime}
               </span>
-              <span className="text-xs text-gray-600">
+              <span className="text-xs text-slate-500">
                 {new Date(blog.date).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" })}
               </span>
             </motion.div>
 
-            <motion.h1 variants={fadeInUp} className="font-display text-4xl md:text-5xl font-bold mb-5 leading-tight">
+            <motion.h1 variants={fadeInUp} className="font-display text-4xl md:text-5xl font-bold mb-5 leading-tight text-slate-900">
               {blog.title}
             </motion.h1>
 
-            <motion.p variants={fadeInUp} className="text-gray-400 text-lg leading-relaxed">
+            <motion.p variants={fadeInUp} className="text-slate-600 text-lg leading-relaxed">
               {blog.excerpt}
             </motion.p>
           </motion.div>
@@ -64,13 +62,13 @@ export default function BlogPostClient({ blog }: Props) {
 
       {/* Divider */}
       <div className="relative">
-        <div className="absolute inset-0 bg-[#030712]" />
-        <div className="relative h-px bg-gradient-to-r from-transparent via-[#00AAFF]/20 to-transparent" />
+        <div className="absolute inset-0 bg-white" />
+        <div className="relative h-px bg-gradient-to-r from-transparent via-blue-500/20 to-transparent" />
       </div>
 
       {/* Article Body */}
       <section className="relative py-14 pb-24 overflow-hidden">
-        <div className="absolute inset-0 bg-[#030712]" />
+        <div className="absolute inset-0 bg-white" />
         <div className="container relative max-w-4xl mx-auto px-4 sm:px-6">
           <div className="prose-turbofix space-y-8">
             {blog.content.map((section, i) => (
@@ -82,23 +80,23 @@ export default function BlogPostClient({ blog }: Props) {
                 transition={{ delay: 0 }}
               >
                 {section.heading && (
-                  <h2 className="font-display text-2xl font-bold text-white mt-10 mb-3 first:mt-0">
+                  <h2 className="font-display text-2xl font-bold text-slate-900 mt-10 mb-3 first:mt-0">
                     {section.heading}
                   </h2>
                 )}
                 {section.subheading && (
-                  <h3 className="text-xl font-semibold text-gray-200 mt-6 mb-2">
+                  <h3 className="text-xl font-semibold text-slate-800 mt-6 mb-2">
                     {section.subheading}
                   </h3>
                 )}
                 {section.text && (
-                  <p className="text-gray-400 leading-relaxed text-[1.05rem]">{section.text}</p>
+                  <p className="text-slate-600 leading-relaxed text-[1.05rem]">{section.text}</p>
                 )}
                 {section.list && (
                   <ul className="space-y-2.5 mt-3">
                     {section.list.map((item, j) => (
-                      <li key={j} className="flex items-start gap-3 text-gray-400 text-[1rem]">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#00AAFF] mt-2.5 shrink-0" />
+                      <li key={j} className="flex items-start gap-3 text-slate-600 text-[1rem]">
+                        <span className="w-1.5 h-1.5 rounded-full bg-blue-600 mt-2.5 shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -106,17 +104,17 @@ export default function BlogPostClient({ blog }: Props) {
                 )}
                 {section.faq && (
                   <div className="mt-8 space-y-4">
-                    <h2 className="font-display text-2xl font-bold text-white mb-4">
+                    <h2 className="font-display text-2xl font-bold text-slate-900 mb-4">
                       Frequently Asked Questions
                     </h2>
                     {section.faq.map((item, j) => (
                       <div
                         key={j}
                         className="rounded-xl p-5"
-                        style={{ background: "rgba(0,170,255,0.04)", border: "1px solid rgba(0,170,255,0.12)" }}
+                        style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}
                       >
-                        <h3 className="text-white font-semibold mb-2">{item.q}</h3>
-                        <p className="text-gray-400 text-sm leading-relaxed">{item.a}</p>
+                        <h3 className="text-slate-900 font-semibold mb-2">{item.q}</h3>
+                        <p className="text-slate-500 text-sm leading-relaxed">{item.a}</p>
                       </div>
                     ))}
                   </div>
@@ -131,12 +129,12 @@ export default function BlogPostClient({ blog }: Props) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="mt-14 rounded-2xl p-8 text-center"
-            style={{ background: "rgba(0,102,255,0.06)", border: "1px solid rgba(0,170,255,0.2)" }}
+            style={{ background: "rgba(37,99,235,0.05)", border: "1px solid rgba(37,99,235,0.2)" }}
           >
-            <h3 className="font-display text-2xl font-bold text-white mb-3">
+            <h3 className="font-display text-2xl font-bold text-slate-900 mb-3">
               Need a Visit? We Come to You.
             </h3>
-            <p className="text-gray-400 mb-6">
+            <p className="text-slate-500 mb-6">
               TurboFix offers doorstep mobile service across Hyderabad. Book online and we'll handle the rest.
             </p>
             <Link
@@ -151,20 +149,20 @@ export default function BlogPostClient({ blog }: Props) {
           {/* Related Posts */}
           {related.length > 0 && (
             <div className="mt-16">
-              <h2 className="font-display text-2xl font-bold text-white mb-6">Related Articles</h2>
+              <h2 className="font-display text-2xl font-bold text-slate-900 mb-6">Related Articles</h2>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
                 {related.map((r) => (
                   <Link
                     key={r.slug}
                     href={`/blog/${r.slug}`}
                     className="group rounded-xl p-5 transition-all duration-200"
-                    style={{ background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.06)" }}
+                    style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}
                   >
-                    <span className="text-xs text-[#00AAFF] mb-2 block">{r.category}</span>
-                    <h4 className="text-white text-sm font-medium leading-snug group-hover:text-[#00AAFF] transition-colors line-clamp-2">
+                    <span className="text-xs text-blue-700 mb-2 block">{r.category}</span>
+                    <h4 className="text-slate-900 text-sm font-medium leading-snug group-hover:text-blue-700 transition-colors line-clamp-2">
                       {r.title}
                     </h4>
-                    <span className="flex items-center gap-1 text-xs text-gray-600 mt-3">
+                    <span className="flex items-center gap-1 text-xs text-slate-500 mt-3">
                       <Clock className="w-3 h-3" />
                       {r.readTime}
                     </span>

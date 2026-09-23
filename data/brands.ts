@@ -18,7 +18,7 @@ export const brandData: BrandData[] = [
     tagline: "Expert iPhone Service in Hyderabad",
     description: "Apple iPhones are precision-engineered devices that require equally precise service. TurboFix technicians are trained specifically on Apple hardware — from Face ID calibration to OLED screen replacement — with access to OEM-quality parts as standard, and genuine Apple parts available on request.",
     color: "#A0A0A0",
-    logo: "/images/brands/apple.svg",
+    logo: "/images/brands/apple.webp",
     models: [
       "iPhone 15 Pro Max", "iPhone 15 Pro", "iPhone 15 Plus", "iPhone 15",
       "iPhone 14 Pro Max", "iPhone 14 Pro", "iPhone 14 Plus", "iPhone 14",
@@ -48,7 +48,7 @@ export const brandData: BrandData[] = [
     tagline: "Samsung Galaxy Service Experts in Hyderabad",
     description: "Samsung Galaxy phones — from budget A-series to flagship S-series and folding Z-series — all receive the same expert attention at TurboFix. We stock AMOLED screens, OEM-grade batteries, and all components for Samsung's complete lineup.",
     color: "#1428A0",
-    logo: "/images/brands/samsung.svg",
+    logo: "/images/brands/samsung.webp",
     models: [
       "Galaxy S24 Ultra / S24+ / S24",
       "Galaxy S23 Ultra / S23+ / S23",
@@ -82,7 +82,7 @@ export const brandData: BrandData[] = [
     tagline: "OnePlus Service — Never Settle for Substandard Work",
     description: "OnePlus delivers flagship performance at competitive prices — and TurboFix delivers the same standard of service. From fluid AMOLED screens to Warp Charge port work, we cover the full OnePlus lineup.",
     color: "#EB0029",
-    logo: "/images/brands/oneplus.svg",
+    logo: "/images/brands/oneplus.webp",
     models: [
       "OnePlus 12 / 12R", "OnePlus 11 / 11R",
       "OnePlus 10 Pro / 10T / 10R",
@@ -112,7 +112,7 @@ export const brandData: BrandData[] = [
     tagline: "Xiaomi, Redmi & POCO Service in Hyderabad",
     description: "Xiaomi's ecosystem — covering Xiaomi, Redmi, and POCO — is one of India's most popular. TurboFix handles the complete range, from budget Redmi A-series to flagship Xiaomi 14 Ultra service.",
     color: "#FF6900",
-    logo: "/images/brands/xiaomi.svg",
+    logo: "/images/brands/xiaomi.webp",
     models: [
       "Xiaomi 14 Ultra / 14 Pro / 14",
       "Xiaomi 13 Pro / 13 series",
@@ -141,7 +141,7 @@ export const brandData: BrandData[] = [
     tagline: "Vivo Phone Service — Camera & Display Specialists",
     description: "Vivo phones are known for exceptional cameras and displays. TurboFix has specific training on Vivo's camera systems and AMOLED displays to ensure service restores your device to full original performance.",
     color: "#415FFF",
-    logo: "/images/brands/vivo.svg",
+    logo: "/images/brands/vivo.webp",
     models: [
       "Vivo V30 Pro / V30 / V29 Pro / V29",
       "Vivo V27 Pro / V27 / V25 Pro",
@@ -168,7 +168,7 @@ export const brandData: BrandData[] = [
     tagline: "Oppo Phone Service — Charging & Display Experts",
     description: "Oppo pioneered fast charging technology and VOOC/SuperVOOC systems. TurboFix has specific expertise in Oppo's charging systems and AMOLED displays, ensuring service preserves these signature features.",
     color: "#1D8348",
-    logo: "/images/brands/oppo.svg",
+    logo: "/images/brands/oppo.webp",
     models: [
       "Oppo Reno 12 Pro / Reno 12 / Reno 11 Pro / Reno 11",
       "Oppo Reno 10 Pro+ / Reno 10 Pro / Reno 10",
@@ -194,7 +194,7 @@ export const brandData: BrandData[] = [
     tagline: "Realme Service — Dare to Service",
     description: "Realme has quickly become one of India's most popular phone brands. TurboFix services a high volume of Realme devices in Hyderabad, giving our technicians deep hands-on experience with Realme's hardware across all price points.",
     color: "#FFD700",
-    logo: "",
+    logo: "/images/brands/realme.webp",
     models: [
       "Realme 13 Pro+ / 13 Pro / 13",
       "Realme 12 Pro+ / 12 Pro / 12",
@@ -223,7 +223,7 @@ export const brandData: BrandData[] = [
     tagline: "Motorola Service — Trusted Heritage, Modern Care",
     description: "Motorola phones are beloved for their near-stock Android experience and excellent durability. TurboFix handles Motorola's complete lineup — from budget Moto G series to the premium Edge series with curved displays.",
     color: "#E1140A",
-    logo: "/images/brands/motorola.svg",
+    logo: "/images/brands/motorola.webp",
     models: [
       "Motorola Edge 50 Pro / Edge 50 / Edge 40 Pro / Edge 40",
       "Motorola Edge 30 Ultra / Edge 30 Pro",
@@ -249,7 +249,7 @@ export const brandData: BrandData[] = [
     tagline: "Google Pixel Service — Pure Android, Expert Care",
     description: "Google Pixel phones run the purest Android experience and feature some of the best computational photography available. TurboFix Pixel technicians understand the unique calibration requirements of Pixel's hardware and Tensor chip ecosystem.",
     color: "#4285F4",
-    logo: "/images/brands/google-pixel.svg",
+    logo: "/images/brands/google-pixel.webp",
     models: [
       "Google Pixel 9 Pro XL / 9 Pro / 9",
       "Google Pixel 8 Pro / 8 / 8a",
@@ -277,7 +277,7 @@ export const brandData: BrandData[] = [
     tagline: "Nothing Phone Service — The Glyph Stays On",
     description: "Nothing Phone's unique Glyph Interface and transparent design make it one of the most distinctive smartphones available. TurboFix handles Nothing Phone service with care for both the unique design and the Glyph lighting system.",
     color: "#E5E5E5",
-    logo: "",
+    logo: "/images/brands/nothing.png",
     models: [
       "Nothing Phone (2a) Plus / (2a)",
       "Nothing Phone (2)",

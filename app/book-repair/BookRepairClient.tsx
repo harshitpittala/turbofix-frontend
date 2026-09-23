@@ -1,7 +1,6 @@
 "use client";
 
 import { Toaster } from "react-hot-toast";
-import StickyCallBar from "@/components/common/StickyCallBar";
 import Hero from "./components/Hero";
 import ReviewBanner from "./components/ReviewBanner";
 import BookingWizard from "./components/BookingWizard";
@@ -16,12 +15,11 @@ import FinalCta from "./components/FinalCta";
 
 export default function BookRepairClient() {
   return (
-    <div className="relative bg-white text-gray-900 pb-20 sm:pb-0">
-      <StickyCallBar />
+    <div className="relative bg-white text-gray-900">
       <Toaster
         position="top-right"
         toastOptions={{
-          style: { background: "#fff", color: "#111827", border: "1px solid rgba(0,102,255,0.2)" },
+          style: { background: "#fff", color: "#111827", border: "1px solid rgba(37,99,235,0.25)" },
         }}
       />
 

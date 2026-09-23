@@ -5,6 +5,7 @@ import Script from "next/script";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import StickyCallBar from "@/components/common/StickyCallBar";
 import { Toaster } from "react-hot-toast";
 import { JsonLd } from "@/components/seo/JsonLd";
 
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     template: "%s | TurboFix",
   },
   description:
-    "TurboFix — doorstep mobile repair and service in Hyderabad. Screen replacement, battery replacement, charging port service, water damage, iPhone & Samsung repair. Trained technicians, OEM parts, 6-month warranty. Book now!",
+    "TurboFix — doorstep mobile repair in Hyderabad. Screen, battery & charging port service for iPhone, Samsung & more. OEM parts, 6-month warranty. Book now!",
   keywords: [
     "mobile service hyderabad", "doorstep mobile service hyderabad",
     "mobile repair hyderabad", "mobile repair near me",
@@ -158,7 +159,7 @@ const localBusinessSchema = {
     { "@type": "City", name: "Secunderabad" },
   ],
   sameAs: [
-    "https://www.instagram.com/turbofix",
+    "https://www.instagram.com/turbofix.in",
     "https://www.facebook.com/turbofix",
     "https://twitter.com/turbofix",
     "https://www.youtube.com/@turbofix",
@@ -221,7 +222,7 @@ const organizationSchema = {
     },
   ],
   sameAs: [
-    "https://www.instagram.com/turbofix",
+    "https://www.instagram.com/turbofix.in",
     "https://www.facebook.com/turbofix",
     "https://twitter.com/turbofix",
     "https://www.youtube.com/@turbofix",
@@ -250,10 +251,7 @@ const websiteSchema = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${syne.variable} ${jetbrainsMono.variable}`}>
-      <head>
-        <link rel="canonical" href="https://turbofix.in" />
-      </head>
-      <body className="bg-[#02040F] text-white overflow-x-hidden">
+      <body className="bg-white text-slate-700 overflow-x-hidden pb-20 lg:pb-0">
         {/* JSON-LD — plain <script> tags so Google Rich Results Test detects them */}
         <JsonLd schema={localBusinessSchema} id="schema-local-business" />
         <JsonLd schema={organizationSchema} id="schema-organization" />
@@ -264,14 +262,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
         <Footer />
+        <StickyCallBar />
         <WhatsAppButton />
         <Toaster
           position="bottom-right"
           toastOptions={{
             style: {
-              background: "rgba(5,10,26,0.95)",
+              background: "#0F172A",
               color: "#fff",
-              border: "1px solid rgba(0,170,255,0.2)",
+              border: "1px solid rgba(37,99,235,0.25)",
               backdropFilter: "blur(20px)",
             },
           }}

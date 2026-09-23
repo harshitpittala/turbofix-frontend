@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import ZonePageClient from "./ZonePageClient";
 import { getLocationsByZone, zoneLabels, zoneDescriptions, type LocationData } from "@/data/locations";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { buildMetaDescription } from "@/lib/utils";
 
 type Zone = LocationData["zone"];
 const ZONES: Zone[] = ["central", "west", "north", "south", "east", "outskirts"];
@@ -25,8 +26,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const areas = getLocationsByZone(params.zone);
 
   return {
-    title: `Doorstep Mobile Service in ${label}, Hyderabad`,
-    description: `TurboFix's independent doorstep mobile-device servicing across ${label}: ${areas.slice(0, 6).map((a) => a.name).join(", ")} and more. Same-day service, trained technicians, 6-month warranty.`,
+    title: `Mobile Service in ${label}`,
+    description: buildMetaDescription(
+      `TurboFix's independent doorstep mobile-device servicing across ${label}: ${areas.slice(0, 4).map((a) => a.name).join(", ")} and more.`,
+      "Same-day, trained technicians, 6-month warranty."
+    ),
     alternates: { canonical: `https://turbofix.in/locations/zones/${params.zone}` },
     openGraph: {
       title: `Doorstep Mobile Service in ${label} | TurboFix`,

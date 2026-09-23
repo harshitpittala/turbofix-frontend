@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ServicesPage from "./ServicesPage";
 
 export const metadata: Metadata = {
-  title: "Mobile Service — Screen, Battery, Water Damage & More",
+  title: "Mobile Repair Services in Hyderabad",
   description:
-    "TurboFix offers complete mobile service in Hyderabad — screen replacement, battery replacement, charging port service, water damage service, camera service, motherboard service, software issues and more.",
+    "8 specialist mobile repair services at your doorstep in Hyderabad — screen, battery, charging port, water damage, camera & more. Book now!",
   alternates: { canonical: "https://turbofix.in/services" },
   openGraph: {
     title: "Mobile Service — Screen, Battery, Water Damage & More | TurboFix",

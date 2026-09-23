@@ -42,7 +42,7 @@ const locations = [
 ];
 
 const socials = [
-  { icon: Instagram, href: "https://www.instagram.com/turbofix", label: "Instagram" },
+  { icon: Instagram, href: "https://www.instagram.com/turbofix.in", label: "Instagram" },
   { icon: Facebook,  href: "https://www.facebook.com/turbofix",  label: "Facebook" },
   { icon: Twitter,   href: "https://twitter.com/turbofix",       label: "Twitter" },
   { icon: Youtube,   href: "https://www.youtube.com/@turbofix",  label: "YouTube" },
@@ -62,10 +62,9 @@ const quickLinks = [
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-white/5">
-      <div className="absolute inset-0 bg-[#030712]" />
-      <div className="absolute inset-0 grid-bg opacity-40" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-16 bg-gradient-to-b from-[#00AAFF]/30 to-transparent" />
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00AAFF]/30 to-transparent" />
+      <div className="absolute inset-0 bg-slate-900" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-16 bg-gradient-to-b from-blue-500/30 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent" />
 
       <div className="relative container max-w-7xl mx-auto px-4 sm:px-6 pt-16 pb-8">
         <motion.div
@@ -85,7 +84,7 @@ export default function Footer() {
                 </div>
               </div>
               <span className="font-display font-bold text-xl text-white">
-                Turbo<span className="gradient-text-blue">Fix</span>
+                Turbo<span className="brand-wordmark">Fix</span>
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
@@ -100,22 +99,22 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-9 h-9 rounded-lg glass flex items-center justify-center text-gray-400 hover:text-[#00AAFF] hover:border-[#00AAFF]/30 transition-all duration-200"
+                  className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-400 hover:border-blue-400/30 transition-all duration-200"
                 >
                   <Icon className="w-4 h-4" />
                 </a>
               ))}
             </div>
             <div className="flex items-start gap-2 text-sm text-gray-500 mb-3">
-              <MapPin className="w-4 h-4 text-[#00AAFF] mt-0.5 shrink-0" />
+              <MapPin className="w-4 h-4 text-blue-400 mt-0.5 shrink-0" />
               <span>11-1-441, Aghapura, Nampally,<br />Hyderabad, Telangana</span>
             </div>
             <a href="tel:+918639605147" className="flex items-center gap-2 text-sm text-gray-500 hover:text-white transition-colors mb-1">
-              <Phone className="w-3.5 h-3.5 text-[#00AAFF]" />
+              <Phone className="w-3.5 h-3.5 text-blue-400" />
               +91 86396 05147
             </a>
             <a href="mailto:support@turbofix.in" className="flex items-center gap-2 text-sm text-gray-500 hover:text-white transition-colors">
-              <Mail className="w-3.5 h-3.5 text-[#7C3AED]" />
+              <Mail className="w-3.5 h-3.5 text-blue-400" />
               support@turbofix.in
             </a>
           </motion.div>
@@ -123,14 +122,14 @@ export default function Footer() {
           {/* Services */}
           <motion.div variants={fadeInUp}>
             <h4 className="text-white font-semibold mb-5 flex items-center gap-2">
-              <span className="w-1 h-4 rounded-full bg-[#00AAFF]" />
+              <span className="w-1 h-4 rounded-full bg-blue-500" />
               Our Services
             </h4>
             <ul className="space-y-2">
               {services.map((s) => (
                 <li key={s.label}>
-                  <Link href={s.href} className="text-sm text-gray-400 hover:text-[#00AAFF] transition-colors flex items-center gap-2 group">
-                    <span className="w-1 h-1 rounded-full bg-gray-600 group-hover:bg-[#00AAFF] transition-colors" />
+                  <Link href={s.href} className="text-sm text-gray-400 hover:text-blue-400 transition-colors flex items-center gap-2 group">
+                    <span className="w-1 h-1 rounded-full bg-gray-600 group-hover:bg-blue-400 transition-colors" />
                     {s.label}
                   </Link>
                 </li>
@@ -141,14 +140,14 @@ export default function Footer() {
           {/* Brands */}
           <motion.div variants={fadeInUp}>
             <h4 className="text-white font-semibold mb-5 flex items-center gap-2">
-              <span className="w-1 h-4 rounded-full bg-[#EC4899]" />
+              <span className="w-1 h-4 rounded-full bg-sky-500" />
               Service by Brand
             </h4>
             <ul className="space-y-2">
               {brands.map(({ label, href }) => (
                 <li key={href}>
-                  <Link href={href} className="text-sm text-gray-400 hover:text-[#EC4899] transition-colors flex items-center gap-2 group">
-                    <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 text-[#EC4899] transition-all -translate-x-1 group-hover:translate-x-0" />
+                  <Link href={href} className="text-sm text-gray-400 hover:text-sky-400 transition-colors flex items-center gap-2 group">
+                    <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 text-sky-400 transition-all -translate-x-1 group-hover:translate-x-0" />
                     {label}
                   </Link>
                 </li>
@@ -159,14 +158,14 @@ export default function Footer() {
           {/* Locations + Quick Links */}
           <motion.div variants={fadeInUp}>
             <h4 className="text-white font-semibold mb-5 flex items-center gap-2">
-              <span className="w-1 h-4 rounded-full bg-[#22C55E]" />
+              <span className="w-1 h-4 rounded-full bg-blue-400" />
               Hyderabad Areas
             </h4>
             <ul className="space-y-2 mb-7">
               {locations.map(({ label, href }) => (
                 <li key={href}>
-                  <Link href={href} className="text-sm text-gray-400 hover:text-[#22C55E] transition-colors flex items-center gap-2 group">
-                    <span className="w-1 h-1 rounded-full bg-gray-600 group-hover:bg-[#22C55E] transition-colors" />
+                  <Link href={href} className="text-sm text-gray-400 hover:text-blue-300 transition-colors flex items-center gap-2 group">
+                    <span className="w-1 h-1 rounded-full bg-gray-600 group-hover:bg-blue-300 transition-colors" />
                     {label}
                   </Link>
                 </li>
@@ -174,14 +173,14 @@ export default function Footer() {
             </ul>
 
             <h4 className="text-white font-semibold mb-4 flex items-center gap-2">
-              <span className="w-1 h-4 rounded-full bg-[#7C3AED]" />
+              <span className="w-1 h-4 rounded-full bg-blue-700" />
               Quick Links
             </h4>
             <ul className="space-y-2">
               {quickLinks.map(({ label, href }) => (
                 <li key={href}>
                   <Link href={href} className="text-sm text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                    <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 text-[#7C3AED] transition-all -translate-x-1 group-hover:translate-x-0" />
+                    <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 text-blue-400 transition-all -translate-x-1 group-hover:translate-x-0" />
                     {label}
                   </Link>
                 </li>

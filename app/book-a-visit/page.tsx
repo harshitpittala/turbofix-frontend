@@ -4,9 +4,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { bookRepairFaqs } from "@/data/bookRepairFaqs";
 
 export const metadata: Metadata = {
-  title: "Book a Doorstep Visit — Screen & Battery Replacement in Hyderabad",
+  title: "Book a Doorstep Visit in Hyderabad",
   description:
-    "Book a TurboFix doorstep visit in minutes. Pickup and delivery across Hyderabad. Same-day appointments, OEM-grade parts, 6-month warranty. All brands supported. Independent, walk-in studio at Aghapura, Nampally — not affiliated with any manufacturer.",
+    "Book a TurboFix doorstep visit in minutes. Same-day appointments, OEM-grade parts, 6-month warranty, all brands supported across Hyderabad.",
   alternates: { canonical: "https://turbofix.in/book-a-visit" },
   openGraph: {
     title: "Book a Doorstep Visit | TurboFix Hyderabad",
