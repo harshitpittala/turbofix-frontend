@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { MapPin, ArrowRight, Zap, ChevronRight } from "lucide-react";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
-import { getPublishedLocations } from "@/data/locations";
+import { getPublishedLocations, getCoveredAreas } from "@/data/locations";
 import CTA from "@/components/home/CTA";
 
 const locationData = getPublishedLocations();
@@ -56,7 +56,7 @@ export default function LocationsPageClient() {
 
             <motion.p variants={fadeInUp} className="text-slate-600 text-xl leading-relaxed mb-10">
               TurboFix doorstep service now covers{" "}
-              <span className="text-slate-900 font-semibold">90+ Hyderabad localities</span> — from HITEC
+              <span className="text-slate-900 font-semibold">330+ Hyderabad neighbourhoods</span> — from HITEC
               City to Charminar, from Kompally to Shamshabad. Book online and a trained
               technician arrives at your door.
             </motion.p>
@@ -87,7 +87,7 @@ export default function LocationsPageClient() {
         <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex flex-wrap justify-center gap-8 md:gap-16">
             {[
-              { label: "Areas Covered",       value: "90+" },
+              { label: "Areas Covered",       value: "330+" },
               { label: "Same-Day Service",     value: "Most Areas" },
               { label: "Service Warranty",     value: "6 Months" },
               { label: "Zero Travel Charge",   value: "All Zones" },
@@ -184,6 +184,25 @@ export default function LocationsPageClient() {
                     </motion.div>
                   ))}
                 </div>
+
+                {/* Neighbourhoods folded into these area pages (their old URLs 301 to the parent) */}
+                {areas.some((a) => getCoveredAreas(a.slug).length > 0) && (
+                  <div className="mt-6 text-sm text-slate-500 leading-relaxed">
+                    <span className="font-medium text-slate-700">Also covering: </span>
+                    {areas
+                      .filter((a) => getCoveredAreas(a.slug).length > 0)
+                      .map((a, i) => (
+                        <span key={a.slug}>
+                          {i > 0 && " · "}
+                          {getCoveredAreas(a.slug).map((c) => c.name).join(", ")} (
+                          <Link href={`/locations/${a.slug}`} className="text-blue-700 hover:text-blue-800">
+                            {a.name}
+                          </Link>
+                          )
+                        </span>
+                      ))}
+                  </div>
+                )}
               </motion.div>
             </div>
           </section>

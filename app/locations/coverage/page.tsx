@@ -7,6 +7,7 @@ import { locationInventory } from "@/data/locationInventory";
 export const metadata: Metadata = {
   title: "Location Coverage Report — Internal",
   robots: { index: false, follow: false },
+  alternates: { canonical: "https://turbofix.in/locations/coverage" },
 };
 
 export default function LocationCoveragePage() {

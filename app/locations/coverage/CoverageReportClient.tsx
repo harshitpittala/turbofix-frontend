@@ -3,6 +3,9 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import type { LocationInventoryEntry } from "@/data/locationInventory";
+import localityMerges from "@/data/locality-merges.json";
+
+const MERGED_LOCALITIES = localityMerges as Record<string, string>;
 
 interface Props {
   inventory: LocationInventoryEntry[];
@@ -246,8 +249,8 @@ export default function CoverageReportClient({ inventory }: Props) {
                     <td style={{ padding: "8px 12px", color: "#334155" }}>{i.inSitemap ? "✓" : "—"}</td>
                     <td style={{ padding: "8px 12px" }}>
                       {i.status === "published" && i.publishedSlug ? (
-                        <Link href={`/locations/${i.publishedSlug}`} style={{ color: "#2563EB" }}>
-                          /locations/{i.publishedSlug}
+                        <Link href={`/locations/${MERGED_LOCALITIES[i.publishedSlug] ?? i.publishedSlug}`} style={{ color: "#2563EB" }}>
+                          /locations/{i.publishedSlug}{MERGED_LOCALITIES[i.publishedSlug] ? ` → merged into /locations/${MERGED_LOCALITIES[i.publishedSlug]}` : ""}
                         </Link>
                       ) : (
                         <span style={{ color: "#CBD5E1" }}>none yet</span>

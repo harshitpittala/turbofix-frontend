@@ -26,8 +26,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!brand) return { title: "Brand Not Found" };
 
   return {
-    title: `${brand.name} Service in Hyderabad — Screen, Battery & More`,
-    description: `Expert ${brand.name} service in Hyderabad at TurboFix. Screen replacement, battery replacement, charging port service, water damage service and more. Doorstep service, OEM parts, 6-month warranty.`,
+    title: `${brand.name} Phone Service in Hyderabad at Home`,
+    description: `Independent ${brand.name} phone service at your doorstep across Hyderabad: screen, battery, charging port and more. OEM-grade parts, 6-month warranty.`,
     keywords: brand.keywords,
     alternates: { canonical: `https://turbofix.in/brands/${brand.slug}` },
     openGraph: {

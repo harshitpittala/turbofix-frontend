@@ -5,11 +5,11 @@ import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "Doorstep Mobile Service in All Hyderabad Areas",
   description:
-    "TurboFix's doorstep mobile service covers 90+ Hyderabad areas — Gachibowli, Madhapur, Banjara Hills, Secunderabad & more. Book now!",
+    "TurboFix's doorstep mobile service covers 330+ Hyderabad neighbourhoods — Gachibowli, Madhapur, Banjara Hills, Secunderabad & more. Book now!",
   alternates: { canonical: "https://turbofix.in/locations" },
   openGraph: {
     title: "Doorstep Mobile Service in All Hyderabad Areas | TurboFix",
-    description: "Doorstep mobile servicing across 90+ Hyderabad localities. Book online — we come to you, same day in most areas.",
+    description: "Doorstep mobile servicing across 330+ Hyderabad neighbourhoods. Book online — we come to you, same day in most areas.",
     url: "https://turbofix.in/locations",
   },
 };
@@ -20,7 +20,7 @@ const locationsSchema = {
   "@id": "https://turbofix.in/locations#service",
   name: "Doorstep Mobile Service — All Hyderabad Areas",
   description:
-    "TurboFix provides independent doorstep mobile-device servicing across all major Hyderabad areas including Gachibowli, Madhapur, Banjara Hills, Secunderabad, Ameerpet, Dilsukhnagar, Kompally, and 90+ more localities.",
+    "TurboFix provides independent doorstep mobile-device servicing across all major Hyderabad areas including Gachibowli, Madhapur, Banjara Hills, Secunderabad, Ameerpet, Dilsukhnagar, Kompally, and 330+ more neighbourhoods.",
   provider: { "@id": "https://turbofix.in/#business" },
   areaServed: { "@type": "City", name: "Hyderabad" },
 };
