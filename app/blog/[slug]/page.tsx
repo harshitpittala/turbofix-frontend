@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import BlogPostClient from "./BlogPostClient";
 import { blogs, getBlogBySlug } from "@/data/blogs";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { getBlogSeo } from "@/data/blogSeo";
 
 interface Props {
   params: { slug: string };
@@ -17,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!blog) return { title: "Blog Post Not Found" };
 
   return {
-    title: blog.title,
+    title: getBlogSeo(blog.slug)?.seoTitle ?? blog.title,
     description: blog.excerpt,
     keywords: blog.keywords,
     alternates: { canonical: `https://turbofix.in/blog/${blog.slug}` },
@@ -88,7 +89,7 @@ export default function BlogPostPage({ params }: Props) {
       <JsonLd schema={articleSchema} id={`schema-article-${blog.slug}`} />
       {faqSchema && <JsonLd schema={faqSchema} id={`schema-faq-${blog.slug}`} />}
       <JsonLd schema={breadcrumbSchema} id={`schema-breadcrumb-${blog.slug}`} />
-      <BlogPostClient blog={blog} />
+      <BlogPostClient blog={blog} services={getBlogSeo(blog.slug)?.services ?? []} />
     </>
   );
 }

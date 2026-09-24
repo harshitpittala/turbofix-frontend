@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import LocationPageClient from "./LocationPageClient";
 import { getLocationBySlug, getPublishedLocations, getCoveredAreas, getNearbyAreaPages, isMergedLocality, resolveLocalitySlug, faqSets, zoneLabels } from "@/data/locations";
 import { permanentRedirect } from "next/navigation";
+import { getLocalityGuide } from "@/data/localityGuides";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { buildMetaDescription } from "@/lib/utils";
 
@@ -50,7 +51,9 @@ export default function LocationPage({ params }: Props) {
 
   const coveredAreas = getCoveredAreas(area.slug);
   const nearbyAreas = getNearbyAreaPages(area);
-  const faqs = faqSets[area.faqSet];
+  const guide = getLocalityGuide(area.slug);
+  // Area-specific FAQs first (priority pages), then the shared FAQ set.
+  const faqs = [...(guide?.faqs ?? []), ...faqSets[area.faqSet]];
 
   const localSchema = {
     "@context": "https://schema.org",
@@ -107,7 +110,7 @@ export default function LocationPage({ params }: Props) {
       <JsonLd schema={localSchema} id={`schema-location-${area.slug}`} />
       <JsonLd schema={faqSchema} id={`schema-faq-${area.slug}`} />
       <JsonLd schema={breadcrumbSchema} id={`schema-breadcrumb-${area.slug}`} />
-      <LocationPageClient area={area} faqs={faqs} coveredAreas={coveredAreas} nearbyAreas={nearbyAreas} />
+      <LocationPageClient area={area} faqs={faqs} coveredAreas={coveredAreas} nearbyAreas={nearbyAreas} guide={guide} />
     </>
   );
 }

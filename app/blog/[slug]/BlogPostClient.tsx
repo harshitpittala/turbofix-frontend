@@ -7,12 +7,15 @@ import CTA from "@/components/home/CTA";
 import { staggerContainer, fadeInUp } from "@/lib/utils";
 import type { BlogPost } from "@/data/blogs";
 import { blogs } from "@/data/blogs";
+import type { BlogServiceLink } from "@/data/blogSeo";
 
 interface Props {
   blog: BlogPost;
+  /** Service / brand pages this post relates to (data/blogSeo.ts). */
+  services?: BlogServiceLink[];
 }
 
-export default function BlogPostClient({ blog }: Props) {
+export default function BlogPostClient({ blog, services = [] }: Props) {
   const related = blogs
     .filter((b) => b.slug !== blog.slug && b.category === blog.category)
     .slice(0, 3);
@@ -122,6 +125,30 @@ export default function BlogPostClient({ blog }: Props) {
               </motion.div>
             ))}
           </div>
+
+          {/* Get it serviced — links to the matching service/brand pages */}
+          {services.length > 0 && (
+            <div className="mt-14 rounded-2xl p-6" style={{ background: "#F8FAFC", border: "1px solid #E2E8F0" }}>
+              <h2 className="font-display text-xl font-bold text-slate-900 mb-2">Get it serviced at your doorstep</h2>
+              <p className="text-slate-500 text-sm mb-4">
+                A TurboFix technician can take care of this at your home or office anywhere in Hyderabad.
+              </p>
+              <ul className="flex flex-wrap gap-3">
+                {services.map((s) => (
+                  <li key={s.href}>
+                    <Link
+                      href={s.href}
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-blue-700 bg-white hover:bg-blue-50 transition-colors"
+                      style={{ border: "1px solid rgba(37,99,235,0.25)" }}
+                    >
+                      {s.label}
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {/* Book Repair CTA */}
           <motion.div

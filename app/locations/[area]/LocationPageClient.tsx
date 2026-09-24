@@ -10,6 +10,7 @@ import {
 import CTA from "@/components/home/CTA";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
 import type { LocationData } from "@/data/locations";
+import type { LocalityGuide } from "@/data/localityGuides";
 
 const ALL_SERVICES: { name: string; time: string; icon: string; href?: string }[] = [
   { name: "Screen Replacement",       time: "30–45 min", icon: "📱", href: "/screen-replacement-hyderabad" },
@@ -63,6 +64,8 @@ interface Props {
   coveredAreas?: LocationData[];
   /** Nearby standalone area pages, already resolved past merged slugs. */
   nearbyAreas?: LocationData[];
+  /** Extended area content for priority pages (data/localityGuides.ts). */
+  guide?: LocalityGuide;
 }
 
 function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
@@ -99,7 +102,7 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
   );
 }
 
-export default function LocationPageClient({ area, faqs, coveredAreas = [], nearbyAreas = [] }: Props) {
+export default function LocationPageClient({ area, faqs, coveredAreas = [], nearbyAreas = [], guide }: Props) {
   const typeTag = typeTagMap[area.type];
   const zoneLabel = zoneLabelMap[area.zone];
 
@@ -232,6 +235,53 @@ export default function LocationPageClient({ area, faqs, coveredAreas = [], near
           </motion.div>
         </div>
       </section>
+
+      {/* ── WHAT TO KNOW (priority pages with a locality guide) ───────── */}
+      {guide && (
+        <section className="relative py-14 overflow-hidden border-t border-slate-100">
+          <div className="absolute inset-0 bg-white" />
+          <div className="container relative max-w-7xl mx-auto px-4 sm:px-6">
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-slate-900 mb-6">
+              Doorstep Mobile Service in {area.name}: What to Know
+            </h2>
+            <div className="max-w-3xl space-y-4 mb-10">
+              {guide.overview.map((para, i) => (
+                <p key={i} className="text-slate-600 leading-relaxed">{para}</p>
+              ))}
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-slate-900 font-semibold mb-4 flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-blue-700" />
+                  Streets and neighbourhoods we visit in {area.name}
+                </h3>
+                <ul className="flex flex-wrap gap-2">
+                  {guide.pockets.map((p) => (
+                    <li
+                      key={p}
+                      className="px-3 py-1.5 rounded-lg text-sm text-slate-700"
+                      style={{ background: "rgba(37,99,235,0.05)", border: "1px solid rgba(37,99,235,0.15)" }}
+                    >
+                      {p}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-slate-900 font-semibold mb-4">Booking tips for {area.name}</h3>
+                <ul className="space-y-3">
+                  {guide.bookingTips.map((tip, i) => (
+                    <li key={i} className="flex gap-3 text-sm text-slate-600 leading-relaxed">
+                      <span className="mt-2 w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0" />
+                      {tip}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ── AREAS WE COVER (incl. merged micro-localities) ─────────────── */}
       {coveredAreas.length > 0 && (
