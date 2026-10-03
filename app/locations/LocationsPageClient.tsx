@@ -89,7 +89,7 @@ export default function LocationsPageClient() {
             {[
               { label: "Areas Covered",       value: "330+" },
               { label: "Same-Day Service",     value: "Most Areas" },
-              { label: "Service Warranty",     value: "6 Months" },
+              { label: "Service Warranty",     value: "Up to 1 Year" },
               { label: "Zero Travel Charge",   value: "All Zones" },
             ].map(({ label, value }) => (
               <div key={label} className="text-center">
@@ -244,8 +244,8 @@ export default function LocationsPageClient() {
               },
               {
                 icon: "🛡️",
-                title: "6-Month Warranty",
-                desc: "Every service visit comes with a 6-month warranty on parts and workmanship.",
+                title: "Up to 1-Year Warranty",
+                desc: "Every service visit comes with a warranty of up to 1 year on parts and workmanship.",
               },
               {
                 icon: "💳",
@@ -262,7 +262,7 @@ export default function LocationsPageClient() {
                 <div className="text-4xl mb-4">{item.icon}</div>
                 <h3 className="text-slate-900 font-semibold mb-2">{item.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
-                {item.title === "6-Month Warranty" && (
+                {item.title === "Up to 1-Year Warranty" && (
                   <Link href="/terms" className="inline-block text-xs text-blue-700 underline underline-offset-2 mt-2">
                     View full terms
                   </Link>

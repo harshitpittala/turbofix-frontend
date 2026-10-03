@@ -104,11 +104,11 @@ export default function CTA() {
             >
               {[
                 "✓ Free Diagnostics",
-                "✓ 6-Month Warranty",
+                "✓ Up to 1-Year Warranty",
                 "✓ Same-Day Slots Available",
                 "✓ No Fix, No Fee",
               ].map((badge) =>
-                badge === "✓ 6-Month Warranty" ? (
+                badge === "✓ Up to 1-Year Warranty" ? (
                   <Link key={badge} href="/terms" className="text-emerald-700 hover:text-emerald-800 underline underline-offset-2 transition-colors font-medium">
                     {badge}
                   </Link>

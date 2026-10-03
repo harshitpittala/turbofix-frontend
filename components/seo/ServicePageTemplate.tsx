@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useId, useState } from "react";
+import { motion } from "framer-motion";
 import {
   ArrowLeft, Clock, Shield, Star, CheckCircle,
   Zap, ChevronDown, ChevronRight, Phone, MapPin,
@@ -12,25 +12,24 @@ import PopularAreas from "@/components/seo/PopularAreas";
 import type { AreaLink } from "@/lib/priorityAreas";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
 import type { ServicePageData } from "@/data/servicePages";
+import { BRAND_PAGE_BY_LABEL } from "@/lib/serviceLinks";
 
 function FAQItem({ q, a, i }: { q: string; a: string; i: number }) {
   const [open, setOpen] = useState(false);
+  const panelId = useId();
   return (
     <motion.div variants={fadeInUp} transition={{ delay: i * 0.05 }}
       className="overflow-hidden rounded-xl bg-white" style={{ border: "1px solid #E2E8F0" }}>
-      <button onClick={() => setOpen(!open)}
+      <button onClick={() => setOpen(!open)} aria-expanded={open} aria-controls={panelId}
         className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left hover:bg-slate-50 transition-colors">
         <span className="text-sm font-medium text-slate-700">{q}</span>
         <ChevronDown className={`w-4 h-4 text-slate-500 shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
       </button>
-      <AnimatePresence>
-        {open && (
-          <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.25 }}>
-            <p className="px-6 pb-5 text-sm text-slate-500 leading-relaxed">{a}</p>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Always rendered (collapsed when closed) so answers are in the server HTML and match the FAQPage schema. */}
+      <motion.div id={panelId} initial={false} aria-hidden={!open} style={{ overflow: "hidden" }}
+        animate={open ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }} transition={{ duration: 0.25 }}>
+        <p className="px-6 pb-5 text-sm text-slate-500 leading-relaxed">{a}</p>
+      </motion.div>
     </motion.div>
   );
 }
@@ -85,7 +84,7 @@ export default function ServicePageTemplate({ svc, popularAreas = [] }: Props) {
             {[
               { icon: <Clock className="w-4 h-4 text-blue-600" />, text: svc.repairTime },
               { icon: <Shield className="w-4 h-4 text-emerald-700" />, text: svc.warranty },
-              { icon: <Star className="w-4 h-4 text-amber-500" />, text: "4.9★ · 1,000+ jobs done" },
+              { icon: <Star className="w-4 h-4 text-amber-500" />, text: "No fix, no fee" },
               { icon: <CheckCircle className="w-4 h-4 text-blue-600" />, text: svc.priceRange },
             ].map(({ icon, text }) => (
               <div key={text} className="flex items-center gap-2">{icon}<span>{text}</span></div>
@@ -171,13 +170,20 @@ export default function ServicePageTemplate({ svc, popularAreas = [] }: Props) {
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-slate-500 text-sm mb-6">We carry parts for all major brands in Hyderabad</motion.p>
             <div className="flex flex-wrap gap-3">
-              {svc.affectedBrands.map((b, i) => (
-                <motion.div key={b} variants={fadeInUp} transition={{ delay: i * 0.04 }}
-                  className="px-4 py-2 rounded-xl text-sm text-slate-700"
-                  style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
-                  {b}
-                </motion.div>
-              ))}
+              {svc.affectedBrands.map((b, i) => {
+                const href = BRAND_PAGE_BY_LABEL[b];
+                return (
+                  <motion.div key={b} variants={fadeInUp} transition={{ delay: i * 0.04 }}
+                    className="rounded-xl text-sm text-slate-700"
+                    style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
+                    {href ? (
+                      <Link href={href} className="block px-4 py-2 hover:text-blue-700">{b} service</Link>
+                    ) : (
+                      <span className="block px-4 py-2">{b}</span>
+                    )}
+                  </motion.div>
+                );
+              })}
             </div>
           </motion.div>
         </div>

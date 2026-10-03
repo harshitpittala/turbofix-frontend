@@ -1,7 +1,7 @@
 export const bookRepairFaqs = [
   {
     q: "Do I pay anything before the visit?",
-    a: "No. Diagnosis is completely free, and you only pay after the work is done and you're satisfied. If we can't resolve your device issue, you pay nothing for the work — that's our No Fix, No Fee policy (a ₹499 visit charge may apply if you decline a quote or the device isn't serviceable — see our No Fix, No Fee Policy page for details).",
+    a: "No. Diagnosis is free in most cases, and you only pay after the work is done and you're satisfied. If we can't resolve your device issue, you pay nothing for the work — that's our No Fix, No Fee policy (a ₹499 visit charge may apply if you decline a quote or the device isn't serviceable — see our No Fix, No Fee Policy page for details).",
   },
   {
     q: "How long does a visit take?",
@@ -13,10 +13,10 @@ export const bookRepairFaqs = [
   },
   {
     q: "What if the device can't be resolved?",
-    a: "You never pay for work that wasn't completed — diagnosis is always free. If the device turns out not to be serviceable, a ₹499 visit charge applies to cover the technician's time and travel (not a service fee). See our No Fix, No Fee Policy for full details.",
+    a: "You never pay for work that wasn't completed — diagnosis is free in most cases. If the device turns out not to be serviceable, a ₹499 visit charge applies to cover the technician's time and travel (not a service fee). See our No Fix, No Fee Policy for full details.",
   },
   {
     q: "What warranty do you provide?",
-    a: "Every visit is backed by a 6-month warranty covering parts and workmanship. If the same issue happens again within that period, we'll take care of it again at no cost.",
+    a: "Every visit is backed by a warranty of up to 1 year covering parts and workmanship. If the same issue happens again within that period, we'll take care of it again at no cost.",
   },
 ];

@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useId, useState } from "react";
+import { motion } from "framer-motion";
 import {
   ArrowLeft, MapPin, Zap, Clock, Shield, Star, ChevronRight,
   ChevronDown, Phone, Wrench, CheckCircle,
@@ -70,6 +70,7 @@ interface Props {
 
 function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
   const [open, setOpen] = useState(false);
+  const panelId = useId();
   return (
     <motion.div
       variants={fadeInUp}
@@ -79,6 +80,8 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
     >
       <button
         onClick={() => setOpen(!open)}
+        aria-expanded={open}
+        aria-controls={panelId}
         className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left hover:bg-slate-50 transition-colors"
       >
         <span className="text-sm font-medium text-slate-700">{q}</span>
@@ -86,18 +89,17 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
           className={`w-4 h-4 text-slate-500 shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
         />
       </button>
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.25 }}
-          >
-            <p className="px-6 pb-5 text-sm text-slate-500 leading-relaxed">{a}</p>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Always rendered (collapsed when closed) so answers are in the server HTML and match the FAQPage schema. */}
+      <motion.div
+        id={panelId}
+        initial={false}
+        aria-hidden={!open}
+        style={{ overflow: "hidden" }}
+        animate={open ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
+        transition={{ duration: 0.25 }}
+      >
+        <p className="px-6 pb-5 text-sm text-slate-500 leading-relaxed">{a}</p>
+      </motion.div>
     </motion.div>
   );
 }
@@ -192,8 +194,8 @@ export default function LocationPageClient({ area, faqs, coveredAreas = [], near
           <div className="flex flex-wrap justify-center md:justify-between gap-6 text-sm text-slate-500">
             {[
               { icon: <Clock className="w-4 h-4 text-blue-600" />, text: "Same-day service in most slots" },
-              { icon: <Shield className="w-4 h-4 text-emerald-700" />, text: "6-month service warranty" },
-              { icon: <Star className="w-4 h-4 text-amber-500" />, text: "4.9★ from 1,000+ customers" },
+              { icon: <Shield className="w-4 h-4 text-emerald-700" />, text: "Up to 1-year service warranty" },
+              { icon: <Star className="w-4 h-4 text-amber-500" />, text: "No fix, no fee" },
               { icon: <CheckCircle className="w-4 h-4 text-blue-600" />, text: "OEM-grade parts, trained technicians" },
               { icon: <Wrench className="w-4 h-4 text-blue-600" />, text: "Pay after service — zero upfront" },
             ].map(({ icon, text }) => (
@@ -494,7 +496,7 @@ export default function LocationPageClient({ area, faqs, coveredAreas = [], near
                 { step: "01", title: "Book Online",       desc: `Select your service, choose a time slot, and enter your ${area.name} address.` },
                 { step: "02", title: "Technician Arrives", desc: `A trained TurboFix technician arrives at your door in ${area.name} at the chosen time.` },
                 { step: "03", title: "Service Done",       desc: "Most visits complete in 20–45 minutes at your home or office. No travel needed." },
-                { step: "04", title: "Pay & Warranty",    desc: "Pay only after the service. Receive your 6-month warranty documentation." },
+                { step: "04", title: "Pay & Warranty",    desc: "Pay only after the service. Receive your warranty documentation (up to 1 year, depending on the part)." },
               ].map((item, i) => (
                 <motion.div
                   key={item.step}

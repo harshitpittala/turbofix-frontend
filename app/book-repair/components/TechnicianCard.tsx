@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Star } from "lucide-react";
 
 export default function TechnicianCard() {
   return (
@@ -14,15 +13,7 @@ export default function TechnicianCard() {
         <p className="text-sm text-gray-600 mt-1 leading-relaxed">
           I cover Hitech City, Gachibowli, Madhapur, and Kondapur. Book a slot and I'll typically call within 30 minutes to confirm.
         </p>
-        <div className="flex items-center gap-1 mt-2 text-xs text-gray-600">
-          <div className="flex items-center gap-0.5">
-            {[1, 2, 3, 4, 5].map((i) => (
-              <Star key={i} className="w-3 h-3 fill-amber-400 text-amber-400" />
-            ))}
-          </div>
-          <span className="font-medium">4.9</span>
-          <span>· 400+ devices serviced in Hyderabad</span>
-        </div>
+        <p className="mt-2 text-xs text-gray-600">400+ devices serviced in Hyderabad</p>
       </div>
     </div>
   );

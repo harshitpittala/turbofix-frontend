@@ -19,9 +19,9 @@ const steps = [
     number: "02",
     icon: ScanLine,
     title: "Free Diagnostics",
-    desc: "Drop off your device. Our technicians run a 15-point diagnostic check — completely free of charge, no commitment.",
+    desc: "A technician comes to your home or office (or you walk in to our Nampally studio) and runs a 15-point diagnostic check, free in most cases.",
     color: "#1D4ED8",
-    highlight: "Always free",
+    highlight: "Free in most cases",
   },
   {
     number: "03",
@@ -34,10 +34,10 @@ const steps = [
   {
     number: "04",
     icon: PackageCheck,
-    title: "Pick Up & Protect",
-    desc: "Your device is tested, cleaned, and returned with a 6-month warranty card. You leave happier than you arrived.",
+    title: "Test & Protect",
+    desc: "Your phone is tested and cleaned, then handed back with a warranty of up to 1 year. You pay only after the service is done.",
     color: "#0EA5E9",
-    highlight: "6-month warranty",
+    highlight: "Up to 1-year warranty",
   },
 ];
 
@@ -159,7 +159,7 @@ export default function HowItWorks() {
             Start Your Visit
             <ArrowRight className="w-5 h-5" />
           </Link>
-          <p className="text-slate-500 text-sm mt-4">Free diagnostics · No commitment · Cancel anytime</p>
+          <p className="text-slate-500 text-sm mt-4">Free diagnosis in most cases · Quote before work · Pay after service</p>
         </motion.div>
       </div>
     </section>

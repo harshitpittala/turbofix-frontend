@@ -5,9 +5,14 @@ import { JsonLd } from "@/components/seo/JsonLd";
 export const metadata: Metadata = {
   title: "No Fix, No Fee Policy",
   description:
-    "TurboFix's No Fix, No Fee policy explained: what's free, what a visit charge covers, our 6-month warranty scope, and typical service timelines.",
+    "TurboFix's No Fix, No Fee policy explained: what's free, what a visit charge covers, our warranty scope, and typical service timelines.",
   alternates: { canonical: "https://turbofix.in/no-fix-no-fee-policy" },
   robots: { index: true, follow: true },
+  openGraph: {
+    title: "No Fix, No Fee Policy | TurboFix",
+    description: "TurboFix's No Fix, No Fee policy explained: what's free, what a visit charge covers, our warranty scope, and typical service timelines.",
+    url: "https://turbofix.in/no-fix-no-fee-policy",
+  },
 };
 
 const faqSchema = {
@@ -27,7 +32,7 @@ const faqSchema = {
       name: "Is the diagnostic really free?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes — the diagnostic check is free of charge. You'll receive a fixed quote before any service work begins, and you're not obligated to proceed.",
+        text: "In most cases, yes — the diagnostic check is free of charge. You'll receive a fixed quote before any service work begins, and you're not obligated to proceed.",
       },
     },
     {
@@ -40,10 +45,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "What does the 6-month warranty cover?",
+      name: "What does the warranty cover?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Service work is covered for 6 months against parts or workmanship defects on eligible screen replacements, and 3 months on other replaced parts. Physical damage, water damage, and issues unrelated to the original service are not covered. Full terms are on our Terms of Service page.",
+        text: "Replaced parts carry a warranty of 3 months, 6 months or 1 year, depending on the quality grade of the part; we confirm the period with your quote. Physical damage, water damage, and issues unrelated to the original service are not covered. Full terms are on our Terms of Service page.",
       },
     },
   ],

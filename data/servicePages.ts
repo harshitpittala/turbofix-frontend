@@ -25,7 +25,7 @@ export const servicePages: ServicePageData[] = [
   {
     slug: "screen-replacement-hyderabad",
     seoTitle: "Screen Replacement in Hyderabad at Home – ₹999+",
-    metaDescription: "Cracked or dead display? We replace your phone screen at your home or office in 30–45 min. OEM-grade displays, 6-month warranty, pay after service.",
+    metaDescription: "Cracked or dead display? We replace your phone screen at your home or office in 30–45 min. OEM-grade displays, up to 1-year warranty, pay after service.",
     name: "Screen Replacement",
     h1: "Mobile Screen Replacement in Hyderabad",
     tagline: "Cracked screen? We resolve it at your door in 30–45 minutes.",
@@ -49,7 +49,7 @@ export const servicePages: ServicePageData[] = [
     ],
     priceRange: "₹999 – ₹8,999",
     repairTime: "30–45 minutes",
-    warranty: "6 months on screen and workmanship",
+    warranty: "Up to 1-year warranty on parts & workmanship",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel", "Nothing Phone"],
     faqs: [
       { q: "What is the cost of screen replacement in Hyderabad?", a: "Screen replacement at TurboFix costs ₹999–₹8,999 depending on the model. iPhone OLED screens and Samsung Ultra AMOLED displays are at the higher end. Basic Android screens start from ₹999. You receive the exact quote before work begins." },
@@ -72,12 +72,12 @@ export const servicePages: ServicePageData[] = [
   {
     slug: "battery-replacement-hyderabad",
     seoTitle: "Battery Replacement in Hyderabad at Home – ₹699+",
-    metaDescription: "Battery draining fast or swelling? We replace it at your doorstep in 20–30 min. OEM-grade batteries, 6-month warranty, all major brands.",
+    metaDescription: "Battery draining fast or swelling? We replace it at your doorstep in 20–30 min. OEM-grade batteries, up to 1-year warranty, all major brands.",
     name: "Battery Replacement",
     h1: "Mobile Battery Replacement in Hyderabad",
     tagline: "Fast battery drain or sudden shutdowns? New battery in 20 minutes.",
     intro:
-      "All lithium-ion batteries degrade over time — typically losing significant capacity after 500 charge cycles. TurboFix brings same-day battery replacement to your doorstep across Hyderabad, restoring full-day battery life with OEM-quality batteries and a 6-month warranty.",
+      "All lithium-ion batteries degrade over time — typically losing significant capacity after 500 charge cycles. TurboFix brings same-day battery replacement to your doorstep across Hyderabad, restoring full-day battery life with OEM-quality batteries and a warranty of up to 1 year.",
     whyNeeded:
       "A degraded battery doesn't just mean shorter battery life — it causes unexpected shutdowns, slow performance throttling (especially on iPhones), and eventually the battery may swell, which can warp the device body and damage other internal components. Replacing the battery at the right time extends your phone's usable life by 2–3 years.",
     symptoms: [
@@ -97,12 +97,12 @@ export const servicePages: ServicePageData[] = [
     ],
     priceRange: "₹699 – ₹3,999",
     repairTime: "20–30 minutes",
-    warranty: "6 months on battery and workmanship",
+    warranty: "Up to 1-year warranty on parts & workmanship",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel", "Nothing Phone"],
     faqs: [
       { q: "How much does battery replacement cost in Hyderabad?", a: "Battery replacement at TurboFix costs ₹699–₹3,999 depending on the model. iPhone battery replacement starts from ₹1,299. Samsung and OnePlus from ₹999. Budget Android models from ₹699." },
       { q: "How do I know if my phone battery needs to be replaced?", a: "Key signs: battery drains faster than normal, phone shuts down unexpectedly, battery percentage jumps erratically, or the phone back panel has a slight bulge. On iPhone, check Settings → Battery → Battery Health — below 80% strongly indicates replacement is needed." },
-      { q: "Does battery replacement affect my phone's warranty?", a: "If your phone is still under manufacturer warranty, please check whether third-party service affects it. For out-of-warranty phones, our battery replacement comes with a 6-month TurboFix warranty." },
+      { q: "Does battery replacement affect my phone's warranty?", a: "If your phone is still under manufacturer warranty, please check whether third-party service affects it. For out-of-warranty phones, our battery replacement comes with a TurboFix warranty of up to 1 year." },
       { q: "Will fast charging still work after battery replacement?", a: "Yes — we use batteries compatible with your model's fast charging standard (SUPERVOOC, Warp Charge, Fast Charge, etc.) and verify fast charging after the visit." },
       { q: "Can you replace a swollen battery safely?", a: "Yes — swollen batteries are handled with care using proper tools and ventilation. Do not press or puncture a swollen battery. Book a visit immediately as swollen batteries are a fire risk." },
     ],
@@ -119,7 +119,7 @@ export const servicePages: ServicePageData[] = [
   {
     slug: "charging-port-service-hyderabad",
     seoTitle: "Charging Port Service in Hyderabad at Home – ₹499+",
-    metaDescription: "Phone not charging or loose cable? Charging port cleaning and replacement at your home in 25–35 min. 6-month warranty, all brands.",
+    metaDescription: "Phone not charging or loose cable? Charging port cleaning and replacement at your home in 25–35 min. Up to 1-year warranty, all brands.",
     name: "Charging Port Service",
     h1: "Mobile Charging Port Service in Hyderabad",
     tagline: "Phone not charging? Loose port? Resolved in under 35 minutes.",
@@ -144,7 +144,7 @@ export const servicePages: ServicePageData[] = [
     ],
     priceRange: "₹499 – ₹2,999",
     repairTime: "25–35 minutes",
-    warranty: "6 months on port and workmanship",
+    warranty: "Up to 1-year warranty on parts & workmanship",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel", "Nothing Phone"],
     faqs: [
       { q: "How much does charging port service cost in Hyderabad?", a: "Charging port service at TurboFix costs ₹499–₹2,999 depending on whether cleaning resolves it or a full port replacement is needed. Cleaning-only service starts from ₹299." },
@@ -190,7 +190,7 @@ export const servicePages: ServicePageData[] = [
     ],
     priceRange: "₹999 – ₹5,999",
     repairTime: "2–6 hours (same day for most cases)",
-    warranty: "3 months (nature of water damage limits a longer warranty period)",
+    warranty: "Warranty period confirmed with your quote",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel", "Nothing Phone"],
     faqs: [
       { q: "Can a water-damaged phone be restored?", a: "Yes — in most cases, water-damaged phones can be fully restored if serviced promptly. Success rate depends on how long the phone was submerged, type of liquid (fresh water vs salt water), and how quickly the service process begins." },
@@ -211,7 +211,7 @@ export const servicePages: ServicePageData[] = [
   {
     slug: "speaker-service-hyderabad",
     seoTitle: "Phone Mic & Speaker Service in Hyderabad – ₹499+",
-    metaDescription: "Callers can't hear you or sound is crackling? Mic, speaker and earpiece service at your door in 25–40 min. 6-month warranty.",
+    metaDescription: "Callers can't hear you or sound is crackling? Mic, speaker and earpiece service at your door in 25–40 min. Up to 1-year warranty.",
     name: "Speaker & Mic Service",
     h1: "Mobile Speaker & Microphone Service in Hyderabad",
     tagline: "No sound, muffled audio, or mic issues? Resolved at your doorstep.",
@@ -236,7 +236,7 @@ export const servicePages: ServicePageData[] = [
     ],
     priceRange: "₹499 – ₹2,999",
     repairTime: "25–40 minutes",
-    warranty: "6 months on speaker/mic and workmanship",
+    warranty: "Up to 1-year warranty on parts & workmanship",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel", "Nothing Phone"],
     faqs: [
       { q: "How much does speaker service cost in Hyderabad?", a: "Speaker service at TurboFix costs ₹499–₹2,999. Simple cleaning is often ₹299–₹499. Full speaker module replacement costs ₹799–₹2,999 depending on the model." },
@@ -256,7 +256,7 @@ export const servicePages: ServicePageData[] = [
   {
     slug: "camera-service-hyderabad",
     seoTitle: "Phone Camera Service in Hyderabad – Lens & Module",
-    metaDescription: "Blurry photos, cracked lens or black camera? Camera lens and module replacement at home, from ₹799. OEM-grade parts, 6-month warranty.",
+    metaDescription: "Blurry photos, cracked lens or black camera? Camera lens and module replacement at home, from ₹799. OEM-grade parts, up to 1-year warranty.",
     name: "Camera Service",
     h1: "Mobile Camera Service in Hyderabad",
     tagline: "Blurry photos, cracked lens, or camera app crashing? Resolved at your door.",
@@ -281,7 +281,7 @@ export const servicePages: ServicePageData[] = [
     ],
     priceRange: "₹799 – ₹4,999",
     repairTime: "40–60 minutes",
-    warranty: "6 months on camera module and workmanship",
+    warranty: "Up to 1-year warranty on parts & workmanship",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel", "Nothing Phone"],
     faqs: [
       { q: "How much does camera service cost in Hyderabad?", a: "Camera service at TurboFix costs ₹799–₹4,999. Lens glass replacement is cheaper. Full camera module replacement for flagship phones (Pixel, iPhone Pro, Galaxy Ultra) is at the higher end." },
@@ -302,7 +302,7 @@ export const servicePages: ServicePageData[] = [
   {
     slug: "back-panel-replacement-hyderabad",
     seoTitle: "Back Panel & Back Glass Replacement Hyderabad",
-    metaDescription: "Cracked back glass or broken back panel? We replace it at your home with a model-matched part in 40–60 min. From ₹699, 6-month warranty.",
+    metaDescription: "Cracked back glass or broken back panel? We replace it at your home with a model-matched part in 40–60 min. From ₹699, up to 1-year warranty.",
     name: "Back Panel Replacement",
     h1: "Mobile Back Panel & Back Glass Replacement in Hyderabad",
     tagline: "Shattered back glass or damaged back panel? Restored at your door.",
@@ -326,7 +326,7 @@ export const servicePages: ServicePageData[] = [
     ],
     priceRange: "₹699 – ₹3,999",
     repairTime: "40–60 minutes",
-    warranty: "6 months on panel and workmanship",
+    warranty: "Up to 1-year warranty on parts & workmanship",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel", "Nothing Phone"],
     faqs: [
       { q: "How much does back panel replacement cost in Hyderabad?", a: "Back panel replacement at TurboFix costs ₹699–₹3,999. iPhone back glass replacement starts from ₹1,499. Samsung Galaxy glass back from ₹999. Budget Android plastic back panels from ₹699." },
@@ -372,7 +372,7 @@ export const servicePages: ServicePageData[] = [
     ],
     priceRange: "₹2,999 – ₹12,999",
     repairTime: "1–3 days (complexity dependent)",
-    warranty: "3 months (motherboard service complexity limits a longer warranty period)",
+    warranty: "Warranty period confirmed with your quote",
     affectedBrands: ["Apple iPhone", "Samsung Galaxy", "OnePlus", "Xiaomi / Redmi", "Vivo", "Oppo", "Realme", "Motorola", "Google Pixel"],
     faqs: [
       { q: "How much does motherboard service cost in Hyderabad?", a: "Motherboard service at TurboFix costs ₹2,999–₹12,999 depending on the specific component failure and complexity. We provide a detailed quote after diagnosis." },

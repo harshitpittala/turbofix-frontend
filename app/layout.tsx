@@ -8,6 +8,16 @@ import WhatsAppButton from "@/components/common/WhatsAppButton";
 import StickyCallBar from "@/components/common/StickyCallBar";
 import { Toaster } from "react-hot-toast";
 import { JsonLd } from "@/components/seo/JsonLd";
+import {
+  BUSINESS_ADDRESS, CONTACT_EMAIL, CONTACT_PHONE_E164,
+  GOOGLE_BUSINESS_PROFILE_URL, SOCIAL_PROFILES,
+} from "@/lib/config";
+
+// Verified profiles only (see lib/config.ts), plus the Google Business Profile once its link is added.
+const sameAs = [
+  ...SOCIAL_PROFILES.map((p) => p.href),
+  ...(GOOGLE_BUSINESS_PROFILE_URL ? [GOOGLE_BUSINESS_PROFILE_URL] : []),
+];
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,7 +44,7 @@ export const metadata: Metadata = {
     template: "%s | TurboFix",
   },
   description:
-    "TurboFix — doorstep mobile service in Hyderabad. Screen, battery & charging port service for iPhone, Samsung & more. OEM parts, 6-month warranty. Book now!",
+    "TurboFix — doorstep mobile service in Hyderabad. Screen, battery & charging port service for iPhone, Samsung & more. OEM parts, up to 1-year warranty.",
   keywords: [
     "mobile service hyderabad", "doorstep mobile service hyderabad",
     "mobile repair hyderabad", "mobile repair near me",
@@ -58,7 +68,7 @@ export const metadata: Metadata = {
     url: "https://turbofix.in",
     title: "TurboFix — Mobile Service at Your Doorstep | Hyderabad",
     description:
-      "Professional doorstep mobile service in Hyderabad. Screen, battery, charging port, water damage service for iPhone, Samsung, OnePlus & more. OEM parts, 6-month warranty.",
+      "Doorstep mobile service in Hyderabad and a walk-in studio in Nampally. Screen, battery, charging port and water damage service for iPhone, Samsung, OnePlus & more. Up to 1-year warranty.",
     siteName: "TurboFix",
     images: [{
       url: "https://turbofix.in/og-image.jpg",
@@ -72,8 +82,7 @@ export const metadata: Metadata = {
     title: "TurboFix — Mobile Service at Your Doorstep | Hyderabad",
     description: "Fast doorstep mobile service in Hyderabad. Screen, battery, water damage & more. Book now!",
     images: ["https://turbofix.in/og-image.jpg"],
-    site: "@turbofix",
-    creator: "@turbofix",
+    // No site/creator handle: @turbofix isn't a confirmed TurboFix account.
   },
   robots: {
     index: true,
@@ -103,11 +112,14 @@ export const metadata: Metadata = {
 };
 
 // ── STRUCTURED DATA ──────────────────────────────────────────────────────────
-// Using explicit classifications to sever any automotive context or AI confusion.
+// Every fact here must also be visible on the site (footer, contact page).
+// Address / phone / email come from lib/config.ts so they can't drift.
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": ["MobilePhoneStore", "HardwareStore"],
+  // Closest schema.org type for a phone service studio; HardwareStore (tools &
+  // building supplies) was removed as inaccurate.
+  "@type": "MobilePhoneStore",
   "@id": "https://turbofix.in/#business",
   name: "TurboFix",
   alternateName: ["TurboFix Mobile Service", "TurboFix Hyderabad"],
@@ -121,29 +133,32 @@ const localBusinessSchema = {
     height: 200,
   },
   image: "https://turbofix.in/og-image.jpg",
-  telephone: "+918639605147",
-  email: "support@turbofix.in",
+  telephone: CONTACT_PHONE_E164,
+  email: CONTACT_EMAIL,
   address: {
     "@type": "PostalAddress",
-    streetAddress: "11-1-441, Aghapura, Nampally",
-    addressLocality: "Hyderabad",
-    addressRegion: "Telangana",
-    postalCode: "500001",
-    addressCountry: "IN",
+    streetAddress: BUSINESS_ADDRESS.street,
+    addressLocality: BUSINESS_ADDRESS.locality,
+    addressRegion: BUSINESS_ADDRESS.region,
+    postalCode: BUSINESS_ADDRESS.postalCode,
+    addressCountry: BUSINESS_ADDRESS.country,
   },
+  // Studio location from the owner's plus code 9FP7+FH Hyderabad (7J9W9FP7+FH).
   geo: {
     "@type": "GeoCoordinates",
-    latitude: 17.3850,
-    longitude: 78.4867,
+    latitude: 17.386187,
+    longitude: 78.463938,
   },
-  // Bookings are open 24/7 (matches the Google Business Profile hours).
-  // Doorstep visits run 09:00–21:00 every day (see contactPoint below).
+  parentOrganization: { "@id": "https://turbofix.in/#organization" },
+  // Studio walk-ins and doorstep visits: 09:00–21:00 every day (confirmed by
+  // the owner, 4 Oct 2026). Online/WhatsApp bookings are accepted 24/7, but
+  // that's not opening hours, so it's stated in visible copy only.
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-      opens: "00:00",
-      closes: "23:59",
+      opens: "09:00",
+      closes: "21:00",
     },
   ],
   priceRange: "₹₹",
@@ -153,12 +168,8 @@ const localBusinessSchema = {
     { "@type": "City", name: "Hyderabad" },
     { "@type": "City", name: "Secunderabad" },
   ],
-  sameAs: [
-    "https://www.instagram.com/turbofix.in",
-    "https://www.facebook.com/turbofix",
-    "https://twitter.com/turbofix",
-    "https://www.youtube.com/@turbofix",
-  ],
+  knowsLanguage: ["en", "te", "hi"],
+  sameAs,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Mobile Service Offerings",
@@ -198,7 +209,7 @@ const organizationSchema = {
   contactPoint: [
     {
       "@type": "ContactPoint",
-      telephone: "+918639605147",
+      telephone: CONTACT_PHONE_E164,
       contactType: "customer service",
       areaServed: "IN",
       availableLanguage: ["en", "hi", "te"],
@@ -210,16 +221,11 @@ const organizationSchema = {
     {
       "@type": "ContactPoint",
       contactType: "customer service",
-      email: "support@turbofix.in",
+      email: CONTACT_EMAIL,
       areaServed: "IN",
     },
   ],
-  sameAs: [
-    "https://www.instagram.com/turbofix.in",
-    "https://www.facebook.com/turbofix",
-    "https://twitter.com/turbofix",
-    "https://www.youtube.com/@turbofix",
-  ],
+  sameAs,
 };
 
 const websiteSchema = {
@@ -228,7 +234,7 @@ const websiteSchema = {
   "@id": "https://turbofix.in/#website",
   name: "TurboFix",
   url: "https://turbofix.in",
-  description: "Doorstep mobile service in Hyderabad — trained technicians, OEM parts, 6-month warranty",
+  description: "Doorstep mobile service in Hyderabad — trained technicians, OEM parts, up to 1-year warranty",
   publisher: { "@id": "https://turbofix.in/#organization" },
   inLanguage: "en-IN",
 };

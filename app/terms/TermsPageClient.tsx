@@ -73,14 +73,12 @@ export default function TermsPageClient() {
             {/* Warranty Policy */}
             <h2 className="text-3xl font-bold text-slate-900 mt-8 mb-4">TurboFix Warranty Policy</h2>
             <p>
-              TurboFix offers a <strong>6-month warranty</strong> on Redmi, Oppo, Vivo, and selected mobile screen
-              services/replacements carried out by us from the date of invoice.
-            </p>
-            <p>
-              We also provide a <strong>3-month warranty</strong> on all other spare parts replaced by TurboFix.
+              Parts replaced by TurboFix carry a warranty of <strong>3 months, 6 months or 1 year</strong>, counted
+              from the date of invoice. The period depends on the quality grade of the part used for your
+              device, and the period that applies is confirmed with your quote before work begins.
             </p>
 
-            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">The 6-Month Warranty Covers:</h3>
+            <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">For Screen Replacements, the Warranty Covers:</h3>
             <ol className="list-decimal list-inside space-y-2 text-slate-700 mb-4">
               <li>Screen/LCD malfunctioning or not functioning as intended.</li>
               <li>Touch-related display issues arising without physical or manual damage.</li>
@@ -99,7 +97,7 @@ export default function TermsPageClient() {
               <li>The mobile phone must switch on and function normally apart from the screen issue.</li>
               <li>
                 If the old damaged screen is not handed over to the technician during service, warranty validity will be
-                limited to 3 months only.
+                limited to 3 months, or the part's stated period if that is shorter.
               </li>
             </ol>
 
@@ -178,7 +176,7 @@ export default function TermsPageClient() {
             {/* Refund Policy */}
             <h3 className="text-2xl font-bold text-slate-900 mt-6 mb-3">Refund Policy</h3>
             <ol className="list-decimal list-inside space-y-2 text-slate-700 mb-4">
-              <li>Diagnosis is always free — no charge applies if you haven't approved the service.</li>
+              <li>Diagnosis is free when you approve and go ahead with the quoted service. If you decline the quote, the ₹499 charge described under Service / Visit Charges applies — including when your phone was taken to our workshop for diagnosis.</li>
               <li>Refunds are not applicable for spare parts once installed, especially display/screen replacements, since the part cannot be resold once fitted.</li>
               <li>If you paid a booking/visit charge and TurboFix is unable to attend at the confirmed time through no fault of yours, the amount will be refunded in full within 5–7 business days to the original payment method.</li>
               <li>For online payment gateway transactions that fail after the amount is debited, refunds are processed automatically by the payment provider, typically within 5–7 business days.</li>
@@ -225,6 +223,10 @@ export default function TermsPageClient() {
               <li>Device not serviced after inspection</li>
               <li>Estimated service cost not approved</li>
               <li>Job incomplete due to customer-side reasons</li>
+              <li>
+                <strong>Workshop diagnosis declined:</strong> if a technician takes your phone to our workshop
+                for diagnosis and you decline the quotation, a ₹499 diagnosis charge applies.
+              </li>
             </ul>
 
             {/* Copyright Policy */}

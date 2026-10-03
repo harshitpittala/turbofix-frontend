@@ -10,8 +10,8 @@ import { staggerContainer, fadeInUp } from "@/lib/utils";
 const pillars = [
   {
     icon: Wallet,
-    title: "Diagnostics are free",
-    desc: "Every visit starts with a free diagnostic check. You'll get a fixed quote before we touch anything — no obligation to proceed.",
+    title: "Diagnostics are free in most cases",
+    desc: "Every visit starts with a diagnostic check, free in most cases. You'll get a fixed quote before we touch anything, and you decide whether to go ahead.",
     color: "#2563EB",
   },
   {
@@ -52,7 +52,7 @@ export default function NoFixNoFeePolicyClient() {
               <span className="gradient-text">No Fix, No Fee Policy</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-slate-600 text-lg max-w-2xl mx-auto">
-              What's actually free, when a visit charge applies, and how our 6-month warranty works —
+              What's actually free, when a visit charge applies, and how our warranty works —
               explained plainly, with no fine print hidden elsewhere.
             </motion.p>
           </motion.div>
@@ -106,8 +106,8 @@ export default function NoFixNoFeePolicyClient() {
           >
             <h2 className="text-3xl font-bold text-slate-900 mt-0 mb-4">What "No Fix, No Fee" Covers</h2>
             <p>
-              Every TurboFix visit starts the same way: a technician runs a free diagnostic check on your
-              device — no charge, no obligation. Once the issue is confirmed, you get a fixed quote before
+              Every TurboFix visit starts the same way: a technician runs a diagnostic check on your
+              device, free in most cases. Once the issue is confirmed, you get a fixed quote before
               any service work begins. If you approve it, we service the device and you pay only after it's
               working again. If we diagnose the device and find we <strong>can't</strong> resolve it, you owe
               nothing for the work itself.
@@ -130,10 +130,10 @@ export default function NoFixNoFeePolicyClient() {
               this charge never applies.
             </p>
 
-            <h2 className="text-3xl font-bold text-slate-900 mt-8 mb-4">6-Month Warranty, In Brief</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mt-8 mb-4">Warranty, In Brief</h2>
             <p>
-              Eligible screen replacements carry a 6-month warranty; other replaced parts carry a 3-month
-              warranty. If the same issue recurs within that period due to parts or workmanship, we resolve it
+              Replaced parts carry a warranty of 3 months, 6 months or 1 year, depending on the quality grade
+              of the part; we confirm the period with your quote. If the same issue recurs within that period due to parts or workmanship, we resolve it
               at no cost. Physical damage, water damage after service, and issues unrelated to the original
               service are not covered. See our{" "}
               <Link href="/terms">full Terms of Service</Link> for the complete warranty terms, exclusions,

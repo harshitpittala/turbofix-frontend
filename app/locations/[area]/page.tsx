@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `Mobile Service in ${area.name} – At Your Door`
     : `Mobile Service in ${area.name}, Hyderabad`;
   const pin = area.pincode ? ` (${area.pincode})` : "";
-  let description = `Doorstep phone service in ${area.name}${pin}, Hyderabad: screen, battery, charging port & more at home or office. 6-month warranty, pay after service.`;
-  if (description.length > 155) description = `Doorstep phone service in ${area.name}${pin}: screen, battery & charging port at home or office. 6-month warranty.`;
+  let description = `Doorstep phone service in ${area.name}${pin}, Hyderabad: screen, battery, charging port & more at home or office. Up to 1-year warranty, pay after service.`;
+  if (description.length > 155) description = `Doorstep phone service in ${area.name}${pin}: screen, battery & charging port at home or office. Up to 1-year warranty.`;
 
   return {
     title,
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ...(area.status === "draft" && { robots: { index: false, follow: false } }),
     openGraph: {
       title: `Mobile Service in ${area.name} Hyderabad | TurboFix`,
-      description: `Doorstep mobile service in ${area.name}. ${area.context} Professional service with 6-month warranty.`,
+      description: `Doorstep mobile service in ${area.name}. ${area.context} Professional service with a warranty of up to 1 year.`,
       url: `https://turbofix.in/locations/${area.slug}`,
     },
   };

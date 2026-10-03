@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `Mobile Service in ${label}`,
     description: buildMetaDescription(
       `TurboFix's independent doorstep mobile-device servicing across ${label}: ${areas.slice(0, 4).map((a) => a.name).join(", ")} and more.`,
-      "Same-day, trained technicians, 6-month warranty."
+      "Same-day, trained technicians, up to 1-year warranty."
     ),
     alternates: { canonical: `https://turbofix.in/locations/zones/${params.zone}` },
     openGraph: {

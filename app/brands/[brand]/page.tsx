@@ -27,12 +27,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${brand.name} Phone Service in Hyderabad at Home`,
-    description: `Independent ${brand.name} phone service at your doorstep across Hyderabad: screen, battery, charging port and more. OEM-grade parts, 6-month warranty.`,
+    description: `Independent ${brand.name} phone service at your doorstep across Hyderabad: screen, battery, charging port and more. OEM-grade parts, up to 1-year warranty.`,
     keywords: brand.keywords,
     alternates: { canonical: `https://turbofix.in/brands/${brand.slug}` },
     openGraph: {
       title: `${brand.name} Service Hyderabad — TurboFix`,
-      description: `Professional ${brand.name} service in Hyderabad. OEM-quality parts, 6-month warranty, doorstep service.`,
+      description: `Professional ${brand.name} service in Hyderabad. OEM-quality parts, up to 1-year warranty, doorstep service.`,
       url: `https://turbofix.in/brands/${brand.slug}`,
     },
   };
@@ -48,20 +48,9 @@ export default function BrandServicePage({ params }: Props) {
     "@id": `https://turbofix.in/brands/${brand.slug}#service`,
     name: `${brand.name} Service in Hyderabad`,
     description: brand.description,
-    provider: {
-      "@type": "LocalBusiness",
-      "@id": "https://turbofix.in/#business",
-      name: "TurboFix",
-      telephone: "+918639605147",
-      url: "https://turbofix.in",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "Hyderabad",
-        addressRegion: "Telangana",
-        addressCountry: "IN",
-      },
-      // aggregateRating intentionally omitted here — see app/layout.tsx note.
-    },
+    // Reference the single business entity defined in app/layout.tsx rather than
+    // redefining it here with a different type and partial address.
+    provider: { "@id": "https://turbofix.in/#business" },
     areaServed: { "@type": "City", name: "Hyderabad" },
     serviceType: `${brand.name} Mobile Phone Service`,
     offers: brand.commonIssues.map((issue) => ({

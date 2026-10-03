@@ -39,7 +39,7 @@ export const localityGuides: Record<string, LocalityGuide> = {
   gachibowli: {
     overview: [
       "Gachibowli is where Hyderabad's Financial District begins — large tech campuses, ISB, the University of Hyderabad, IIIT Hyderabad and the GMC Balayogi Stadium, surrounded by gated communities and high-rise apartments. People here tend to carry recent flagship phones, and a cracked screen or failing battery gets in the way of a working day quickly.",
-      "TurboFix comes to you — at home in a gated community or at your office — with OEM-grade parts and a 6-month warranty. For premium models we confirm part availability before the visit so the job can be finished in one go.",
+      "TurboFix comes to you — at home in a gated community or at your office — with OEM-grade parts and a warranty of up to 1 year. For premium models we confirm part availability before the visit so the job can be finished in one go.",
     ],
     pockets: ["Indira Nagar", "Anjaiah Nagar", "Gowlidoddi", "Khajaguda", "DLF Cyber City", "ISB Road", "Gachibowli Stadium area", "Telecom Nagar"],
     bookingTips: [
@@ -108,7 +108,7 @@ export const localityGuides: Record<string, LocalityGuide> = {
       { q: "Do you cover Kothaguda, Masjid Banda and Raghavendra Colony?", a: "Yes. They are all part of our Kondapur route, along with Raja Rajeshwari Colony, Hanuman Nagar and the Botanical Garden Road area." },
       { q: "Can the technician come inside my gated community?", a: "Yes. Share your tower and flat number and approve the visitor entry when the technician reaches the gate." },
       { q: "Are weekend visits available in Kondapur?", a: "Yes, on Saturdays and Sundays too. Weekend slots fill up quickly, so it helps to book a day ahead." },
-      { q: "Will I get a warranty for work done at home?", a: "Yes. Parts and workmanship carry our 6-month warranty, whether the job is done at your home, your office or our studio." },
+      { q: "Will I get a warranty for work done at home?", a: "Yes. Parts and workmanship carry our warranty of up to 1 year, whether the job is done at your home, your office or our studio." },
     ],
   },
 

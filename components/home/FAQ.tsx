@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useId, useState } from "react";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Plus, Minus } from "lucide-react";
 import { staggerContainer, fadeInUp } from "@/lib/utils";
@@ -17,7 +17,7 @@ export const faqs = [
   },
   {
     q: "What warranty do you offer?",
-    a: "Every visit comes with a 6-month warranty. If the same issue reoccurs within that period due to a parts or workmanship failure, we resolve it absolutely free. The warranty doesn't cover physical damage or water damage after the visit.",
+    a: "Every visit comes with a warranty of 3 months, 6 months or 1 year, depending on the quality grade of the part used; we confirm the period with your quote. If the same issue reoccurs within that period due to a parts or workmanship failure, we resolve it free. The warranty doesn't cover physical damage or water damage after the visit.",
   },
   {
     q: "Will my data be safe during the visit?",
@@ -25,16 +25,17 @@ export const faqs = [
   },
   {
     q: "Can I get a cost estimate before the visit?",
-    a: "Absolutely. Our diagnostic check is completely free. We'll assess your device and provide a fixed, transparent quote before any work begins. You're under no obligation to proceed if you don't like the price.",
+    a: "Absolutely. In most cases our diagnostic check is free. We'll assess your device and give you a fixed, transparent quote before any work begins, and you decide whether to go ahead. Our Terms explain the few cases where a charge applies.",
   },
   {
-    q: "Do you offer home pickup and delivery?",
-    a: "Yes! We offer doorstep pickup and delivery within a 10 km radius of Hitech City. Book the service online, and our technician will service it in our lab, and deliver it back — typically same day.",
+    q: "Do you come to my home or office?",
+    a: "Yes. A technician services your phone at your home or office in Hyderabad, 9 AM – 9 PM every day. We also offer pickup and delivery anywhere in Hyderabad, and you can walk in to our studio in Aghapura, Nampally (9 AM – 9 PM, every day).",
   },
   {
     q: "Which phone brands do you service?",
-    a: "We service all major brands including Apple iPhone, Samsung, OnePlus, Xiaomi, Oppo, Vivo, Realme, Google Pixel, Motorola, Nokia, Sony, and Nothing. If you have a less common brand, contact us — we likely handle it.",
+    a: "Apple iPhone, Samsung, OnePlus, Xiaomi, Oppo, Vivo, Realme, Google Pixel, Motorola and Nothing. For other brands, contact us with the model and we'll check.",
   },
+  // TODO(owner): confirm the insurance cover below exists; edit or remove it if not.
   {
     q: "Is my device insured while at your shop?",
     a: "Yes. All devices in our custody are covered under our in-shop insurance. In the extremely unlikely event of accidental damage while in our care, we will service or replace the device at no cost to you.",
@@ -42,6 +43,7 @@ export const faqs = [
 ];
 
 function FAQItem({ q, a, isOpen, onToggle }: { q: string; a: string; isOpen: boolean; onToggle: () => void }) {
+  const panelId = useId();
   return (
     <div
       className="rounded-xl overflow-hidden transition-all duration-300"
@@ -52,6 +54,8 @@ function FAQItem({ q, a, isOpen, onToggle }: { q: string; a: string; isOpen: boo
     >
       <button
         onClick={onToggle}
+        aria-expanded={isOpen}
+        aria-controls={panelId}
         className="w-full flex items-center justify-between px-6 py-5 text-left"
       >
         <span className={`font-medium text-[15px] pr-4 transition-colors duration-200 ${isOpen ? "text-slate-900" : "text-slate-700"}`}>
@@ -70,20 +74,19 @@ function FAQItem({ q, a, isOpen, onToggle }: { q: string; a: string; isOpen: boo
         </div>
       </button>
 
-      <AnimatePresence initial={false}>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-          >
-            <div className="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-100">
-              <div className="pt-4">{a}</div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Always rendered (collapsed when closed) so answers are in the server HTML and match the FAQPage schema. */}
+      <motion.div
+        id={panelId}
+        initial={false}
+        aria-hidden={!isOpen}
+        style={{ overflow: "hidden" }}
+        animate={isOpen ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+      >
+        <div className="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-100">
+          <div className="pt-4">{a}</div>
+        </div>
+      </motion.div>
     </div>
   );
 }
@@ -131,8 +134,8 @@ export default function FAQ() {
             {/* Stats */}
             <motion.div variants={fadeInUp} className="mt-12 grid grid-cols-2 gap-4">
               {[
-                { label: "Answered questions", value: "500+" },
-                { label: "Average response time", value: "< 2 min" },
+                { label: "Doorstep visits, every day", value: "9 AM – 9 PM" },
+                { label: "Online & WhatsApp bookings", value: "24/7" },
               ].map((s) => (
                 <div
                   key={s.label}

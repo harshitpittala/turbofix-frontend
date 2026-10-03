@@ -52,11 +52,11 @@ export const blogs: BlogPost[] = [
       },
       {
         heading: "How TurboFix Replaces Your Battery",
-        text: "At TurboFix, battery replacements take approximately 20 minutes and use Grade-A replacement cells that match or exceed OEM specifications. We test battery health before and after replacement, provide a 6-month warranty on the new battery, and safely dispose of the old one. Our doorstep service means we come to you — no need to visit a service center.",
+        text: "At TurboFix, battery replacements take approximately 20 minutes and use Grade-A replacement cells that match or exceed OEM specifications. We test battery health before and after replacement, provide a warranty of up to 1 year on the new battery, and safely dispose of the old one. Our doorstep service means we come to you — no need to visit a service center.",
         list: [
           "Grade-A battery cells — 100% capacity restoration",
           "20-minute turnaround time",
-          "6-month warranty on battery and labor",
+          "Up to 1-year warranty on battery and labor",
           "Safe disposal of degraded battery",
           "Battery health test included at no extra charge",
         ],
@@ -118,7 +118,7 @@ export const blogs: BlogPost[] = [
           "Controlled thermal drying",
           "Corrosion treatment and flux cleaning",
           "85% success rate on devices within 24 hours",
-          "Free diagnostic — no charge if we can't help",
+          "Free diagnostic in most cases, with a quote before any work",
         ],
       },
       {
@@ -178,7 +178,7 @@ export const blogs: BlogPost[] = [
       {
         faq: [
           { q: "Will iPhone screen replacement affect Face ID?", a: "When done correctly with proper tools and calibration, Face ID remains fully functional. Cheap screen replacements from unqualified providers can sometimes affect Face ID — our technicians are trained on iPhone-specific service procedures and handle Face ID components with care." },
-          { q: "Does TurboFix offer warranty on iPhone screen replacement?", a: "Yes — all screen replacements carry a 6-month warranty. If the screen develops defects within 6 months due to parts or workmanship, we replace it free." },
+          { q: "Does TurboFix offer warranty on iPhone screen replacement?", a: "Yes — all screen replacements carry a warranty of up to 1 year. If the screen develops defects within the warranty period due to parts or workmanship, we replace it free." },
           { q: "How much does iPhone screen replacement cost in Hyderabad?", a: "Prices vary by model. iPhone 15 Pro Max screens cost more than iPhone 11 screens due to the advanced OLED technology. WhatsApp or call us for an instant quote on your specific model." },
         ],
       },
@@ -617,7 +617,7 @@ export const blogs: BlogPost[] = [
       },
       {
         faq: [
-          { q: "Is board-level service reliable?", a: "When done by qualified technicians with proper equipment, yes. TurboFix has microscope workstations and technicians trained in micro-soldering. We provide a 3-month warranty on board-level service." },
+          { q: "Is board-level service reliable?", a: "When done by qualified technicians with proper equipment, yes. TurboFix has microscope workstations and technicians trained in micro-soldering. Board-level work comes with a warranty, and we confirm its period with your quote." },
           { q: "How long does board-level service take?", a: "Simple jobs (single component replacement) take 2–4 hours. Complex water damage or multi-component service may take 1–3 days." },
           { q: "What if the board can't be serviced?", a: "We don't charge if we can't help. The diagnostic assessment is free." },
         ],
@@ -860,7 +860,7 @@ export const blogs: BlogPost[] = [
       },
       {
         heading: "Step 6: Digital Invoice and Warranty",
-        text: "You receive a digital invoice with service details, parts used, and your 6-month warranty terms via email. Your visit is registered in our system — contact us anytime within the warranty period for related issues.",
+        text: "You receive a digital invoice with service details, parts used, and your warranty terms via email. Your visit is registered in our system — contact us anytime within the warranty period for related issues.",
       },
       {
         faq: [
@@ -1010,9 +1010,9 @@ export const blogs: BlogPost[] = [
         list: [
           "Trained technicians with brand-specific experience",
           "Full transparency on parts grade before work begins",
-          "6-month warranty on all service, documented digitally",
+          "Up to 1-year warranty on all service, documented digitally",
           "Confirmed quote before any work — no hidden charges",
-          "4.9-star Google rating from 1,000+ customer reviews",
+          "Walk-in studio in Aghapura, Nampally, plus doorstep visits",
           "Doorstep service across all Hyderabad areas",
           "Data privacy commitment — we never access your files",
         ],
@@ -1031,8 +1031,8 @@ export const blogs: BlogPost[] = [
       {
         faq: [
           { q: "Is it safe to hand over my phone to a service provider?", a: "With a reputable provider, yes. TurboFix never accesses your personal data, photos, or messages. We only access the hardware components being serviced. For sensitive devices, you can change your PIN before and after your visit." },
-          { q: "Can I trust mobile service providers in Hyderabad?", a: "Quality varies significantly. Look for providers with verified Google reviews, physical locations, and clear warranty policies. TurboFix has a 4.9-star rating from 1,000+ verified Hyderabad customers." },
-          { q: "Why is TurboFix different from local service providers?", a: "TurboFix operates at a studio standard — trained technicians, grade-A parts, digital invoicing, 6-month warranty, and doorstep service. We're not a kiosk; we're a professional mobile service studio." },
+          { q: "Can I trust mobile service providers in Hyderabad?", a: "Quality varies significantly. Look for providers with verified Google reviews, physical locations, and clear warranty policies. TurboFix publishes its studio address, phone number, warranty terms and no fix, no fee policy on turbofix.in so you can check them before you book." },
+          { q: "Why is TurboFix different from local service providers?", a: "TurboFix operates at a studio standard — trained technicians, grade-A parts, digital invoicing, up to 1-year warranty, and doorstep service. We're not a kiosk; we're a professional mobile service studio." },
         ],
       },
     ],

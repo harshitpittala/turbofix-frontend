@@ -3,7 +3,7 @@ import { CheckCircle2, ShieldCheck, Home } from "lucide-react";
 
 const badges = [
   { icon: CheckCircle2, color: "#059669", title: "Pay After Service", desc: "Zero payment upfront" },
-  { icon: ShieldCheck, color: "#059669", title: "6-Month Warranty", desc: "Parts & workmanship" },
+  { icon: ShieldCheck, color: "#059669", title: "Up to 1-Year Warranty", desc: "Parts & workmanship" },
   { icon: Home, color: "#2563EB", title: "Doorstep Service", desc: "We come to you" },
 ];
 
@@ -18,7 +18,7 @@ export default function TrustBadges() {
           <Icon className="w-6 h-6" style={{ color }} />
           <p className="text-sm font-semibold text-gray-900">{title}</p>
           <p className="text-xs text-gray-500">{desc}</p>
-          {title === "6-Month Warranty" && (
+          {title === "Up to 1-Year Warranty" && (
             <Link href="/terms" className="text-[11px] text-blue-700 underline underline-offset-2 mt-0.5">
               View full terms
             </Link>

@@ -6,6 +6,7 @@ import { useInView } from "react-intersection-observer";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import { staggerContainer, fadeInUp } from "@/lib/utils";
 
+// Real customer testimonials (confirmed by the owner, 4 Oct 2026).
 export const testimonials = [
   {
     name: "Arjun Reddy",

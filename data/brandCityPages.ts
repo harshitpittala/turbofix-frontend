@@ -29,13 +29,13 @@ export const brandCityPages: BrandCityPageData[] = [
   {
     slug: "iphone-service-hyderabad",
     seoTitle: "iPhone Service in Hyderabad at Home",
-    metaDescription: "Independent iPhone service at your doorstep across Hyderabad (not an Apple service centre). Screen, battery and more, OEM-grade parts, 6-month warranty.",
+    metaDescription: "Independent iPhone service at your doorstep across Hyderabad (not an Apple service centre). Screen, battery & more, OEM-grade parts, up to 1-year warranty.",
     brand: "iPhone",
     brandSlug: "apple",
     h1: "iPhone Service in Hyderabad — Independent Doorstep Provider",
     tagline: "Doorstep iPhone screen & battery service with OEM-quality parts & Face ID calibration checked on every replacement.",
     intro:
-      "TurboFix is an independent iPhone service provider serving Hyderabad. We service all iPhone models from iPhone X to the latest iPhone 15 Pro Max — screen replacements, battery swaps, and complex motherboard-level work — at your doorstep with OEM-quality components and a 6-month warranty.",
+      "TurboFix is an independent iPhone service provider serving Hyderabad. We service all iPhone models from iPhone X to the latest iPhone 15 Pro Max — screen replacements, battery swaps, and complex motherboard-level work — at your doorstep with OEM-quality components and a warranty of up to 1 year.",
     whyHyderabad:
       "Hyderabad has one of India's fastest-growing iPhone user bases, driven by the city's large IT and tech professional community. Apple's authorised service centres in Hyderabad often require appointments weeks in advance and carry premium pricing. TurboFix fills this gap — professional independent iPhone service, same day, at your HITEC City office or Banjara Hills home.",
     popularModels: [
@@ -82,7 +82,7 @@ export const brandCityPages: BrandCityPageData[] = [
   {
     slug: "samsung-service-hyderabad",
     seoTitle: "Samsung Phone Service in Hyderabad at Home",
-    metaDescription: "Galaxy screen, battery or charging problem? Independent Samsung service at your doorstep across Hyderabad. OEM-grade parts, 6-month warranty.",
+    metaDescription: "Galaxy screen, battery or charging problem? Independent Samsung service at your doorstep across Hyderabad. OEM-grade parts, up to 1-year warranty.",
     brand: "Samsung",
     brandSlug: "samsung",
     h1: "Samsung Service in Hyderabad — Galaxy Screen & Battery Experts",
@@ -133,7 +133,7 @@ export const brandCityPages: BrandCityPageData[] = [
   {
     slug: "oneplus-service-hyderabad",
     seoTitle: "OnePlus Service in Hyderabad at Home",
-    metaDescription: "OnePlus screen, battery or charging problem? Independent doorstep service across Hyderabad, same-day slots. OEM-grade parts, 6-month warranty.",
+    metaDescription: "OnePlus screen, battery or charging problem? Independent doorstep service across Hyderabad, same-day slots. OEM-grade parts, up to 1-year warranty.",
     brand: "OnePlus",
     brandSlug: "oneplus",
     h1: "OnePlus Service in Hyderabad — Fast Charging & AMOLED Experts",
@@ -180,7 +180,7 @@ export const brandCityPages: BrandCityPageData[] = [
   {
     slug: "realme-service-hyderabad",
     seoTitle: "Realme Phone Service in Hyderabad at Home",
-    metaDescription: "Realme screen, battery or charging problem? Independent doorstep service for all Realme models across Hyderabad. 6-month warranty.",
+    metaDescription: "Realme screen, battery or charging problem? Independent doorstep service for all Realme models across Hyderabad. Up to 1-year warranty.",
     brand: "Realme",
     brandSlug: "realme",
     h1: "Realme Service in Hyderabad — All Models, Same-Day Doorstep",
@@ -225,7 +225,7 @@ export const brandCityPages: BrandCityPageData[] = [
   {
     slug: "oppo-service-hyderabad",
     seoTitle: "Oppo Phone Service in Hyderabad at Home",
-    metaDescription: "Oppo Find X, Reno or A series problem? Independent doorstep service across Hyderabad with OEM-grade parts and a 6-month warranty.",
+    metaDescription: "Oppo Find X, Reno or A series problem? Independent doorstep service across Hyderabad with OEM-grade parts and a warranty of up to 1 year.",
     brand: "Oppo",
     brandSlug: "oppo",
     h1: "Oppo Service in Hyderabad — Find X, Reno & A Series Specialists",
@@ -269,7 +269,7 @@ export const brandCityPages: BrandCityPageData[] = [
   {
     slug: "vivo-service-hyderabad",
     seoTitle: "Vivo Phone Service in Hyderabad at Home",
-    metaDescription: "Vivo screen, battery or charging problem? Independent doorstep service for X, V, Y and T series across Hyderabad. 6-month warranty.",
+    metaDescription: "Vivo screen, battery or charging problem? Independent doorstep service for X, V, Y and T series across Hyderabad. Up to 1-year warranty.",
     brand: "Vivo",
     brandSlug: "vivo",
     h1: "Vivo Service in Hyderabad — X Series, V Series & Y Series",
@@ -313,7 +313,7 @@ export const brandCityPages: BrandCityPageData[] = [
   {
     slug: "xiaomi-service-hyderabad",
     seoTitle: "Xiaomi & Redmi Service in Hyderabad at Home",
-    metaDescription: "Xiaomi, Redmi or POCO problem? Independent doorstep service across Hyderabad with OEM-grade parts, same-day slots and a 6-month warranty.",
+    metaDescription: "Xiaomi, Redmi or POCO problem? Independent doorstep service across Hyderabad with OEM-grade parts, same-day slots and a warranty of up to 1 year.",
     brand: "Xiaomi",
     brandSlug: "xiaomi",
     h1: "Xiaomi & Redmi Service in Hyderabad — Mi, Redmi, POCO Specialists",
@@ -359,7 +359,7 @@ export const brandCityPages: BrandCityPageData[] = [
   {
     slug: "google-pixel-service-hyderabad",
     seoTitle: "Google Pixel Service in Hyderabad at Home",
-    metaDescription: "Independent Pixel service at your home in Hyderabad (not a Google service centre). Screen, battery and board work, 6-month warranty.",
+    metaDescription: "Independent Pixel service at your home in Hyderabad (not a Google service centre). Screen, battery and board work, up to 1-year warranty.",
     brand: "Google Pixel",
     brandSlug: "google-pixel",
     h1: "Google Pixel Service in Hyderabad — Tensor Chip Specialists",
@@ -407,7 +407,7 @@ export const brandCityPages: BrandCityPageData[] = [
   {
     slug: "motorola-service-hyderabad",
     seoTitle: "Motorola Phone Service in Hyderabad at Home",
-    metaDescription: "Moto G, Edge or Razr problem? Independent doorstep service across Hyderabad with OEM-grade parts and a 6-month warranty.",
+    metaDescription: "Moto G, Edge or Razr problem? Independent doorstep service across Hyderabad with OEM-grade parts and a warranty of up to 1 year.",
     brand: "Motorola",
     brandSlug: "motorola",
     h1: "Motorola Service in Hyderabad — Moto G, Edge & Razr Specialists",

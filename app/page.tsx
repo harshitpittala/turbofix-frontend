@@ -11,12 +11,12 @@ import CTA from "@/components/home/CTA";
 export const metadata: Metadata = {
   title: { absolute: "Doorstep Mobile Service in Hyderabad | TurboFix" },
   description:
-    "A TurboFix technician services your phone at home or office across Hyderabad: screen, battery, charging port & more. 6-month warranty, pay after service.",
+    "A TurboFix technician services your phone at home or office across Hyderabad: screen, battery, charging port & more. Up to 1-year warranty.",
   alternates: { canonical: "https://turbofix.in" },
   openGraph: {
     title: "TurboFix — Mobile Service at Your Doorstep | Hyderabad",
     description:
-      "Rated 4.9★ by 1,000+ customers. Doorstep pickup & delivery. Screen, battery, water damage, iPhone & Samsung service. Same-day slots available.",
+      "A technician services your phone at home or office across Hyderabad, or walk in to our Nampally studio. Screen, battery, water damage, iPhone & Samsung. Up to 1-year warranty.",
     url: "https://turbofix.in",
     images: [{ url: "https://turbofix.in/og-image.jpg", width: 1200, height: 630 }],
   },

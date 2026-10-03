@@ -4,7 +4,7 @@ import RepairsListClient from "../repairs/RepairsListClient";
 export const metadata: Metadata = {
   title: "Mobile Service by Brand in Hyderabad",
   description:
-    "Expert doorstep service for iPhone, Samsung, OnePlus, Xiaomi, Vivo, Oppo & all major brands in Hyderabad. OEM parts, 6-month warranty. Book now!",
+    "Expert doorstep service for iPhone, Samsung, OnePlus, Xiaomi, Vivo, Oppo & all major brands in Hyderabad. OEM parts, up to 1-year warranty. Book now!",
   alternates: { canonical: "https://turbofix.in/brands" },
   openGraph: {
     title: "Mobile Service by Brand — All Brands Serviced | TurboFix Hyderabad",

@@ -7,9 +7,9 @@ import { Shield, Zap, Award, Clock, Cpu, HeartHandshake } from "lucide-react";
 import AnimatedCounter from "@/components/common/AnimatedCounter";
 import { staggerContainer, fadeInUp, fadeInLeft, fadeInRight, scaleIn } from "@/lib/utils";
 
-const stats = [
+const stats: { value: number; suffix: string; label: string; decimals?: number }[] = [
   { value: 1000, suffix: "+", label: "Devices Serviced" },
-  { value: 4.9, suffix: "★", label: "Average Rating", decimals: 1 },
+  { value: 1, suffix: "-year", label: "Warranty, up to" },
   { value: 30, suffix: " min", label: "Avg. Turnaround" },
   { value: 98, suffix: "%", label: "First-Visit Success Rate" },
 ];
@@ -17,14 +17,14 @@ const stats = [
 const features = [
   {
     icon: Shield,
-    title: "6-Month Warranty",
+    title: "Up to 1-Year Warranty",
     desc: "Every visit comes backed by our 180-day warranty. If it breaks again within warranty — we resolve it free.",
     color: "#059669",
   },
   {
     icon: Zap,
     title: "Lightning Fast",
-    desc: "Most visits completed in under 30 minutes. Book online, walk in, walk out — serviced and ready.",
+    desc: "Most visits completed in under 30 minutes, at your home, your office or our Nampally studio.",
     color: "#2563EB",
   },
   {
@@ -35,8 +35,8 @@ const features = [
   },
   {
     icon: Clock,
-    title: "Same-Day Service",
-    desc: "Drop off in the morning, pick up by afternoon. We respect your time as much as your device.",
+    title: "Visits 7 Days a Week",
+    desc: "Book a slot between 9 AM and 9 PM, any day of the week. We respect your time as much as your device.",
     color: "#3B82F6",
   },
   {
@@ -161,7 +161,7 @@ export default function WhyChooseUs() {
 
                 <h3 className="text-slate-900 font-semibold text-[15px] mb-2">{feat.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">{feat.desc}</p>
-                {feat.title === "6-Month Warranty" && (
+                {feat.title === "Up to 1-Year Warranty" && (
                   <Link href="/terms" className="inline-block text-xs text-blue-700 underline underline-offset-2 mt-2">
                     View full warranty terms
                   </Link>

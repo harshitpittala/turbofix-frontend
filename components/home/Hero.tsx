@@ -324,7 +324,7 @@ function Screen3() {
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-[8px] text-emerald-700 font-bold">Warranty Active</p>
-            <p className="text-[7px] text-slate-500">6-month coverage · Next service free</p>
+            <p className="text-[7px] text-slate-500">Up to 1-yr coverage · Next service free</p>
           </div>
           <div className="w-[5px] h-[5px] rounded-full bg-emerald-500 animate-pulse shrink-0" />
         </div>
@@ -504,7 +504,7 @@ export default function Hero() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
                 </span>
-                Rated 4.9★ by 1,000+ Hyderabad Customers
+                1,000+ Devices Serviced in Hyderabad
               </span>
             </motion.div>
 
@@ -598,20 +598,10 @@ export default function Hero() {
                   ))}
                 </div>
 
-                {/* Stars + label */}
+                {/* Customer count (owner figure; no rating shown until tied to live Google reviews) */}
                 <div>
-                  <div className="flex items-center gap-0.5 mb-0.5">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                      <Star
-                        key={i}
-                        className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-amber-400 text-amber-400 drop-shadow-sm"
-                      />
-                    ))}
-                  </div>
-                  <p className="text-[11px] sm:text-xs text-slate-600">
-                    <span className="text-slate-900 font-semibold">4.9</span>
-                    {" · "}1,000+ happy customers
-                  </p>
+                  <p className="text-sm text-slate-900 font-semibold leading-tight">1,000+ devices</p>
+                  <p className="text-[11px] sm:text-xs text-slate-600">serviced across Hyderabad</p>
                 </div>
               </div>
 

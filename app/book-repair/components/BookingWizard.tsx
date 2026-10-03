@@ -773,7 +773,7 @@ function StepSchedule({ data, setData }: { data: BookingData; setData: (d: Parti
           <div className="flex-1">
             <p className="text-gray-900 font-semibold text-sm">Doorstep Pickup</p>
             <p className="text-gray-500 text-xs mt-0.5">
-              We collect &amp; deliver — covers Hyderabad (10 km radius)
+              We collect &amp; deliver — covers all of Hyderabad
             </p>
           </div>
           <div className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 bg-blue-600">

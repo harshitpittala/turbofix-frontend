@@ -15,11 +15,11 @@ const values = [
 const stats = [
   { value: "1,000+", label: "Devices Serviced" },
   { value: "2023", label: "Founded" },
-  { value: "4.9 ★", label: "Google Rating" },
-  { value: "6-mo", label: "Service Warranty" },
+  { value: "7 days", label: "Doorstep Visits a Week" },
+  { value: "Up to 1 yr", label: "Service Warranty" },
 ];
 
-export default function AboutPage() {
+export default function AboutPage({ facts }: { facts?: React.ReactNode }) {
   return (
     <>
       {/* Hero */}
@@ -100,6 +100,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {facts}
 
       <CTA />
     </>

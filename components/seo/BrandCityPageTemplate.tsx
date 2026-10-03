@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useId, useState } from "react";
+import { motion } from "framer-motion";
 import {
   ArrowLeft, Clock, Shield, Star, CheckCircle,
   Zap, ChevronDown, ChevronRight, Phone, MapPin,
@@ -13,25 +13,24 @@ import PopularAreas from "@/components/seo/PopularAreas";
 import type { AreaLink } from "@/lib/priorityAreas";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
 import type { BrandCityPageData } from "@/data/brandCityPages";
+import { servicePageForJob } from "@/lib/serviceLinks";
 
 function FAQItem({ q, a, i }: { q: string; a: string; i: number }) {
   const [open, setOpen] = useState(false);
+  const panelId = useId();
   return (
     <motion.div variants={fadeInUp} transition={{ delay: i * 0.05 }}
       className="overflow-hidden rounded-xl bg-white" style={{ border: "1px solid #E2E8F0" }}>
-      <button onClick={() => setOpen(!open)}
+      <button onClick={() => setOpen(!open)} aria-expanded={open} aria-controls={panelId}
         className="w-full flex items-center justify-between gap-4 px-6 py-4 text-left hover:bg-slate-50 transition-colors">
         <span className="text-sm font-medium text-slate-700">{q}</span>
         <ChevronDown className={`w-4 h-4 text-slate-500 shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`} />
       </button>
-      <AnimatePresence>
-        {open && (
-          <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.25 }}>
-            <p className="px-6 pb-5 text-sm text-slate-500 leading-relaxed">{a}</p>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Always rendered (collapsed when closed) so answers are in the server HTML and match the FAQPage schema. */}
+      <motion.div id={panelId} initial={false} aria-hidden={!open} style={{ overflow: "hidden" }}
+        animate={open ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }} transition={{ duration: 0.25 }}>
+        <p className="px-6 pb-5 text-sm text-slate-500 leading-relaxed">{a}</p>
+      </motion.div>
     </motion.div>
   );
 }
@@ -111,8 +110,8 @@ export default function BrandCityPageTemplate({ page, popularAreas = [] }: Props
           <div className="flex flex-wrap justify-center md:justify-between gap-6 text-sm text-slate-500">
             {[
               { icon: <Clock className="w-4 h-4 text-blue-600" />, text: "Same-day service in most slots" },
-              { icon: <Shield className="w-4 h-4 text-emerald-700" />, text: "6-month service warranty" },
-              { icon: <Star className="w-4 h-4 text-amber-500" />, text: `4.9★ · ${page.brand} service experts` },
+              { icon: <Shield className="w-4 h-4 text-emerald-700" />, text: "Up to 1-year service warranty" },
+              { icon: <Star className="w-4 h-4 text-amber-500" />, text: "No fix, no fee" },
               { icon: <CheckCircle className="w-4 h-4 text-blue-600" />, text: "OEM-grade parts, pay after service" },
             ].map(({ icon, text }) => (
               <div key={text} className="flex items-center gap-2">{icon}<span>{text}</span></div>
@@ -132,18 +131,26 @@ export default function BrandCityPageTemplate({ page, popularAreas = [] }: Props
             </motion.h2>
             <motion.p variants={fadeInUp} className="text-slate-500 text-sm mb-8">Most common {page.brand} services done at your doorstep</motion.p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {page.topRepairs.map((r, i) => (
+              {page.topRepairs.map((r, i) => {
+                const svcLink = servicePageForJob(r.name);
+                return (
                 <motion.div key={r.name} variants={fadeInUp} transition={{ delay: i * 0.07 }}
                   className="p-5 rounded-2xl flex flex-col gap-3"
                   style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}>
                   <h3 className="text-slate-900 font-semibold text-sm">{r.name}</h3>
                   <p className="text-slate-500 text-xs leading-relaxed flex-1">{r.desc}</p>
+                  {svcLink && (
+                    <Link href={svcLink.href} className="text-xs text-blue-700 hover:underline">
+                      {svcLink.label} in Hyderabad: how it works
+                    </Link>
+                  )}
                   <div className="flex items-center justify-between">
                     <span className="text-xs font-medium" style={{ color: page.color }}>{r.price}</span>
-                    <Link href="/book-a-visit" className="text-xs text-blue-700 hover:text-blue-800 transition-colors">Book →</Link>
+                    <Link href="/book-a-visit" aria-label={`Book ${r.name}`} className="text-xs text-blue-700 hover:text-blue-800 transition-colors">Book →</Link>
                   </div>
                 </motion.div>
-              ))}
+                );
+              })}
             </div>
           </motion.div>
         </div>

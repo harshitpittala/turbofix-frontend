@@ -38,7 +38,7 @@ export default function RepairsListClient() {
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-slate-600 text-xl max-w-2xl mx-auto">
               Expert service specialists for every major smartphone brand in Hyderabad.
-              OEM-quality parts, 6-month warranty, doorstep service.
+              OEM-quality parts, up to 1-year warranty, doorstep service.
             </motion.p>
           </motion.div>
         </div>

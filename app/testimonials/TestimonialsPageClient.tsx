@@ -1,11 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, ExternalLink } from "lucide-react";
 import CTA from "@/components/home/CTA";
 import { testimonials } from "@/components/home/Testimonials";
 import { staggerContainer, fadeInUp } from "@/lib/utils";
+import { GOOGLE_BUSINESS_PROFILE_URL } from "@/lib/config";
 
+// Real customer testimonials (confirmed by the owner, 4 Oct 2026). Don't mark
+// these up as Review schema: Google doesn't show self-published reviews of a
+// business as review snippets.
 // Extended testimonials for dedicated page
 const extendedTestimonials = [
   ...testimonials,
@@ -53,20 +57,24 @@ export default function TestimonialsPageClient() {
               <span className="section-label">Customer Stories</span>
             </motion.div>
             <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-5 text-slate-900">
-              1,000+ Reasons to{" "}
-              <span className="gradient-text">Trust TurboFix</span>
+              What Customers Say About{" "}
+              <span className="gradient-text">TurboFix</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-slate-600 text-xl max-w-2xl mx-auto mb-8">
               Real customers, real service, real results. Here's what Hyderabad is saying.
             </motion.p>
-            {/* Rating summary */}
-            <motion.div variants={fadeInUp} className="inline-flex items-center gap-4 glass rounded-2xl px-6 py-3">
-              <div className="flex items-center gap-1">
-                {[1,2,3,4,5].map(i => <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />)}
-              </div>
-              <div className="text-slate-900 font-bold text-xl">4.9</div>
-              <div className="text-slate-500 text-sm">based on 1,000+ reviews</div>
-            </motion.div>
+            {/* Points to the live, independently hosted reviews instead of a hard-coded rating. */}
+            {GOOGLE_BUSINESS_PROFILE_URL && (
+              <motion.a
+                variants={fadeInUp}
+                href={GOOGLE_BUSINESS_PROFILE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 glass rounded-2xl px-6 py-3 text-slate-900 font-semibold hover:text-blue-700"
+              >
+                Read our reviews on Google <ExternalLink className="w-4 h-4" />
+              </motion.a>
+            )}
           </motion.div>
         </div>
       </section>

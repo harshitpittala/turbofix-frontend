@@ -279,7 +279,7 @@ export default function SuccessPageClient() {
                 className="mt-8 pt-6 flex flex-wrap items-center justify-center gap-4 text-xs text-slate-500"
                 style={{ borderTop: "1px solid #E2E8F0" }}
               >
-                {["🛡 6-month warranty", "🔒 Secure booking", "🆓 Free diagnostics", "✅ No fix, no fee"].map((t) => (
+                {["🛡 Up to 1-year warranty", "🔒 Secure booking", "🆓 Free diagnostics", "✅ No fix, no fee"].map((t) => (
                   <span key={t}>{t}</span>
                 ))}
               </motion.div>

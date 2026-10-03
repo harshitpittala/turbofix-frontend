@@ -10,7 +10,7 @@ export function generateMetadata(): Metadata {
   if (!svc) return { title: "Service Not Found" };
   return {
     title: svc.seoTitle ?? svc.h1,
-    description: svc.metaDescription ?? buildMetaDescription(svc.intro, `${svc.repairTime}, ${svc.priceRange}. OEM parts, 6-month warranty. Book now!`),
+    description: svc.metaDescription ?? buildMetaDescription(svc.intro, `${svc.repairTime}, ${svc.priceRange}. OEM parts, up to 1-year warranty. Book now!`),
     keywords: svc.keywords,
     alternates: { canonical: `https://turbofix.in/${SLUG}` },
     openGraph: {

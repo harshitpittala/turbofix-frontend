@@ -1,35 +1,33 @@
 import type { Metadata } from "next";
 import FAQPageClient from "./FAQPageClient";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { faqCategories } from "@/data/faqs";
 
 export const metadata: Metadata = {
   title: "FAQ — Mobile Service Questions Answered",
   description:
-    "Answers to common TurboFix questions — visit time, genuine parts, warranty, and doorstep service safety in Hyderabad.",
+    "How to book TurboFix in Hyderabad, what to tell us, areas covered, visit hours, parts, warranty, data safety and payment, answered.",
   alternates: { canonical: "https://turbofix.in/faq" },
   openGraph: {
     title: "FAQ — Frequently Asked Questions About Mobile Service | TurboFix",
     description:
-      "Everything you need to know about TurboFix. Service time, parts quality, warranty, data safety, payment methods and doorstep service explained.",
+      "How to book TurboFix in Hyderabad, what to tell us, areas covered, visit hours, parts, warranty, data safety and payment, answered.",
     url: "https://turbofix.in/faq",
   },
 };
 
+// Built from the same data the page renders; unconfirmed answers are left out.
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: [
-    { "@type": "Question", name: "How long does a typical service visit take?", acceptedAnswer: { "@type": "Answer", text: "Most common services — screen replacements, battery swaps, charging port fixes — are done in 20–45 minutes at your doorstep. Complex jobs like water damage service or motherboard service may take 2–4 hours or up to a day." } },
-    { "@type": "Question", name: "Do you offer home pickup and delivery in Hyderabad?", acceptedAnswer: { "@type": "Answer", text: "Yes, within Hyderabad. Book online, choose doorstep service, and we handle the rest — same-day in most cases." } },
-    { "@type": "Question", name: "Do you use genuine OEM parts?", acceptedAnswer: { "@type": "Answer", text: "We use OEM (Original Equipment Manufacturer) quality parts as standard. Genuine Apple parts are available for an extra charge. We'll always tell you exactly which parts we're using before the work begins." } },
-    { "@type": "Question", name: "What warranty do you offer on services?", acceptedAnswer: { "@type": "Answer", text: "All service work carries a 6-month warranty. If the same issue recurs within 6 months due to parts or workmanship, we resolve it free. Physical damage and new issues are not covered." } },
-    { "@type": "Question", name: "Will my data be safe during service?", acceptedAnswer: { "@type": "Answer", text: "We only access components relevant to the service. Our technicians never access your files, photos, or apps. We recommend backing up before any service visit as a precaution." } },
-    { "@type": "Question", name: "Do I pay before or after the service?", acceptedAnswer: { "@type": "Answer", text: "You receive a confirmed quote before any work begins. Payment is made after the service is complete and you're satisfied with the result. No payment before work." } },
-    { "@type": "Question", name: "Is doorstep mobile service safe?", acceptedAnswer: { "@type": "Answer", text: "Yes — our technicians are trained, background-verified, and carry professional equipment. If we can't resolve the issue, you don't pay for it." } },
-    { "@type": "Question", name: "What payment methods do you accept?", acceptedAnswer: { "@type": "Answer", text: "Cash, all UPI apps (GPay, PhonePe, Paytm), credit/debit cards, and net banking." } },
-    { "@type": "Question", name: "Do you service all mobile phone brands?", acceptedAnswer: { "@type": "Answer", text: "Yes — we service all major brands including Apple iPhone, Samsung Galaxy, OnePlus, Xiaomi, Vivo, Oppo, Realme, Motorola, Google Pixel, and Nothing phones." } },
-    { "@type": "Question", name: "Which Hyderabad areas do you cover?", acceptedAnswer: { "@type": "Answer", text: "We cover 80+ Hyderabad areas including Gachibowli, Madhapur, HITEC City, Banjara Hills, Ameerpet, Kukatpally, Secunderabad, Dilsukhnagar, LB Nagar, Kompally and all major localities." } },
-  ],
+  mainEntity: faqCategories
+    .flatMap((c) => c.items)
+    .filter((f) => !f.confirm)
+    .map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
 };
 
 const breadcrumbSchema = {

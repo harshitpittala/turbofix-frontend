@@ -10,8 +10,8 @@ import { MapPin, Star, ShieldCheck, BadgeCheck, ArrowRight } from "lucide-react"
 const SHOW_FESTIVAL_PROMO = false;
 
 const trustBadges = [
-  { icon: Star, label: "4.9 Google Rating", color: "text-amber-500" },
-  { icon: ShieldCheck, label: "6-Month Warranty", color: "text-emerald-700" },
+  { icon: Star, label: "No Fix, No Fee", color: "text-amber-500" },
+  { icon: ShieldCheck, label: "Up to 1-Year Warranty", color: "text-emerald-700" },
   { icon: BadgeCheck, label: "Pay After Service", color: "text-emerald-700" },
 ];
 
@@ -135,7 +135,7 @@ export default function Hero() {
           className="flex flex-wrap items-center justify-center gap-2.5 mb-8"
         >
           {trustBadges.map(({ icon: Icon, label, color }) =>
-            label === "6-Month Warranty" ? (
+            label === "Up to 1-Year Warranty" ? (
               <Link
                 key={label}
                 href="/terms"

@@ -159,7 +159,7 @@ export default function BrandRepairClient({ brand }: Props) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
             {[
               { title: "OEM-Quality Parts", desc: "Grade-A parts that match or exceed original specifications." },
-              { title: "6-Month Warranty", desc: "All service work covered for 6 months on parts and workmanship." },
+              { title: "Up to 1-Year Warranty", desc: "All service work covered for up to 1 year on parts and workmanship, depending on the part." },
               { title: "Doorstep Service", desc: "We come to your home or office anywhere in Hyderabad." },
             ].map((item) => (
               <div
@@ -170,7 +170,7 @@ export default function BrandRepairClient({ brand }: Props) {
                 <CheckCircle2 className="w-6 h-6 text-emerald-700 mx-auto mb-3" />
                 <h3 className="text-slate-900 font-semibold mb-2">{item.title}</h3>
                 <p className="text-slate-500 text-sm">{item.desc}</p>
-                {item.title === "6-Month Warranty" && (
+                {item.title === "Up to 1-Year Warranty" && (
                   <Link href="/terms" className="inline-block text-xs text-blue-700 underline underline-offset-2 mt-2">
                     View full terms
                   </Link>

@@ -1,26 +1,43 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Clock, MessageCircle, Send, CheckCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle, Send, CheckCircle, ClipboardList, Star } from "lucide-react";
 import toast from "react-hot-toast";
 import { staggerContainer, fadeInUp, fadeInLeft, fadeInRight } from "@/lib/utils";
-import { API_URL } from "@/lib/config";
+import {
+  API_URL, BUSINESS_ADDRESS_LINE, CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_E164,
+  GOOGLE_BUSINESS_PROFILE_URL, WHATSAPP_URL,
+} from "@/lib/config";
 
 const contactInfo = [
-  { icon: Phone, label: "Phone", value: "+91 86396 05147", href: "tel:+918639605147", color: "#2563EB" },
-  { icon: Mail, label: "Email", value: "support@turbofix.in", href: "mailto:support@turbofix.in", color: "#1D4ED8" },
-  { icon: MapPin, label: "Address", value: "11-1-441, Aghapura, Nampally, Hyderabad", href: "#map", color: "#3B82F6" },
-  { icon: MessageCircle, label: "WhatsApp", value: "+91 86396 05147", href: "https://wa.me/918639605147", color: "#25D366" },
+  { icon: Phone, label: "Phone", value: CONTACT_PHONE, href: `tel:${CONTACT_PHONE_E164}`, color: "#2563EB" },
+  { icon: Mail, label: "Email", value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}`, color: "#1D4ED8" },
+  { icon: MapPin, label: "Studio address", value: BUSINESS_ADDRESS_LINE, href: "#map", color: "#3B82F6" },
+  { icon: MessageCircle, label: "WhatsApp", value: CONTACT_PHONE, href: WHATSAPP_URL, color: "#25D366" },
 ];
+
+// What we need to quote and bring the right part. Shown beside the form.
+const whatToInclude = [
+  "Phone brand and exact model (Settings → About phone)",
+  "What's wrong, and when it started",
+  "Any water exposure, drops or earlier service",
+  "Your area in Hyderabad and a time that suits you",
+];
+
+// TODO(owner): if you commit to a reply time (e.g. "within 2 hours, 9 AM – 9 PM"),
+// add it to REPLY_NOTE. It was removed because it wasn't confirmed.
+const REPLY_NOTE = "We reply by phone or email. For anything urgent, call or WhatsApp us.";
 
 const hours = [
   { day: "Bookings (online & WhatsApp)", time: "24/7, every day" },
   { day: "Doorstep visits, Monday – Sunday", time: "9:00 AM – 9:00 PM" },
+  { day: "Walk-in studio, Monday – Sunday", time: "9:00 AM – 9:00 PM" },
 ];
 
 // Doorstep visit hours as [openHour, closeHour] in 24h, indexed by JS getDay() (0=Sun..6=Sat).
-// Visits run 9 AM – 9 PM every day; bookings are accepted 24/7.
+// Visits and studio walk-ins run 9 AM – 9 PM every day; bookings are accepted 24/7.
 const SCHEDULE: Record<number, [number, number]> = {
   0: [9, 21], 1: [9, 21], 2: [9, 21], 3: [9, 21], 4: [9, 21], 5: [9, 21], 6: [9, 21],
 };
@@ -45,11 +62,13 @@ export default function ContactPageClient() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
   const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const isOpen = useIsOpenNow();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSending(true);
+    setError(null);
     try {
       const res = await fetch(`${API_URL}/api/contact`, {
         method: "POST",
@@ -60,9 +79,11 @@ export default function ContactPageClient() {
       if (!res.ok || !result.success) throw new Error(result.message || "Failed to send message.");
 
       setSubmitted(true);
-      toast.success(result.message || "Message sent! We'll reply within 2 hours.");
+      toast.success("Message sent. Thank you!");
     } catch (err: any) {
-      toast.error(err.message || "Something went wrong. Please call or WhatsApp us instead.");
+      const msg = err.message || "Something went wrong.";
+      setError(`${msg} Your message wasn't sent — please try again, or call or WhatsApp us on ${CONTACT_PHONE}.`);
+      toast.error(msg);
     } finally {
       setSending(false);
     }
@@ -79,11 +100,12 @@ export default function ContactPageClient() {
               <span className="section-label">Contact Us</span>
             </motion.div>
             <motion.h1 variants={fadeInUp} className="font-display text-5xl md:text-6xl font-bold mb-4 text-slate-900">
-              Let's{" "}
-              <span className="gradient-text">Talk</span>
+              Contact{" "}
+              <span className="gradient-text">TurboFix</span>
             </motion.h1>
             <motion.p variants={fadeInUp} className="text-slate-600 text-xl max-w-xl mx-auto">
-              Have a question? Need a visit? We respond within 2 hours on weekdays.
+              Doorstep mobile service across Hyderabad, plus a walk-in studio in Nampally.
+              Call, WhatsApp or send us a message.
             </motion.p>
           </motion.div>
         </div>
@@ -162,6 +184,42 @@ export default function ContactPageClient() {
                   </div>
                 )}
               </motion.div>
+
+              {/* What to include */}
+              <motion.div
+                variants={fadeInLeft}
+                className="rounded-xl p-6 mt-4"
+                style={{ background: "#FFFFFF", border: "1px solid #E2E8F0" }}
+              >
+                <div className="flex items-center gap-2 mb-4">
+                  <ClipboardList className="w-4 h-4 text-blue-700" />
+                  <h3 className="text-slate-900 font-semibold">What to tell us</h3>
+                </div>
+                <ul className="space-y-2 text-sm text-slate-600 list-disc pl-5">
+                  {whatToInclude.map((item) => <li key={item}>{item}</li>)}
+                </ul>
+                <p className="text-sm text-slate-500 mt-4">
+                  We confirm the price and parts before any work starts, and you pay only after the service.
+                  Ready to go? <Link href="/book-a-visit" className="text-blue-700 hover:underline">Book a visit</Link>.
+                </p>
+                <p className="text-sm text-slate-500 mt-2">
+                  See <Link href="/services" className="text-blue-700 hover:underline">all our mobile services</Link>,{" "}
+                  <Link href="/locations" className="text-blue-700 hover:underline">the Hyderabad areas we cover</Link>, or{" "}
+                  <Link href="/faq" className="text-blue-700 hover:underline">common questions</Link>.
+                </p>
+              </motion.div>
+
+              {GOOGLE_BUSINESS_PROFILE_URL && (
+                <motion.a
+                  variants={fadeInLeft}
+                  href={GOOGLE_BUSINESS_PROFILE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 flex items-center gap-2 text-sm font-medium text-blue-700 hover:underline"
+                >
+                  <Star className="w-4 h-4" /> See TurboFix on Google Maps and read reviews
+                </motion.a>
+              )}
             </motion.div>
 
             {/* Right - Form */}
@@ -179,13 +237,14 @@ export default function ContactPageClient() {
                   <motion.div
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
+                    role="status"
                     className="flex flex-col items-center justify-center py-12 text-center"
                   >
                     <div className="w-16 h-16 rounded-full flex items-center justify-center mb-4" style={{ background: "rgba(5,150,105,0.1)", border: "2px solid rgba(5,150,105,0.3)" }}>
                       <CheckCircle className="w-8 h-8 text-emerald-700" />
                     </div>
                     <h3 className="text-xl font-bold text-slate-900 mb-2">Message Received!</h3>
-                    <p className="text-slate-500 text-sm max-w-xs">Thanks for reaching out. We'll get back to you within 2 hours.</p>
+                    <p className="text-slate-500 text-sm max-w-xs">Thanks for reaching out. {REPLY_NOTE}</p>
                     <button
                       onClick={() => setSubmitted(false)}
                       className="mt-6 text-sm text-blue-700 hover:underline"
@@ -196,11 +255,14 @@ export default function ContactPageClient() {
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-5">
                     <h2 className="font-display text-2xl font-bold text-slate-900 mb-6">Send a Message</h2>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-xs text-slate-500 mb-1.5">Your Name</label>
+                        <label htmlFor="contact-name" className="block text-xs text-slate-500 mb-1.5">Your Name *</label>
                         <input
+                          id="contact-name"
+                          name="name"
                           type="text"
+                          autoComplete="name"
                           required
                           value={form.name}
                           onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -209,9 +271,13 @@ export default function ContactPageClient() {
                         />
                       </div>
                       <div>
-                        <label className="block text-xs text-slate-500 mb-1.5">Phone Number</label>
+                        <label htmlFor="contact-phone" className="block text-xs text-slate-500 mb-1.5">Phone Number</label>
                         <input
+                          id="contact-phone"
+                          name="phone"
                           type="tel"
+                          autoComplete="tel"
+                          inputMode="tel"
                           value={form.phone}
                           onChange={(e) => setForm({ ...form, phone: e.target.value })}
                           placeholder="+91 98765 43210"
@@ -220,9 +286,12 @@ export default function ContactPageClient() {
                       </div>
                     </div>
                     <div>
-                      <label className="block text-xs text-slate-500 mb-1.5">Email Address</label>
+                      <label htmlFor="contact-email" className="block text-xs text-slate-500 mb-1.5">Email Address *</label>
                       <input
+                        id="contact-email"
+                        name="email"
                         type="email"
+                        autoComplete="email"
                         required
                         value={form.email}
                         onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -231,8 +300,10 @@ export default function ContactPageClient() {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs text-slate-500 mb-1.5">Subject</label>
+                      <label htmlFor="contact-subject" className="block text-xs text-slate-500 mb-1.5">Subject</label>
                       <input
+                        id="contact-subject"
+                        name="subject"
                         type="text"
                         value={form.subject}
                         onChange={(e) => setForm({ ...form, subject: e.target.value })}
@@ -241,16 +312,23 @@ export default function ContactPageClient() {
                       />
                     </div>
                     <div>
-                      <label className="block text-xs text-slate-500 mb-1.5">Message</label>
+                      <label htmlFor="contact-message" className="block text-xs text-slate-500 mb-1.5">Message *</label>
                       <textarea
+                        id="contact-message"
+                        name="message"
                         required
                         rows={5}
                         value={form.message}
                         onChange={(e) => setForm({ ...form, message: e.target.value })}
-                        placeholder="Describe your device issue..."
+                        placeholder="e.g. Samsung Galaxy S23, screen cracked and touch not working, Kukatpally, any evening this week"
                         className="input-glass resize-none"
                       />
                     </div>
+                    {error && (
+                      <p role="alert" className="rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+                        {error}
+                      </p>
+                    )}
                     <button
                       type="submit"
                       disabled={sending}
@@ -259,7 +337,7 @@ export default function ContactPageClient() {
                       <Send className="w-4 h-4" />
                       {sending ? "Sending…" : "Send Message"}
                     </button>
-                    <p className="text-center text-slate-500 text-xs">We reply within 2 hours on weekdays</p>
+                    <p className="text-center text-slate-500 text-xs">* Required. {REPLY_NOTE}</p>
                   </form>
                 )}
               </div>
@@ -276,7 +354,8 @@ export default function ContactPageClient() {
             style={{ border: "1px solid #E2E8F0", height: "300px" }}
           >
             <iframe
-              src="https://maps.google.com/maps?q=11-1-441%2C%20Aghapura%2C%20Nampally%2C%20Hyderabad%2C%20Telangana%20500001&output=embed"
+              title={`Map: TurboFix studio, ${BUSINESS_ADDRESS_LINE}`}
+              src="https://maps.google.com/maps?q=17.386187%2C78.463938&z=17&output=embed"
               width="100%"
               height="300"
               style={{ border: 0 }}

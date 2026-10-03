@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   description: "Complete list of all pages on TurboFix — mobile services, brand pages, Hyderabad area pages, blog posts, and more.",
   alternates: { canonical: "https://turbofix.in/sitemap-html" },
   robots: { index: true, follow: true },
+  openGraph: {
+    title: "Site Map | TurboFix",
+    description: "Complete list of all pages on TurboFix — mobile services, brand pages, Hyderabad area pages, blog posts, and more.",
+    url: "https://turbofix.in/sitemap-html",
+  },
 };
 
 const breadcrumbSchema = {

@@ -4,7 +4,7 @@ import ServicesPage from "./ServicesPage";
 export const metadata: Metadata = {
   title: "Mobile Services in Hyderabad at Your Doorstep",
   description:
-    "8 doorstep phone services across Hyderabad: screen, battery, charging port, water damage, camera & more. OEM-grade parts, 6-month warranty.",
+    "8 doorstep phone services across Hyderabad: screen, battery, charging port, water damage, camera & more. OEM-grade parts, up to 1-year warranty.",
   alternates: { canonical: "https://turbofix.in/services" },
   openGraph: {
     title: "Mobile Service — Screen, Battery, Water Damage & More | TurboFix",

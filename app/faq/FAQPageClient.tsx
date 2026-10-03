@@ -1,58 +1,18 @@
 "use client";
 
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { Plus } from "lucide-react";
 import CTA from "@/components/home/CTA";
 import { staggerContainer, fadeInUp } from "@/lib/utils";
+import { faqCategories } from "@/data/faqs";
 
-const allFaqs = [
-  {
-    category: "Service Process",
-    items: [
-      { q: "How long does a typical visit take?", a: "Most common services — screen replacements, battery swaps, charging port fixes — are done in 20–45 minutes. Complex jobs like water damage service or motherboard service may take 2–4 hours or up to a day." },
-      { q: "Do I need to book an appointment?", a: "Walk-ins are welcome, but we strongly recommend booking online to reserve your slot. This ensures a technician is ready for you and minimizes wait time." },
-      { q: "Can I wait in-store while my phone is being serviced?", a: "Absolutely! Our waiting area has complimentary coffee, fast Wi-Fi, and a loaner device if needed. We'll text you when your service is complete." },
-      { q: "Do you offer home pickup and delivery?", a: "Yes, within 10 km of our Hitech City store. Book online, choose doorstep service, and we handle the rest — same-day in most cases." },
-    ],
-  },
-  {
-    category: "Parts & Quality",
-    items: [
-      { q: "Do you use genuine OEM parts?", a: "We use OEM (Original Equipment Manufacturer) quality parts as standard. Genuine Apple parts are available for an extra charge. We'll always tell you exactly which parts we're using before the work begins." },
-      { q: "Will my phone look and feel the same after service?", a: "For screen and battery replacements, yes — absolutely. We strive for factory-quality results. Parts are color-matched and all work is tested through a 10-point quality checklist before handoff." },
-      { q: "Do you sell spare parts separately?", a: "Yes, we stock common batteries, screens, and accessories for self-service enthusiasts. Visit our store or contact us for availability." },
-    ],
-  },
-  {
-    category: "Warranty & Policies",
-    items: [
-      { q: "What warranty do you offer?", a: "All service work carries a 6-month warranty. If the same issue recurs within 6 months due to parts or workmanship, we resolve it free. Physical damage and new issues are not covered." },
-      { q: "What if my phone develops a new problem after service?", a: "If the new issue is related to our service, it's covered under warranty. If it's an unrelated problem, we'll diagnose it for free and give you a fair quote." },
-      { q: "What if you can't resolve my device's issue?", a: "We don't charge for unsuccessful work. You only pay when your device is fully functional. If we're unable to resolve it, the diagnostic assessment is still free." },
-    ],
-  },
-  {
-    category: "Data & Security",
-    items: [
-      { q: "Will my data be safe?", a: "We only access components relevant to the service. Our technicians never access your files, photos, or apps. We recommend backing up before any service visit as a precaution — though your data will be safe with us." },
-      { q: "Do you require my passcode?", a: "Only if the service requires software testing (e.g., screen touch verification). Even then, you can change your passcode before and after. We never retain access credentials." },
-      { q: "Is my device insured while in your care?", a: "Yes. All devices are covered under our in-store insurance. In the extremely unlikely event of accidental damage in our care, we will service or replace the device at no cost to you." },
-    ],
-  },
-  {
-    category: "Payment Methods",
-    items: [
-      { q: "How do you charge — upfront or after?", a: "You receive a confirmed quote before any work begins. Payment is made after the service is complete and you're satisfied with the result. No payment before work." },
-      { q: "What payment methods do you accept?", a: "Cash, all UPI apps (GPay, PhonePe, Paytm), credit/debit cards, and net banking." },
-      { q: "Do you offer student or senior discounts?", a: "Yes! Show a valid student ID for 5% off. Senior citizens (60+) receive 10% off all services. Cannot be combined with other offers." },
-    ],
-  },
-];
+// Content lives in data/faqs.ts so the FAQPage JSON-LD is built from the same list.
+const allFaqs = faqCategories;
 
 export default function FAQPageClient() {
-  const [openKey, setOpenKey] = useState<string | null>("Service Process-0");
+  const [openKey, setOpenKey] = useState<string | null>("Booking & Visits-0");
 
   return (
     <>
@@ -101,6 +61,8 @@ export default function FAQPageClient() {
                       >
                         <button
                           onClick={() => setOpenKey(isOpen ? null : key)}
+                          aria-expanded={isOpen}
+                          aria-controls={`faq-${i}-${category.category.replace(/\W+/g, "-")}`}
                           className="w-full flex items-center justify-between px-5 py-4 text-left"
                         >
                           <span className={`font-medium text-sm pr-4 transition-colors ${isOpen ? "text-slate-900" : "text-slate-700"}`}>
@@ -118,20 +80,19 @@ export default function FAQPageClient() {
                             <Plus className="w-3 h-3" style={{ color: isOpen ? "#2563EB" : "#94A3B8" }} />
                           </motion.div>
                         </button>
-                        <AnimatePresence initial={false}>
-                          {isOpen && (
-                            <motion.div
-                              initial={{ height: 0, opacity: 0 }}
-                              animate={{ height: "auto", opacity: 1 }}
-                              exit={{ height: 0, opacity: 0 }}
-                              transition={{ duration: 0.3, ease: "easeInOut" }}
-                            >
-                              <div className="px-5 pb-4 text-slate-500 text-sm leading-relaxed border-t border-slate-100 pt-3">
-                                {faq.a}
-                              </div>
-                            </motion.div>
-                          )}
-                        </AnimatePresence>
+                        {/* Always rendered (collapsed when closed) so answers are in the server HTML and match the FAQPage schema. */}
+                        <motion.div
+                          id={`faq-${i}-${category.category.replace(/\W+/g, "-")}`}
+                          initial={false}
+                          aria-hidden={!isOpen}
+                          style={{ overflow: "hidden" }}
+                          animate={isOpen ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
+                          transition={{ duration: 0.3, ease: "easeInOut" }}
+                        >
+                          <div className="px-5 pb-4 text-slate-500 text-sm leading-relaxed border-t border-slate-100 pt-3">
+                            {faq.a}
+                          </div>
+                        </motion.div>
                       </div>
                     );
                   })}

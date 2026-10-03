@@ -3,10 +3,14 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  Zap, MapPin, Phone, Mail, Instagram, Facebook, Twitter, Youtube,
+  Zap, MapPin, Phone, Mail, Instagram, Star,
   ArrowUpRight, Heart,
 } from "lucide-react";
 import { fadeInUp, staggerContainer } from "@/lib/utils";
+import {
+  BUSINESS_ADDRESS, CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_E164,
+  GOOGLE_BUSINESS_PROFILE_URL, SOCIAL_PROFILES,
+} from "@/lib/config";
 
 const services = [
   { label: "Screen Replacement",         href: "/screen-replacement-hyderabad" },
@@ -47,12 +51,8 @@ const locations = [
   { label: "Outskirts & Growth Areas",  href: "/locations/zones/outskirts" },
 ];
 
-const socials = [
-  { icon: Instagram, href: "https://www.instagram.com/turbofix.in", label: "Instagram" },
-  { icon: Facebook,  href: "https://www.facebook.com/turbofix",  label: "Facebook" },
-  { icon: Twitter,   href: "https://twitter.com/turbofix",       label: "Twitter" },
-  { icon: Youtube,   href: "https://www.youtube.com/@turbofix",  label: "YouTube" },
-];
+const socialIcons = { Instagram } as const;
+const socials = SOCIAL_PROFILES.map((p) => ({ ...p, icon: socialIcons[p.label] }));
 
 const quickLinks = [
   { label: "About TurboFix",  href: "/about" },
@@ -94,8 +94,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
-              Doorstep mobile service in Hyderabad. Pickup &amp; delivery,
-              OEM-grade parts, and trained technicians.
+              Doorstep mobile service in Hyderabad, plus a walk-in studio in
+              Nampally. OEM-grade parts, trained technicians, up to 1-year warranty.
             </p>
             <div className="flex items-center gap-3 mb-5">
               {socials.map(({ icon: Icon, href, label }) => (
@@ -113,16 +113,25 @@ export default function Footer() {
             </div>
             <div className="flex items-start gap-2 text-sm text-gray-500 mb-3">
               <MapPin className="w-4 h-4 text-blue-400 mt-0.5 shrink-0" />
-              <span>11-1-441, Aghapura, Nampally,<br />Hyderabad, Telangana</span>
+              <address className="not-italic">
+                {BUSINESS_ADDRESS.street},<br />
+                {BUSINESS_ADDRESS.locality}, {BUSINESS_ADDRESS.region} {BUSINESS_ADDRESS.postalCode}
+              </address>
             </div>
-            <a href="tel:+918639605147" className="flex items-center gap-2 text-sm text-gray-500 hover:text-white transition-colors mb-1">
+            <a href={`tel:${CONTACT_PHONE_E164}`} className="flex items-center gap-2 text-sm text-gray-500 hover:text-white transition-colors mb-1">
               <Phone className="w-3.5 h-3.5 text-blue-400" />
-              +91 86396 05147
+              {CONTACT_PHONE}
             </a>
-            <a href="mailto:support@turbofix.in" className="flex items-center gap-2 text-sm text-gray-500 hover:text-white transition-colors">
+            <a href={`mailto:${CONTACT_EMAIL}`} className="flex items-center gap-2 text-sm text-gray-500 hover:text-white transition-colors">
               <Mail className="w-3.5 h-3.5 text-blue-400" />
-              support@turbofix.in
+              {CONTACT_EMAIL}
             </a>
+            {GOOGLE_BUSINESS_PROFILE_URL && (
+              <a href={GOOGLE_BUSINESS_PROFILE_URL} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-500 hover:text-white transition-colors mt-1">
+                <Star className="w-3.5 h-3.5 text-blue-400" />
+                Our Google reviews
+              </a>
+            )}
           </motion.div>
 
           {/* Services */}

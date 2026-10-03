@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import ContactPageClient from "./ContactPageClient";
 
 export const metadata: Metadata = {
-  title: "Contact TurboFix — Hyderabad",
+  title: "Contact TurboFix: Phone, Address & Hours",
   description:
-    "Contact TurboFix for mobile service in Hyderabad. Call +91 86396 05147, WhatsApp us, or visit our store at Aghapura, Nampally. Open 7 days a week.",
+    "Call or WhatsApp TurboFix on +91 86396 05147, email us, or find our studio in Aghapura, Nampally, Hyderabad. Doorstep visits 9 AM–9 PM, every day.",
   alternates: { canonical: "https://turbofix.in/contact" },
   openGraph: {
     title: "Contact TurboFix — Mobile Service Hyderabad",
     description:
-      "Get in touch with TurboFix. Call +91 86396 05147, WhatsApp, email support@turbofix.in, or visit our Hyderabad store. Open 7 days a week.",
+      "Call or WhatsApp TurboFix on +91 86396 05147, email support@turbofix.in, or find our studio in Aghapura, Nampally. Doorstep visits 9 AM–9 PM daily.",
     url: "https://turbofix.in/contact",
   },
 };
