@@ -15,16 +15,14 @@ const contactInfo = [
 ];
 
 const hours = [
-  { day: "Monday – Friday", time: "9:00 AM – 9:00 PM" },
-  { day: "Saturday", time: "9:00 AM – 8:00 PM" },
-  { day: "Sunday", time: "10:00 AM – 6:00 PM" },
+  { day: "Bookings (online & WhatsApp)", time: "24/7, every day" },
+  { day: "Doorstep visits, Monday – Sunday", time: "9:00 AM – 9:00 PM" },
 ];
 
-// Business hours as [openHour, closeHour] in 24h, indexed by JS getDay() (0=Sun..6=Sat)
+// Doorstep visit hours as [openHour, closeHour] in 24h, indexed by JS getDay() (0=Sun..6=Sat).
+// Visits run 9 AM – 9 PM every day; bookings are accepted 24/7.
 const SCHEDULE: Record<number, [number, number]> = {
-  0: [10, 18], // Sunday
-  1: [9, 21], 2: [9, 21], 3: [9, 21], 4: [9, 21], 5: [9, 21], // Mon–Fri
-  6: [9, 20], // Saturday
+  0: [9, 21], 1: [9, 21], 2: [9, 21], 3: [9, 21], 4: [9, 21], 5: [9, 21], 6: [9, 21],
 };
 
 function useIsOpenNow() {
@@ -159,7 +157,7 @@ export default function ContactPageClient() {
                   <div className="mt-4 pt-4 border-t border-slate-100 flex items-center gap-2">
                     <div className={`w-2 h-2 rounded-full ${isOpen ? "bg-emerald-500 animate-pulse" : "bg-slate-300"}`} />
                     <span className={`text-xs font-medium ${isOpen ? "text-emerald-700" : "text-slate-500"}`}>
-                      {isOpen ? "We're open right now" : "We're closed right now"}
+                      {isOpen ? "Technicians are on visits right now" : "Visits resume at 9 AM — you can still book now"}
                     </span>
                   </div>
                 )}

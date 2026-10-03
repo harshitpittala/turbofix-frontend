@@ -136,18 +136,14 @@ const localBusinessSchema = {
     latitude: 17.3850,
     longitude: 78.4867,
   },
+  // Bookings are open 24/7 (matches the Google Business Profile hours).
+  // Doorstep visits run 09:00–21:00 every day (see contactPoint below).
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "09:00",
-      closes: "21:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Sunday"],
-      opens: "10:00",
-      closes: "18:00",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "00:00",
+      closes: "23:59",
     },
   ],
   priceRange: "₹₹",
@@ -206,10 +202,9 @@ const organizationSchema = {
       contactType: "customer service",
       areaServed: "IN",
       availableLanguage: ["en", "hi", "te"],
-      // Same as the business's visit hours (Mon–Sat 09–21, Sun 10–18).
+      // Doorstep visit hours: 09:00–21:00, Monday to Sunday.
       hoursAvailable: [
-        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "09:00", closes: "21:00" },
-        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Sunday"], opens: "10:00", closes: "18:00" },
+        { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], opens: "09:00", closes: "21:00" },
       ],
     },
     {
