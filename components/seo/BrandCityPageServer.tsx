@@ -4,6 +4,8 @@ import { getBrandCityPageBySlug } from "@/data/brandCityPages";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getPriorityAreas } from "@/lib/priorityAreas";
 import { parsePriceRange } from "@/lib/utils";
+import IphoneModelLinks from "@/components/seo/IphoneModelLinks";
+import SamsungMotherboardLinks from "@/components/seo/SamsungMotherboardLinks";
 
 interface Props { slug: string }
 
@@ -65,7 +67,15 @@ export default function BrandCityPageServer({ slug }: Props) {
       <JsonLd schema={serviceSchema}    id={`schema-brand-city-${page.slug}`} />
       <JsonLd schema={faqSchema}        id={`schema-faq-${page.slug}`} />
       <JsonLd schema={breadcrumbSchema} id={`schema-breadcrumb-${page.slug}`} />
-      <BrandCityPageTemplate page={page} popularAreas={getPriorityAreas()} />
+      <BrandCityPageTemplate
+        page={page}
+        popularAreas={getPriorityAreas()}
+        extra={
+          page.slug === "iphone-service-hyderabad" ? <IphoneModelLinks />
+          : page.slug === "samsung-service-hyderabad" ? <SamsungMotherboardLinks />
+          : undefined
+        }
+      />
     </>
   );
 }

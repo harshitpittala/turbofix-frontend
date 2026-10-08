@@ -2,6 +2,9 @@ import { MetadataRoute } from "next";
 import { getPublishedLocations, zoneLabels } from "@/data/locations";
 import { blogSlugs } from "@/data/sitemapData";
 import lastmodData from "@/data/lastmod.json";
+import { iphoneModels } from "@/data/iphoneModels";
+import { allIphoneServicePaths, iphoneServices, iphoneGuideSlug } from "@/data/iphoneServicePages";
+import { allSamsungMotherboardPaths } from "@/data/samsungMotherboardPages";
 
 const BASE = "https://turbofix.in";
 
@@ -28,6 +31,7 @@ const servicePages = [
   "camera-service-hyderabad",
   "back-panel-replacement-hyderabad",
   "motherboard-service-hyderabad",
+  "samsung-motherboard-service",
 ];
 
 // High-intent brand+city keyword pages
@@ -106,10 +110,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // /[model] and /[model]/[service] — iPhone model hubs and model × service pages
+  const iphoneModelPages: MetadataRoute.Sitemap = [
+    ...iphoneServices.map((s) => iphoneGuideSlug(s.slug)),
+    ...iphoneModels.map((m) => m.slug),
+  ].map((slug) => ({
+    url: `${BASE}/${slug}`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+  const iphoneServicePages: MetadataRoute.Sitemap = [...allIphoneServicePaths(), ...allSamsungMotherboardPaths()].map(({ model, service }) => ({
+    url: `${BASE}/${model}/${service}`,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
   const all: MetadataRoute.Sitemap = [
     ...staticPages,
     ...brandCityPagesMap,   // brand+city pages get high priority
     ...servicePagesMap,     // service pages get high priority
+    ...iphoneModelPages,
+    ...iphoneServicePages,
     ...brandDetailPages,
     ...zonePages,
     ...locationPages,

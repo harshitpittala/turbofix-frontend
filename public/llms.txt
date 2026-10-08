@@ -1,0 +1,30 @@
+# TurboFix
+
+> TurboFix is an independent mobile phone service business in Hyderabad, India (not affiliated with Apple, Samsung or any phone manufacturer). Technicians service phones at the customer's home or office, offer pickup and delivery, and run a walk-in studio at Bharat Nagar, Aghapura, Nampally, Hyderabad 500001. Phone and WhatsApp: +91 86396 05147. Email: support@turbofix.in.
+
+Prices are quoted per phone after inspection, before any work; customers pay after the service. Warranty is 3, 6 or 12 months depending on the part grade, confirmed with the quote. Model facts on the pages below are checked against manufacturer specifications, Apple Support documents and published teardowns, with sources listed on each page.
+
+## Services (all brands)
+- [Screen replacement](https://turbofix.in/screen-replacement-hyderabad)
+- [Battery replacement](https://turbofix.in/battery-replacement-hyderabad)
+- [Charging port service](https://turbofix.in/charging-port-service-hyderabad)
+- [Camera service](https://turbofix.in/camera-service-hyderabad)
+- [Speaker and microphone service](https://turbofix.in/speaker-service-hyderabad)
+- [Back panel replacement](https://turbofix.in/back-panel-replacement-hyderabad)
+- [Motherboard service](https://turbofix.in/motherboard-service-hyderabad)
+- [Water damage service](https://turbofix.in/water-damage-hyderabad)
+
+## iPhone (iPhone 11 to iPhone 18 Pro Max)
+- [iPhone service in Hyderabad](https://turbofix.in/iphone-service-hyderabad): links to a page per model (e.g. /iphone-15-pro) and per model and service (e.g. /iphone-15-pro/battery-replacement). Services: screen-replacement, battery-replacement, charging-port-service, camera-service, speaker-microphone-service, back-panel-replacement, motherboard-replacement, chip-level-service.
+
+## Samsung Galaxy
+- [Samsung service in Hyderabad](https://turbofix.in/samsung-service-hyderabad)
+- [Samsung motherboard service guide](https://turbofix.in/samsung-motherboard-service): data, IMEI, Factory Reset Protection and Knox explained, with a page per Galaxy model sold in India since 2020 (e.g. /samsung-galaxy-s24-ultra/motherboard-service).
+
+## About and policies
+- [About TurboFix](https://turbofix.in/about)
+- [Contact](https://turbofix.in/contact)
+- [No fix, no fee policy](https://turbofix.in/no-fix-no-fee-policy)
+- [Terms and warranty](https://turbofix.in/terms)
+- [Areas served](https://turbofix.in/locations)
+- [Full site map](https://turbofix.in/sitemap-html)

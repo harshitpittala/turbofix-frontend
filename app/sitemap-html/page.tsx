@@ -7,6 +7,9 @@ import { getPublishedLocations, getCoveredAreas } from "@/data/locations";
 const locationData = getPublishedLocations();
 import { blogSlugs, blogTitles } from "@/data/sitemapData";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { iphoneModels } from "@/data/iphoneModels";
+import { iphoneServices, iphoneGuideSlug, iphoneGuideMeta } from "@/data/iphoneServicePages";
+import { samsungModels } from "@/data/samsungModels";
 
 export const metadata: Metadata = {
   title: "Site Map — All Pages",
@@ -75,6 +78,19 @@ const sections = [
       { label: "Google Pixel Service Hyderabad",  href: "/google-pixel-service-hyderabad" },
       { label: "Motorola Service Hyderabad",      href: "/motorola-service-hyderabad" },
     ],
+  },
+  {
+    title: "iPhone Models",
+    color: "#6366F1",
+    links: [
+      ...iphoneServices.map((s) => ({ label: iphoneGuideMeta(s).title, href: `/${iphoneGuideSlug(s.slug)}` })),
+      ...iphoneModels.map((m) => ({ label: `${m.name} Service`, href: `/${m.slug}` })),
+    ],
+  },
+  {
+    title: "Samsung Motherboard Service",
+    color: "#1428A0",
+    links: [{ label: "Samsung Motherboard Service Guide", href: "/samsung-motherboard-service" }, ...samsungModels.map((m) => ({ label: `${m.name} Motherboard Service`, href: `/${m.slug}/motherboard-service` }))],
   },
   {
     title: "Hyderabad Coverage",

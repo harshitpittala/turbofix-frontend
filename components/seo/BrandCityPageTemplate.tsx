@@ -35,9 +35,14 @@ function FAQItem({ q, a, i }: { q: string; a: string; i: number }) {
   );
 }
 
-interface Props { page: BrandCityPageData; popularAreas?: AreaLink[] }
+interface Props {
+  page: BrandCityPageData;
+  popularAreas?: AreaLink[];
+  /** Server-rendered section (e.g. iPhone model links) shown before the area links. */
+  extra?: React.ReactNode;
+}
 
-export default function BrandCityPageTemplate({ page, popularAreas = [] }: Props) {
+export default function BrandCityPageTemplate({ page, popularAreas = [], extra }: Props) {
   return (
     <>
       {/* ── HERO ── */}
@@ -242,6 +247,7 @@ export default function BrandCityPageTemplate({ page, popularAreas = [] }: Props
         </div>
       </section>
 
+      {extra}
       <PopularAreas label={`${page.brand} Service`} areas={popularAreas} />
 
       <CTA />

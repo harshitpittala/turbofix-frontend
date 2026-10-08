@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description:
       "A technician services your phone at home or office across Hyderabad, or walk in to our Nampally studio. Screen, battery, water damage, iPhone & Samsung. Up to 1-year warranty.",
     url: "https://turbofix.in",
-    images: [{ url: "https://turbofix.in/og-image.jpg", width: 1200, height: 630 }],
+    images: [{ url: "https://turbofix.in/opengraph-image", width: 1200, height: 630 }],
   },
 };
 

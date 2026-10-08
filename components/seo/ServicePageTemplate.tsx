@@ -34,9 +34,14 @@ function FAQItem({ q, a, i }: { q: string; a: string; i: number }) {
   );
 }
 
-interface Props { svc: ServicePageData; popularAreas?: AreaLink[] }
+interface Props {
+  svc: ServicePageData;
+  popularAreas?: AreaLink[];
+  /** Server-rendered section (e.g. iPhone model links) shown before the area links. */
+  extra?: React.ReactNode;
+}
 
-export default function ServicePageTemplate({ svc, popularAreas = [] }: Props) {
+export default function ServicePageTemplate({ svc, popularAreas = [], extra }: Props) {
   return (
     <>
       {/* ── HERO ── */}
@@ -234,6 +239,7 @@ export default function ServicePageTemplate({ svc, popularAreas = [] }: Props) {
         </div>
       </section>
 
+      {extra}
       <PopularAreas label={svc.name} areas={popularAreas} />
 
       <CTA />

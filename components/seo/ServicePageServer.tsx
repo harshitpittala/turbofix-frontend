@@ -9,6 +9,8 @@ import { getServicePageBySlug } from "@/data/servicePages";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getPriorityAreas } from "@/lib/priorityAreas";
 import { parsePriceRange } from "@/lib/utils";
+import IphoneModelLinks, { IPHONE_SERVICE_FOR_GENERAL_PAGE } from "@/components/seo/IphoneModelLinks";
+import SamsungMotherboardLinks from "@/components/seo/SamsungMotherboardLinks";
 
 interface Props { slug: string }
 
@@ -65,7 +67,16 @@ export default function ServicePageServer({ slug }: Props) {
       <JsonLd schema={serviceSchema}   id={`schema-service-${svc.slug}`} />
       <JsonLd schema={faqSchema}       id={`schema-faq-${svc.slug}`} />
       <JsonLd schema={breadcrumbSchema} id={`schema-breadcrumb-${svc.slug}`} />
-      <ServicePageTemplate svc={svc} popularAreas={getPriorityAreas()} />
+      <ServicePageTemplate
+        svc={svc}
+        popularAreas={getPriorityAreas()}
+        extra={
+          <>
+            {IPHONE_SERVICE_FOR_GENERAL_PAGE[svc.slug] && <IphoneModelLinks service={IPHONE_SERVICE_FOR_GENERAL_PAGE[svc.slug]} />}
+            {svc.slug === "motherboard-service-hyderabad" && <SamsungMotherboardLinks />}
+          </>
+        }
+      />
     </>
   );
 }

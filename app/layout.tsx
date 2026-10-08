@@ -71,7 +71,7 @@ export const metadata: Metadata = {
       "Doorstep mobile service in Hyderabad and a walk-in studio in Nampally. Screen, battery, charging port and water damage service for iPhone, Samsung, OnePlus & more. Up to 1-year warranty.",
     siteName: "TurboFix",
     images: [{
-      url: "https://turbofix.in/og-image.jpg",
+      url: "https://turbofix.in/opengraph-image",
       width: 1200,
       height: 630,
       alt: "TurboFix — Premium Doorstep Mobile Service in Hyderabad",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "TurboFix — Mobile Service at Your Doorstep | Hyderabad",
     description: "Fast doorstep mobile service in Hyderabad. Screen, battery, water damage & more. Book now!",
-    images: ["https://turbofix.in/og-image.jpg"],
+    images: ["https://turbofix.in/opengraph-image"],
     // No site/creator handle: @turbofix isn't a confirmed TurboFix account.
   },
   robots: {
@@ -100,14 +100,19 @@ export const metadata: Metadata = {
   // ── Favicon / App Icons ─────────────────────────────────────────────────────
   // Google Search requires a PNG/ICO/JPG — SVG is NOT supported for search icons.
   // Files must exist in /public before building.
+  // Google Search favicon rules: square, a multiple of 48px, crawlable, linked
+  // from the homepage. /favicon.ico also exists because some crawlers fetch it
+  // directly (it returned 404 before 8 Oct 2026).
   icons: {
     icon: [
-      { url: "/favicon.svg",    type: "image/svg+xml"  },   // browser tab fallback
-      { url: "/icon-192.png",   type: "image/png", sizes: "192x192"  },
-      { url: "/icon-512.png",   type: "image/png", sizes: "512x512"  },
+      { url: "/favicon.ico",    sizes: "48x48" },
+      { url: "/icon-48.png",    type: "image/png", sizes: "48x48"   },
+      { url: "/icon-192.png",   type: "image/png", sizes: "192x192" },
+      { url: "/favicon.svg",    type: "image/svg+xml" },
+      { url: "/icon-512.png",   type: "image/png", sizes: "512x512" },
     ],
     apple:    [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
-    shortcut: "/icon-192.png",
+    shortcut: "/favicon.ico",
   },
 };
 
@@ -129,10 +134,10 @@ const localBusinessSchema = {
   logo: {
     "@type": "ImageObject",
     url: "https://turbofix.in/logo.png",
-    width: 200,
-    height: 200,
+    width: 512,
+    height: 512,
   },
-  image: "https://turbofix.in/og-image.jpg",
+  image: "https://turbofix.in/opengraph-image",
   telephone: CONTACT_PHONE_E164,
   email: CONTACT_EMAIL,
   address: {
@@ -198,8 +203,8 @@ const organizationSchema = {
   logo: {
     "@type": "ImageObject",
     url: "https://turbofix.in/logo.png",
-    width: 200,
-    height: 200,
+    width: 512,
+    height: 512,
   },
   foundingDate: "2023",
   foundingLocation: {
@@ -232,8 +237,10 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "@id": "https://turbofix.in/#website",
+  // Google's preferred site name comes from this block on the homepage.
   name: "TurboFix",
-  url: "https://turbofix.in",
+  alternateName: ["TurboFix Hyderabad", "turbofix.in"],
+  url: "https://turbofix.in/",
   description: "Doorstep mobile service in Hyderabad — trained technicians, OEM parts, up to 1-year warranty",
   publisher: { "@id": "https://turbofix.in/#organization" },
   inLanguage: "en-IN",
