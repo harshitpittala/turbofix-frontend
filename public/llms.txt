@@ -1,30 +1,79 @@
 # TurboFix
 
-> TurboFix is an independent mobile phone service business in Hyderabad, India (not affiliated with Apple, Samsung or any phone manufacturer). Technicians service phones at the customer's home or office, offer pickup and delivery, and run a walk-in studio at Bharat Nagar, Aghapura, Nampally, Hyderabad 500001. Phone and WhatsApp: +91 86396 05147. Email: support@turbofix.in.
+> TurboFix is an independent mobile phone service business in Hyderabad, India, offering doorstep service, pickup and delivery, and a walk-in studio in Nampally.
 
-Prices are quoted per phone after inspection, before any work; customers pay after the service. Warranty is 3, 6 or 12 months depending on the part grade, confirmed with the quote. Model facts on the pages below are checked against manufacturer specifications, Apple Support documents and published teardowns, with sources listed on each page.
+TurboFix technicians service phones at the customer's home or office anywhere in Hyderabad and Secunderabad, offer pickup and delivery, and run a walk-in studio at Bharat Nagar, Aghapura, Nampally, Hyderabad 500001. TurboFix is not affiliated with Apple, Samsung or any phone manufacturer.
+
+Prices are quoted per phone after inspection, before any work; customers pay after the service. Parts carry a 3-, 6- or 12-month warranty depending on the part grade, confirmed with the quote. Model facts on the pages below are checked against manufacturer specifications, Apple Support documents and published teardowns, with sources listed on each page.
+
+## Key Facts
+
+- Name: TurboFix (website: turbofix.in)
+- Founded: 2023 in Hyderabad, Telangana, India
+- What it does: doorstep mobile phone service, pickup and delivery, and a walk-in studio
+- Walk-in studio: Bharat Nagar, Aghapura, Nampally, Hyderabad, Telangana 500001
+- Areas served: Hyderabad and Secunderabad
+- Hours: doorstep visits and studio 9 AM to 9 PM, every day; online and WhatsApp bookings 24/7
+- Brands serviced: Apple iPhone, Samsung Galaxy, OnePlus, Xiaomi/Redmi, Realme, Vivo, Oppo, Motorola, Google Pixel
+- Services: screen replacement, battery replacement, charging port, camera, speaker and microphone, back glass, motherboard (chip-level) and water damage service
+- Warranty: 3, 6 or 12 months on replaced parts, depending on part grade
+- Payment: after the service; cash, UPI, cards and net banking
+- Languages: English, Telugu, Hindi
 
 ## Services (all brands)
-- [Screen replacement](https://turbofix.in/screen-replacement-hyderabad)
-- [Battery replacement](https://turbofix.in/battery-replacement-hyderabad)
-- [Charging port service](https://turbofix.in/charging-port-service-hyderabad)
-- [Camera service](https://turbofix.in/camera-service-hyderabad)
-- [Speaker and microphone service](https://turbofix.in/speaker-service-hyderabad)
-- [Back panel replacement](https://turbofix.in/back-panel-replacement-hyderabad)
-- [Motherboard service](https://turbofix.in/motherboard-service-hyderabad)
-- [Water damage service](https://turbofix.in/water-damage-hyderabad)
 
-## iPhone (iPhone 11 to iPhone 18 Pro Max)
-- [iPhone service in Hyderabad](https://turbofix.in/iphone-service-hyderabad): links to a page per model (e.g. /iphone-15-pro) and per model and service (e.g. /iphone-15-pro/battery-replacement). Services: screen-replacement, battery-replacement, charging-port-service, camera-service, speaker-microphone-service, back-panel-replacement, motherboard-replacement, chip-level-service.
+- [Screen replacement in Hyderabad](https://turbofix.in/screen-replacement-hyderabad): cracked or unresponsive display replacement at your doorstep or the Nampally studio, with part grades and warranty explained.
+- [Battery replacement in Hyderabad](https://turbofix.in/battery-replacement-hyderabad): replacement of swollen, draining or degraded phone batteries, usually done during the doorstep visit.
+- [Charging port service](https://turbofix.in/charging-port-service-hyderabad): diagnosis and cleaning or replacement of loose, slow or non-charging USB-C and Lightning ports.
+- [Camera service](https://turbofix.in/camera-service-hyderabad): rear and front camera module and lens glass replacement for blurry, cracked or black camera faults.
+- [Speaker and microphone service](https://turbofix.in/speaker-service-hyderabad): fixes for low or crackling earpiece and loudspeaker sound and microphones callers cannot hear.
+- [Back panel replacement](https://turbofix.in/back-panel-replacement-hyderabad): cracked back glass and rear housing replacement for iPhone and Android phones.
+- [Motherboard service](https://turbofix.in/motherboard-service-hyderabad): chip-level board diagnosis for dead phones, boot loops, no network and no power faults.
+- [Water damage service](https://turbofix.in/water-damage-hyderabad): cleaning, drying and board-level treatment for phones exposed to water, with what to do in the first hour.
 
-## Samsung Galaxy
-- [Samsung service in Hyderabad](https://turbofix.in/samsung-service-hyderabad)
-- [Samsung motherboard service guide](https://turbofix.in/samsung-motherboard-service): data, IMEI, Factory Reset Protection and Knox explained, with a page per Galaxy model sold in India since 2020 (e.g. /samsung-galaxy-s24-ultra/motherboard-service).
+## Brands
 
-## About and policies
-- [About TurboFix](https://turbofix.in/about)
-- [Contact](https://turbofix.in/contact)
-- [No fix, no fee policy](https://turbofix.in/no-fix-no-fee-policy)
-- [Terms and warranty](https://turbofix.in/terms)
-- [Areas served](https://turbofix.in/locations)
-- [Full site map](https://turbofix.in/sitemap-html)
+- [iPhone service in Hyderabad](https://turbofix.in/iphone-service-hyderabad): iPhone 11 to iPhone 18 Pro Max, with a page per model (e.g. /iphone-15-pro) and per model and service (e.g. /iphone-15-pro/battery-replacement).
+- [Samsung service in Hyderabad](https://turbofix.in/samsung-service-hyderabad): Galaxy S, Z, A and M series phones serviced at your doorstep or the studio.
+- [Samsung motherboard service guide](https://turbofix.in/samsung-motherboard-service): data, IMEI, Factory Reset Protection and Knox explained, with a page per Galaxy model sold in India since 2020.
+- [OnePlus service in Hyderabad](https://turbofix.in/oneplus-service-hyderabad): screen, battery, port and board service for OnePlus and Nord phones.
+- [Xiaomi and Redmi service in Hyderabad](https://turbofix.in/xiaomi-service-hyderabad): screen, battery, port and board service for Xiaomi and Redmi phones.
+- [Realme service in Hyderabad](https://turbofix.in/realme-service-hyderabad): service for Realme number, Narzo and GT series phones.
+- [Vivo service in Hyderabad](https://turbofix.in/vivo-service-hyderabad): screen, battery, port and board service for Vivo phones.
+- [Oppo service in Hyderabad](https://turbofix.in/oppo-service-hyderabad): screen, battery, port and board service for Oppo phones, including Reno and Find X.
+- [Motorola service in Hyderabad](https://turbofix.in/motorola-service-hyderabad): service for Moto G, Edge and Razr phones.
+- [Google Pixel service in Hyderabad](https://turbofix.in/google-pixel-service-hyderabad): service for Pixel phones, including screen and battery replacement.
+
+## How it works
+
+- [Book a doorstep visit](https://turbofix.in/book-a-visit): how a booking works, from WhatsApp or online request to a technician visit, quote and payment after service.
+- [Frequently asked questions](https://turbofix.in/faq): answers on pricing, warranty, part grades, data privacy, service time and doorstep visits.
+- [No fix, no fee policy](https://turbofix.in/no-fix-no-fee-policy): when a customer pays nothing because a fault could not be fixed.
+- [Areas served](https://turbofix.in/locations): Hyderabad and Secunderabad neighbourhoods covered by doorstep service, with a page per area.
+- [Customer reviews](https://turbofix.in/testimonials): verbatim customer reviews from the TurboFix Google Business Profile.
+
+## Guides
+
+- [How doorstep mobile service works](https://turbofix.in/blog/how-doorstep-mobile-service-works): step-by-step explanation of a doorstep phone service visit.
+- [How to choose a mobile service provider in Hyderabad](https://turbofix.in/blog/choosing-mobile-service-hyderabad): what to check on parts, warranty, pricing and data privacy.
+- [Signs your phone battery needs replacement](https://turbofix.in/blog/phone-battery-replacement-signs): the symptoms of a worn or swollen battery.
+- [Phone fell in water: the first 30 minutes](https://turbofix.in/blog/water-damage-phone-service): what to do, and avoid, right after water exposure.
+- [iPhone screen replacement guide](https://turbofix.in/blog/iphone-screen-replacement-guide): screen grades, True Tone and Face ID considerations for iPhone displays.
+- [Phone motherboard service: when is it worth it?](https://turbofix.in/blog/phone-motherboard-service-guide): when board-level service makes sense versus replacing the phone.
+- [Software vs hardware phone issues](https://turbofix.in/blog/software-vs-hardware-phone-issues): how to tell whether a fault needs a technician.
+- [All guides](https://turbofix.in/blog): the full list of TurboFix phone care and service guides.
+
+## About
+
+- [About TurboFix](https://turbofix.in/about): who TurboFix is, how the service model works and where the studio is.
+- [Terms and warranty](https://turbofix.in/terms): warranty periods, claim process and service terms.
+- [Privacy policy](https://turbofix.in/privacy): how customer and device data is handled.
+- [Full site map](https://turbofix.in/sitemap-html): every page on the site.
+
+## Contact
+
+- Phone and WhatsApp: +91 86396 05147 (https://wa.me/918639605147)
+- Email: support@turbofix.in
+- Website: https://turbofix.in
+- Studio: Bharat Nagar, Aghapura, Nampally, Hyderabad, Telangana 500001
+- Instagram: https://www.instagram.com/turbofix.in

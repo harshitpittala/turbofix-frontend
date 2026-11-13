@@ -19,6 +19,23 @@ const sameAs = [
   ...(GOOGLE_BUSINESS_PROFILE_URL ? [GOOGLE_BUSINESS_PROFILE_URL] : []),
 ];
 
+// Topics TurboFix works on — helps AI search engines connect the brand to
+// these queries. Only list services actually offered (see the service pages).
+const knowsAbout = [
+  "Mobile phone repair",
+  "Smartphone screen replacement",
+  "Phone battery replacement",
+  "Charging port repair",
+  "Water-damaged phone repair",
+  "Chip-level motherboard repair",
+  "Phone camera repair",
+  "iPhone repair",
+  "Samsung Galaxy repair",
+  "OnePlus repair",
+  "Android phone repair",
+  "Doorstep mobile service in Hyderabad",
+];
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -174,6 +191,8 @@ const localBusinessSchema = {
     { "@type": "City", name: "Secunderabad" },
   ],
   knowsLanguage: ["en", "te", "hi"],
+  knowsAbout,
+  ...(GOOGLE_BUSINESS_PROFILE_URL ? { hasMap: GOOGLE_BUSINESS_PROFILE_URL } : {}),
   sameAs,
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -199,6 +218,9 @@ const organizationSchema = {
   "@type": "Organization",
   "@id": "https://turbofix.in/#organization",
   name: "TurboFix",
+  alternateName: ["TurboFix Hyderabad", "turbofix.in"],
+  description:
+    "TurboFix is an independent mobile phone service business in Hyderabad, India. It services iPhone, Samsung, OnePlus and other Android phones at the customer's doorstep, offers pickup and delivery, and runs a walk-in studio in Nampally.",
   url: "https://turbofix.in",
   logo: {
     "@type": "ImageObject",
@@ -206,6 +228,19 @@ const organizationSchema = {
     width: 512,
     height: 512,
   },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: BUSINESS_ADDRESS.street,
+    addressLocality: BUSINESS_ADDRESS.locality,
+    addressRegion: BUSINESS_ADDRESS.region,
+    postalCode: BUSINESS_ADDRESS.postalCode,
+    addressCountry: BUSINESS_ADDRESS.country,
+  },
+  areaServed: [
+    { "@type": "City", name: "Hyderabad" },
+    { "@type": "City", name: "Secunderabad" },
+  ],
+  knowsAbout,
   foundingDate: "2023",
   foundingLocation: {
     "@type": "Place",
